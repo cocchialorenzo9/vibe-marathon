@@ -103,16 +103,12 @@ Append today's data as a new entry at the end of the **local** history file at `
 
 Create the directory for the history file if it does not exist.
 
-Also append today's data to **`data/history.json`** in this repo (the public dashboard file). Read the current array, replace any existing entry with today's date, then append:
+Also append today's sanitized entry to **`data/chart-data.json`** in this repo (the public dashboard file — no biometrics). Read the current array, replace any existing entry with today's date, then append:
 ```json
 {
   "date": "<today YYYY-MM-DD>",
   "tss": <float>,
   "distance_km": <float>,
-  "hrv": <int>,
-  "resting_hr": <int>,
-  "sleep_hours": <float>,
-  "sleep_score": <int>,
   "ctl": <float>,
   "atl": <float>,
   "tsb": <float>,
@@ -121,17 +117,17 @@ Also append today's data to **`data/history.json`** in this repo (the public das
 }
 ```
 
-Note: `avg_hr` is intentionally omitted from `data/history.json` — it is retained only in the local history file.
+Fields deliberately omitted from `data/chart-data.json`: `hrv`, `resting_hr`, `sleep_hours`, `sleep_score`, `avg_hr`. These remain only in the local history file.
 
 ## Step 6 — Commit and push
 
 ```bash
-git add data/coach.json data/history.json
+git add data/coach.json data/chart-data.json
 git commit -m "chore: coach update $(date +%Y-%m-%d)"
 git push
 ```
 
-Note: the local history file lives outside the repo at `history_path` and is never committed.
+Note: the local history file lives outside the repo at `history_path` and is never committed. `data/history.json` is in `.gitignore`.
 
 Then tell the user:
 - Readiness score and the main reason behind it
