@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-23",
+  "generatedFor": "2026-06-24",
+  "readiness": {
+    "score": null,
+    "hrv": null,
+    "restingHR": null,
+    "sleep": null,
+    "tsb": null,
+    "ctl": null,
+    "atl": null
+  },
+  "recommendation": {
+    "type": "easy",
+    "title": "No data yet — run /update-coach",
+    "reasoning": "Coach data not yet initialized. Run the /update-coach skill in Claude Code at the end of your first training day to generate a real recommendation.",
+    "sessionDetail": "",
+    "bikeNote": "",
+    "swimNote": ""
+  },
+  "phase": "base",
+  "daysToRace": 110
+}
