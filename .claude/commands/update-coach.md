@@ -87,7 +87,7 @@ Write `data/coach.json` with this exact schema:
 }
 ```
 
-Append today's data as a new entry at the end of the history file at `history_path`:
+Append today's data as a new entry at the end of the **local** history file at `history_path`:
 ```json
 {
   "date": "<today YYYY-MM-DD>",
@@ -103,15 +103,35 @@ Append today's data as a new entry at the end of the history file at `history_pa
 
 Create the directory for the history file if it does not exist.
 
+Also append today's data to **`data/history.json`** in this repo (the public dashboard file). Read the current array, replace any existing entry with today's date, then append:
+```json
+{
+  "date": "<today YYYY-MM-DD>",
+  "tss": <float>,
+  "distance_km": <float>,
+  "hrv": <int>,
+  "resting_hr": <int>,
+  "sleep_hours": <float>,
+  "sleep_score": <int>,
+  "ctl": <float>,
+  "atl": <float>,
+  "tsb": <float>,
+  "readiness_score": <int>,
+  "recommendation_type": "<easy|tempo|long|race|swim|rest>"
+}
+```
+
+Note: `avg_hr` is intentionally omitted from `data/history.json` — it is retained only in the local history file.
+
 ## Step 6 — Commit and push
 
 ```bash
-git add data/coach.json
+git add data/coach.json data/history.json
 git commit -m "chore: coach update $(date +%Y-%m-%d)"
 git push
 ```
 
-Note: the history file lives outside the repo at `history_path` and is never committed.
+Note: the local history file lives outside the repo at `history_path` and is never committed.
 
 Then tell the user:
 - Readiness score and the main reason behind it
