@@ -28,7 +28,9 @@ If history is empty, start ATL=0, CTL=0.
 
 ## Step 3 — Identify tomorrow's scheduled session
 
-Read `../cocchialorenzo9.github.io/src/pages/marathon.jsx` (adjust path if repos are not siblings). Find the `WEEKS` array. Identify the entry whose `label` date range covers **tomorrow**'s date. Extract the sessions for tomorrow and the current `phase`.
+Read `data/training-plan.json`. Find the entry in `weeks[].days[]` whose `date` field equals **tomorrow**'s date (YYYY-MM-DD format). Extract:
+- The session's `training.type`, `training.title`, `training.detail`
+- The parent week's `phase`
 
 If tomorrow falls outside all weeks (before week 1 or after race day), note that explicitly.
 
@@ -56,6 +58,30 @@ Write a recommendation with:
 - `swimNote`: advice on Wednesday pool session if applicable
 
 Be direct. No padding. Reference actual numbers.
+
+## Step 4b — Regenerate upcoming day recommendations
+
+Read `data/training-plan.json`. For each day in `weeks[].days[]` whose `date` is between **tomorrow** and **14 days from today** (inclusive), regenerate these three fields:
+
+- **`movement`**: Based on the session type and today's readiness:
+  - `swim`: "Bike to pool is fine" or "U-Bahn — legs heavy from [TSB/yesterday]"
+  - `easy`: "Bike both ways fine" unless TSB is very negative
+  - `tempo`/`long`: "U-Bahn to work" before hard sessions, "easy bike home" or U-Bahn after
+  - `race`: "No cycling today"
+  - Rest days: "Easy bike both ways is fine"
+
+- **`food`**: Based on the session type and phase:
+  - Before long/tempo: high carb (pasta, rice, polenta). Reference the phase's nutrition strategy.
+  - After hard session: protein + carbs within 30 min
+  - Rest/easy days: normal balanced meals with phase-appropriate carb %
+  - Peak/taper phase: mention specific carb-loading or gel strategies as relevant
+
+- **`bigPicture`**: 2–3 sentences placing this day in the training arc:
+  - Reference week number, phase, and where the athlete is in the plan
+  - Reference TSB or readiness context where relevant (e.g. "after this week's fatigue" or "legs are fresh")
+  - Give a forward-looking hook: what this session prepares for
+
+Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged.
 
 ## Step 5 — Write the output files
 
@@ -122,7 +148,7 @@ Fields deliberately omitted from `data/chart-data.json`: `hrv`, `resting_hr`, `s
 ## Step 6 — Commit and push
 
 ```bash
-git add data/coach.json data/chart-data.json
+git add data/coach.json data/chart-data.json data/training-plan.json
 git commit -m "chore: coach update $(date +%Y-%m-%d)"
 git push
 ```
@@ -133,3 +159,4 @@ Then tell the user:
 - Readiness score and the main reason behind it
 - Tomorrow's recommendation
 - Whether any plan adjustment was made and why
+- A brief summary of what changed in the next 14 days' recommendations
