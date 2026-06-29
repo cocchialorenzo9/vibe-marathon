@@ -22,13 +22,17 @@ from fetch_garmin import (
 )
 
 
+
 class TestParseHrv(unittest.TestCase):
     def test_full_response(self):
         data = {"hrvSummary": {"lastNight": 48, "weeklyAvg": 55, "baselineLowUpper": 45, "baselineBalancedLow": 52, "status": "BALANCED"}}
         result = parse_hrv(data)
         self.assertEqual(result["value"], 48)
-        self.assertEqual(result["weekly_avg"], 55)
+        self.assertEqual(result["baseline"], 48)  # round((45+52)/2)
         self.assertEqual(result["status"], "BALANCED")
+        self.assertNotIn("weekly_avg", result)
+        self.assertNotIn("baseline_low", result)
+        self.assertNotIn("baseline_high", result)
 
     def test_missing_summary_key(self):
         self.assertIsNone(parse_hrv({}))
@@ -38,7 +42,7 @@ class TestParseHrv(unittest.TestCase):
         data = {"hrvSummary": {"lastNight": 42}}
         result = parse_hrv(data)
         self.assertEqual(result["value"], 42)
-        self.assertIsNone(result["weekly_avg"])
+        self.assertIsNone(result["baseline"])
         self.assertIsNone(result["status"])
 
 
@@ -90,13 +94,15 @@ class TestParseTrainingReadiness(unittest.TestCase):
         data = [{"score": 72, "level": "GOOD", "contributingFactors": ["HRV", "SLEEP"]}]
         result = parse_training_readiness(data)
         self.assertEqual(result["score"], 72)
-        self.assertEqual(result["level"], "GOOD")
-        self.assertEqual(result["contributing_factors"], ["HRV", "SLEEP"])
+        self.assertEqual(result["source"], "garmin_training_readiness")
+        self.assertNotIn("level", result)
+        self.assertNotIn("contributing_factors", result)
 
     def test_dict_response(self):
         data = {"score": 55, "level": "MODERATE"}
         result = parse_training_readiness(data)
         self.assertEqual(result["score"], 55)
+        self.assertEqual(result["source"], "garmin_training_readiness")
 
     def test_empty_list(self):
         self.assertIsNone(parse_training_readiness([]))
@@ -206,10 +212,11 @@ class TestFetchAll(unittest.TestCase):
         api = self._make_api()
         result = fetch_all(api, "2026-06-23", "2026-06-22")
         self.assertEqual(result["date"], "2026-06-23")
+        self.assertEqual(result["source"], "garmin")
         self.assertEqual(result["hrv"]["value"], 50)
         self.assertAlmostEqual(result["sleep"]["hours"], 7.0)
         self.assertEqual(result["resting_hr"], 51)
-        self.assertEqual(result["training_readiness"]["score"], 75)
+        self.assertEqual(result["readiness"]["score"], 75)
         self.assertEqual(result["body_battery"]["high"], 85)
         self.assertEqual(result["yesterday_activity"]["type"], "running")
 

@@ -18,6 +18,12 @@ import os
 import sys
 from datetime import date, timedelta
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 HISTORY_PATH = os.path.expanduser(
     os.environ.get("COACH_HISTORY_PATH", "~/.vibe-marathon/history.json")
 )
@@ -27,11 +33,15 @@ def parse_hrv(hrv_data):
     if not hrv_data or "hrvSummary" not in hrv_data:
         return None
     s = hrv_data["hrvSummary"]
+    low = s.get("baselineLowUpper")
+    high = s.get("baselineBalancedLow")
+    if low and high:
+        baseline = round((low + high) / 2)
+    else:
+        baseline = low or high or None
     return {
         "value": s.get("lastNight"),
-        "weekly_avg": s.get("weeklyAvg"),
-        "baseline_low": s.get("baselineLowUpper"),
-        "baseline_high": s.get("baselineBalancedLow"),
+        "baseline": baseline,
         "status": s.get("status"),
     }
 
@@ -69,8 +79,7 @@ def parse_training_readiness(tr_data):
         tr = tr_data
     return {
         "score": tr.get("score"),
-        "level": tr.get("level"),
-        "contributing_factors": tr.get("contributingFactors"),
+        "source": "garmin_training_readiness",
     }
 
 
@@ -105,7 +114,7 @@ def parse_activity(activities):
 
 
 def fetch_all(api, today, yesterday):
-    result = {"date": today}
+    result = {"date": today, "source": "garmin"}
     try:
         result["hrv"] = parse_hrv(api.get_hrv_data(today))
     except Exception as e:
@@ -119,9 +128,9 @@ def fetch_all(api, today, yesterday):
     except Exception as e:
         result["resting_hr"] = {"error": str(e)}
     try:
-        result["training_readiness"] = parse_training_readiness(api.get_training_readiness(today))
+        result["readiness"] = parse_training_readiness(api.get_training_readiness(today))
     except Exception as e:
-        result["training_readiness"] = {"error": str(e)}
+        result["readiness"] = {"error": str(e)}
     try:
         result["body_battery"] = parse_body_battery(api.get_body_battery(today))
     except Exception as e:

@@ -1,23 +1,33 @@
 {
-  "date": "2026-06-23",
-  "generatedFor": "2026-06-24",
+  "date": "2026-06-29",
+  "generatedFor": "2026-06-30",
   "readiness": {
-    "score": null,
-    "hrv": null,
-    "restingHR": null,
-    "sleep": null,
-    "tsb": null,
-    "ctl": null,
-    "atl": null
+    "score": 56,
+    "hrv": {
+      "value": 82,
+      "baseline": null,
+      "delta_pct": null
+    },
+    "restingHR": {
+      "value": 40,
+      "trend": "normal"
+    },
+    "sleep": {
+      "hours": 6.3,
+      "score": 90
+    },
+    "tsb": -5.4,
+    "ctl": 1.5,
+    "atl": 6.9
   },
   "recommendation": {
     "type": "easy",
-    "title": "No data yet — run /update-coach",
-    "reasoning": "Coach data not yet initialized. Run the /update-coach skill in Claude Code at the end of your first training day to generate a real recommendation.",
-    "sessionDetail": "",
-    "bikeNote": "",
-    "swimNote": ""
+    "title": "Pre-plan rest week — arrive fresh",
+    "reasoning": "Tomorrow falls 8 days before Week 1 (July 7). TSB is -5.4 — mild residual fatigue from the 10km run on June 27 and 4km on June 28. HRV is 82ms with no baseline yet (day 1 of tracking). Sleep quality was excellent (deep 91min, REM 70min, score 90) though duration was slightly short at 6.3h. Priority this week is full recovery so you arrive at July 7 with a positive TSB and fresh legs.",
+    "sessionDetail": "Optional 20-30 min very easy jog (HR < 140) or complete rest. No targets, no intensity, no pressure. The pre-plan week is not about adding fitness — it is about arriving at Week 1 ready to execute.",
+    "bikeNote": "Bike both ways is fine — the commute is pure zone 1 at this stage and will not interfere with recovery.",
+    "swimNote": "No pool session until Monday July 7 (Week 1 swim class)."
   },
   "phase": "base",
-  "daysToRace": 110
+  "daysToRace": 104
 }
