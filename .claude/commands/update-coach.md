@@ -1,17 +1,22 @@
 Follow these steps exactly, in order. Do not skip steps.
 
-## Step 1 — Fetch today's Garmin data
+## Step 1 — Fetch today's biometric data
 
-Run the fetch script:
-```
-python3 scripts/fetch_garmin.py
-```
+Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
 
-The script reads `GARMIN_EMAIL` and `GARMIN_PASSWORD` from environment variables. If they are not set, ask the user to set them before continuing (e.g. `export GARMIN_EMAIL=... GARMIN_PASSWORD=...`).
+- **`WATCH_SOURCE=amazfit`** (or unset): run `python3 scripts/fetch_amazfit.py`
+  - If a Zepp export is present in `data/zepp/`, the script auto-fills sleep, resting HR,
+    and yesterday's activity. It will also **backfill any missed days** from the export into
+    local history before running — report any backfilled dates to the user.
+  - Only HRV requires manual entry (it is not included in Zepp exports).
 
-The output also includes `history_path` — the local path where history is stored (from `COACH_HISTORY_PATH` env var, defaults to `~/.vibe-marathon/history.json`).
+- **`WATCH_SOURCE=garmin`**: run `python3 scripts/fetch_garmin.py`
+  - Requires `GARMIN_EMAIL` and `GARMIN_PASSWORD`. If not set, ask the user to export them before continuing.
 
-The script prints a JSON object to stdout. Parse it.
+Both scripts print a canonical `BiometricReading` JSON object to stdout. Parse it. The `source` field confirms which device was used. The `history_path` field gives the local history file path.
+
+**If the Zepp export is stale** (the script will warn you), tell the user:
+"Your Zepp export is from {date}. If you trained since then, sync your watch, re-export from the Zepp app, and drop the new folder into `data/zepp/` before re-running."
 
 ## Step 2 — Load rolling history
 
@@ -37,12 +42,14 @@ If tomorrow falls outside all weeks (before week 1 or after race day), note that
 ## Step 4 — Reason and generate the recommendation
 
 Given:
-- Today's HRV vs baseline (higher = more recovered)
+- Today's HRV vs baseline (`hrv.value` vs `hrv.baseline`). If `hrv.baseline` is null (first week on a new device), use the last available HRV value as a rough proxy or skip HRV delta reasoning and note "HRV baseline building up."
 - Resting HR trend
-- Sleep score
+- Sleep score (`sleep.score`)
 - TSB (positive = rested; below -15 = caution; below -25 = swap to easy)
 - CTL (current fitness level)
 - Tomorrow's scheduled session
+- `readiness.score` from the device (supplementary — use it as a cross-check against your own reasoning, not a replacement)
+- `body_battery` may be null (Amazfit does not provide it) — skip this signal if null
 
 Decide whether tomorrow should:
 - **Proceed as planned** — readiness is good
