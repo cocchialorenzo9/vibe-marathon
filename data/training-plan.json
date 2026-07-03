@@ -12,8 +12,8 @@
       "tip": "Week 1 with Monday swim: your first run shifts to Tuesday. You have 4 total sessions — that's the maximum load for this phase.",
       "days": [
         {
-          "date": "2026-07-07",
-          "dayLabel": "Mon 7",
+          "date": "2026-07-06",
+          "dayLabel": "Mon 6",
           "training": {
             "type": "swim",
             "title": "Swim class",
@@ -24,8 +24,8 @@
           "bigPicture": "First session of the 15-week plan. The swim is deliberate: aerobic cross-training that builds base and shoulder mobility without loading the running legs. A full pre-plan rest week (Jun 30–Jul 6) means you arrive fresh. TSB should be positive by Monday — the best possible starting point."
         },
         {
-          "date": "2026-07-08",
-          "dayLabel": "Tue 8",
+          "date": "2026-07-07",
+          "dayLabel": "Tue 7",
           "training": {
             "type": "easy",
             "title": "Adaptation run",
@@ -36,8 +36,8 @@
           "bigPicture": "First run of the plan — an adaptation run to calibrate effort and see how the legs respond after the swim the day before. 30 min at 5:10–5:20/km, no pace pressure. The goal is to establish the aerobic base rhythm you carry through all of base phase. This session sets the tone for the next 15 weeks."
         },
         {
-          "date": "2026-07-10",
-          "dayLabel": "Thu 10",
+          "date": "2026-07-09",
+          "dayLabel": "Thu 9",
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
@@ -48,8 +48,8 @@
           "bigPicture": "Third session of Week 1 base. Strides (4x80m progressive accelerations) introduce neuromuscular work without adding aerobic fatigue — they improve running economy and stride mechanics at the very start of training. Think smooth and controlled, not fast. This session primes the legs for Saturday's first long run."
         },
         {
-          "date": "2026-07-12",
-          "dayLabel": "Sat 12",
+          "date": "2026-07-11",
+          "dayLabel": "Sat 11",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -70,8 +70,8 @@
       "tip": "Marathon pace (4:15–4:20/km) should feel challenging but manageable. If you're gasping, slow down — fitness comes from consistency.",
       "days": [
         {
-          "date": "2026-07-14",
-          "dayLabel": "Mon 14",
+          "date": "2026-07-13",
+          "dayLabel": "Mon 13",
           "training": {
             "type": "swim",
             "title": "Swim class",
@@ -82,8 +82,8 @@
           "bigPicture": "Active recovery day. The pool loosens legs stiffened by Saturday's long run while keeping your aerobic engine warm."
         },
         {
-          "date": "2026-07-15",
-          "dayLabel": "Tue 15",
+          "date": "2026-07-14",
+          "dayLabel": "Tue 14",
           "training": {
             "type": "easy",
             "title": "Easy run",
@@ -94,8 +94,8 @@
           "bigPicture": "Steady easy run. Each week your aerobic base widens slightly — you won't feel it, but it's accumulating."
         },
         {
-          "date": "2026-07-17",
-          "dayLabel": "Thu 17",
+          "date": "2026-07-16",
+          "dayLabel": "Thu 16",
           "training": {
             "type": "tempo",
             "title": "First contact with MP",
@@ -106,8 +106,8 @@
           "bigPicture": "First real taste of sub-3h pace. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress."
         },
         {
-          "date": "2026-07-19",
-          "dayLabel": "Sat 19",
+          "date": "2026-07-18",
+          "dayLabel": "Sat 18",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -128,8 +128,8 @@
       "tip": "1km repeats build muscular memory at marathon pace. Take the full recovery: it's not weakness, it's correctness.",
       "days": [
         {
-          "date": "2026-07-21",
-          "dayLabel": "Mon 21",
+          "date": "2026-07-20",
+          "dayLabel": "Mon 20",
           "training": {
             "type": "swim",
             "title": "Swim class",
@@ -140,8 +140,8 @@
           "bigPicture": "Active recovery. The pool after a long run week is exactly the right stimulus — loosen the legs, keep the aerobic engine warm."
         },
         {
-          "date": "2026-07-22",
-          "dayLabel": "Tue 22",
+          "date": "2026-07-21",
+          "dayLabel": "Tue 21",
           "training": {
             "type": "easy",
             "title": "Easy run",
@@ -152,8 +152,8 @@
           "bigPicture": "Easy aerobic run. These mid-week easy runs are the backbone of the plan — don't skip them, don't make them harder."
         },
         {
-          "date": "2026-07-24",
-          "dayLabel": "Thu 24",
+          "date": "2026-07-23",
+          "dayLabel": "Thu 23",
           "training": {
             "type": "tempo",
             "title": "1km repeats",
@@ -164,8 +164,8 @@
           "bigPicture": "First 1km repeats at marathon pace. Each rep builds the neuromuscular memory your legs need for km 25–42. Take the full recovery between reps."
         },
         {
-          "date": "2026-07-26",
-          "dayLabel": "Sat 26",
+          "date": "2026-07-25",
+          "dayLabel": "Sat 25",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -186,8 +186,8 @@
       "tip": "Recovery week: never skip it. The body adapts during rest. Higdon calls it the 'invisible' week — the most important one.",
       "days": [
         {
-          "date": "2026-07-28",
-          "dayLabel": "Mon 28",
+          "date": "2026-07-27",
+          "dayLabel": "Mon 27",
           "training": {
             "type": "swim",
             "title": "Swim class (last?)",
@@ -198,8 +198,8 @@
           "bigPicture": "Recovery week begins. Possibly your last Monday swim class before switching to Wednesday open swim. Enjoy the routine before it shifts."
         },
         {
-          "date": "2026-07-29",
-          "dayLabel": "Tue 29",
+          "date": "2026-07-28",
+          "dayLabel": "Tue 28",
           "training": {
             "type": "easy",
             "title": "Recovery run",
@@ -210,8 +210,8 @@
           "bigPicture": "Recovery run — slower than feels necessary, which is exactly right. The body is consolidating 3 weeks of base building."
         },
         {
-          "date": "2026-07-31",
-          "dayLabel": "Thu 31",
+          "date": "2026-07-30",
+          "dayLabel": "Thu 30",
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
@@ -222,8 +222,8 @@
           "bigPicture": "Light strides keep your legs sharp during recovery week. No fatigue, just neuromuscular activation."
         },
         {
-          "date": "2026-08-02",
-          "dayLabel": "Sat 2",
+          "date": "2026-08-01",
+          "dayLabel": "Sat 1",
           "training": {
             "type": "long",
             "title": "Reduced long run",
@@ -244,8 +244,8 @@
       "tip": "Swim class is over — now you manage Wednesday at the pool yourself. Goal: active recovery and aerobic capacity, not performance in the water.",
       "days": [
         {
-          "date": "2026-08-05",
-          "dayLabel": "Tue 5",
+          "date": "2026-08-04",
+          "dayLabel": "Tue 4",
           "training": {
             "type": "easy",
             "title": "Easy run",
@@ -256,8 +256,8 @@
           "bigPicture": "Welcome to Build phase. Volume increases from here. Today is easy — but the sessions later this week and beyond will demand more."
         },
         {
-          "date": "2026-08-06",
-          "dayLabel": "Wed 6",
+          "date": "2026-08-05",
+          "dayLabel": "Wed 5",
           "training": {
             "type": "swim",
             "title": "Open swim",
@@ -268,8 +268,8 @@
           "bigPicture": "Wednesday is now your cross-training anchor. Pool between Tuesday's run and the weekend long run is the perfect placement — active recovery without running impact."
         },
         {
-          "date": "2026-08-09",
-          "dayLabel": "Sat 9",
+          "date": "2026-08-08",
+          "dayLabel": "Sat 8",
           "training": {
             "type": "long",
             "title": "Long run with MP",
@@ -302,8 +302,8 @@
           "bigPicture": "Easy run mid-week. The build phase is ramping — these easy days protect your ability to hit Thursday hard."
         },
         {
-          "date": "2026-08-13",
-          "dayLabel": "Wed 13",
+          "date": "2026-08-12",
+          "dayLabel": "Wed 12",
           "training": {
             "type": "swim",
             "title": "Open swim",
@@ -314,8 +314,8 @@
           "bigPicture": "Swimming the day before intervals is deliberate — water loosens your legs without adding running fatigue. Don't push hard in the pool today."
         },
         {
-          "date": "2026-08-14",
-          "dayLabel": "Thu 14",
+          "date": "2026-08-13",
+          "dayLabel": "Thu 13",
           "training": {
             "type": "tempo",
             "title": "1.5km repeats",
@@ -326,8 +326,8 @@
           "bigPicture": "4×1.5km at marathon pace — your longest quality reps so far. Sustained pace demands full recovery between reps. If you're on target by rep 3, you're fit."
         },
         {
-          "date": "2026-08-16",
-          "dayLabel": "Sat 16",
+          "date": "2026-08-15",
+          "dayLabel": "Sat 15",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -360,8 +360,8 @@
           "bigPicture": "Easy run. Mid-build phase — you're handling more volume now than most runners ever attempt. Keep these easy days genuinely easy."
         },
         {
-          "date": "2026-08-20",
-          "dayLabel": "Wed 20",
+          "date": "2026-08-19",
+          "dayLabel": "Wed 19",
           "training": {
             "type": "swim",
             "title": "Open swim",
@@ -372,8 +372,8 @@
           "bigPicture": "Aerobically your heaviest day of the week: biking, swimming, and tomorrow comes the tough session. Manage Wednesday consciously — it sets up Thursday."
         },
         {
-          "date": "2026-08-21",
-          "dayLabel": "Thu 21",
+          "date": "2026-08-20",
+          "dayLabel": "Thu 20",
           "training": {
             "type": "tempo",
             "title": "MP progression",
@@ -384,8 +384,8 @@
           "bigPicture": "Progression run: start at 4:30/km, accelerate to 4:15/km while already tired. This is exactly what km 30–35 will demand. If you hit the splits, you're on track."
         },
         {
-          "date": "2026-08-23",
-          "dayLabel": "Sat 23",
+          "date": "2026-08-22",
+          "dayLabel": "Sat 22",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -418,8 +418,8 @@
           "bigPicture": "Recovery week. Very slow run — deliberately slower than feels right. Your body is absorbing 3 weeks of serious build work."
         },
         {
-          "date": "2026-08-27",
-          "dayLabel": "Wed 27",
+          "date": "2026-08-26",
+          "dayLabel": "Wed 26",
           "training": {
             "type": "swim",
             "title": "Swim (optional)",
@@ -430,8 +430,8 @@
           "bigPicture": "Optional pool session. If you feel tired, skip without guilt. Recovery weeks are for recovery — the training benefit comes from rest, not volume."
         },
         {
-          "date": "2026-08-28",
-          "dayLabel": "Thu 28",
+          "date": "2026-08-27",
+          "dayLabel": "Thu 27",
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
@@ -442,8 +442,8 @@
           "bigPicture": "Light strides keep sharpness without adding fatigue. In recovery week these are the most important neuromuscular stimulus you do."
         },
         {
-          "date": "2026-08-30",
-          "dayLabel": "Sat 30",
+          "date": "2026-08-29",
+          "dayLabel": "Sat 29",
           "training": {
             "type": "long",
             "title": "Reduced long run",
@@ -476,8 +476,8 @@
           "bigPicture": "Back from recovery week — legs should feel surprisingly good. Last build block before Peak phase. Make every session count."
         },
         {
-          "date": "2026-09-03",
-          "dayLabel": "Wed 3",
+          "date": "2026-09-02",
+          "dayLabel": "Wed 2",
           "training": {
             "type": "swim",
             "title": "Open swim",
@@ -488,8 +488,8 @@
           "bigPicture": "Wednesday prep for Thursday's hardest session yet. Don't go all-out in the pool — it's priming, not training. 6×50m fast at the end wakes up your anaerobic system."
         },
         {
-          "date": "2026-09-04",
-          "dayLabel": "Thu 4",
+          "date": "2026-09-03",
+          "dayLabel": "Thu 3",
           "training": {
             "type": "tempo",
             "title": "2km repeats",
@@ -500,8 +500,8 @@
           "bigPicture": "3×2km at marathon pace — the longest quality reps of Build phase. Each rep is a 2km race at your sub-3h target. If you hit the splits, the fitness is there."
         },
         {
-          "date": "2026-09-06",
-          "dayLabel": "Sat 6",
+          "date": "2026-09-05",
+          "dayLabel": "Sat 5",
           "training": {
             "type": "long",
             "title": "Long run with MP finish",
@@ -534,8 +534,8 @@
           "bigPicture": "Welcome to Peak phase. Volume is at its highest — protect your health above all else. Any unusual pain gets a rest day, not a push through."
         },
         {
-          "date": "2026-09-10",
-          "dayLabel": "Wed 10",
+          "date": "2026-09-09",
+          "dayLabel": "Wed 9",
           "training": {
             "type": "swim",
             "title": "Swim — active recovery",
@@ -546,8 +546,8 @@
           "bigPicture": "Swimming in Peak phase is recovery, not training. 35 minutes of easy crawl loosens legs without adding stress before Thursday's long tempo."
         },
         {
-          "date": "2026-09-11",
-          "dayLabel": "Thu 11",
+          "date": "2026-09-10",
+          "dayLabel": "Thu 10",
           "training": {
             "type": "tempo",
             "title": "Long tempo run",
@@ -558,8 +558,8 @@
           "bigPicture": "40 continuous minutes at near-marathon pace. This builds your lactate threshold — the key physiological marker for sub-3h. It's supposed to feel uncomfortable."
         },
         {
-          "date": "2026-09-13",
-          "dayLabel": "Sat 13",
+          "date": "2026-09-12",
+          "dayLabel": "Sat 12",
           "training": {
             "type": "long",
             "title": "Long run",
@@ -592,8 +592,8 @@
           "bigPicture": "The hardest week of the entire plan starts now. Keep Tuesday easy — you need everything you have for Thursday's 3×3km."
         },
         {
-          "date": "2026-09-17",
-          "dayLabel": "Wed 17",
+          "date": "2026-09-16",
+          "dayLabel": "Wed 16",
           "training": {
             "type": "swim",
             "title": "Swim — active recovery",
@@ -604,8 +604,8 @@
           "bigPicture": "Light swim before the hardest session of the year. 30 minutes of easy crawl — no more. Tomorrow you need 100% of your legs for 3×3km."
         },
         {
-          "date": "2026-09-18",
-          "dayLabel": "Thu 18",
+          "date": "2026-09-17",
+          "dayLabel": "Thu 17",
           "training": {
             "type": "tempo",
             "title": "3km repeats",
@@ -616,8 +616,8 @@
           "bigPicture": "The hardest session of the entire plan. 3×3km at sub-3h race pace. If you hit all three reps on target, you have the fitness for October 11."
         },
         {
-          "date": "2026-09-20",
-          "dayLabel": "Sat 20",
+          "date": "2026-09-19",
+          "dayLabel": "Sat 19",
           "training": {
             "type": "long",
             "title": "Peak long run",
@@ -650,8 +650,8 @@
           "bigPicture": "Mandatory recovery after the hardest week of the plan. Very slow run — slower than you think you need. Your legs are consolidating 3×3km and 22km."
         },
         {
-          "date": "2026-09-24",
-          "dayLabel": "Wed 24",
+          "date": "2026-09-23",
+          "dayLabel": "Wed 23",
           "training": {
             "type": "swim",
             "title": "Swim — unload",
@@ -662,8 +662,8 @@
           "bigPicture": "20–30 minutes of water therapy. Backstroke, easy crawl, floating. Come out feeling lighter. Pure recovery, no training goal."
         },
         {
-          "date": "2026-09-25",
-          "dayLabel": "Thu 25",
+          "date": "2026-09-24",
+          "dayLabel": "Thu 24",
           "training": {
             "type": "easy",
             "title": "Easy run",
@@ -674,8 +674,8 @@
           "bigPicture": "Run without looking at your watch. This recovery week is for letting go — the hard work is done, now you consolidate."
         },
         {
-          "date": "2026-09-27",
-          "dayLabel": "Sat 27",
+          "date": "2026-09-26",
+          "dayLabel": "Sat 26",
           "training": {
             "type": "long",
             "title": "Reduced long run",
@@ -708,8 +708,8 @@
           "bigPicture": "Final push before taper. Two hard sessions this week, then the volume drops for good. Stay healthy — every training day counts double now."
         },
         {
-          "date": "2026-10-01",
-          "dayLabel": "Wed 1",
+          "date": "2026-09-30",
+          "dayLabel": "Wed 30",
           "training": {
             "type": "swim",
             "title": "Swim — last serious session",
@@ -720,8 +720,8 @@
           "bigPicture": "Last serious swim session. After today, pool is optional recovery only. Enjoy the routine — taper starts in days."
         },
         {
-          "date": "2026-10-02",
-          "dayLabel": "Thu 2",
+          "date": "2026-10-01",
+          "dayLabel": "Thu 1",
           "training": {
             "type": "tempo",
             "title": "Final race simulation",
@@ -732,8 +732,8 @@
           "bigPicture": "3×10' at exactly 4:16/km — the definitive fitness test. If you hit all three intervals, you have the fitness for sub-3h on October 11. After today, you protect what you've built."
         },
         {
-          "date": "2026-10-04",
-          "dayLabel": "Sat 4",
+          "date": "2026-10-03",
+          "dayLabel": "Sat 3",
           "training": {
             "type": "long",
             "title": "Moderate long run",
@@ -754,8 +754,8 @@
       "tip": "Tapering: legs feel heavy or strange? That's normal — the body is 'loading up'. Eat well, sleep a lot, avoid standing for long periods.",
       "days": [
         {
-          "date": "2026-10-07",
-          "dayLabel": "Tue 7",
+          "date": "2026-10-06",
+          "dayLabel": "Tue 6",
           "training": {
             "type": "easy",
             "title": "Easy run",
@@ -766,8 +766,8 @@
           "bigPicture": "Taper week. Legs may feel unnaturally good or strangely flat — both are normal. Your body is loading up glycogen. Run easy and enjoy the reduced volume."
         },
         {
-          "date": "2026-10-08",
-          "dayLabel": "Wed 8",
+          "date": "2026-10-07",
+          "dayLabel": "Wed 7",
           "training": {
             "type": "swim",
             "title": "Swim (optional)",
@@ -778,8 +778,8 @@
           "bigPicture": "Optional pool session. 20 minutes of easy arm movement is enough. If you're tired, skip it — the race is in 3 days."
         },
         {
-          "date": "2026-10-09",
-          "dayLabel": "Thu 9",
+          "date": "2026-10-08",
+          "dayLabel": "Thu 8",
           "training": {
             "type": "tempo",
             "title": "Last quality session",
