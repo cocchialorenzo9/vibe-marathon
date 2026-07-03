@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-29",
-  "generatedFor": "2026-06-30",
+  "date": "2026-07-03",
+  "generatedFor": "2026-07-04",
   "readiness": {
-    "score": 56,
+    "score": 59,
     "hrv": {
-      "value": 82,
+      "value": 65,
       "baseline": null,
       "delta_pct": null
     },
     "restingHR": {
-      "value": 40,
+      "value": 42,
       "trend": "normal"
     },
     "sleep": {
-      "hours": 6.3,
-      "score": 90
+      "hours": 9.4,
+      "score": 95
     },
-    "tsb": -5.4,
-    "ctl": 1.5,
-    "atl": 6.9
+    "tsb": -6.5,
+    "ctl": 2.5,
+    "atl": 9.0
   },
   "recommendation": {
     "type": "easy",
-    "title": "Pre-plan rest week — arrive fresh",
-    "reasoning": "Tomorrow falls 8 days before Week 1 (July 7). TSB is -5.4 — mild residual fatigue from the 10km run on June 27 and 4km on June 28. HRV is 82ms with no baseline yet (day 1 of tracking). Sleep quality was excellent (deep 91min, REM 70min, score 90) though duration was slightly short at 6.3h. Priority this week is full recovery so you arrive at July 7 with a positive TSB and fresh legs.",
-    "sessionDetail": "Optional 20-30 min very easy jog (HR < 140) or complete rest. No targets, no intensity, no pressure. The pre-plan week is not about adding fitness — it is about arriving at Week 1 ready to execute.",
-    "bikeNote": "Bike both ways is fine — the commute is pure zone 1 at this stage and will not interfere with recovery.",
-    "swimNote": "No pool session until Monday July 7 (Week 1 swim class)."
+    "title": "Rest day — Week 1 starts Monday",
+    "reasoning": "Tomorrow falls 2 days before Week 1 (July 6, corrected — it is a real Monday, not the 7th). TSB is -6.5, mild residual load from the block since June 26, well above the -15 caution line. Sleep was excellent: 9.4h, score 95. Resting HR (42bpm) sits right at your baseline (~43bpm) — no elevation. HRV baseline is still building (first reading: 65ms), so no delta comparison yet. Priority for these last two days is arriving at Monday's swim class fresh.",
+    "sessionDetail": "Optional 20-30 min very easy jog (HR < 140) or full rest — your choice. No targets, no intensity. The pre-plan window is about arriving ready, not adding fitness.",
+    "bikeNote": "Bike both ways is fine — pure zone 1 commute load, won't interfere with the rest window.",
+    "swimNote": "No pool session until Monday's Week 1 swim class (July 6)."
   },
   "phase": "base",
-  "daysToRace": 104
+  "daysToRace": 99
 }

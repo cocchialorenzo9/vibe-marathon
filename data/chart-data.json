@@ -8,5 +8,15 @@
     "tsb": -5.4,
     "readiness_score": 56,
     "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-07-03",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 2.5,
+    "atl": 9.0,
+    "tsb": -6.5,
+    "readiness_score": 59,
+    "recommendation_type": "easy"
   }
 ]
