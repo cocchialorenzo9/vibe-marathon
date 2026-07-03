@@ -9,6 +9,12 @@ Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
     and yesterday's activity. It will also **backfill any missed days** from the export into
     local history before running — report any backfilled dates to the user.
   - Only HRV requires manual entry (it is not included in Zepp exports).
+  - **After backfill, check for missing HRV**: scan the local history file for any entries
+    dated **2026-06-29 or later** (when HRV tracking started) where `hrv` is `null`. If any
+    exist, ask the user in a single batched question for those dates' values (e.g. "Missing
+    HRV for Jun 30, Jul 1, Jul 2 — what were they?"). Write their answers back into the
+    matching history entries (leave an entry `null` if they don't have it) before moving to
+    Step 2, so this run's baseline and delta calculations use the corrected data.
 
 - **`WATCH_SOURCE=garmin`**: run `python3 scripts/fetch_garmin.py`
   - Requires `GARMIN_EMAIL` and `GARMIN_PASSWORD`. If not set, ask the user to export them before continuing.

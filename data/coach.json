@@ -2,11 +2,11 @@
   "date": "2026-07-03",
   "generatedFor": "2026-07-04",
   "readiness": {
-    "score": 59,
+    "score": 51,
     "hrv": {
       "value": 65,
-      "baseline": null,
-      "delta_pct": null
+      "baseline": 68,
+      "delta_pct": -4
     },
     "restingHR": {
       "value": 42,
@@ -23,7 +23,7 @@
   "recommendation": {
     "type": "easy",
     "title": "Rest day — Week 1 starts Monday",
-    "reasoning": "Tomorrow falls 2 days before Week 1 (July 6, corrected — it is a real Monday, not the 7th). TSB is -6.5, mild residual load from the block since June 26, well above the -15 caution line. Sleep was excellent: 9.4h, score 95. Resting HR (42bpm) sits right at your baseline (~43bpm) — no elevation. HRV baseline is still building (first reading: 65ms), so no delta comparison yet. Priority for these last two days is arriving at Monday's swim class fresh.",
+    "reasoning": "Tomorrow falls 2 days before Week 1 (July 6, corrected — it is a real Monday, not the 7th). TSB is -6.5, mild residual load from the block since June 26, well above the -15 caution line. Sleep was excellent: 9.4h, score 95. Resting HR (42bpm) sits right at your baseline (~43bpm) — no elevation. HRV is 65ms vs a 68ms baseline (-4%, balanced) — no cause for concern. Priority for these last two days is arriving at Monday's swim class fresh.",
     "sessionDetail": "Optional 20-30 min very easy jog (HR < 140) or full rest — your choice. No targets, no intensity. The pre-plan window is about arriving ready, not adding fitness.",
     "bikeNote": "Bike both ways is fine — pure zone 1 commute load, won't interfere with the rest window.",
     "swimNote": "No pool session until Monday's Week 1 swim class (July 6)."
