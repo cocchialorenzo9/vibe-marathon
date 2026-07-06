@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-03",
-  "generatedFor": "2026-07-04",
+  "date": "2026-07-06",
+  "generatedFor": "2026-07-07",
   "readiness": {
-    "score": 51,
+    "score": 75,
     "hrv": {
-      "value": 65,
-      "baseline": 68,
-      "delta_pct": -4
+      "value": 71,
+      "baseline": 66,
+      "delta_pct": 8
     },
     "restingHR": {
-      "value": 42,
+      "value": 43,
       "trend": "normal"
     },
     "sleep": {
-      "hours": 9.4,
+      "hours": 9.1,
       "score": 95
     },
-    "tsb": -6.5,
-    "ctl": 2.5,
-    "atl": 9.0
+    "tsb": -25.8,
+    "ctl": 8.7,
+    "atl": 34.5
   },
   "recommendation": {
     "type": "easy",
-    "title": "Rest day — Week 1 starts Monday",
-    "reasoning": "Tomorrow falls 2 days before Week 1 (July 6, corrected — it is a real Monday, not the 7th). TSB is -6.5, mild residual load from the block since June 26, well above the -15 caution line. Sleep was excellent: 9.4h, score 95. Resting HR (42bpm) sits right at your baseline (~43bpm) — no elevation. HRV is 65ms vs a 68ms baseline (-4%, balanced) — no cause for concern. Priority for these last two days is arriving at Monday's swim class fresh.",
-    "sessionDetail": "Optional 20-30 min very easy jog (HR < 140) or full rest — your choice. No targets, no intensity. The pre-plan window is about arriving ready, not adding fitness.",
-    "bikeNote": "Bike both ways is fine — pure zone 1 commute load, won't interfere with the rest window.",
-    "swimNote": "No pool session until Monday's Week 1 swim class (July 6)."
+    "title": "Adaptation run as planned, stay conservative",
+    "reasoning": "TSB is -25.8 — still carrying heavy fatigue from Saturday's 22.75km effort (265.6 TSS) and a short 2h sleep Sunday. HRV is 71ms, 8% above your 66ms baseline, and sleep score hit 95 last night — both strongly positive. Resting HR (43bpm) sits right at baseline (44bpm), no elevation. Tomorrow's session is already the easiest one in the plan (30 min adaptation run), so no swap needed — just keep the pace at 5:20/km rather than pushing toward 5:10.",
+    "sessionDetail": "30 min continuous at easy pace, lean toward 5:20/km rather than 5:10/km given the fatigue. First running session of the plan — the goal is to calibrate feel, not hit a target pace.",
+    "bikeNote": "U-Bahn to work tomorrow — save the legs for the run. Bike home after is fine, it's only a 30-min easy effort.",
+    "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 99
+  "daysToRace": 97
 }

@@ -31,9 +31,9 @@
             "title": "Adaptation run",
             "detail": "30 min at easy pace (5:10–5:20/km) — calibrate how you feel, first session of the plan"
           },
-          "movement": "U-Bahn to work — save the legs for the first run. Easy bike home is fine after a gentle 30-min effort.",
+          "movement": "U-Bahn to work — save the legs for the first real run. Easy bike home is fine after the 30-min effort.",
           "food": "Normal breakfast. Pre-run: light snack 90 min before if needed. Post-run: protein + carbs within 30 min (eggs and toast, or a recovery shake). Build the fueling habit now.",
-          "bigPicture": "First run of the plan — an adaptation run to calibrate effort and see how the legs respond after the swim the day before. 30 min at 5:10–5:20/km, no pace pressure. Coming off a deliberately easy pre-plan week (TSB -6.5 heading into Monday, essentially neutral fatigue, sleep excellent at 9.4h/95), you should feel fresh. The goal is to establish the aerobic base rhythm you carry through all of base phase."
+          "bigPicture": "First run of the plan — an adaptation run to calibrate effort after Monday's swim. 30 min at 5:10–5:20/km, lean toward the slower end: TSB is -25.8 today, still carrying fatigue from Saturday's 22.75km effort and a short 2h sleep Sunday. HRV (71ms, 8% above the 66ms baseline) and sleep (score 95) are both strong, so this is residual load, not poor recovery — it should clear over the next few easy days."
         },
         {
           "date": "2026-07-09",
@@ -43,9 +43,9 @@
             "title": "Easy run + strides",
             "detail": "35 min easy + 4×80m progressive accelerations at the end (not sprints, just smooth pick-ups)"
           },
-          "movement": "U-Bahn to work — strides need fresh legs even though they are short. Easy bike home after the run is fine.",
+          "movement": "U-Bahn to work — strides need fresh legs even though they're short. Easy bike home after the run is fine; TSB should be easing by Thursday.",
           "food": "Normal carb-moderate day, no special loading. Pre-run: light snack 90 min before if training after work. Post-run: normal meal with protein priority.",
-          "bigPicture": "Third session of Week 1 base. Strides (4x80m progressive accelerations) introduce neuromuscular work without adding aerobic fatigue — they improve running economy and stride mechanics at the very start of training. Think smooth and controlled, not fast. This session primes the legs for Saturday's first long run."
+          "bigPicture": "Third session of Week 1 base, and the point where the pre-plan fatigue (TSB -25.8 as of Monday) should have largely cleared after two easy days. Strides (4×80m progressive accelerations) add neuromuscular work without aerobic stress — smooth and controlled, not fast. This session primes the legs for Saturday's first long run."
         },
         {
           "date": "2026-07-11",
@@ -55,9 +55,9 @@
             "title": "Long run",
             "detail": "45 min continuous, easy pace (5:10–5:20/km) — ~8 km"
           },
-          "movement": "No cycling before the long run — U-Bahn or keep legs rested Saturday morning. Sunday: easy bike is fine if legs feel good.",
+          "movement": "No cycling before the long run — keep legs rested Saturday morning. Weekend, so no commute either way; an easy walk is fine if you want to move.",
           "food": "Friday dinner: high carb — pasta, risotto, or polenta. Saturday morning: oats or toast with banana, 2h before. Run is ~45 min so no gels needed — water only. Post-run: protein + carbs within 30 min.",
-          "bigPicture": "First long run of the plan — 45 min easy (~8km at 5:10–5:20/km). Goal is time on feet and aerobic conditioning, not pace. TSB should be near-neutral by Saturday after two easy sessions this week. Long runs build the endurance base you draw on in August's build phase — start easy, finish easy."
+          "bigPicture": "First long run of the plan — 45 min easy (~8km at 5:10–5:20/km). By Saturday, three easy sessions plus a swim should have brought TSB back toward neutral from Monday's -25.8. Goal is time on feet and aerobic conditioning, not pace — long runs build the endurance base the plan draws on through build and peak phases."
         }
       ]
     },
@@ -77,9 +77,9 @@
             "title": "Swim class",
             "detail": "Swim class — aerobic pace, technique focus. Don't push: it's active recovery from last week."
           },
-          "movement": "Easy bike to pool — active recovery, legs should loosen up nicely",
-          "food": "Normal balanced day — light on heavy fats, focus on hydration after the weekend",
-          "bigPicture": "Active recovery day. The pool loosens legs stiffened by Saturday's long run while keeping your aerobic engine warm."
+          "movement": "Bike to the pool is fine — active recovery, legs should have loosened up nicely after the weekend long run.",
+          "food": "Normal balanced day — light on heavy fats, focus on hydration after the weekend.",
+          "bigPicture": "Active recovery day opening week 2, still base phase. The pool loosens legs stiffened by Saturday's long run while keeping the aerobic engine warm. By now the pre-plan fatigue block (TSB -25.8 back on Jul 6) should be fully resolved — week 1 was as much about clearing that debt as adapting to the plan."
         },
         {
           "date": "2026-07-14",
@@ -89,9 +89,9 @@
             "title": "Easy run",
             "detail": "35 min at aerobic pace (5:00–5:15/km)"
           },
-          "movement": "Bike both ways fine — easy run, no restrictions",
-          "food": "Normal balanced day",
-          "bigPicture": "Steady easy run. Each week your aerobic base widens slightly — you won't feel it, but it's accumulating."
+          "movement": "Bike both ways fine — easy run, no restrictions.",
+          "food": "Normal balanced day.",
+          "bigPicture": "Steady easy run, pace nudging to 5:00–5:15/km as week 2 of base gets underway. Each week the aerobic base widens slightly — you won't feel it day to day, but it's accumulating ahead of Thursday's first marathon-pace contact."
         },
         {
           "date": "2026-07-16",
@@ -103,7 +103,7 @@
           },
           "movement": "Bike TO work easy. U-Bahn back after the session — don't add 7km on post-interval legs.",
           "food": "Good carb breakfast 1.5h before. Evening: rice or pasta with protein — recovery starts at the table.",
-          "bigPicture": "First real taste of sub-3h pace. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress."
+          "bigPicture": "First real taste of marathon pace (4:15–4:20/km), about 97 days out from race day. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress. Two clean weeks of easy running plus one long run sit behind this; how it feels will shape how build phase gets structured."
         },
         {
           "date": "2026-07-18",
@@ -114,8 +114,8 @@
             "detail": "55 min continuous, easy pace (~9–10 km)"
           },
           "movement": "U-Bahn to the start of your run — preserve legs. No cycling before.",
-          "food": "Pre-run carbs 1–2h before. Bring a gel or dates to test your gut for the first time.",
-          "bigPicture": "55 minutes — a meaningful step up from last week. Your body is adapting fast in these early weeks. Keep the pace genuinely easy."
+          "food": "Pre-run carbs 1–2h before. Bring a gel or dates to test your gut for the first time — 55 min is long enough to start practicing.",
+          "bigPicture": "55 minutes, ~9–10km — a meaningful step up from last week's 45. Closing out week 2 of base with the trend clearly toward more volume: two long runs, a tempo session, and a swim behind you already. Keep the pace genuinely easy; the adaptation comes from consistency, not effort."
         }
       ]
     },
@@ -135,9 +135,9 @@
             "title": "Swim class",
             "detail": "Swim class — last or second-to-last week. Enjoy the technical work."
           },
-          "movement": "Easy bike to pool — perfect recovery from the weekend long run",
-          "food": "Normal balanced day, focus on hydration",
-          "bigPicture": "Active recovery. The pool after a long run week is exactly the right stimulus — loosen the legs, keep the aerobic engine warm."
+          "movement": "Easy bike to pool — perfect recovery from the weekend long run.",
+          "food": "Normal balanced day, focus on hydration.",
+          "bigPicture": "Week 3 of base begins with the usual Monday swim — active recovery after the weekend long run, keeping the aerobic engine warm without loading the legs. Base phase is nearly a third done; mileage and effort have been trending up steadily (9–10km long runs, first MP contact) heading toward August's build phase."
         },
         {
           "date": "2026-07-21",
