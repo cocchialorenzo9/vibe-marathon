@@ -142,10 +142,13 @@ Append today's data as a new entry at the end of the **local** history file at `
 
 Create the directory for the history file if it does not exist.
 
-Also append today's sanitized entry to **`data/chart-data.json`** in this repo (the public dashboard file — no biometrics). Read the current array, replace any existing entry with today's date, then append:
+Also update **`data/chart-data.json`** in this repo (the public dashboard file — no biometrics).
+
+**Don't just append today — backfill any gap.** Read the current array and find its last `date`. If any dates in the local history file (from Step 2) fall strictly between that last date and today, `data/chart-data.json` is missing days (this happens whenever `/update-coach` doesn't run every single day, or a Zepp backfill fills in days retroactively — see Step 1). For **every** such missing date, and finally for today, append one entry:
+
 ```json
 {
-  "date": "<today YYYY-MM-DD>",
+  "date": "<YYYY-MM-DD>",
   "tss": <float>,
   "distance_km": <float>,
   "ctl": <float>,
@@ -155,6 +158,12 @@ Also append today's sanitized entry to **`data/chart-data.json`** in this repo (
   "recommendation_type": "<easy|tempo|long|race|swim|rest>"
 }
 ```
+
+- `ctl`/`atl`/`tsb` for a backfilled date: replay the ATL/CTL EWMA (Step 2's formula) forward through the full local history up to and including that date — don't just reuse today's values for every gap day, the chart needs the real day-by-day trajectory.
+- `readiness_score` for a backfilled date: recompute with that date's own HRV/sleep/resting-HR against the baseline as it stood *using only entries before that date* (avoid leaking later data into an earlier day's score).
+- `recommendation_type` for a backfilled date: use `data/training-plan.json`'s scheduled `training.type` for that date if the date falls within a plan week (e.g. a swim-class day must show `"swim"`, not a generic fallback derived from unrelated tracked activity like a bike commute). If the date is outside the plan entirely (pre-training), fall back to `"rest"` when that day's `tss` is 0, else `"easy"`.
+
+If an entry for today's date already exists (e.g. from a same-day re-run), replace it rather than duplicating.
 
 Fields deliberately omitted from `data/chart-data.json`: `hrv`, `resting_hr`, `sleep_hours`, `sleep_score`, `avg_hr`. These remain only in the local history file.
 
