@@ -347,11 +347,17 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_H
     primary = _pick_primary_session(sessions)
     avg_hr = primary["avg_hr"] if primary else None
 
-    # Add TSS for auto-detected running not captured in SPORT sessions
+    # Add TSS for auto-detected running only when no SPORT session exists at all —
+    # if a session was already recorded (even with distance=0, e.g. a GPS dropout),
+    # its own duration/HR-based TSS already covers that day's effort and stacking
+    # this bonus on top double-counts the same activity. Distance is still taken
+    # from the activity summary when it's the larger figure, since a GPS dropout
+    # loses distance tracking without meaning less ground was covered.
     act_run_km = activity["run_distance_km"] if activity else 0
     if act_run_km > sport_distance_km + 0.5:
         extra_km = act_run_km - sport_distance_km
-        total_tss += extra_km * 4  # rough proxy for untracked easy running
+        if not sessions:
+            total_tss += extra_km * 4  # rough proxy for untracked easy running
         sport_distance_km = act_run_km
 
     if sleep is None and not sessions and not activity:

@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-06",
-  "generatedFor": "2026-07-07",
+  "date": "2026-07-07",
+  "generatedFor": "2026-07-08",
   "readiness": {
-    "score": 75,
+    "score": 33,
     "hrv": {
-      "value": 71,
-      "baseline": 66,
-      "delta_pct": 8
+      "value": 61,
+      "baseline": 67,
+      "delta_pct": -9
     },
     "restingHR": {
       "value": 43,
       "trend": "normal"
     },
     "sleep": {
-      "hours": 9.1,
-      "score": 95
+      "hours": 6.0,
+      "score": 92
     },
-    "tsb": -25.8,
-    "ctl": 8.7,
-    "atl": 34.5
+    "tsb": -19.4,
+    "ctl": 7.4,
+    "atl": 26.8
   },
   "recommendation": {
-    "type": "easy",
-    "title": "Adaptation run as planned, stay conservative",
-    "reasoning": "TSB is -25.8 — still carrying heavy fatigue from Saturday's 22.75km effort (265.6 TSS) and a short 2h sleep Sunday. HRV is 71ms, 8% above your 66ms baseline, and sleep score hit 95 last night — both strongly positive. Resting HR (43bpm) sits right at baseline (44bpm), no elevation. Tomorrow's session is already the easiest one in the plan (30 min adaptation run), so no swap needed — just keep the pace at 5:20/km rather than pushing toward 5:10.",
-    "sessionDetail": "30 min continuous at easy pace, lean toward 5:20/km rather than 5:10/km given the fatigue. First running session of the plan — the goal is to calibrate feel, not hit a target pace.",
-    "bikeNote": "U-Bahn to work tomorrow — save the legs for the run. Bike home after is fine, it's only a 30-min easy effort.",
+    "type": "rest",
+    "title": "Full rest — TSB still down at -19.4",
+    "reasoning": "TSB sits at -19.4, past the -15 caution line, mostly carried over from Monday's swim-plus-commute day (once corrected for the full ~26km covered, TSS 31.3 rather than the 3.3 first recorded). HRV is 61ms, 9% below your 67ms baseline — mild, not alarming, but consistent with unresolved fatigue. Sleep was excellent (score 92, 6.0h) and resting HR is normal at 43bpm. Tomorrow is already a scheduled rest day in week 1 — that's the right call, no changes needed.",
+    "sessionDetail": "No training scheduled. Optional light walk or mobility work if you want to move, nothing structured.",
+    "bikeNote": "Easy bike both ways is fine — no session tomorrow, no reason to preserve legs.",
     "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 97
+  "daysToRace": 96
 }

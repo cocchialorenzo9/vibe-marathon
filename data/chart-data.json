@@ -81,11 +81,11 @@
   },
   {
     "date": "2026-07-04",
-    "tss": 265.6,
+    "tss": 174.6,
     "distance_km": 22.75,
-    "ctl": 8.7,
-    "atl": 43.1,
-    "tsb": -34.4,
+    "ctl": 6.5,
+    "atl": 31.0,
+    "tsb": -24.5,
     "readiness_score": 42,
     "recommendation_type": "easy"
   },
@@ -93,20 +93,30 @@
     "date": "2026-07-05",
     "tss": 14.5,
     "distance_km": 3.62,
-    "ctl": 8.8,
-    "atl": 39.3,
-    "tsb": -30.5,
+    "ctl": 6.7,
+    "atl": 28.8,
+    "tsb": -22.1,
     "readiness_score": 63,
     "recommendation_type": "easy"
   },
   {
     "date": "2026-07-06",
-    "tss": 3.3,
-    "distance_km": 7.03,
-    "ctl": 8.7,
-    "atl": 34.5,
-    "tsb": -25.8,
+    "tss": 31.3,
+    "distance_km": 26.24,
+    "ctl": 7.3,
+    "atl": 29.1,
+    "tsb": -21.8,
     "readiness_score": 68,
     "recommendation_type": "swim"
+  },
+  {
+    "date": "2026-07-07",
+    "tss": 11.5,
+    "distance_km": 15.02,
+    "ctl": 7.4,
+    "atl": 26.8,
+    "tsb": -19.4,
+    "readiness_score": 41,
+    "recommendation_type": "easy"
   }
 ]
