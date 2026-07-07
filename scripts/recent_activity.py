@@ -9,7 +9,9 @@ Used by the /update-coach skill's Step 4c to build data/coach.json's
 written to disk.
 
 Usage:
-  python3 scripts/recent_activity.py [--days N] [--zepp-dir PATH] [--today YYYY-MM-DD]
+  python3 scripts/recent_activity.py [--days N] [--since YYYY-MM-DD] [--zepp-dir PATH] [--today YYYY-MM-DD]
+
+--since, when given, is an explicit start date and overrides --days.
 """
 
 import argparse
@@ -28,10 +30,25 @@ sys.path.insert(0, _SCRIPT_DIR)
 from parse_zepp_export import build_recent_sessions
 
 
+def resolve_range(today_str, days, since=None):
+    """
+    Return (since_str, days) for the query window. An explicit `since`
+    overrides `days`; `days` is always recomputed from the actual span so
+    the reported value is accurate either way.
+    """
+    since_str = since or (
+        datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=days - 1)
+    ).strftime("%Y-%m-%d")
+    span = (datetime.strptime(today_str, "%Y-%m-%d") - datetime.strptime(since_str, "%Y-%m-%d")).days + 1
+    return since_str, span
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--days", type=int, default=7,
-                         help="Size of the trailing window, in days (default: 7)")
+                         help="Size of the trailing window, in days (default: 7). Ignored if --since is given.")
+    parser.add_argument("--since", default=None,
+                         help="Explicit start date (YYYY-MM-DD), overrides --days")
     parser.add_argument("--zepp-dir", default=DEFAULT_ZEPP_DIR,
                          help="Path to the Zepp export root (default: data/zepp)")
     parser.add_argument("--today", default=None,
@@ -39,20 +56,18 @@ def main():
     args = parser.parse_args()
 
     today_str = args.today or date.today().isoformat()
-    since_str = (
-        datetime.strptime(today_str, "%Y-%m-%d") - timedelta(days=args.days - 1)
-    ).strftime("%Y-%m-%d")
+    since_str, days = resolve_range(today_str, args.days, args.since)
 
     if not os.path.isdir(args.zepp_dir):
         print(json.dumps({
-            "since": since_str, "today": today_str, "days": args.days,
+            "since": since_str, "today": today_str, "days": days,
             "sessions": [], "no_export": True,
         }, indent=2))
         return
 
     sessions = build_recent_sessions(args.zepp_dir, since_str, today_str, ATHLETE_MAX_HR)
     print(json.dumps({
-        "since": since_str, "today": today_str, "days": args.days,
+        "since": since_str, "today": today_str, "days": days,
         "sessions": sessions, "no_export": False,
     }, indent=2))
 

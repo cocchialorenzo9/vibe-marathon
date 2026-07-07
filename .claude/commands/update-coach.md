@@ -159,6 +159,81 @@ point in both.
 This is a judgment call, not a formula — reason about it the way Step 4's
 `reasoning` field already gets reasoned about, not via a hardcoded script.
 
+## Step 4d — Update the permanent training journal
+
+Skip this step if `WATCH_SOURCE=garmin`, same reason as Step 4c.
+
+`data/training-journal.json` is a **permanent, append-only archive** — unlike
+`recentActivity` above (a rolling 7-day snapshot that gets overwritten every
+run), this file accumulates one entry per real training day for the life of
+the whole plan and is never edited or pruned by later runs. It exists so a
+session's coaching reflection is never lost just because a few days passed,
+and so it survives gaps in when `/update-coach` actually gets run.
+
+1. Read `data/training-journal.json` (create as `[]` if missing).
+2. Find the backfill range: the day after the journal's last entry, through
+   **today** (inclusive). If the journal is empty, start from the earliest
+   date present in local history (from Step 2) instead of just the last
+   week — a from-scratch run should capture everything available, not only
+   recent days.
+3. Run `python3 scripts/recent_activity.py --since <range-start>` to get
+   per-session detail across the whole range (however long — this may cover
+   weeks if the journal hasn't been updated in a while).
+4. **Cross-reference against local history** (already loaded in Step 2) for
+   every date in the range: if a date has no non-cycling session in the
+   script's output but its `distance_km`/`tss` clears **distance_km ≥ 1.5 or
+   tss ≥ 5**, archive it anyway using history's own numbers, with
+   `duration_min`/`avg_hr`/`max_hr` set to `null` and `type` noted as
+   auto-detected (e.g. `"auto-detected running"`) — the watch's step counter
+   picked up real activity even though no formal workout was started. If a
+   date is below that threshold and has no session, skip it entirely — it's
+   either a pure bike-commute day or genuinely negligible movement, not a
+   training day worth reflecting on.
+5. For each new entry, use this schema:
+
+```json
+{
+  "date": "<YYYY-MM-DD>",
+  "type": "<best-known label>",
+  "scheduled": "<training-plan.json's scheduled training.type, or null>",
+  "distance_km": <float>,
+  "duration_min": <float or null>,
+  "avg_hr": <int or null>,
+  "max_hr": <int or null>,
+  "tss": <float>,
+  "avg_pace_min_km": <float or null>,
+  "wentWell": "<specific>",
+  "wentWrong": "<specific, well-explained>",
+  "nextTime": "<concrete action, with reasoning>"
+}
+```
+
+   - `type`: the best-known label for what actually happened (use
+     `type_name` from the script when a real session exists; for
+     unmapped/generic Zepp type codes, infer the likely activity from
+     context — duration, distance, HR, and whether it falls in a plan swim
+     week — rather than printing the raw unhelpful code)
+   - `scheduled`: `data/training-plan.json`'s scheduled `training.type` for
+     that date if it falls in a plan week, else `null`
+   - `distance_km`/`duration_min`/`avg_hr`/`max_hr`/`avg_pace_min_km`/`tss`:
+     when a real non-cycling session exists, use that session's own facts
+     from the script (never the bike-commute-inclusive day total). One
+     exception: if the session's own `distance_km` is 0 due to a GPS
+     dropout but local history shows a real distance for that day (an
+     activity-fallback override, same logic already used elsewhere in this
+     pipeline), use history's corrected distance instead of the raw 0.
+   - `wentWell`, `wentWrong`, `nextTime`: a genuine, specific reflection —
+     compare against the scheduled session's intent when there is one, use
+     the ~114–142bpm easy-HR-zone reference from Step 4c for effort
+     compliance, and reference TSB/fatigue context from local history where
+     it's relevant. `wentWrong` should be honestly explained, not padded —
+     "nothing notable, executed as intended" is a fine answer when it's true
+     and you say why you think so; don't invent a problem to fill the field.
+     This is judgment, same as Step 4c's `lesson`, just one level deeper per
+     entry.
+6. Append the new entries (sorted by date) to the array and write the file
+   back. Never modify or remove existing entries — this file only grows.
+
 ## Step 5 — Write the output files
 
 Write `data/coach.json` with this exact schema. `recentActivity` is `null`
@@ -252,7 +327,7 @@ Fields deliberately omitted from `data/chart-data.json`: `hrv`, `resting_hr`, `s
 ## Step 6 — Commit and push
 
 ```bash
-git add data/coach.json data/chart-data.json data/training-plan.json
+git add data/coach.json data/chart-data.json data/training-plan.json data/training-journal.json
 git commit -m "chore: coach update $(date +%Y-%m-%d)"
 git push
 ```
