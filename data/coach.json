@@ -22,12 +22,51 @@
   },
   "recommendation": {
     "type": "rest",
-    "title": "Full rest — TSB well past the -25 line at -31.7",
-    "reasoning": "TSB is -31.7 — past the -25 'swap to easy' threshold, not just the -15 caution line. This is worse than earlier estimates: a data bug meant heart rate for tracked sessions was being read from the wrong 2-hour window, understating effort across the board (today's own run averaged 153bpm, not the 52bpm first recorded — a real, not easy, effort despite being at the right pace). Once corrected, this week's true training load (including Jul 4's ~8.5h effort and Jul 6's full swim-plus-commute day) is substantially higher than first reported. HRV is 61ms, 8% below your 66ms baseline — mild. Sleep was excellent (score 92) and resting HR is normal (43bpm). Tomorrow is already a scheduled rest day — with TSB this negative, that's the right call and arguably not enough on its own; expect Thursday's easy run to still feel heavy.",
+    "title": "Full rest — TSB still well past -25 at -31.7",
+    "reasoning": "TSB is -31.7, past the -25 'swap to easy' threshold. This week's load is real and front-loaded: Jul 4's ~8.5h effort (186.9 TSS) plus Jul 6's swim-plus-commute day (85.9 TSS) plus today's run pushed ATL to 42.6 against a CTL of only 10.9. HRV is 61ms, 8% below your 66ms baseline — mild but consistent with unresolved fatigue. Sleep was good (score 92) and resting HR is normal (43bpm). Tomorrow is already a scheduled rest day — the right call, and the numbers say it's earned, not optional.",
     "sessionDetail": "No training scheduled. Optional light walk or mobility work if you want to move, nothing structured.",
-    "bikeNote": "Easy bike both ways is fine — no session tomorrow, no reason to preserve legs.",
+    "bikeNote": "It's Saturday — no work commute to plan around. Easy bike or a walk is fine if you want to move, but there's no session to build the choice around.",
     "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 96
+  "daysToRace": 96,
+  "recentActivity": {
+    "since": "2026-07-01",
+    "sessions": [
+      {
+        "date": "2026-07-07",
+        "type": "outdoor_running",
+        "distance_km": 6.26,
+        "duration_min": 32.7,
+        "avg_hr": 153,
+        "max_hr": 167,
+        "avg_pace_min_km": 5.22,
+        "tss": 35.3,
+        "lesson": "Pace was right at the easy target (5:22/km) but avg HR of 153bpm is well above the ~114-142bpm easy zone — a tempo-effort heart rate at an easy pace, consistent with the accumulated fatigue (TSB -31.7) rather than the effort itself being wrong."
+      },
+      {
+        "date": "2026-07-06",
+        "type": "swimming",
+        "distance_km": 0.78,
+        "duration_min": 56.2,
+        "avg_hr": 112,
+        "max_hr": 131,
+        "avg_pace_min_km": null,
+        "tss": 32.5,
+        "lesson": "Swim class as scheduled, avg HR 112bpm — a normal aerobic pool effort, nothing to flag here."
+      },
+      {
+        "date": "2026-07-04",
+        "type": "untracked long effort",
+        "distance_km": 22.75,
+        "duration_min": 511.2,
+        "avg_hr": 89,
+        "max_hr": 117,
+        "avg_pace_min_km": null,
+        "tss": 186.9,
+        "lesson": "An 8.5-hour low-intensity effort (avg HR 89bpm) — the cost here was cumulative duration and calories (2251kcal), not intensity, and it's still the single biggest contributor to this week's fatigue."
+      }
+    ],
+    "analysis": "This week's TSS has been front-loaded by Jul 4's ~8.5h effort and Jul 6's swim-plus-commute day, with today's run adding real strain at an unexpectedly high HR — total load is well above what a base-phase week should carry, and TSB (-31.7) reflects that directly. Two of the three sessions this window ran hotter or heavier than they first appeared once the data was corrected, not because the training itself changed."
+  }
 }
