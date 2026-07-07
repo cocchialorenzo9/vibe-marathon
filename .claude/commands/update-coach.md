@@ -67,7 +67,12 @@ Write a recommendation with:
 - `title`: 5–8 words, direct
 - `reasoning`: 2–4 sentences referencing specific numbers (e.g. "HRV is 13% below baseline", "TSB is -18")
 - `sessionDetail`: actual workout instructions (copy/adapt from the plan)
-- `bikeNote`: advice on the 14km/day commute bike given the session
+- `bikeNote`: advice on the 14km/day commute bike given the session. **The bike
+  is all-or-nothing** — if used, it goes both directions (to work AND home);
+  never split bike one way and U-Bahn the other, the bike can't be in two
+  places. If tomorrow is a Saturday or Sunday, there's no work commute at all
+  — don't give office-commute advice; only address getting to/from a session
+  if one is scheduled (e.g. a long run's start point).
 - `swimNote`: advice on Wednesday pool session if applicable
 
 Be direct. No padding. Reference actual numbers.
@@ -76,12 +81,24 @@ Be direct. No padding. Reference actual numbers.
 
 Read `data/training-plan.json`. For each day in `weeks[].days[]` whose `date` is between **tomorrow** and **14 days from today** (inclusive), regenerate these three fields:
 
-- **`movement`**: Based on the session type and today's readiness:
-  - `swim`: "Bike to pool is fine" or "U-Bahn — legs heavy from [TSB/yesterday]"
-  - `easy`: "Bike both ways fine" unless TSB is very negative
-  - `tempo`/`long`: "U-Bahn to work" before hard sessions, "easy bike home" or U-Bahn after
+- **`movement`**: The athlete always trains before work, so movement is about
+  the round-trip work commute *after* that morning's session, never framed as
+  "before/after" the session itself. **The bike is all-or-nothing: bike both
+  ways, or U-Bahn/transit both ways — never split directions or chain a
+  bike-out with a transit-back**, since a bike left at one end can't get
+  ridden home from the other.
+
+  **On Saturdays and Sundays there is no work commute** (check the day's
+  `dayLabel` prefix) — skip office-commute framing entirely; only describe
+  transport to/from a scheduled session itself (e.g. "no cycling before the
+  long run" or "no commute today, it's the weekend").
+
+  On weekdays, based on session type and today's readiness:
+  - `swim`: "Bike both ways to the pool is fine" or "U-Bahn both ways — legs heavy from [TSB/yesterday]"
+  - `easy`: "Bike both ways fine" unless TSB is very negative, then "U-Bahn both ways"
+  - `tempo`/`long`: "Bike both ways" if legs are fresh, otherwise "U-Bahn both ways" to protect them — pick one, don't split
   - `race`: "No cycling today"
-  - Rest days: "Easy bike both ways is fine"
+  - Rest days (weekday): "Easy bike both ways is fine"
 
 - **`food`**: Based on the session type and phase:
   - Before long/tempo: high carb (pasta, rice, polenta). Reference the phase's nutrition strategy.
