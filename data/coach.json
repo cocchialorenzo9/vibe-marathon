@@ -2,11 +2,11 @@
   "date": "2026-07-07",
   "generatedFor": "2026-07-08",
   "readiness": {
-    "score": 33,
+    "score": 31,
     "hrv": {
       "value": 61,
-      "baseline": 67,
-      "delta_pct": -9
+      "baseline": 66,
+      "delta_pct": -8
     },
     "restingHR": {
       "value": 43,
@@ -16,14 +16,14 @@
       "hours": 6.0,
       "score": 92
     },
-    "tsb": -19.4,
-    "ctl": 7.4,
-    "atl": 26.8
+    "tsb": -31.7,
+    "ctl": 10.9,
+    "atl": 42.6
   },
   "recommendation": {
     "type": "rest",
-    "title": "Full rest — TSB still down at -19.4",
-    "reasoning": "TSB sits at -19.4, past the -15 caution line, mostly carried over from Monday's swim-plus-commute day (once corrected for the full ~26km covered, TSS 31.3 rather than the 3.3 first recorded). HRV is 61ms, 9% below your 67ms baseline — mild, not alarming, but consistent with unresolved fatigue. Sleep was excellent (score 92, 6.0h) and resting HR is normal at 43bpm. Tomorrow is already a scheduled rest day in week 1 — that's the right call, no changes needed.",
+    "title": "Full rest — TSB well past the -25 line at -31.7",
+    "reasoning": "TSB is -31.7 — past the -25 'swap to easy' threshold, not just the -15 caution line. This is worse than earlier estimates: a data bug meant heart rate for tracked sessions was being read from the wrong 2-hour window, understating effort across the board (today's own run averaged 153bpm, not the 52bpm first recorded — a real, not easy, effort despite being at the right pace). Once corrected, this week's true training load (including Jul 4's ~8.5h effort and Jul 6's full swim-plus-commute day) is substantially higher than first reported. HRV is 61ms, 8% below your 66ms baseline — mild. Sleep was excellent (score 92) and resting HR is normal (43bpm). Tomorrow is already a scheduled rest day — with TSB this negative, that's the right call and arguably not enough on its own; expect Thursday's easy run to still feel heavy.",
     "sessionDetail": "No training scheduled. Optional light walk or mobility work if you want to move, nothing structured.",
     "bikeNote": "Easy bike both ways is fine — no session tomorrow, no reason to preserve legs.",
     "swimNote": ""

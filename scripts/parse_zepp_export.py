@@ -11,6 +11,12 @@ import glob
 import json
 import os
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+# HEARTRATE_AUTO/HEARTRATE csv timestamps are local wall-clock time (unlike
+# SLEEP/SPORT, which carry an explicit UTC offset) — must be localized before
+# comparing against UTC windows.
+ATHLETE_TZ = ZoneInfo(os.environ.get("ATHLETE_TZ", "Europe/Berlin"))
 
 # Sport type codes observed on Amazfit Trex 3 and from Amazfit documentation
 SPORT_TYPES = {
@@ -167,9 +173,10 @@ def _hr_in_window(hr_rows, start_utc, end_utc):
     result = []
     for row in hr_rows:
         try:
-            dt = datetime.strptime(
+            local_dt = datetime.strptime(
                 f"{row['date']} {row['time']}", "%Y-%m-%d %H:%M"
-            ).replace(tzinfo=timezone.utc)
+            ).replace(tzinfo=ATHLETE_TZ)
+            dt = local_dt.astimezone(timezone.utc)
             if start_utc <= dt <= end_utc:
                 bpm = int(row["heartRate"])
                 if bpm > 0:

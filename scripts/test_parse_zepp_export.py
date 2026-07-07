@@ -68,21 +68,24 @@ def _make_export(base_dir, name="7085574765_1000000000000"):
     )
     _write_csv(
         os.path.join(export, "HEARTRATE_AUTO", "HR.csv"),
+        # "time" is local wall-clock (Europe/Berlin, UTC+2 in summer) per real Zepp
+        # exports — shifted +2h from the UTC instants these rows represent, unlike
+        # SLEEP/SPORT which carry an explicit UTC offset.
         ["date", "time", "heartRate"],
         [
-            {"date": "2026-06-29", "time": "00:30", "heartRate": 55},
-            {"date": "2026-06-29", "time": "01:00", "heartRate": 48},
-            {"date": "2026-06-29", "time": "01:30", "heartRate": 51},
-            {"date": "2026-06-29", "time": "02:00", "heartRate": 49},
-            {"date": "2026-06-29", "time": "02:30", "heartRate": 52},
-            {"date": "2026-06-29", "time": "03:00", "heartRate": 47},
-            {"date": "2026-06-29", "time": "08:50", "heartRate": 120},  # sport session
-            {"date": "2026-06-29", "time": "09:00", "heartRate": 135},
-            {"date": "2026-06-29", "time": "09:10", "heartRate": 130},
+            {"date": "2026-06-29", "time": "02:30", "heartRate": 55},
+            {"date": "2026-06-29", "time": "03:00", "heartRate": 48},
+            {"date": "2026-06-29", "time": "03:30", "heartRate": 51},
+            {"date": "2026-06-29", "time": "04:00", "heartRate": 49},
+            {"date": "2026-06-29", "time": "04:30", "heartRate": 52},
+            {"date": "2026-06-29", "time": "05:00", "heartRate": 47},
+            {"date": "2026-06-29", "time": "10:50", "heartRate": 120},  # sport session
+            {"date": "2026-06-29", "time": "11:00", "heartRate": 135},
+            {"date": "2026-06-29", "time": "11:10", "heartRate": 130},
             # yesterday's sport session HR
-            {"date": "2026-06-28", "time": "08:50", "heartRate": 145},
-            {"date": "2026-06-28", "time": "09:00", "heartRate": 150},
-            {"date": "2026-06-28", "time": "09:10", "heartRate": 148},
+            {"date": "2026-06-28", "time": "10:50", "heartRate": 145},
+            {"date": "2026-06-28", "time": "11:00", "heartRate": 150},
+            {"date": "2026-06-28", "time": "11:10", "heartRate": 148},
         ],
     )
     _write_csv(
@@ -256,11 +259,13 @@ class TestDecodeSportType(unittest.TestCase):
 
 class TestComputeActivityHr(unittest.TestCase):
     def _make_hr_rows(self):
+        # "time" is local wall-clock (Europe/Berlin, UTC+2 in summer), shifted +2h
+        # from the UTC `start` used below.
         return [
-            {"date": "2026-06-28", "time": "08:50", "heartRate": "145"},
-            {"date": "2026-06-28", "time": "09:00", "heartRate": "150"},
-            {"date": "2026-06-28", "time": "09:10", "heartRate": "148"},
-            {"date": "2026-06-28", "time": "11:00", "heartRate": "70"},  # outside window
+            {"date": "2026-06-28", "time": "10:50", "heartRate": "145"},
+            {"date": "2026-06-28", "time": "11:00", "heartRate": "150"},
+            {"date": "2026-06-28", "time": "11:10", "heartRate": "148"},
+            {"date": "2026-06-28", "time": "13:00", "heartRate": "70"},  # outside window
         ]
 
     def test_computes_avg_and_max(self):
@@ -271,7 +276,7 @@ class TestComputeActivityHr(unittest.TestCase):
 
     def test_returns_none_for_fewer_than_3_samples(self):
         start = datetime(2026, 6, 28, 8, 49, 50, tzinfo=timezone.utc)
-        rows = [{"date": "2026-06-28", "time": "08:50", "heartRate": "145"}]
+        rows = [{"date": "2026-06-28", "time": "10:50", "heartRate": "145"}]
         avg, mx = compute_activity_hr(start, 1416, rows)
         self.assertIsNone(avg)
         self.assertIsNone(mx)
