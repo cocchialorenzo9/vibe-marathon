@@ -14,7 +14,9 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from parse_zepp_export import (
+    _all_export_dirs,
     backfill_history,
+    build_recent_sessions,
     check_history_duplicate,
     compute_activity_hr,
     compute_sleep_score_proxy,
@@ -22,6 +24,7 @@ from parse_zepp_export import (
     find_latest_export,
     get_export_newest_date,
     parse_export,
+    pick_best_export_for_date,
     read_activity_fallback,
     read_all_dates,
     read_resting_hr,
@@ -40,6 +43,31 @@ def _write_csv(path, fieldnames, rows):
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         w.writerows(rows)
+
+
+def _write_sport_only_export(base_dir, name, sessions):
+    """
+    Build a minimal export directory containing only SPORT.csv (given as a
+    list of (type, startTime, sportTime_s, distance_m) tuples) and an empty
+    HEARTRATE_AUTO.csv — HR-less, so TSS falls back to the deterministic
+    distance-based formula, keeping these tests independent of HR-window math.
+    """
+    rows = [
+        {
+            "type": t, "startTime": start, "sportTime(s)": dur,
+            "maxPace(/meter)": 0, "minPace(/meter)": 0, "distance(m)": dist,
+            "avgPace(/meter)": 0, "calories(kcal)": 100,
+        }
+        for t, start, dur, dist in sessions
+    ]
+    _write_csv(
+        os.path.join(base_dir, name, "SPORT", "SPORT.csv"),
+        ["type", "startTime", "sportTime(s)", "maxPace(/meter)", "minPace(/meter)",
+         "distance(m)", "avgPace(/meter)", "calories(kcal)"],
+        rows,
+    )
+    _write_csv(os.path.join(base_dir, name, "HEARTRATE_AUTO", "HR.csv"),
+               ["date", "time", "heartRate"], [])
 
 
 def _make_export(base_dir, name="7085574765_1000000000000"):
@@ -464,6 +492,111 @@ class TestParseExport(unittest.TestCase):
             json.dump([{"date": "2026-06-29", "tss": 40}], f)
         result = parse_export(self.zepp_dir, "2026-06-29", self.history_path)
         self.assertTrue(any("already" in w.lower() for w in result["warnings"]))
+
+
+class TestAllExportDirs(unittest.TestCase):
+    def test_lists_all_timestamped_dirs(self):
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "123_1000"))
+            os.makedirs(os.path.join(d, "123_2000"))
+            self.assertEqual(len(_all_export_dirs(d)), 2)
+
+    def test_ignores_non_directory_cruft(self):
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "123_1000"))
+            open(os.path.join(d, ".DS_Store"), "w").close()
+            self.assertEqual(len(_all_export_dirs(d)), 1)
+
+    def test_returns_empty_for_missing_dir(self):
+        self.assertEqual(_all_export_dirs("/nonexistent/zepp"), [])
+
+
+class TestPickBestExportForDate(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+
+    def tearDown(self):
+        import shutil; shutil.rmtree(self.tmp)
+
+    def test_prefers_higher_total_tss_regardless_of_timestamp(self):
+        # "latest" export (higher timestamp) only caught 1 of 2 sessions that day.
+        _write_sport_only_export(self.tmp, "7085574765_2000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000)])
+        # older export synced later in the day and has both sessions.
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000),
+             (20, "2026-07-01 18:00:00+0000", 2700, 1000)])
+        sessions, best_dir = pick_best_export_for_date(self.tmp, "2026-07-01")
+        self.assertEqual(len(sessions), 2)
+        self.assertIn("1000000000000", best_dir)
+
+    def test_returns_empty_when_no_exports(self):
+        sessions, best_dir = pick_best_export_for_date(self.tmp, "2026-07-01")
+        self.assertEqual(sessions, [])
+        self.assertIsNone(best_dir)
+
+
+class TestBuildRecentSessions(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+
+    def tearDown(self):
+        import shutil; shutil.rmtree(self.tmp)
+
+    def test_multi_export_selection_picks_more_complete_one(self):
+        _write_sport_only_export(self.tmp, "7085574765_2000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000)])
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000),
+             (20, "2026-07-01 18:00:00+0000", 2700, 1000)])
+        sessions = build_recent_sessions(self.tmp, "2026-07-01", "2026-07-01")
+        self.assertEqual(len(sessions), 2)
+
+    def test_since_date_boundary_excludes_earlier_dates(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-06-29 06:00:00+0000", 1800, 5000),   # before window
+             (1, "2026-07-01 06:00:00+0000", 1800, 5000)])  # inside window
+        sessions = build_recent_sessions(self.tmp, "2026-06-30", "2026-07-01")
+        self.assertEqual(len(sessions), 1)
+        self.assertEqual(sessions[0]["date"], "2026-07-01")
+
+    def test_non_directory_entries_do_not_crash(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000)])
+        open(os.path.join(self.tmp, ".DS_Store"), "w").close()
+        sessions = build_recent_sessions(self.tmp, "2026-07-01", "2026-07-01")
+        self.assertEqual(len(sessions), 1)
+
+    def test_zero_session_day_is_absent_not_placeholder(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-07-01 06:00:00+0000", 1800, 5000)])
+        sessions = build_recent_sessions(self.tmp, "2026-06-28", "2026-07-01")
+        self.assertEqual({s["date"] for s in sessions}, {"2026-07-01"})
+        self.assertEqual(len(sessions), 1)
+
+    def test_excludes_commute_cycling_sessions(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(9, "2026-07-01 06:00:00+0000", 1800, 5000),   # outdoor_cycling — excluded
+             (1, "2026-07-01 18:00:00+0000", 1800, 5000)])  # outdoor_running — kept
+        sessions = build_recent_sessions(self.tmp, "2026-07-01", "2026-07-01")
+        self.assertEqual(len(sessions), 1)
+        self.assertEqual(sessions[0]["type_name"], "outdoor_running")
+
+    def test_cycling_only_day_is_absent(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(9, "2026-07-01 06:00:00+0000", 1800, 5000)])  # only a commute ride
+        sessions = build_recent_sessions(self.tmp, "2026-07-01", "2026-07-01")
+        self.assertEqual(sessions, [])
+
+    def test_no_export_dirs_returns_empty_list(self):
+        self.assertEqual(build_recent_sessions(self.tmp, "2026-07-01", "2026-07-01"), [])
+
+    def test_sessions_sorted_newest_first(self):
+        _write_sport_only_export(self.tmp, "7085574765_1000000000000",
+            [(1, "2026-06-30 06:00:00+0000", 1800, 5000),
+             (1, "2026-07-01 06:00:00+0000", 1800, 5000)])
+        sessions = build_recent_sessions(self.tmp, "2026-06-30", "2026-07-01")
+        self.assertEqual([s["date"] for s in sessions], ["2026-07-01", "2026-06-30"])
 
 
 if __name__ == "__main__":

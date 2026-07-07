@@ -58,6 +58,28 @@ def find_latest_export(zepp_dir):
     return max(candidates)[1] if candidates else None
 
 
+def _all_export_dirs(zepp_dir):
+    """
+    Return paths to every export subdirectory under zepp_dir, sorted ascending
+    by timestamp suffix. Same filtering as find_latest_export (os.path.isdir +
+    "<id>_<timestamp>" naming, so cruft like a .DS_Store file is skipped) but
+    returns *all* matches — the most-complete export for a given date is not
+    always the latest one (a mid-day pull can miss sessions that sync later).
+    """
+    if not os.path.isdir(zepp_dir):
+        return []
+    candidates = []
+    for entry in os.listdir(zepp_dir):
+        full = os.path.join(zepp_dir, entry)
+        if not os.path.isdir(full):
+            continue
+        parts = entry.rsplit("_", 1)
+        if len(parts) == 2 and parts[1].isdigit():
+            candidates.append((int(parts[1]), full))
+    candidates.sort()
+    return [full for _, full in candidates]
+
+
 def _find_csv(export_dir, subdir):
     """Glob for the single CSV file inside a named subdirectory."""
     files = glob.glob(os.path.join(export_dir, subdir, "*.csv"))
@@ -312,6 +334,84 @@ def _pick_primary_session(sessions):
             if s["type"] in type_set:
                 return s
     return sessions[0] if sessions else None
+
+
+# --- Recent activity (multi-export selection) ---
+
+# Cycling in this plan is always the 14km/day commute, never a training
+# session (the plan has no cycling training type) — exclude it from any
+# "activity to learn from" list.
+_COMMUTE_TYPE_NAMES = {"outdoor_cycling", "indoor_cycling"}
+
+
+def pick_best_export_for_date(zepp_dir, date_str, max_hr=DEFAULT_MAX_HR, hr_rows_cache=None):
+    """
+    Return (sessions, best_export_dir): the read_sport_sessions() result from
+    whichever export subdirectory sums to the highest total TSS for date_str —
+    a proxy for "most complete", since an export pulled mid-day can undercount
+    a day that syncs more sessions later. Includes ALL sessions (including
+    commute cycling) for this completeness comparison; filtering happens in
+    build_recent_sessions.
+
+    hr_rows_cache is an optional {export_dir: hr_rows} dict, mutated in place,
+    so repeated calls across many dates don't re-parse the same
+    HEARTRATE_AUTO CSV per export every time.
+
+    Returns ([], None) if zepp_dir has no export subdirectories.
+    """
+    exports = _all_export_dirs(zepp_dir)
+    if not exports:
+        return [], None
+    if hr_rows_cache is None:
+        hr_rows_cache = {}
+
+    best_dir, best_sessions, best_tss = None, [], -1.0
+    for export_dir in exports:
+        hr_rows = hr_rows_cache.get(export_dir)
+        if hr_rows is None:
+            hr_rows = _load_hr_rows(export_dir)
+            hr_rows_cache[export_dir] = hr_rows
+        sessions = read_sport_sessions(export_dir, date_str, hr_rows, max_hr)
+        total_tss = sum(s["tss"] or 0 for s in sessions)
+        if total_tss > best_tss:
+            best_tss, best_dir, best_sessions = total_tss, export_dir, sessions
+    return best_sessions, best_dir
+
+
+def build_recent_sessions(zepp_dir, since_date_str, today_str, max_hr=DEFAULT_MAX_HR):
+    """
+    Return a flat list of individual sport sessions (excluding commute
+    cycling — see _COMMUTE_TYPE_NAMES) for every calendar date from
+    since_date_str to today_str inclusive, newest date first. Each dict is
+    the read_sport_sessions() dict plus a "date" key.
+
+    Per date, sessions come from whichever export is most complete for that
+    date (see pick_best_export_for_date), not necessarily the same export
+    for every date in the window. A date with zero non-commute sessions
+    across all exports is simply absent — no placeholder entry.
+
+    Returns [] if zepp_dir has no export subdirectories at all.
+    """
+    if not _all_export_dirs(zepp_dir):
+        return []
+
+    hr_rows_cache = {}
+    start = datetime.strptime(since_date_str, "%Y-%m-%d")
+    end = datetime.strptime(today_str, "%Y-%m-%d")
+
+    sessions_out = []
+    d = start
+    while d <= end:
+        date_str = d.strftime("%Y-%m-%d")
+        sessions, _ = pick_best_export_for_date(zepp_dir, date_str, max_hr, hr_rows_cache)
+        for s in sessions:
+            if s["type_name"] in _COMMUTE_TYPE_NAMES:
+                continue
+            sessions_out.append({"date": date_str, **s})
+        d += timedelta(days=1)
+
+    sessions_out.sort(key=lambda s: s["date"], reverse=True)
+    return sessions_out
 
 
 # --- History duplicate check ---

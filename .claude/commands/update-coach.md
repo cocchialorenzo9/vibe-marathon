@@ -96,9 +96,57 @@ Read `data/training-plan.json`. For each day in `weeks[].days[]` whose `date` is
 
 Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged.
 
+## Step 4c — Recent activity analysis
+
+Skip this step if `WATCH_SOURCE=garmin` — multi-day per-session history isn't
+available for Garmin yet (`fetch_garmin.py` only fetches yesterday's single
+activity). Set `recentActivity` to `null` in Step 5 and mention to the user
+that recent-activity detail was skipped.
+
+Otherwise, run:
+
+```bash
+python3 scripts/recent_activity.py --days 7
+```
+
+This prints `since`/`today`/`days`/`sessions` — a flat list of **individual**
+workouts across the last 7 days, newest first (one entry per run/swim/etc.,
+not summed per day — a day with a swim class plus bike-commute legs shows the
+swim only). **Bike-commute sessions are already excluded** by the script
+(cycling in this plan is always the commute, never a training session) — if
+`sessions` is missing an expected day, check whether it was cycling-only
+before assuming something's wrong. Each session has: `date`, `type_name`
+(e.g. `outdoor_running`, `swimming`), `distance_km`, `duration_min`, `avg_hr`,
+`max_hr`, `calories`, `tss`, `avg_pace_min_km` — HR/pace fields may be `null`.
+If `no_export` is `true`, set `recentActivity` to `null` and skip the rest of
+this step.
+
+For **each session**, write a one-sentence `lesson` — a specific, concrete
+takeaway about that individual activity, not a generic comment. Reason using:
+- **HR-zone compliance**: easy/Zone 2 target is ~60–75% of max HR
+  (`ATHLETE_MAX_HR`, default 190) ≈ 114–142bpm. If a session that should have
+  been easy (check `data/training-plan.json` for that date if it falls in a
+  plan week, otherwise judge from pace/duration) shows `avg_hr` well above
+  ~142bpm, say so plainly (e.g. "pace was on target but HR was tempo-effort,
+  not easy — likely fatigue").
+- Whether pace, duration, and effort line up with what the session looks like
+  it was for.
+
+Then write one `analysis` string (1–3 sentences) for the **overall window**:
+volume/TSS trend (climbing/flat/dropping, and whether that matches the
+current phase), plus any cross-session pattern or anomaly (e.g. a stretch of
+several days with no sessions, or more than one session running hot). This is
+the macro view; `lesson` is the per-activity view — don't repeat the same
+point in both.
+
+This is a judgment call, not a formula — reason about it the way Step 4's
+`reasoning` field already gets reasoned about, not via a hardcoded script.
+
 ## Step 5 — Write the output files
 
-Write `data/coach.json` with this exact schema:
+Write `data/coach.json` with this exact schema. `recentActivity` is `null`
+when Step 4c was skipped (Garmin source, or no Zepp export found). Bike-commute
+sessions are never included in it.
 
 ```json
 {
@@ -122,7 +170,24 @@ Write `data/coach.json` with this exact schema:
     "swimNote": "<swim advice or empty string>"
   },
   "phase": "<base|build|peak|taper>",
-  "daysToRace": <int>
+  "daysToRace": <int>,
+  "recentActivity": {
+    "since": "<YYYY-MM-DD, start of the 7-day window>",
+    "sessions": [
+      {
+        "date": "<YYYY-MM-DD>",
+        "type": "<type_name, e.g. outdoor_running>",
+        "distance_km": <float>,
+        "duration_min": <float>,
+        "avg_hr": <int or null>,
+        "max_hr": <int or null>,
+        "avg_pace_min_km": <float or null>,
+        "tss": <float>,
+        "lesson": "<one-sentence takeaway from this specific activity>"
+      }
+    ],
+    "analysis": "<1-3 sentences: overall volume/TSS trend and any cross-session pattern>"
+  }
 }
 ```
 
