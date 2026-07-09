@@ -164,25 +164,6 @@ def get_export_newest_date(export_dir):
     return max(dates) if dates else None
 
 
-def compute_sleep_score_proxy(deep_min, shallow_min, rem_min, wake_min):
-    """
-    0-100 sleep quality proxy from composition.
-    Weights: deep ratio (35 pts), REM ratio (30 pts), efficiency (35 pts).
-    Returns None if total sleep is zero.
-    """
-    total = deep_min + shallow_min + rem_min
-    if total == 0:
-        return None
-    time_in_bed = total + wake_min
-    efficiency = max(0.0, (total - wake_min) / time_in_bed) if time_in_bed > 0 else 0.0
-    score = (
-        min(deep_min / total / 0.20, 1.0) * 35
-        + min(rem_min / total / 0.25, 1.0) * 30
-        + min(efficiency, 1.0) * 35
-    )
-    return max(0, min(100, round(score)))
-
-
 # --- Heart rate ---
 
 def _load_hr_rows(export_dir):
@@ -436,12 +417,9 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_H
     Returns None if the date has no meaningful data at all.
     """
     sleep = read_sleep(export_dir, date_str)
-    sleep_hours = sleep_score = resting_hr = None
+    sleep_hours = resting_hr = None
     if sleep:
         sleep_hours = round(sleep["total_min"] / 60, 1)
-        sleep_score = compute_sleep_score_proxy(
-            sleep["deep_min"], sleep["shallow_min"], sleep["rem_min"], sleep["wake_min"]
-        )
         resting_hr, _ = read_resting_hr(
             export_dir, date_str, sleep["start_utc"], sleep["stop_utc"], hr_rows
         )
@@ -478,7 +456,7 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_H
         "hrv": None,  # not in Zepp export; filled on future /update-coach runs
         "resting_hr": resting_hr,
         "sleep_hours": sleep_hours,
-        "sleep_score": sleep_score,
+        "sleep_score": None,  # export's score isn't trustworthy; filled on future /update-coach runs
     }
 
 
@@ -551,7 +529,7 @@ def parse_export(zepp_dir, target_date, history_path):
         )
 
     fields = {}
-    missing = ["hrv"]  # never in export
+    missing = ["hrv", "sleep_score"]  # hrv: never in export; sleep_score: export's proxy isn't trustworthy
 
     # Sleep for today
     sleep = read_sleep(latest, target_date)
@@ -559,11 +537,6 @@ def parse_export(zepp_dir, target_date, history_path):
         fields["sleep_hours"] = round(sleep["total_min"] / 60, 1)
         fields["deep_seconds"] = sleep["deep_min"] * 60
         fields["rem_seconds"] = sleep["rem_min"] * 60
-        score = compute_sleep_score_proxy(
-            sleep["deep_min"], sleep["shallow_min"], sleep["rem_min"], sleep["wake_min"]
-        )
-        if score is not None:
-            fields["sleep_score"] = score
         resting_hr, n_hr = read_resting_hr(
             latest, target_date, sleep["start_utc"], sleep["stop_utc"], hr_rows
         )
@@ -579,7 +552,7 @@ def parse_export(zepp_dir, target_date, history_path):
         warnings.append(
             f"No sleep data for {target_date} (watch may not have been worn last night)."
         )
-        missing += ["sleep_hours", "sleep_score", "resting_hr"]
+        missing += ["sleep_hours", "resting_hr"]
 
     # Yesterday's workout
     yesterday = (

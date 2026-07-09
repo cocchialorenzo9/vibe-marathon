@@ -2,10 +2,10 @@
   "date": "2026-07-09",
   "generatedFor": "2026-07-10",
   "readiness": {
-    "score": 54,
+    "score": 48,
     "hrv": { "value": 71, "baseline": 67, "delta_pct": 6 },
     "restingHR": { "value": 40, "trend": "normal" },
-    "sleep": { "hours": 5.8, "score": 91 },
+    "sleep": { "hours": 5.8, "score": 75 },
     "tsb": -27.1,
     "ctl": 11.6,
     "atl": 38.7
@@ -13,7 +13,7 @@
   "recommendation": {
     "type": "rest",
     "title": "Rest day — let TSB climb before Saturday's long run",
-    "reasoning": "Friday isn't a scheduled session this week — only Mon/Tue/Thu/Sat carry training in Week 1 — and that's the right call: TSB is -27.1, still past the -25 caution line from Jul 4's 22.75km untracked effort, even after two down days since. The recovery signals themselves are strong: HRV is 71ms, 6% above your 67ms baseline, sleep score is 91, and resting HR is a normal 40bpm — this is training-load fatigue (ATL 38.7 vs CTL 11.6), not poor recovery. Full rest lets TSB close some of that gap before Saturday's first long run.",
+    "reasoning": "Friday isn't a scheduled session this week — only Mon/Tue/Thu/Sat carry training in Week 1 — and that's the right call: TSB is -27.1, still past the -25 caution line from Jul 4's 22.75km untracked effort, even after two down days since. Recovery signals are mixed: HRV is 71ms, 6% above your 67ms baseline, and resting HR is a normal 40bpm, but sleep score is only 75 (from Apple Health, now the source of truth after the Zepp export's own sleep-score field turned out to be an unreliable local estimate) — decent, not great. This is mostly training-load fatigue (ATL 38.7 vs CTL 11.6) with sleep only partially helping the recovery case. Full rest lets TSB close some of that gap before Saturday's first long run.",
     "sessionDetail": "No training scheduled. Full rest — no run, no strides. An optional short walk is fine if you want to move.",
     "bikeNote": "No session to build the choice around tomorrow, but with TSB at -27 take the U-Bahn both ways for the work commute — save the legs rather than stacking the bike's aerobic load (this plan's own Week 1 note treats the 14km commute as 'extra zone 1') on top of an already deep fatigue hole, ahead of Saturday's long run.",
     "swimNote": ""

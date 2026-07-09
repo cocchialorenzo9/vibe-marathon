@@ -19,7 +19,6 @@ from parse_zepp_export import (
     build_recent_sessions,
     check_history_duplicate,
     compute_activity_hr,
-    compute_sleep_score_proxy,
     decode_sport_type,
     find_latest_export,
     get_export_newest_date,
@@ -218,26 +217,6 @@ class TestReadAllDates(unittest.TestCase):
             self.assertIn("2026-06-29", dates)
             self.assertIn("2026-06-27", dates)
             self.assertEqual(dates, sorted(dates))
-
-
-class TestComputeSleepScoreProxy(unittest.TestCase):
-    def test_zero_total_returns_none(self):
-        self.assertIsNone(compute_sleep_score_proxy(0, 0, 0, 0))
-
-    def test_good_sleep_gives_high_score(self):
-        # deep=20%, REM=25%, almost no wake → near-max
-        score = compute_sleep_score_proxy(deep_min=80, shallow_min=222, rem_min=98, wake_min=5)
-        self.assertGreater(score, 75)
-
-    def test_poor_sleep_gives_low_score(self):
-        # very little deep and REM, lots of wake
-        score = compute_sleep_score_proxy(deep_min=5, shallow_min=200, rem_min=5, wake_min=60)
-        self.assertLess(score, 50)
-
-    def test_score_clamped_0_to_100(self):
-        score = compute_sleep_score_proxy(deep_min=200, shallow_min=0, rem_min=200, wake_min=0)
-        self.assertGreaterEqual(score, 0)
-        self.assertLessEqual(score, 100)
 
 
 class TestReadRestingHr(unittest.TestCase):

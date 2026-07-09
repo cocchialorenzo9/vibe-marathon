@@ -234,12 +234,10 @@ def main():
             dm = (auto_fields.get("deep_seconds") or 0) // 60
             rm = (auto_fields.get("rem_seconds") or 0) // 60
             rhr = auto_fields.get("resting_hr")
-            sc = auto_fields.get("sleep_score")
             if sh: parts.append(f"sleep {sh}h")
             if dm: parts.append(f"deep {dm}min")
             if rm: parts.append(f"REM {rm}min")
             if rhr: parts.append(f"resting HR {rhr}bpm")
-            if sc: parts.append(f"sleep score ~{sc}")
             if auto_fields.get("yesterday_activity"):
                 a = auto_fields["yesterday_activity"]
                 parts.append(f"yesterday: {a['type']} {a['distance_km']}km")
@@ -251,17 +249,14 @@ def main():
     # --- Prompt for what's missing ---
     print("\n=== Amazfit Trex 3 — daily reading ===", file=sys.stderr)
     if "hrv" in missing_fields or not missing_fields:
-        print("Open Zepp app → Health → HRV card\n", file=sys.stderr)
+        print("Open Zepp app → Health → HRV and Sleep score cards\n", file=sys.stderr)
 
     hrv_value = _prompt_int("Last night's HRV (ms)")
+    sleep_score = _prompt_int("Last night's sleep score (0-100, from the Zepp app)")
 
     sleep_hours = auto_fields.get("sleep_hours")
     if sleep_hours is None:
         sleep_hours = _prompt_float("Sleep duration (hours, e.g. 7.5)")
-
-    sleep_score = auto_fields.get("sleep_score")
-    if sleep_score is None:
-        sleep_score = _prompt_int("Sleep score (0-100)")
 
     deep_seconds = auto_fields.get("deep_seconds")
     if deep_seconds is None:

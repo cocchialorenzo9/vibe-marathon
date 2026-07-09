@@ -8,13 +8,21 @@ Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
   - If a Zepp export is present in `data/zepp/`, the script auto-fills sleep, resting HR,
     and yesterday's activity. It will also **backfill any missed days** from the export into
     local history before running — report any backfilled dates to the user.
-  - Only HRV requires manual entry (it is not included in Zepp exports).
-  - **After backfill, check for missing HRV**: scan the local history file for any entries
-    dated **2026-06-29 or later** (when HRV tracking started) where `hrv` is `null`. If any
-    exist, ask the user in a single batched question for those dates' values (e.g. "Missing
-    HRV for Jun 30, Jul 1, Jul 2 — what were they?"). Write their answers back into the
-    matching history entries (leave an entry `null` if they don't have it) before moving to
-    Step 2, so this run's baseline and delta calculations use the corrected data.
+  - HRV and sleep score both require manual entry — HRV isn't in the Zepp export at all, and
+    the export's own sleep-score field can't be trusted (it's a locally-computed proxy from
+    deep/REM ratios that ignores total sleep duration, verified wrong against the user's real
+    Zepp app numbers), so both need the user's own numbers read off the Zepp app. Sleep hours
+    still auto-fill correctly from the export.
+  - **After backfill, check for missing HRV and sleep score**: scan the local history file for
+    any entries missing either field. `hrv` is expected `null` before **2026-06-29** (when HRV
+    tracking started) — only flag `hrv: null` for dates **on or after** that. `sleep_score` has
+    no such floor — it's been wrong since day one — so flag `sleep_score: null` for **any**
+    history entry, regardless of date. If either set is non-empty, ask the user in a single
+    batched question (e.g. "Missing HRV for Jun 30, Jul 1, Jul 2 — what were they?" and
+    separately "Missing sleep score for Jun 26–Jul 9 — what were they, from the Zepp app?").
+    Write their answers back into the matching history entries (leave an entry `null` if they
+    don't have it) before moving to Step 2, so this run's baseline and delta calculations use
+    the corrected data.
 
 - **`WATCH_SOURCE=garmin`**: run `python3 scripts/fetch_garmin.py`
   - Requires `GARMIN_EMAIL` and `GARMIN_PASSWORD`. If not set, ask the user to export them before continuing.
