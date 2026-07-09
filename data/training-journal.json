@@ -124,5 +124,33 @@
     "wentWell": "Pace was right on target — 5:22/km, essentially matching the prescribed 5:10–5:20/km range and the guidance to lean toward the slower end. Duration was close to the planned 30 minutes too.",
     "wentWrong": "Despite hitting the target pace, average HR was 153bpm — well above the ~114–142bpm easy zone, closer to a tempo/threshold effort. This wasn't obvious at first: a timezone bug in the data pipeline was reading heart-rate data from the wrong 2-hour window, initially showing an implausible 52bpm average for this run. Once fixed, the true number showed the run was substantially harder than intended, most likely because the accumulated fatigue from Jul 4–6 pushed HR up for the same pace.",
     "nextTime": "While TSB stays this negative, govern easy runs by heart rate rather than pace alone — if HR is pushing 150+ at the prescribed pace, slow down further even if that means running slower than the plan's stated range. The body currently needs more effort than usual to hold the same speed, and pace-only pacing will keep producing tempo-effort days labeled as \"easy.\""
+  },
+  {
+    "date": "2026-07-08",
+    "type": "auto-detected running",
+    "scheduled": null,
+    "distance_km": 3.73,
+    "duration_min": null,
+    "avg_hr": null,
+    "max_hr": null,
+    "tss": 14.9,
+    "avg_pace_min_km": null,
+    "wentWell": "Kept some light movement going on a day with no scheduled training — Wednesday isn't a session day in Week 1.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace to evaluate — just a step-derived distance guess (3.73km), the same tracking gap seen on several pre-training days.",
+    "nextTime": "Start a tracked workout on the watch even for casual movement, so days like this stop being invisible to the readiness and TSS math beyond a rough distance guess."
+  },
+  {
+    "date": "2026-07-09",
+    "type": "outdoor_running",
+    "scheduled": "easy",
+    "distance_km": 6.58,
+    "duration_min": 37.4,
+    "avg_hr": 147,
+    "max_hr": 163,
+    "tss": 37.3,
+    "avg_pace_min_km": 5.69,
+    "wentWell": "Showed up for the scheduled easy run + strides, and ran noticeably slower than the week's other easy efforts (5:69/km) — the right instinct given how deep TSB was running (-31.7 as of Tuesday).",
+    "wentWrong": "Even at that slower pace, avg HR still hit 147bpm — above the ~114-142bpm easy zone — showing the fatigue from Jul 4-7 hasn't fully cleared; slowing the pace alone hasn't been enough to pull HR back into zone this week.",
+    "nextTime": "With TSB still around -27 today, treat tomorrow's rest day (Friday, unscheduled in the plan) as fully protected — no impromptu extra movement — so Saturday's first long run starts from a less depleted base."
   }
 ]
