@@ -7,7 +7,7 @@
       "week": 1,
       "phase": "base",
       "label": "Jul 5–11",
-      "bikeNote": "Bike every day is fine — but 14km/day (7km each way) is already real aerobic load, treat it as extra zone 1.",
+      "bikeNote": "Bike every day is fine — 9km/day (4.5km each way) from the new apartment is a light load, well under what used to be extra zone 1 territory at the old place.",
       "swimNote": "Monday: active swim class. Use it as your weekly warm-up — improves shoulder mobility and breathing.",
       "tip": "Week 1 with Monday swim: your first run shifts to Tuesday. You have 4 total sessions — that's the maximum load for this phase.",
       "days": [
@@ -101,7 +101,7 @@
             "title": "First contact with MP",
             "detail": "40 min: 10' wu + 3×5' at marathon pace (4:15–4:20/km) + 90'' walking rec + 10' cd"
           },
-          "movement": "U-Bahn both ways today — first real MP intervals, and legs are still working off the TSB debt from last week's overextended long run. Don't add 7km on post-interval legs.",
+          "movement": "U-Bahn both ways today — first real MP intervals, and legs are still working off the TSB debt from last week's overextended long run. Don't add 4.5km on post-interval legs.",
           "food": "Good carb breakfast 1.5h before, given it's the first real MP contact. Evening: rice or pasta with protein — recovery starts at the table.",
           "bigPicture": "First real taste of marathon pace (4:15–4:20/km), about 87 days out from race day. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress. TSB should be climbing back toward neutral by now after two protected easy days, but last week's move-weekend physical load (Fri/Sun) plus Saturday's long run overrun means recovery may be running a day or two behind the original schedule — treat how this session feels as the real signal, not the calendar."
         },
@@ -159,7 +159,7 @@
             "title": "1km repeats",
             "detail": "45 min: 10' wu + 4×1km at 4:20/km + 90'' rec + 10' cd — first real quality session"
           },
-          "movement": "Bike both ways — short 14km round trip, manageable even after intervals.",
+          "movement": "Bike both ways — short 9km round trip, manageable even after intervals.",
           "food": "Carb-rich breakfast before. Post-session: protein + carbs within 30 min of finishing.",
           "bigPicture": "First 1km repeats at marathon pace, about 80 days out from race day. Each rep builds the neuromuscular memory your legs need for km 25–42. Three weeks of base behind you now, assuming this week's easy days actually stayed easy and TSB is back near neutral — take the full recovery between reps."
         },
@@ -240,7 +240,7 @@
       "phase": "build",
       "label": "Aug 2–8",
       "bikeNote": "From this week Monday = rest. Bike all other days is fine. Friday evening (before long run): easy bike, or U-Bahn if your legs are tired.",
-      "swimNote": "Swim moved to Wednesday — between Tuesday's run and Saturday's long run. Perfect: active recovery mid-week. 30–35 min of moderate crawl, no sprints. Note: if today you bike to work (14km) + bike to pool (11km) = 25km total — drink and eat well, and keep it in mind for Thursday.",
+      "swimNote": "Swim moved to Wednesday — between Tuesday's run and Saturday's long run. Perfect: active recovery mid-week. 30–35 min of moderate crawl, no sprints. Note: if today you bike to work (9km) + bike to pool (11km) = 20km total — drink and eat well, and keep it in mind for Thursday.",
       "tip": "Swim class is over — now you manage Wednesday at the pool yourself. Goal: active recovery and aerobic capacity, not performance in the water.",
       "days": [
         {
@@ -263,8 +263,8 @@
             "title": "Open swim",
             "detail": "30–35 min in the pool, aerobic pace. Continuous crawl with focus on breathing. No interval training."
           },
-          "movement": "Bike to work + bike to pool = ~25km today. Manage it consciously — eat well and hydrate.",
-          "food": "High carb day to fuel the 25km total biking + swim. Rice, pasta, or potatoes at lunch.",
+          "movement": "Bike to work + bike to pool = ~20km today. Manage it consciously — eat well and hydrate.",
+          "food": "High carb day to fuel the 20km total biking + swim. Rice, pasta, or potatoes at lunch.",
           "bigPicture": "Wednesday is now your cross-training anchor. Pool between Tuesday's run and the weekend long run is the perfect placement — active recovery without running impact."
         },
         {
@@ -285,8 +285,8 @@
       "week": 6,
       "phase": "build",
       "label": "Aug 9–15",
-      "bikeNote": "Thursday: U-Bahn both ways — 14km extra on post-session legs is too much. Friday: bike fine, but don't push.",
-      "swimNote": "Wednesday in the pool: between Tuesday's run and Thursday's intervals. The ideal time for water — recover from Tuesday and prepare legs for Thursday. Doing both work and the pool today is 25km round trip if by bike — if you want fresher legs for tomorrow's intervals, do the whole loop by U-Bahn instead.",
+      "bikeNote": "Thursday: U-Bahn both ways — even the shorter 9km round trip is extra load on post-session legs. Friday: bike fine, but don't push.",
+      "swimNote": "Wednesday in the pool: between Tuesday's run and Thursday's intervals. The ideal time for water — recover from Tuesday and prepare legs for Thursday. Doing both work and the pool today is 20km round trip if by bike — if you want fresher legs for tomorrow's intervals, do the whole loop by U-Bahn instead.",
       "tip": "15 km long run: bring gels or dates. Your gut needs training just as much as your legs — testing race nutrition in training is part of the plan.",
       "days": [
         {
@@ -309,8 +309,8 @@
             "title": "Open swim",
             "detail": "35 min, aerobic crawl. You can add 4×50m slightly faster at the end if you feel good."
           },
-          "movement": "25km round trip (work + pool) by bike, or the whole loop by U-Bahn if you'd rather save legs for Thursday's intervals — don't mix modes mid-loop.",
-          "food": "Carb-focused day. Rice or pasta at lunch — you need fuel for 25km biking plus tomorrow's hard session.",
+          "movement": "20km round trip (work + pool) by bike, or the whole loop by U-Bahn if you'd rather save legs for Thursday's intervals — don't mix modes mid-loop.",
+          "food": "Carb-focused day. Rice or pasta at lunch — you need fuel for 20km biking plus tomorrow's hard session.",
           "bigPicture": "Swimming the day before intervals is deliberate — water loosens your legs without adding running fatigue. Don't push hard in the pool today."
         },
         {
@@ -344,7 +344,7 @@
       "phase": "build",
       "label": "Aug 16–22",
       "bikeNote": "17 km long run = legs engaged. Monday return to normal cycling.",
-      "swimNote": "Wednesday: legs recovering from Tuesday, preparing for Thursday. Swimming is the perfect tool — no impact, heart working. With 25km on the bike (work + pool), this is your aerobically heaviest day of the week — manage it consciously.",
+      "swimNote": "Wednesday: legs recovering from Tuesday, preparing for Thursday. Swimming is the perfect tool — no impact, heart working. With 20km on the bike (work + pool), this is your aerobically heaviest day of the week — manage it consciously.",
       "tip": "The progression teaches your body to accelerate when already tired — exactly what happens at km 30 of a marathon.",
       "days": [
         {
@@ -367,8 +367,8 @@
             "title": "Open swim",
             "detail": "35 min aerobic. Try 200m crawl / 1' rest × 4–5 sets — builds endurance with no leg impact."
           },
-          "movement": "25km round trip by bike today, or the whole loop by U-Bahn if you want to manage the load before Thursday's hard session — pick one, don't split it.",
-          "food": "Carb-heavy day — you're biking 25km, swimming, and running hard tomorrow. Pasta or risotto for dinner.",
+          "movement": "20km round trip by bike today, or the whole loop by U-Bahn if you want to manage the load before Thursday's hard session — pick one, don't split it.",
+          "food": "Carb-heavy day — you're biking 20km, swimming, and running hard tomorrow. Pasta or risotto for dinner.",
           "bigPicture": "Aerobically your heaviest day of the week: biking, swimming, and tomorrow comes the tough session. Manage Wednesday consciously — it sets up Thursday."
         },
         {
@@ -459,8 +459,8 @@
       "week": 9,
       "phase": "build",
       "label": "Aug 30 – Sep 5",
-      "bikeNote": "Thursday: hardest session of the block. U-Bahn both ways — don't add 7km on already-stressed muscles. Friday: U-Bahn — save legs for the 100 min long run.",
-      "swimNote": "Wednesday in the pool before Thursday's hard intervals. Don't fatigue yourself — it's preparation, not training. With 25km on the bike Wednesday (work + pool), take the U-Bahn both ways Thursday — fresh legs for the 3×2km.",
+      "bikeNote": "Thursday: hardest session of the block. U-Bahn both ways — don't add 4.5km on already-stressed muscles. Friday: U-Bahn — save legs for the 100 min long run.",
+      "swimNote": "Wednesday in the pool before Thursday's hard intervals. Don't fatigue yourself — it's preparation, not training. With 20km on the bike Wednesday (work + pool), take the U-Bahn both ways Thursday — fresh legs for the 3×2km.",
       "tip": "The long run with 30 min at MP is the key session for sub-3h. You learn to run fast when already tired — exactly km 30–42.",
       "days": [
         {
@@ -483,7 +483,7 @@
             "title": "Open swim",
             "detail": "35–40 min. This week add 6×50m fast at the end — simulates the effort you'll do in Thursday's intervals."
           },
-          "movement": "25km total bike + swim. Take U-Bahn both ways Thursday to compensate.",
+          "movement": "20km total bike + swim. Take U-Bahn both ways Thursday to compensate.",
           "food": "Carb-heavy day. Pasta or risotto for dinner — you have hard intervals tomorrow.",
           "bigPicture": "Wednesday prep for Thursday's hardest session yet. Don't go all-out in the pool — it's priming, not training. 6×50m fast at the end wakes up your anaerobic system."
         },
@@ -518,7 +518,7 @@
       "phase": "peak",
       "label": "Sep 6–12",
       "bikeNote": "Peak phase: daily bike fine but ONLY easy pace. Thursday: U-Bahn both ways — legs are needed for the intervals.",
-      "swimNote": "Wednesday: swimming as active recovery between Tuesday and Thursday. 35 min max, nothing fast. Goal: loosen legs, don't add fatigue. Peak Phase: 25km on the bike (work + pool) is too much before Thursday's intervals — do the whole work+pool loop by U-Bahn instead if you want fresher legs.",
+      "swimNote": "Wednesday: swimming as active recovery between Tuesday and Thursday. 35 min max, nothing fast. Goal: loosen legs, don't add fatigue. Peak Phase: 20km on the bike (work + pool) still adds up before Thursday's intervals — do the whole work+pool loop by U-Bahn instead if you want fresher legs.",
       "tip": "Peak phase: if you feel unusual pain, don't ignore it. One rest day now is worth 2 weeks of downtime later. Sub-3h is built by staying healthy.",
       "days": [
         {
@@ -541,7 +541,7 @@
             "title": "Swim — active recovery",
             "detail": "35 min aerobic crawl. Peak phase: swimming is now primarily recovery, not additional training."
           },
-          "movement": "25km round trip (work + pool) by bike, or the whole loop by U-Bahn to manage fatigue before Thursday — pick one, don't mix modes mid-loop.",
+          "movement": "20km round trip (work + pool) by bike, or the whole loop by U-Bahn to manage fatigue before Thursday — pick one, don't mix modes mid-loop.",
           "food": "Carb-focused day. Peak phase means your energy needs are at their highest.",
           "bigPicture": "Swimming in Peak phase is recovery, not training. 35 minutes of easy crawl loosens legs without adding stress before Thursday's long tempo."
         },
@@ -576,7 +576,7 @@
       "phase": "peak",
       "label": "Sep 13–19",
       "bikeNote": "Hardest week of the plan. Thursday: U-Bahn BOTH ways — the 3×3km needs completely fresh legs, no bike today. Monday: easy bike to loosen up.",
-      "swimNote": "Wednesday between the hardest sessions. LIGHT swim — 30 min max, easy crawl. No extra efforts in the water this week. Hardest week of the plan: U-Bahn round-trip for work Wednesday, and separately bike round-trip to the pool (or do both round-trips the same way if you prefer) — don't do 25km today.",
+      "swimNote": "Wednesday between the hardest sessions. LIGHT swim — 30 min max, easy crawl. No extra efforts in the water this week. Hardest week of the plan: U-Bahn round-trip for work Wednesday, and separately bike round-trip to the pool (or do both round-trips the same way if you prefer) — don't do 20km today.",
       "tip": "22–23 km is your training maximum. You don't need more: the marathon is completed through 15 weeks of work, not one single session.",
       "days": [
         {
@@ -599,7 +599,7 @@
             "title": "Swim — active recovery",
             "detail": "30–35 min light swim. Legs heavy from Tuesday? Water is your best friend today."
           },
-          "movement": "U-Bahn round-trip for work, and separately bike round-trip to the pool — max 11km cycling today. No 25km.",
+          "movement": "U-Bahn round-trip for work, and separately bike round-trip to the pool — max 11km cycling today. No 20km.",
           "food": "High carb day. Pasta for dinner — tomorrow is the hardest session of the plan.",
           "bigPicture": "Light swim before the hardest session of the year. 30 minutes of easy crawl — no more. Tomorrow you need 100% of your legs for 3×3km."
         },
@@ -634,7 +634,7 @@
       "phase": "peak",
       "label": "Sep 20–26",
       "bikeNote": "Post-peak recovery week: daily bike is fine and very beneficial. Helps keep circulation going and loosen legs after the 22 km.",
-      "swimNote": "Wednesday: swimming as therapy. You can spend just 20 min in the water. The goal is to come out feeling lighter than when you went in. Post-peak recovery week: 25km on the bike today is ok — running load is reduced.",
+      "swimNote": "Wednesday: swimming as therapy. You can spend just 20 min in the water. The goal is to come out feeling lighter than when you went in. Post-peak recovery week: 20km on the bike today is ok — running load is reduced.",
       "tip": "Third recovery week. The body is consolidating the 22 km and 3km repeats. You may feel 'out of shape' — it's a feeling, not reality.",
       "days": [
         {
@@ -657,7 +657,7 @@
             "title": "Swim — unload",
             "detail": "30 min relaxed swimming. Backstroke, floating, whatever feels good. Pure recovery."
           },
-          "movement": "25km biking today is fine — running load is reduced this week",
+          "movement": "20km biking today is fine — running load is reduced this week",
           "food": "Normal balanced day",
           "bigPicture": "20–30 minutes of water therapy. Backstroke, easy crawl, floating. Come out feeling lighter. Pure recovery, no training goal."
         },
@@ -691,8 +691,8 @@
       "week": 13,
       "phase": "peak",
       "label": "Sep 27 – Oct 3",
-      "bikeNote": "Thursday (3×10' at 4:16/km): U-Bahn BOTH ways — this is the definitive proof you can run sub-3h, legs fresh at 100%. Friday: bike fine (7km one way). Saturday before long run: U-Bahn.",
-      "swimNote": "Wednesday: last 'serious' swim session. From here on, swim only if you feel like it — taper starts in a few days. Thursday you have 3×10' at 4:16/km: don't do 25km on the bike Wednesday — U-Bahn round-trip for work, and separately bike round-trip to pool (11km).",
+      "bikeNote": "Thursday (3×10' at 4:16/km): U-Bahn BOTH ways — this is the definitive proof you can run sub-3h, legs fresh at 100%. Friday: bike fine (4.5km one way). Saturday before long run: U-Bahn.",
+      "swimNote": "Wednesday: last 'serious' swim session. From here on, swim only if you feel like it — taper starts in a few days. Thursday you have 3×10' at 4:16/km: don't do 20km on the bike Wednesday — U-Bahn round-trip for work, and separately bike round-trip to pool (11km).",
       "tip": "The 3×10' at exactly 4:16/km give you definitive proof: you have the fitness for sub-3h. From here, protect the work you've done.",
       "days": [
         {
@@ -715,7 +715,7 @@
             "title": "Swim — last serious session",
             "detail": "35 min. Last time swimming counts as training. After this, recovery only."
           },
-          "movement": "U-Bahn round-trip for work, and separately bike round-trip to pool (11km). No 25km today before Thursday's race simulation.",
+          "movement": "U-Bahn round-trip for work, and separately bike round-trip to pool (11km). No 20km today before Thursday's race simulation.",
           "food": "Carb-load today and tomorrow — Thursday is your final proof session.",
           "bigPicture": "Last serious swim session. After today, pool is optional recovery only. Enjoy the routine — taper starts in days."
         },
