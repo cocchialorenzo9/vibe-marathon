@@ -152,5 +152,47 @@
     "wentWell": "Showed up for the scheduled easy run + strides, and ran noticeably slower than the week's other easy efforts (5:69/km) — the right instinct given how deep TSB was running (-31.7 as of Tuesday).",
     "wentWrong": "Even at that slower pace, avg HR still hit 147bpm — above the ~114-142bpm easy zone — showing the fatigue from Jul 4-7 hasn't fully cleared; slowing the pace alone hasn't been enough to pull HR back into zone this week.",
     "nextTime": "With TSB still around -27 today, treat tomorrow's rest day (Friday, unscheduled in the plan) as fully protected — no impromptu extra movement — so Saturday's first long run starts from a less depleted base."
+  },
+  {
+    "date": "2026-07-10",
+    "type": "auto-detected running",
+    "scheduled": null,
+    "distance_km": 11.54,
+    "duration_min": null,
+    "avg_hr": null,
+    "max_hr": null,
+    "tss": 46.2,
+    "avg_pace_min_km": null,
+    "wentWell": "Kept moving with meaningful volume (11.54km) on an unscheduled day.",
+    "wentWrong": "This is exactly the impromptu extra movement Jul 9's own nextTime note warned against — Friday was supposed to be a fully protected rest day heading into Saturday's long run, with TSB already around -28. No workout was started either, so there's no HR or pace data to evaluate the effort.",
+    "nextTime": "Actually protect the unscheduled rest day next time TSB is this deep, instead of logging it after the fact as a lesson not applied — this day's load likely fed directly into Saturday running hotter than planned."
+  },
+  {
+    "date": "2026-07-11",
+    "type": "outdoor_running",
+    "scheduled": "long",
+    "distance_km": 12.45,
+    "duration_min": 70.1,
+    "avg_hr": 154,
+    "max_hr": 163,
+    "tss": 76.8,
+    "avg_pace_min_km": 5.63,
+    "wentWell": "Pace (5:63/km) landed close to the prescribed 5:10-5:20/km range, only slightly slower — reasonable given the accumulated fatigue.",
+    "wentWrong": "Duration and distance ran well past the plan: 70.1 minutes and 12.45km against a prescribed 45 minutes / ~8km, roughly 55% more volume than scheduled. avg_hr 154 also sits well above the ~114-142bpm easy zone, more like tempo effort — on top of Friday's unplanned extra running, this pushed an already-deep fatigue hole (TSB around -28 that morning) deeper still.",
+    "nextTime": "When TSB is this negative, hold the long run to its prescribed duration rather than extending it — the extra 25 minutes at an elevated HR added avoidable load right before Sunday's own unplanned activity."
+  },
+  {
+    "date": "2026-07-12",
+    "type": "auto-detected running (activity type unmapped by device)",
+    "scheduled": null,
+    "distance_km": 11.38,
+    "duration_min": 54.9,
+    "avg_hr": 116,
+    "max_hr": 139,
+    "tss": 34.1,
+    "avg_pace_min_km": null,
+    "wentWell": "avg_hr of 116bpm sits right at the low end of the easy zone — a genuinely recovery-paced effort the day after Saturday's hot long run.",
+    "wentWrong": "The device logged this under an unmapped generic activity type with 0km GPS distance; only the local step-count history revealed the real ~11.38km covered. The implied pace from that distance and duration (roughly 4:50/km) looks fast for a 116bpm average, so either the activity type is mislabeled or it wasn't one continuous running effort.",
+    "nextTime": "Start a proper GPS-tracked run on the watch instead of letting the device fall back to an unmapped activity type — otherwise distance and pace keep needing to be reconstructed from step counts after the fact, same recurring gap as several days in June."
   }
 ]

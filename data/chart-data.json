@@ -138,5 +138,45 @@
     "tsb": -27.1,
     "readiness_score": 54,
     "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-07-10",
+    "tss": 46.2,
+    "distance_km": 11.54,
+    "ctl": 12.52,
+    "atl": 40.69,
+    "tsb": -28.17,
+    "readiness_score": 59,
+    "recommendation_type": "rest"
+  },
+  {
+    "date": "2026-07-11",
+    "tss": 76.8,
+    "distance_km": 14.11,
+    "ctl": 14.05,
+    "atl": 45.85,
+    "tsb": -31.8,
+    "readiness_score": 35,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-07-12",
+    "tss": 34.1,
+    "distance_km": 11.38,
+    "ctl": 14.53,
+    "atl": 44.17,
+    "tsb": -29.64,
+    "readiness_score": 36,
+    "recommendation_type": "rest"
+  },
+  {
+    "date": "2026-07-13",
+    "tss": 4.9,
+    "distance_km": 1.23,
+    "ctl": 14.3,
+    "atl": 38.56,
+    "tsb": -24.26,
+    "readiness_score": 52,
+    "recommendation_type": "swim"
   }
 ]
