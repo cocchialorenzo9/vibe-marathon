@@ -13,9 +13,9 @@
   "recommendation": {
     "type": "easy",
     "title": "Easy run as planned — watch HR, not pace",
-    "reasoning": "TSB is -24.3, just above the -25 swap threshold, after an unplanned run on what should've been a protected rest day (Friday) and Saturday's long run overrunning its prescription by roughly 55%. HRV is actually 15% above the 65ms baseline and sleep score is 88 (8.1h) — both strong recovery signals — and the device's own readiness score (59) sits in the same moderate range as this assessment. Tomorrow's scheduled easy run is the right call as-is, but three of the last four tracked sessions ran at tempo-effort HR (147-154bpm) despite hitting target pace, so effort discipline matters more than the pace window right now.",
+    "reasoning": "TSB is -24.3, just above the -25 swap threshold, after a weekend spent moving apartments (loading/unloading a truck, carrying furniture up and down stairs on both Friday and Sunday) plus Saturday's long run overrunning its prescription by roughly 55%. HRV is actually 15% above the 65ms baseline and sleep score is 88 (8.1h) — both strong recovery signals — and the device's own readiness score (59) sits in the same moderate range as this assessment. Tomorrow's scheduled easy run is the right call as-is, but three of the last four tracked running sessions ran at tempo-effort HR (147-154bpm) despite hitting target pace, so effort discipline matters more than the pace window right now.",
     "sessionDetail": "35 min at aerobic pace (5:00–5:15/km). If HR pushes past ~142bpm at that pace, slow down further — the priority is genuine easy effort, not the stated pace range.",
-    "bikeNote": "U-Bahn both ways — TSB is deep negative enough (-24.3) to protect the legs even on an easy day, given how the last two unscheduled/overrun sessions already added avoidable load this week.",
+    "bikeNote": "U-Bahn both ways — TSB is deep negative enough (-24.3) to protect the legs even on an easy day, given the physical toll of the apartment move (Fri/Sun) plus Saturday's long run overrunning its prescription.",
     "swimNote": ""
   },
   "phase": "base",
@@ -32,7 +32,7 @@
         "max_hr": 139,
         "avg_pace_min_km": null,
         "tss": 34.1,
-        "lesson": "avg HR of 116bpm sat right at the low end of the easy zone the day after Saturday's hard long run — a genuinely appropriate recovery effort, even though the device mislabeled the activity type and distance had to be corrected from step-count history."
+        "lesson": "This wasn't a recovery run — it was apartment-move labor (loading/carrying furniture, stairs), which is why the device logged it under an unmapped activity type with 0km GPS distance; step-count history put the real distance at 11.38km. avg HR of 116bpm reflects sustained physical exertion from the move, not deliberate easy pacing."
       },
       {
         "date": "2026-07-11",
@@ -68,6 +68,6 @@
         "lesson": "Pace 5:22/km matched the prescribed range, but avg HR 153bpm was well above the easy zone — a tempo-effort day mislabeled as easy, most likely from accumulated fatigue."
       }
     ],
-    "analysis": "TSS climbed through the week and spiked hard on Saturday's long run (76.8, nearly double any other day), consistent with a base-phase week building volume — but three of the four tracked sessions (Jul 7, 9, 11) show HR well above the prescribed easy zone despite on-target pacing, a recurring sign that accumulated fatigue (TSB -25 to -32 most of the week) is pushing 'easy' efforts into tempo territory."
+    "analysis": "TSS climbed through the week and spiked hard on Saturday's long run (76.8, nearly double any other day), consistent with a base-phase week building volume — but three of the four tracked running sessions (Jul 7, 9, 11) show HR well above the prescribed easy zone despite on-target pacing, a recurring sign that accumulated fatigue (TSB -25 to -32 most of the week) is pushing 'easy' efforts into tempo territory. Worth noting Jul 12's tracked activity was apartment-move labor, not a run — the weekend move likely compounds the fatigue picture beyond what running TSS alone shows."
   }
 }
