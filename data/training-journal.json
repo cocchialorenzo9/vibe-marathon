@@ -194,5 +194,33 @@
     "wentWell": "The device did track a real session here (54.9min, avg_hr 116bpm, max 139bpm are genuine readings, not step-count guesses) even though it logged under an unmapped generic activity type — sustained, moderate physical exertion the second straight day of moving, the day after Saturday's hard long run.",
     "wentWrong": "The device has no 'manual labor/moving' sport type, so it fell back to an unmapped generic code with 0km GPS distance; the local step-count history corrected that to ~11.38km covered while carrying boxes and furniture. More importantly: this is two straight days (Fri+Sun) of real physical load from the move stacked on top of Saturday's overextended long run — a much bigger fatigue weekend than the running data alone would suggest.",
     "nextTime": "For a move like this, expect the watch to mislabel or undercount the activity — cross-check step-count distance/TSS manually rather than trusting the raw session type, and treat the days right after a move weekend as needing extra recovery margin, same as after a big training block."
+  },
+  {
+    "date": "2026-07-13",
+    "type": "swim",
+    "scheduled": "swim",
+    "distance_km": 1.43,
+    "duration_min": 63.6,
+    "avg_hr": 111,
+    "max_hr": 141,
+    "tss": 36.2,
+    "avg_pace_min_km": null,
+    "wentWell": "Stayed genuinely low-effort — avg_hr 111bpm is comfortably easy, well inside the 'don't push, active recovery' instruction for this swim class, and the session ran the full 63.6 minutes.",
+    "wentWrong": "Nothing notable on the training side — executed as intended. The device's own avg_pace_min_km (44.63) is a meaningless artifact of applying a running-pace formula to pool distance, not a real reflection of effort; it's reported here as null instead.",
+    "nextTime": "None needed for this session — ignore avg_pace_min_km for swim entries going forward, it doesn't mean anything for pool distance."
+  },
+  {
+    "date": "2026-07-14",
+    "type": "outdoor_running",
+    "scheduled": "easy",
+    "distance_km": 6.06,
+    "duration_min": 35.8,
+    "avg_hr": 139,
+    "max_hr": 148,
+    "tss": 31.9,
+    "avg_pace_min_km": 5.91,
+    "wentWell": "Duration matched the prescription almost exactly (35.8 vs 35 min), and avg_hr 139 stayed just inside the ~114-142bpm easy ceiling despite this week's fatigue.",
+    "wentWrong": "Pace (5:91/km) ran noticeably slower than the prescribed 5:00-5:15/km range, and HR was still riding the top of the easy zone at that slower pace — the same fatigue signature already flagged on Jul 9 and Jul 11, with TSB sitting at -22.9 today.",
+    "nextTime": "Keep pacing by feel/HR rather than the stated pace range while TSB stays this negative — a slower easy run that stays HR-in-zone is doing its job even when it misses the pace target on paper."
   }
 ]
