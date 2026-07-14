@@ -124,21 +124,9 @@
       "phase": "base",
       "label": "Jul 19–25",
       "bikeNote": "Thursday morning: easy bike to the office. Evening after intervals: bike home is fine, helps active leg recovery.",
-      "swimNote": "Monday swim: Thursday's intervals may leave your legs heavy. The water loosens them up — easy crawl.",
+      "swimNote": "Swim class ended last Monday (Jul 13) — no more Monday class. Starting this week, open swim moves to Wednesday: self-managed, 30–35 min aerobic pace between Tuesday's run and Thursday's intervals.",
       "tip": "1km repeats build muscular memory at marathon pace. Take the full recovery: it's not weakness, it's correctness.",
       "days": [
-        {
-          "date": "2026-07-20",
-          "dayLabel": "Mon 20",
-          "training": {
-            "type": "swim",
-            "title": "Swim class",
-            "detail": "Swim class — last or second-to-last week. Enjoy the technical work."
-          },
-          "movement": "Bike both ways to the pool is fine — active recovery, legs should have absorbed Saturday's long run by now.",
-          "food": "Normal balanced day, focus on hydration.",
-          "bigPicture": "Week 3 of base begins with the usual Monday swim — active recovery after the weekend long run, keeping the aerobic engine warm without loading the legs. Base phase is over halfway done; mileage and effort have been trending up steadily (8→10km long runs, first MP contact) heading toward August's build phase, assuming last week's fatigue debt from Jul 11's overextended long run has cleared by now."
-        },
         {
           "date": "2026-07-21",
           "dayLabel": "Tue 21",
@@ -150,6 +138,18 @@
           "movement": "Bike both ways fine — TSB should be back near neutral by now if the week's easy days stayed genuinely easy.",
           "food": "Normal balanced day",
           "bigPicture": "Easy aerobic run. These mid-week easy runs are the backbone of the plan — keep them genuinely easy, especially after last week's pattern of easy days running at tempo-effort HR despite on-target pace. Three weeks into base without a miss, the aerobic engine is quietly getting bigger."
+        },
+        {
+          "date": "2026-07-22",
+          "dayLabel": "Wed 22",
+          "training": {
+            "type": "swim",
+            "title": "Open swim",
+            "detail": "30–35 min in the pool, aerobic pace. Continuous crawl with focus on breathing. No interval training."
+          },
+          "movement": "Bike both ways to the pool is fine — first self-managed session now that the class has ended.",
+          "food": "Normal balanced day.",
+          "bigPicture": "First self-managed open swim, two weeks earlier than planned since the class wrapped up last Monday. Placed between Tuesday's easy run and Thursday's 1km repeats — active recovery without running impact, same role Monday's swim used to play."
         },
         {
           "date": "2026-07-23",
@@ -182,21 +182,9 @@
       "phase": "base",
       "label": "Jul 26 – Aug 1",
       "bikeNote": "Recovery week: daily bike is fine, actually helpful. But no efforts on the bike — no hills, no fast pace. Take the U-Bahn if it rains.",
-      "swimNote": "Swim class ends. From August switch to open swim 1x/week — ideally Wednesday (see next phase).",
+      "swimNote": "Open swim continues on Wednesday — recovery week, so keep it light and easy, same as the running sessions.",
       "tip": "Recovery week: never skip it. The body adapts during rest. Higdon calls it the 'invisible' week — the most important one.",
       "days": [
-        {
-          "date": "2026-07-27",
-          "dayLabel": "Mon 27",
-          "training": {
-            "type": "swim",
-            "title": "Swim class (last?)",
-            "detail": "Probably the last week of the class — enjoy it and consider signing up for open swim."
-          },
-          "movement": "Easy bike to pool — recovery week starts, no restrictions.",
-          "food": "Normal day — recovery week means eating normally, not less",
-          "bigPicture": "Recovery week begins — the fourth and final week of base phase. Possibly your last Monday swim class before switching to Wednesday open swim in build phase. Three solid weeks of base building (assuming the early fatigue debt from the Jul 11 overrun is now fully cleared) get consolidated this week before build phase ramps volume from August."
-        },
         {
           "date": "2026-07-28",
           "dayLabel": "Tue 28",
@@ -208,6 +196,18 @@
           "movement": "Bike both ways fine — very easy run, no leg stress",
           "food": "Normal balanced day",
           "bigPicture": "Recovery run — slower than feels necessary, which is exactly right. The body is consolidating 3 weeks of base building."
+        },
+        {
+          "date": "2026-07-29",
+          "dayLabel": "Wed 29",
+          "training": {
+            "type": "swim",
+            "title": "Open swim",
+            "detail": "25–30 min easy pool, recovery week — don't push, just move."
+          },
+          "movement": "Easy bike to pool — recovery week, no restrictions.",
+          "food": "Normal day — recovery week means eating normally, not less.",
+          "bigPicture": "Second self-managed open swim, kept light for recovery week. Same Wednesday slot that will carry into build phase from next week."
         },
         {
           "date": "2026-07-30",
@@ -239,9 +239,9 @@
       "week": 5,
       "phase": "build",
       "label": "Aug 2–8",
-      "bikeNote": "From this week Monday = rest. Bike all other days is fine. Friday evening (before long run): easy bike, or U-Bahn if your legs are tired.",
-      "swimNote": "Swim moved to Wednesday — between Tuesday's run and Saturday's long run. Perfect: active recovery mid-week. 30–35 min of moderate crawl, no sprints. Note: if today you bike to work (9km) + bike to pool (11km) = 20km total — drink and eat well, and keep it in mind for Thursday.",
-      "tip": "Swim class is over — now you manage Wednesday at the pool yourself. Goal: active recovery and aerobic capacity, not performance in the water.",
+      "bikeNote": "Monday stays a rest day, as it has since week 3. Bike all other days is fine. Friday evening (before long run): easy bike, or U-Bahn if your legs are tired.",
+      "swimNote": "Wednesday open swim continues — between Tuesday's run and Saturday's long run. 30–35 min of moderate crawl, no sprints. Note: if today you bike to work (9km) + bike to pool (11km) = 20km total — drink and eat well, and keep it in mind for Thursday.",
+      "tip": "You've been managing Wednesday at the pool yourself for two weeks now. Goal stays the same: active recovery and aerobic capacity, not performance in the water.",
       "days": [
         {
           "date": "2026-08-04",
@@ -265,7 +265,7 @@
           },
           "movement": "Bike to work + bike to pool = ~20km today. Manage it consciously — eat well and hydrate.",
           "food": "High carb day to fuel the 20km total biking + swim. Rice, pasta, or potatoes at lunch.",
-          "bigPicture": "Wednesday is now your cross-training anchor. Pool between Tuesday's run and the weekend long run is the perfect placement — active recovery without running impact."
+          "bigPicture": "Wednesday remains your cross-training anchor, same as the last two weeks. Pool between Tuesday's run and the weekend long run is the perfect placement — active recovery without running impact."
         },
         {
           "date": "2026-08-08",
