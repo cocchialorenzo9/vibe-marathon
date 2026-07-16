@@ -19,6 +19,7 @@ from parse_zepp_export import (
     build_recent_sessions,
     check_history_duplicate,
     compute_activity_hr,
+    compute_hr_curve,
     decode_sport_type,
     find_latest_export,
     get_export_newest_date,
@@ -289,6 +290,35 @@ class TestComputeActivityHr(unittest.TestCase):
         self.assertIsNone(mx)
 
 
+class TestComputeHrCurve(unittest.TestCase):
+    def _make_hr_rows(self):
+        # "time" is local wall-clock (Europe/Berlin, UTC+2 in summer), shifted
+        # +2h from the UTC `start` used below.
+        return [
+            {"date": "2026-06-28", "time": "10:50", "heartRate": "145"},
+            {"date": "2026-06-28", "time": "11:00", "heartRate": "150"},
+            {"date": "2026-06-28", "time": "11:10", "heartRate": "148"},
+            {"date": "2026-06-28", "time": "13:00", "heartRate": "70"},  # outside window
+        ]
+
+    def test_returns_sorted_t_min_hr_dicts(self):
+        start = datetime(2026, 6, 28, 8, 49, 50, tzinfo=timezone.utc)
+        curve = compute_hr_curve(start, 1416, self._make_hr_rows())
+        self.assertEqual([c["hr"] for c in curve], [145, 150, 148])
+        self.assertEqual(curve[0]["t_min"], 0)
+        self.assertTrue(all(c["t_min"] >= 0 for c in curve))
+
+    def test_returns_empty_for_fewer_than_3_samples(self):
+        start = datetime(2026, 6, 28, 8, 49, 50, tzinfo=timezone.utc)
+        rows = [{"date": "2026-06-28", "time": "10:50", "heartRate": "145"}]
+        self.assertEqual(compute_hr_curve(start, 1416, rows), [])
+
+    def test_excludes_samples_outside_window(self):
+        start = datetime(2026, 6, 28, 8, 49, 50, tzinfo=timezone.utc)
+        curve = compute_hr_curve(start, 1416, self._make_hr_rows())
+        self.assertNotIn(70, [c["hr"] for c in curve])
+
+
 class TestReadSportSessions(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
@@ -319,6 +349,12 @@ class TestReadSportSessions(unittest.TestCase):
         sessions = read_sport_sessions(self.export, "2026-06-28")
         self.assertIsNotNone(sessions[0]["tss"])
         self.assertGreater(sessions[0]["tss"], 0)
+
+    def test_hr_curve_present_and_populated(self):
+        # Same session window/HR rows as TestComputeActivityHr's fixture —
+        # 3 samples fall inside it, so the curve should be non-empty.
+        sessions = read_sport_sessions(self.export, "2026-06-28")
+        self.assertEqual([c["hr"] for c in sessions[0]["hr_curve"]], [145, 150, 148])
 
 
 class TestReadActivityFallback(unittest.TestCase):

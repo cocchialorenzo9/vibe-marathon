@@ -171,8 +171,12 @@ def _load_hr_rows(export_dir):
     return _read_csv(_find_csv(export_dir, "HEARTRATE_AUTO"))
 
 
-def _hr_in_window(hr_rows, start_utc, end_utc):
-    """Filter HEARTRATE_AUTO rows to a UTC window. Returns list of int bpm."""
+def _hr_samples_in_window(hr_rows, start_utc, end_utc):
+    """
+    Filter HEARTRATE_AUTO rows to a UTC window, localizing each row's
+    date+time (ATHLETE_TZ wall-clock) before comparing. Returns
+    (utc_datetime, bpm) tuples, sorted ascending, for bpm > 0.
+    """
     result = []
     for row in hr_rows:
         try:
@@ -183,10 +187,16 @@ def _hr_in_window(hr_rows, start_utc, end_utc):
             if start_utc <= dt <= end_utc:
                 bpm = int(row["heartRate"])
                 if bpm > 0:
-                    result.append(bpm)
+                    result.append((dt, bpm))
         except (ValueError, KeyError):
             continue
+    result.sort(key=lambda pair: pair[0])
     return result
+
+
+def _hr_in_window(hr_rows, start_utc, end_utc):
+    """Filter HEARTRATE_AUTO rows to a UTC window. Returns list of int bpm."""
+    return [bpm for _, bpm in _hr_samples_in_window(hr_rows, start_utc, end_utc)]
 
 
 def read_resting_hr(export_dir, date_str, sleep_start_utc, sleep_stop_utc, hr_rows=None):
@@ -230,6 +240,27 @@ def compute_activity_hr(sport_start_utc, sport_duration_s, hr_rows):
     return round(sum(values) / len(values)), max(values)
 
 
+def compute_hr_curve(sport_start_utc, sport_duration_s, hr_rows):
+    """
+    Build a coarse per-minute HR curve from HEARTRATE_AUTO during a sport
+    session, surfacing internal structure (interval reps, cardiac drift,
+    negative/positive splits) a single avg/max blend hides. Same window and
+    same "fewer than 3 samples" threshold as compute_activity_hr.
+
+    Returns a list of {"t_min": <int, minutes elapsed since session start>,
+    "hr": <int bpm>} dicts, sorted ascending. Returns [] if fewer than 3
+    samples found.
+    """
+    end_utc = sport_start_utc + timedelta(seconds=sport_duration_s)
+    samples = _hr_samples_in_window(hr_rows, sport_start_utc, end_utc)
+    if len(samples) < 3:
+        return []
+    return [
+        {"t_min": round((dt - sport_start_utc).total_seconds() / 60), "hr": bpm}
+        for dt, bpm in samples
+    ]
+
+
 def _compute_tss(duration_min, avg_hr, max_hr):
     """TSS ≈ (duration_h) × (avg_hr / max_hr)² × 100."""
     if avg_hr and max_hr and avg_hr > 0 and max_hr > 0:
@@ -253,7 +284,7 @@ def read_sport_sessions(export_dir, date_str, hr_rows=None, max_hr=DEFAULT_MAX_H
     """
     Return list of sport session dicts for sessions starting on date_str.
     Each dict: type, type_name, distance_km, duration_min, avg_hr, max_hr,
-               calories, tss, avg_pace_min_km
+               calories, tss, avg_pace_min_km, hr_curve
     """
     if hr_rows is None:
         hr_rows = _load_hr_rows(export_dir)
@@ -275,6 +306,7 @@ def read_sport_sessions(export_dir, date_str, hr_rows=None, max_hr=DEFAULT_MAX_H
         calories = round(float(row.get("calories(kcal)", 0) or 0))
 
         avg_hr, sess_max_hr = compute_activity_hr(start_utc, duration_s, hr_rows)
+        hr_curve = compute_hr_curve(start_utc, duration_s, hr_rows)
         tss = _compute_tss(duration_min, avg_hr, max_hr) or _fallback_tss(type_code, distance_m, duration_min)
 
         sessions.append({
@@ -287,6 +319,7 @@ def read_sport_sessions(export_dir, date_str, hr_rows=None, max_hr=DEFAULT_MAX_H
             "calories": calories,
             "tss": tss,
             "avg_pace_min_km": round(avg_pace_s_m * 1000 / 60, 2) if avg_pace_s_m > 0 else None,
+            "hr_curve": hr_curve,
         })
     return sessions
 

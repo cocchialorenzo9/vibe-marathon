@@ -29,7 +29,7 @@
           "training": {
             "type": "easy",
             "title": "Adaptation run",
-            "detail": "30 min at easy pace (5:10–5:20/km) — calibrate how you feel, first session of the plan"
+            "detail": "30 min at easy effort (~75-85% LT) — calibrate how you feel, first session of the plan"
           },
           "movement": "U-Bahn both ways today — no need to load the legs further right after the adaptation run.",
           "food": "Normal breakfast. Pre-run: light snack 90 min before if needed. Post-run: protein + carbs within 30 min (eggs and toast, or a recovery shake). Build the fueling habit now.",
@@ -41,7 +41,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy + 4×80m progressive accelerations at the end (not sprints, just smooth pick-ups)"
+            "detail": "35 min at easy effort (~75-85% LT) + 4×80m progressive accelerations at the end (not sprints, just smooth pick-ups)"
           },
           "movement": "U-Bahn both ways today — strides need fresh legs even though they're short. TSB was -31.7 Tuesday, deeper fatigue than earlier estimated, so don't expect it fully cleared by Thursday even after Wednesday's rest day.",
           "food": "Normal carb-moderate day, no special loading. Pre-run: light snack 90 min before if training after work. Post-run: normal meal with protein priority.",
@@ -53,7 +53,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "45 min continuous, easy pace (5:10–5:20/km) — ~8 km"
+            "detail": "45 min continuous, easy effort (~75-85% LT) — ~8 km"
           },
           "movement": "Weekend — no work commute either way. U-Bahn or walk to the start, no cycling before — preserve fresh legs, especially after last week's long run overran its prescription.",
           "food": "Pre-run carbs 1-2h before — oats or toast with banana. Bring a gel or dates to test your gut for the first time — 55 min is long enough to start practicing. Post-run: protein + carbs within 30 min.",
@@ -87,7 +87,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min at aerobic pace (5:00–5:15/km)"
+            "detail": "35 min at aerobic effort (~75-85% LT)"
           },
           "movement": "U-Bahn both ways today — TSB is still deep negative (-24.3) after a weekend spent moving apartments (Fri/Sun loading a truck and carrying furniture up and down stairs) plus Saturday's long run that ran ~55% past its prescribed distance. Protect the legs even on an easy day.",
           "food": "Normal balanced day, base-phase carb levels — nothing special needed for a 35-minute easy effort.",
@@ -111,7 +111,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "55 min continuous, easy pace (~9–10 km)"
+            "detail": "55 min continuous, easy effort (~75-85% LT), ~9–10 km"
           },
           "movement": "No cycling before the long run — get to the start on foot or U-Bahn. No commute to plan around, it's Saturday.",
           "food": "Carb-loaded breakfast 1–2h before. Bring a gel or dates to test your gut for the first time — 55 min is long enough to start practicing before race-day fueling matters.",
@@ -133,7 +133,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min (5:00–5:15/km)"
+            "detail": "35 min at easy effort (~75-85% LT)"
           },
           "movement": "Bike both ways fine — TSB has been climbing out of last week's trough (-19.2 as of Jul 16) and an easy 35' shouldn't ask much of the legs either way.",
           "food": "Normal balanced day, base-phase carb levels.",
@@ -169,7 +169,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "60 min (~11 km), easy pace"
+            "detail": "60 min (~11 km), easy effort (~75-85% LT)"
           },
           "movement": "No bike before the long run. U-Bahn or rest completely the morning of — no commute to plan around, it's Saturday.",
           "food": "Carb breakfast before. Keep testing your race gel or dates — train the gut alongside the legs.",
@@ -191,7 +191,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "25 min very slow (5:20–5:30/km) — recovery week"
+            "detail": "25 min very slow (~65-75% LT) — recovery week"
           },
           "movement": "Bike both ways fine — very easy run, no leg stress",
           "food": "Normal balanced day",
@@ -249,7 +249,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "38 min (5:00–5:10/km) — Monday is now full rest"
+            "detail": "38 min at easy effort (~75-85% LT) — Monday is now full rest"
           },
           "movement": "Bike both ways fine — first build week, legs should feel fresh after Monday rest",
           "food": "Normal balanced day — build phase starts, slightly more carbs overall",
@@ -273,7 +273,7 @@
           "training": {
             "type": "long",
             "title": "Long run with MP",
-            "detail": "70 min: first 50 at easy pace, last 15 at 4:20/km (~13–14 km total)"
+            "detail": "70 min: first 50 at easy effort (~75-85% LT), last 15 at 4:20/km (~13–14 km total)"
           },
           "movement": "No cycling before the long run. U-Bahn to your starting point.",
           "food": "Pre-run carb breakfast. Bring a gel — you'll be out 70 minutes. Test your race nutrition.",
@@ -331,7 +331,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "80 min (~15 km), easy pace (5:00–5:15/km)"
+            "detail": "80 min (~15 km), easy effort (~75-85% LT)"
           },
           "movement": "No bike before. U-Bahn to your run start or rest fully before heading out.",
           "food": "Pre-run carbs. Gel at 45 min. Post-run: protein + carbs immediately.",
@@ -389,7 +389,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "90 min (~17 km), easy pace"
+            "detail": "90 min (~17 km), easy effort (~75-85% LT)"
           },
           "movement": "No cycling before. Full rest from bikes on Saturday morning.",
           "food": "Pre-run carbs. Gel at 45–50 min. Post-run: protein + carbs immediately.",
@@ -411,7 +411,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "30 min very slow — mid-block recovery"
+            "detail": "30 min very slow (~65-75% LT) — mid-block recovery"
           },
           "movement": "Bike both ways fine — recovery week, no restrictions",
           "food": "Normal balanced day — eat enough, don't undereat in recovery",
@@ -505,7 +505,7 @@
           "training": {
             "type": "long",
             "title": "Long run with MP finish",
-            "detail": "100 min: first 60 easy, last 30 at 4:20/km — first 'quality long run'"
+            "detail": "100 min: first 60 at easy effort (~75-85% LT), last 30 at 4:20/km — first 'quality long run'"
           },
           "movement": "No cycling before. U-Bahn to your run start. This is your most important session yet.",
           "food": "Carb-load Friday evening. Pre-run breakfast. Gel at 45 min and 70 min.",
@@ -563,7 +563,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "110 min (~20–21 km), easy pace"
+            "detail": "110 min (~20–21 km), easy effort (~75-85% LT)"
           },
           "movement": "No cycling. Full morning off the bike. U-Bahn to your run start.",
           "food": "Carb-load Friday night. Pre-run breakfast. Gel at 45 min and 80 min. Post-run: full recovery meal.",
@@ -621,7 +621,7 @@
           "training": {
             "type": "long",
             "title": "Peak long run",
-            "detail": "120 min (~22–23 km) with last 20 min at 4:20/km — your longest run ever"
+            "detail": "120 min (~22–23 km): first 100 min at easy effort (~75-85% LT), last 20 min at 4:20/km — your longest run ever"
           },
           "movement": "No cycling. U-Bahn both ways. This is your longest training run ever.",
           "food": "Carb-load Friday evening. Pre-run breakfast. Gel every 40–45 min. Full recovery meal after.",
@@ -643,7 +643,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "35 min very slow — mandatory unload after peak week"
+            "detail": "35 min very slow (~65-75% LT) — mandatory unload after peak week"
           },
           "movement": "Easy bike both ways — recovery week, legs benefit from gentle movement",
           "food": "Eat well — don't reduce calories after your hardest week. Your body is rebuilding.",
@@ -737,7 +737,7 @@
           "training": {
             "type": "long",
             "title": "Moderate long run",
-            "detail": "90 min (~17 km) at easy pace — last real long run"
+            "detail": "90 min (~17 km) at easy effort (~75-85% LT) — last real long run"
           },
           "movement": "U-Bahn to your run start. No cycling before.",
           "food": "Pre-run carbs. Gel at 50 min. Post-run: recovery meal.",

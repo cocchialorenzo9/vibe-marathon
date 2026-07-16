@@ -53,6 +53,31 @@ Read `data/training-plan.json`. Find the entry in `weeks[].days[]` whose `date` 
 
 If tomorrow falls outside all weeks (before week 1 or after race day), note that explicitly.
 
+## Lactate-threshold reference (used in Steps 4, 4c, 4d, 5)
+
+Current LT estimate: **167bpm**, device-reported — the athlete's Amazfit/Zepp
+watch computes and updates this automatically after each run; the user has
+opted to use it as the primary number over the earlier ~155bpm Karvonen-
+heuristic estimate. Treat this as watch-computed, not lab-tested — this
+project has twice caught watch/app-computed metrics being wrong (a
+fabricated sleep-score proxy, a miscalibrated zone-2 alert), so it isn't
+beyond doubt, but it's the athlete's explicit call. Still superseded by the
+field test planned for ~Aug 4, 2026 (Week 5, Build day 1) if that produces a
+materially different number. When the LT number changes (either from the
+watch or the field test), update ONLY this block — training-plan.json's day
+entries use %LT, not bpm, so they never need re-editing.
+
+Zone bands (replace pace for easy/recovery/long guidance):
+- Recovery: 65–75% of LT ≈ 109–125bpm
+- Easy/Aerobic: 75–85% of LT ≈ 125–142bpm
+
+This is a project-custom 2-band %LT scale, not identical to any named external
+framework (e.g. Friel's %LTHR zones use a different percentage scale for a
+similarly-anchored number) — don't cross-reference outside charts against these
+percentages.
+
+Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
+
 ## Step 4 — Reason and generate the recommendation
 
 Given:
@@ -74,7 +99,11 @@ Write a recommendation with:
 - `type`: one of `easy`, `tempo`, `long`, `race`, `swim`, `rest`
 - `title`: 5–8 words, direct
 - `reasoning`: 2–4 sentences referencing specific numbers (e.g. "HRV is 13% below baseline", "TSB is -18")
-- `sessionDetail`: actual workout instructions (copy/adapt from the plan)
+- `sessionDetail`: actual workout instructions (copy/adapt from the plan). If
+  the plan's `training.detail` expresses effort as %LT, translate it to the
+  current bpm range (see the Lactate-threshold reference above) so the
+  athlete gets an actual number to target — the plan text itself stays
+  %LT-only, this is where the runtime bpm value shows up.
 - `bikeNote`: advice on the 14km/day commute bike given the session. **The bike
   is all-or-nothing** — if used, it goes both directions (to work AND home);
   never split bike one way and U-Bahn the other, the bike can't be in two
@@ -146,14 +175,30 @@ before assuming something's wrong. Each session has: `date`, `type_name`
 If `no_export` is `true`, set `recentActivity` to `null` and skip the rest of
 this step.
 
+Each session may also carry `hr_curve`: a list of `{"t_min", "hr"}` points
+(minutes elapsed since the session started, and bpm at that point),
+reconstructed from `HEARTRATE_AUTO`'s continuous per-minute background
+sampling cross-referenced against the session's own start/duration — the
+dedicated per-workout HR export has never had real data, so this is the only
+source of intra-session detail available. Present whenever ≥3 samples were
+found, else `[]`. Use it to reason about a session's **internal structure**
+— cardiac drift across repeated efforts, whether HR climbed steadily through
+a long run or was elevated from the start, whether a "tempo"/interval
+session's blended avg/max hides sharper segment-by-segment spikes — rather
+than reading only the whole-session `avg_hr`/`max_hr`. This is judgment, not
+a formula: don't try to algorithmically detect interval boundaries, just
+narrate what the curve shows.
+
 For **each session**, write a one-sentence `lesson` — a specific, concrete
 takeaway about that individual activity, not a generic comment. Reason using:
-- **HR-zone compliance**: easy/Zone 2 target is ~60–75% of max HR
-  (`ATHLETE_MAX_HR`, default 190) ≈ 114–142bpm. If a session that should have
-  been easy (check `data/training-plan.json` for that date if it falls in a
-  plan week, otherwise judge from pace/duration) shows `avg_hr` well above
-  ~142bpm, say so plainly (e.g. "pace was on target but HR was tempo-effort,
-  not easy — likely fatigue").
+- **HR-zone compliance**: easy/aerobic sessions target ~75–85% of LT ≈
+  125–142bpm; recovery-week/very-slow sessions target ~65–75% of LT ≈
+  109–125bpm (see the Lactate-threshold reference above — current LT 167bpm,
+  device-reported). If a session that should have been easy (check
+  `data/training-plan.json` for that date if it falls in a plan week,
+  otherwise judge from pace/duration) shows `avg_hr` well above ~142bpm (or
+  above ~125bpm on a recovery day), say so plainly (e.g. "pace was on target
+  but HR was tempo-effort, not easy — likely fatigue").
 - Whether pace, duration, and effort line up with what the session looks like
   it was for.
 
@@ -208,6 +253,7 @@ and so it survives gaps in when `/update-coach` actually gets run.
   "duration_min": <float or null>,
   "avg_hr": <int or null>,
   "max_hr": <int or null>,
+  "hr_curve": [{"t_min": <int>, "hr": <int>}] or [],
   "tss": <float>,
   "avg_pace_min_km": <float or null>,
   "wentWell": "<specific>",
@@ -230,15 +276,21 @@ and so it survives gaps in when `/update-coach` actually gets run.
      dropout but local history shows a real distance for that day (an
      activity-fallback override, same logic already used elsewhere in this
      pipeline), use history's corrected distance instead of the raw 0.
+   - `hr_curve`: carry over the session's `hr_curve` from the script output
+     unchanged (`[]` if unavailable).
    - `wentWell`, `wentWrong`, `nextTime`: a genuine, specific reflection —
      compare against the scheduled session's intent when there is one, use
-     the ~114–142bpm easy-HR-zone reference from Step 4c for effort
-     compliance, and reference TSB/fatigue context from local history where
-     it's relevant. `wentWrong` should be honestly explained, not padded —
-     "nothing notable, executed as intended" is a fine answer when it's true
-     and you say why you think so; don't invent a problem to fill the field.
-     This is judgment, same as Step 4c's `lesson`, just one level deeper per
-     entry.
+     the %LT easy/recovery HR-zone reference from Step 4c (~125–142bpm
+     easy/aerobic, ~109–125bpm recovery) for effort compliance, and
+     reference TSB/fatigue context from local history where
+     it's relevant. When `hr_curve` is non-empty, use it the same way as
+     Step 4c to ground `wentWrong`/`nextTime` in the session's actual
+     internal shape (e.g. "HR climbed from 140 to 168 across three visible
+     efforts" rather than just citing the blended max). `wentWrong` should be
+     honestly explained, not padded — "nothing notable, executed as
+     intended" is a fine answer when it's true and you say why you think so;
+     don't invent a problem to fill the field. This is judgment, same as
+     Step 4c's `lesson`, just one level deeper per entry.
 6. Append the new entries (sorted by date) to the array and write the file
    back. Never modify or remove existing entries — this file only grows.
 
@@ -259,7 +311,14 @@ sessions are never included in it.
     "sleep": { "hours": <float>, "score": <int 0-100> },
     "tsb": <float>,
     "ctl": <float>,
-    "atl": <float>
+    "atl": <float>,
+    "lactateThreshold": {
+      "estimate_bpm": <int, from the Lactate-threshold reference above>,
+      "range_bpm": [<int>, <int>],
+      "status": "<provisional|device-reported, matching the reference above>",
+      "recovery_bpm": [<int>, <int>],
+      "easyAerobic_bpm": [<int>, <int>]
+    }
   },
   "recommendation": {
     "type": "<easy|tempo|long|race|swim|rest>",
@@ -281,6 +340,7 @@ sessions are never included in it.
         "duration_min": <float>,
         "avg_hr": <int or null>,
         "max_hr": <int or null>,
+        "hr_curve": [{"t_min": <int>, "hr": <int>}] or [],
         "avg_pace_min_km": <float or null>,
         "tss": <float>,
         "lesson": "<one-sentence takeaway from this specific activity>"
@@ -347,3 +407,6 @@ Then tell the user:
 - Tomorrow's recommendation
 - Whether any plan adjustment was made and why
 - A brief summary of what changed in the next 14 days' recommendations
+- Current LT estimate (167bpm, device-reported) and the %LT bpm target for
+  tomorrow's or recent easy/recovery sessions, when relevant — not forced
+  into every summary if it doesn't apply
