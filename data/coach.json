@@ -1,28 +1,39 @@
 {
-  "date": "2026-07-14",
-  "generatedFor": "2026-07-15",
+  "date": "2026-07-16",
+  "generatedFor": "2026-07-17",
   "readiness": {
-    "score": 47,
-    "hrv": { "value": 77, "baseline": 74, "delta_pct": 4 },
-    "restingHR": { "value": 41, "trend": "normal" },
-    "sleep": { "hours": 6.5, "score": 89 },
-    "tsb": -22.89,
-    "ctl": 14.72,
-    "atl": 37.61
+    "score": 54,
+    "hrv": { "value": 65, "baseline": 78, "delta_pct": -17 },
+    "restingHR": { "value": 40, "trend": "normal" },
+    "sleep": { "hours": 7.7, "score": 80 },
+    "tsb": -19.2,
+    "ctl": 15.2,
+    "atl": 34.4
   },
   "recommendation": {
     "type": "rest",
-    "title": "Full rest — TSB still caution-zone negative",
-    "reasoning": "TSB is -22.9 — better than yesterday's -24.3, but still below the -15 caution threshold, so recovery outranks any bonus movement. HRV came in at 77ms, up 4% from a 74ms baseline, and sleep score was 89 (6.5h) — both solid — but the device's own readiness score (44) confirms fatigue is still sitting underneath the good recovery numbers. Wednesday has no session in the plan between Tuesday's easy run and Thursday's first marathon-pace intervals, so this is already a rest day by design — no change needed, just protect it.",
-    "sessionDetail": "No scheduled training today. Full rest — let TSB climb back toward neutral before Thursday's 3×5' at marathon pace (4:15–4:20/km).",
-    "bikeNote": "U-Bahn both ways today — TSB is still in caution territory (-22.9), no reason to add cycling load on what's supposed to be a genuine rest day.",
+    "title": "Full rest — HRV down, TSB still negative",
+    "reasoning": "Friday isn't in the plan at all — it's a natural rest day between Thursday's tempo and Saturday's long run — and today's numbers back that up. HRV came in at 65ms, 17% below the 78ms baseline, on its own landing in the 10-20% 'reduced intensity' band. TSB is -19.2, past the -15 caution threshold but nowhere near the -25 swap-to-easy line, and sleep score was a solid 80 (7.7h). Nothing here clears the swap-to-easy bar on its own, but together they confirm rest is the right call, not just a calendar gap to fill.",
+    "sessionDetail": "No workout scheduled. Full rest — no run, no swim, no strength work. Let TSB climb back toward neutral before Saturday's 55-minute long run.",
+    "bikeNote": "Bike both ways is fine — it's a scheduled rest day and an easy commute won't add meaningful load, but keep it easy, no hard efforts or hill pushes with TSB still at -19.2.",
     "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 89,
+  "daysToRace": 87,
   "recentActivity": {
-    "since": "2026-07-08",
+    "since": "2026-07-10",
     "sessions": [
+      {
+        "date": "2026-07-16",
+        "type": "outdoor_running",
+        "distance_km": 5.53,
+        "duration_min": 36.2,
+        "avg_hr": 139,
+        "max_hr": 176,
+        "avg_pace_min_km": 6.55,
+        "tss": 32.3,
+        "lesson": "Avg HR stayed at 139 (inside the easy ceiling) for the whole first MP session, though a max spike to 176 during the intervals is sharper than a pure 'familiarity' session should produce."
+      },
       {
         "date": "2026-07-14",
         "type": "outdoor_running",
@@ -32,7 +43,7 @@
         "max_hr": 148,
         "avg_pace_min_km": 5.91,
         "tss": 31.9,
-        "lesson": "Duration hit the 35-minute target almost exactly, but pace (5:91/km) ran clearly slower than the prescribed 5:00–5:15/km while HR (139) still sat near the top of the easy zone — this week's fatigue is making easy pace cost more than it should."
+        "lesson": "Pace (5.91/km) ran slower than the 5:00-5:15/km target, yet avg HR still sat at 139 — the top of the easy zone — showing the week's fatigue made even a slow pace cost more effort than it should."
       },
       {
         "date": "2026-07-13",
@@ -43,7 +54,7 @@
         "max_hr": 141,
         "avg_pace_min_km": null,
         "tss": 36.2,
-        "lesson": "Swim class stayed exactly at the low, 'don't push' aerobic effort it called for — avg HR 111 is comfortably easy, in line with active recovery."
+        "lesson": "Swim class stayed exactly at the low, aerobic effort it called for (avg HR 111) — solid active recovery, and the last class before the Monday slot ends."
       },
       {
         "date": "2026-07-12",
@@ -54,7 +65,7 @@
         "max_hr": 139,
         "avg_pace_min_km": null,
         "tss": 34.1,
-        "lesson": "Unscheduled Sunday session with no GPS distance and a moderate 116bpm avg HR — this is the already-flagged apartment-move exertion (second straight day of moving), not a running workout."
+        "lesson": "Unscheduled Sunday session with 0km raw GPS and a moderate 116bpm average — this is the apartment-move exertion (second straight day), not a training session."
       },
       {
         "date": "2026-07-11",
@@ -65,20 +76,9 @@
         "max_hr": 163,
         "avg_pace_min_km": 5.63,
         "tss": 76.8,
-        "lesson": "Distance and duration overran the 8km/45min prescription by roughly 55%, and avg HR 154 sat well into tempo effort rather than the easy pace it was supposed to be — the single biggest driver of this week's deep-negative TSB."
-      },
-      {
-        "date": "2026-07-09",
-        "type": "outdoor_running",
-        "distance_km": 6.58,
-        "duration_min": 37.4,
-        "avg_hr": 147,
-        "max_hr": 163,
-        "avg_pace_min_km": 5.69,
-        "tss": 37.3,
-        "lesson": "Pace (5.69/km) looked like an easy effort, but avg HR 147 crossed into tempo territory above the ~142bpm ceiling — the first of three sessions this week to run hotter than prescribed."
+        "lesson": "Distance and duration overran the 8km/45min prescription by about 55%, and avg HR 154 ran well into tempo effort rather than easy pace — the single biggest driver of that week's deep-negative TSB."
       }
     ],
-    "analysis": "TSS spiked hard on Saturday's long-run overrun (76.8, versus a plan built for something closer to 35) then settled back to base-phase norms (32–37) through Sunday's move exertion, Monday's swim class, and today's easy run. Three of these five sessions (Jul 9, 11, 14) show avg HR running well above the ~142bpm easy ceiling despite on-target or even slow pace — a recurring pattern, not a one-off — which tracks with TSB bottoming out near -33 mid-week before recovering to -22.9 today."
+    "analysis": "TSS has settled back into base-phase norms (32-36) after Jul 11's long-run overrun spiked to 76.8, with the move exertion (Jul 12) and swim class (Jul 13) both landing in a similar mid-30s band. HR control looks better than the week before: Tuesday's and today's runs both averaged 139bpm, right at the top of the easy zone rather than crossing into it like Jul 11's 154bpm long run did — the fatigue signature is easing but hasn't fully cleared."
   }
 }

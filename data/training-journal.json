@@ -222,5 +222,33 @@
     "wentWell": "Duration matched the prescription almost exactly (35.8 vs 35 min), and avg_hr 139 stayed just inside the ~114-142bpm easy ceiling despite this week's fatigue.",
     "wentWrong": "Pace (5:91/km) ran noticeably slower than the prescribed 5:00-5:15/km range, and HR was still riding the top of the easy zone at that slower pace — the same fatigue signature already flagged on Jul 9 and Jul 11, with TSB sitting at -22.9 today.",
     "nextTime": "Keep pacing by feel/HR rather than the stated pace range while TSB stays this negative — a slower easy run that stays HR-in-zone is doing its job even when it misses the pace target on paper."
+  },
+  {
+    "date": "2026-07-15",
+    "type": "auto-detected running",
+    "scheduled": null,
+    "distance_km": 4.39,
+    "duration_min": null,
+    "avg_hr": null,
+    "max_hr": null,
+    "tss": 17.6,
+    "avg_pace_min_km": null,
+    "wentWell": "Kept some light movement going on an unscheduled Wednesday (no session between Tuesday's easy run and Thursday's first MP intervals) without turning it into extra load — 4.39km at a modest 17.6 TSS is well within a true rest day.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace to confirm the effort actually stayed easy — just a step-derived distance guess, the same recurring tracking gap seen on other unscheduled days.",
+    "nextTime": "Start a tracked workout even for casual movement on off days — low stakes here since it's a rest day either way, but it would remove the guesswork."
+  },
+  {
+    "date": "2026-07-16",
+    "type": "outdoor_running",
+    "scheduled": "tempo",
+    "distance_km": 5.53,
+    "duration_min": 36.2,
+    "avg_hr": 139,
+    "max_hr": 176,
+    "tss": 32.3,
+    "avg_pace_min_km": 6.55,
+    "wentWell": "Duration (36.2min) closely matched the prescribed 40 minutes (10' wu + 3x5' MP + rec + 10' cd), and avg HR stayed at 139 — inside the easy ceiling — for the whole session despite this being the plan's first real marathon-pace contact, on legs already carrying a week of negative TSB.",
+    "wentWrong": "Max HR spiked to 176 (about 93% of the assumed 190bpm max) during the MP segments, sharper than a 'familiarity' session is meant to produce. The whole-session avg pace (6.55/km) is close to meaningless on its own — it blends the warmup/cooldown jog, 90'' walking recovery, and the actual 4:15-4:20/km MP intervals into one number, so it can't confirm whether the MP pace target was actually hit.",
+    "nextTime": "For interval sessions, check per-interval splits if the watch/app exposes them rather than reading the whole-session average — that's the only way to confirm the MP segments actually landed at 4:15-4:20/km instead of just trusting a blended pace number that can't distinguish a slow warmup from a fast rep."
   }
 ]
