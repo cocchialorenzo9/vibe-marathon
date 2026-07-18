@@ -13,6 +13,11 @@ Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
     deep/REM ratios that ignores total sleep duration, verified wrong against the user's real
     Zepp app numbers), so both need the user's own numbers read off the Zepp app. Sleep hours
     still auto-fill correctly from the export.
+  - **VO2max also requires manual entry** — it isn't in the Zepp export either. Unlike
+    HRV/sleep-score, don't ask every run: VO2max changes slowly, so only prompt for a refreshed
+    number if none is on record yet in `data/coach.json`'s `readiness.vo2max`, if more than ~4
+    weeks have passed since `asOf`, or if the user proactively mentions a new number (e.g. from
+    the Zepp app's Running Status card, if the watch model surfaces one).
   - **After backfill, check for missing HRV and sleep score**: scan the local history file for
     any entries missing either field. `hrv` is expected `null` before **2026-06-29** (when HRV
     tracking started) — only flag `hrv: null` for dates **on or after** that. `sleep_score` has
@@ -53,7 +58,7 @@ Read `data/training-plan.json`. Find the entry in `weeks[].days[]` whose `date` 
 
 If tomorrow falls outside all weeks (before week 1 or after race day), note that explicitly.
 
-## Lactate-threshold reference (used in Steps 4, 4c, 4d, 5)
+## Lactate-threshold & VO2max reference (used in Steps 4, 4c, 4d, 4e, 5)
 
 Current LT estimate: **167bpm**, device-reported — the athlete's Amazfit/Zepp
 watch computes and updates this automatically after each run; the user has
@@ -78,6 +83,14 @@ percentages.
 
 Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
 
+**VO2max**: current estimate lives in `data/coach.json`'s `readiness.vo2max`
+(`value`, `unit: "ml/kg/min"`, `status: "manual"|"garmin_max_metrics"`,
+`asOf`, `history`). Same confidence caveat as LT — a manually-entered or
+watch-estimated number, not lab-tested, refreshed slowly (see Step 1's
+amazfit branch and Step 5's schema). If `readiness.vo2max` doesn't exist yet
+in `coach.json`, ask the user for a starting number once rather than
+blocking every future run on it; leave it `null` if they don't have one.
+
 ## Step 4 — Reason and generate the recommendation
 
 Given:
@@ -89,6 +102,11 @@ Given:
 - Tomorrow's scheduled session
 - `readiness.score` from the device (supplementary — use it as a cross-check against your own reasoning, not a replacement)
 - `body_battery` may be null (Amazfit does not provide it) — skip this signal if null
+- VO2max estimate (see reference above) — use it as a qualitative sanity check on whether the
+  sub-3h goal pace is aerobically realistic (Daniels' VDOT tables or Riegel's exponent formula
+  are the standard tools for this kind of check, but reason about it qualitatively rather than
+  running a rigid formula — this file is a reasoning prompt, not executable code). Flag it in
+  `reasoning` only when something looks materially mismatched, not on every run.
 
 Decide whether tomorrow should:
 - **Proceed as planned** — readiness is good
@@ -294,6 +312,53 @@ and so it survives gaps in when `/update-coach` actually gets run.
 6. Append the new entries (sorted by date) to the array and write the file
    back. Never modify or remove existing entries — this file only grows.
 
+## Step 4e — Refresh weekly training-volume estimates
+
+Skip this step if `WATCH_SOURCE=garmin`, same reason as Step 4c (no multi-day
+per-session history available yet to build a reliable pace baseline).
+
+This step exists because the plan's easy/long/recovery sessions are
+prescribed as **time + %LT effort**, not a fixed pace — correct for guiding
+effort, but it means nobody can see, at a glance, how much real distance a
+week's time-based prescription actually adds up to at the athlete's *current*
+pace. Recompute this every run rather than treating it as a one-time
+calculation — real pace at a given effort changes as fitness builds, so a
+static number would just reintroduce the same kind of stale assumption this
+step exists to prevent.
+
+1. **Compute `realZone2Pace_min_km`**: read `data/training-journal.json`,
+   take entries from the trailing 21–28 days whose `scheduled` is
+   `easy`/`long`/`recovery` AND whose `avg_hr` actually falls inside the
+   `recovery_bpm`–`easyAerobic_bpm` band from the Lactate-threshold reference
+   above (i.e. genuinely easy effort, not a session that drifted into tempo
+   territory despite being scheduled easy — exclude those, they'd bias the
+   pace faster than reality). Take the median `avg_pace_min_km` of the
+   surviving entries. If fewer than 2 qualifying entries exist, use whatever
+   is available and note the low confidence rather than skipping the step.
+2. **Compute `estKm` per day and per week**: walk all weeks in
+   `data/training-plan.json`. For each day whose `training.type` is
+   `easy`/`long`/`recovery`, set `training.estKm` = prescribed minutes ×
+   `realZone2Pace_min_km` (parse minutes from `training.detail`; where a day
+   mixes an easy portion with an explicit MP-pace segment, e.g. "first 100
+   at easy effort, last 20 at 4:20/km", compute each portion with its own
+   pace and sum). For `tempo` days, compute distance from the day's own
+   explicit rep/pace structure (already a fixed pace, unaffected by this
+   step) plus an easy-pace estimate for warmup/cooldown minutes. Skip `swim`
+   and `race` days. Sum each week's day-level `estKm` into `week.estKm`.
+   Write these fields back into `data/training-plan.json`.
+3. **Write `coach.json`'s `volumeCheck` block** (see Step 5 schema) with
+   `realZone2Pace_min_km`, today's `thisWeekEstKm`, `peakWeekEstKm` (the
+   `week.estKm` for whichever week has the plan's highest value), a
+   `referenceNote` comparing that peak to Hal Higdon's "Marathon 3" program
+   (this plan's stated inspiration, ~61km/week at its peak) as a well-known
+   external reference point, and `flagged: true` if the peak is more than
+   ~15% below that reference.
+4. **Never auto-edit session durations from this step.** This step only
+   estimates and surfaces distance implied by the *current* prescription —
+   deciding to actually change a week's prescribed minutes to close a volume
+   gap is a training-design decision for the athlete, not something to do
+   silently as a side effect of recomputing an estimate.
+
 ## Step 5 — Write the output files
 
 Write `data/coach.json` with this exact schema. `recentActivity` is `null`
@@ -318,7 +383,22 @@ sessions are never included in it.
       "status": "<provisional|device-reported, matching the reference above>",
       "recovery_bpm": [<int>, <int>],
       "easyAerobic_bpm": [<int>, <int>]
+    },
+    "vo2max": {
+      "value": <float or null>,
+      "unit": "ml/kg/min",
+      "status": "<manual|garmin_max_metrics>",
+      "asOf": "<YYYY-MM-DD>",
+      "history": [{"date": "<YYYY-MM-DD>", "value": <float>}]
     }
+  },
+  "volumeCheck": {
+    "realZone2Pace_min_km": <float or null, from Step 4e>,
+    "asOf": "<YYYY-MM-DD>",
+    "thisWeekEstKm": <float>,
+    "peakWeekEstKm": {"week<N>": <float>, ...},
+    "referenceNote": "<comparison to Higdon Marathon 3's ~61km/week peak>",
+    "flagged": <bool>
   },
   "recommendation": {
     "type": "<easy|tempo|long|race|swim|rest>",
@@ -410,3 +490,8 @@ Then tell the user:
 - Current LT estimate (167bpm, device-reported) and the %LT bpm target for
   tomorrow's or recent easy/recovery sessions, when relevant — not forced
   into every summary if it doesn't apply
+- Current VO2max estimate, when it's on record and relevant — same
+  not-forced-into-every-summary qualifier as LT
+- The weekly-volume check from Step 4e (`volumeCheck`), when `flagged` is
+  true or the number materially changed since last run — not forced into
+  every summary either

@@ -15,7 +15,22 @@
       "status": "device-reported",
       "recovery_bpm": [109, 125],
       "easyAerobic_bpm": [125, 142]
+    },
+    "vo2max": {
+      "value": null,
+      "unit": "ml/kg/min",
+      "status": "manual",
+      "asOf": null,
+      "history": []
     }
+  },
+  "volumeCheck": {
+    "realZone2Pace_min_km": 5.91,
+    "asOf": "2026-07-18",
+    "thisWeekEstKm": 22.1,
+    "peakWeekEstKm": {"week10": 48.9, "week11": 51.0, "week12": 33.8, "week13": 41.7},
+    "referenceNote": "Confidence is low (single clean easy-HR data point so far: Jul 14, HR139, top of the easy band, so realZone2Pace is probably an optimistic/fast estimate). Hal Higdon's Marathon 3 (this plan's stated inspiration) peaks at ~61km/week; this plan's peak week (11) is now ~51km after a moderate phased volume increase (up from ~42km before), still ~16% below Higdon's peak. Recompute realZone2Pace as more genuinely-easy-HR sessions accumulate.",
+    "flagged": true
   },
   "recommendation": {
     "type": "rest",
@@ -50,7 +65,7 @@
         "max_hr": 148,
         "avg_pace_min_km": 5.91,
         "tss": 31.9,
-        "lesson": "Pace (5.91/km) ran slower than the 5:00-5:15/km target, yet avg HR still sat at 139 — the top of the easy zone — showing the week's fatigue made even a slow pace cost more effort than it should."
+        "lesson": "Pace (5.91/km) sat at the top of the easy HR zone (139bpm) rather than centered in it, showing the week's fatigue made even this pace cost more effort than it should — and confirming 5.91/km is closer to this athlete's real current easy-effort pace than the retired 5:00-5:15/km assumption ever was."
       },
       {
         "date": "2026-07-13",

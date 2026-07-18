@@ -68,6 +68,20 @@ def parse_resting_hr(hr_data):
     return hr_data.get("restingHeartRate")
 
 
+def parse_vo2max(max_metrics_data):
+    if not max_metrics_data:
+        return None
+    if isinstance(max_metrics_data, list):
+        if not max_metrics_data:
+            return None
+        max_metrics_data = max_metrics_data[0]
+    generic = max_metrics_data.get("generic") or {}
+    value = generic.get("vo2MaxPreciseValue") or generic.get("vo2MaxValue")
+    if value is None:
+        return None
+    return {"value": round(value, 1), "source": "garmin_max_metrics"}
+
+
 def parse_training_readiness(tr_data):
     if not tr_data:
         return None
@@ -131,6 +145,10 @@ def fetch_all(api, today, yesterday):
         result["readiness"] = parse_training_readiness(api.get_training_readiness(today))
     except Exception as e:
         result["readiness"] = {"error": str(e)}
+    try:
+        result["vo2max"] = parse_vo2max(api.get_max_metrics(today))
+    except Exception as e:
+        result["vo2max"] = {"error": str(e)}
     try:
         result["body_battery"] = parse_body_battery(api.get_body_battery(today))
     except Exception as e:
