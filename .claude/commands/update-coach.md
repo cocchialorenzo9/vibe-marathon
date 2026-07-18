@@ -75,8 +75,12 @@ entries use %LT, not bpm, so they never need re-editing.
 Zone bands (replace pace for easy/recovery/long guidance):
 - Recovery: 65–75% of LT ≈ 109–125bpm
 - Easy/Aerobic: 75–85% of LT ≈ 125–142bpm
+- Threshold/LT-specific: ~95–100% of LT ≈ 159–167bpm — used by the Tuesday
+  "LT cruise interval" sessions added to `training-plan.json` (weeks 7, 9, 10,
+  13). This band moves the same way the other two do whenever the LT number
+  changes (Aug 4 field test, and any later re-test).
 
-This is a project-custom 2-band %LT scale, not identical to any named external
+This is a project-custom 3-band %LT scale, not identical to any named external
 framework (e.g. Friel's %LTHR zones use a different percentage scale for a
 similarly-anchored number) — don't cross-reference outside charts against these
 percentages.
@@ -90,6 +94,74 @@ watch-estimated number, not lab-tested, refreshed slowly (see Step 1's
 amazfit branch and Step 5's schema). If `readiness.vo2max` doesn't exist yet
 in `coach.json`, ask the user for a starting number once rather than
 blocking every future run on it; leave it `null` if they don't have one.
+
+## Sub-3h checkpoint reference (used in Steps 4, 4e, 6)
+
+A checkpoint review on 2026-07-18 (week 3 of base, VO2max 54, LT 167bpm
+unconfirmed, CTL 15.2 / ATL 34.4 / TSB -19.2) compared this plan against
+published sub-3h methodology (Pfitzinger-tier benchmarks: 55-70mi/~89-113km
+peak weeks, 32-35km peak long runs) and sports-science literature on LT
+training, CTL ramp rates, and HRV-guided autoregulation. It landed the same
+day as the mileage-increase commit that raised the peak long run to 165min
+(~29km, week 11) and peak week to ~51km — if you're ever asked to "fix" these
+numbers back down because they look like an unexplained jump from an older
+note or chat, check git history first; this was deliberate, not drift.
+
+That written schedule is now more ambitious on paper than the checkpoint's
+own conservative default would have been from a CTL of 15.2 — which makes
+the rules below a **real-time brake on executing the schedule as written**,
+not just a way to decide whether to add more:
+
+- **CTL ramp-rate governance.** Published guidance (Friel / TrainingPeaks,
+  corroborated across independent sources but not itself adversarially
+  verified) puts a sustainable CTL ramp at roughly 5-8 points/week, with 3-5/
+  week as the more conservative real-world figure. Compute the trailing
+  week-over-week CTL delta each run. While HRV or TSB aren't both clearly
+  green (HRV within its baseline band AND TSB ≥ -15 for several consecutive
+  days), treat **3-5 CTL points/week** as the ceiling and flag it in
+  `reasoning` if the actual delta is running hotter than that — this is a
+  volume brake, not a target to hit.
+- **De-escalation safety valve for weeks 10-11.** The now-scheduled 150min/
+  ~25km (week 10) and 165min/~29km (week 11) long runs are big single jumps
+  from a low starting CTL. Around week 9 (~Sep 1-5), if CTL has been running
+  hotter than the ramp ceiling above, or HRV/TSB have been repeatedly red
+  rather than green in the preceding 2-3 weeks, proactively propose scaling
+  those two long runs back toward the previous, more conservative distances
+  (~20-21km and ~22-23km respectively) — a suggestion to the athlete, never a
+  silent edit to `training-plan.json`. Written schedule is the ceiling if
+  readiness supports it, not a mandate independent of it.
+- **Second quality day — now committed, not a trigger.** As of 2026-07-18,
+  Tuesday LT cruise-interval sessions are scheduled directly in
+  `training-plan.json` (weeks 7, 9, 10, 13 — progressing 4×5' → 5×5' → 4×6' →
+  3×6' at threshold pace), phased in alongside a new Monday medium-long run
+  (weeks 5, 6, 7, 9, 10, 11, 13; see the zone-band note above for the
+  threshold pace those Tuesday sessions use). Week 11 (the hardest week)
+  deliberately keeps Tuesday plain-easy — don't add LT intervals there even if
+  readiness looks great, a third quality-ish day in the hardest week is bad
+  periodization regardless of fitness. The old version of this bullet framed
+  the second quality day as something to *propose* once HRV/TSB had been
+  green for 10 days; that's superseded, it's the default now. What replaces
+  it is a **rollback safety valve**: if HRV/TSB are trending red heading into
+  one of weeks 7/9/10/13, propose downgrading that week's Tuesday session to
+  plain easy effort (or shortening/dropping that week's Monday medium-long)
+  rather than executing the schedule blindly — same "propose, don't silently
+  edit `training-plan.json`" principle as the long-run valve above, just
+  protecting a now-busier default schedule instead of deciding whether to add
+  to a lighter one.
+- **LT re-test reminder.** The ~Aug 4 field test replaces the device-reported
+  167bpm with a real number — update the Lactate-threshold reference block
+  above when that happens (nothing else needs editing; day entries use %LT,
+  not bpm). Because LT typically shifts over 8-10 weeks of specific training,
+  flag a suggestion for a second field test around week 10-11 (peak phase,
+  ~Sep 6-19) rather than trusting the Aug 4 number unchanged for the rest of
+  the plan.
+- **Known, accepted gap — don't "fix" reflexively.** Even after the mileage
+  increase, peak week (~51km) sits below full Pfitzinger-tier sub-3h
+  benchmarks (89-113km) and close to but still under Step 4e's own Higdon
+  reference (~61km). That gap is an accepted tradeoff given the compressed
+  build window and a starting CTL of 15.2 (see week 11's own `tip` field), not
+  an oversight. If `volumeCheck.flagged` comes back true, the response is
+  *not* to pad mileage further — that fights the ramp-rate governance above.
 
 ## Step 4 — Reason and generate the recommendation
 
@@ -495,3 +567,8 @@ Then tell the user:
 - The weekly-volume check from Step 4e (`volumeCheck`), when `flagged` is
   true or the number materially changed since last run — not forced into
   every summary either
+- The CTL ramp-rate check from the Sub-3h checkpoint reference above, when
+  this week's actual delta exceeds whichever ceiling currently applies
+- Whether either trigger from the Sub-3h checkpoint reference has newly been
+  met: the week 10-11 de-escalation safety valve, or the second
+  quality-session trigger — surfaced as a proposal, not a done deal
