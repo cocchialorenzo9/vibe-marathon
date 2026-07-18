@@ -62,11 +62,11 @@
     "flagged": false
   },
   "recommendation": {
-    "type": "rest",
-    "title": "Full rest — sleep score 37, HRV down 12%",
-    "reasoning": "Tomorrow (Jul 19) isn't in the plan at all — it's the natural rest day after today's long run — and every signal backs that up. HRV came in at 67ms, 12% below the (corrected) 76ms baseline, squarely in the 10-20% reduced-intensity band on its own. Sleep score was 37, well under the 60 threshold that alone would call for swapping a hard day to easy. TSB is -14.69 — the least negative it's been in three weeks and still climbing, the one genuinely good number today, but not enough to offset the sleep and HRV picture. Today's long run also came up short (5.03km against a ~9-10km target, no HR logged), so the body's asking for exactly the rest day it's about to get.",
-    "sessionDetail": "No workout scheduled — full rest, no run, no swim, no strength work. Let last night's poor sleep (score 37) and the HRV dip resolve before Tuesday's easy run.",
-    "bikeNote": "Sunday, no work commute and nothing scheduled — no cycling to plan around today.",
+    "type": "easy",
+    "title": "Eased-back long run — sleep score 37 says dial it down",
+    "reasoning": "The long run has been moved to tomorrow (Jul 19) at your request, after today's attempt came up well short (5.03km against the ~9-10km target, no HR logged). But tonight's numbers argue against running the full 55-minute prescription as-is: sleep score was 37, clearing the <60 threshold that on its own calls for swapping a scheduled session to easy/recovery, and HRV is 12% below baseline (67ms vs 76ms). TSB is -14.69 — the best it's been in three weeks and still climbing — which is the one number in your favor, but it doesn't outweigh a 37 sleep score. Treat tomorrow as an eased-back version rather than the full long run.",
+    "sessionDetail": "35-40 min continuous, genuinely easy effort (~75-85% LT ≈ 125-142bpm) — not the full 55-min/9-10km prescription. If you feel strong after 10-15 minutes and HR is staying low in the zone, you can extend toward the original 55 min, but don't chase the full distance if HR climbs or legs feel heavy given last night's sleep.",
+    "bikeNote": "No cycling before this run — go on foot or take transit to the start. It's Sunday, so there's no work commute to plan around either way.",
     "swimNote": ""
   },
   "phase": "base",

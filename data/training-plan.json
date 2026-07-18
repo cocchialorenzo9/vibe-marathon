@@ -112,17 +112,17 @@
           "bigPicture": "Week 2 of base, about 87 days out from race day. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress. TSB sits at -22.9 today, so treat how the legs feel as the real signal, not the calendar; it should keep climbing back toward neutral through the rest of the week."
         },
         {
-          "date": "2026-07-18",
-          "dayLabel": "Sat 18",
+          "date": "2026-07-19",
+          "dayLabel": "Sun 19",
           "training": {
             "type": "long",
             "title": "Long run",
             "detail": "55 min continuous, easy effort (~75-85% LT), ~9–10 km",
             "estKm": 9.31
           },
-          "movement": "No cycling before the long run — get to the start on foot or U-Bahn. No commute to plan around, it's Saturday.",
-          "food": "Carb-loaded breakfast 1–2h before. Bring a gel or dates to test your gut for the first time — 55 min is long enough to start practicing before race-day fueling matters.",
-          "bigPicture": "55 minutes, ~9–10km, about 85 days out from race day — a step up from last week's 8km, closing out week 2 of base with two long runs, a first MP session, and consistent easy running already behind you. TSB troughed near -30 during last weekend's move-plus-overrun stretch and is back to -19.2 as of Jul 16, with a full rest day tomorrow still to come — legs should be in noticeably better shape than a week ago for this step-up."
+          "movement": "No cycling before the long run — get to the start on foot or U-Bahn. No commute to plan around, it's Sunday.",
+          "food": "Carb-loaded breakfast 1–2h before. Bring a gel or dates to test your gut — same fueling plan as originally set for Saturday.",
+          "bigPicture": "Long run pushed back a day at the athlete's request — Saturday's attempt came up well short (5.03km logged against this same ~9-10km target, no HR data), and last night's readiness was rough (sleep score 37, HRV 12% below baseline). TSB is -14.69, the best it's been in three weeks, which helps the case for trying again today, but see tomorrow's recommendation for whether to run the full session or an eased-back version given last night's sleep."
         }
       ],
       "estKm": 22.1
