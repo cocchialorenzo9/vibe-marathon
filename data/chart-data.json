@@ -208,5 +208,25 @@
     "tsb": -19.2,
     "readiness_score": 54,
     "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-07-17",
+    "tss": 15.2,
+    "distance_km": 3.8,
+    "ctl": 15.2,
+    "atl": 31.66,
+    "tsb": -16.45,
+    "readiness_score": 70,
+    "recommendation_type": "rest"
+  },
+  {
+    "date": "2026-07-18",
+    "tss": 20.1,
+    "distance_km": 5.03,
+    "ctl": 15.32,
+    "atl": 30.01,
+    "tsb": -14.69,
+    "readiness_score": 33,
+    "recommendation_type": "long"
   }
 ]
