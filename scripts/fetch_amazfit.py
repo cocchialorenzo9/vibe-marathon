@@ -13,14 +13,16 @@ Prints a canonical BiometricReading JSON object to stdout.
 """
 
 import json
+import math
 import os
+import statistics
 import sys
 from datetime import date
 
 # data/zepp/ relative to the project root (one level above scripts/)
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ZEPP_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "zepp")
-ATHLETE_MAX_HR = int(os.environ.get("ATHLETE_MAX_HR", 190))
+ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 167))
 
 try:
     from dotenv import load_dotenv
@@ -44,12 +46,39 @@ def load_history(history_path):
         return []
 
 
-def compute_hrv_baseline(history):
-    """7-day trailing average of HRV from local history. None if < 3 entries."""
-    recent = [e["hrv"] for e in history[-7:] if e.get("hrv") is not None]
+def compute_hrv_baseline(history, window=7):
+    """
+    7-day trailing baseline of HRV from local history, computed as a
+    geometric mean (i.e. the mean of ln-transformed values, back-transformed
+    to ms) rather than a plain arithmetic mean — raw-ms HRV/rMSSD is
+    non-normally distributed, per Plews et al. 2013 (Sports Med 43(9):773-81),
+    so averaging in log-space is the literature-recommended approach. Still
+    returned in ms so it stays directly comparable/displayable. None if
+    fewer than 3 entries.
+    """
+    recent = [e["hrv"] for e in history[-window:] if e.get("hrv") is not None and e["hrv"] > 0]
     if len(recent) < 3:
         return None
-    return round(sum(recent) / len(recent))
+    ln_mean = sum(math.log(v) for v in recent) / len(recent)
+    return round(math.exp(ln_mean))
+
+
+def compute_hrv_cv(history, window=7):
+    """
+    Coefficient of variation of ln(HRV) over the trailing window — the basis
+    for the smallest-worthwhile-change (SWC) threshold used by hrv_status,
+    per Plews et al.'s own recommended methodology (SWC = 0.5 x this CV),
+    rather than a fixed percentage-below-baseline cutoff. None if fewer than
+    3 entries or the log-mean is zero.
+    """
+    recent = [e["hrv"] for e in history[-window:] if e.get("hrv") is not None and e["hrv"] > 0]
+    if len(recent) < 3:
+        return None
+    ln_values = [math.log(v) for v in recent]
+    mean_ln = sum(ln_values) / len(ln_values)
+    if mean_ln == 0:
+        return None
+    return statistics.stdev(ln_values) / mean_ln
 
 
 def compute_hr_baseline(history):
@@ -65,10 +94,16 @@ def compute_readiness_score(hrv_value, hrv_baseline, sleep_score, sleep_hours, r
     0-100 readiness score from available signals.
     Weights: HRV delta 40%, sleep 40%, resting HR 20%.
     Neutral baseline (50) when a signal is unavailable.
+
+    The HRV delta is computed in log-space (ln(value/baseline)) rather than
+    a plain percentage difference, consistent with hrv_baseline now being a
+    geometric mean — see compute_hrv_baseline's docstring. Sleep and resting
+    HR stay on a plain percentage/linear basis; nothing in the literature
+    review called for log-transforming those.
     """
     score = 50.0
-    if hrv_value is not None and hrv_baseline is not None and hrv_baseline > 0:
-        delta_pct = (hrv_value - hrv_baseline) / hrv_baseline * 100
+    if hrv_value is not None and hrv_baseline is not None and hrv_baseline > 0 and hrv_value > 0:
+        delta_pct = math.log(hrv_value / hrv_baseline) * 100
         score += max(-20, min(20, delta_pct * 2))
     if sleep_score is not None:
         score += max(-20, min(20, (sleep_score - 70) / 70 * 20))
@@ -81,13 +116,24 @@ def compute_readiness_score(hrv_value, hrv_baseline, sleep_score, sleep_hours, r
     return max(0, min(100, round(score)))
 
 
-def hrv_status(hrv_value, hrv_baseline):
-    if hrv_value is None or hrv_baseline is None or hrv_baseline == 0:
+def hrv_status(hrv_value, hrv_baseline, hrv_cv=None):
+    """
+    Classify today's HRV against baseline using a log-space deviation and a
+    smallest-worthwhile-change (SWC) threshold — SWC = 0.5 x the athlete's
+    own coefficient of variation of ln(HRV), per Plews et al.'s recommended
+    methodology, rather than a fixed percentage-below-baseline cutoff.
+
+    Falls back to a fixed ~5%/15% log-ratio band (matching the shape of the
+    original flat-percentage thresholds) when hrv_cv isn't available yet
+    (e.g. early on a new device, before 3+ HRV readings exist).
+    """
+    if hrv_value is None or hrv_baseline is None or hrv_baseline <= 0 or hrv_value <= 0:
         return "unknown"
-    delta_pct = (hrv_value - hrv_baseline) / hrv_baseline * 100
-    if delta_pct >= -5:
+    log_delta = math.log(hrv_value / hrv_baseline)
+    swc = 0.5 * hrv_cv if hrv_cv else 0.05
+    if log_delta >= -swc:
         return "balanced"
-    elif delta_pct >= -15:
+    elif log_delta >= -3 * swc:
         return "unbalanced"
     else:
         return "low"
@@ -95,7 +141,7 @@ def hrv_status(hrv_value, hrv_baseline):
 
 def build_canonical(today, hrv_value, hrv_baseline, sleep_hours, sleep_score,
                     deep_seconds, rem_seconds, resting_hr, hr_baseline,
-                    yesterday_activity):
+                    yesterday_activity, hrv_cv=None):
     readiness_score = compute_readiness_score(
         hrv_value, hrv_baseline, sleep_score, sleep_hours, resting_hr, hr_baseline
     )
@@ -105,7 +151,7 @@ def build_canonical(today, hrv_value, hrv_baseline, sleep_hours, sleep_score,
         "hrv": {
             "value": hrv_value,
             "baseline": hrv_baseline,
-            "status": hrv_status(hrv_value, hrv_baseline),
+            "status": hrv_status(hrv_value, hrv_baseline, hrv_cv),
         },
         "sleep": {
             "hours": sleep_hours,
@@ -192,13 +238,14 @@ def interactive_entry(today, history):
         }
 
     hrv_baseline = compute_hrv_baseline(history)
+    hrv_cv = compute_hrv_cv(history)
     hr_baseline = compute_hr_baseline(history)
     deep_sec = deep_min * 60 if deep_min is not None else None
     rem_sec = rem_min * 60 if rem_min is not None else None
 
     return build_canonical(
         today, hrv_value, hrv_baseline, sleep_hours, sleep_score,
-        deep_sec, rem_sec, resting_hr, hr_baseline, yesterday_activity
+        deep_sec, rem_sec, resting_hr, hr_baseline, yesterday_activity, hrv_cv
     )
 
 
@@ -213,7 +260,7 @@ def main():
         sys.path.insert(0, _SCRIPT_DIR)
         from parse_zepp_export import backfill_history, parse_export
 
-        backfilled = backfill_history(ZEPP_DIR, HISTORY_PATH, ATHLETE_MAX_HR)
+        backfilled = backfill_history(ZEPP_DIR, HISTORY_PATH, ATHLETE_LTHR)
         if backfilled:
             print(
                 f"[zepp] Backfilled {len(backfilled)} day(s): {', '.join(backfilled)}",
@@ -305,10 +352,11 @@ def main():
             }
 
     hrv_baseline = compute_hrv_baseline(history)
+    hrv_cv = compute_hrv_cv(history)
     hr_baseline = compute_hr_baseline(history)
     result = build_canonical(
         today, hrv_value, hrv_baseline, sleep_hours, sleep_score,
-        deep_seconds, rem_seconds, resting_hr, hr_baseline, yesterday_activity,
+        deep_seconds, rem_seconds, resting_hr, hr_baseline, yesterday_activity, hrv_cv,
     )
     print(json.dumps(result, indent=2))
 

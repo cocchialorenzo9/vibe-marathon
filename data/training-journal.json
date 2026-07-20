@@ -9,9 +9,9 @@
     "max_hr": null,
     "tss": 40.4,
     "avg_pace_min_km": null,
-    "wentWell": "Solid volume — 10.11km is the biggest running day logged before training even started.",
+    "wentWell": "Solid volume \u2014 10.11km is the biggest running day logged before training even started.",
     "wentWrong": "No workout was started on the watch, so there's zero HR or pace data for what looks like the single biggest pre-training running day. The whole effort is invisible except for a step-count-derived distance guess.",
-    "nextTime": "Start a tracked workout on the watch before running, even for casual pre-training runs — otherwise the HR/pace data that later feeds TSS and readiness calculations for that day is just an estimate, not a measurement."
+    "nextTime": "Start a tracked workout on the watch before running, even for casual pre-training runs \u2014 otherwise the HR/pace data that later feeds TSS and readiness calculations for that day is just an estimate, not a measurement."
   },
   {
     "date": "2026-06-28",
@@ -119,11 +119,11 @@
         "hr": 135
       }
     ],
-    "tss": 20.7,
+    "tss": 26.8,
     "avg_pace_min_km": null,
-    "wentWell": "A real tracked session this time — heart rate data exists (avg 138bpm, max 148bpm), a useful signal to actually reason about.",
-    "wentWrong": "avg_hr 138 is quite elevated for a session logged as \"walking\" — closer to easy-running effort. Either it was a genuinely brisk or hilly walk, or the sensor picked up motion artifacts. Separately, the tracked session only covered 1.1km of GPS distance while the day's total movement was ~4.17km — the session ended or dropped GPS well before the walking did.",
-    "nextTime": "If it really was a brisk walk, that's worth knowing — it counts as more than a throwaway rest-day effort. Either way, letting the session run for the full walk (or restarting it if it auto-stopped) would close the distance gap and make the HR number easier to trust."
+    "wentWell": "A real tracked session this time \u2014 heart rate data exists (avg 138bpm, max 148bpm), a useful signal to actually reason about.",
+    "wentWrong": "avg_hr 138 is quite elevated for a session logged as \"walking\" \u2014 closer to easy-running effort. Either it was a genuinely brisk or hilly walk, or the sensor picked up motion artifacts. Separately, the tracked session only covered 1.1km of GPS distance while the day's total movement was ~4.17km \u2014 the session ended or dropped GPS well before the walking did.",
+    "nextTime": "If it really was a brisk walk, that's worth knowing \u2014 it counts as more than a throwaway rest-day effort. Either way, letting the session run for the full walk (or restarting it if it auto-stopped) would close the distance gap and make the HR number easier to trust."
   },
   {
     "date": "2026-07-01",
@@ -136,8 +136,8 @@
     "tss": 30.1,
     "avg_pace_min_km": null,
     "wentWell": "Another solid pre-training volume day at 7.53km.",
-    "wentWrong": "Same gap as Jun 27 — no formal workout started, so there's no HR or pace to actually evaluate the effort, just a distance guess.",
-    "nextTime": "This is now a repeated pattern across multiple pre-training days — worth fixing the tracked-workout habit before Week 1 starts, since the plan's readiness logic leans on HR data that these days never captured."
+    "wentWrong": "Same gap as Jun 27 \u2014 no formal workout started, so there's no HR or pace to actually evaluate the effort, just a distance guess.",
+    "nextTime": "This is now a repeated pattern across multiple pre-training days \u2014 worth fixing the tracked-workout habit before Week 1 starts, since the plan's readiness logic leans on HR data that these days never captured."
   },
   {
     "date": "2026-07-02",
@@ -149,9 +149,9 @@
     "max_hr": null,
     "tss": 13.3,
     "avg_pace_min_km": null,
-    "wentWell": "A shorter, easier day right after Jul 1's bigger effort — reasonable natural spacing even without a plan telling you to.",
-    "wentWrong": "Still no tracked HR or pace — same recurring gap as the last two days.",
-    "nextTime": "Same fix as before: start a workout on the watch. Also worth noting the pattern of alternating a big day with a small one was instinctively right — that's the kind of thing worth doing on purpose once the plan gets more structured."
+    "wentWell": "A shorter, easier day right after Jul 1's bigger effort \u2014 reasonable natural spacing even without a plan telling you to.",
+    "wentWrong": "Still no tracked HR or pace \u2014 same recurring gap as the last two days.",
+    "nextTime": "Same fix as before: start a workout on the watch. Also worth noting the pattern of alternating a big day with a small one was instinctively right \u2014 that's the kind of thing worth doing on purpose once the plan gets more structured."
   },
   {
     "date": "2026-07-03",
@@ -164,8 +164,8 @@
     "tss": 17.0,
     "avg_pace_min_km": null,
     "wentWell": "Kept moving pre-training with moderate volume (4.24km).",
-    "wentWrong": "No HR or pace tracked, same as the other pre-training running days. On top of that, this day's true distance was initially missed entirely — the Zepp export used when this day was first processed hadn't finished syncing, and showed only 0.28km until a later, fuller export corrected it to the real 4.24km.",
-    "nextTime": "Same tracked-workout fix as the other days. Also a reminder for the data pipeline itself: don't trust a same-day export as final — a fuller sync later in the day or the next morning can reveal meaningfully more activity than what showed up first."
+    "wentWrong": "No HR or pace tracked, same as the other pre-training running days. On top of that, this day's true distance was initially missed entirely \u2014 the Zepp export used when this day was first processed hadn't finished syncing, and showed only 0.28km until a later, fuller export corrected it to the real 4.24km.",
+    "nextTime": "Same tracked-workout fix as the other days. Also a reminder for the data pipeline itself: don't trust a same-day export as final \u2014 a fuller sync later in the day or the next morning can reveal meaningfully more activity than what showed up first."
   },
   {
     "date": "2026-07-04",
@@ -175,11 +175,11 @@
     "duration_min": 511.2,
     "avg_hr": 89,
     "max_hr": 117,
-    "tss": 186.9,
+    "tss": 241.9,
     "avg_pace_min_km": null,
-    "wentWell": "A huge day out — 22.75km covered over roughly 8.5 hours, clearly a big, memorable effort (most likely a long hike or a full day of walking/travel given the very low average HR relative to the duration).",
-    "wentWrong": "This single day did the most damage to the whole first week of training. Its true TSS (186.9) was originally miscomputed even higher (265.6) by a double-counting bug — the code added extra load for \"untracked running\" on top of the session's own duration/HR-based number, even though both were describing the same activity. Combined with only 2 hours of sleep two nights later, this pushed Week 1's fatigue far deeper than anyone realized at the time. GPS also never recorded distance for the session itself (0m) — the real distance only surfaced via the step counter.",
-    "nextTime": "Before a day like this (a long hike or big day of movement), plan an easier week immediately after rather than starting a new structured training block two days later — TSB was still deeply negative a full week in, and this single day is the reason why."
+    "wentWell": "A huge day out \u2014 22.75km covered over roughly 8.5 hours, clearly a big, memorable effort (most likely a long hike or a full day of walking/travel given the very low average HR relative to the duration).",
+    "wentWrong": "This single day did the most damage to the whole first week of training. Its true TSS (241.9, corrected 2026-07-20 when the TSS formula was fixed to divide by LTHR instead of max_hr \u2014 originally recorded as 186.9) was originally miscomputed even higher still (265.6) by a since-fixed double-counting bug \u2014 the code added extra load for \"untracked running\" on top of the session's own duration/HR-based number, even though both were describing the same activity. Combined with only 2 hours of sleep two nights later, this pushed Week 1's fatigue far deeper than anyone realized at the time. GPS also never recorded distance for the session itself (0m) \u2014 the real distance only surfaced via the step counter.",
+    "nextTime": "Before a day like this (a long hike or big day of movement), plan an easier week immediately after rather than starting a new structured training block two days later \u2014 TSB was still deeply negative a full week in, and this single day is the reason why."
   },
   {
     "date": "2026-07-05",
@@ -192,7 +192,7 @@
     "tss": 14.5,
     "avg_pace_min_km": null,
     "wentWell": "Kept some light movement going despite an unusually short night of sleep.",
-    "wentWrong": "The real story of this day is 2 hours of sleep the night before, not the run — and there's no HR data for the run either, same recurring tracking gap.",
+    "wentWrong": "The real story of this day is 2 hours of sleep the night before, not the run \u2014 and there's no HR data for the run either, same recurring tracking gap.",
     "nextTime": "On a night like that, the priority is recovery, not logging distance. Worth understanding why sleep was that short (likely knock-on from Jul 4's big effort) and protecting the following night instead of pushing through with more low-value untracked activity."
   },
   {
@@ -429,10 +429,10 @@
         "hr": 109
       }
     ],
-    "tss": 32.5,
+    "tss": 42.1,
     "avg_pace_min_km": null,
-    "wentWell": "First official day of the 15-week plan — showed up for the scheduled swim class exactly as planned, on top of the full 14km/day bike commute that same day.",
-    "wentWrong": "This day was originally recorded as almost a rest day (TSS 3.3, a single bike leg) because the Zepp export used by that morning's coach run hadn't synced the rest of the day yet — it missed the swim class entirely and 3 of the day's 4 bike-commute legs. It only got corrected days later once a fuller export was cross-checked. The real day (swim plus a heavy commute load) was genuinely demanding, and the fatigue tracking completely missed it at the time.",
+    "wentWell": "First official day of the 15-week plan \u2014 showed up for the scheduled swim class exactly as planned, on top of the full 14km/day bike commute that same day.",
+    "wentWrong": "This day was originally recorded as almost a rest day (TSS 3.3, a single bike leg) because the Zepp export used by that morning's coach run hadn't synced the rest of the day yet \u2014 it missed the swim class entirely and 3 of the day's 4 bike-commute legs. It only got corrected days later once a fuller export was cross-checked. The real day (swim plus a heavy commute load) was genuinely demanding, and the fatigue tracking completely missed it at the time.",
     "nextTime": "When `/update-coach` runs before the evening's Zepp sync is complete (e.g. run right after waking up, before an evening swim class), treat that day's recorded TSS as provisional and double-check it the next day once the full export exists, rather than assuming it's final."
   },
   {
@@ -577,11 +577,11 @@
         "hr": 156
       }
     ],
-    "tss": 35.3,
+    "tss": 45.7,
     "avg_pace_min_km": 5.22,
-    "wentWell": "Pace was right on target — 5:22/km, essentially matching the prescribed 5:10–5:20/km range and the guidance to lean toward the slower end. Duration was close to the planned 30 minutes too.",
-    "wentWrong": "Despite hitting the target pace, average HR was 153bpm — well above the ~114–142bpm easy zone. The reconstructed per-minute curve (HEARTRATE_AUTO cross-referenced against this session's start/duration, attached retroactively once the pipeline gained this capability) shows why the blended average undersells it: HR started at a warmup-appropriate 110bpm, crossed into the 150s by minute 8–9, and kept climbing through the second half to a sustained 162–165bpm plateau for the last ~10 minutes, peaking at 167bpm at minute 30 — a clear positive-split/cardiac-drift pattern, not a flat elevated effort throughout. (This run is also the source of the \"167bpm confirmed exercise HR\" data point in the zone-2 investigation memory — the curve confirms it as a sustained late-run plateau, not a brief spike, matching that memory's description.) This wasn't obvious at first for another reason too: a timezone bug in the data pipeline initially read HR from the wrong 2-hour window, showing an implausible 52bpm average until fixed — the true number showed the run was substantially harder than intended, most likely because accumulated fatigue from Jul 4–6 compounded as the run went on rather than being present from the first step.",
-    "nextTime": "While TSB stays this negative, govern easy runs by heart rate rather than pace alone — and specifically watch the back half: this run's HR was still reasonable through the first ~8 minutes but climbed steadily afterward, so a mid-run HR check would have caught the drift in time to slow down, rather than only reviewing the whole-session average afterward. The body currently needs more effort than usual to hold the same speed, and pace-only pacing will keep producing tempo-effort days labeled as \"easy.\""
+    "wentWell": "Pace was right on target \u2014 5:22/km, essentially matching the prescribed 5:10\u20135:20/km range and the guidance to lean toward the slower end. Duration was close to the planned 30 minutes too.",
+    "wentWrong": "Despite hitting the target pace, average HR was 153bpm \u2014 well above the ~114\u2013142bpm easy zone. The reconstructed per-minute curve (HEARTRATE_AUTO cross-referenced against this session's start/duration, attached retroactively once the pipeline gained this capability) shows why the blended average undersells it: HR started at a warmup-appropriate 110bpm, crossed into the 150s by minute 8\u20139, and kept climbing through the second half to a sustained 162\u2013165bpm plateau for the last ~10 minutes, peaking at 167bpm at minute 30 \u2014 a clear positive-split/cardiac-drift pattern, not a flat elevated effort throughout. (This run is also the source of the \"167bpm confirmed exercise HR\" data point in the zone-2 investigation memory \u2014 the curve confirms it as a sustained late-run plateau, not a brief spike, matching that memory's description.) This wasn't obvious at first for another reason too: a timezone bug in the data pipeline initially read HR from the wrong 2-hour window, showing an implausible 52bpm average until fixed \u2014 the true number showed the run was substantially harder than intended, most likely because accumulated fatigue from Jul 4\u20136 compounded as the run went on rather than being present from the first step.",
+    "nextTime": "While TSB stays this negative, govern easy runs by heart rate rather than pace alone \u2014 and specifically watch the back half: this run's HR was still reasonable through the first ~8 minutes but climbed steadily afterward, so a mid-run HR check would have caught the drift in time to slow down, rather than only reviewing the whole-session average afterward. The body currently needs more effort than usual to hold the same speed, and pace-only pacing will keep producing tempo-effort days labeled as \"easy.\""
   },
   {
     "date": "2026-07-08",
@@ -593,8 +593,8 @@
     "max_hr": null,
     "tss": 14.9,
     "avg_pace_min_km": null,
-    "wentWell": "Kept some light movement going on a day with no scheduled training — Wednesday isn't a session day in Week 1.",
-    "wentWrong": "No formal workout was started, so there's no HR or pace to evaluate — just a step-derived distance guess (3.73km), the same tracking gap seen on several pre-training days.",
+    "wentWell": "Kept some light movement going on a day with no scheduled training \u2014 Wednesday isn't a session day in Week 1.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace to evaluate \u2014 just a step-derived distance guess (3.73km), the same tracking gap seen on several pre-training days.",
     "nextTime": "Start a tracked workout on the watch even for casual movement, so days like this stop being invisible to the readiness and TSS math beyond a rough distance guess."
   },
   {
@@ -759,15 +759,15 @@
         "hr": 162
       }
     ],
-    "tss": 37.3,
+    "tss": 48.3,
     "avg_pace_min_km": 5.69,
-    "wentWell": "Showed up for the scheduled easy run + strides, and ran noticeably slower than the week's other easy efforts (5:69/km) — the right instinct given how deep TSB was running (-31.7 as of Tuesday). The reconstructed curve confirms the strides did their job too: HR sat in the 133–151bpm range for essentially the whole run, then rose sharply to 155–163bpm only in the final 2 minutes — right where the plan's 4×80m accelerations belong, not a sign the whole run ran hot.",
-    "wentWrong": "The whole-session avg (147bpm) still sits above the ~114–142bpm easy zone, but the curve shows that number is pulled up mainly by the strides finish, not by the steady-state running — the bulk of the run before the accelerations sat closer to 133–148bpm, borderline but not badly over. Fatigue from Jul 4–7 is still visible (upper-140s isn't clean zone 2), but this session reads as materially closer to on-target than the flat avg/max numbers suggested on their own.",
-    "nextTime": "The Jul 9-style strides finish is a good template — a mostly-easy body of the run with a distinct hard finish is exactly what the session called for. Going forward, use the per-minute curve (now available automatically) to separate \"steady-state ran hot\" from \"the prescribed hard finish did its job,\" rather than reading one blended avg/max number as if the whole session was uniform."
+    "wentWell": "Showed up for the scheduled easy run + strides, and ran noticeably slower than the week's other easy efforts (5:69/km) \u2014 the right instinct given how deep TSB was running (-31.7 as of Tuesday). The reconstructed curve confirms the strides did their job too: HR sat in the 133\u2013151bpm range for essentially the whole run, then rose sharply to 155\u2013163bpm only in the final 2 minutes \u2014 right where the plan's 4\u00d780m accelerations belong, not a sign the whole run ran hot.",
+    "wentWrong": "The whole-session avg (147bpm) still sits above the ~114\u2013142bpm easy zone, but the curve shows that number is pulled up mainly by the strides finish, not by the steady-state running \u2014 the bulk of the run before the accelerations sat closer to 133\u2013148bpm, borderline but not badly over. Fatigue from Jul 4\u20137 is still visible (upper-140s isn't clean zone 2), but this session reads as materially closer to on-target than the flat avg/max numbers suggested on their own.",
+    "nextTime": "The Jul 9-style strides finish is a good template \u2014 a mostly-easy body of the run with a distinct hard finish is exactly what the session called for. Going forward, use the per-minute curve (now available automatically) to separate \"steady-state ran hot\" from \"the prescribed hard finish did its job,\" rather than reading one blended avg/max number as if the whole session was uniform."
   },
   {
     "date": "2026-07-10",
-    "type": "apartment move — loading/unloading truck, stairs",
+    "type": "apartment move \u2014 loading/unloading truck, stairs",
     "scheduled": null,
     "distance_km": 11.54,
     "duration_min": null,
@@ -775,9 +775,9 @@
     "max_hr": null,
     "tss": 46.2,
     "avg_pace_min_km": null,
-    "wentWell": "Not a training lapse at all — this was moving-day physical labor (loading/unloading a truck, carrying furniture up and down stairs), not an impromptu run. The move got done, and it still generated real physical load (11.54km of movement, 46.2 TSS worth of exertion).",
-    "wentWrong": "No workout was started (it wasn't a training session), so there's no HR data — but the physical toll was genuine, on what the plan had penciled in as a rest day before Saturday's long run.",
-    "nextTime": "Moving-day labor counts as real load even though it isn't running — when a big move like this lands right before a scheduled long run, treat the following session with a little more caution rather than assuming a 'rest day' on the calendar meant actual rest."
+    "wentWell": "Not a training lapse at all \u2014 this was moving-day physical labor (loading/unloading a truck, carrying furniture up and down stairs), not an impromptu run. The move got done, and it still generated real physical load (11.54km of movement, 46.2 TSS worth of exertion).",
+    "wentWrong": "No workout was started (it wasn't a training session), so there's no HR data \u2014 but the physical toll was genuine, on what the plan had penciled in as a rest day before Saturday's long run.",
+    "nextTime": "Moving-day labor counts as real load even though it isn't running \u2014 when a big move like this lands right before a scheduled long run, treat the following session with a little more caution rather than assuming a 'rest day' on the calendar meant actual rest."
   },
   {
     "date": "2026-07-11",
@@ -1069,15 +1069,15 @@
         "hr": 147
       }
     ],
-    "tss": 76.8,
+    "tss": 99.4,
     "avg_pace_min_km": 5.63,
-    "wentWell": "Pace (5:63/km) landed close to the prescribed 5:10-5:20/km range, only slightly slower — reasonable given the accumulated fatigue.",
-    "wentWrong": "Duration and distance ran well past the plan: 70.1 minutes and 12.45km against a prescribed 45 minutes / ~8km, roughly 55% more volume than scheduled. The reconstructed curve changes the story on timing, though: HR wasn't elevated only during the \"bonus\" unplanned minutes — it climbed into the 150s within the first 5–6 minutes and stayed in a 150–163bpm band for essentially the whole 70 minutes, including what would have been the entire originally-prescribed 45-minute run. So the tempo-effort HR (154 avg) isn't a symptom of running too long; it was already present from early on, on top of Friday's apartment-move labor pushing an already-deep fatigue hole (TSB around -28 that morning) even deeper.",
-    "nextTime": "The old framing (\"hold to the prescribed duration\") would have helped with total load but wouldn't have fixed the actual problem — HR was already too high in the first 10 minutes, well before the run got long. When TSB is this negative, especially after physical labor like a move, the fix is to slow the starting pace itself (or swap to a shorter easy effort entirely) rather than just capping duration — a shorter version of the same too-hot effort still isn't the intended easy/long-run stimulus."
+    "wentWell": "Pace (5:63/km) landed close to the prescribed 5:10-5:20/km range, only slightly slower \u2014 reasonable given the accumulated fatigue.",
+    "wentWrong": "Duration and distance ran well past the plan: 70.1 minutes and 12.45km against a prescribed 45 minutes / ~8km, roughly 55% more volume than scheduled. The reconstructed curve changes the story on timing, though: HR wasn't elevated only during the \"bonus\" unplanned minutes \u2014 it climbed into the 150s within the first 5\u20136 minutes and stayed in a 150\u2013163bpm band for essentially the whole 70 minutes, including what would have been the entire originally-prescribed 45-minute run. So the tempo-effort HR (154 avg) isn't a symptom of running too long; it was already present from early on, on top of Friday's apartment-move labor pushing an already-deep fatigue hole (TSB around -28 that morning) even deeper.",
+    "nextTime": "The old framing (\"hold to the prescribed duration\") would have helped with total load but wouldn't have fixed the actual problem \u2014 HR was already too high in the first 10 minutes, well before the run got long. When TSB is this negative, especially after physical labor like a move, the fix is to slow the starting pace itself (or swap to a shorter easy effort entirely) rather than just capping duration \u2014 a shorter version of the same too-hot effort still isn't the intended easy/long-run stimulus."
   },
   {
     "date": "2026-07-12",
-    "type": "apartment move — loading/unloading truck, stairs",
+    "type": "apartment move \u2014 loading/unloading truck, stairs",
     "scheduled": null,
     "distance_km": 11.38,
     "duration_min": 54.9,
@@ -1305,11 +1305,11 @@
         "hr": 117
       }
     ],
-    "tss": 34.1,
+    "tss": 44.1,
     "avg_pace_min_km": null,
-    "wentWell": "The device did track a real session here (54.9min, avg_hr 116bpm, max 139bpm are genuine readings, not step-count guesses) even though it logged under an unmapped generic activity type — sustained, moderate physical exertion the second straight day of moving, the day after Saturday's hard long run.",
-    "wentWrong": "The device has no 'manual labor/moving' sport type, so it fell back to an unmapped generic code with 0km GPS distance; the local step-count history corrected that to ~11.38km covered while carrying boxes and furniture. More importantly: this is two straight days (Fri+Sun) of real physical load from the move stacked on top of Saturday's overextended long run — a much bigger fatigue weekend than the running data alone would suggest.",
-    "nextTime": "For a move like this, expect the watch to mislabel or undercount the activity — cross-check step-count distance/TSS manually rather than trusting the raw session type, and treat the days right after a move weekend as needing extra recovery margin, same as after a big training block."
+    "wentWell": "The device did track a real session here (54.9min, avg_hr 116bpm, max 139bpm are genuine readings, not step-count guesses) even though it logged under an unmapped generic activity type \u2014 sustained, moderate physical exertion the second straight day of moving, the day after Saturday's hard long run.",
+    "wentWrong": "The device has no 'manual labor/moving' sport type, so it fell back to an unmapped generic code with 0km GPS distance; the local step-count history corrected that to ~11.38km covered while carrying boxes and furniture. More importantly: this is two straight days (Fri+Sun) of real physical load from the move stacked on top of Saturday's overextended long run \u2014 a much bigger fatigue weekend than the running data alone would suggest.",
+    "nextTime": "For a move like this, expect the watch to mislabel or undercount the activity \u2014 cross-check step-count distance/TSS manually rather than trusting the raw session type, and treat the days right after a move weekend as needing extra recovery margin, same as after a big training block."
   },
   {
     "date": "2026-07-13",
@@ -1573,11 +1573,11 @@
         "hr": 92
       }
     ],
-    "tss": 36.2,
+    "tss": 46.9,
     "avg_pace_min_km": null,
-    "wentWell": "Stayed genuinely low-effort — avg_hr 111bpm is comfortably easy, well inside the 'don't push, active recovery' instruction for this swim class, and the session ran the full 63.6 minutes.",
-    "wentWrong": "Nothing notable on the training side — executed as intended. The device's own avg_pace_min_km (44.63) is a meaningless artifact of applying a running-pace formula to pool distance, not a real reflection of effort; it's reported here as null instead.",
-    "nextTime": "None needed for this session — ignore avg_pace_min_km for swim entries going forward, it doesn't mean anything for pool distance."
+    "wentWell": "Stayed genuinely low-effort \u2014 avg_hr 111bpm is comfortably easy, well inside the 'don't push, active recovery' instruction for this swim class, and the session ran the full 63.6 minutes.",
+    "wentWrong": "Nothing notable on the training side \u2014 executed as intended. The device's own avg_pace_min_km (44.63) is a meaningless artifact of applying a running-pace formula to pool distance, not a real reflection of effort; it's reported here as null instead.",
+    "nextTime": "None needed for this session \u2014 ignore avg_pace_min_km for swim entries going forward, it doesn't mean anything for pool distance."
   },
   {
     "date": "2026-07-14",
@@ -1733,11 +1733,11 @@
         "hr": 130
       }
     ],
-    "tss": 31.9,
+    "tss": 41.3,
     "avg_pace_min_km": 5.91,
     "wentWell": "Duration matched the prescription almost exactly (35.8 vs 35 min), and avg_hr 139 stayed just inside the ~114-142bpm easy ceiling despite this week's fatigue.",
-    "wentWrong": "Pace (5:91/km) ran noticeably slower than the prescribed 5:00-5:15/km range, and HR was still riding the top of the easy zone at that slower pace — the same fatigue signature already flagged on Jul 9 and Jul 11, with TSB sitting at -22.9 today.",
-    "nextTime": "Keep pacing by feel/HR rather than the stated pace range while TSB stays this negative — a slower easy run that stays HR-in-zone is doing its job even when it misses the pace target on paper."
+    "wentWrong": "Pace (5:91/km) ran noticeably slower than the prescribed 5:00-5:15/km range, and HR was still riding the top of the easy zone at that slower pace \u2014 the same fatigue signature already flagged on Jul 9 and Jul 11, with TSB sitting at -22.9 today.",
+    "nextTime": "Keep pacing by feel/HR rather than the stated pace range while TSB stays this negative \u2014 a slower easy run that stays HR-in-zone is doing its job even when it misses the pace target on paper."
   },
   {
     "date": "2026-07-15",
@@ -1749,9 +1749,9 @@
     "max_hr": null,
     "tss": 17.6,
     "avg_pace_min_km": null,
-    "wentWell": "Kept some light movement going on an unscheduled Wednesday (no session between Tuesday's easy run and Thursday's first MP intervals) without turning it into extra load — 4.39km at a modest 17.6 TSS is well within a true rest day.",
-    "wentWrong": "No formal workout was started, so there's no HR or pace to confirm the effort actually stayed easy — just a step-derived distance guess, the same recurring tracking gap seen on other unscheduled days.",
-    "nextTime": "Start a tracked workout even for casual movement on off days — low stakes here since it's a rest day either way, but it would remove the guesswork."
+    "wentWell": "Kept some light movement going on an unscheduled Wednesday (no session between Tuesday's easy run and Thursday's first MP intervals) without turning it into extra load \u2014 4.39km at a modest 17.6 TSS is well within a true rest day.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace to confirm the effort actually stayed easy \u2014 just a step-derived distance guess, the same recurring tracking gap seen on other unscheduled days.",
+    "nextTime": "Start a tracked workout even for casual movement on off days \u2014 low stakes here since it's a rest day either way, but it would remove the guesswork."
   },
   {
     "date": "2026-07-16",
@@ -1907,11 +1907,11 @@
         "hr": 108
       }
     ],
-    "tss": 32.3,
+    "tss": 41.8,
     "avg_pace_min_km": 6.55,
-    "wentWell": "Duration (36.2min) closely matched the prescribed 40 minutes (10' wu + 3x5' MP + rec + 10' cd), and avg HR stayed at 139 — inside the easy ceiling — for the whole session despite this being the plan's first real marathon-pace contact, on legs already carrying a week of negative TSB.",
-    "wentWrong": "The per-minute curve (reconstructed via HEARTRATE_AUTO — this session is the reason that capability got built into the pipeline) confirms the whole-session avg/max was hiding real structure: three visible efforts around minutes 7–11 (peak 164), 14–18 (peak 168), and 20–24 (peak 176) — each rep peaking higher than the last, classic cardiac drift within a single session, consistent with the week's negative TSB (-22.9 two days prior). The blended avg pace (6.55/km) is still close to meaningless on its own since it mixes warmup/cooldown jog, walking recovery, and the MP segments into one number.",
-    "nextTime": "The per-interval curve is now available automatically (no more manual reconstruction needed) — use it going forward to check whether each MP/tempo rep is holding steady or drifting upward like this session's did (155→163→168 avg per rep). If drift keeps showing up on future MP contacts, that's a signal current fitness can't yet hold marathon pace cleanly for repeated efforts, not just a one-off fatigue day."
+    "wentWell": "Duration (36.2min) closely matched the prescribed 40 minutes (10' wu + 3x5' MP + rec + 10' cd), and avg HR stayed at 139 \u2014 inside the easy ceiling \u2014 for the whole session despite this being the plan's first real marathon-pace contact, on legs already carrying a week of negative TSB.",
+    "wentWrong": "The per-minute curve (reconstructed via HEARTRATE_AUTO \u2014 this session is the reason that capability got built into the pipeline) confirms the whole-session avg/max was hiding real structure: three visible efforts around minutes 7\u201311 (peak 164), 14\u201318 (peak 168), and 20\u201324 (peak 176) \u2014 each rep peaking higher than the last, classic cardiac drift within a single session, consistent with the week's negative TSB (-28.5 two days prior). The blended avg pace (6.55/km) is still close to meaningless on its own since it mixes warmup/cooldown jog, walking recovery, and the MP segments into one number.",
+    "nextTime": "The per-interval curve is now available automatically (no more manual reconstruction needed) \u2014 use it going forward to check whether each MP/tempo rep is holding steady or drifting upward like this session's did (155\u2192163\u2192168 avg per rep). If drift keeps showing up on future MP contacts, that's a signal current fitness can't yet hold marathon pace cleanly for repeated efforts, not just a one-off fatigue day."
   },
   {
     "date": "2026-07-17",
@@ -1924,9 +1924,9 @@
     "hr_curve": [],
     "tss": 15.2,
     "avg_pace_min_km": null,
-    "wentWell": "Kept light movement going on an unscheduled Friday rest day without turning it into extra load — 3.8km at 15.2 TSS is well within a true rest day, same pattern as the Jul 15 unscheduled Wednesday.",
-    "wentWrong": "No formal workout was started, so there's no HR or pace to confirm the effort actually stayed easy — just a step-derived distance guess, the same recurring tracking gap seen on other unscheduled days.",
-    "nextTime": "Start a tracked workout even for casual movement on off days — low stakes here since it's a rest day either way, but it would remove the guesswork."
+    "wentWell": "Kept light movement going on an unscheduled Friday rest day without turning it into extra load \u2014 3.8km at 15.2 TSS is well within a true rest day, same pattern as the Jul 15 unscheduled Wednesday.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace to confirm the effort actually stayed easy \u2014 just a step-derived distance guess, the same recurring tracking gap seen on other unscheduled days.",
+    "nextTime": "Start a tracked workout even for casual movement on off days \u2014 low stakes here since it's a rest day either way, but it would remove the guesswork."
   },
   {
     "date": "2026-07-18",
@@ -1940,8 +1940,8 @@
     "tss": 20.1,
     "avg_pace_min_km": null,
     "wentWell": "Some running volume happened even without a tracked workout, so the week's long-run slot wasn't skipped entirely.",
-    "wentWrong": "This was scheduled as a 55-minute, ~9-10km long run (estKm 9.31) but only 5.03km was logged at 20.1 TSS — roughly half the prescribed distance — and with no formal workout started there's no HR data to tell whether this was an intentional cutback, a tracking failure, or fatigue setting in mid-run. That evening's readiness numbers (HRV 67 vs a 75 baseline, sleep score 37) suggest the body may already have been trending toward fatigue.",
-    "nextTime": "Start a tracked workout specifically for long runs — knowing HR during a prescribed long run matters far more than on a casual rest-day jog — and aim to hit the full prescribed duration next time, since the aerobic-base benefit of long runs comes from sustained time on feet, not just any distance."
+    "wentWrong": "This was scheduled as a 55-minute, ~9-10km long run (estKm 9.31) but only 5.03km was logged at 20.1 TSS \u2014 roughly half the prescribed distance \u2014 and with no formal workout started there's no HR data to tell whether this was an intentional cutback, a tracking failure, or fatigue setting in mid-run. That evening's readiness numbers (HRV 67 vs a 75 baseline, sleep score 37) suggest the body may already have been trending toward fatigue.",
+    "nextTime": "Start a tracked workout specifically for long runs \u2014 knowing HR during a prescribed long run matters far more than on a casual rest-day jog \u2014 and aim to hit the full prescribed duration next time, since the aerobic-base benefit of long runs comes from sustained time on feet, not just any distance."
   },
   {
     "date": "2026-07-19",
@@ -1952,33 +1952,348 @@
     "avg_hr": 148,
     "max_hr": 155,
     "hr_curve": [
-      {"t_min": 1, "hr": 113}, {"t_min": 2, "hr": 133}, {"t_min": 3, "hr": 140}, {"t_min": 4, "hr": 142},
-      {"t_min": 5, "hr": 145}, {"t_min": 6, "hr": 147}, {"t_min": 7, "hr": 148}, {"t_min": 8, "hr": 147},
-      {"t_min": 9, "hr": 149}, {"t_min": 10, "hr": 150}, {"t_min": 11, "hr": 147}, {"t_min": 12, "hr": 146},
-      {"t_min": 13, "hr": 143}, {"t_min": 14, "hr": 144}, {"t_min": 15, "hr": 145}, {"t_min": 16, "hr": 143},
-      {"t_min": 17, "hr": 141}, {"t_min": 18, "hr": 141}, {"t_min": 19, "hr": 146}, {"t_min": 20, "hr": 146},
-      {"t_min": 21, "hr": 143}, {"t_min": 22, "hr": 144}, {"t_min": 23, "hr": 146}, {"t_min": 24, "hr": 148},
-      {"t_min": 25, "hr": 145}, {"t_min": 26, "hr": 146}, {"t_min": 27, "hr": 143}, {"t_min": 28, "hr": 145},
-      {"t_min": 29, "hr": 148}, {"t_min": 30, "hr": 148}, {"t_min": 31, "hr": 150}, {"t_min": 32, "hr": 153},
-      {"t_min": 33, "hr": 151}, {"t_min": 34, "hr": 151}, {"t_min": 35, "hr": 151}, {"t_min": 36, "hr": 150},
-      {"t_min": 37, "hr": 149}, {"t_min": 38, "hr": 149}, {"t_min": 39, "hr": 151}, {"t_min": 40, "hr": 148},
-      {"t_min": 41, "hr": 148}, {"t_min": 42, "hr": 152}, {"t_min": 43, "hr": 150}, {"t_min": 44, "hr": 150},
-      {"t_min": 45, "hr": 150}, {"t_min": 46, "hr": 150}, {"t_min": 47, "hr": 148}, {"t_min": 48, "hr": 150},
-      {"t_min": 49, "hr": 152}, {"t_min": 50, "hr": 150}, {"t_min": 51, "hr": 150}, {"t_min": 52, "hr": 148},
-      {"t_min": 53, "hr": 147}, {"t_min": 54, "hr": 150}, {"t_min": 55, "hr": 151}, {"t_min": 56, "hr": 149},
-      {"t_min": 57, "hr": 149}, {"t_min": 58, "hr": 149}, {"t_min": 59, "hr": 151}, {"t_min": 60, "hr": 150},
-      {"t_min": 61, "hr": 152}, {"t_min": 62, "hr": 153}, {"t_min": 63, "hr": 150}, {"t_min": 64, "hr": 152},
-      {"t_min": 65, "hr": 154}, {"t_min": 66, "hr": 155}, {"t_min": 67, "hr": 155}, {"t_min": 68, "hr": 153},
-      {"t_min": 69, "hr": 151}, {"t_min": 70, "hr": 152}, {"t_min": 71, "hr": 154}, {"t_min": 72, "hr": 152},
-      {"t_min": 73, "hr": 152}, {"t_min": 74, "hr": 153}, {"t_min": 75, "hr": 151}, {"t_min": 76, "hr": 150},
-      {"t_min": 77, "hr": 150}, {"t_min": 78, "hr": 149}, {"t_min": 79, "hr": 149}, {"t_min": 80, "hr": 149},
-      {"t_min": 81, "hr": 149}, {"t_min": 82, "hr": 147}, {"t_min": 83, "hr": 151}, {"t_min": 84, "hr": 143}
+      {
+        "t_min": 1,
+        "hr": 113
+      },
+      {
+        "t_min": 2,
+        "hr": 133
+      },
+      {
+        "t_min": 3,
+        "hr": 140
+      },
+      {
+        "t_min": 4,
+        "hr": 142
+      },
+      {
+        "t_min": 5,
+        "hr": 145
+      },
+      {
+        "t_min": 6,
+        "hr": 147
+      },
+      {
+        "t_min": 7,
+        "hr": 148
+      },
+      {
+        "t_min": 8,
+        "hr": 147
+      },
+      {
+        "t_min": 9,
+        "hr": 149
+      },
+      {
+        "t_min": 10,
+        "hr": 150
+      },
+      {
+        "t_min": 11,
+        "hr": 147
+      },
+      {
+        "t_min": 12,
+        "hr": 146
+      },
+      {
+        "t_min": 13,
+        "hr": 143
+      },
+      {
+        "t_min": 14,
+        "hr": 144
+      },
+      {
+        "t_min": 15,
+        "hr": 145
+      },
+      {
+        "t_min": 16,
+        "hr": 143
+      },
+      {
+        "t_min": 17,
+        "hr": 141
+      },
+      {
+        "t_min": 18,
+        "hr": 141
+      },
+      {
+        "t_min": 19,
+        "hr": 146
+      },
+      {
+        "t_min": 20,
+        "hr": 146
+      },
+      {
+        "t_min": 21,
+        "hr": 143
+      },
+      {
+        "t_min": 22,
+        "hr": 144
+      },
+      {
+        "t_min": 23,
+        "hr": 146
+      },
+      {
+        "t_min": 24,
+        "hr": 148
+      },
+      {
+        "t_min": 25,
+        "hr": 145
+      },
+      {
+        "t_min": 26,
+        "hr": 146
+      },
+      {
+        "t_min": 27,
+        "hr": 143
+      },
+      {
+        "t_min": 28,
+        "hr": 145
+      },
+      {
+        "t_min": 29,
+        "hr": 148
+      },
+      {
+        "t_min": 30,
+        "hr": 148
+      },
+      {
+        "t_min": 31,
+        "hr": 150
+      },
+      {
+        "t_min": 32,
+        "hr": 153
+      },
+      {
+        "t_min": 33,
+        "hr": 151
+      },
+      {
+        "t_min": 34,
+        "hr": 151
+      },
+      {
+        "t_min": 35,
+        "hr": 151
+      },
+      {
+        "t_min": 36,
+        "hr": 150
+      },
+      {
+        "t_min": 37,
+        "hr": 149
+      },
+      {
+        "t_min": 38,
+        "hr": 149
+      },
+      {
+        "t_min": 39,
+        "hr": 151
+      },
+      {
+        "t_min": 40,
+        "hr": 148
+      },
+      {
+        "t_min": 41,
+        "hr": 148
+      },
+      {
+        "t_min": 42,
+        "hr": 152
+      },
+      {
+        "t_min": 43,
+        "hr": 150
+      },
+      {
+        "t_min": 44,
+        "hr": 150
+      },
+      {
+        "t_min": 45,
+        "hr": 150
+      },
+      {
+        "t_min": 46,
+        "hr": 150
+      },
+      {
+        "t_min": 47,
+        "hr": 148
+      },
+      {
+        "t_min": 48,
+        "hr": 150
+      },
+      {
+        "t_min": 49,
+        "hr": 152
+      },
+      {
+        "t_min": 50,
+        "hr": 150
+      },
+      {
+        "t_min": 51,
+        "hr": 150
+      },
+      {
+        "t_min": 52,
+        "hr": 148
+      },
+      {
+        "t_min": 53,
+        "hr": 147
+      },
+      {
+        "t_min": 54,
+        "hr": 150
+      },
+      {
+        "t_min": 55,
+        "hr": 151
+      },
+      {
+        "t_min": 56,
+        "hr": 149
+      },
+      {
+        "t_min": 57,
+        "hr": 149
+      },
+      {
+        "t_min": 58,
+        "hr": 149
+      },
+      {
+        "t_min": 59,
+        "hr": 151
+      },
+      {
+        "t_min": 60,
+        "hr": 150
+      },
+      {
+        "t_min": 61,
+        "hr": 152
+      },
+      {
+        "t_min": 62,
+        "hr": 153
+      },
+      {
+        "t_min": 63,
+        "hr": 150
+      },
+      {
+        "t_min": 64,
+        "hr": 152
+      },
+      {
+        "t_min": 65,
+        "hr": 154
+      },
+      {
+        "t_min": 66,
+        "hr": 155
+      },
+      {
+        "t_min": 67,
+        "hr": 155
+      },
+      {
+        "t_min": 68,
+        "hr": 153
+      },
+      {
+        "t_min": 69,
+        "hr": 151
+      },
+      {
+        "t_min": 70,
+        "hr": 152
+      },
+      {
+        "t_min": 71,
+        "hr": 154
+      },
+      {
+        "t_min": 72,
+        "hr": 152
+      },
+      {
+        "t_min": 73,
+        "hr": 152
+      },
+      {
+        "t_min": 74,
+        "hr": 153
+      },
+      {
+        "t_min": 75,
+        "hr": 151
+      },
+      {
+        "t_min": 76,
+        "hr": 150
+      },
+      {
+        "t_min": 77,
+        "hr": 150
+      },
+      {
+        "t_min": 78,
+        "hr": 149
+      },
+      {
+        "t_min": 79,
+        "hr": 149
+      },
+      {
+        "t_min": 80,
+        "hr": 149
+      },
+      {
+        "t_min": 81,
+        "hr": 149
+      },
+      {
+        "t_min": 82,
+        "hr": 147
+      },
+      {
+        "t_min": 83,
+        "hr": 151
+      },
+      {
+        "t_min": 84,
+        "hr": 143
+      }
     ],
-    "tss": 85.0,
+    "tss": 110.0,
     "avg_pace_min_km": 5.6,
-    "wentWell": "Distance (15.03km) and duration (84.1min) far exceeded the prescribed 55min/~9-10km, and pacing was remarkably flat (5.6 min/km) with no cardiac drift across the full run — HR settled into a steady 143-155bpm band from minute 5 onward and held there, suggesting the aerobic system handled the extra volume without strain.",
-    "wentWrong": "The prescription called for easy effort (~75-85% LT ≈ 125-142bpm), but HR sat above 142bpm for nearly the entire run (climbing from 113 to 145 in the first 5 minutes, then holding 141-155 the rest of the way) — this was run at a moderate/tempo-adjacent effort, not the easy long-run intensity the plan called for, on top of also running ~50% longer than prescribed.",
-    "nextTime": "On long-run days, treat the HR band (125-142bpm) as the hard ceiling regardless of how good pace feels — this run's aerobic control was genuinely strong, but stacking a harder-than-planned effort onto a longer-than-planned duration adds more fatigue than an easy long run is supposed to cost, especially heading into a week where TSB was already sitting around -15 to -17."
+    "wentWell": "Distance (15.03km) and duration (84.1min) far exceeded the prescribed 55min/~9-10km, and pacing was remarkably flat (5.6 min/km) with no cardiac drift across the full run \u2014 HR settled into a steady 143-155bpm band from minute 5 onward and held there, suggesting the aerobic system handled the extra volume without strain.",
+    "wentWrong": "The prescription called for easy effort (~75-85% LT \u2248 125-142bpm), but HR sat above 142bpm for nearly the entire run (climbing from 113 to 145 in the first 5 minutes, then holding 141-155 the rest of the way) \u2014 this was run at a moderate/tempo-adjacent effort, not the easy long-run intensity the plan called for, on top of also running ~50% longer than prescribed.",
+    "nextTime": "On long-run days, treat the HR band (125-142bpm) as the hard ceiling regardless of how good pace feels \u2014 this run's aerobic control was genuinely strong, but stacking a harder-than-planned effort onto a longer-than-planned duration adds more fatigue than an easy long run is supposed to cost, especially heading into a week where TSB was already sitting around -15 to -17."
   },
   {
     "date": "2026-07-20",
@@ -1991,8 +2306,8 @@
     "hr_curve": [],
     "tss": 10.6,
     "avg_pace_min_km": null,
-    "wentWell": "Light, unscheduled movement (2.64km) the day after the long run's harder-than-planned 84-minute effort — genuinely easy in scale, which is the right thing to layer on top of yesterday's session.",
-    "wentWrong": "No formal workout was started, so there's no HR or pace data to confirm effort actually stayed easy — the same recurring tracking gap seen on other unscheduled days (Jun 27, Jul 17, Jul 18).",
-    "nextTime": "Start a tracked workout even for casual shakeout movement — low stakes today since the distance itself is small, but it would remove the guesswork on days that follow a harder session like yesterday's."
+    "wentWell": "Light, unscheduled movement (2.64km) the day after the long run's harder-than-planned 84-minute effort \u2014 genuinely easy in scale, which is the right thing to layer on top of yesterday's session.",
+    "wentWrong": "No formal workout was started, so there's no HR or pace data to confirm effort actually stayed easy \u2014 the same recurring tracking gap seen on other unscheduled days (Jun 27, Jul 17, Jul 18).",
+    "nextTime": "Start a tracked workout even for casual shakeout movement \u2014 low stakes today since the distance itself is small, but it would remove the guesswork on days that follow a harder session like yesterday's."
   }
 ]

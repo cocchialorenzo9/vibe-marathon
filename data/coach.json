@@ -16,9 +16,9 @@
       "hours": 5.9,
       "score": 60
     },
-    "tsb": -17.14,
-    "ctl": 16.83,
-    "atl": 33.97,
+    "tsb": -20.84,
+    "ctl": 20.47,
+    "atl": 41.3,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -64,9 +64,9 @@
   "recommendation": {
     "type": "easy",
     "title": "Stay conservative — HRV down 27%, TSB -17",
-    "reasoning": "HRV is 27% below baseline (55ms vs a 75ms baseline) and TSB has slipped to -17.14 — both past the reduced-intensity threshold. Sleep score sits right at 60, the swap-to-easy line, and resting HR is elevated at 45bpm. Much of this traces to yesterday's long run, which ran 84 minutes at 143-155bpm instead of the prescribed easy 55-minute/125-142bpm effort — ATL jumped from 30.0 to 33.97 in two days. Tomorrow's session is already the lightest type on the calendar (35min easy), so no swap is needed, but the effort ceiling needs to be held strictly.",
+    "reasoning": "HRV is 27% below baseline (55ms vs a 75ms baseline) and TSB has slipped to -20.84 — both past the reduced-intensity threshold. Sleep score sits right at 60, the swap-to-easy line, and resting HR is elevated at 45bpm. Much of this traces to yesterday's long run, which ran 84 minutes at 143-155bpm instead of the prescribed easy 55-minute/125-142bpm effort — ATL jumped from 35.8 to 41.3 in two days. Tomorrow's session is already the lightest type on the calendar (35min easy), so no swap is needed, but the effort ceiling needs to be held strictly.",
     "sessionDetail": "35 min continuous, keep HR strictly within 125-142bpm (75-85% LT). After yesterday's long run sat above that band for nearly its full duration, today actually needs to be easy — if HR creeps past 142, slow down rather than hold pace.",
-    "bikeNote": "U-Bahn both ways today — TSB (-17.14) and HRV (-27%) are both flashing caution after yesterday's long run ran hotter and longer than planned. Give the legs the commute off too, not just the run.",
+    "bikeNote": "U-Bahn both ways today — TSB (-20.84) and HRV (-27%) are both flashing caution after yesterday's long run ran hotter and longer than planned. Give the legs the commute off too, not just the run.",
     "swimNote": ""
   },
   "phase": "base",
@@ -105,7 +105,7 @@
           {"t_min": 81, "hr": 149}, {"t_min": 82, "hr": 147}, {"t_min": 83, "hr": 151}, {"t_min": 84, "hr": 143}
         ],
         "avg_pace_min_km": 5.6,
-        "tss": 85.0,
+        "tss": 110.1,
         "lesson": "This long run ran nearly double its prescribed 35-40min eased-back guidance (84.1 min) and settled into a steady 143-155bpm band from minute 5 onward — well above the 125-142bpm easy zone, closer to moderate/tempo effort, despite genuinely flat pacing (5.6/km) and no drift."
       },
       {
@@ -127,8 +127,8 @@
           {"t_min": 33, "hr": 107}, {"t_min": 34, "hr": 106}, {"t_min": 35, "hr": 108}, {"t_min": 36, "hr": 108}
         ],
         "avg_pace_min_km": 6.55,
-        "tss": 32.3,
-        "lesson": "Blended avg HR (139) masked three separate MP efforts that each ran hotter than the last — peaks of 164, 168, then 176 across minutes 7-11, 14-18, and 20-24 — classic within-session cardiac drift on a body still carrying negative TSB (-22.9 two days earlier)."
+        "tss": 41.8,
+        "lesson": "Blended avg HR (139) masked three separate MP efforts that each ran hotter than the last — peaks of 164, 168, then 176 across minutes 7-11, 14-18, and 20-24 — classic within-session cardiac drift on a body still carrying negative TSB (-28.5 two days earlier)."
       },
       {
         "date": "2026-07-14",
@@ -149,10 +149,10 @@
           {"t_min": 33, "hr": 141}, {"t_min": 34, "hr": 143}, {"t_min": 35, "hr": 141}, {"t_min": 36, "hr": 130}
         ],
         "avg_pace_min_km": 5.91,
-        "tss": 31.9,
+        "tss": 41.3,
         "lesson": "Clean easy execution end to end — the curve holds a tight 134-144bpm band for the full 36 minutes with no drift or spikes, unlike Thursday's tempo session; pace (5.91/km) continues to look like the athlete's honest current easy-effort speed rather than the old 5:00-5:15/km assumption."
       }
     ],
-    "analysis": "TSS held in a routine base-phase band (32-32) on Jul 14 and 16, then spiked to 85 on Jul 19 when the long run — delayed a day after Jul 18's shortfall — ran 84 minutes at 143-155bpm rather than the prescribed 35-40min easy effort, effectively becoming the week's hardest session instead of its easiest. That landed on top of an already-negative TSB and is the direct driver of today's elevated ATL (33.97) and the readiness caution flags for tomorrow."
+    "analysis": "TSS held in a routine base-phase band (41-42) on Jul 14 and 16, then spiked to 110 on Jul 19 when the long run — delayed a day after Jul 18's shortfall — ran 84 minutes at 143-155bpm rather than the prescribed 35-40min easy effort, effectively becoming the week's hardest session instead of its easiest. That landed on top of an already-negative TSB and is the direct driver of today's elevated ATL (41.3) and the readiness caution flags for tomorrow."
   }
 }

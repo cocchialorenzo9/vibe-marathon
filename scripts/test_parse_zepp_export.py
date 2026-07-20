@@ -10,7 +10,7 @@ import os
 import sys
 import tempfile
 import unittest
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from parse_zepp_export import (
@@ -228,12 +228,15 @@ class TestReadRestingHr(unittest.TestCase):
     def tearDown(self):
         import shutil; shutil.rmtree(self.tmp)
 
-    def test_returns_min_hr_in_sleep_window(self):
+    def test_sparse_night_falls_back_to_plain_average(self):
+        # Only 6 samples (30-min spacing) — below the 10-sample window
+        # threshold, so this exercises the plain-average fallback path,
+        # not the lowest-30-min-window logic. 55+48+51+49+52+47 = 302/6 -> 50.
         start = datetime(2026, 6, 29, 0, 0, tzinfo=timezone.utc)
         stop = datetime(2026, 6, 29, 6, 28, tzinfo=timezone.utc)
         rhr, n = read_resting_hr(self.export, "2026-06-29", start, stop)
-        self.assertEqual(rhr, 47)
-        self.assertGreater(n, 0)
+        self.assertEqual(rhr, 50)
+        self.assertEqual(n, 6)
 
     def test_excludes_sport_session_hr(self):
         # HR at 08:50 (120bpm) is outside sleep window 00:00-06:28
@@ -248,6 +251,52 @@ class TestReadRestingHr(unittest.TestCase):
         rhr, n = read_resting_hr(self.export, "2025-01-01", start, stop)
         self.assertIsNone(rhr)
         self.assertEqual(n, 0)
+
+    def test_dense_night_ignores_single_noisy_low_sample(self):
+        # 21 samples every 2 minutes, mostly hovering in a ~44-46bpm plateau,
+        # with one single artefact-like dip to 36bpm thrown in. A bare-minimum
+        # approach would report 36; the lowest-30-min-window average should
+        # land near the real plateau instead, proving it's not swayed by one
+        # noisy sample the way the old min()-based approach was.
+        tmp = tempfile.mkdtemp()
+        try:
+            export = os.path.join(tmp, "7085574765_2000000000000")
+            _write_csv(
+                os.path.join(export, "SLEEP", "SLEEP.csv"),
+                ["date", "deepSleepTime", "shallowSleepTime", "wakeTime", "start", "stop", "REMTime", "naps"],
+                [{
+                    "date": "2026-07-01", "deepSleepTime": 90, "shallowSleepTime": 200,
+                    "wakeTime": 5, "start": "2026-07-01 00:00:00+0000",
+                    "stop": "2026-07-01 01:00:00+0000", "REMTime": 60, "naps": "",
+                }],
+            )
+            minute_bpm = [
+                (0, 60), (2, 58), (4, 52), (6, 48), (8, 45), (10, 44), (12, 46),
+                (14, 36),  # single artefact-like dip
+                (16, 44), (18, 45), (20, 46), (22, 44), (24, 45), (26, 46),
+                (28, 45), (30, 44), (32, 46), (34, 50), (36, 55), (38, 60), (40, 65),
+            ]
+            # HEARTRATE_AUTO "time" is local wall-clock (Europe/Berlin, UTC+2 in
+            # summer) per real Zepp exports, +2h ahead of the UTC instants
+            # these rows represent (same convention as _make_export above) —
+            # so local 02:00 lines up with the 00:00 UTC start of the window.
+            rows = [
+                {"date": "2026-07-01",
+                 "time": (datetime(2026, 7, 1, 2, 0) + timedelta(minutes=m)).strftime("%H:%M"),
+                 "heartRate": bpm}
+                for m, bpm in minute_bpm
+            ]
+            _write_csv(os.path.join(export, "HEARTRATE_AUTO", "HR.csv"),
+                       ["date", "time", "heartRate"], rows)
+
+            start = datetime(2026, 7, 1, 0, 0, tzinfo=timezone.utc)
+            stop = datetime(2026, 7, 1, 1, 0, tzinfo=timezone.utc)
+            rhr, n = read_resting_hr(export, "2026-07-01", start, stop)
+            self.assertGreater(rhr, 40)  # not dragged down to the 36bpm outlier
+            self.assertLess(rhr, 50)     # lands near the real ~44-46bpm plateau
+            self.assertGreaterEqual(n, 10)
+        finally:
+            import shutil; shutil.rmtree(tmp)
 
 
 class TestDecodeSportType(unittest.TestCase):

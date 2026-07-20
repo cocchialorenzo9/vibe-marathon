@@ -24,7 +24,7 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # data/zepp/ relative to the project root (one level above scripts/), same
 # resolution pattern as fetch_amazfit.py's ZEPP_DIR.
 DEFAULT_ZEPP_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "zepp")
-ATHLETE_MAX_HR = int(os.environ.get("ATHLETE_MAX_HR", 190))
+ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 167))
 
 sys.path.insert(0, _SCRIPT_DIR)
 from parse_zepp_export import build_recent_sessions
@@ -65,7 +65,7 @@ def main():
         }, indent=2))
         return
 
-    sessions = build_recent_sessions(args.zepp_dir, since_str, today_str, ATHLETE_MAX_HR)
+    sessions = build_recent_sessions(args.zepp_dir, since_str, today_str, ATHLETE_LTHR)
     print(json.dumps({
         "since": since_str, "today": today_str, "days": days,
         "sessions": sessions, "no_export": False,

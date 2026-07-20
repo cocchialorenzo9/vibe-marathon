@@ -122,7 +122,7 @@
           },
           "movement": "No cycling before the long run \u2014 get to the start on foot or U-Bahn. No commute to plan around, it's Sunday.",
           "food": "Carb-loaded breakfast 1\u20132h before. Bring a gel or dates to test your gut \u2014 same fueling plan as originally set for Saturday.",
-          "bigPicture": "Long run pushed back a day at the athlete's request \u2014 Saturday's attempt came up well short (5.03km logged against this same ~9-10km target, no HR data), and last night's readiness was rough (sleep score 37, HRV 12% below baseline). TSB is -14.69, the best it's been in three weeks, which helps the case for trying again today, but see tomorrow's recommendation for whether to run the full session or an eased-back version given last night's sleep."
+          "bigPicture": "Long run pushed back a day at the athlete's request \u2014 Saturday's attempt came up well short (5.03km logged against this same ~9-10km target, no HR data), and last night's readiness was rough (sleep score 37, HRV 12% below baseline). TSB is -17.28, the best it's been in three weeks, which helps the case for trying again today, but see tomorrow's recommendation for whether to run the full session or an eased-back version given last night's sleep."
         }
       ],
       "estKm": 22.1
@@ -144,9 +144,9 @@
             "detail": "35 min at easy effort (~75-85% LT)",
             "estKm": 5.92
           },
-          "movement": "U-Bahn both ways \u2014 TSB dropped to -17.14 and HRV is 27% below baseline (55 vs 75) after yesterday's long run ran hotter and longer than planned; give the legs a real break from the commute too.",
+          "movement": "U-Bahn both ways \u2014 TSB dropped to -20.84 and HRV is 27% below baseline (55 vs 75) after yesterday's long run ran hotter and longer than planned; give the legs a real break from the commute too.",
           "food": "Normal balanced day, base-phase carb levels.",
-          "bigPicture": "Week 3 of base, 82 days out from race day. Yesterday's long run (Jul 19) ended up running 84 minutes at 143-155bpm \u2014 well past both the prescribed 55-minute duration and the easy 125-142bpm zone \u2014 so today's easy 35' carries real purpose: HRV is down 27% and TSB has slipped to -17.14, both arguing for keeping this one genuinely aerobic rather than another accidental tempo effort."
+          "bigPicture": "Week 3 of base, 82 days out from race day. Yesterday's long run (Jul 19) ended up running 84 minutes at 143-155bpm \u2014 well past both the prescribed 55-minute duration and the easy 125-142bpm zone \u2014 so today's easy 35' carries real purpose: HRV is down 27% and TSB has slipped to -20.84, both arguing for keeping this one genuinely aerobic rather than another accidental tempo effort."
         },
         {
           "date": "2026-07-22",
@@ -156,7 +156,7 @@
             "title": "Open swim",
             "detail": "30\u201335 min in the pool, aerobic pace. Continuous crawl with focus on breathing. No interval training."
           },
-          "movement": "Bike both ways to the pool is fine \u2014 swimming is low-impact enough that today's elevated fatigue signals (TSB -17.14, HRV down 27%) don't change the commute call, only the training effort.",
+          "movement": "Bike both ways to the pool is fine \u2014 swimming is low-impact enough that today's elevated fatigue signals (TSB -20.84, HRV down 27%) don't change the commute call, only the training effort.",
           "food": "Normal balanced day.",
           "bigPicture": "Second self-managed open-water swim slot, 81 days out. Pure aerobic cross-training with zero impact on legs still absorbing yesterday's harder-than-planned long run \u2014 a good day for HRV and TSB to start recovering before Thursday's first quality tempo session."
         },
@@ -171,7 +171,7 @@
           },
           "movement": "Bike both ways \u2014 two lighter days (Tuesday's easy run, Wednesday's swim) should be enough for TSB and HRV to climb back from today's dip before this first 1km-repeat session; downgrade to U-Bahn if morning readiness still looks rough.",
           "food": "Carb-rich breakfast before. Post-session: protein + carbs within 30 min of finishing.",
-          "bigPicture": "First 1km repeats at marathon pace, 80 days out \u2014 building on week 2's 3\u00d75' MP work. The Jul 19-20 readiness dip (HRV -27%, TSB -17.14) should have two easier days to resolve before this one lands. Take full recovery between reps and keep pace controlled \u2014 the same overshoot pattern that turned Sunday's long run into a tempo effort is worth avoiding here too."
+          "bigPicture": "First 1km repeats at marathon pace, 80 days out \u2014 building on week 2's 3\u00d75' MP work. The Jul 19-20 readiness dip (HRV -27%, TSB -20.84) should have two easier days to resolve before this one lands. Take full recovery between reps and keep pace controlled \u2014 the same overshoot pattern that turned Sunday's long run into a tempo effort is worth avoiding here too."
         },
         {
           "date": "2026-07-25",
@@ -206,9 +206,9 @@
             "detail": "25 min very slow (~65-75% LT) \u2014 recovery week",
             "estKm": 4.23
           },
-          "movement": "Bike both ways fine \u2014 very easy run, minimal leg stress, and by now TSB should be well clear of this week's -17.14 dip.",
+          "movement": "Bike both ways fine \u2014 very easy run, minimal leg stress, and by now TSB should be well clear of this week's -20.84 dip.",
           "food": "Normal balanced day",
-          "bigPicture": "Recovery week, 75 days out. After Jul 19's harder-than-planned long run pushed ATL to 33.97 and TSB down to -17.14, this slow week is exactly the reset needed before build phase's bigger jumps (Monday medium-long runs, Tuesday LT intervals) start."
+          "bigPicture": "Recovery week, 75 days out. After Jul 19's harder-than-planned long run pushed ATL to 41.3 and TSB down to -20.84, this slow week is exactly the reset needed before build phase's bigger jumps (Monday medium-long runs, Tuesday LT intervals) start."
         },
         {
           "date": "2026-07-29",
@@ -270,7 +270,7 @@
           },
           "movement": "Bike both ways fine",
           "food": "Normal balanced day \u2014 nothing special for 35 min easy.",
-          "bigPicture": "First Monday medium-long run of the plan, 69 days out \u2014 new from this week, adding aerobic volume without a second maximal-effort day. Sits two days after Saturday's long run and three ahead of Thursday's MP work. By now the Jul 19-20 fatigue dip (TSB -17.14, HRV -27%) should be long resolved \u2014 a clean start to build phase."
+          "bigPicture": "First Monday medium-long run of the plan, 69 days out \u2014 new from this week, adding aerobic volume without a second maximal-effort day. Sits two days after Saturday's long run and three ahead of Thursday's MP work. By now the Jul 19-20 fatigue dip (TSB -20.84, HRV -27%) should be long resolved \u2014 a clean start to build phase."
         },
         {
           "date": "2026-08-04",

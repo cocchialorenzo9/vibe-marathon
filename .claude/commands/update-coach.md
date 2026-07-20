@@ -69,8 +69,12 @@ fabricated sleep-score proxy, a miscalibrated zone-2 alert), so it isn't
 beyond doubt, but it's the athlete's explicit call. Still superseded by the
 field test planned for ~Aug 4, 2026 (Week 5, Build day 1) if that produces a
 materially different number. When the LT number changes (either from the
-watch or the field test), update ONLY this block — training-plan.json's day
-entries use %LT, not bpm, so they never need re-editing.
+watch or the field test), update this block, **and** `DEFAULT_LTHR` in
+`scripts/parse_zepp_export.py` (or set the `ATHLETE_LTHR` env var) — TSS is
+now computed against LTHR (see Step 5's history-entry schema), so a stale
+Python constant would silently miscompute every session's TSS after a field
+test changes the number. `training-plan.json`'s day entries use %LT, not
+bpm, so those never need re-editing.
 
 Zone bands (replace pace for easy/recovery/long guidance):
 - Recovery: 65–75% of LT ≈ 109–125bpm
@@ -166,7 +170,15 @@ not just a way to decide whether to add more:
 ## Step 4 — Reason and generate the recommendation
 
 Given:
-- Today's HRV vs baseline (`hrv.value` vs `hrv.baseline`). If `hrv.baseline` is null (first week on a new device), use the last available HRV value as a rough proxy or skip HRV delta reasoning and note "HRV baseline building up."
+- Today's HRV vs baseline (`hrv.value` vs `hrv.baseline`). `hrv.baseline` is a
+  geometric mean of the trailing window (log-space averaging, per Plews et al.
+  2013 — raw-ms HRV is non-normally distributed), not a plain arithmetic mean
+  — compute `delta_pct` as a log-ratio, `round(math.log(value/baseline)*100)`,
+  not `(value-baseline)/baseline*100`, so this field stays consistent with how
+  `fetch_amazfit.py`'s `hrv_status`/`compute_readiness_score` now do the same
+  comparison internally. If `hrv.baseline` is null (first week on a new
+  device), use the last available HRV value as a rough proxy or skip HRV delta
+  reasoning and note "HRV baseline building up."
 - Resting HR trend
 - Sleep score (`sleep.score`)
 - TSB (positive = rested; below -15 = caution; below -25 = swap to easy)
@@ -442,7 +454,7 @@ sessions are never included in it.
   "date": "<today's date YYYY-MM-DD>",
   "generatedFor": "<tomorrow's date YYYY-MM-DD>",
   "readiness": {
-    "score": <0-100 computed from HRV delta + sleep score + TSB>,
+    "score": <0-100 computed from HRV delta + sleep score + resting-HR delta>,
     "hrv": { "value": <int>, "baseline": <int>, "delta_pct": <int> },
     "restingHR": { "value": <int>, "trend": "normal|elevated|low" },
     "sleep": { "hours": <float>, "score": <int 0-100> },
@@ -507,7 +519,8 @@ Append today's data as a new entry at the end of the **local** history file at `
 ```json
 {
   "date": "<today YYYY-MM-DD>",
-  "tss": <computed: roughly duration_min/60 * (avg_hr/max_hr)^2 * 100>,
+  "tss": <computed: duration_min/60 * (avg_hr/LTHR)^2 * 100 — hrTSS convention,
+          LTHR from the Lactate-threshold reference above (167bpm), not max_hr>,
   "distance_km": <float>,
   "avg_hr": <int or null>,
   "hrv": <int>,

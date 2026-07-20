@@ -38,7 +38,8 @@ _RUNNING_TYPES = {1, 2}
 _CYCLING_TYPES = {3, 6, 7, 9}
 _WALKING_TYPES = {8, 13, 15}
 
-DEFAULT_MAX_HR = 190
+DEFAULT_LTHR = 167  # device-reported lactate threshold HR; keep in sync with
+                     # the Lactate-threshold reference in .claude/commands/update-coach.md
 
 
 # --- Directory / file helpers ---
@@ -199,26 +200,69 @@ def _hr_in_window(hr_rows, start_utc, end_utc):
     return [bpm for _, bpm in _hr_samples_in_window(hr_rows, start_utc, end_utc)]
 
 
+def _lowest_window_avg(samples, window_minutes=30, min_samples=10):
+    """
+    Given ascending (dt, bpm) samples, return (avg_bpm, n) for the
+    window_minutes-wide sliding window with the lowest average — the
+    Garmin/Polar/Oura-style "lowest sustained plateau" approach to resting HR,
+    which is robust against a single noisy/artefact sample the way a bare
+    minimum isn't. Falls back to a plain average of all samples when there
+    isn't enough density for any full window (still better than a single
+    noisy point on a sparse night). Returns (None, 0) for no samples.
+    """
+    if not samples:
+        return None, 0
+    if len(samples) < min_samples:
+        avg = sum(bpm for _, bpm in samples) / len(samples)
+        return round(avg), len(samples)
+
+    window = timedelta(minutes=window_minutes)
+    times = [dt for dt, _ in samples]
+    bpms = [bpm for _, bpm in samples]
+
+    best_avg, best_n = None, 0
+    left = 0
+    running_sum = 0
+    for right in range(len(samples)):
+        running_sum += bpms[right]
+        while times[right] - times[left] > window:
+            running_sum -= bpms[left]
+            left += 1
+        count = right - left + 1
+        if count >= min_samples:
+            avg = running_sum / count
+            if best_avg is None or avg < best_avg:
+                best_avg, best_n = avg, count
+    if best_avg is None:
+        # Enough samples overall, but none clustered densely enough for a
+        # full window (e.g. sparse-but->min_samples across a long gap) —
+        # plain average is the safest fallback.
+        avg = sum(bpms) / len(bpms)
+        return round(avg), len(bpms)
+    return round(best_avg), best_n
+
+
 def read_resting_hr(export_dir, date_str, sleep_start_utc, sleep_stop_utc, hr_rows=None):
     """
-    Estimate resting HR from HEARTRATE_AUTO during the sleep window.
-    Falls back to 22:00 prev-day → 08:00 this-day if sleep times unavailable.
+    Estimate resting HR as the lowest 30-minute average heart rate during the
+    sleep window — matching published wearable methodology (e.g. Garmin's
+    lowest-30-min-average approach), rather than a single minimum sample,
+    which is prone to sensor/motion artefacts. Falls back to 22:00 prev-day →
+    08:00 this-day if sleep times unavailable.
     Returns (resting_hr_int, n_samples) or (None, 0).
     """
     if hr_rows is None:
         hr_rows = _load_hr_rows(export_dir)
 
     if sleep_start_utc and sleep_stop_utc:
-        values = _hr_in_window(hr_rows, sleep_start_utc, sleep_stop_utc)
+        samples = _hr_samples_in_window(hr_rows, sleep_start_utc, sleep_stop_utc)
     else:
         base = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        values = _hr_in_window(hr_rows, base - timedelta(hours=2), base + timedelta(hours=8))
+        samples = _hr_samples_in_window(hr_rows, base - timedelta(hours=2), base + timedelta(hours=8))
 
     # Filter artifacts: < 35 is sensor error; > 120 during sleep is movement artefact
-    values = [v for v in values if 35 < v < 120]
-    if not values:
-        return None, 0
-    return min(values), len(values)
+    samples = [(dt, v) for dt, v in samples if 35 < v < 120]
+    return _lowest_window_avg(samples)
 
 
 # --- Sport sessions ---
@@ -261,10 +305,12 @@ def compute_hr_curve(sport_start_utc, sport_duration_s, hr_rows):
     ]
 
 
-def _compute_tss(duration_min, avg_hr, max_hr):
-    """TSS ≈ (duration_h) × (avg_hr / max_hr)² × 100."""
-    if avg_hr and max_hr and avg_hr > 0 and max_hr > 0:
-        return round((duration_min / 60) * (avg_hr / max_hr) ** 2 * 100, 1)
+def _compute_tss(duration_min, avg_hr, lthr):
+    """hrTSS ≈ (duration_h) × (avg_hr / LTHR)² × 100 — TrainingPeaks hrTSS
+    convention: intensity is expressed relative to lactate threshold HR, not
+    max HR (confirmed against TrainingPeaks' own hrTSS methodology docs)."""
+    if avg_hr and lthr and avg_hr > 0 and lthr > 0:
+        return round((duration_min / 60) * (avg_hr / lthr) ** 2 * 100, 1)
     return None
 
 
@@ -280,7 +326,7 @@ def _fallback_tss(type_code, distance_m, duration_min):
     return round(duration_min / 60 * 30, 1)
 
 
-def read_sport_sessions(export_dir, date_str, hr_rows=None, max_hr=DEFAULT_MAX_HR):
+def read_sport_sessions(export_dir, date_str, hr_rows=None, lthr=DEFAULT_LTHR):
     """
     Return list of sport session dicts for sessions starting on date_str.
     Each dict: type, type_name, distance_km, duration_min, avg_hr, max_hr,
@@ -307,7 +353,7 @@ def read_sport_sessions(export_dir, date_str, hr_rows=None, max_hr=DEFAULT_MAX_H
 
         avg_hr, sess_max_hr = compute_activity_hr(start_utc, duration_s, hr_rows)
         hr_curve = compute_hr_curve(start_utc, duration_s, hr_rows)
-        tss = _compute_tss(duration_min, avg_hr, max_hr) or _fallback_tss(type_code, distance_m, duration_min)
+        tss = _compute_tss(duration_min, avg_hr, lthr) or _fallback_tss(type_code, distance_m, duration_min)
 
         sessions.append({
             "type": type_code,
@@ -358,7 +404,7 @@ def _pick_primary_session(sessions):
 _COMMUTE_TYPE_NAMES = {"outdoor_cycling", "indoor_cycling"}
 
 
-def pick_best_export_for_date(zepp_dir, date_str, max_hr=DEFAULT_MAX_HR, hr_rows_cache=None):
+def pick_best_export_for_date(zepp_dir, date_str, lthr=DEFAULT_LTHR, hr_rows_cache=None):
     """
     Return (sessions, best_export_dir): the read_sport_sessions() result from
     whichever export subdirectory sums to the highest total TSS for date_str —
@@ -385,14 +431,14 @@ def pick_best_export_for_date(zepp_dir, date_str, max_hr=DEFAULT_MAX_HR, hr_rows
         if hr_rows is None:
             hr_rows = _load_hr_rows(export_dir)
             hr_rows_cache[export_dir] = hr_rows
-        sessions = read_sport_sessions(export_dir, date_str, hr_rows, max_hr)
+        sessions = read_sport_sessions(export_dir, date_str, hr_rows, lthr)
         total_tss = sum(s["tss"] or 0 for s in sessions)
         if total_tss > best_tss:
             best_tss, best_dir, best_sessions = total_tss, export_dir, sessions
     return best_sessions, best_dir
 
 
-def build_recent_sessions(zepp_dir, since_date_str, today_str, max_hr=DEFAULT_MAX_HR):
+def build_recent_sessions(zepp_dir, since_date_str, today_str, lthr=DEFAULT_LTHR):
     """
     Return a flat list of individual sport sessions (excluding commute
     cycling — see _COMMUTE_TYPE_NAMES) for every calendar date from
@@ -417,7 +463,7 @@ def build_recent_sessions(zepp_dir, since_date_str, today_str, max_hr=DEFAULT_MA
     d = start
     while d <= end:
         date_str = d.strftime("%Y-%m-%d")
-        sessions, _ = pick_best_export_for_date(zepp_dir, date_str, max_hr, hr_rows_cache)
+        sessions, _ = pick_best_export_for_date(zepp_dir, date_str, lthr, hr_rows_cache)
         for s in sessions:
             if s["type_name"] in _COMMUTE_TYPE_NAMES:
                 continue
@@ -444,7 +490,7 @@ def check_history_duplicate(history_path, date_str):
 
 # --- History backfill ---
 
-def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_HR):
+def synthesize_history_entry(export_dir, date_str, hr_rows, lthr=DEFAULT_LTHR):
     """
     Build a history.json-compatible dict for date_str from export data.
     Returns None if the date has no meaningful data at all.
@@ -457,7 +503,7 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_H
             export_dir, date_str, sleep["start_utc"], sleep["stop_utc"], hr_rows
         )
 
-    sessions = read_sport_sessions(export_dir, date_str, hr_rows, max_hr)
+    sessions = read_sport_sessions(export_dir, date_str, hr_rows, lthr)
     activity = read_activity_fallback(export_dir, date_str)
 
     total_tss = sum(s["tss"] for s in sessions)
@@ -493,7 +539,7 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, max_hr=DEFAULT_MAX_H
     }
 
 
-def backfill_history(export_dir, history_path, max_hr=DEFAULT_MAX_HR):
+def backfill_history(export_dir, history_path, lthr=DEFAULT_LTHR):
     """
     Append history entries for any export dates missing from history.json.
     Returns list of newly added date strings.
@@ -518,7 +564,7 @@ def backfill_history(export_dir, history_path, max_hr=DEFAULT_MAX_HR):
     for date_str in read_all_dates(latest):
         if date_str in existing:
             continue
-        entry = synthesize_history_entry(latest, date_str, hr_rows, max_hr)
+        entry = synthesize_history_entry(latest, date_str, hr_rows, lthr)
         if entry:
             history.append(entry)
             added.append(date_str)
@@ -545,7 +591,7 @@ def parse_export(zepp_dir, target_date, history_path):
 
     warnings = validate_export(latest)
     hr_rows = _load_hr_rows(latest)
-    max_hr = int(os.environ.get("ATHLETE_MAX_HR", DEFAULT_MAX_HR))
+    lthr = int(os.environ.get("ATHLETE_LTHR", DEFAULT_LTHR))
 
     # Staleness
     newest = get_export_newest_date(latest)
@@ -592,7 +638,7 @@ def parse_export(zepp_dir, target_date, history_path):
         datetime.strptime(target_date, "%Y-%m-%d") - timedelta(days=1)
     ).strftime("%Y-%m-%d")
 
-    sessions = read_sport_sessions(latest, yesterday, hr_rows, max_hr)
+    sessions = read_sport_sessions(latest, yesterday, hr_rows, lthr)
     activity = read_activity_fallback(latest, yesterday)
 
     if sessions:
