@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-20",
-  "generatedFor": "2026-07-21",
+  "date": "2026-07-21",
+  "generatedFor": "2026-07-22",
   "readiness": {
-    "score": 31,
+    "score": 51,
     "hrv": {
-      "value": 55,
-      "baseline": 75,
-      "delta_pct": -27
+      "value": 82,
+      "baseline": 71,
+      "delta_pct": 14
     },
     "restingHR": {
-      "value": 45,
-      "trend": "elevated"
+      "value": 41,
+      "trend": "normal"
     },
     "sleep": {
-      "hours": 5.9,
-      "score": 60
+      "hours": 7.0,
+      "score": 77
     },
-    "tsb": -20.84,
-    "ctl": 20.47,
-    "atl": 41.3,
+    "tsb": -20.19,
+    "ctl": 20.72,
+    "atl": 40.91,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -49,31 +49,53 @@
     }
   },
   "volumeCheck": {
-    "realZone2Pace_min_km": 5.91,
-    "asOf": "2026-07-20",
+    "realZone2Pace_min_km": 5.885,
+    "asOf": "2026-07-21",
     "thisWeekEstKm": 23.5,
     "peakWeekEstKm": {
-      "week10": 59.2,
-      "week11": 60.3,
-      "week12": 33.8,
-      "week13": 50.3
+      "week10": 59.3,
+      "week11": 60.5,
+      "week12": 34.0,
+      "week13": 50.5
     },
-    "referenceNote": "Pace estimate unchanged at 5.91 min/km — still built on a single qualifying clean-easy data point (Jul 14, HR139). Yesterday's long run (Jul 19, HR148) doesn't qualify, since it ran above the easy-aerobic band, so it can't refine the estimate. Peak week (11) remains ~60.3km, ~1% below Hal Higdon's Marathon 3 peak of ~61km/week.",
+    "referenceNote": "Pace estimate now built on 2 qualifying clean-easy data points (Jul 14 HR139, Jul 21 HR134), median 5.885 min/km — a small update from the single-point estimate used last run (5.91). Peak week (11) is now ~60.5km, ~0.8% below Hal Higdon's Marathon 3 peak of ~61km/week.",
     "flagged": false
   },
   "recommendation": {
-    "type": "easy",
-    "title": "Stay conservative — HRV down 27%, TSB -17",
-    "reasoning": "HRV is 27% below baseline (55ms vs a 75ms baseline) and TSB has slipped to -20.84 — both past the reduced-intensity threshold. Sleep score sits right at 60, the swap-to-easy line, and resting HR is elevated at 45bpm. Much of this traces to yesterday's long run, which ran 84 minutes at 143-155bpm instead of the prescribed easy 55-minute/125-142bpm effort — ATL jumped from 35.8 to 41.3 in two days. Tomorrow's session is already the lightest type on the calendar (35min easy), so no swap is needed, but the effort ceiling needs to be held strictly.",
-    "sessionDetail": "35 min continuous, keep HR strictly within 125-142bpm (75-85% LT). After yesterday's long run sat above that band for nearly its full duration, today actually needs to be easy — if HR creeps past 142, slow down rather than hold pace.",
-    "bikeNote": "U-Bahn both ways today — TSB (-20.84) and HRV (-27%) are both flashing caution after yesterday's long run ran hotter and longer than planned. Give the legs the commute off too, not just the run.",
-    "swimNote": ""
+    "type": "swim",
+    "title": "Swim as planned — HRV rebounded, TSB still cautious",
+    "reasoning": "HRV jumped to 82ms, 14% above the 71ms baseline — a sharp reversal from yesterday's -27%. Sleep score is 77 and resting HR is back to a normal 41bpm. TSB remains cautious at -20.2 (barely moved from yesterday's -20.84, since ATL is still elevated at 40.91 against CTL 20.72), but tomorrow's scheduled swim is already the lightest session on the calendar, so no further adjustment is needed.",
+    "sessionDetail": "30-35 min continuous crawl in the pool, aerobic pace, focus on breathing technique. No interval training — pure aerobic cross-training with zero impact on legs still absorbing this week's harder-than-planned long run.",
+    "bikeNote": "Bike both ways to the pool is fine — swimming is low-impact enough that today's still-cautious TSB (-20.2) doesn't change the commute call, only running effort would be affected.",
+    "swimNote": "Keep it continuous and aerobic — no intervals today, even though HRV and sleep look great. TSB hasn't caught up yet."
   },
   "phase": "base",
-  "daysToRace": 83,
+  "daysToRace": 81,
   "recentActivity": {
-    "since": "2026-07-14",
+    "since": "2026-07-15",
     "sessions": [
+      {
+        "date": "2026-07-21",
+        "type": "outdoor_running",
+        "distance_km": 6.1,
+        "duration_min": 35.8,
+        "avg_hr": 134,
+        "max_hr": 142,
+        "hr_curve": [
+          {"t_min": 0, "hr": 97}, {"t_min": 1, "hr": 111}, {"t_min": 2, "hr": 123}, {"t_min": 3, "hr": 130},
+          {"t_min": 4, "hr": 132}, {"t_min": 5, "hr": 130}, {"t_min": 6, "hr": 135}, {"t_min": 7, "hr": 135},
+          {"t_min": 8, "hr": 132}, {"t_min": 9, "hr": 135}, {"t_min": 10, "hr": 136}, {"t_min": 11, "hr": 140},
+          {"t_min": 12, "hr": 137}, {"t_min": 13, "hr": 132}, {"t_min": 14, "hr": 132}, {"t_min": 15, "hr": 135},
+          {"t_min": 16, "hr": 134}, {"t_min": 17, "hr": 130}, {"t_min": 18, "hr": 130}, {"t_min": 19, "hr": 137},
+          {"t_min": 20, "hr": 139}, {"t_min": 21, "hr": 141}, {"t_min": 22, "hr": 140}, {"t_min": 23, "hr": 139},
+          {"t_min": 24, "hr": 139}, {"t_min": 25, "hr": 139}, {"t_min": 26, "hr": 141}, {"t_min": 27, "hr": 142},
+          {"t_min": 28, "hr": 139}, {"t_min": 29, "hr": 136}, {"t_min": 30, "hr": 136}, {"t_min": 31, "hr": 138},
+          {"t_min": 32, "hr": 136}, {"t_min": 33, "hr": 140}, {"t_min": 34, "hr": 139}, {"t_min": 35, "hr": 130}
+        ],
+        "avg_pace_min_km": 5.86,
+        "tss": 38.4,
+        "lesson": "Textbook zone-2 compliance — the curve holds a tight 130-141bpm band for nearly the full 35.8 minutes, staying inside the 125-142bpm easy-aerobic target with only one brief touch to 142 (minute 27), a clean break from the two prior sessions that both ran hot."
+      },
       {
         "date": "2026-07-19",
         "type": "outdoor_running",
@@ -106,7 +128,7 @@
         ],
         "avg_pace_min_km": 5.6,
         "tss": 110.1,
-        "lesson": "This long run ran nearly double its prescribed 35-40min eased-back guidance (84.1 min) and settled into a steady 143-155bpm band from minute 5 onward — well above the 125-142bpm easy zone, closer to moderate/tempo effort, despite genuinely flat pacing (5.6/km) and no drift."
+        "lesson": "Ran nearly 30 minutes longer than the prescribed 55min/9-10km and settled into 143-155bpm from minute 5 onward — solidly above the 125-142bpm easy band and closer to moderate/tempo effort despite flat, undrifting pacing (5.6/km)."
       },
       {
         "date": "2026-07-16",
@@ -128,31 +150,9 @@
         ],
         "avg_pace_min_km": 6.55,
         "tss": 41.8,
-        "lesson": "Blended avg HR (139) masked three separate MP efforts that each ran hotter than the last — peaks of 164, 168, then 176 across minutes 7-11, 14-18, and 20-24 — classic within-session cardiac drift on a body still carrying negative TSB (-28.5 two days earlier)."
-      },
-      {
-        "date": "2026-07-14",
-        "type": "outdoor_running",
-        "distance_km": 6.06,
-        "duration_min": 35.8,
-        "avg_hr": 139,
-        "max_hr": 148,
-        "hr_curve": [
-          {"t_min": 1, "hr": 107}, {"t_min": 2, "hr": 125}, {"t_min": 3, "hr": 134}, {"t_min": 4, "hr": 136},
-          {"t_min": 5, "hr": 140}, {"t_min": 6, "hr": 141}, {"t_min": 7, "hr": 140}, {"t_min": 8, "hr": 140},
-          {"t_min": 9, "hr": 140}, {"t_min": 10, "hr": 140}, {"t_min": 11, "hr": 139}, {"t_min": 12, "hr": 143},
-          {"t_min": 13, "hr": 142}, {"t_min": 14, "hr": 140}, {"t_min": 15, "hr": 134}, {"t_min": 16, "hr": 135},
-          {"t_min": 17, "hr": 137}, {"t_min": 18, "hr": 137}, {"t_min": 19, "hr": 134}, {"t_min": 20, "hr": 139},
-          {"t_min": 21, "hr": 142}, {"t_min": 22, "hr": 142}, {"t_min": 23, "hr": 142}, {"t_min": 24, "hr": 144},
-          {"t_min": 25, "hr": 142}, {"t_min": 26, "hr": 142}, {"t_min": 27, "hr": 144}, {"t_min": 28, "hr": 148},
-          {"t_min": 29, "hr": 146}, {"t_min": 30, "hr": 143}, {"t_min": 31, "hr": 140}, {"t_min": 32, "hr": 140},
-          {"t_min": 33, "hr": 141}, {"t_min": 34, "hr": 143}, {"t_min": 35, "hr": 141}, {"t_min": 36, "hr": 130}
-        ],
-        "avg_pace_min_km": 5.91,
-        "tss": 41.3,
-        "lesson": "Clean easy execution end to end — the curve holds a tight 134-144bpm band for the full 36 minutes with no drift or spikes, unlike Thursday's tempo session; pace (5.91/km) continues to look like the athlete's honest current easy-effort speed rather than the old 5:00-5:15/km assumption."
+        "lesson": "Blended avg HR (139) hides three separate MP efforts that ran progressively hotter — peaks of 164, 168, then 176bpm across minutes 7-11, 14-18, and 20-24 — a clear within-session cardiac-drift pattern."
       }
     ],
-    "analysis": "TSS held in a routine base-phase band (41-42) on Jul 14 and 16, then spiked to 110 on Jul 19 when the long run — delayed a day after Jul 18's shortfall — ran 84 minutes at 143-155bpm rather than the prescribed 35-40min easy effort, effectively becoming the week's hardest session instead of its easiest. That landed on top of an already-negative TSB and is the direct driver of today's elevated ATL (41.3) and the readiness caution flags for tomorrow."
+    "analysis": "TSS spiked to 110 on Jul 19 when the long run overran both duration and effort, then dropped back to a clean, controlled 38 on Jul 21 that landed squarely in the target easy zone — a good sign that yesterday's caution flags (HRV -27%, TSB -20.84) didn't spill into today's execution, even though TSB itself (-20.2) has barely moved yet. The Jul 16 tempo session remains the one to watch for pacing discipline (176bpm peak) rather than volume."
   }
 }
