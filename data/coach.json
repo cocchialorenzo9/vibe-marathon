@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-21",
-  "generatedFor": "2026-07-22",
+  "date": "2026-07-22",
+  "generatedFor": "2026-07-23",
   "readiness": {
-    "score": 51,
+    "score": 39,
     "hrv": {
-      "value": 82,
-      "baseline": 71,
-      "delta_pct": 14
+      "value": 71,
+      "baseline": 73,
+      "delta_pct": -3
     },
     "restingHR": {
-      "value": 41,
-      "trend": "normal"
+      "value": 45,
+      "trend": "elevated"
     },
     "sleep": {
-      "hours": 7.0,
+      "hours": 7.5,
       "score": 77
     },
-    "tsb": -20.19,
-    "ctl": 20.72,
-    "atl": 40.91,
+    "tsb": -16.53,
+    "ctl": 20.51,
+    "atl": 37.04,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -50,7 +50,7 @@
   },
   "volumeCheck": {
     "realZone2Pace_min_km": 5.885,
-    "asOf": "2026-07-21",
+    "asOf": "2026-07-22",
     "thisWeekEstKm": 23.5,
     "peakWeekEstKm": {
       "week10": 59.3,
@@ -58,21 +58,21 @@
       "week12": 34.0,
       "week13": 50.5
     },
-    "referenceNote": "Pace estimate now built on 2 qualifying clean-easy data points (Jul 14 HR139, Jul 21 HR134), median 5.885 min/km — a small update from the single-point estimate used last run (5.91). Peak week (11) is now ~60.5km, ~0.8% below Hal Higdon's Marathon 3 peak of ~61km/week.",
+    "referenceNote": "Pace estimate unchanged from last run at 5.885 min/km (still built on the same 2 qualifying clean-easy data points, Jul 14 HR139 and Jul 21 HR134 — no new qualifying easy session since). Peak week (11) is ~60.5km, ~0.8% below Hal Higdon's Marathon 3 peak of ~61km/week.",
     "flagged": false
   },
   "recommendation": {
-    "type": "swim",
-    "title": "Swim as planned — HRV rebounded, TSB still cautious",
-    "reasoning": "HRV jumped to 82ms, 14% above the 71ms baseline — a sharp reversal from yesterday's -27%. Sleep score is 77 and resting HR is back to a normal 41bpm. TSB remains cautious at -20.2 (barely moved from yesterday's -20.84, since ATL is still elevated at 40.91 against CTL 20.72), but tomorrow's scheduled swim is already the lightest session on the calendar, so no further adjustment is needed.",
-    "sessionDetail": "30-35 min continuous crawl in the pool, aerobic pace, focus on breathing technique. No interval training — pure aerobic cross-training with zero impact on legs still absorbing this week's harder-than-planned long run.",
-    "bikeNote": "Bike both ways to the pool is fine — swimming is low-impact enough that today's still-cautious TSB (-20.2) doesn't change the commute call, only running effort would be affected.",
-    "swimNote": "Keep it continuous and aerobic — no intervals today, even though HRV and sleep look great. TSB hasn't caught up yet."
+    "type": "tempo",
+    "title": "Tempo repeats, but trim to 3 reps",
+    "reasoning": "TSB is -16.5, still in the caution zone below -15, and resting HR is 45bpm vs a 42bpm 7-day baseline (+7%, mildly elevated) — even though HRV (71ms, -3% vs the 73ms baseline) and sleep (score 77, 7.5h) both look fine. This is the first quality tempo session of the plan (4x1km at 4:20/km), so rather than swap it to easy, trim it to 3x1km at the same pace with full recovery — enough to get the stimulus without piling onto an already-cautious TSB.",
+    "sessionDetail": "10' warmup + 3x1km at 4:20/km (LT-adjacent effort, target HR ~159-167bpm during reps) with full 90'' jog recovery between + 10' cooldown — trimmed from the original 4x1km.",
+    "bikeNote": "U-Bahn both ways today — with TSB at -16.5 and resting HR mildly elevated, skip the bike commute entirely around this quality session and let the legs recover fully. Never split the direction; if the legs need protecting, protect them both ways.",
+    "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 81,
+  "daysToRace": 80,
   "recentActivity": {
-    "since": "2026-07-15",
+    "since": "2026-07-16",
     "sessions": [
       {
         "date": "2026-07-21",
@@ -153,6 +153,6 @@
         "lesson": "Blended avg HR (139) hides three separate MP efforts that ran progressively hotter — peaks of 164, 168, then 176bpm across minutes 7-11, 14-18, and 20-24 — a clear within-session cardiac-drift pattern."
       }
     ],
-    "analysis": "TSS spiked to 110 on Jul 19 when the long run overran both duration and effort, then dropped back to a clean, controlled 38 on Jul 21 that landed squarely in the target easy zone — a good sign that yesterday's caution flags (HRV -27%, TSB -20.84) didn't spill into today's execution, even though TSB itself (-20.2) has barely moved yet. The Jul 16 tempo session remains the one to watch for pacing discipline (176bpm peak) rather than volume."
+    "analysis": "TSS has settled after Jul 19's 110-point spike (long run overran both duration and effort) into a clean, controlled 38 on Jul 21 that landed squarely in the target easy zone. No new sessions logged since — today (Jul 22) was a scheduled swim day but the watch has no formal record of the pool session itself, only 4.08km of low-intensity background movement (avg HR 93), so tomorrow's first quality tempo session arrives with the legs rested but TSB (-16.5) still not fully recovered from last week's load."
   }
 }

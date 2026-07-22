@@ -258,5 +258,15 @@
     "tsb": -20.19,
     "readiness_score": 51,
     "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-07-22",
+    "tss": 11.8,
+    "distance_km": 4.08,
+    "ctl": 20.51,
+    "atl": 37.04,
+    "tsb": -16.53,
+    "readiness_score": 39,
+    "recommendation_type": "swim"
   }
 ]
