@@ -92,7 +92,7 @@
         ],
         "avg_pace_min_km": 5.02,
         "tss": 37.8,
-        "lesson": "First quality tempo session executed cleanly — an ~8-minute warmup (103-124bpm) gave way to a sustained 160-170bpm interval plateau matching the 159-167bpm threshold target from the trim to 3x1km, though the 28.1min total looks short for the ~35-40min trimmed plan, likely a missed cooldown capture."
+        "lesson": "First quality tempo session — 7min warmup (103-119bpm) then a genuinely continuous 20-minute push at MP effort (not the recommended 3x1km-with-recovery trim), and the curve shows why that matters: HR drifted from 144 up to a 170bpm peak with no rest to cap it, spending minutes 19-26 at or above the 167bpm LT ceiling."
       },
       {
         "date": "2026-07-22",
@@ -116,7 +116,7 @@
         ],
         "avg_pace_min_km": 27.44,
         "tss": 43.0,
-        "lesson": "This unmapped 'sport_type_14' entry (41.9min, a nonsensical 27:26/km pace) is almost certainly the day's scheduled pool swim — the choppy 98-151bpm pattern with repeated peaks and troughs looks like stroke/rest-at-wall cycles, not running effort, and resolves yesterday's note that the swim went untracked: it was captured, just under an unclassified sport-type code."
+        "lesson": "This unmapped 'sport_type_14' entry (41.9min, a nonsensical 27:26/km pace) is the day's scheduled pool swim, confirmed — the choppy 98-151bpm pattern with repeated peaks and troughs is stroke/rest-at-wall cycles, not running effort, and resolves yesterday's note that the swim went untracked: it was captured, just under an unclassified sport-type code."
       },
       {
         "date": "2026-07-21",
@@ -175,6 +175,6 @@
         "lesson": "Ran nearly 30 minutes longer than the prescribed 55min/9-10km and settled into 143-155bpm from minute 5 onward — solidly above the 125-142bpm easy band and closer to moderate/tempo effort despite flat, undrifting pacing (5.6/km)."
       }
     ],
-    "analysis": "TSS has held in a steady 38-44 range since Jul 19's 110-point long-run spike, with Jul 22's newly-surfaced swim (43.0) and Jul 23's tempo debut (37.8) both landing right where the plan intended. The window's headline is the first quality tempo session executing exactly at target threshold effort (160-170bpm) and the retroactive discovery that Jul 22's swim was tracked after all, just under an unclassified sport-type code — closing the data gap flagged in yesterday's run."
+    "analysis": "TSS has held in a steady 38-44 range since Jul 19's 110-point long-run spike, with Jul 22's confirmed swim (43.0) and Jul 23's tempo debut (37.8) both landing close to target load, though not by the intended route. The window's headline is the first quality tempo session being run as a continuous 20-minute MP push rather than the recommended 3x1km-with-recovery trim — HR drifted from 144 to a 170bpm peak with no rest breaks to cap it — alongside the retroactive discovery that Jul 22's swim was tracked after all, just under an unclassified sport-type code, closing the data gap flagged in yesterday's run."
   }
 }
