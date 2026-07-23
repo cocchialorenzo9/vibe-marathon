@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-22",
-  "generatedFor": "2026-07-23",
+  "date": "2026-07-23",
+  "generatedFor": "2026-07-24",
   "readiness": {
-    "score": 39,
+    "score": 58,
     "hrv": {
-      "value": 71,
-      "baseline": 73,
-      "delta_pct": -3
+      "value": 75,
+      "baseline": 71,
+      "delta_pct": 5
     },
     "restingHR": {
-      "value": 45,
-      "trend": "elevated"
+      "value": 44,
+      "trend": "normal"
     },
     "sleep": {
-      "hours": 7.5,
+      "hours": 7.2,
       "score": 77
     },
-    "tsb": -16.53,
-    "ctl": 20.51,
-    "atl": 37.04,
+    "tsb": -16.23,
+    "ctl": 20.91,
+    "atl": 37.14,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -50,7 +50,7 @@
   },
   "volumeCheck": {
     "realZone2Pace_min_km": 5.885,
-    "asOf": "2026-07-22",
+    "asOf": "2026-07-23",
     "thisWeekEstKm": 23.5,
     "peakWeekEstKm": {
       "week10": 59.3,
@@ -58,22 +58,66 @@
       "week12": 34.0,
       "week13": 50.5
     },
-    "referenceNote": "Pace estimate unchanged from last run at 5.885 min/km (still built on the same 2 qualifying clean-easy data points, Jul 14 HR139 and Jul 21 HR134 — no new qualifying easy session since). Peak week (11) is ~60.5km, ~0.8% below Hal Higdon's Marathon 3 peak of ~61km/week.",
+    "referenceNote": "Pace estimate unchanged at 5.885 min/km (still the same 2 qualifying clean-easy points, Jul 14 HR139 and Jul 21 HR134 — no new qualifying easy session since). Peak week (11) is ~60.5km, ~0.8% below Hal Higdon's Marathon 3 peak of ~61km/week.",
     "flagged": false
   },
   "recommendation": {
-    "type": "tempo",
-    "title": "Tempo repeats, but trim to 3 reps",
-    "reasoning": "TSB is -16.5, still in the caution zone below -15, and resting HR is 45bpm vs a 42bpm 7-day baseline (+7%, mildly elevated) — even though HRV (71ms, -3% vs the 73ms baseline) and sleep (score 77, 7.5h) both look fine. This is the first quality tempo session of the plan (4x1km at 4:20/km), so rather than swap it to easy, trim it to 3x1km at the same pace with full recovery — enough to get the stimulus without piling onto an already-cautious TSB.",
-    "sessionDetail": "10' warmup + 3x1km at 4:20/km (LT-adjacent effort, target HR ~159-167bpm during reps) with full 90'' jog recovery between + 10' cooldown — trimmed from the original 4x1km.",
-    "bikeNote": "U-Bahn both ways today — with TSB at -16.5 and resting HR mildly elevated, skip the bike commute entirely around this quality session and let the legs recover fully. Never split the direction; if the legs need protecting, protect them both ways.",
+    "type": "rest",
+    "title": "Full rest day — let yesterday's tempo settle",
+    "reasoning": "TSB is -16.2, still just below the -15 caution line despite ticking up slightly from yesterday. HRV is 75ms, +5% above the 71ms baseline, and resting HR is back to a normal 44bpm (vs a 42bpm baseline) — both good signs — but there's no scheduled session today anyway between yesterday's first quality tempo and Saturday's long run, so this is simply proceeding as planned.",
+    "sessionDetail": "No training scheduled. Full rest day.",
+    "bikeNote": "Bike both ways is fine for the work commute — HRV and resting HR both look normal, and there's no session today to protect legs around.",
     "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 80,
+  "daysToRace": 79,
   "recentActivity": {
-    "since": "2026-07-16",
+    "since": "2026-07-17",
     "sessions": [
+      {
+        "date": "2026-07-23",
+        "type": "outdoor_running",
+        "distance_km": 5.59,
+        "duration_min": 28.1,
+        "avg_hr": 150,
+        "max_hr": 170,
+        "hr_curve": [
+          {"t_min": 1, "hr": 103}, {"t_min": 2, "hr": 114}, {"t_min": 3, "hr": 115}, {"t_min": 4, "hr": 116},
+          {"t_min": 5, "hr": 118}, {"t_min": 6, "hr": 119}, {"t_min": 7, "hr": 119}, {"t_min": 8, "hr": 124},
+          {"t_min": 9, "hr": 144}, {"t_min": 10, "hr": 154}, {"t_min": 11, "hr": 159}, {"t_min": 12, "hr": 164},
+          {"t_min": 13, "hr": 167}, {"t_min": 14, "hr": 166}, {"t_min": 15, "hr": 163}, {"t_min": 16, "hr": 163},
+          {"t_min": 17, "hr": 163}, {"t_min": 18, "hr": 160}, {"t_min": 19, "hr": 165}, {"t_min": 20, "hr": 167},
+          {"t_min": 21, "hr": 167}, {"t_min": 22, "hr": 167}, {"t_min": 23, "hr": 167}, {"t_min": 24, "hr": 168},
+          {"t_min": 25, "hr": 170}, {"t_min": 26, "hr": 169}, {"t_min": 27, "hr": 167}, {"t_min": 28, "hr": 160}
+        ],
+        "avg_pace_min_km": 5.02,
+        "tss": 37.8,
+        "lesson": "First quality tempo session executed cleanly — an ~8-minute warmup (103-124bpm) gave way to a sustained 160-170bpm interval plateau matching the 159-167bpm threshold target from the trim to 3x1km, though the 28.1min total looks short for the ~35-40min trimmed plan, likely a missed cooldown capture."
+      },
+      {
+        "date": "2026-07-22",
+        "type": "sport_type_14",
+        "distance_km": 1.52,
+        "duration_min": 41.9,
+        "avg_hr": 131,
+        "max_hr": 151,
+        "hr_curve": [
+          {"t_min": 1, "hr": 89}, {"t_min": 2, "hr": 119}, {"t_min": 3, "hr": 131}, {"t_min": 4, "hr": 138},
+          {"t_min": 5, "hr": 144}, {"t_min": 6, "hr": 139}, {"t_min": 7, "hr": 139}, {"t_min": 8, "hr": 132},
+          {"t_min": 9, "hr": 134}, {"t_min": 10, "hr": 137}, {"t_min": 11, "hr": 139}, {"t_min": 12, "hr": 136},
+          {"t_min": 13, "hr": 131}, {"t_min": 14, "hr": 133}, {"t_min": 15, "hr": 138}, {"t_min": 16, "hr": 136},
+          {"t_min": 17, "hr": 133}, {"t_min": 18, "hr": 138}, {"t_min": 19, "hr": 132}, {"t_min": 20, "hr": 134},
+          {"t_min": 21, "hr": 140}, {"t_min": 22, "hr": 143}, {"t_min": 23, "hr": 149}, {"t_min": 24, "hr": 151},
+          {"t_min": 25, "hr": 145}, {"t_min": 26, "hr": 116}, {"t_min": 27, "hr": 121}, {"t_min": 28, "hr": 131},
+          {"t_min": 29, "hr": 134}, {"t_min": 30, "hr": 123}, {"t_min": 31, "hr": 115}, {"t_min": 32, "hr": 130},
+          {"t_min": 33, "hr": 131}, {"t_min": 34, "hr": 141}, {"t_min": 35, "hr": 141}, {"t_min": 36, "hr": 137},
+          {"t_min": 37, "hr": 118}, {"t_min": 38, "hr": 98}, {"t_min": 39, "hr": 115}, {"t_min": 40, "hr": 128},
+          {"t_min": 41, "hr": 129}, {"t_min": 42, "hr": 129}
+        ],
+        "avg_pace_min_km": 27.44,
+        "tss": 43.0,
+        "lesson": "This unmapped 'sport_type_14' entry (41.9min, a nonsensical 27:26/km pace) is almost certainly the day's scheduled pool swim — the choppy 98-151bpm pattern with repeated peaks and troughs looks like stroke/rest-at-wall cycles, not running effort, and resolves yesterday's note that the swim went untracked: it was captured, just under an unclassified sport-type code."
+      },
       {
         "date": "2026-07-21",
         "type": "outdoor_running",
@@ -94,7 +138,7 @@
         ],
         "avg_pace_min_km": 5.86,
         "tss": 38.4,
-        "lesson": "Textbook zone-2 compliance — the curve holds a tight 130-141bpm band for nearly the full 35.8 minutes, staying inside the 125-142bpm easy-aerobic target with only one brief touch to 142 (minute 27), a clean break from the two prior sessions that both ran hot."
+        "lesson": "Textbook zone-2 compliance — the curve holds a tight 130-141bpm band for nearly the full 35.8 minutes, staying inside the 125-142bpm easy-aerobic target with only one brief touch to 142 (minute 27)."
       },
       {
         "date": "2026-07-19",
@@ -129,30 +173,8 @@
         "avg_pace_min_km": 5.6,
         "tss": 110.1,
         "lesson": "Ran nearly 30 minutes longer than the prescribed 55min/9-10km and settled into 143-155bpm from minute 5 onward — solidly above the 125-142bpm easy band and closer to moderate/tempo effort despite flat, undrifting pacing (5.6/km)."
-      },
-      {
-        "date": "2026-07-16",
-        "type": "outdoor_running",
-        "distance_km": 5.53,
-        "duration_min": 36.2,
-        "avg_hr": 139,
-        "max_hr": 176,
-        "hr_curve": [
-          {"t_min": 1, "hr": 110}, {"t_min": 2, "hr": 117}, {"t_min": 3, "hr": 122}, {"t_min": 4, "hr": 116},
-          {"t_min": 5, "hr": 110}, {"t_min": 6, "hr": 110}, {"t_min": 7, "hr": 135}, {"t_min": 8, "hr": 152},
-          {"t_min": 9, "hr": 160}, {"t_min": 10, "hr": 164}, {"t_min": 11, "hr": 164}, {"t_min": 12, "hr": 144},
-          {"t_min": 13, "hr": 139}, {"t_min": 14, "hr": 156}, {"t_min": 15, "hr": 166}, {"t_min": 16, "hr": 168},
-          {"t_min": 17, "hr": 168}, {"t_min": 18, "hr": 155}, {"t_min": 19, "hr": 128}, {"t_min": 20, "hr": 150},
-          {"t_min": 21, "hr": 165}, {"t_min": 22, "hr": 173}, {"t_min": 23, "hr": 176}, {"t_min": 24, "hr": 176},
-          {"t_min": 25, "hr": 155}, {"t_min": 26, "hr": 136}, {"t_min": 27, "hr": 136}, {"t_min": 28, "hr": 134},
-          {"t_min": 29, "hr": 121}, {"t_min": 30, "hr": 128}, {"t_min": 31, "hr": 114}, {"t_min": 32, "hr": 110},
-          {"t_min": 33, "hr": 107}, {"t_min": 34, "hr": 106}, {"t_min": 35, "hr": 108}, {"t_min": 36, "hr": 108}
-        ],
-        "avg_pace_min_km": 6.55,
-        "tss": 41.8,
-        "lesson": "Blended avg HR (139) hides three separate MP efforts that ran progressively hotter — peaks of 164, 168, then 176bpm across minutes 7-11, 14-18, and 20-24 — a clear within-session cardiac-drift pattern."
       }
     ],
-    "analysis": "TSS has settled after Jul 19's 110-point spike (long run overran both duration and effort) into a clean, controlled 38 on Jul 21 that landed squarely in the target easy zone. No new sessions logged since — today (Jul 22) was a scheduled swim day but the watch has no formal record of the pool session itself, only 4.08km of low-intensity background movement (avg HR 93), so tomorrow's first quality tempo session arrives with the legs rested but TSB (-16.5) still not fully recovered from last week's load."
+    "analysis": "TSS has held in a steady 38-44 range since Jul 19's 110-point long-run spike, with Jul 22's newly-surfaced swim (43.0) and Jul 23's tempo debut (37.8) both landing right where the plan intended. The window's headline is the first quality tempo session executing exactly at target threshold effort (160-170bpm) and the retroactive discovery that Jul 22's swim was tracked after all, just under an unclassified sport-type code — closing the data gap flagged in yesterday's run."
   }
 }

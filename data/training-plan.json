@@ -183,8 +183,8 @@
             "estKm": 10.2
           },
           "movement": "No commute today, it's the weekend \u2014 the only transport question is getting to the long run start point, and that's on foot from home.",
-          "food": "High-carb dinner Friday night and a carb-rich breakfast (toast, banana, honey) before heading out \u2014 even at just 60 minutes, treat it as a fueling day given Thursday's tempo effort earlier in the week.",
-          "bigPicture": "Long run, base phase, 78 days out. Legs have had one easy day behind them after Thursday's trimmed tempo session, so this is a good week to let TSB (around -16 to -17 currently) start climbing back toward neutral. Building the aerobic base that the upcoming quality sessions and eventual peak-phase long runs (up to 165min/~29km in week 11) will be layered on top of."
+          "food": "High-carb dinner Friday night and a carb-rich breakfast (toast, banana, honey) before heading out \u2014 legs get a full rest day Friday after Thursday's tempo, so use this to fuel properly rather than just coast.",
+          "bigPicture": "Long run, base phase, 78 days out. Thursday's trimmed tempo (3x1km) landed right in the 159-167bpm threshold band, and TSB has already ticked up slightly to -16.2 after a full rest day \u2014 legs should be fresh for an easy 60 minutes. Continues building the aerobic base that the upcoming quality sessions and eventual peak-phase long runs (up to 165min/~29km in week 11) will be layered on top of."
         }
       ],
       "estKm": 23.5
@@ -206,9 +206,9 @@
             "detail": "25 min very slow (~65-75% LT) \u2014 recovery week",
             "estKm": 4.25
           },
-          "movement": "Bike both ways should be fine by now, assuming TSB has climbed back out of the cautious zone during this recovery week \u2014 swap to U-Bahn both ways if it hasn't.",
+          "movement": "Bike both ways should be fine by now \u2014 TSB has had a full week to recover since Thursday's tempo, and this is a deliberately slow recovery-week effort.",
           "food": "Normal balanced meals \u2014 recovery week, no special carb-loading needed.",
-          "bigPicture": "Recovery week begins, base phase, 75 days out. After back-to-back build weeks (this week's first tempo session, last week's 15km long run), volume drops sharply \u2014 25min very slow effort, no long run beyond Saturday's reduced session \u2014 to let CTL/ATL/TSB reset before build-phase quality work ramps up in August."
+          "bigPicture": "Recovery week begins, base phase, 75 days out. After the first quality tempo session and Saturday's long run, volume drops sharply \u2014 25min very slow effort, no long run beyond Saturday's reduced session \u2014 to let CTL/ATL/TSB reset before build-phase quality work ramps up in August."
         },
         {
           "date": "2026-07-29",
@@ -220,7 +220,7 @@
           },
           "movement": "Bike both ways to the pool is fine \u2014 recovery week, low-impact swim, no reason to avoid the commute.",
           "food": "Normal balanced day.",
-          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact, deliberately easy per the recovery-week plan \u2014 a chance for the legs to fully absorb three weeks of building load before next week's aerobic work resumes."
+          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact, deliberately easy per the recovery-week plan \u2014 a chance for the legs to fully absorb three weeks of building load, including Thursday's first quality tempo session, before next week's aerobic work resumes."
         },
         {
           "date": "2026-07-30",
@@ -233,7 +233,7 @@
           },
           "movement": "Bike both ways should be fine \u2014 recovery week, legs should be well rested by Thursday.",
           "food": "Normal balanced meals, maybe a small carb boost before the strides portion for sharpness.",
-          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week."
+          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness \u2014 building on the good threshold-effort feel from last week's tempo session \u2014 without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week."
         },
         {
           "date": "2026-08-01",
@@ -246,7 +246,7 @@
           },
           "movement": "No commute today, it's the weekend \u2014 this is a short, deliberately reduced long run, nothing more to plan around.",
           "food": "Normal balanced breakfast \u2014 at only 45 minutes this isn't a heavy fueling day, just enough carbs to run comfortably.",
-          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. Deliberately reduced to 45 minutes so the body fully absorbs three weeks of increasing load (including this week's first tempo session) before Monday kicks off build phase with the new second-aerobic-day structure."
+          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. Deliberately reduced to 45 minutes so the body fully absorbs three weeks of increasing load (including the first tempo session) before Monday kicks off build phase with the new second-aerobic-day structure."
         }
       ],
       "estKm": 17.0
@@ -283,7 +283,7 @@
           },
           "movement": "Bike both ways should be fine for an easy 40-minute effort, assuming legs feel normal after Monday's medium-long run.",
           "food": "Normal balanced meals, build-phase carb %.",
-          "bigPicture": "Build phase, 68 days out. This lands right around the ~Aug 4 LT field-test window flagged from the Jul 18 checkpoint review \u2014 if that test happens this week, the resulting number replaces the current 167bpm device-reported LT estimate (and the recovery/easy/threshold bpm bands keyed off it) rather than waiting for the week 10-11 re-test."
+          "bigPicture": "Build phase, 68 days out. This lands right around the ~Aug 4 LT field-test window flagged from the Jul 18 checkpoint review \u2014 if that test happens this week, the resulting number replaces the current 167bpm device-reported estimate (informally supported by Thursday's tempo session sitting cleanly in the predicted 159-167bpm band) rather than waiting for the week 10-11 re-test."
         },
         {
           "date": "2026-08-05",

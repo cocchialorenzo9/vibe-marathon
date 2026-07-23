@@ -2484,5 +2484,133 @@
     "wentWell": "Background daily movement (4.08km, low-intensity) is present in step data, consistent with an easy day around the scheduled pool swim.",
     "wentWrong": "The Amazfit Trex 3 has no formal record of the swim itself \u2014 no pool session was captured, so there is no way to confirm duration, stroke pace, or effort for the scheduled 30-35min open swim beyond the incidental 4.08km of background movement (avg HR 93, well below any training zone) around it.",
     "nextTime": "If the watch supports a pool-swim activity mode, start it explicitly before getting in \u2014 without that, swim sessions will keep showing up as untracked in the journal even when they happened as planned."
+  },
+  {
+    "date": "2026-07-23",
+    "type": "outdoor_running",
+    "scheduled": "tempo",
+    "distance_km": 5.59,
+    "duration_min": 28.1,
+    "avg_hr": 150,
+    "max_hr": 170,
+    "hr_curve": [
+      {
+        "t_min": 1,
+        "hr": 103
+      },
+      {
+        "t_min": 2,
+        "hr": 114
+      },
+      {
+        "t_min": 3,
+        "hr": 115
+      },
+      {
+        "t_min": 4,
+        "hr": 116
+      },
+      {
+        "t_min": 5,
+        "hr": 118
+      },
+      {
+        "t_min": 6,
+        "hr": 119
+      },
+      {
+        "t_min": 7,
+        "hr": 119
+      },
+      {
+        "t_min": 8,
+        "hr": 124
+      },
+      {
+        "t_min": 9,
+        "hr": 144
+      },
+      {
+        "t_min": 10,
+        "hr": 154
+      },
+      {
+        "t_min": 11,
+        "hr": 159
+      },
+      {
+        "t_min": 12,
+        "hr": 164
+      },
+      {
+        "t_min": 13,
+        "hr": 167
+      },
+      {
+        "t_min": 14,
+        "hr": 166
+      },
+      {
+        "t_min": 15,
+        "hr": 163
+      },
+      {
+        "t_min": 16,
+        "hr": 163
+      },
+      {
+        "t_min": 17,
+        "hr": 163
+      },
+      {
+        "t_min": 18,
+        "hr": 160
+      },
+      {
+        "t_min": 19,
+        "hr": 165
+      },
+      {
+        "t_min": 20,
+        "hr": 167
+      },
+      {
+        "t_min": 21,
+        "hr": 167
+      },
+      {
+        "t_min": 22,
+        "hr": 167
+      },
+      {
+        "t_min": 23,
+        "hr": 167
+      },
+      {
+        "t_min": 24,
+        "hr": 168
+      },
+      {
+        "t_min": 25,
+        "hr": 170
+      },
+      {
+        "t_min": 26,
+        "hr": 169
+      },
+      {
+        "t_min": 27,
+        "hr": 167
+      },
+      {
+        "t_min": 28,
+        "hr": 160
+      }
+    ],
+    "tss": 37.8,
+    "avg_pace_min_km": 5.02,
+    "wentWell": "HR climbed cleanly through an ~8-minute warmup (103-124bpm) into the interval block, then held 160-170bpm for the rest of the session \u2014 right in the 159-167bpm LT-threshold band targeted after yesterday's trim to 3x1km, with the reps clearly visible as a sustained high plateau rather than a blended average.",
+    "wentWrong": "Only 28.1 minutes total logged, well short of the ~35-40min the trimmed plan called for (10' wu + 3x1km @ 4:20 + 90'' recovery x2 + 10' cd) \u2014 the cooldown likely wasn't captured by the watch. HR also touched 170bpm at minute 25, a few beats past the 167bpm LT ceiling, so at least one rep ran slightly hotter than the intended threshold-cruise effort.",
+    "nextTime": "Start the running mode before the warmup and stop it only after the full cooldown jog so duration isn't undercounted, and back off slightly if HR creeps past 167bpm mid-rep \u2014 the point of trimming to 3 reps yesterday was to protect TSB, not to sit at max threshold."
   }
 ]
