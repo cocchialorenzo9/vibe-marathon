@@ -278,5 +278,45 @@
     "tsb": -16.23,
     "readiness_score": 58,
     "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-07-24",
+    "tss": 16.8,
+    "distance_km": 4.21,
+    "ctl": 20.82,
+    "atl": 34.43,
+    "tsb": -13.61,
+    "readiness_score": 62,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-07-25",
+    "tss": 170.0,
+    "distance_km": 26.84,
+    "ctl": 24.33,
+    "atl": 52.48,
+    "tsb": -28.15,
+    "readiness_score": 69,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-07-26",
+    "tss": 22.0,
+    "distance_km": 5.49,
+    "ctl": 24.27,
+    "atl": 48.42,
+    "tsb": -24.15,
+    "readiness_score": 43,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-07-27",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 23.7,
+    "atl": 41.98,
+    "tsb": -18.27,
+    "readiness_score": 74,
+    "recommendation_type": "rest"
   }
 ]

@@ -206,9 +206,9 @@
             "detail": "25 min very slow (~65-75% LT) \u2014 recovery week",
             "estKm": 4.25
           },
-          "movement": "Bike both ways should be fine by now \u2014 TSB has had a full week to recover since Thursday's tempo, and this is a deliberately slow recovery-week effort.",
+          "movement": "Bike both ways is fine \u2014 TSB is -18.3, still recovering from Saturday's long run running more than double its 60-minute prescription, but it's climbing back from Friday's -28 trough, and today's session is only 25 minutes at very easy effort \u2014 trivial load on top of a commute.",
           "food": "Normal balanced meals \u2014 recovery week, no special carb-loading needed.",
-          "bigPicture": "Recovery week begins, base phase, 75 days out. After the first quality tempo session and Saturday's long run, volume drops sharply \u2014 25min very slow effort, no long run beyond Saturday's reduced session \u2014 to let CTL/ATL/TSB reset before build-phase quality work ramps up in August."
+          "bigPicture": "Recovery week continues, base phase, 75 days out. TSB bottomed at -28.15 after Saturday's long run ran to 137min/21km against an 11km target, but HRV is strong today (81ms, +12% vs baseline) and sleep score is 85 \u2014 today's genuinely slow 25-minute effort is exactly the dose needed to let CTL/ATL/TSB reset before build phase's new second-quality-day structure begins in August."
         },
         {
           "date": "2026-07-29",
@@ -220,7 +220,7 @@
           },
           "movement": "Bike both ways to the pool is fine \u2014 recovery week, low-impact swim, no reason to avoid the commute.",
           "food": "Normal balanced day.",
-          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact, deliberately easy per the recovery-week plan \u2014 a chance for the legs to fully absorb three weeks of building load, including Thursday's first quality tempo session, before next week's aerobic work resumes."
+          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact \u2014 the legs are still settling after Saturday's long run pushed TSB to a -28 trough (now back to -18.3), so a no-impact day like this is well timed before Thursday's strides and Saturday's reduced long run close out the recovery week."
         },
         {
           "date": "2026-07-30",
@@ -231,9 +231,9 @@
             "detail": "30 min + 4\u00d780m accelerations",
             "estKm": 5.1
           },
-          "movement": "Bike both ways should be fine \u2014 recovery week, legs should be well rested by Thursday.",
+          "movement": "Bike both ways should be fine \u2014 recovery week, legs should be well rested by Thursday, TSB climbing back from Friday's -28 trough.",
           "food": "Normal balanced meals, maybe a small carb boost before the strides portion for sharpness.",
-          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness \u2014 building on the good threshold-effort feel from last week's tempo session \u2014 without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week."
+          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week \u2014 and this time, sticking closer to the prescribed 30 minutes matters: Saturday's long run ran to more than double its target (137min/21km vs 60min/11km), which is exactly what drove TSB down to -28.15."
         },
         {
           "date": "2026-08-01",
@@ -246,7 +246,7 @@
           },
           "movement": "No commute today, it's the weekend \u2014 this is a short, deliberately reduced long run, nothing more to plan around.",
           "food": "Normal balanced breakfast \u2014 at only 45 minutes this isn't a heavy fueling day, just enough carbs to run comfortably.",
-          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. Deliberately reduced to 45 minutes so the body fully absorbs three weeks of increasing load (including the first tempo session) before Monday kicks off build phase with the new second-aerobic-day structure."
+          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. Deliberately reduced to 45 minutes so the body fully absorbs the last three weeks of load \u2014 including the tempo session and last Saturday's long run that overran to 137min/21km \u2014 before Monday kicks off build phase with the new second-aerobic-day structure. Stick to the prescribed 45 minutes this time; the point of a recovery week is restraint, not another big push."
         }
       ],
       "estKm": 17.0
@@ -270,7 +270,7 @@
           },
           "movement": "Bike both ways \u2014 legs should be fresh coming out of the recovery week, and this is just an easy-effort medium-long run.",
           "food": "Normal balanced meals with slightly higher carb % as build phase ramps up \u2014 this new second aerobic day adds volume, so recovery nutrition matters a bit more.",
-          "bigPicture": "Build phase begins, 69 days out. This Monday medium-long run is a new addition to the plan (added 2026-07-18) \u2014 a second aerobic day spaced two days after Saturday's long run, adding aerobic volume ahead of Tuesday's easy day and the LT-cruise intervals that start appearing on Tuesdays from week 7 onward."
+          "bigPicture": "Build phase begins, 69 days out. This Monday medium-long run is a new addition to the plan (added 2026-07-18) \u2014 a second aerobic day spaced two days after Saturday's long run, adding aerobic volume ahead of Tuesday's easy day and the LT-cruise intervals that start appearing on Tuesdays from week 7 onward. Coming out of a recovery week meant to correct for late July's long-run and tempo overruns, sticking to the prescribed minutes matters more than usual right now."
         },
         {
           "date": "2026-08-04",
@@ -308,7 +308,7 @@
           },
           "movement": "No cycling before the long run. U-Bahn to your starting point.",
           "food": "Pre-run carb breakfast. Bring a gel \u2014 you'll be out 70 minutes. Test your race nutrition.",
-          "bigPicture": "First long run with a marathon-pace finish. The last 15 minutes at 4:20/km while tired is exactly what km 30\u201342 will feel like. This is where sub-3h is built."
+          "bigPicture": "First long run with a marathon-pace finish. The last 15 minutes at 4:20/km while tired is exactly what km 30\u201342 will feel like. This is where sub-3h is built \u2014 but stick to the prescribed 70 minutes; late July's long run ran to more than double its target (137min/21km vs 60min/11km) and drove TSB down to -28.15, exactly what the CTL ramp-rate governance is meant to prevent."
         }
       ],
       "estKm": 25.6
