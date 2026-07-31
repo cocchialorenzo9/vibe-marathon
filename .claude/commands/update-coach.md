@@ -91,18 +91,17 @@ percentages.
 
 Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
 
-**LT1 (analysis-only, separate from the bands above)**: the aerobic threshold,
-currently ~125bpm (~75% of LT2, a training-science field-test heuristic, not a
-measurement — provisional until a dedicated LT1 test exists). Used **only** by
-`scripts/build_zone_history.py` to classify actual recorded HR data into the
-Seiler Zone 1/2/3 model (Zone 1 <LT1, Zone 2 LT1-LT2, Zone 3 >=LT2) for
-`data/zone-history.json` — never used to rewrite the prescription bands above.
-See `CONTEXT.md`'s "Zone history" section and
-`docs/adr/0002-zone-history-analysis-only.md` for why these two scales are
-kept separate. If LT2 changes (watch update or the Aug 4 field test), also
-update `ATHLETE_LT2`/`DEFAULT_LT2` in `scripts/build_zone_history.py` (LT1
-rescales automatically unless a real LT1 test has since overridden it via
-`ATHLETE_LT1`).
+**HR bands (analysis-only, separate from the prescription bands above)**:
+`scripts/build_zone_history.py` classifies actual recorded HR data into 5
+fixed bpm bands — <130, 130-140, 140-155, 155-167, 167+ — for
+`data/zone-history.json`, never used to rewrite the prescription bands above.
+These replaced an earlier LT1/LT2-anchored Seiler Zone 1/2/3 model (see
+`docs/adr/0003-hr-bands-replace-seiler-zones.md`); only the top band's edge
+is pinned to LT2 (167+ is definitionally at/above threshold), the other
+cutoffs (130/140/155) are fixed round numbers, not %LT-derived. See
+`CONTEXT.md`'s "Zone history" section. If LT2 changes (watch update or the
+Aug 4 field test), update `ATHLETE_LT2`/`DEFAULT_LT2` in
+`scripts/build_zone_history.py` — the top band moves with it automatically.
 
 **VO2max**: current estimate lives in `data/coach.json`'s `readiness.vo2max`
 (`value`, `unit: "ml/kg/min"`, `status: "manual"|"garmin_max_metrics"`,
@@ -669,10 +668,10 @@ python3 scripts/build_zone_history.py
 ```
 
 This fully rebuilds `data/zone-history.json` from `training-journal.json`'s
-`hr_curve` fields (running sessions only — see the LT1 reference above and
-`CONTEXT.md`'s "Zone history" section). It's a full recompute each run, not an
-append, so there's no gap/backfill logic to run separately — it never drifts
-from the journal.
+`hr_curve` fields (running sessions only — see the HR-bands reference above
+and `CONTEXT.md`'s "Zone history" section). It's a full recompute each run,
+not an append, so there's no gap/backfill logic to run separately — it never
+drifts from the journal.
 
 ## Step 6 — Commit and push
 

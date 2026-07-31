@@ -1,5 +1,5 @@
 """
-Tests for build_zone_history.py's zone-classification and journal-filtering logic.
+Tests for build_zone_history.py's band-classification and journal-filtering logic.
 Run with: python3 -m pytest scripts/ -v
 """
 
@@ -10,45 +10,58 @@ import tempfile
 import unittest
 
 sys.path.insert(0, os.path.dirname(__file__))
-from build_zone_history import build_zone_history, classify_curve_zones
+from build_zone_history import build_zone_history, classify_curve_bands
 
 
-class TestClassifyCurveZones(unittest.TestCase):
+class TestClassifyCurveBands(unittest.TestCase):
     def test_empty_curve_returns_none(self):
-        self.assertIsNone(classify_curve_zones([], lt1=125, lt2=167))
+        self.assertIsNone(classify_curve_bands([], lt2=167))
 
-    def test_buckets_by_zone_boundary(self):
+    def test_buckets_by_band_boundary(self):
         curve = [
-            {"t_min": 0, "hr": 110},  # zone1 (<125)
-            {"t_min": 1, "hr": 124},  # zone1 (<125)
-            {"t_min": 2, "hr": 125},  # zone2 (>=125, <167)
-            {"t_min": 3, "hr": 150},  # zone2
-            {"t_min": 4, "hr": 167},  # zone3 (>=167)
-            {"t_min": 5, "hr": 170},  # zone3
+            {"t_min": 0, "hr": 110},  # band1 (<130)
+            {"t_min": 1, "hr": 129},  # band1 (<130)
+            {"t_min": 2, "hr": 130},  # band2 (130-140)
+            {"t_min": 3, "hr": 139},  # band2
+            {"t_min": 4, "hr": 140},  # band3 (140-155)
+            {"t_min": 5, "hr": 154},  # band3
+            {"t_min": 6, "hr": 155},  # band4 (155-167)
+            {"t_min": 7, "hr": 166},  # band4
+            {"t_min": 8, "hr": 167},  # band5 (167+)
+            {"t_min": 9, "hr": 175},  # band5
         ]
-        result = classify_curve_zones(curve, lt1=125, lt2=167)
-        self.assertEqual(result["zone1_min"], 2)
-        self.assertEqual(result["zone2_min"], 2)
-        self.assertEqual(result["zone3_min"], 2)
+        result = classify_curve_bands(curve, lt2=167)
+        self.assertEqual(result["band1_min"], 2)
+        self.assertEqual(result["band2_min"], 2)
+        self.assertEqual(result["band3_min"], 2)
+        self.assertEqual(result["band4_min"], 2)
+        self.assertEqual(result["band5_min"], 2)
 
     def test_avg_pct_lt_computed_against_lt2(self):
         curve = [{"t_min": 0, "hr": 167}, {"t_min": 1, "hr": 167}]
-        result = classify_curve_zones(curve, lt1=125, lt2=167)
+        result = classify_curve_bands(curve, lt2=167)
         self.assertEqual(result["avg_pct_lt"], 100)
 
-    def test_dominant_zone_picks_most_minutes(self):
+    def test_dominant_band_picks_most_minutes(self):
         curve = (
             [{"t_min": i, "hr": 110} for i in range(2)]
-            + [{"t_min": i, "hr": 150} for i in range(5)]
+            + [{"t_min": i, "hr": 145} for i in range(5)]
             + [{"t_min": i, "hr": 170} for i in range(1)]
         )
-        result = classify_curve_zones(curve, lt1=125, lt2=167)
-        self.assertEqual(result["dominant_zone"], 2)
+        result = classify_curve_bands(curve, lt2=167)
+        self.assertEqual(result["dominant_band"], 3)
 
-    def test_dominant_zone_ties_break_low(self):
-        curve = [{"t_min": 0, "hr": 110}, {"t_min": 1, "hr": 150}]
-        result = classify_curve_zones(curve, lt1=125, lt2=167)
-        self.assertEqual(result["dominant_zone"], 1)
+    def test_dominant_band_ties_break_low(self):
+        curve = [{"t_min": 0, "hr": 110}, {"t_min": 1, "hr": 145}]
+        result = classify_curve_bands(curve, lt2=167)
+        self.assertEqual(result["dominant_band"], 1)
+
+    def test_top_band_follows_lt2(self):
+        curve = [{"t_min": 0, "hr": 160}]
+        # With a lower lt2, 160bpm now falls in the top (5th) band.
+        result = classify_curve_bands(curve, lt2=158)
+        self.assertEqual(result["band5_min"], 1)
+        self.assertEqual(result["band4_min"], 0)
 
 
 class TestBuildZoneHistory(unittest.TestCase):
@@ -88,6 +101,17 @@ class TestBuildZoneHistory(unittest.TestCase):
         self.assertEqual([e["date"] for e in result], ["2026-07-08", "2026-07-09"])
         os.unlink(path)
 
+    def test_sorted_ascending_by_date(self):
+        path = self._write_journal([
+            {"date": "2026-07-31", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}]},
+            {"date": "2026-07-07", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}]},
+        ])
+        result = build_zone_history(path)
+        self.assertEqual([e["date"] for e in result], ["2026-07-07", "2026-07-31"])
+        os.unlink(path)
+
     def test_includes_avg_pace_min_km_from_journal(self):
         path = self._write_journal([
             {"date": "2026-07-09", "type": "outdoor_running",
@@ -104,17 +128,6 @@ class TestBuildZoneHistory(unittest.TestCase):
         ])
         result = build_zone_history(path)
         self.assertIsNone(result[0]["avg_pace_min_km"])
-        os.unlink(path)
-
-    def test_sorted_ascending_by_date(self):
-        path = self._write_journal([
-            {"date": "2026-07-31", "type": "outdoor_running",
-             "hr_curve": [{"t_min": 0, "hr": 130}]},
-            {"date": "2026-07-07", "type": "outdoor_running",
-             "hr_curve": [{"t_min": 0, "hr": 130}]},
-        ])
-        result = build_zone_history(path)
-        self.assertEqual([e["date"] for e in result], ["2026-07-07", "2026-07-31"])
         os.unlink(path)
 
 

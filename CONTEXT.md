@@ -62,20 +62,20 @@ _Avoid_: tempo km, hard volume
 The volume recalibration's ratio constraint: quality volume held at a fixed ~20% share of each week's total volume, with the other ~80% easy. Unlike the CTL ramp-rate governance (a ceiling nothing is meant to hit), this is an active target — as total volume grows, quality volume (more/longer reps in existing sessions) grows with it to keep the ratio, rather than staying flat while easy volume dilutes its share.
 _Avoid_: quality ceiling, intensity cap
 
-## Zone history (started 2026-07-31)
+## Zone history (started 2026-07-31, revised 2026-07-31)
 
 **LT2**:
 The anaerobic threshold / maximal lactate steady state — the highest sustainable intensity before blood lactate accumulates faster than it clears. This is what this project's existing `LT` term (167bpm, device-reported) actually measures; devices/watches that report "lactate threshold" are estimating LT2, not LT1.
 _Avoid_: max HR, threshold pace
 
-**LT1**:
-The aerobic threshold — the highest intensity at which blood lactate is still near baseline. Currently estimated at ~125bpm (~75% of LT2), a field-test heuristic from training-science literature, not a real test result — provisional until a dedicated LT1 field test exists (distinct from the LT2-focused Aug 4 field test).
-_Avoid_: easy threshold, zone 1 ceiling
+**HR band**:
+One of 5 fixed-bpm buckets used to classify *actual recorded* running effort: <130, 130-140, 140-155, 155-167, 167+ (the top edge pinned to LT2 — 167+ is definitionally at/above threshold). Chosen directly as round bpm numbers, not derived from an estimated aerobic threshold — see `docs/adr/0003-hr-bands-replace-seiler-zones.md` for why this replaced the earlier LT1/LT2-anchored Seiler Zone 1/2/3 model. Used only to classify what a session's `hr_curve` actually shows — separate from and never a replacement for this project's existing prescription bands (Recovery/Easy-Aerobic/Threshold, still %LT-of-LT2 and still used to write `training-plan.json`'s easy/recovery/long guidance).
+_Avoid_: zone (reserved for the retired Seiler model), training zone
 
-**Training zone (1/2/3)**:
-The Seiler three-zone classification of *actual recorded* effort, anchored on LT1/LT2: Zone 1 below LT1 (true easy), Zone 2 between LT1 and LT2 ("moderate," associated in marathon/Ironman research with worse performance when it dominates volume), Zone 3 above LT2 (hard). Used only to classify what a session's `hr_curve` actually shows — separate from and never a replacement for this project's existing prescription bands (Recovery/Easy-Aerobic/Threshold, still %LT-of-LT2 and still used to write `training-plan.json`'s easy/recovery/long guidance).
-_Avoid_: HR zone (ambiguous with the prescription bands), zone 4/5 (not part of this 3-zone scale)
+**Dominant band**:
+The HR band with the most minutes in a single run's `hr_curve` — the finest grain available for comparing pace across bands, since there's no per-sample GPS distance to split pace by band *within* one run.
+_Avoid_: primary zone, main band
 
 **Zone history**:
-The day-by-day record of time spent in each training zone, built from running sessions' `hr_curve` only (other activity types, e.g. swimming, don't carry a curve). One bar/point per day; days with no qualifying running session are simply absent, not zero.
+The day-by-day record of time spent in each HR band (plus average %LT and pace), built from running sessions' `hr_curve` only (other activity types, e.g. swimming, don't carry a curve). One entry per day; days with no qualifying running session are simply absent, not zero. Kept the `zone-history.json`/`build_zone_history.py` file names for continuity even after the underlying model moved from Seiler zones to HR bands.
 _Avoid_: zone chart, HR history

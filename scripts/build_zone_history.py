@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Build data/zone-history.json: a day-by-day record of time spent in each
-Seiler training zone (Zone 1 below LT1, Zone 2 between LT1-LT2, Zone 3 above
-LT2), computed from data/training-journal.json's per-session hr_curve.
+Build data/zone-history.json: a day-by-day record of time spent in each HR
+band, computed from data/training-journal.json's per-session hr_curve.
 
-This is an analysis-only classification of *actual recorded* effort, separate
-from this project's existing %LT-of-LT2 prescription bands (Recovery/
-Easy-Aerobic/Threshold, still used unchanged in training-plan.json and
-update-coach.md) — see CONTEXT.md and docs/adr/0002-zone-history-analysis-only.md.
+Bands are 5 fixed bpm cutoffs the athlete chose directly — <130, 130-140,
+140-155, 155-167, 167+ — not the LT1/LT2-anchored Seiler Zone 1/2/3 model
+this file used before (see docs/adr/0003-hr-bands-replace-seiler-zones.md
+for why: LT1 was never measured, only a heuristic, and added a layer of
+uncertainty the fixed bands sidestep). The top edge (167) is pinned to LT2
+itself, since 167+ bpm is definitionally at/above threshold.
 
 Running sessions only (outdoor_running/treadmill) — other activity types
 (e.g. swim) either carry no hr_curve or aren't what the %LT bands were
@@ -32,66 +33,69 @@ DEFAULT_OUT_PATH = os.path.join(_SCRIPT_DIR, "..", "data", "zone-history.json")
 
 # LT2: anaerobic threshold / MLSS, device-reported (see the Lactate-threshold
 # reference in .claude/commands/update-coach.md — keep in sync if that number
-# changes). LT1: aerobic threshold, no direct test yet — provisional ~75% of
-# LT2, a field-test heuristic from training-science literature, not a
-# measurement. Both overridable via env for a future field-test update.
+# changes). Overridable via env for a future field-test update.
 DEFAULT_LT2 = int(os.environ.get("ATHLETE_LT2", 167))
-DEFAULT_LT1 = int(os.environ.get("ATHLETE_LT1", round(DEFAULT_LT2 * 0.75)))
+
+# Fixed bpm cutoffs for bands 1-4's upper edge; band 5 is everything >= LT2.
+# These are round numbers the athlete picked directly, not derived from LT1.
+BAND_CUTOFFS = (130, 140, 155)
 
 # Matches decode_sport_type's running type_names in parse_zepp_export.py.
 _RUNNING_TYPES = {"outdoor_running", "treadmill"}
 
 
-def classify_curve_zones(hr_curve, lt1, lt2):
+def classify_curve_bands(hr_curve, lt2, band_cutoffs=BAND_CUTOFFS):
     """
-    Bucket an hr_curve's samples into Zone 1 (<lt1), Zone 2 (lt1-lt2), Zone 3
-    (>=lt2), plus the average %LT (of LT2) across the curve. Each hr_curve
-    sample is treated as ~1 minute, matching compute_hr_curve's own "coarse
+    Bucket an hr_curve's samples into 5 fixed-bpm bands: <cutoffs[0],
+    cutoffs[0]-cutoffs[1], ..., cutoffs[-1]-lt2, >=lt2. Each hr_curve sample
+    is treated as ~1 minute, matching compute_hr_curve's own "coarse
     per-minute" approximation in parse_zepp_export.py.
+
+    Also returns avg_pct_lt (average %LT of lt2 across the curve) and
+    dominant_band (the band with the most minutes, ties broken toward the
+    lower band).
 
     Returns None for an empty/missing curve.
     """
     if not hr_curve:
         return None
 
-    zone1_min = zone2_min = zone3_min = 0
+    cutoffs = list(band_cutoffs) + [lt2]
+    band_minutes = [0] * (len(cutoffs) + 1)
     total_hr = 0
     for sample in hr_curve:
         hr = sample["hr"]
         total_hr += hr
-        if hr < lt1:
-            zone1_min += 1
-        elif hr < lt2:
-            zone2_min += 1
-        else:
-            zone3_min += 1
+        idx = 0
+        for cutoff in cutoffs:
+            if hr >= cutoff:
+                idx += 1
+            else:
+                break
+        band_minutes[idx] += 1
 
     avg_hr = total_hr / len(hr_curve)
-    zone_minutes = {1: zone1_min, 2: zone2_min, 3: zone3_min}
-    # Ties broken toward the lower zone number (the more conservative read of
-    # "what kind of run was this").
-    dominant_zone = max(zone_minutes, key=lambda z: (zone_minutes[z], -z))
-    return {
-        "zone1_min": zone1_min,
-        "zone2_min": zone2_min,
-        "zone3_min": zone3_min,
-        "avg_pct_lt": round(avg_hr / lt2 * 100),
-        "dominant_zone": dominant_zone,
-    }
+    dominant_band = max(
+        range(1, len(band_minutes) + 1),
+        key=lambda b: (band_minutes[b - 1], -b),
+    )
+    result = {f"band{i + 1}_min": m for i, m in enumerate(band_minutes)}
+    result["avg_pct_lt"] = round(avg_hr / lt2 * 100)
+    result["dominant_band"] = dominant_band
+    return result
 
 
-def build_zone_history(journal_path, lt1=DEFAULT_LT1, lt2=DEFAULT_LT2):
+def build_zone_history(journal_path, lt2=DEFAULT_LT2):
     """
-    Return a list of {date, zone1_min, zone2_min, zone3_min, avg_pct_lt,
-    dominant_zone, avg_pace_min_km} dicts, one per training-journal.json
-    entry that is a running session with a non-empty hr_curve, sorted
-    ascending by date.
+    Return a list of {date, band1_min..band5_min, avg_pct_lt, dominant_band,
+    avg_pace_min_km} dicts, one per training-journal.json entry that is a
+    running session with a non-empty hr_curve, sorted ascending by date.
 
     avg_pace_min_km is the whole-session average pace already computed by
     parse_zepp_export.py — there's no per-sample GPS distance in hr_curve
-    (or in the underlying Zepp export) to split pace by zone *within* a
-    single run, so dominant_zone (the zone with the most minutes) is the
-    finest grain available for a pace-vs-zone comparison.
+    (or in the underlying Zepp export) to split pace by band *within* a
+    single run, so dominant_band (the band with the most minutes) is the
+    finest grain available for a pace-vs-band comparison.
     """
     if not os.path.exists(journal_path):
         return []
@@ -103,12 +107,12 @@ def build_zone_history(journal_path, lt1=DEFAULT_LT1, lt2=DEFAULT_LT2):
     for entry in journal:
         if entry.get("type") not in _RUNNING_TYPES:
             continue
-        zones = classify_curve_zones(entry.get("hr_curve") or [], lt1, lt2)
-        if zones is None:
+        bands = classify_curve_bands(entry.get("hr_curve") or [], lt2)
+        if bands is None:
             continue
         history.append({
             "date": entry["date"],
-            **zones,
+            **bands,
             "avg_pace_min_km": entry.get("avg_pace_min_km"),
         })
 
