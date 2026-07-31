@@ -28,6 +28,8 @@ SPORT_TYPES = {
     8: "walking",
     9: "outdoor_cycling",   # confirmed: Trex 3 cycling at ~18 km/h
     13: "outdoor_walking",
+    14: "swimming",         # confirmed: Trex 3 pool swim (distance is stroke-derived,
+                            # not GPS — expect a nonsensical avg_pace_min_km for this code)
     15: "outdoor_walking",  # confirmed: Trex 3 slow outdoor session
     16: "strength_training",
     20: "swimming",

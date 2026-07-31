@@ -306,6 +306,9 @@ class TestDecodeSportType(unittest.TestCase):
     def test_known_type_15(self):
         self.assertEqual(decode_sport_type(15), "outdoor_walking")
 
+    def test_known_type_14(self):
+        self.assertEqual(decode_sport_type(14), "swimming")
+
     def test_known_type_1(self):
         self.assertEqual(decode_sport_type(1), "outdoor_running")
 
