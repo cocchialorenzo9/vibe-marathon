@@ -8,7 +8,8 @@
     "band5_min": 1,
     "avg_pct_lt": 92,
     "dominant_band": 4,
-    "avg_pace_min_km": 5.22
+    "avg_pace_min_km": 5.22,
+    "distance_km": 6.26
   },
   {
     "date": "2026-07-09",
@@ -19,7 +20,8 @@
     "band5_min": 0,
     "avg_pct_lt": 88,
     "dominant_band": 3,
-    "avg_pace_min_km": 5.69
+    "avg_pace_min_km": 5.69,
+    "distance_km": 6.58
   },
   {
     "date": "2026-07-11",
@@ -30,7 +32,8 @@
     "band5_min": 0,
     "avg_pct_lt": 92,
     "dominant_band": 4,
-    "avg_pace_min_km": 5.63
+    "avg_pace_min_km": 5.63,
+    "distance_km": 12.45
   },
   {
     "date": "2026-07-14",
@@ -41,7 +44,8 @@
     "band5_min": 0,
     "avg_pct_lt": 83,
     "dominant_band": 3,
-    "avg_pace_min_km": 5.91
+    "avg_pace_min_km": 5.91,
+    "distance_km": 6.06
   },
   {
     "date": "2026-07-16",
@@ -52,7 +56,8 @@
     "band5_min": 5,
     "avg_pct_lt": 83,
     "dominant_band": 1,
-    "avg_pace_min_km": 6.55
+    "avg_pace_min_km": 6.55,
+    "distance_km": 5.53
   },
   {
     "date": "2026-07-19",
@@ -63,7 +68,8 @@
     "band5_min": 0,
     "avg_pct_lt": 89,
     "dominant_band": 3,
-    "avg_pace_min_km": 5.6
+    "avg_pace_min_km": 5.6,
+    "distance_km": 15.03
   },
   {
     "date": "2026-07-21",
@@ -74,7 +80,8 @@
     "band5_min": 0,
     "avg_pct_lt": 80,
     "dominant_band": 2,
-    "avg_pace_min_km": 5.86
+    "avg_pace_min_km": 5.86,
+    "distance_km": 6.1
   },
   {
     "date": "2026-07-23",
@@ -85,7 +92,8 @@
     "band5_min": 9,
     "avg_pct_lt": 90,
     "dominant_band": 4,
-    "avg_pace_min_km": 5.02
+    "avg_pace_min_km": 5.02,
+    "distance_km": 5.59
   },
   {
     "date": "2026-07-25",
@@ -96,7 +104,8 @@
     "band5_min": 0,
     "avg_pct_lt": 86,
     "dominant_band": 3,
-    "avg_pace_min_km": 6.52
+    "avg_pace_min_km": 6.52,
+    "distance_km": 21.02
   },
   {
     "date": "2026-07-28",
@@ -107,7 +116,8 @@
     "band5_min": 0,
     "avg_pct_lt": 74,
     "dominant_band": 1,
-    "avg_pace_min_km": 6.26
+    "avg_pace_min_km": 6.26,
+    "distance_km": 3.99
   },
   {
     "date": "2026-07-30",
@@ -118,7 +128,8 @@
     "band5_min": 0,
     "avg_pct_lt": 82,
     "dominant_band": 2,
-    "avg_pace_min_km": 5.98
+    "avg_pace_min_km": 5.98,
+    "distance_km": 6.05
   },
   {
     "date": "2026-07-31",
@@ -129,6 +140,7 @@
     "band5_min": 0,
     "avg_pct_lt": 83,
     "dominant_band": 3,
-    "avg_pace_min_km": 5.69
+    "avg_pace_min_km": 5.69,
+    "distance_km": 8.31
   }
 ]

@@ -88,14 +88,17 @@ def classify_curve_bands(hr_curve, lt2, band_cutoffs=BAND_CUTOFFS):
 def build_zone_history(journal_path, lt2=DEFAULT_LT2):
     """
     Return a list of {date, band1_min..band5_min, avg_pct_lt, dominant_band,
-    avg_pace_min_km} dicts, one per training-journal.json entry that is a
-    running session with a non-empty hr_curve, sorted ascending by date.
+    avg_pace_min_km, distance_km} dicts, one per training-journal.json entry
+    that is a running session with a non-empty hr_curve, sorted ascending by
+    date.
 
     avg_pace_min_km is the whole-session average pace already computed by
     parse_zepp_export.py — there's no per-sample GPS distance in hr_curve
     (or in the underlying Zepp export) to split pace by band *within* a
     single run, so dominant_band (the band with the most minutes) is the
-    finest grain available for a pace-vs-band comparison.
+    finest grain available for a pace-vs-band comparison. distance_km is
+    passed through the same way, for showing a run's volume alongside its
+    band breakdown.
     """
     if not os.path.exists(journal_path):
         return []
@@ -114,6 +117,7 @@ def build_zone_history(journal_path, lt2=DEFAULT_LT2):
             "date": entry["date"],
             **bands,
             "avg_pace_min_km": entry.get("avg_pace_min_km"),
+            "distance_km": entry.get("distance_km"),
         })
 
     history.sort(key=lambda e: e["date"])

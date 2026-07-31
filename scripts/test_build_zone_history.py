@@ -130,6 +130,24 @@ class TestBuildZoneHistory(unittest.TestCase):
         self.assertIsNone(result[0]["avg_pace_min_km"])
         os.unlink(path)
 
+    def test_includes_distance_km_from_journal(self):
+        path = self._write_journal([
+            {"date": "2026-07-09", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}], "distance_km": 21.02},
+        ])
+        result = build_zone_history(path)
+        self.assertEqual(result[0]["distance_km"], 21.02)
+        os.unlink(path)
+
+    def test_distance_km_none_when_missing(self):
+        path = self._write_journal([
+            {"date": "2026-07-09", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}]},
+        ])
+        result = build_zone_history(path)
+        self.assertIsNone(result[0]["distance_km"])
+        os.unlink(path)
+
 
 if __name__ == "__main__":
     unittest.main()
