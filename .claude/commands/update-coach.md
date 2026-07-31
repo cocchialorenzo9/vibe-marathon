@@ -91,6 +91,19 @@ percentages.
 
 Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
 
+**LT1 (analysis-only, separate from the bands above)**: the aerobic threshold,
+currently ~125bpm (~75% of LT2, a training-science field-test heuristic, not a
+measurement — provisional until a dedicated LT1 test exists). Used **only** by
+`scripts/build_zone_history.py` to classify actual recorded HR data into the
+Seiler Zone 1/2/3 model (Zone 1 <LT1, Zone 2 LT1-LT2, Zone 3 >=LT2) for
+`data/zone-history.json` — never used to rewrite the prescription bands above.
+See `CONTEXT.md`'s "Zone history" section and
+`docs/adr/0002-zone-history-analysis-only.md` for why these two scales are
+kept separate. If LT2 changes (watch update or the Aug 4 field test), also
+update `ATHLETE_LT2`/`DEFAULT_LT2` in `scripts/build_zone_history.py` (LT1
+rescales automatically unless a real LT1 test has since overridden it via
+`ATHLETE_LT1`).
+
 **VO2max**: current estimate lives in `data/coach.json`'s `readiness.vo2max`
 (`value`, `unit: "ml/kg/min"`, `status: "manual"|"garmin_max_metrics"`,
 `asOf`, `history`). Same confidence caveat as LT — a manually-entered or
@@ -99,7 +112,7 @@ amazfit branch and Step 5's schema). If `readiness.vo2max` doesn't exist yet
 in `coach.json`, ask the user for a starting number once rather than
 blocking every future run on it; leave it `null` if they don't have one.
 
-## Sub-3h checkpoint reference (used in Steps 4, 4e, 6)
+## Sub-3h checkpoint reference (used in Steps 4, 4e, 4f, 6)
 
 A checkpoint review on 2026-07-18 (week 3 of base, VO2max 54, LT 167bpm
 unconfirmed, CTL 15.2 / ATL 34.4 / TSB -19.2) compared this plan against
@@ -159,13 +172,41 @@ not just a way to decide whether to add more:
   flag a suggestion for a second field test around week 10-11 (peak phase,
   ~Sep 6-19) rather than trusting the Aug 4 number unchanged for the rest of
   the plan.
-- **Known, accepted gap — don't "fix" reflexively.** Even after the mileage
-  increase, peak week (~51km) sits below full Pfitzinger-tier sub-3h
-  benchmarks (89-113km) and close to but still under Step 4e's own Higdon
-  reference (~61km). That gap is an accepted tradeoff given the compressed
-  build window and a starting CTL of 15.2 (see week 11's own `tip` field), not
-  an oversight. If `volumeCheck.flagged` comes back true, the response is
-  *not* to pad mileage further — that fights the ramp-rate governance above.
+- **Known, accepted gap — superseded for weeks 7+ by the volume-escalation
+  rule below (2026-07-29, see `docs/adr/0001-volume-recalibration.md`).**
+  Originally: even after the mileage increase, peak week (~51km) sits below
+  full Pfitzinger-tier sub-3h benchmarks (89-113km) and close to but still
+  under Step 4e's own Higdon reference (~61km) — an accepted tradeoff given
+  the compressed build window and a starting CTL of 15.2, not an oversight,
+  and `volumeCheck.flagged` being true wasn't a reason to pad mileage
+  reflexively. A 2026-07-28 deep-research pass found this gap more
+  consequential than that framing implied — marathon time correlates strongly
+  with training volume, specifically the easy/Z1 portion of it, more than
+  with added intensity — which is why weeks 5-6 got a static bump (see
+  `training-plan.json`) and weeks 7-13 now run under the volume-escalation
+  rule instead of holding the gap fixed. The original caution still applies to
+  *how*, though: any volume added must go through the ramp-rate governance and
+  the volume-escalation rule's mechanism below — padding mileage outside that
+  mechanism, just because a number looks low next to a benchmark, is still
+  wrong, for the same reason it always was.
+- **Volume-escalation rule (added 2026-07-29).** The escalation-direction
+  counterpart to the de-escalation safety valve above — active weeks 7
+  through 13 (never weeks 8, 12 — recovery weeks keep their own fixed short
+  Sunday easy run, exempt from escalation — and never 14-15, taper). See Step
+  4f for the mechanics. In short: re-evaluate on every run, but only ever
+  write new numbers into the next week that hasn't started yet, so the
+  written schedule never shifts under the athlete mid-week; grow both easy
+  and quality volume together so the **80/20 target** (quality volume — the
+  at-effort minutes only, not a session's warmup/cooldown/float-recovery —
+  held at ~20% of that week's total) doesn't get diluted as the total grows;
+  and treat this as genuinely open-ended rather than aimed at a fixed
+  peak-volume number — even the deep-research pass's own high-volume
+  reference point (~108km/week) only predicted a 3:04, not sub-3h outright,
+  and true elite volumes (186-206km/week) are unrealistic given this
+  athlete's schedule. Push as far as ramp-rate safety allows each week and
+  report the real trajectory honestly (Step 5's `volumeCheck.projectedWeeklyKm`,
+  surfaced in every Step 6 summary, not just when flagged) rather than
+  promising a number today that reality might not support.
 
 ## Step 4 — Reason and generate the recommendation
 
@@ -250,7 +291,7 @@ Read `data/training-plan.json`. For each day in `weeks[].days[]` whose `date` is
   - Reference TSB or readiness context where relevant (e.g. "after this week's fatigue" or "legs are fresh")
   - Give a forward-looking hook: what this session prepares for
 
-Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged.
+Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged — the one exception is Step 4f, which is allowed to finalize a `PROVISIONAL` Sunday easy run's training fields for its one target week.
 
 ## Step 4c — Recent activity analysis
 
@@ -441,7 +482,66 @@ step exists to prevent.
    estimates and surfaces distance implied by the *current* prescription —
    deciding to actually change a week's prescribed minutes to close a volume
    gap is a training-design decision for the athlete, not something to do
-   silently as a side effect of recomputing an estimate.
+   silently as a side effect of recomputing an estimate. (This restriction is
+   for Step 4e specifically — Step 4f below is the one place that *is*
+   allowed to change prescribed minutes, per the athlete's own 2026-07-29
+   decision to recalibrate volume; see the checkpoint reference above.)
+
+## Step 4f — Apply the volume-escalation rule
+
+Skip if `WATCH_SOURCE=garmin` (same reason as Step 4c) or if today is before
+week 7 has started. This step is what actually executes the
+volume-escalation rule described in the Sub-3h checkpoint reference above —
+read that first for the *why*; this is the *how*.
+
+1. **Find the target week.** Scan weeks 7 through 13 in
+   `data/training-plan.json` for the earliest one whose Sunday easy run is
+   still marked `PROVISIONAL` (see the placeholder text) AND whose first date
+   is still in the future (hasn't started yet). If no such week exists —
+   every remaining week is already finalized, or today is past week 13 —
+   skip this step entirely. Never target the current week or a past week,
+   even if something about it looks wrong in hindsight; corrections to an
+   already-started week are a proposal to the athlete, not a silent rewrite,
+   same as the de-escalation valve's own rule.
+2. **Compute ramp-rate headroom**, exactly as the CTL ramp-rate governance
+   above defines it: trailing week-over-week CTL delta vs. the 3-5
+   points/week ceiling (looser only if HRV and TSB have both been green for
+   several consecutive days — see the governance bullet for what counts as
+   green). This is the same number Step 4/6 already report; don't recompute
+   it differently here.
+3. **Translate headroom into added volume.** Roughly: additional sustainable
+   weekly TSS ≈ headroom (CTL points/week still available) × 7. Convert that
+   TSS budget into km using `realZone2Pace_min_km` for the easy share and
+   each quality session's own pace for the quality share (LT-cruise sessions
+   don't have an explicit pace yet — approximate using a pace consistent with
+   the session's ~95-100% LT HR target, same reasoning-not-formula spirit as
+   Step 4e's own estKm math).
+4. **Split the addition 80/20** (easy/quality, quality measured at-effort-only)
+   per the 80/20 target in the checkpoint reference. Apply the easy share
+   first to the target week's Sunday easy run (finalizing its `PROVISIONAL`
+   placeholder into a real duration/estKm), and only add modest extensions
+   to existing easy/medium-long session durations if the easy share doesn't
+   fit into the Sunday day alone. Apply the quality share as modestly
+   more/longer reps on that week's existing tempo/LT-cruise session(s) —
+   never by adding a new quality day, and never in week 11, which stays
+   plain-easy on Tuesday regardless (see the second-quality-day bullet above).
+5. **Write the target week's finalized numbers** into
+   `data/training-plan.json` (`training.detail`/`estKm` for whichever days
+   changed). This is the one case where a step other than 4f is allowed to
+   touch training fields for a day beyond Step 4b's normal
+   movement/food/bigPicture-only scope — once finalized, treat those numbers
+   like any other written prescription (Step 4b can still refresh that week's
+   narrative fields around the new numbers on later runs).
+6. **Update `coach.json`'s `volumeCheck.projectedWeeklyKm`** (see Step 5
+   schema): the target week's own newly-finalized number, plus a rough
+   forward projection for every other remaining provisional week assuming the
+   same ramp-rate ceiling holds. Label projections beyond the target week as
+   provisional estimates, not commitments — only the target week's number is
+   actually finalized this run.
+7. **Exemptions**: weeks 8 and 12 already have a fixed, non-provisional short
+   Sunday easy run (~15-20min) written directly into `training-plan.json` —
+   never touch them here. Weeks 14-15 have no Sunday easy run at all — never
+   add one.
 
 ## Step 5 — Write the output files
 
@@ -482,7 +582,10 @@ sessions are never included in it.
     "thisWeekEstKm": <float>,
     "peakWeekEstKm": {"week<N>": <float>, ...},
     "referenceNote": "<comparison to Higdon Marathon 3's ~61km/week peak>",
-    "flagged": <bool>
+    "flagged": <bool>,
+    "projectedWeeklyKm": {
+      "week<N>": {"estKm": <float>, "status": "<finalized|provisional>"}
+    }
   },
   "recommendation": {
     "type": "<easy|tempo|long|race|swim|rest>",
@@ -557,10 +660,24 @@ If an entry for today's date already exists (e.g. from a same-day re-run), repla
 
 Fields deliberately omitted from `data/chart-data.json`: `hrv`, `resting_hr`, `sleep_hours`, `sleep_score`, `avg_hr`. These remain only in the local history file.
 
+## Step 5b — Rebuild the zone history
+
+After Step 4d has updated `data/training-journal.json`, run:
+
+```bash
+python3 scripts/build_zone_history.py
+```
+
+This fully rebuilds `data/zone-history.json` from `training-journal.json`'s
+`hr_curve` fields (running sessions only — see the LT1 reference above and
+`CONTEXT.md`'s "Zone history" section). It's a full recompute each run, not an
+append, so there's no gap/backfill logic to run separately — it never drifts
+from the journal.
+
 ## Step 6 — Commit and push
 
 ```bash
-git add data/coach.json data/chart-data.json data/training-plan.json data/training-journal.json
+git add data/coach.json data/chart-data.json data/training-plan.json data/training-journal.json data/zone-history.json
 git commit -m "chore: coach update $(date +%Y-%m-%d)"
 git push
 ```
@@ -580,6 +697,11 @@ Then tell the user:
 - The weekly-volume check from Step 4e (`volumeCheck`), when `flagged` is
   true or the number materially changed since last run — not forced into
   every summary either
+- **`volumeCheck.projectedWeeklyKm` (from Step 4f), every single run, once
+  week 7 has started** — the current week-by-week projected volume
+  trajectory, unlike the rest of `volumeCheck` this is never conditional on
+  being flagged or having changed; the athlete asked to always see where the
+  trajectory currently stands, even on runs where nothing moved
 - The CTL ramp-rate check from the Sub-3h checkpoint reference above, when
   this week's actual delta exceeds whichever ceiling currently applies
 - Whether either trigger from the Sub-3h checkpoint reference has newly been
