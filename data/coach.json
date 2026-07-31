@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-29",
-  "generatedFor": "2026-07-30",
+  "date": "2026-07-31",
+  "generatedFor": "2026-08-01",
   "readiness": {
-    "score": 50,
+    "score": 23,
     "hrv": {
-      "value": 76,
+      "value": 64,
       "baseline": 77,
-      "delta_pct": -1
+      "delta_pct": -18
     },
     "restingHR": {
-      "value": 44,
-      "trend": "normal"
+      "value": 48,
+      "trend": "elevated"
     },
     "sleep": {
-      "hours": 6.1,
-      "score": 63
+      "hours": 7.3,
+      "score": 70
     },
-    "tsb": -13.55,
-    "ctl": 24.01,
-    "atl": 37.55,
+    "tsb": -17.5,
+    "ctl": 25.65,
+    "atl": 43.15,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -49,42 +49,101 @@
     }
   },
   "volumeCheck": {
-    "realZone2Pace_min_km": 5.91,
-    "asOf": "2026-07-29",
-    "thisWeekEstKm": 16.93,
+    "realZone2Pace_min_km": 5.945,
+    "asOf": "2026-07-31",
+    "thisWeekEstKm": 16.98,
     "peakWeekEstKm": {
-      "week10": 59.09,
-      "week11": 60.22,
-      "week12": 37.23,
-      "week13": 50.24
+      "week10": 59.45,
+      "week11": 60.58,
+      "week12": 37.45,
+      "week13": 50.55
     },
-    "referenceNote": "Pace estimate slowed slightly to 5.91 min/km (from 5.885) — Jul 28's recovery run (avg HR 123bpm) qualified as a third clean easy data point alongside Jul 14 and Jul 21, nudging the trailing median from 5.885 to 5.91. Peak week (11) is now ~60.22km, ~1.3% below Hal Higdon's Marathon 3 peak of ~61km/week — essentially at parity, down from the earlier ~15%+ gap before the static-bump/volume-escalation work started.",
+    "referenceNote": "Pace estimate slowed slightly to 5.945 min/km (from 5.91) — Jul 30's easy run (avg HR 138bpm) qualified as a fresh easy data point, nudging the trailing median. Peak week (11) is now ~60.58km, ~0.7% below Hal Higdon's Marathon 3 peak of ~61km/week — essentially at parity.",
     "flagged": false,
     "projectedWeeklyKm": {
-      "week5": { "estKm": 30.53, "status": "finalized" },
-      "week6": { "estKm": 45.41, "status": "finalized" },
-      "week7": { "estKm": 45.61, "status": "provisional" },
-      "week8": { "estKm": 29.62, "status": "finalized" },
-      "week9": { "estKm": 49.97, "status": "provisional" },
-      "week10": { "estKm": 59.09, "status": "provisional" },
-      "week11": { "estKm": 60.22, "status": "provisional" },
-      "week12": { "estKm": 37.23, "status": "finalized" },
-      "week13": { "estKm": 50.24, "status": "provisional" }
+      "week5": { "estKm": 35.84, "status": "finalized" },
+      "week6": { "estKm": 45.68, "status": "finalized" },
+      "week7": { "estKm": 45.89, "status": "provisional" },
+      "week8": { "estKm": 29.81, "status": "finalized" },
+      "week9": { "estKm": 50.26, "status": "provisional" },
+      "week10": { "estKm": 59.45, "status": "provisional" },
+      "week11": { "estKm": 60.58, "status": "provisional" },
+      "week12": { "estKm": 37.45, "status": "finalized" },
+      "week13": { "estKm": 50.55, "status": "provisional" }
     }
   },
   "recommendation": {
-    "type": "easy",
-    "title": "Second recovery-week easy day, strides at the end",
-    "reasoning": "HRV is essentially flat versus baseline (76ms vs a 77ms baseline, -1%) and resting HR is normal at 44bpm, but sleep was weak — only 6.1 hours and a 63 sleep score, the softest signal today. TSB is -13.6, still climbing back from Jul 25's long-run overrun but not yet in caution territory (below -15). None of the downgrade triggers are met, so proceed with tomorrow's already-easy prescription: 30 minutes easy plus strides, recovery week.",
-    "sessionDetail": "30 minutes at recovery effort, 109-125bpm (65-75% of the 167bpm LT estimate), then 4x80m smooth accelerations — pickups, not sprints. Recovery week, so keep the base 30 minutes genuinely easy even with strides tacked on.",
-    "bikeNote": "Bike both ways is fine — TSB is mildly negative but this is a short recovery-week easy day, not enough load to justify swapping to transit.",
-    "swimNote": "No pool tomorrow — today's swim already covered midweek cross-training; next swim session is Aug 5."
+    "type": "rest",
+    "title": "Full rest — long run already banked today",
+    "reasoning": "You pulled Saturday's Reduced long run forward to today instead (8.31km/47min vs. the 7.62km/45min prescription), so there's no session left for tomorrow. HRV is 18% below baseline (64ms vs 77ms) and TSB is -17.5 — both already in swap-to-easy territory even before counting today's effort. Resting HR is also mildly elevated (48 vs a 45bpm baseline, +6.7%). Full rest lets all of that settle before Sunday's new easy run kicks off build phase.",
+    "sessionDetail": "No session prescribed. If you want to move, a short walk is fine — no running today.",
+    "bikeNote": "No work commute tomorrow, it's Saturday. No cycling needed either — full rest day, nothing to plan around.",
+    "swimNote": ""
   },
   "phase": "base",
-  "daysToRace": 74,
+  "daysToRace": 72,
   "recentActivity": {
-    "since": "2026-07-23",
+    "since": "2026-07-25",
     "sessions": [
+      {
+        "date": "2026-07-31",
+        "type": "outdoor_running",
+        "distance_km": 8.31,
+        "duration_min": 47.3,
+        "avg_hr": 139,
+        "max_hr": 166,
+        "hr_curve": [
+          {"t_min": 0, "hr": 89}, {"t_min": 1, "hr": 112}, {"t_min": 2, "hr": 122}, {"t_min": 3, "hr": 126},
+          {"t_min": 4, "hr": 129}, {"t_min": 5, "hr": 130}, {"t_min": 6, "hr": 130}, {"t_min": 7, "hr": 130},
+          {"t_min": 8, "hr": 127}, {"t_min": 9, "hr": 124}, {"t_min": 10, "hr": 127}, {"t_min": 11, "hr": 130},
+          {"t_min": 12, "hr": 127}, {"t_min": 13, "hr": 129}, {"t_min": 14, "hr": 130}, {"t_min": 15, "hr": 132},
+          {"t_min": 16, "hr": 134}, {"t_min": 17, "hr": 131}, {"t_min": 18, "hr": 134}, {"t_min": 19, "hr": 140},
+          {"t_min": 20, "hr": 143}, {"t_min": 21, "hr": 145}, {"t_min": 22, "hr": 146}, {"t_min": 23, "hr": 148},
+          {"t_min": 24, "hr": 143}, {"t_min": 25, "hr": 139}, {"t_min": 26, "hr": 139}, {"t_min": 27, "hr": 142},
+          {"t_min": 28, "hr": 142}, {"t_min": 29, "hr": 142}, {"t_min": 30, "hr": 142}, {"t_min": 31, "hr": 144},
+          {"t_min": 32, "hr": 145}, {"t_min": 33, "hr": 149}, {"t_min": 34, "hr": 149}, {"t_min": 35, "hr": 148},
+          {"t_min": 36, "hr": 147}, {"t_min": 37, "hr": 147}, {"t_min": 38, "hr": 149}, {"t_min": 39, "hr": 147},
+          {"t_min": 40, "hr": 143}, {"t_min": 41, "hr": 147}, {"t_min": 42, "hr": 149}, {"t_min": 43, "hr": 154},
+          {"t_min": 44, "hr": 163}, {"t_min": 45, "hr": 155}, {"t_min": 46, "hr": 157}, {"t_min": 47, "hr": 166}
+        ],
+        "avg_pace_min_km": 5.69,
+        "tss": 54.6,
+        "lesson": "This was Saturday's 'Reduced long run' pulled forward a day — the first ~18 minutes held a genuinely easy 112-134bpm, but HR drifted into the 140s from minute 19 and spiked to 154-166bpm in the closing 5 minutes, well past the 125-142bpm easy-effort target for this session."
+      },
+      {
+        "date": "2026-07-30",
+        "type": "outdoor_running",
+        "distance_km": 6.05,
+        "duration_min": 36.2,
+        "avg_hr": 138,
+        "max_hr": 156,
+        "hr_curve": [
+          {"t_min": 1, "hr": 112}, {"t_min": 2, "hr": 122}, {"t_min": 3, "hr": 126}, {"t_min": 4, "hr": 129},
+          {"t_min": 5, "hr": 131}, {"t_min": 6, "hr": 131}, {"t_min": 7, "hr": 131}, {"t_min": 8, "hr": 135},
+          {"t_min": 9, "hr": 135}, {"t_min": 10, "hr": 137}, {"t_min": 11, "hr": 137}, {"t_min": 12, "hr": 142},
+          {"t_min": 13, "hr": 140}, {"t_min": 14, "hr": 135}, {"t_min": 15, "hr": 132}, {"t_min": 16, "hr": 134},
+          {"t_min": 17, "hr": 135}, {"t_min": 18, "hr": 133}, {"t_min": 19, "hr": 130}, {"t_min": 20, "hr": 133},
+          {"t_min": 21, "hr": 138}, {"t_min": 22, "hr": 136}, {"t_min": 23, "hr": 138}, {"t_min": 24, "hr": 141},
+          {"t_min": 25, "hr": 143}, {"t_min": 26, "hr": 143}, {"t_min": 27, "hr": 143}, {"t_min": 28, "hr": 147},
+          {"t_min": 29, "hr": 147}, {"t_min": 30, "hr": 142}, {"t_min": 31, "hr": 142}, {"t_min": 32, "hr": 148},
+          {"t_min": 33, "hr": 156}, {"t_min": 34, "hr": 154}, {"t_min": 35, "hr": 147}, {"t_min": 36, "hr": 150}
+        ],
+        "avg_pace_min_km": 5.98,
+        "tss": 41.2,
+        "lesson": "Easy run + strides as scheduled — avg HR 138 sits right in the 125-142bpm easy band, and the brief spike to 156 at minute 33 lines up with the prescribed closing strides, not a compliance problem."
+      },
+      {
+        "date": "2026-07-29",
+        "type": "swimming",
+        "distance_km": 2.05,
+        "duration_min": 53.8,
+        "avg_hr": 131,
+        "max_hr": null,
+        "hr_curve": [],
+        "avg_pace_min_km": null,
+        "tss": 55.2,
+        "lesson": "Scheduled open-swim day, moderate aerobic effort — nothing unusual."
+      },
       {
         "date": "2026-07-28",
         "type": "outdoor_running",
@@ -165,31 +224,8 @@
         "avg_pace_min_km": 6.52,
         "tss": 170.0,
         "lesson": "Legit long-run aerobic stimulus for well over two hours, but this ran 137.2min/21.02km against a 60min/~11km prescription — the curve shows a solid middle stretch (roughly minute 20-110) sitting mostly in the 138-146bpm range, right at the easy-aerobic ceiling, but the final ~20 minutes drifted from ~140bpm up to a 158bpm peak, pushing into moderate/tempo territory as fatigue caught up over an unusually long unplanned effort."
-      },
-      {
-        "date": "2026-07-23",
-        "type": "outdoor_running",
-        "distance_km": 5.59,
-        "duration_min": 28.1,
-        "avg_hr": 150,
-        "max_hr": 170,
-        "hr_curve": [
-          {"t_min": 1, "hr": 103}, {"t_min": 2, "hr": 114}, {"t_min": 3, "hr": 115},
-          {"t_min": 4, "hr": 116}, {"t_min": 5, "hr": 118}, {"t_min": 6, "hr": 119},
-          {"t_min": 7, "hr": 119}, {"t_min": 8, "hr": 124}, {"t_min": 9, "hr": 144},
-          {"t_min": 10, "hr": 154}, {"t_min": 11, "hr": 159}, {"t_min": 12, "hr": 164},
-          {"t_min": 13, "hr": 167}, {"t_min": 14, "hr": 166}, {"t_min": 15, "hr": 163},
-          {"t_min": 16, "hr": 163}, {"t_min": 17, "hr": 163}, {"t_min": 18, "hr": 160},
-          {"t_min": 19, "hr": 165}, {"t_min": 20, "hr": 167}, {"t_min": 21, "hr": 167},
-          {"t_min": 22, "hr": 167}, {"t_min": 23, "hr": 167}, {"t_min": 24, "hr": 168},
-          {"t_min": 25, "hr": 170}, {"t_min": 26, "hr": 169}, {"t_min": 27, "hr": 167},
-          {"t_min": 28, "hr": 160}
-        ],
-        "avg_pace_min_km": 5.02,
-        "tss": 37.8,
-        "lesson": "First quality tempo session — 7min warmup (103-119bpm) then a genuinely continuous 20-minute push at MP effort (not the recommended 3x1km-with-recovery trim), and the curve shows why that matters: HR drifted from 144 up to a 170bpm peak with no rest to cap it, spending minutes 19-26 at or above the 167bpm LT ceiling."
       }
     ],
-    "analysis": "After Jul 23's tempo (37.8 TSS) and Jul 25's long-run overrun (170 TSS, still the dominant spike in this window), the week stepped back down hard: Jul 26 easy (auto-detected, no formal session), Jul 27 full rest (0 TSS), and Jul 28's recovery run stayed genuinely easy at 22.6 TSS — a clean de-load consistent with week 4's recovery-week design. TSB, which bottomed at -28.15 on Jul 25, has since recovered to -13.6 today."
+    "analysis": "TSS climbed sharply on Jul 25's overrun long run (170 TSS), the recovery week then correctly tapered volume down through Jul 26-29 (22, 0, 42.7, 10.5), and the last two days ramped back up with two running days in a row (41.2 on Jul 30, then 54.6 today as the long run got pulled forward a day) — a reasonable way to close a recovery week, but worth watching given TSB is still -17.5 and today's session drifted well above easy effort in its closing minutes."
   }
 }
