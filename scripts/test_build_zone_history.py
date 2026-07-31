@@ -36,6 +36,20 @@ class TestClassifyCurveZones(unittest.TestCase):
         result = classify_curve_zones(curve, lt1=125, lt2=167)
         self.assertEqual(result["avg_pct_lt"], 100)
 
+    def test_dominant_zone_picks_most_minutes(self):
+        curve = (
+            [{"t_min": i, "hr": 110} for i in range(2)]
+            + [{"t_min": i, "hr": 150} for i in range(5)]
+            + [{"t_min": i, "hr": 170} for i in range(1)]
+        )
+        result = classify_curve_zones(curve, lt1=125, lt2=167)
+        self.assertEqual(result["dominant_zone"], 2)
+
+    def test_dominant_zone_ties_break_low(self):
+        curve = [{"t_min": 0, "hr": 110}, {"t_min": 1, "hr": 150}]
+        result = classify_curve_zones(curve, lt1=125, lt2=167)
+        self.assertEqual(result["dominant_zone"], 1)
+
 
 class TestBuildZoneHistory(unittest.TestCase):
     def _write_journal(self, entries):
@@ -72,6 +86,24 @@ class TestBuildZoneHistory(unittest.TestCase):
         ])
         result = build_zone_history(path)
         self.assertEqual([e["date"] for e in result], ["2026-07-08", "2026-07-09"])
+        os.unlink(path)
+
+    def test_includes_avg_pace_min_km_from_journal(self):
+        path = self._write_journal([
+            {"date": "2026-07-09", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}], "avg_pace_min_km": 5.5},
+        ])
+        result = build_zone_history(path)
+        self.assertEqual(result[0]["avg_pace_min_km"], 5.5)
+        os.unlink(path)
+
+    def test_avg_pace_min_km_none_when_missing(self):
+        path = self._write_journal([
+            {"date": "2026-07-09", "type": "outdoor_running",
+             "hr_curve": [{"t_min": 0, "hr": 130}]},
+        ])
+        result = build_zone_history(path)
+        self.assertIsNone(result[0]["avg_pace_min_km"])
         os.unlink(path)
 
     def test_sorted_ascending_by_date(self):

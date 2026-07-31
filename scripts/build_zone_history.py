@@ -67,19 +67,31 @@ def classify_curve_zones(hr_curve, lt1, lt2):
             zone3_min += 1
 
     avg_hr = total_hr / len(hr_curve)
+    zone_minutes = {1: zone1_min, 2: zone2_min, 3: zone3_min}
+    # Ties broken toward the lower zone number (the more conservative read of
+    # "what kind of run was this").
+    dominant_zone = max(zone_minutes, key=lambda z: (zone_minutes[z], -z))
     return {
         "zone1_min": zone1_min,
         "zone2_min": zone2_min,
         "zone3_min": zone3_min,
         "avg_pct_lt": round(avg_hr / lt2 * 100),
+        "dominant_zone": dominant_zone,
     }
 
 
 def build_zone_history(journal_path, lt1=DEFAULT_LT1, lt2=DEFAULT_LT2):
     """
-    Return a list of {date, zone1_min, zone2_min, zone3_min, avg_pct_lt}
-    dicts, one per training-journal.json entry that is a running session
-    with a non-empty hr_curve, sorted ascending by date.
+    Return a list of {date, zone1_min, zone2_min, zone3_min, avg_pct_lt,
+    dominant_zone, avg_pace_min_km} dicts, one per training-journal.json
+    entry that is a running session with a non-empty hr_curve, sorted
+    ascending by date.
+
+    avg_pace_min_km is the whole-session average pace already computed by
+    parse_zepp_export.py — there's no per-sample GPS distance in hr_curve
+    (or in the underlying Zepp export) to split pace by zone *within* a
+    single run, so dominant_zone (the zone with the most minutes) is the
+    finest grain available for a pace-vs-zone comparison.
     """
     if not os.path.exists(journal_path):
         return []
@@ -94,7 +106,11 @@ def build_zone_history(journal_path, lt1=DEFAULT_LT1, lt2=DEFAULT_LT2):
         zones = classify_curve_zones(entry.get("hr_curve") or [], lt1, lt2)
         if zones is None:
             continue
-        history.append({"date": entry["date"], **zones})
+        history.append({
+            "date": entry["date"],
+            **zones,
+            "avg_pace_min_km": entry.get("avg_pace_min_km"),
+        })
 
     history.sort(key=lambda e: e["date"])
     return history
