@@ -42,19 +42,18 @@ class TestClassifyCurveBands(unittest.TestCase):
         result = classify_curve_bands(curve, lt2=167)
         self.assertEqual(result["avg_pct_lt"], 100)
 
-    def test_dominant_band_picks_most_minutes(self):
-        curve = (
-            [{"t_min": i, "hr": 110} for i in range(2)]
-            + [{"t_min": i, "hr": 145} for i in range(5)]
-            + [{"t_min": i, "hr": 170} for i in range(1)]
-        )
+    def test_avg_band_reflects_mean_not_individual_samples(self):
+        # Two low-band minutes and one high-band minute average out to a
+        # middle band that no individual sample was actually in.
+        curve = [{"t_min": 0, "hr": 110}, {"t_min": 1, "hr": 110}, {"t_min": 2, "hr": 200}]
         result = classify_curve_bands(curve, lt2=167)
-        self.assertEqual(result["dominant_band"], 3)
+        self.assertEqual(result["avg_band"], 3)
 
-    def test_dominant_band_ties_break_low(self):
-        curve = [{"t_min": 0, "hr": 110}, {"t_min": 1, "hr": 145}]
-        result = classify_curve_bands(curve, lt2=167)
-        self.assertEqual(result["dominant_band"], 1)
+    def test_avg_band_boundary_follows_lt2(self):
+        curve = [{"t_min": 0, "hr": 160}]
+        # With a lower lt2, 160bpm now falls in the top (5th) band.
+        self.assertEqual(classify_curve_bands(curve, lt2=158)["avg_band"], 5)
+        self.assertEqual(classify_curve_bands(curve, lt2=167)["avg_band"], 4)
 
     def test_top_band_follows_lt2(self):
         curve = [{"t_min": 0, "hr": 160}]

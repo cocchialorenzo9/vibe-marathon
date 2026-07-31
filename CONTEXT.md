@@ -72,9 +72,9 @@ _Avoid_: max HR, threshold pace
 One of 5 fixed-bpm buckets used to classify *actual recorded* running effort: <130, 130-140, 140-155, 155-167, 167+ (the top edge pinned to LT2 — 167+ is definitionally at/above threshold). Chosen directly as round bpm numbers, not derived from an estimated aerobic threshold — see `docs/adr/0003-hr-bands-replace-seiler-zones.md` for why this replaced the earlier LT1/LT2-anchored Seiler Zone 1/2/3 model. Used only to classify what a session's `hr_curve` actually shows — separate from and never a replacement for this project's existing prescription bands (Recovery/Easy-Aerobic/Threshold, still %LT-of-LT2 and still used to write `training-plan.json`'s easy/recovery/long guidance).
 _Avoid_: zone (reserved for the retired Seiler model), training zone
 
-**Dominant band**:
-The HR band with the most minutes in a single run's `hr_curve` — the finest grain available for comparing pace across bands, since there's no per-sample GPS distance to split pace by band *within* one run.
-_Avoid_: primary zone, main band
+**Average band**:
+The HR band containing a single run's *average* HR (not the band with the most minutes — a run can average into a band none of its individual samples were actually in). Used to categorize a whole run by one band for pace comparison, since there's no per-sample GPS distance to split pace by band *within* one run.
+_Avoid_: dominant band, primary zone, main band
 
 **Zone history**:
 The day-by-day record of time spent in each HR band (plus average %LT and pace), built from running sessions' `hr_curve` only (other activity types, e.g. swimming, don't carry a curve). One entry per day; days with no qualifying running session are simply absent, not zero. Kept the `zone-history.json`/`build_zone_history.py` file names for continuity even after the underlying model moved from Seiler zones to HR bands.

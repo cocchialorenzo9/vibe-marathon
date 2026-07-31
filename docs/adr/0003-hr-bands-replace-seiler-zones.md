@@ -30,8 +30,10 @@ context, but no longer defines the band boundaries.
 
 - `data/zone-history.json` entries changed shape: `zone1_min`/`zone2_min`/
   `zone3_min`/`dominant_zone` are gone, replaced by `band1_min`...`band5_min`/
-  `dominant_band`. Any code or dashboard reading the old fields needs
-  updating (done in this same change).
+  `avg_band` (the band containing the run's average HR, not the band with
+  the most minutes — that mode-based field, briefly called `dominant_band`,
+  was replaced before anything consumed it). Any code or dashboard reading
+  the old fields needs updating (done in this same change).
 - The file and script names (`zone-history.json`, `build_zone_history.py`)
   are unchanged for continuity, even though the domain vocabulary moved from
   "zone" to "band" — see `CONTEXT.md`'s "Zone history" entry.
