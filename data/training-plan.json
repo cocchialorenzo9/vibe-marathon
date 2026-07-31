@@ -276,55 +276,56 @@
           "date": "2026-08-03",
           "dayLabel": "Mon 3",
           "training": {
-            "type": "medium-long",
-            "title": "Medium-long run",
-            "detail": "35 min at easy effort (~75-85% LT) \u2014 new: a second aerobic day, spaced two days after Saturday's long run",
-            "estKm": 5.92
+            "type": "easy",
+            "title": "Easy run",
+            "detail": "45 min at easy effort (~75-85% LT) \u2014 moved from Tuesday to keep a lighter day before Tuesday's long run, ahead of Wednesday night's Flixbus to Oslo",
+            "estKm": 7.61
           },
-          "movement": "Bike both ways should be fine if legs feel normal after yesterday's easy Sunday run; U-Bahn both ways if there's still meaningful fatigue from Saturday's long run.",
-          "food": "Normal balanced meals, moderate carb share \u2014 this is an aerobic-volume day, not a quality session.",
-          "bigPicture": "New second aerobic day, build phase, 69 days out \u2014 spaced two days after Saturday's long run and one day after the new Sunday easy run, part of adding running frequency rather than just longer sessions. Builds toward Tuesday's easy day and this week's swim, all easy-effort volume in service of the escalating weekly total."
+          "movement": "Bike both ways fine unless legs are still heavy from Sunday's easy run \u2014 then U-Bahn both ways.",
+          "food": "Normal balanced meals, phase-appropriate carb share for base/build aerobic work.",
+          "bigPicture": "Build phase, 69 days out \u2014 reshuffled this week for the Oslo trip: this is the session that was originally Tuesday's, moved a day earlier so Tuesday can carry the long run instead of Saturday. A lighter day ahead of that long run."
         },
         {
           "date": "2026-08-04",
           "dayLabel": "Tue 4",
           "training": {
-            "type": "easy",
-            "title": "Easy run",
-            "detail": "45 min at easy effort (~75-85% LT) \u2014 Monday is now full rest",
-            "estKm": 7.62
+            "type": "long",
+            "title": "Long run with MP",
+            "detail": "70 min: first 55 at easy effort (~75-85% LT), last 15 at 4:20/km (~13 km total) \u2014 moved up from Saturday since you'll be traveling to Oslo this weekend",
+            "estKm": 12.77
           },
-          "movement": "Bike both ways fine unless legs are still heavy from Monday's medium-long \u2014 then U-Bahn both ways.",
-          "food": "Normal balanced meals, phase-appropriate carb share for base/build aerobic work.",
-          "bigPicture": "Build phase, 68 days out \u2014 this session's duration was extended slightly (40\u219245 min) as part of the static-bump half of the volume recalibration, growing easy volume ahead of Wednesday's swim and Saturday's long run with MP finish."
+          "movement": "Bike both ways fine for the commute; consider U-Bahn to/from wherever you start the long run itself if you want fresher legs.",
+          "food": "Pre-run carb breakfast. Bring a gel \u2014 you'll be out 70 minutes. Test your race nutrition.",
+          "bigPicture": "First long run with a marathon-pace finish, build phase, 68 days out \u2014 moved from Saturday to today so it lands before the Wednesday-night Flixbus and Thursday's flight to Oslo, rather than trying to fit it into the travel window. The last 15 minutes at 4:20/km while tired is exactly what km 30-42 will feel like \u2014 this is where sub-3h is built. Stick to the prescribed 70 minutes; late July's long run ran to more than double its target (137min/21km vs 60min/11km) and drove TSB down to -28.15 before it recovered."
         },
         {
           "date": "2026-08-05",
           "dayLabel": "Wed 5",
           "training": {
-            "type": "swim",
-            "title": "Open swim",
-            "detail": "30\u201335 min in the pool, aerobic pace. Continuous crawl with focus on breathing. No interval training."
+            "type": "medium-long",
+            "title": "Medium-long run",
+            "detail": "35 min at easy effort (~75-85% LT) \u2014 moved from Monday; last easy session before tonight's Flixbus to Oslo. Swim skipped this week.",
+            "estKm": 5.92
           },
-          "movement": "Bike both ways to the pool is fine.",
-          "food": "Normal balanced meals \u2014 swim days are lower-impact, no special fueling needed.",
-          "bigPicture": "Build phase, 67 days out \u2014 aerobic cross-training day, technique-focused pool work that adds conditioning without leg-impact fatigue ahead of Saturday's long run with an MP finish."
+          "movement": "Bike both ways should be fine \u2014 legs should have recovered from yesterday's long run by this morning. No pool today, skipped to keep the week simple around travel.",
+          "food": "Normal balanced meals, moderate carb share \u2014 pack/organize for tonight's overnight bus.",
+          "bigPicture": "Build phase, 67 days out \u2014 last training session before tonight's Flixbus to Oslo and Thursday's 2pm flight. This week's swim was skipped to keep the reshuffled schedule (long run moved to Tuesday, easy days bracketing it) simple around the travel window."
         },
         {
           "date": "2026-08-08",
           "dayLabel": "Sat 8",
           "training": {
-            "type": "long",
-            "title": "Long run with MP",
-            "detail": "70 min: first 55 at easy effort (~75-85% LT), last 15 at 4:20/km (~13 km total)",
-            "estKm": 12.76
+            "type": "easy",
+            "title": "Easy run",
+            "detail": "30 min easy effort (~65-75% LT) \u2014 light vacation-day run in Oslo, keeping legs moving without adding fatigue",
+            "estKm": 5.08
           },
-          "movement": "No cycling before the long run. U-Bahn to your starting point.",
-          "food": "Pre-run carb breakfast. Bring a gel \u2014 you'll be out 70 minutes. Test your race nutrition.",
-          "bigPicture": "First long run with a marathon-pace finish, build phase, 64 days out. The last 15 minutes at 4:20/km while tired is exactly what km 30-42 will feel like. This is where sub-3h is built \u2014 but stick to the prescribed 70 minutes; late July's long run ran to more than double its target (137min/21km vs 60min/11km) and drove TSB down to -28.15 before it recovered \u2014 exactly the kind of single-session overrun the CTL ramp-rate governance exists to prevent."
+          "movement": "No commute today \u2014 you're in Oslo. No cycling needed, just an easy run wherever's convenient.",
+          "food": "Normal balanced meals \u2014 nothing special, just don't skip meals around a travel/sightseeing day.",
+          "bigPicture": "Build phase, 64 days out, second of two easy days bracketing your rest days in Oslo (Fri/Thu rest, this and Sunday easy). This week's real quality work \u2014 the MP-finish long run \u2014 already happened Tuesday before you left, so these days are just about keeping legs moving on vacation, not adding training stress."
         }
       ],
-      "estKm": 30.53
+      "estKm": 35.61
     },
     {
       "week": 6,
@@ -345,7 +346,7 @@
           },
           "movement": "No commute today, it's the weekend \u2014 no cycling needed, easy effort the day after the long run.",
           "food": "Normal balanced meals \u2014 recovery-effort volume, not a fueling day.",
-          "bigPicture": "Second Sunday easy run, build phase, 63 days out \u2014 same absorb-not-add role as last week's, following Saturday's first quality long run (MP finish). Static-bump volume continues its ramp before week 7 hands off to the ongoing volume-escalation rule."
+          "bigPicture": "Second Sunday easy run, build phase, 63 days out \u2014 same absorb-not-add role as last week's. This week's long run happened Tuesday (moved up ahead of the Oslo trip) rather than Saturday, so this is simply the second of two easy days during the trip, not a post-long-run absorb day. Static-bump volume continues its ramp before week 7 hands off to the ongoing volume-escalation rule."
         },
         {
           "date": "2026-08-10",
