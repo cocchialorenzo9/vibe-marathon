@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-31",
-  "generatedFor": "2026-08-01",
+  "date": "2026-08-02",
+  "generatedFor": "2026-08-03",
   "readiness": {
     "score": 23,
     "hrv": {
-      "value": 64,
-      "baseline": 77,
-      "delta_pct": -18
+      "value": 56,
+      "baseline": 74,
+      "delta_pct": -28
     },
     "restingHR": {
-      "value": 48,
+      "value": 49,
       "trend": "elevated"
     },
     "sleep": {
-      "hours": 7.3,
-      "score": 70
+      "hours": 7.5,
+      "score": 75
     },
-    "tsb": -17.5,
-    "ctl": 25.65,
-    "atl": 43.15,
+    "tsb": -29.43,
+    "ctl": 29.57,
+    "atl": 59.01,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -50,41 +50,2185 @@
   },
   "volumeCheck": {
     "realZone2Pace_min_km": 5.945,
-    "asOf": "2026-07-31",
-    "thisWeekEstKm": 16.98,
+    "asOf": "2026-08-02",
+    "thisWeekEstKm": 31.58,
     "peakWeekEstKm": {
       "week10": 59.45,
       "week11": 60.58,
       "week12": 37.45,
       "week13": 50.55
     },
-    "referenceNote": "Pace estimate slowed slightly to 5.945 min/km (from 5.91) — Jul 30's easy run (avg HR 138bpm) qualified as a fresh easy data point, nudging the trailing median. Peak week (11) is now ~60.58km, ~0.7% below Hal Higdon's Marathon 3 peak of ~61km/week — essentially at parity.",
+    "referenceNote": "Today's schedule move (Aug 2's skipped Sunday easy run moved to Fri Aug 14) shifted 4.26km from week 5 (35.84\u219231.58) to week 6 (45.68\u219249.94) \u2014 pace estimate itself unchanged at 5.945 min/km, no new qualifying easy-effort data points since Jul 30. Peak week (11) is still ~60.58km, ~0.7% below Hal Higdon's Marathon 3 peak of ~61km/week \u2014 essentially at parity.",
     "flagged": false,
     "projectedWeeklyKm": {
-      "week5": { "estKm": 35.84, "status": "finalized" },
-      "week6": { "estKm": 45.68, "status": "finalized" },
-      "week7": { "estKm": 45.89, "status": "provisional" },
-      "week8": { "estKm": 29.81, "status": "finalized" },
-      "week9": { "estKm": 50.26, "status": "provisional" },
-      "week10": { "estKm": 59.45, "status": "provisional" },
-      "week11": { "estKm": 60.58, "status": "provisional" },
-      "week12": { "estKm": 37.45, "status": "finalized" },
-      "week13": { "estKm": 50.55, "status": "provisional" }
+      "week5": {
+        "estKm": 31.58,
+        "status": "finalized"
+      },
+      "week6": {
+        "estKm": 49.94,
+        "status": "finalized"
+      },
+      "week7": {
+        "estKm": 45.89,
+        "status": "provisional"
+      },
+      "week8": {
+        "estKm": 29.81,
+        "status": "finalized"
+      },
+      "week9": {
+        "estKm": 50.26,
+        "status": "provisional"
+      },
+      "week10": {
+        "estKm": 59.45,
+        "status": "provisional"
+      },
+      "week11": {
+        "estKm": 60.58,
+        "status": "provisional"
+      },
+      "week12": {
+        "estKm": 37.45,
+        "status": "finalized"
+      },
+      "week13": {
+        "estKm": 50.55,
+        "status": "provisional"
+      }
     }
   },
   "recommendation": {
-    "type": "rest",
-    "title": "Full rest — long run already banked today",
-    "reasoning": "You pulled Saturday's Reduced long run forward to today instead (8.31km/47min vs. the 7.62km/45min prescription), so there's no session left for tomorrow. HRV is 18% below baseline (64ms vs 77ms) and TSB is -17.5 — both already in swap-to-easy territory even before counting today's effort. Resting HR is also mildly elevated (48 vs a 45bpm baseline, +6.7%). Full rest lets all of that settle before Sunday's new easy run kicks off build phase.",
-    "sessionDetail": "No session prescribed. If you want to move, a short walk is fine — no running today.",
-    "bikeNote": "No work commute tomorrow, it's Saturday. No cycling needed either — full rest day, nothing to plan around.",
+    "type": "easy",
+    "title": "Easy Monday \u2014 protect legs, skip the bike",
+    "reasoning": "HRV is 28% below baseline (56ms vs a 74ms trailing baseline) and resting HR is mildly elevated (49 vs a ~45bpm baseline). TSB sits at -29.43, but that's inflated by yesterday's 8.75-hour Greenfield Festival day rather than real running fatigue \u2014 you correctly skipped today's Sunday easy run (now moved to Fri Aug 14) given how depressed HRV was. Tomorrow's 45-minute easy run is already lightened and moved up ahead of Tuesday's marathon-pace long run and the Oslo trip, so stay at the low end of the effort band.",
+    "sessionDetail": "45 min at easy effort (~75-85% LT \u2248 125-142bpm) \u2014 given today's HRV and resting HR, lean toward the bottom of that band (125-132bpm) rather than drifting toward 142.",
+    "bikeNote": "U-Bahn both ways tomorrow \u2014 HRV and resting HR both argue against the bike commute; save the legs for Tuesday's marathon-pace long run.",
     "swimNote": ""
   },
-  "phase": "base",
-  "daysToRace": 72,
+  "phase": "build",
+  "daysToRace": 70,
   "recentActivity": {
-    "since": "2026-07-25",
+    "since": "2026-07-27",
     "sessions": [
+      {
+        "date": "2026-08-01",
+        "type": "sport_type_186",
+        "distance_km": 0.0,
+        "duration_min": 525.7,
+        "avg_hr": 85,
+        "max_hr": 115,
+        "hr_curve": [
+          {
+            "t_min": 0,
+            "hr": 80
+          },
+          {
+            "t_min": 1,
+            "hr": 80
+          },
+          {
+            "t_min": 2,
+            "hr": 77
+          },
+          {
+            "t_min": 3,
+            "hr": 77
+          },
+          {
+            "t_min": 4,
+            "hr": 89
+          },
+          {
+            "t_min": 5,
+            "hr": 93
+          },
+          {
+            "t_min": 6,
+            "hr": 91
+          },
+          {
+            "t_min": 7,
+            "hr": 87
+          },
+          {
+            "t_min": 8,
+            "hr": 86
+          },
+          {
+            "t_min": 9,
+            "hr": 86
+          },
+          {
+            "t_min": 10,
+            "hr": 86
+          },
+          {
+            "t_min": 11,
+            "hr": 88
+          },
+          {
+            "t_min": 12,
+            "hr": 86
+          },
+          {
+            "t_min": 13,
+            "hr": 85
+          },
+          {
+            "t_min": 14,
+            "hr": 83
+          },
+          {
+            "t_min": 15,
+            "hr": 90
+          },
+          {
+            "t_min": 16,
+            "hr": 89
+          },
+          {
+            "t_min": 17,
+            "hr": 88
+          },
+          {
+            "t_min": 18,
+            "hr": 87
+          },
+          {
+            "t_min": 19,
+            "hr": 84
+          },
+          {
+            "t_min": 20,
+            "hr": 87
+          },
+          {
+            "t_min": 21,
+            "hr": 91
+          },
+          {
+            "t_min": 22,
+            "hr": 88
+          },
+          {
+            "t_min": 23,
+            "hr": 84
+          },
+          {
+            "t_min": 24,
+            "hr": 81
+          },
+          {
+            "t_min": 25,
+            "hr": 78
+          },
+          {
+            "t_min": 26,
+            "hr": 78
+          },
+          {
+            "t_min": 27,
+            "hr": 77
+          },
+          {
+            "t_min": 28,
+            "hr": 80
+          },
+          {
+            "t_min": 29,
+            "hr": 82
+          },
+          {
+            "t_min": 30,
+            "hr": 89
+          },
+          {
+            "t_min": 31,
+            "hr": 83
+          },
+          {
+            "t_min": 32,
+            "hr": 84
+          },
+          {
+            "t_min": 33,
+            "hr": 84
+          },
+          {
+            "t_min": 34,
+            "hr": 82
+          },
+          {
+            "t_min": 35,
+            "hr": 86
+          },
+          {
+            "t_min": 36,
+            "hr": 83
+          },
+          {
+            "t_min": 37,
+            "hr": 83
+          },
+          {
+            "t_min": 38,
+            "hr": 79
+          },
+          {
+            "t_min": 39,
+            "hr": 76
+          },
+          {
+            "t_min": 40,
+            "hr": 77
+          },
+          {
+            "t_min": 41,
+            "hr": 81
+          },
+          {
+            "t_min": 42,
+            "hr": 83
+          },
+          {
+            "t_min": 43,
+            "hr": 82
+          },
+          {
+            "t_min": 44,
+            "hr": 84
+          },
+          {
+            "t_min": 45,
+            "hr": 84
+          },
+          {
+            "t_min": 46,
+            "hr": 81
+          },
+          {
+            "t_min": 47,
+            "hr": 78
+          },
+          {
+            "t_min": 48,
+            "hr": 80
+          },
+          {
+            "t_min": 49,
+            "hr": 82
+          },
+          {
+            "t_min": 50,
+            "hr": 83
+          },
+          {
+            "t_min": 51,
+            "hr": 83
+          },
+          {
+            "t_min": 52,
+            "hr": 85
+          },
+          {
+            "t_min": 53,
+            "hr": 82
+          },
+          {
+            "t_min": 54,
+            "hr": 84
+          },
+          {
+            "t_min": 55,
+            "hr": 85
+          },
+          {
+            "t_min": 56,
+            "hr": 86
+          },
+          {
+            "t_min": 57,
+            "hr": 93
+          },
+          {
+            "t_min": 58,
+            "hr": 90
+          },
+          {
+            "t_min": 59,
+            "hr": 83
+          },
+          {
+            "t_min": 60,
+            "hr": 82
+          },
+          {
+            "t_min": 61,
+            "hr": 84
+          },
+          {
+            "t_min": 62,
+            "hr": 80
+          },
+          {
+            "t_min": 63,
+            "hr": 82
+          },
+          {
+            "t_min": 64,
+            "hr": 87
+          },
+          {
+            "t_min": 65,
+            "hr": 90
+          },
+          {
+            "t_min": 66,
+            "hr": 84
+          },
+          {
+            "t_min": 67,
+            "hr": 79
+          },
+          {
+            "t_min": 68,
+            "hr": 82
+          },
+          {
+            "t_min": 69,
+            "hr": 82
+          },
+          {
+            "t_min": 70,
+            "hr": 82
+          },
+          {
+            "t_min": 71,
+            "hr": 84
+          },
+          {
+            "t_min": 72,
+            "hr": 83
+          },
+          {
+            "t_min": 73,
+            "hr": 80
+          },
+          {
+            "t_min": 74,
+            "hr": 80
+          },
+          {
+            "t_min": 75,
+            "hr": 80
+          },
+          {
+            "t_min": 76,
+            "hr": 78
+          },
+          {
+            "t_min": 77,
+            "hr": 81
+          },
+          {
+            "t_min": 78,
+            "hr": 95
+          },
+          {
+            "t_min": 79,
+            "hr": 93
+          },
+          {
+            "t_min": 80,
+            "hr": 87
+          },
+          {
+            "t_min": 81,
+            "hr": 80
+          },
+          {
+            "t_min": 82,
+            "hr": 82
+          },
+          {
+            "t_min": 83,
+            "hr": 82
+          },
+          {
+            "t_min": 84,
+            "hr": 82
+          },
+          {
+            "t_min": 85,
+            "hr": 84
+          },
+          {
+            "t_min": 86,
+            "hr": 85
+          },
+          {
+            "t_min": 87,
+            "hr": 86
+          },
+          {
+            "t_min": 88,
+            "hr": 80
+          },
+          {
+            "t_min": 89,
+            "hr": 79
+          },
+          {
+            "t_min": 90,
+            "hr": 77
+          },
+          {
+            "t_min": 91,
+            "hr": 77
+          },
+          {
+            "t_min": 92,
+            "hr": 79
+          },
+          {
+            "t_min": 93,
+            "hr": 76
+          },
+          {
+            "t_min": 94,
+            "hr": 81
+          },
+          {
+            "t_min": 95,
+            "hr": 82
+          },
+          {
+            "t_min": 96,
+            "hr": 82
+          },
+          {
+            "t_min": 97,
+            "hr": 81
+          },
+          {
+            "t_min": 98,
+            "hr": 85
+          },
+          {
+            "t_min": 99,
+            "hr": 74
+          },
+          {
+            "t_min": 100,
+            "hr": 79
+          },
+          {
+            "t_min": 101,
+            "hr": 77
+          },
+          {
+            "t_min": 102,
+            "hr": 77
+          },
+          {
+            "t_min": 103,
+            "hr": 76
+          },
+          {
+            "t_min": 104,
+            "hr": 77
+          },
+          {
+            "t_min": 105,
+            "hr": 75
+          },
+          {
+            "t_min": 106,
+            "hr": 72
+          },
+          {
+            "t_min": 107,
+            "hr": 74
+          },
+          {
+            "t_min": 108,
+            "hr": 82
+          },
+          {
+            "t_min": 109,
+            "hr": 80
+          },
+          {
+            "t_min": 110,
+            "hr": 74
+          },
+          {
+            "t_min": 111,
+            "hr": 73
+          },
+          {
+            "t_min": 112,
+            "hr": 80
+          },
+          {
+            "t_min": 113,
+            "hr": 82
+          },
+          {
+            "t_min": 114,
+            "hr": 84
+          },
+          {
+            "t_min": 115,
+            "hr": 84
+          },
+          {
+            "t_min": 116,
+            "hr": 84
+          },
+          {
+            "t_min": 117,
+            "hr": 84
+          },
+          {
+            "t_min": 118,
+            "hr": 81
+          },
+          {
+            "t_min": 119,
+            "hr": 79
+          },
+          {
+            "t_min": 120,
+            "hr": 81
+          },
+          {
+            "t_min": 121,
+            "hr": 73
+          },
+          {
+            "t_min": 122,
+            "hr": 83
+          },
+          {
+            "t_min": 123,
+            "hr": 85
+          },
+          {
+            "t_min": 124,
+            "hr": 92
+          },
+          {
+            "t_min": 125,
+            "hr": 87
+          },
+          {
+            "t_min": 126,
+            "hr": 90
+          },
+          {
+            "t_min": 127,
+            "hr": 88
+          },
+          {
+            "t_min": 128,
+            "hr": 93
+          },
+          {
+            "t_min": 129,
+            "hr": 92
+          },
+          {
+            "t_min": 130,
+            "hr": 82
+          },
+          {
+            "t_min": 131,
+            "hr": 82
+          },
+          {
+            "t_min": 132,
+            "hr": 83
+          },
+          {
+            "t_min": 133,
+            "hr": 83
+          },
+          {
+            "t_min": 134,
+            "hr": 81
+          },
+          {
+            "t_min": 135,
+            "hr": 81
+          },
+          {
+            "t_min": 136,
+            "hr": 81
+          },
+          {
+            "t_min": 137,
+            "hr": 80
+          },
+          {
+            "t_min": 138,
+            "hr": 81
+          },
+          {
+            "t_min": 139,
+            "hr": 73
+          },
+          {
+            "t_min": 140,
+            "hr": 70
+          },
+          {
+            "t_min": 141,
+            "hr": 74
+          },
+          {
+            "t_min": 142,
+            "hr": 75
+          },
+          {
+            "t_min": 143,
+            "hr": 74
+          },
+          {
+            "t_min": 144,
+            "hr": 73
+          },
+          {
+            "t_min": 145,
+            "hr": 75
+          },
+          {
+            "t_min": 146,
+            "hr": 76
+          },
+          {
+            "t_min": 147,
+            "hr": 71
+          },
+          {
+            "t_min": 148,
+            "hr": 68
+          },
+          {
+            "t_min": 149,
+            "hr": 70
+          },
+          {
+            "t_min": 150,
+            "hr": 72
+          },
+          {
+            "t_min": 151,
+            "hr": 71
+          },
+          {
+            "t_min": 152,
+            "hr": 75
+          },
+          {
+            "t_min": 153,
+            "hr": 75
+          },
+          {
+            "t_min": 154,
+            "hr": 79
+          },
+          {
+            "t_min": 155,
+            "hr": 81
+          },
+          {
+            "t_min": 156,
+            "hr": 87
+          },
+          {
+            "t_min": 157,
+            "hr": 79
+          },
+          {
+            "t_min": 158,
+            "hr": 76
+          },
+          {
+            "t_min": 159,
+            "hr": 79
+          },
+          {
+            "t_min": 160,
+            "hr": 79
+          },
+          {
+            "t_min": 161,
+            "hr": 84
+          },
+          {
+            "t_min": 162,
+            "hr": 81
+          },
+          {
+            "t_min": 163,
+            "hr": 81
+          },
+          {
+            "t_min": 164,
+            "hr": 76
+          },
+          {
+            "t_min": 165,
+            "hr": 75
+          },
+          {
+            "t_min": 166,
+            "hr": 76
+          },
+          {
+            "t_min": 167,
+            "hr": 83
+          },
+          {
+            "t_min": 168,
+            "hr": 85
+          },
+          {
+            "t_min": 169,
+            "hr": 79
+          },
+          {
+            "t_min": 170,
+            "hr": 75
+          },
+          {
+            "t_min": 171,
+            "hr": 78
+          },
+          {
+            "t_min": 172,
+            "hr": 78
+          },
+          {
+            "t_min": 173,
+            "hr": 70
+          },
+          {
+            "t_min": 174,
+            "hr": 74
+          },
+          {
+            "t_min": 175,
+            "hr": 78
+          },
+          {
+            "t_min": 176,
+            "hr": 82
+          },
+          {
+            "t_min": 177,
+            "hr": 87
+          },
+          {
+            "t_min": 178,
+            "hr": 87
+          },
+          {
+            "t_min": 179,
+            "hr": 84
+          },
+          {
+            "t_min": 180,
+            "hr": 79
+          },
+          {
+            "t_min": 181,
+            "hr": 75
+          },
+          {
+            "t_min": 182,
+            "hr": 79
+          },
+          {
+            "t_min": 183,
+            "hr": 81
+          },
+          {
+            "t_min": 184,
+            "hr": 83
+          },
+          {
+            "t_min": 185,
+            "hr": 82
+          },
+          {
+            "t_min": 186,
+            "hr": 78
+          },
+          {
+            "t_min": 187,
+            "hr": 83
+          },
+          {
+            "t_min": 188,
+            "hr": 82
+          },
+          {
+            "t_min": 189,
+            "hr": 79
+          },
+          {
+            "t_min": 190,
+            "hr": 81
+          },
+          {
+            "t_min": 191,
+            "hr": 84
+          },
+          {
+            "t_min": 192,
+            "hr": 83
+          },
+          {
+            "t_min": 193,
+            "hr": 84
+          },
+          {
+            "t_min": 194,
+            "hr": 81
+          },
+          {
+            "t_min": 195,
+            "hr": 73
+          },
+          {
+            "t_min": 196,
+            "hr": 78
+          },
+          {
+            "t_min": 197,
+            "hr": 80
+          },
+          {
+            "t_min": 198,
+            "hr": 84
+          },
+          {
+            "t_min": 199,
+            "hr": 85
+          },
+          {
+            "t_min": 200,
+            "hr": 91
+          },
+          {
+            "t_min": 201,
+            "hr": 91
+          },
+          {
+            "t_min": 202,
+            "hr": 88
+          },
+          {
+            "t_min": 203,
+            "hr": 86
+          },
+          {
+            "t_min": 204,
+            "hr": 86
+          },
+          {
+            "t_min": 205,
+            "hr": 86
+          },
+          {
+            "t_min": 206,
+            "hr": 86
+          },
+          {
+            "t_min": 207,
+            "hr": 85
+          },
+          {
+            "t_min": 208,
+            "hr": 82
+          },
+          {
+            "t_min": 209,
+            "hr": 83
+          },
+          {
+            "t_min": 210,
+            "hr": 80
+          },
+          {
+            "t_min": 211,
+            "hr": 82
+          },
+          {
+            "t_min": 212,
+            "hr": 82
+          },
+          {
+            "t_min": 213,
+            "hr": 84
+          },
+          {
+            "t_min": 214,
+            "hr": 87
+          },
+          {
+            "t_min": 215,
+            "hr": 87
+          },
+          {
+            "t_min": 216,
+            "hr": 82
+          },
+          {
+            "t_min": 217,
+            "hr": 84
+          },
+          {
+            "t_min": 218,
+            "hr": 87
+          },
+          {
+            "t_min": 219,
+            "hr": 84
+          },
+          {
+            "t_min": 220,
+            "hr": 86
+          },
+          {
+            "t_min": 221,
+            "hr": 83
+          },
+          {
+            "t_min": 222,
+            "hr": 88
+          },
+          {
+            "t_min": 223,
+            "hr": 82
+          },
+          {
+            "t_min": 224,
+            "hr": 82
+          },
+          {
+            "t_min": 225,
+            "hr": 82
+          },
+          {
+            "t_min": 226,
+            "hr": 90
+          },
+          {
+            "t_min": 227,
+            "hr": 88
+          },
+          {
+            "t_min": 228,
+            "hr": 85
+          },
+          {
+            "t_min": 229,
+            "hr": 93
+          },
+          {
+            "t_min": 230,
+            "hr": 96
+          },
+          {
+            "t_min": 231,
+            "hr": 101
+          },
+          {
+            "t_min": 232,
+            "hr": 98
+          },
+          {
+            "t_min": 233,
+            "hr": 95
+          },
+          {
+            "t_min": 234,
+            "hr": 92
+          },
+          {
+            "t_min": 235,
+            "hr": 94
+          },
+          {
+            "t_min": 236,
+            "hr": 93
+          },
+          {
+            "t_min": 237,
+            "hr": 88
+          },
+          {
+            "t_min": 238,
+            "hr": 93
+          },
+          {
+            "t_min": 239,
+            "hr": 95
+          },
+          {
+            "t_min": 240,
+            "hr": 88
+          },
+          {
+            "t_min": 241,
+            "hr": 86
+          },
+          {
+            "t_min": 242,
+            "hr": 88
+          },
+          {
+            "t_min": 243,
+            "hr": 89
+          },
+          {
+            "t_min": 244,
+            "hr": 97
+          },
+          {
+            "t_min": 245,
+            "hr": 101
+          },
+          {
+            "t_min": 246,
+            "hr": 99
+          },
+          {
+            "t_min": 247,
+            "hr": 104
+          },
+          {
+            "t_min": 248,
+            "hr": 103
+          },
+          {
+            "t_min": 249,
+            "hr": 98
+          },
+          {
+            "t_min": 250,
+            "hr": 108
+          },
+          {
+            "t_min": 251,
+            "hr": 108
+          },
+          {
+            "t_min": 252,
+            "hr": 108
+          },
+          {
+            "t_min": 253,
+            "hr": 113
+          },
+          {
+            "t_min": 254,
+            "hr": 115
+          },
+          {
+            "t_min": 255,
+            "hr": 109
+          },
+          {
+            "t_min": 256,
+            "hr": 110
+          },
+          {
+            "t_min": 257,
+            "hr": 108
+          },
+          {
+            "t_min": 258,
+            "hr": 106
+          },
+          {
+            "t_min": 259,
+            "hr": 106
+          },
+          {
+            "t_min": 260,
+            "hr": 103
+          },
+          {
+            "t_min": 261,
+            "hr": 104
+          },
+          {
+            "t_min": 262,
+            "hr": 104
+          },
+          {
+            "t_min": 263,
+            "hr": 103
+          },
+          {
+            "t_min": 264,
+            "hr": 96
+          },
+          {
+            "t_min": 265,
+            "hr": 100
+          },
+          {
+            "t_min": 266,
+            "hr": 94
+          },
+          {
+            "t_min": 267,
+            "hr": 97
+          },
+          {
+            "t_min": 268,
+            "hr": 93
+          },
+          {
+            "t_min": 269,
+            "hr": 98
+          },
+          {
+            "t_min": 270,
+            "hr": 99
+          },
+          {
+            "t_min": 271,
+            "hr": 102
+          },
+          {
+            "t_min": 272,
+            "hr": 94
+          },
+          {
+            "t_min": 273,
+            "hr": 99
+          },
+          {
+            "t_min": 274,
+            "hr": 93
+          },
+          {
+            "t_min": 275,
+            "hr": 100
+          },
+          {
+            "t_min": 276,
+            "hr": 98
+          },
+          {
+            "t_min": 277,
+            "hr": 92
+          },
+          {
+            "t_min": 278,
+            "hr": 92
+          },
+          {
+            "t_min": 279,
+            "hr": 103
+          },
+          {
+            "t_min": 280,
+            "hr": 96
+          },
+          {
+            "t_min": 281,
+            "hr": 98
+          },
+          {
+            "t_min": 282,
+            "hr": 95
+          },
+          {
+            "t_min": 283,
+            "hr": 93
+          },
+          {
+            "t_min": 284,
+            "hr": 90
+          },
+          {
+            "t_min": 285,
+            "hr": 90
+          },
+          {
+            "t_min": 286,
+            "hr": 93
+          },
+          {
+            "t_min": 287,
+            "hr": 94
+          },
+          {
+            "t_min": 288,
+            "hr": 91
+          },
+          {
+            "t_min": 289,
+            "hr": 94
+          },
+          {
+            "t_min": 290,
+            "hr": 94
+          },
+          {
+            "t_min": 291,
+            "hr": 97
+          },
+          {
+            "t_min": 292,
+            "hr": 94
+          },
+          {
+            "t_min": 293,
+            "hr": 95
+          },
+          {
+            "t_min": 294,
+            "hr": 95
+          },
+          {
+            "t_min": 295,
+            "hr": 96
+          },
+          {
+            "t_min": 296,
+            "hr": 96
+          },
+          {
+            "t_min": 297,
+            "hr": 96
+          },
+          {
+            "t_min": 298,
+            "hr": 98
+          },
+          {
+            "t_min": 299,
+            "hr": 99
+          },
+          {
+            "t_min": 300,
+            "hr": 99
+          },
+          {
+            "t_min": 301,
+            "hr": 96
+          },
+          {
+            "t_min": 302,
+            "hr": 97
+          },
+          {
+            "t_min": 303,
+            "hr": 98
+          },
+          {
+            "t_min": 304,
+            "hr": 95
+          },
+          {
+            "t_min": 305,
+            "hr": 97
+          },
+          {
+            "t_min": 306,
+            "hr": 96
+          },
+          {
+            "t_min": 307,
+            "hr": 93
+          },
+          {
+            "t_min": 308,
+            "hr": 93
+          },
+          {
+            "t_min": 309,
+            "hr": 89
+          },
+          {
+            "t_min": 310,
+            "hr": 94
+          },
+          {
+            "t_min": 311,
+            "hr": 88
+          },
+          {
+            "t_min": 312,
+            "hr": 93
+          },
+          {
+            "t_min": 313,
+            "hr": 92
+          },
+          {
+            "t_min": 314,
+            "hr": 93
+          },
+          {
+            "t_min": 315,
+            "hr": 95
+          },
+          {
+            "t_min": 316,
+            "hr": 95
+          },
+          {
+            "t_min": 317,
+            "hr": 95
+          },
+          {
+            "t_min": 318,
+            "hr": 93
+          },
+          {
+            "t_min": 319,
+            "hr": 92
+          },
+          {
+            "t_min": 320,
+            "hr": 94
+          },
+          {
+            "t_min": 321,
+            "hr": 91
+          },
+          {
+            "t_min": 322,
+            "hr": 91
+          },
+          {
+            "t_min": 323,
+            "hr": 92
+          },
+          {
+            "t_min": 324,
+            "hr": 93
+          },
+          {
+            "t_min": 325,
+            "hr": 94
+          },
+          {
+            "t_min": 326,
+            "hr": 92
+          },
+          {
+            "t_min": 327,
+            "hr": 94
+          },
+          {
+            "t_min": 328,
+            "hr": 90
+          },
+          {
+            "t_min": 329,
+            "hr": 84
+          },
+          {
+            "t_min": 330,
+            "hr": 91
+          },
+          {
+            "t_min": 331,
+            "hr": 91
+          },
+          {
+            "t_min": 332,
+            "hr": 88
+          },
+          {
+            "t_min": 333,
+            "hr": 88
+          },
+          {
+            "t_min": 334,
+            "hr": 86
+          },
+          {
+            "t_min": 335,
+            "hr": 89
+          },
+          {
+            "t_min": 336,
+            "hr": 88
+          },
+          {
+            "t_min": 337,
+            "hr": 88
+          },
+          {
+            "t_min": 338,
+            "hr": 92
+          },
+          {
+            "t_min": 339,
+            "hr": 92
+          },
+          {
+            "t_min": 340,
+            "hr": 93
+          },
+          {
+            "t_min": 341,
+            "hr": 91
+          },
+          {
+            "t_min": 342,
+            "hr": 94
+          },
+          {
+            "t_min": 343,
+            "hr": 91
+          },
+          {
+            "t_min": 344,
+            "hr": 92
+          },
+          {
+            "t_min": 345,
+            "hr": 92
+          },
+          {
+            "t_min": 346,
+            "hr": 94
+          },
+          {
+            "t_min": 347,
+            "hr": 90
+          },
+          {
+            "t_min": 348,
+            "hr": 85
+          },
+          {
+            "t_min": 349,
+            "hr": 88
+          },
+          {
+            "t_min": 350,
+            "hr": 90
+          },
+          {
+            "t_min": 351,
+            "hr": 86
+          },
+          {
+            "t_min": 352,
+            "hr": 81
+          },
+          {
+            "t_min": 353,
+            "hr": 80
+          },
+          {
+            "t_min": 354,
+            "hr": 79
+          },
+          {
+            "t_min": 355,
+            "hr": 82
+          },
+          {
+            "t_min": 356,
+            "hr": 86
+          },
+          {
+            "t_min": 357,
+            "hr": 88
+          },
+          {
+            "t_min": 358,
+            "hr": 82
+          },
+          {
+            "t_min": 359,
+            "hr": 82
+          },
+          {
+            "t_min": 360,
+            "hr": 85
+          },
+          {
+            "t_min": 361,
+            "hr": 83
+          },
+          {
+            "t_min": 362,
+            "hr": 83
+          },
+          {
+            "t_min": 363,
+            "hr": 80
+          },
+          {
+            "t_min": 364,
+            "hr": 83
+          },
+          {
+            "t_min": 365,
+            "hr": 88
+          },
+          {
+            "t_min": 366,
+            "hr": 90
+          },
+          {
+            "t_min": 367,
+            "hr": 89
+          },
+          {
+            "t_min": 368,
+            "hr": 86
+          },
+          {
+            "t_min": 369,
+            "hr": 89
+          },
+          {
+            "t_min": 370,
+            "hr": 89
+          },
+          {
+            "t_min": 371,
+            "hr": 91
+          },
+          {
+            "t_min": 372,
+            "hr": 91
+          },
+          {
+            "t_min": 373,
+            "hr": 87
+          },
+          {
+            "t_min": 374,
+            "hr": 90
+          },
+          {
+            "t_min": 375,
+            "hr": 87
+          },
+          {
+            "t_min": 376,
+            "hr": 90
+          },
+          {
+            "t_min": 377,
+            "hr": 90
+          },
+          {
+            "t_min": 378,
+            "hr": 90
+          },
+          {
+            "t_min": 379,
+            "hr": 87
+          },
+          {
+            "t_min": 380,
+            "hr": 87
+          },
+          {
+            "t_min": 381,
+            "hr": 91
+          },
+          {
+            "t_min": 382,
+            "hr": 95
+          },
+          {
+            "t_min": 383,
+            "hr": 95
+          },
+          {
+            "t_min": 384,
+            "hr": 92
+          },
+          {
+            "t_min": 385,
+            "hr": 94
+          },
+          {
+            "t_min": 386,
+            "hr": 95
+          },
+          {
+            "t_min": 387,
+            "hr": 95
+          },
+          {
+            "t_min": 388,
+            "hr": 89
+          },
+          {
+            "t_min": 389,
+            "hr": 91
+          },
+          {
+            "t_min": 390,
+            "hr": 88
+          },
+          {
+            "t_min": 391,
+            "hr": 83
+          },
+          {
+            "t_min": 392,
+            "hr": 81
+          },
+          {
+            "t_min": 393,
+            "hr": 88
+          },
+          {
+            "t_min": 394,
+            "hr": 86
+          },
+          {
+            "t_min": 395,
+            "hr": 89
+          },
+          {
+            "t_min": 396,
+            "hr": 90
+          },
+          {
+            "t_min": 397,
+            "hr": 87
+          },
+          {
+            "t_min": 398,
+            "hr": 90
+          },
+          {
+            "t_min": 399,
+            "hr": 90
+          },
+          {
+            "t_min": 400,
+            "hr": 87
+          },
+          {
+            "t_min": 401,
+            "hr": 84
+          },
+          {
+            "t_min": 402,
+            "hr": 84
+          },
+          {
+            "t_min": 403,
+            "hr": 84
+          },
+          {
+            "t_min": 404,
+            "hr": 86
+          },
+          {
+            "t_min": 405,
+            "hr": 86
+          },
+          {
+            "t_min": 406,
+            "hr": 86
+          },
+          {
+            "t_min": 407,
+            "hr": 86
+          },
+          {
+            "t_min": 408,
+            "hr": 85
+          },
+          {
+            "t_min": 409,
+            "hr": 83
+          },
+          {
+            "t_min": 410,
+            "hr": 88
+          },
+          {
+            "t_min": 411,
+            "hr": 86
+          },
+          {
+            "t_min": 412,
+            "hr": 83
+          },
+          {
+            "t_min": 413,
+            "hr": 90
+          },
+          {
+            "t_min": 414,
+            "hr": 83
+          },
+          {
+            "t_min": 415,
+            "hr": 84
+          },
+          {
+            "t_min": 416,
+            "hr": 84
+          },
+          {
+            "t_min": 417,
+            "hr": 83
+          },
+          {
+            "t_min": 418,
+            "hr": 95
+          },
+          {
+            "t_min": 419,
+            "hr": 99
+          },
+          {
+            "t_min": 420,
+            "hr": 98
+          },
+          {
+            "t_min": 421,
+            "hr": 97
+          },
+          {
+            "t_min": 422,
+            "hr": 94
+          },
+          {
+            "t_min": 423,
+            "hr": 88
+          },
+          {
+            "t_min": 424,
+            "hr": 90
+          },
+          {
+            "t_min": 425,
+            "hr": 84
+          },
+          {
+            "t_min": 426,
+            "hr": 86
+          },
+          {
+            "t_min": 427,
+            "hr": 80
+          },
+          {
+            "t_min": 428,
+            "hr": 79
+          },
+          {
+            "t_min": 429,
+            "hr": 82
+          },
+          {
+            "t_min": 430,
+            "hr": 83
+          },
+          {
+            "t_min": 431,
+            "hr": 81
+          },
+          {
+            "t_min": 432,
+            "hr": 82
+          },
+          {
+            "t_min": 433,
+            "hr": 83
+          },
+          {
+            "t_min": 434,
+            "hr": 83
+          },
+          {
+            "t_min": 435,
+            "hr": 84
+          },
+          {
+            "t_min": 436,
+            "hr": 81
+          },
+          {
+            "t_min": 437,
+            "hr": 79
+          },
+          {
+            "t_min": 438,
+            "hr": 80
+          },
+          {
+            "t_min": 439,
+            "hr": 78
+          },
+          {
+            "t_min": 440,
+            "hr": 80
+          },
+          {
+            "t_min": 441,
+            "hr": 80
+          },
+          {
+            "t_min": 442,
+            "hr": 81
+          },
+          {
+            "t_min": 443,
+            "hr": 80
+          },
+          {
+            "t_min": 444,
+            "hr": 80
+          },
+          {
+            "t_min": 445,
+            "hr": 82
+          },
+          {
+            "t_min": 446,
+            "hr": 80
+          },
+          {
+            "t_min": 447,
+            "hr": 80
+          },
+          {
+            "t_min": 448,
+            "hr": 80
+          },
+          {
+            "t_min": 449,
+            "hr": 80
+          },
+          {
+            "t_min": 450,
+            "hr": 83
+          },
+          {
+            "t_min": 451,
+            "hr": 83
+          },
+          {
+            "t_min": 452,
+            "hr": 82
+          },
+          {
+            "t_min": 453,
+            "hr": 82
+          },
+          {
+            "t_min": 454,
+            "hr": 82
+          },
+          {
+            "t_min": 455,
+            "hr": 82
+          },
+          {
+            "t_min": 456,
+            "hr": 79
+          },
+          {
+            "t_min": 457,
+            "hr": 79
+          },
+          {
+            "t_min": 458,
+            "hr": 81
+          },
+          {
+            "t_min": 459,
+            "hr": 81
+          },
+          {
+            "t_min": 460,
+            "hr": 78
+          },
+          {
+            "t_min": 461,
+            "hr": 79
+          },
+          {
+            "t_min": 462,
+            "hr": 79
+          },
+          {
+            "t_min": 463,
+            "hr": 78
+          },
+          {
+            "t_min": 464,
+            "hr": 78
+          },
+          {
+            "t_min": 465,
+            "hr": 78
+          },
+          {
+            "t_min": 466,
+            "hr": 78
+          },
+          {
+            "t_min": 467,
+            "hr": 80
+          },
+          {
+            "t_min": 468,
+            "hr": 75
+          },
+          {
+            "t_min": 469,
+            "hr": 77
+          },
+          {
+            "t_min": 470,
+            "hr": 77
+          },
+          {
+            "t_min": 471,
+            "hr": 77
+          },
+          {
+            "t_min": 472,
+            "hr": 77
+          },
+          {
+            "t_min": 473,
+            "hr": 77
+          },
+          {
+            "t_min": 474,
+            "hr": 77
+          },
+          {
+            "t_min": 475,
+            "hr": 79
+          },
+          {
+            "t_min": 476,
+            "hr": 79
+          },
+          {
+            "t_min": 477,
+            "hr": 73
+          },
+          {
+            "t_min": 478,
+            "hr": 70
+          },
+          {
+            "t_min": 479,
+            "hr": 70
+          },
+          {
+            "t_min": 480,
+            "hr": 72
+          },
+          {
+            "t_min": 481,
+            "hr": 72
+          },
+          {
+            "t_min": 482,
+            "hr": 74
+          },
+          {
+            "t_min": 483,
+            "hr": 75
+          },
+          {
+            "t_min": 484,
+            "hr": 75
+          },
+          {
+            "t_min": 485,
+            "hr": 75
+          },
+          {
+            "t_min": 486,
+            "hr": 82
+          },
+          {
+            "t_min": 487,
+            "hr": 82
+          },
+          {
+            "t_min": 488,
+            "hr": 83
+          },
+          {
+            "t_min": 489,
+            "hr": 83
+          },
+          {
+            "t_min": 490,
+            "hr": 83
+          },
+          {
+            "t_min": 491,
+            "hr": 86
+          },
+          {
+            "t_min": 492,
+            "hr": 85
+          },
+          {
+            "t_min": 493,
+            "hr": 87
+          },
+          {
+            "t_min": 494,
+            "hr": 84
+          },
+          {
+            "t_min": 495,
+            "hr": 81
+          },
+          {
+            "t_min": 496,
+            "hr": 79
+          },
+          {
+            "t_min": 497,
+            "hr": 81
+          },
+          {
+            "t_min": 498,
+            "hr": 84
+          },
+          {
+            "t_min": 499,
+            "hr": 82
+          },
+          {
+            "t_min": 500,
+            "hr": 83
+          },
+          {
+            "t_min": 501,
+            "hr": 83
+          },
+          {
+            "t_min": 502,
+            "hr": 85
+          },
+          {
+            "t_min": 503,
+            "hr": 84
+          },
+          {
+            "t_min": 504,
+            "hr": 85
+          },
+          {
+            "t_min": 505,
+            "hr": 91
+          },
+          {
+            "t_min": 506,
+            "hr": 71
+          },
+          {
+            "t_min": 507,
+            "hr": 73
+          },
+          {
+            "t_min": 508,
+            "hr": 70
+          },
+          {
+            "t_min": 509,
+            "hr": 73
+          },
+          {
+            "t_min": 510,
+            "hr": 65
+          },
+          {
+            "t_min": 511,
+            "hr": 69
+          },
+          {
+            "t_min": 512,
+            "hr": 72
+          },
+          {
+            "t_min": 513,
+            "hr": 69
+          },
+          {
+            "t_min": 514,
+            "hr": 69
+          },
+          {
+            "t_min": 515,
+            "hr": 68
+          },
+          {
+            "t_min": 516,
+            "hr": 64
+          },
+          {
+            "t_min": 517,
+            "hr": 64
+          },
+          {
+            "t_min": 518,
+            "hr": 64
+          },
+          {
+            "t_min": 519,
+            "hr": 66
+          },
+          {
+            "t_min": 520,
+            "hr": 68
+          },
+          {
+            "t_min": 521,
+            "hr": 62
+          },
+          {
+            "t_min": 522,
+            "hr": 62
+          },
+          {
+            "t_min": 523,
+            "hr": 62
+          },
+          {
+            "t_min": 524,
+            "hr": 69
+          },
+          {
+            "t_min": 525,
+            "hr": 67
+          }
+        ],
+        "avg_pace_min_km": null,
+        "tss": 227.0,
+        "lesson": "Full day at the Greenfield Festival in Munich \u2014 8.75 hours on your feet at a genuinely low 85bpm average, but the sheer duration pushed hrTSS to 227, replacing this week's scheduled Reduced long run and driving tomorrow's TSB into deep-fatigue territory even without real running strain."
+      },
       {
         "date": "2026-07-31",
         "type": "outdoor_running",
@@ -93,22 +2237,202 @@
         "avg_hr": 139,
         "max_hr": 166,
         "hr_curve": [
-          {"t_min": 0, "hr": 89}, {"t_min": 1, "hr": 112}, {"t_min": 2, "hr": 122}, {"t_min": 3, "hr": 126},
-          {"t_min": 4, "hr": 129}, {"t_min": 5, "hr": 130}, {"t_min": 6, "hr": 130}, {"t_min": 7, "hr": 130},
-          {"t_min": 8, "hr": 127}, {"t_min": 9, "hr": 124}, {"t_min": 10, "hr": 127}, {"t_min": 11, "hr": 130},
-          {"t_min": 12, "hr": 127}, {"t_min": 13, "hr": 129}, {"t_min": 14, "hr": 130}, {"t_min": 15, "hr": 132},
-          {"t_min": 16, "hr": 134}, {"t_min": 17, "hr": 131}, {"t_min": 18, "hr": 134}, {"t_min": 19, "hr": 140},
-          {"t_min": 20, "hr": 143}, {"t_min": 21, "hr": 145}, {"t_min": 22, "hr": 146}, {"t_min": 23, "hr": 148},
-          {"t_min": 24, "hr": 143}, {"t_min": 25, "hr": 139}, {"t_min": 26, "hr": 139}, {"t_min": 27, "hr": 142},
-          {"t_min": 28, "hr": 142}, {"t_min": 29, "hr": 142}, {"t_min": 30, "hr": 142}, {"t_min": 31, "hr": 144},
-          {"t_min": 32, "hr": 145}, {"t_min": 33, "hr": 149}, {"t_min": 34, "hr": 149}, {"t_min": 35, "hr": 148},
-          {"t_min": 36, "hr": 147}, {"t_min": 37, "hr": 147}, {"t_min": 38, "hr": 149}, {"t_min": 39, "hr": 147},
-          {"t_min": 40, "hr": 143}, {"t_min": 41, "hr": 147}, {"t_min": 42, "hr": 149}, {"t_min": 43, "hr": 154},
-          {"t_min": 44, "hr": 163}, {"t_min": 45, "hr": 155}, {"t_min": 46, "hr": 157}, {"t_min": 47, "hr": 166}
+          {
+            "t_min": 0,
+            "hr": 89
+          },
+          {
+            "t_min": 1,
+            "hr": 112
+          },
+          {
+            "t_min": 2,
+            "hr": 122
+          },
+          {
+            "t_min": 3,
+            "hr": 126
+          },
+          {
+            "t_min": 4,
+            "hr": 129
+          },
+          {
+            "t_min": 5,
+            "hr": 130
+          },
+          {
+            "t_min": 6,
+            "hr": 130
+          },
+          {
+            "t_min": 7,
+            "hr": 130
+          },
+          {
+            "t_min": 8,
+            "hr": 127
+          },
+          {
+            "t_min": 9,
+            "hr": 124
+          },
+          {
+            "t_min": 10,
+            "hr": 127
+          },
+          {
+            "t_min": 11,
+            "hr": 130
+          },
+          {
+            "t_min": 12,
+            "hr": 127
+          },
+          {
+            "t_min": 13,
+            "hr": 129
+          },
+          {
+            "t_min": 14,
+            "hr": 130
+          },
+          {
+            "t_min": 15,
+            "hr": 132
+          },
+          {
+            "t_min": 16,
+            "hr": 134
+          },
+          {
+            "t_min": 17,
+            "hr": 131
+          },
+          {
+            "t_min": 18,
+            "hr": 134
+          },
+          {
+            "t_min": 19,
+            "hr": 140
+          },
+          {
+            "t_min": 20,
+            "hr": 143
+          },
+          {
+            "t_min": 21,
+            "hr": 145
+          },
+          {
+            "t_min": 22,
+            "hr": 146
+          },
+          {
+            "t_min": 23,
+            "hr": 148
+          },
+          {
+            "t_min": 24,
+            "hr": 143
+          },
+          {
+            "t_min": 25,
+            "hr": 139
+          },
+          {
+            "t_min": 26,
+            "hr": 139
+          },
+          {
+            "t_min": 27,
+            "hr": 142
+          },
+          {
+            "t_min": 28,
+            "hr": 142
+          },
+          {
+            "t_min": 29,
+            "hr": 142
+          },
+          {
+            "t_min": 30,
+            "hr": 142
+          },
+          {
+            "t_min": 31,
+            "hr": 144
+          },
+          {
+            "t_min": 32,
+            "hr": 145
+          },
+          {
+            "t_min": 33,
+            "hr": 149
+          },
+          {
+            "t_min": 34,
+            "hr": 149
+          },
+          {
+            "t_min": 35,
+            "hr": 148
+          },
+          {
+            "t_min": 36,
+            "hr": 147
+          },
+          {
+            "t_min": 37,
+            "hr": 147
+          },
+          {
+            "t_min": 38,
+            "hr": 149
+          },
+          {
+            "t_min": 39,
+            "hr": 147
+          },
+          {
+            "t_min": 40,
+            "hr": 143
+          },
+          {
+            "t_min": 41,
+            "hr": 147
+          },
+          {
+            "t_min": 42,
+            "hr": 149
+          },
+          {
+            "t_min": 43,
+            "hr": 154
+          },
+          {
+            "t_min": 44,
+            "hr": 163
+          },
+          {
+            "t_min": 45,
+            "hr": 155
+          },
+          {
+            "t_min": 46,
+            "hr": 157
+          },
+          {
+            "t_min": 47,
+            "hr": 166
+          }
         ],
         "avg_pace_min_km": 5.69,
         "tss": 54.6,
-        "lesson": "This was Saturday's 'Reduced long run' pulled forward a day — the first ~18 minutes held a genuinely easy 112-134bpm, but HR drifted into the 140s from minute 19 and spiked to 154-166bpm in the closing 5 minutes, well past the 125-142bpm easy-effort target for this session."
+        "lesson": "This was Saturday's 'Reduced long run' pulled forward a day \u2014 the first ~18 minutes held a genuinely easy 112-134bpm, but HR drifted into the 140s from minute 19 and spiked to 154-166bpm in the closing 5 minutes, well past the 125-142bpm easy-effort target for this session."
       },
       {
         "date": "2026-07-30",
@@ -118,19 +2442,154 @@
         "avg_hr": 138,
         "max_hr": 156,
         "hr_curve": [
-          {"t_min": 1, "hr": 112}, {"t_min": 2, "hr": 122}, {"t_min": 3, "hr": 126}, {"t_min": 4, "hr": 129},
-          {"t_min": 5, "hr": 131}, {"t_min": 6, "hr": 131}, {"t_min": 7, "hr": 131}, {"t_min": 8, "hr": 135},
-          {"t_min": 9, "hr": 135}, {"t_min": 10, "hr": 137}, {"t_min": 11, "hr": 137}, {"t_min": 12, "hr": 142},
-          {"t_min": 13, "hr": 140}, {"t_min": 14, "hr": 135}, {"t_min": 15, "hr": 132}, {"t_min": 16, "hr": 134},
-          {"t_min": 17, "hr": 135}, {"t_min": 18, "hr": 133}, {"t_min": 19, "hr": 130}, {"t_min": 20, "hr": 133},
-          {"t_min": 21, "hr": 138}, {"t_min": 22, "hr": 136}, {"t_min": 23, "hr": 138}, {"t_min": 24, "hr": 141},
-          {"t_min": 25, "hr": 143}, {"t_min": 26, "hr": 143}, {"t_min": 27, "hr": 143}, {"t_min": 28, "hr": 147},
-          {"t_min": 29, "hr": 147}, {"t_min": 30, "hr": 142}, {"t_min": 31, "hr": 142}, {"t_min": 32, "hr": 148},
-          {"t_min": 33, "hr": 156}, {"t_min": 34, "hr": 154}, {"t_min": 35, "hr": 147}, {"t_min": 36, "hr": 150}
+          {
+            "t_min": 1,
+            "hr": 112
+          },
+          {
+            "t_min": 2,
+            "hr": 122
+          },
+          {
+            "t_min": 3,
+            "hr": 126
+          },
+          {
+            "t_min": 4,
+            "hr": 129
+          },
+          {
+            "t_min": 5,
+            "hr": 131
+          },
+          {
+            "t_min": 6,
+            "hr": 131
+          },
+          {
+            "t_min": 7,
+            "hr": 131
+          },
+          {
+            "t_min": 8,
+            "hr": 135
+          },
+          {
+            "t_min": 9,
+            "hr": 135
+          },
+          {
+            "t_min": 10,
+            "hr": 137
+          },
+          {
+            "t_min": 11,
+            "hr": 137
+          },
+          {
+            "t_min": 12,
+            "hr": 142
+          },
+          {
+            "t_min": 13,
+            "hr": 140
+          },
+          {
+            "t_min": 14,
+            "hr": 135
+          },
+          {
+            "t_min": 15,
+            "hr": 132
+          },
+          {
+            "t_min": 16,
+            "hr": 134
+          },
+          {
+            "t_min": 17,
+            "hr": 135
+          },
+          {
+            "t_min": 18,
+            "hr": 133
+          },
+          {
+            "t_min": 19,
+            "hr": 130
+          },
+          {
+            "t_min": 20,
+            "hr": 133
+          },
+          {
+            "t_min": 21,
+            "hr": 138
+          },
+          {
+            "t_min": 22,
+            "hr": 136
+          },
+          {
+            "t_min": 23,
+            "hr": 138
+          },
+          {
+            "t_min": 24,
+            "hr": 141
+          },
+          {
+            "t_min": 25,
+            "hr": 143
+          },
+          {
+            "t_min": 26,
+            "hr": 143
+          },
+          {
+            "t_min": 27,
+            "hr": 143
+          },
+          {
+            "t_min": 28,
+            "hr": 147
+          },
+          {
+            "t_min": 29,
+            "hr": 147
+          },
+          {
+            "t_min": 30,
+            "hr": 142
+          },
+          {
+            "t_min": 31,
+            "hr": 142
+          },
+          {
+            "t_min": 32,
+            "hr": 148
+          },
+          {
+            "t_min": 33,
+            "hr": 156
+          },
+          {
+            "t_min": 34,
+            "hr": 154
+          },
+          {
+            "t_min": 35,
+            "hr": 147
+          },
+          {
+            "t_min": 36,
+            "hr": 150
+          }
         ],
         "avg_pace_min_km": 5.98,
         "tss": 41.2,
-        "lesson": "Easy run + strides as scheduled — avg HR 138 sits right in the 125-142bpm easy band, and the brief spike to 156 at minute 33 lines up with the prescribed closing strides, not a compliance problem."
+        "lesson": "Easy run + strides as scheduled \u2014 avg HR 138 sits right in the 125-142bpm easy band, and the brief spike to 156 at minute 33 lines up with the prescribed closing strides, not a compliance problem."
       },
       {
         "date": "2026-07-29",
@@ -138,11 +2597,228 @@
         "distance_km": 2.05,
         "duration_min": 53.8,
         "avg_hr": 131,
-        "max_hr": null,
-        "hr_curve": [],
-        "avg_pace_min_km": null,
+        "max_hr": 147,
+        "hr_curve": [
+          {
+            "t_min": 0,
+            "hr": 95
+          },
+          {
+            "t_min": 1,
+            "hr": 120
+          },
+          {
+            "t_min": 2,
+            "hr": 127
+          },
+          {
+            "t_min": 3,
+            "hr": 134
+          },
+          {
+            "t_min": 4,
+            "hr": 139
+          },
+          {
+            "t_min": 5,
+            "hr": 138
+          },
+          {
+            "t_min": 6,
+            "hr": 120
+          },
+          {
+            "t_min": 7,
+            "hr": 128
+          },
+          {
+            "t_min": 8,
+            "hr": 135
+          },
+          {
+            "t_min": 9,
+            "hr": 141
+          },
+          {
+            "t_min": 10,
+            "hr": 145
+          },
+          {
+            "t_min": 11,
+            "hr": 139
+          },
+          {
+            "t_min": 12,
+            "hr": 143
+          },
+          {
+            "t_min": 13,
+            "hr": 145
+          },
+          {
+            "t_min": 14,
+            "hr": 137
+          },
+          {
+            "t_min": 15,
+            "hr": 134
+          },
+          {
+            "t_min": 16,
+            "hr": 134
+          },
+          {
+            "t_min": 17,
+            "hr": 136
+          },
+          {
+            "t_min": 18,
+            "hr": 139
+          },
+          {
+            "t_min": 19,
+            "hr": 142
+          },
+          {
+            "t_min": 20,
+            "hr": 131
+          },
+          {
+            "t_min": 21,
+            "hr": 129
+          },
+          {
+            "t_min": 22,
+            "hr": 131
+          },
+          {
+            "t_min": 23,
+            "hr": 133
+          },
+          {
+            "t_min": 24,
+            "hr": 127
+          },
+          {
+            "t_min": 25,
+            "hr": 104
+          },
+          {
+            "t_min": 26,
+            "hr": 94
+          },
+          {
+            "t_min": 27,
+            "hr": 91
+          },
+          {
+            "t_min": 28,
+            "hr": 101
+          },
+          {
+            "t_min": 29,
+            "hr": 121
+          },
+          {
+            "t_min": 30,
+            "hr": 123
+          },
+          {
+            "t_min": 31,
+            "hr": 126
+          },
+          {
+            "t_min": 32,
+            "hr": 133
+          },
+          {
+            "t_min": 33,
+            "hr": 132
+          },
+          {
+            "t_min": 34,
+            "hr": 135
+          },
+          {
+            "t_min": 35,
+            "hr": 132
+          },
+          {
+            "t_min": 36,
+            "hr": 131
+          },
+          {
+            "t_min": 37,
+            "hr": 142
+          },
+          {
+            "t_min": 38,
+            "hr": 143
+          },
+          {
+            "t_min": 39,
+            "hr": 139
+          },
+          {
+            "t_min": 40,
+            "hr": 139
+          },
+          {
+            "t_min": 41,
+            "hr": 141
+          },
+          {
+            "t_min": 42,
+            "hr": 136
+          },
+          {
+            "t_min": 43,
+            "hr": 130
+          },
+          {
+            "t_min": 44,
+            "hr": 137
+          },
+          {
+            "t_min": 45,
+            "hr": 141
+          },
+          {
+            "t_min": 46,
+            "hr": 139
+          },
+          {
+            "t_min": 47,
+            "hr": 142
+          },
+          {
+            "t_min": 48,
+            "hr": 147
+          },
+          {
+            "t_min": 49,
+            "hr": 144
+          },
+          {
+            "t_min": 50,
+            "hr": 141
+          },
+          {
+            "t_min": 51,
+            "hr": 146
+          },
+          {
+            "t_min": 52,
+            "hr": 131
+          },
+          {
+            "t_min": 53,
+            "hr": 114
+          }
+        ],
+        "avg_pace_min_km": 26.22,
         "tss": 55.2,
-        "lesson": "Scheduled open-swim day, moderate aerobic effort — nothing unusual."
+        "lesson": "Scheduled open-swim day, moderate aerobic effort \u2014 nothing unusual."
       },
       {
         "date": "2026-07-28",
@@ -152,80 +2828,112 @@
         "avg_hr": 123,
         "max_hr": 129,
         "hr_curve": [
-          {"t_min": 0, "hr": 110}, {"t_min": 2, "hr": 120}, {"t_min": 2, "hr": 120},
-          {"t_min": 4, "hr": 121}, {"t_min": 4, "hr": 123}, {"t_min": 6, "hr": 122},
-          {"t_min": 6, "hr": 122}, {"t_min": 8, "hr": 125}, {"t_min": 8, "hr": 123},
-          {"t_min": 10, "hr": 123}, {"t_min": 10, "hr": 125}, {"t_min": 12, "hr": 127},
-          {"t_min": 12, "hr": 129}, {"t_min": 14, "hr": 123}, {"t_min": 14, "hr": 120},
-          {"t_min": 16, "hr": 118}, {"t_min": 16, "hr": 121}, {"t_min": 18, "hr": 121},
-          {"t_min": 18, "hr": 125}, {"t_min": 20, "hr": 124}, {"t_min": 20, "hr": 126},
-          {"t_min": 22, "hr": 126}, {"t_min": 22, "hr": 126}, {"t_min": 24, "hr": 128},
-          {"t_min": 24, "hr": 128}
+          {
+            "t_min": 0,
+            "hr": 110
+          },
+          {
+            "t_min": 2,
+            "hr": 120
+          },
+          {
+            "t_min": 2,
+            "hr": 120
+          },
+          {
+            "t_min": 4,
+            "hr": 121
+          },
+          {
+            "t_min": 4,
+            "hr": 123
+          },
+          {
+            "t_min": 6,
+            "hr": 122
+          },
+          {
+            "t_min": 6,
+            "hr": 122
+          },
+          {
+            "t_min": 8,
+            "hr": 125
+          },
+          {
+            "t_min": 8,
+            "hr": 123
+          },
+          {
+            "t_min": 10,
+            "hr": 123
+          },
+          {
+            "t_min": 10,
+            "hr": 125
+          },
+          {
+            "t_min": 12,
+            "hr": 127
+          },
+          {
+            "t_min": 12,
+            "hr": 129
+          },
+          {
+            "t_min": 14,
+            "hr": 123
+          },
+          {
+            "t_min": 14,
+            "hr": 120
+          },
+          {
+            "t_min": 16,
+            "hr": 118
+          },
+          {
+            "t_min": 16,
+            "hr": 121
+          },
+          {
+            "t_min": 18,
+            "hr": 121
+          },
+          {
+            "t_min": 18,
+            "hr": 125
+          },
+          {
+            "t_min": 20,
+            "hr": 124
+          },
+          {
+            "t_min": 20,
+            "hr": 126
+          },
+          {
+            "t_min": 22,
+            "hr": 126
+          },
+          {
+            "t_min": 22,
+            "hr": 126
+          },
+          {
+            "t_min": 24,
+            "hr": 128
+          },
+          {
+            "t_min": 24,
+            "hr": 128
+          }
         ],
         "avg_pace_min_km": 6.26,
         "tss": 22.6,
-        "lesson": "Recovery-week easy run held right at the top of the 109-125bpm recovery band (avg 123bpm) — the curve climbs steadily from 110bpm at the start up to brief touches of 127-129bpm around minute 12 and again near the end, mild drift but nothing alarming for a deload day."
-      },
-      {
-        "date": "2026-07-25",
-        "type": "outdoor_running",
-        "distance_km": 21.02,
-        "duration_min": 137.2,
-        "avg_hr": 144,
-        "max_hr": 158,
-        "hr_curve": [
-          {"t_min": 1, "hr": 125}, {"t_min": 2, "hr": 136}, {"t_min": 3, "hr": 138},
-          {"t_min": 4, "hr": 142}, {"t_min": 5, "hr": 142}, {"t_min": 6, "hr": 140},
-          {"t_min": 7, "hr": 141}, {"t_min": 8, "hr": 142}, {"t_min": 9, "hr": 142},
-          {"t_min": 10, "hr": 140}, {"t_min": 11, "hr": 132}, {"t_min": 12, "hr": 140},
-          {"t_min": 13, "hr": 140}, {"t_min": 14, "hr": 141}, {"t_min": 15, "hr": 142},
-          {"t_min": 16, "hr": 142}, {"t_min": 17, "hr": 139}, {"t_min": 18, "hr": 142},
-          {"t_min": 19, "hr": 143}, {"t_min": 20, "hr": 142}, {"t_min": 21, "hr": 139},
-          {"t_min": 22, "hr": 142}, {"t_min": 23, "hr": 146}, {"t_min": 24, "hr": 151},
-          {"t_min": 25, "hr": 150}, {"t_min": 26, "hr": 144}, {"t_min": 27, "hr": 147},
-          {"t_min": 28, "hr": 148}, {"t_min": 29, "hr": 148}, {"t_min": 30, "hr": 148},
-          {"t_min": 31, "hr": 148}, {"t_min": 32, "hr": 145}, {"t_min": 33, "hr": 146},
-          {"t_min": 34, "hr": 146}, {"t_min": 35, "hr": 145}, {"t_min": 36, "hr": 145},
-          {"t_min": 37, "hr": 144}, {"t_min": 38, "hr": 145}, {"t_min": 39, "hr": 145},
-          {"t_min": 40, "hr": 144}, {"t_min": 41, "hr": 144}, {"t_min": 42, "hr": 141},
-          {"t_min": 43, "hr": 142}, {"t_min": 44, "hr": 140}, {"t_min": 45, "hr": 138},
-          {"t_min": 46, "hr": 139}, {"t_min": 47, "hr": 139}, {"t_min": 48, "hr": 139},
-          {"t_min": 49, "hr": 139}, {"t_min": 50, "hr": 140}, {"t_min": 51, "hr": 142},
-          {"t_min": 52, "hr": 141}, {"t_min": 53, "hr": 141}, {"t_min": 54, "hr": 141},
-          {"t_min": 55, "hr": 141}, {"t_min": 56, "hr": 140}, {"t_min": 57, "hr": 138},
-          {"t_min": 58, "hr": 135}, {"t_min": 59, "hr": 136}, {"t_min": 60, "hr": 139},
-          {"t_min": 61, "hr": 141}, {"t_min": 62, "hr": 141}, {"t_min": 63, "hr": 141},
-          {"t_min": 64, "hr": 140}, {"t_min": 65, "hr": 142}, {"t_min": 66, "hr": 139},
-          {"t_min": 67, "hr": 137}, {"t_min": 68, "hr": 137}, {"t_min": 69, "hr": 137},
-          {"t_min": 70, "hr": 137}, {"t_min": 71, "hr": 139}, {"t_min": 72, "hr": 140},
-          {"t_min": 73, "hr": 140}, {"t_min": 74, "hr": 140}, {"t_min": 75, "hr": 142},
-          {"t_min": 76, "hr": 144}, {"t_min": 77, "hr": 144}, {"t_min": 78, "hr": 145},
-          {"t_min": 79, "hr": 142}, {"t_min": 80, "hr": 144}, {"t_min": 81, "hr": 141},
-          {"t_min": 82, "hr": 141}, {"t_min": 83, "hr": 142}, {"t_min": 84, "hr": 142},
-          {"t_min": 85, "hr": 139}, {"t_min": 86, "hr": 139}, {"t_min": 87, "hr": 139},
-          {"t_min": 88, "hr": 140}, {"t_min": 89, "hr": 140}, {"t_min": 90, "hr": 141},
-          {"t_min": 91, "hr": 140}, {"t_min": 92, "hr": 140}, {"t_min": 93, "hr": 139},
-          {"t_min": 94, "hr": 139}, {"t_min": 95, "hr": 143}, {"t_min": 96, "hr": 145},
-          {"t_min": 97, "hr": 145}, {"t_min": 98, "hr": 146}, {"t_min": 99, "hr": 146},
-          {"t_min": 100, "hr": 145}, {"t_min": 101, "hr": 144}, {"t_min": 102, "hr": 144},
-          {"t_min": 103, "hr": 144}, {"t_min": 104, "hr": 142}, {"t_min": 105, "hr": 144},
-          {"t_min": 106, "hr": 144}, {"t_min": 107, "hr": 145}, {"t_min": 108, "hr": 145},
-          {"t_min": 109, "hr": 145}, {"t_min": 110, "hr": 143}, {"t_min": 111, "hr": 148},
-          {"t_min": 112, "hr": 148}, {"t_min": 113, "hr": 148}, {"t_min": 114, "hr": 151},
-          {"t_min": 115, "hr": 152}, {"t_min": 116, "hr": 154}, {"t_min": 117, "hr": 154},
-          {"t_min": 118, "hr": 158}, {"t_min": 119, "hr": 152}, {"t_min": 120, "hr": 152},
-          {"t_min": 121, "hr": 153}, {"t_min": 122, "hr": 153}, {"t_min": 123, "hr": 153},
-          {"t_min": 124, "hr": 153}, {"t_min": 125, "hr": 155}, {"t_min": 126, "hr": 156},
-          {"t_min": 127, "hr": 151}, {"t_min": 128, "hr": 153}, {"t_min": 129, "hr": 152},
-          {"t_min": 130, "hr": 151}, {"t_min": 131, "hr": 150}, {"t_min": 132, "hr": 151},
-          {"t_min": 133, "hr": 153}, {"t_min": 134, "hr": 158}, {"t_min": 135, "hr": 156},
-          {"t_min": 136, "hr": 153}, {"t_min": 137, "hr": 150}
-        ],
-        "avg_pace_min_km": 6.52,
-        "tss": 170.0,
-        "lesson": "Legit long-run aerobic stimulus for well over two hours, but this ran 137.2min/21.02km against a 60min/~11km prescription — the curve shows a solid middle stretch (roughly minute 20-110) sitting mostly in the 138-146bpm range, right at the easy-aerobic ceiling, but the final ~20 minutes drifted from ~140bpm up to a 158bpm peak, pushing into moderate/tempo territory as fatigue caught up over an unusually long unplanned effort."
+        "lesson": "Recovery-week easy run held right at the top of the 109-125bpm recovery band (avg 123bpm), with mild drift to 127-129bpm around minute 12 \u2014 nothing alarming for a deload day."
       }
     ],
-    "analysis": "TSS climbed sharply on Jul 25's overrun long run (170 TSS), the recovery week then correctly tapered volume down through Jul 26-29 (22, 0, 42.7, 10.5), and the last two days ramped back up with two running days in a row (41.2 on Jul 30, then 54.6 today as the long run got pulled forward a day) — a reasonable way to close a recovery week, but worth watching given TSB is still -17.5 and today's session drifted well above easy effort in its closing minutes."
+    "analysis": "TSS ran hot closing out last week (41.2 Jul 30, then 54.6 Jul 31 as the Reduced long run got pulled forward), and Aug 1 added a further 227 TSS from an all-day, low-intensity Greenfield Festival outing rather than any running \u2014 the combination pushed TSB to -29.4 heading into today. No running or cross-training happened today (the scheduled Sunday easy run was skipped by request), appropriately letting that load settle before tomorrow's easy Monday session."
   }
 }
