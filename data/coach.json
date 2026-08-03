@@ -36,7 +36,7 @@
       ]
     },
     "vo2max": {
-      "value": 57,
+      "value": 58,
       "unit": "ml/kg/min",
       "status": "manual",
       "asOf": "2026-08-03",
@@ -47,7 +47,7 @@
         },
         {
           "date": "2026-08-03",
-          "value": 57
+          "value": 58
         }
       ]
     }
