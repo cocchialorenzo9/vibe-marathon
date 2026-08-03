@@ -142,5 +142,17 @@
     "avg_band": 2,
     "avg_pace_min_km": 5.69,
     "distance_km": 8.31
+  },
+  {
+    "date": "2026-08-03",
+    "band1_min": 3,
+    "band2_min": 11,
+    "band3_min": 31,
+    "band4_min": 0,
+    "band5_min": 0,
+    "avg_pct_lt": 85,
+    "avg_band": 3,
+    "avg_pace_min_km": 5.38,
+    "distance_km": 8.37
   }
 ]
