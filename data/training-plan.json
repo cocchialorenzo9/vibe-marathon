@@ -471,7 +471,7 @@
           },
           "movement": "Bike both ways fine if legs feel fresh, U-Bahn if Monday's medium-long left them heavy \u2014 first week doing two quality-ish days, don't force it.",
           "food": "Carb-focused breakfast \u2014 first dedicated threshold session deserves fueled legs. Post-session: protein + carbs within 30 min.",
-          "bigPicture": "First committed second quality day of the plan \u2014 LT-pace cruise intervals, not another MP session. Lactate threshold is documented as a stronger predictor of marathon time than VO2max alone, so this targets that directly. Short and controlled: 4\u00d75' is about establishing the effort, not maximal stress."
+          "bigPicture": "First committed second quality day of the plan \u2014 LT-pace cruise intervals, not another MP session. Lactate threshold, VO2max, and running economy jointly determine marathon performance \u2014 no single one dominates \u2014 but LT is the one this plan can train most directly, so this session targets it head-on. Short and controlled: 4\u00d75' is about establishing the effort, not maximal stress."
         },
         {
           "date": "2026-08-19",
@@ -1080,7 +1080,7 @@
       "label": "Oct 11 \u2014 RACE",
       "bikeNote": "Saturday before race: U-Bahn or taxi. No bike. Sunday post-race: whatever gets you home \u2014 just don't run.",
       "swimNote": "No pool from Thursday onwards. Final recovery is rest, carbo-loading, and sleep only.",
-      "tip": "Sub-3h strategy: do NOT start fast. Runners who finish sub-3h run the second half faster than the first. Control the ego at km 1\u201310.",
+      "tip": "Sub-3h strategy: do NOT start fast. The biggest predictor of a blown-up finish is starting too fast, not failing to speed up late \u2014 hold even pace and let that be enough. Control the ego at km 1\u201310.",
       "days": [
         {
           "date": "2026-10-11",
@@ -1092,7 +1092,7 @@
           },
           "movement": "No bike. Get to the start by foot or public transport. After the race: whatever gets you home.",
           "food": "Race morning: porridge or toast with honey, banana + coffee 2\u20133h before. Gel every 5\u20136km from km 15. Celebrate after.",
-          "bigPicture": "Race day. 15 weeks of work comes down to this. Start at 4:20/km even if it feels slow \u2014 it is slow, on purpose. Runners who finish sub-3h run the second half faster than the first. Trust the training."
+          "bigPicture": "Race day. 15 weeks of work comes down to this. Start at 4:20/km even if it feels slow \u2014 it is slow, on purpose. The largest pacing datasets show even pace beats a fast start every time \u2014 most blown-up finishes trace to the first 10km, not a failure to close hard. Trust the training."
         }
       ],
       "estKm": null
