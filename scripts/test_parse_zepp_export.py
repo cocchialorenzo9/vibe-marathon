@@ -482,6 +482,15 @@ class TestSynthesizeHistoryEntry(unittest.TestCase):
         result = synthesize_history_entry(self.export, "2025-01-01", self.hr_rows)
         self.assertIsNone(result)
 
+    def test_non_training_session_excluded_from_tss_and_distance(self):
+        # 2026-06-28's only SPORT session is type 15 (outdoor_walking) —
+        # a festival/hike-style day shouldn't contribute hrTSS or distance.
+        entry = synthesize_history_entry(self.export, "2026-06-28", self.hr_rows)
+        self.assertIsNotNone(entry)
+        self.assertEqual(entry["tss"], 0)
+        self.assertEqual(entry["distance_km"], 0)
+        self.assertIsNone(entry["avg_hr"])
+
 
 class TestBackfillHistory(unittest.TestCase):
     def setUp(self):
@@ -559,6 +568,12 @@ class TestParseExport(unittest.TestCase):
             json.dump([{"date": "2026-06-29", "tss": 40}], f)
         result = parse_export(self.zepp_dir, "2026-06-29", self.history_path)
         self.assertTrue(any("already" in w.lower() for w in result["warnings"]))
+
+    def test_non_training_yesterday_session_not_reported_as_activity(self):
+        # 2026-06-29's "yesterday" (2026-06-28) is a walking-only day in the
+        # fixture — shouldn't be surfaced as yesterday's training activity.
+        result = parse_export(self.zepp_dir, "2026-06-29", self.history_path)
+        self.assertNotIn("yesterday_activity", result["fields"])
 
 
 class TestAllExportDirs(unittest.TestCase):

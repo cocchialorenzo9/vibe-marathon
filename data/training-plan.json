@@ -306,9 +306,9 @@
             "detail": "70 min: first 55 at easy effort (~75-85% LT), last 15 at 4:20/km (~13 km total) — moved up from Saturday since you'll be traveling to Oslo this weekend",
             "estKm": 12.85
           },
-          "movement": "U-Bahn both ways — TSB is -31.5 (partly inflated by Aug 1's 8.75-hour Greenfield Festival day, but real load from last week's tempo/long-run block sits underneath that too) and last night was only 5.3h of sleep. Today's MP finish gets dropped in favor of full easy effort, so protect the legs from the commute rather than adding to the load.",
-          "food": "Pre-run carb breakfast as planned. Bring a gel — still 70 minutes out, still worth testing race nutrition even with the MP segment dropped.",
-          "bigPicture": "Build phase, week 5, 68 days out. TSB sits at -31.5 (its deepest reading yet, though a chunk of that is the Aug 1 festival day, not running fatigue) and last night's sleep was short (5.3h) — today's marathon-pace finish is downgraded to fully easy effort. The aerobic volume still banks; the MP rehearsal moves to a fresher day. This lands before Wednesday night's Flixbus to Oslo.",
+          "movement": "U-Bahn both ways — corrected TSB is -12.7 (a normal build-phase reading, not the deep fatigue Aug 1's festival day had wrongly implied), but last night was only 5.3h of sleep. Save the legs for the MP finish rather than the commute.",
+          "food": "Pre-run carb breakfast as planned. Bring a gel — 70 minutes with a real marathon-pace finish is worth testing race nutrition for.",
+          "bigPicture": "Build phase, week 5, 68 days out. TSB corrects to -12.7 once Aug 1's Greenfield Festival day (a non-running day the hrTSS formula had counted in full) is excluded from training load — a routine mid-build reading. Last night's sleep was short (5.3h), worth watching, but today's marathon-pace finish goes ahead as planned. This lands before Wednesday night's Flixbus to Oslo.",
           "estKm": 12.77
         },
         {
@@ -320,9 +320,9 @@
             "detail": "35 min at easy effort (~75-85% LT) — moved from Monday; last easy session before tonight's Flixbus to Oslo. Swim skipped this week.",
             "estKm": 5.96
           },
-          "movement": "Bike both ways should be fine — yesterday's long run stayed easy effort throughout (MP finish dropped), so legs should be in better shape than a full quality session would have left them. No pool today, skipped to keep the week simple around travel.",
+          "movement": "U-Bahn both ways — TSB has dipped further to -17.8 after yesterday's long run, and its MP finish (~10 of the planned 15 minutes) ran hot at 172-174bpm, above LT rather than true marathon effort. Tonight's the overnight Flixbus to Oslo too, so protect the legs rather than adding commute load.",
           "food": "Normal balanced meals, moderate carb share — pack/organize for tonight's overnight bus.",
-          "bigPicture": "Build phase, week 5, 67 days out — last training session before tonight's Flixbus to Oslo and Thursday's 2pm flight. Yesterday's long run stayed easy (MP finish dropped given -31.5 TSB and short sleep), so today's medium-long should feel like a normal aerobic day, not a recovery day.",
+          "bigPicture": "Build phase, week 5, 67 days out — last training session before tonight's Flixbus to Oslo and Thursday's 2pm flight. Yesterday's long run kept its MP finish, but HR climbed to 172-174bpm during it — hotter than true marathon effort, worth watching rather than a one-off. TSB sits at -17.8 (crossing the reduced-intensity threshold), so today's medium-long should stay disciplined easy effort, banking recovery before the travel rather than drifting up.",
           "estKm": 5.92
         },
         {
@@ -336,7 +336,7 @@
           },
           "movement": "No commute today — you're in Oslo. No cycling needed, just an easy run wherever's convenient.",
           "food": "Normal balanced meals — nothing special, just don't skip meals around a travel/sightseeing day.",
-          "bigPicture": "Build phase, week 5, 64 days out, second of two easy days bracketing your rest days in Oslo (Fri/Thu rest, this and Sunday easy). This week's real quality work — the MP-finish long run — got downgraded to easy on Tuesday given that day's deep TSB and short sleep, so these vacation days are purely about keeping legs moving, nothing to chase.",
+          "bigPicture": "Build phase, week 5, 64 days out, second of two easy days bracketing your rest days in Oslo (Fri/Thu rest, this and Sunday easy). This week's long run kept its full MP finish, though it ran hotter than intended (172-174bpm in the closing minutes) on top of TSB dipping to -17.8 — these vacation days are purely about keeping legs moving and letting that settle, nothing to chase.",
           "estKm": 5.08
         }
       ],
@@ -359,9 +359,9 @@
             "detail": "30 min easy effort (~65-75% LT) — absorbing fatigue from yesterday's long run",
             "estKm": 5.11
           },
-          "movement": "No commute today, it's the weekend — no cycling needed, easy effort the day after the long run.",
+          "movement": "No commute today, it's the weekend — no cycling needed, easy effort while TSB is still recovering from Tuesday's hot MP finish.",
           "food": "Normal balanced meals — recovery-effort volume, not a fueling day.",
-          "bigPicture": "Second Sunday easy run, build phase, week 6, 63 days out — same absorb-not-add role as last week's. This week's long run happened Tuesday (moved up ahead of the Oslo trip) rather than Saturday, so this is simply the second of two easy days during the trip, not a post-long-run absorb day. Static-bump volume continues its ramp before week 7 hands off to the ongoing volume-escalation rule.",
+          "bigPicture": "Second Sunday easy run, build phase, week 6, 63 days out — same absorb-not-add role as last week's. Tuesday's long run (with its MP finish running hotter than planned, 172-174bpm) is the main fatigue this week's easy days are absorbing. Static-bump volume continues its ramp before week 7 hands off to the ongoing volume-escalation rule.",
           "estKm": 5.08
         },
         {
@@ -373,9 +373,9 @@
             "detail": "40 min at easy effort (~75-85% LT)",
             "estKm": 6.81
           },
-          "movement": "Bike both ways should be fine if legs feel normal after yesterday's easy Sunday run and the trip home; U-Bahn both ways if there's still meaningful fatigue.",
+          "movement": "Bike both ways should be fine if legs feel normal after yesterday's easy Sunday run and the trip home; U-Bahn both ways if there's still meaningful fatigue from Tuesday's hot MP finish.",
           "food": "Normal balanced meals, moderate carb share — aerobic-volume day, not a quality session.",
-          "bigPicture": "Second aerobic day, build phase, week 6, 62 days out — back from Oslo and building toward Thursday's tempo session and Saturday's 90-minute long run, the biggest single long run of the block so far. By now the -31.5 TSB dip from early last week should have settled, with three easier days behind it.",
+          "bigPicture": "Second aerobic day, build phase, week 6, 62 days out — back from Oslo and building toward Thursday's tempo session and Saturday's 90-minute long run, the biggest single long run of the block so far. By now the TSB dip from Tuesday's MP-finish long run (which ran hotter than intended) should have settled, with three easier days behind it.",
           "estKm": 6.77
         },
         {
@@ -415,7 +415,7 @@
           },
           "movement": "U-Bahn both ways today — non-negotiable, legs need to be fresh after the intervals.",
           "food": "Good carb breakfast 1.5h before. Post-session: protein + carbs within 30 min.",
-          "bigPicture": "4×1.5km at marathon pace — your longest quality reps so far, build phase, week 6, 59 days out. Sustained pace demands full recovery between reps. If you're on target by rep 3, you're fit.",
+          "bigPicture": "4×1.5km at marathon pace — your longest quality reps so far, build phase, week 6, 59 days out. Aug 4's long-run MP finish ran a bit hot (172-174bpm on a 4:20/km segment) — worth keeping an eye on whether these reps hold the same pace without the same HR overshoot, now with fuller recovery behind them. Sustained pace demands full recovery between reps. If you're on target by rep 3, you're fit.",
           "estKm": 9.89
         },
         {
@@ -429,7 +429,7 @@
           },
           "movement": "Bike both ways should be fine — this is a light 25-minute easy effort, low load even stacked on the commute, but switch to U-Bahn both ways if Thursday's intervals left the legs heavier than expected.",
           "food": "Normal balanced meals — start leaning slightly carb-forward this evening ahead of tomorrow's 90-minute long run.",
-          "bigPicture": "This is the Aug 2 Sunday easy run, skipped that day (TSB -29.4, HRV 24% below baseline after Aug 1's Greenfield Festival day) and moved here — the next resting day after Aug 9 — at the athlete's request. Landing the day before Saturday's 90-minute long run (week 6's biggest so far), it now serves as a light primer rather than its original absorb-fatigue role. 58 days out.",
+          "bigPicture": "This is the Aug 2 Sunday easy run, skipped that day (TSB -7.97 that day, but HRV had been running low after Aug 1's Greenfield Festival day) and moved here — the next resting day after Aug 9 — at the athlete's request. Landing the day before Saturday's 90-minute long run (week 6's biggest so far), it now serves as a light primer rather than its original absorb-fatigue role. 58 days out.",
           "estKm": 4.23
         },
         {

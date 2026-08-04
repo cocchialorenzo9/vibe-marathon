@@ -361,21 +361,21 @@
   },
   {
     "date": "2026-08-01",
-    "tss": 227.0,
-    "distance_km": 21.86,
-    "ctl": 30.2,
-    "atl": 67.53,
-    "tsb": -37.33,
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 25.05,
+    "atl": 37.41,
+    "tsb": -12.36,
     "readiness_score": 37,
     "recommendation_type": "long"
   },
   {
     "date": "2026-08-02",
-    "tss": 3.5,
-    "distance_km": 0.88,
-    "ctl": 29.57,
-    "atl": 59.01,
-    "tsb": -29.43,
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 24.46,
+    "atl": 32.43,
+    "tsb": -7.97,
     "readiness_score": 23,
     "recommendation_type": "rest"
   },
@@ -383,10 +383,20 @@
     "date": "2026-08-03",
     "tss": 77.1,
     "distance_km": 17.22,
-    "ctl": 30.93,
-    "atl": 62.44,
-    "tsb": -31.51,
+    "ctl": 25.7,
+    "atl": 38.38,
+    "tsb": -12.68,
     "readiness_score": 72,
     "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-08-04",
+    "tss": 83.6,
+    "distance_km": 12.21,
+    "ctl": 27.08,
+    "atl": 44.84,
+    "tsb": -17.76,
+    "readiness_score": 51,
+    "recommendation_type": "long"
   }
 ]

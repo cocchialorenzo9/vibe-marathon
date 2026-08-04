@@ -6397,5 +6397,285 @@
     "wentWell": "Duration landed exactly on the 45-minute prescription and pace (5:38/km) sat right in the easy-effort range.",
     "wentWrong": "HR climbed from the low-130s in the first 10 minutes to 148-153bpm in the final 10-15 minutes — the back half drifted from easy into the top of, and briefly past, the 125-142bpm easy band, likely cardiac drift from short sleep (5.3h) and deep accumulated fatigue (TSB -31.5) rather than a deliberate pickup.",
     "nextTime": "With TSB this deep and sleep this short, start a notch more conservative in the first 10 minutes to leave more headroom before drift pushes the back half past 142bpm."
+  },
+  {
+    "date": "2026-08-04",
+    "type": "outdoor_running",
+    "scheduled": "long",
+    "distance_km": 12.21,
+    "duration_min": 66.5,
+    "avg_hr": 145,
+    "max_hr": 174,
+    "hr_curve": [
+      {
+        "t_min": 1,
+        "hr": 116
+      },
+      {
+        "t_min": 2,
+        "hr": 125
+      },
+      {
+        "t_min": 3,
+        "hr": 129
+      },
+      {
+        "t_min": 4,
+        "hr": 130
+      },
+      {
+        "t_min": 5,
+        "hr": 133
+      },
+      {
+        "t_min": 6,
+        "hr": 134
+      },
+      {
+        "t_min": 7,
+        "hr": 132
+      },
+      {
+        "t_min": 8,
+        "hr": 126
+      },
+      {
+        "t_min": 9,
+        "hr": 125
+      },
+      {
+        "t_min": 10,
+        "hr": 131
+      },
+      {
+        "t_min": 11,
+        "hr": 135
+      },
+      {
+        "t_min": 12,
+        "hr": 138
+      },
+      {
+        "t_min": 13,
+        "hr": 140
+      },
+      {
+        "t_min": 14,
+        "hr": 141
+      },
+      {
+        "t_min": 15,
+        "hr": 143
+      },
+      {
+        "t_min": 16,
+        "hr": 142
+      },
+      {
+        "t_min": 17,
+        "hr": 146
+      },
+      {
+        "t_min": 18,
+        "hr": 144
+      },
+      {
+        "t_min": 19,
+        "hr": 141
+      },
+      {
+        "t_min": 20,
+        "hr": 141
+      },
+      {
+        "t_min": 21,
+        "hr": 140
+      },
+      {
+        "t_min": 22,
+        "hr": 142
+      },
+      {
+        "t_min": 23,
+        "hr": 137
+      },
+      {
+        "t_min": 24,
+        "hr": 135
+      },
+      {
+        "t_min": 25,
+        "hr": 137
+      },
+      {
+        "t_min": 26,
+        "hr": 139
+      },
+      {
+        "t_min": 27,
+        "hr": 141
+      },
+      {
+        "t_min": 28,
+        "hr": 141
+      },
+      {
+        "t_min": 29,
+        "hr": 141
+      },
+      {
+        "t_min": 30,
+        "hr": 141
+      },
+      {
+        "t_min": 31,
+        "hr": 141
+      },
+      {
+        "t_min": 32,
+        "hr": 146
+      },
+      {
+        "t_min": 33,
+        "hr": 148
+      },
+      {
+        "t_min": 34,
+        "hr": 148
+      },
+      {
+        "t_min": 35,
+        "hr": 146
+      },
+      {
+        "t_min": 36,
+        "hr": 145
+      },
+      {
+        "t_min": 37,
+        "hr": 143
+      },
+      {
+        "t_min": 38,
+        "hr": 138
+      },
+      {
+        "t_min": 39,
+        "hr": 134
+      },
+      {
+        "t_min": 40,
+        "hr": 140
+      },
+      {
+        "t_min": 41,
+        "hr": 142
+      },
+      {
+        "t_min": 42,
+        "hr": 144
+      },
+      {
+        "t_min": 43,
+        "hr": 146
+      },
+      {
+        "t_min": 44,
+        "hr": 146
+      },
+      {
+        "t_min": 45,
+        "hr": 147
+      },
+      {
+        "t_min": 46,
+        "hr": 149
+      },
+      {
+        "t_min": 47,
+        "hr": 153
+      },
+      {
+        "t_min": 48,
+        "hr": 152
+      },
+      {
+        "t_min": 49,
+        "hr": 149
+      },
+      {
+        "t_min": 50,
+        "hr": 146
+      },
+      {
+        "t_min": 51,
+        "hr": 148
+      },
+      {
+        "t_min": 52,
+        "hr": 147
+      },
+      {
+        "t_min": 53,
+        "hr": 143
+      },
+      {
+        "t_min": 54,
+        "hr": 143
+      },
+      {
+        "t_min": 55,
+        "hr": 145
+      },
+      {
+        "t_min": 56,
+        "hr": 146
+      },
+      {
+        "t_min": 57,
+        "hr": 151
+      },
+      {
+        "t_min": 58,
+        "hr": 161
+      },
+      {
+        "t_min": 59,
+        "hr": 168
+      },
+      {
+        "t_min": 60,
+        "hr": 172
+      },
+      {
+        "t_min": 61,
+        "hr": 174
+      },
+      {
+        "t_min": 62,
+        "hr": 174
+      },
+      {
+        "t_min": 63,
+        "hr": 174
+      },
+      {
+        "t_min": 64,
+        "hr": 174
+      },
+      {
+        "t_min": 65,
+        "hr": 174
+      },
+      {
+        "t_min": 66,
+        "hr": 174
+      }
+    ],
+    "tss": 83.6,
+    "avg_pace_min_km": 5.45,
+    "wentWell": "First real marathon-pace rehearsal of the block — the prescribed 70-minute long run (first easy, then an MP finish) ran close to plan at 66.5 minutes / 12.21km, and the athlete confirms the MP segment (~10 of the planned 15 minutes, roughly 4:20/km) actually happened rather than getting downgraded, which an earlier readiness reading had questioned.",
+    "wentWrong": "HR climbed well past what a controlled marathon-pace effort should cost: the curve shows a steady easy-zone drift through the body of the run (roughly 130-147bpm across the first ~55 minutes, already creeping to the top of the 125-142bpm easy band by the back half) before jumping to 172-174bpm in the final ~6-10 minutes for the MP segment — above the 167bpm LT itself, not just marathon effort. Two nights of short-ish sleep (5.3h, then 6.6h) likely contributed.",
+    "nextTime": "Treat this as a flag rather than a one-off: if 4:20/km costs near-or-above-threshold HR again on Aug 13's 4x1.5km MP-pace tempo reps, the target MP pace may be a touch optimistic for current fitness, or effort discipline on MP segments needs tightening (start controlled, do not let a 10-minute effort creep toward threshold). Compare directly against that session's HR response before drawing a firm conclusion."
   }
 ]

@@ -39,6 +39,15 @@ SPORT_TYPES = {
 _RUNNING_TYPES = {1, 2}
 _CYCLING_TYPES = {3, 6, 7, 9}
 _WALKING_TYPES = {8, 13, 15}
+_SWIMMING_TYPES = {14, 20}
+
+# Only these count toward training load (tss/distance rolled into history.json)
+# — long low-intensity days like a festival or hike can rack up huge hrTSS
+# from duration alone despite zero real running/cycling/swimming stress (see
+# docs/adr and the Aug 1 2026 Greenfield Festival day: 8.75h, 227 TSS, no
+# actual training). Walking/hiking/strength/unrecognized sport-type codes are
+# still visible in the raw session list and journal — just excluded here.
+_TRAINING_TYPES = _RUNNING_TYPES | _CYCLING_TYPES | _SWIMMING_TYPES
 
 DEFAULT_LTHR = 167  # device-reported lactate threshold HR; keep in sync with
                      # the Lactate-threshold reference in .claude/commands/update-coach.md
@@ -390,12 +399,16 @@ def read_activity_fallback(export_dir, date_str):
 
 
 def _pick_primary_session(sessions):
-    """Pick most training-relevant session: running > cycling > other."""
-    for type_set in (_RUNNING_TYPES, _CYCLING_TYPES):
+    """Pick most training-relevant session: running > cycling > swimming.
+    Non-training sessions (walking, hiking, strength, unrecognized codes) are
+    never picked, even if they're the only session that day — returns None
+    rather than falling back to something like a festival day's incidental
+    steps."""
+    for type_set in (_RUNNING_TYPES, _CYCLING_TYPES, _SWIMMING_TYPES):
         for s in sessions:
             if s["type"] in type_set:
                 return s
-    return sessions[0] if sessions else None
+    return None
 
 
 # --- Recent activity (multi-export selection) ---
@@ -508,22 +521,25 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, lthr=DEFAULT_LTHR):
     sessions = read_sport_sessions(export_dir, date_str, hr_rows, lthr)
     activity = read_activity_fallback(export_dir, date_str)
 
-    total_tss = sum(s["tss"] for s in sessions)
-    sport_distance_km = sum(s["distance_km"] for s in sessions)
+    # Only running/cycling/swimming sessions count toward training load — a
+    # long low-intensity day (festival, hike) can rack up huge hrTSS from
+    # duration alone despite zero real training stress. See _TRAINING_TYPES.
+    training_sessions = [s for s in sessions if s["type"] in _TRAINING_TYPES]
+    total_tss = sum(s["tss"] for s in training_sessions)
+    sport_distance_km = sum(s["distance_km"] for s in training_sessions)
     primary = _pick_primary_session(sessions)
     avg_hr = primary["avg_hr"] if primary else None
 
-    # Add TSS for auto-detected running only when no SPORT session exists at all —
-    # if a session was already recorded (even with distance=0, e.g. a GPS dropout),
-    # its own duration/HR-based TSS already covers that day's effort and stacking
-    # this bonus on top double-counts the same activity. Distance is still taken
-    # from the activity summary when it's the larger figure, since a GPS dropout
-    # loses distance tracking without meaning less ground was covered.
+    # Add TSS for auto-detected running only when the watch recorded literally
+    # no SPORT session that day — if any session was already recorded (even a
+    # non-training one, or one with distance=0 from a GPS dropout), the
+    # ACTIVITY summary's step-based "runDistance" is unreliable (Zepp can
+    # misclassify hours of walking as running steps) and stacking it on top
+    # would smuggle that noise back in rather than double-counting a real run.
     act_run_km = activity["run_distance_km"] if activity else 0
-    if act_run_km > sport_distance_km + 0.5:
+    if not sessions and act_run_km > sport_distance_km + 0.5:
         extra_km = act_run_km - sport_distance_km
-        if not sessions:
-            total_tss += extra_km * 4  # rough proxy for untracked easy running
+        total_tss += extra_km * 4  # rough proxy for untracked easy running
         sport_distance_km = act_run_km
 
     if sleep is None and not sessions and not activity:
@@ -642,9 +658,9 @@ def parse_export(zepp_dir, target_date, history_path):
 
     sessions = read_sport_sessions(latest, yesterday, hr_rows, lthr)
     activity = read_activity_fallback(latest, yesterday)
+    primary = _pick_primary_session(sessions)
 
-    if sessions:
-        primary = _pick_primary_session(sessions)
+    if primary:
         fields["yesterday_activity"] = {
             "type": primary["type_name"],
             "distance_km": primary["distance_km"],
@@ -659,7 +675,7 @@ def parse_export(zepp_dir, target_date, history_path):
                 f"{len(sessions)} sport sessions on {yesterday}; "
                 f"using {primary['type_name']} as primary."
             )
-    elif activity and activity["run_distance_km"] > 2.0:
+    elif not sessions and activity and activity["run_distance_km"] > 2.0:
         warnings.append(
             f"No sport session for {yesterday}; using daily activity summary "
             f"({activity['run_distance_km']} km running detected, likely auto-tracked)."
