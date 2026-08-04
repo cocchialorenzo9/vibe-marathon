@@ -103,9 +103,9 @@
   "recommendation": {
     "type": "easy",
     "title": "Easy medium-long, stay disciplined",
-    "reasoning": "TSB has dipped to -17.76 (crossing the reduced-intensity threshold) after yesterday's long run, whose MP finish ran hotter than intended -- HR hit 172-174bpm in the last ~10 minutes, above the 167bpm LT itself, on a segment meant to be marathon effort. HRV is essentially at baseline (70ms vs 71ms, -1%, balanced) and resting HR (44bpm) is normal, both fine, but sleep was middling (6.6h, score 67) after an already-short night before. Tomorrow's session is already prescribed as easy effort, so no session swap is needed, but it should be held disciplined and easy rather than let drift the way yesterday's did.",
+    "reasoning": "TSB has dipped to -17.76 (crossing the reduced-intensity threshold) after yesterday's long run, whose MP finish saw HR climb to 172-174bpm in the last ~10 minutes, above the 167bpm LT. That reads as normal cardiac drift rather than a red flag -- the segment came after ~55 minutes of running (not fresh legs), it was the athlete's first time at this exact pace, and RPE wasn't maximal (room to hold ~10 more minutes), all classic signs of drift rather than a true threshold-limiting effort. Worth a light check at Aug 13's fresher-legs MP reps rather than acting on it now. HRV is essentially at baseline (70ms vs 71ms, -1%, balanced) and resting HR (44bpm) is normal, both fine, but sleep was middling (6.6h, score 67) after an already-short night before. Tomorrow's session is already prescribed as easy effort, so no session swap is needed -- just hold it genuinely easy.",
     "sessionDetail": "35 minutes at easy effort (~75-85% LT ≈ 125-142bpm) -- moved from Monday, last easy session before tonight's Flixbus to Oslo. Keep this one honestly easy: yesterday's long run drifted toward the top of the easy band before the MP finish even started, so build in a slower start if HR climbs early.",
-    "bikeNote": "U-Bahn both ways -- TSB is -17.76 and yesterday's MP finish ran hot, plus tonight's the overnight Flixbus to Oslo. Protect the legs rather than adding commute load before the travel.",
+    "bikeNote": "U-Bahn both ways -- TSB is -17.76 and tonight's the overnight Flixbus to Oslo. Protect the legs rather than adding commute load before the travel.",
     "swimNote": "No swim today -- this week's Wednesday pool session is skipped entirely to keep the schedule simple around Wednesday night's Flixbus to Oslo."
   },
   "phase": "build",
@@ -390,7 +390,7 @@
             "hr": 174
           }
         ],
-        "lesson": "Long-run prescription (70min: easy body + MP finish) executed close to plan at 66.5min/12.21km, and the MP segment actually happened (~10 of the planned 15 min at ~4:20/km per the athlete) rather than being downgraded -- but effort ran hot: HR climbed to 172-174bpm in that closing segment, above the 167bpm LT itself, while even the easy-effort body of the run crept to 140-147bpm in its second half rather than holding 125-142bpm throughout."
+        "lesson": "Long-run prescription (70min: easy body + MP finish) executed close to plan at 66.5min/12.21km, and the MP segment actually happened (~10 of the planned 15 min at ~4:20/km per the athlete) rather than being downgraded -- HR climbed to 172-174bpm in that closing segment, above the 167bpm LT itself, but that reads as normal cardiac drift after ~55 minutes of running plus first exposure to this pace rather than a too-hard effort: RPE wasn't maximal (athlete had ~10 more minutes in the tank). The easy-effort body of the run also crept to 140-147bpm in its second half rather than holding 125-142bpm throughout, consistent with the same late-run drift."
       },
       {
         "date": "2026-08-03",
@@ -3679,6 +3679,6 @@
         "lesson": "Ran almost double the prescribed 25-30 minutes (53.8min) -- worth checking whether that was intentional extra aerobic work, since swim HR doesn't map directly onto the run-based zone thresholds anyway."
       }
     ],
-    "analysis": "TSS this week is now correctly cleaned of two big outliers -- Aug 1's festival day (227 TSS) and Aug 2's background movement (57.6 TSS) no longer count as training load -- leaving five real training days with a normal progressive pattern (55 -> 41 -> 55 -> 54 -> 84 TSS, swim/easy/easy/easy/long). The recurring theme this week is HR running hotter than the prescribed effort: Jul 31's and Aug 4's 'easy' portions both drifted into the upper-140s, and today's MP finish spiked to 172-174bpm, above LT -- worth tightening pacing discipline on both easy and quality efforts rather than treating any single day as a one-off."
+    "analysis": "TSS this week is now correctly cleaned of two big outliers -- Aug 1's festival day (227 TSS) and Aug 2's background movement (57.6 TSS) no longer count as training load -- leaving five real training days with a normal progressive pattern (55 -> 41 -> 55 -> 54 -> 84 TSS, swim/easy/easy/easy/long). Jul 31's and Aug 4's 'easy' portions both drifted into the upper-140s late in the run, and today's MP finish spiked to 172-174bpm above LT -- most likely ordinary cardiac drift late in longer efforts (Jul 31 was a fast finish, Aug 4's MP segment came after ~55 minutes with RPE still short of maximal) rather than a pacing problem, but worth a light check whether the same pattern shows up on a fresher-legs quality day like Aug 13's MP reps."
   }
 }
