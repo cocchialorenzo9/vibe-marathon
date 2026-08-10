@@ -2,11 +2,11 @@
   "date": "2026-08-10",
   "generatedFor": "2026-08-11",
   "readiness": {
-    "score": 71,
+    "score": 59,
     "hrv": {
       "value": 82,
-      "baseline": 73,
-      "delta_pct": 12
+      "baseline": 78,
+      "delta_pct": 5
     },
     "restingHR": {
       "value": 42,
@@ -16,9 +16,9 @@
       "hours": 5.4,
       "score": 58
     },
-    "tsb": -11.21,
-    "ctl": 28.4,
-    "atl": 39.61,
+    "tsb": -9.92,
+    "ctl": 28.33,
+    "atl": 38.25,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -103,7 +103,7 @@
   "recommendation": {
     "type": "easy",
     "title": "Easy 50 min -- hold it genuinely easy",
-    "reasoning": "HRV is 82ms vs a 73ms baseline (+12%, balanced) and resting HR (42bpm) is normal against its 44bpm baseline, both good signs. Sleep score is only 58 (below the 60 easy-swap threshold on its own, on 5.4h), but tomorrow's session is already the lightest category in the plan, so no swap is needed. TSB is -11.21, recovering from a week that ran ~50km actual (well above the ~44-49km originally prescribed) after two bonus easy runs the athlete added on Aug 6-7 -- CTL is climbing at a safe ~2.7 pts/week, under the 3-5 ceiling, so the extra volume hasn't overreached. Three of the last four tracked runs (Aug 4, 7, 8) finished with HR climbing to 163-174bpm in the final minutes -- worth holding this one honestly easy start to finish rather than letting it drift into a hard finish again.",
+    "reasoning": "HRV is 82ms vs a 78ms baseline (+5%, balanced) and resting HR (42bpm) is normal against its 43bpm baseline -- both fine, though the HRV margin is smaller than it first looked before Aug 5's run was added back into history. Sleep score is only 58 (below the 60 easy-swap threshold on its own, on 5.4h), but tomorrow's session is already the lightest category in the plan, so no swap is needed. TSB is -9.92, recovering well from a week that ran distinctly higher than planned once Aug 5's missing 6km run is counted -- CTL is climbing at a safe ~2.6 pts/week, under the 3-5 ceiling, so the extra volume hasn't overreached. Three of the last four tracked runs with HR data (Aug 4, 7, 8) finished with HR climbing to 163-174bpm in the final minutes -- worth holding this one honestly easy start to finish rather than letting it drift into a hard finish again.",
     "sessionDetail": "50 min at easy effort (~75-85% LT ~= 125-142bpm). The last two 'easy' sessions (Aug 7, Aug 8) both finished with HR climbing to 163-170bpm in the final few minutes -- deliberately ease off in the last 10 minutes tomorrow instead of letting it creep up.",
     "bikeNote": "Bike both ways fine -- TSB (-11.21) isn't deep enough into the red to warrant protecting the legs via transit.",
     "swimNote": ""
@@ -113,424 +113,6 @@
   "recentActivity": {
     "since": "2026-08-04",
     "sessions": [
-      {
-        "date": "2026-08-08",
-        "type": "outdoor_running",
-        "distance_km": 8.07,
-        "duration_min": 44.7,
-        "avg_hr": 140,
-        "max_hr": 167,
-        "hr_curve": [
-          {
-            "t_min": 0,
-            "hr": 119
-          },
-          {
-            "t_min": 1,
-            "hr": 131
-          },
-          {
-            "t_min": 2,
-            "hr": 134
-          },
-          {
-            "t_min": 3,
-            "hr": 138
-          },
-          {
-            "t_min": 4,
-            "hr": 137
-          },
-          {
-            "t_min": 5,
-            "hr": 143
-          },
-          {
-            "t_min": 6,
-            "hr": 151
-          },
-          {
-            "t_min": 7,
-            "hr": 147
-          },
-          {
-            "t_min": 8,
-            "hr": 134
-          },
-          {
-            "t_min": 9,
-            "hr": 135
-          },
-          {
-            "t_min": 10,
-            "hr": 136
-          },
-          {
-            "t_min": 11,
-            "hr": 135
-          },
-          {
-            "t_min": 12,
-            "hr": 134
-          },
-          {
-            "t_min": 13,
-            "hr": 132
-          },
-          {
-            "t_min": 14,
-            "hr": 137
-          },
-          {
-            "t_min": 15,
-            "hr": 137
-          },
-          {
-            "t_min": 16,
-            "hr": 137
-          },
-          {
-            "t_min": 17,
-            "hr": 139
-          },
-          {
-            "t_min": 18,
-            "hr": 137
-          },
-          {
-            "t_min": 19,
-            "hr": 136
-          },
-          {
-            "t_min": 20,
-            "hr": 135
-          },
-          {
-            "t_min": 21,
-            "hr": 133
-          },
-          {
-            "t_min": 22,
-            "hr": 130
-          },
-          {
-            "t_min": 23,
-            "hr": 127
-          },
-          {
-            "t_min": 24,
-            "hr": 137
-          },
-          {
-            "t_min": 25,
-            "hr": 134
-          },
-          {
-            "t_min": 26,
-            "hr": 128
-          },
-          {
-            "t_min": 27,
-            "hr": 130
-          },
-          {
-            "t_min": 28,
-            "hr": 132
-          },
-          {
-            "t_min": 29,
-            "hr": 127
-          },
-          {
-            "t_min": 30,
-            "hr": 141
-          },
-          {
-            "t_min": 31,
-            "hr": 143
-          },
-          {
-            "t_min": 32,
-            "hr": 150
-          },
-          {
-            "t_min": 33,
-            "hr": 154
-          },
-          {
-            "t_min": 34,
-            "hr": 149
-          },
-          {
-            "t_min": 35,
-            "hr": 141
-          },
-          {
-            "t_min": 36,
-            "hr": 135
-          },
-          {
-            "t_min": 37,
-            "hr": 139
-          },
-          {
-            "t_min": 38,
-            "hr": 142
-          },
-          {
-            "t_min": 39,
-            "hr": 139
-          },
-          {
-            "t_min": 40,
-            "hr": 149
-          },
-          {
-            "t_min": 41,
-            "hr": 159
-          },
-          {
-            "t_min": 42,
-            "hr": 164
-          },
-          {
-            "t_min": 43,
-            "hr": 166
-          },
-          {
-            "t_min": 44,
-            "hr": 167
-          }
-        ],
-        "avg_pace_min_km": 5.54,
-        "tss": 52.4,
-        "lesson": "Avg HR 140bpm sat right in the easy band, but the last minute spiked to 167 (at LT) -- a hard finish tacked onto what should've been a fully easy day."
-      },
-      {
-        "date": "2026-08-07",
-        "type": "outdoor_running",
-        "distance_km": 9.36,
-        "duration_min": 52.1,
-        "avg_hr": 141,
-        "max_hr": 170,
-        "hr_curve": [
-          {
-            "t_min": 0,
-            "hr": 96
-          },
-          {
-            "t_min": 1,
-            "hr": 121
-          },
-          {
-            "t_min": 2,
-            "hr": 129
-          },
-          {
-            "t_min": 3,
-            "hr": 133
-          },
-          {
-            "t_min": 4,
-            "hr": 137
-          },
-          {
-            "t_min": 5,
-            "hr": 136
-          },
-          {
-            "t_min": 6,
-            "hr": 136
-          },
-          {
-            "t_min": 7,
-            "hr": 140
-          },
-          {
-            "t_min": 8,
-            "hr": 137
-          },
-          {
-            "t_min": 9,
-            "hr": 140
-          },
-          {
-            "t_min": 10,
-            "hr": 137
-          },
-          {
-            "t_min": 11,
-            "hr": 139
-          },
-          {
-            "t_min": 12,
-            "hr": 139
-          },
-          {
-            "t_min": 13,
-            "hr": 137
-          },
-          {
-            "t_min": 14,
-            "hr": 142
-          },
-          {
-            "t_min": 15,
-            "hr": 144
-          },
-          {
-            "t_min": 16,
-            "hr": 140
-          },
-          {
-            "t_min": 17,
-            "hr": 145
-          },
-          {
-            "t_min": 18,
-            "hr": 137
-          },
-          {
-            "t_min": 19,
-            "hr": 143
-          },
-          {
-            "t_min": 20,
-            "hr": 137
-          },
-          {
-            "t_min": 21,
-            "hr": 132
-          },
-          {
-            "t_min": 22,
-            "hr": 136
-          },
-          {
-            "t_min": 23,
-            "hr": 139
-          },
-          {
-            "t_min": 24,
-            "hr": 136
-          },
-          {
-            "t_min": 25,
-            "hr": 135
-          },
-          {
-            "t_min": 26,
-            "hr": 136
-          },
-          {
-            "t_min": 27,
-            "hr": 139
-          },
-          {
-            "t_min": 28,
-            "hr": 144
-          },
-          {
-            "t_min": 29,
-            "hr": 144
-          },
-          {
-            "t_min": 30,
-            "hr": 149
-          },
-          {
-            "t_min": 31,
-            "hr": 141
-          },
-          {
-            "t_min": 32,
-            "hr": 137
-          },
-          {
-            "t_min": 33,
-            "hr": 135
-          },
-          {
-            "t_min": 34,
-            "hr": 140
-          },
-          {
-            "t_min": 35,
-            "hr": 141
-          },
-          {
-            "t_min": 36,
-            "hr": 142
-          },
-          {
-            "t_min": 37,
-            "hr": 139
-          },
-          {
-            "t_min": 38,
-            "hr": 141
-          },
-          {
-            "t_min": 39,
-            "hr": 140
-          },
-          {
-            "t_min": 40,
-            "hr": 145
-          },
-          {
-            "t_min": 41,
-            "hr": 150
-          },
-          {
-            "t_min": 42,
-            "hr": 152
-          },
-          {
-            "t_min": 43,
-            "hr": 152
-          },
-          {
-            "t_min": 44,
-            "hr": 153
-          },
-          {
-            "t_min": 45,
-            "hr": 157
-          },
-          {
-            "t_min": 46,
-            "hr": 151
-          },
-          {
-            "t_min": 47,
-            "hr": 148
-          },
-          {
-            "t_min": 48,
-            "hr": 148
-          },
-          {
-            "t_min": 49,
-            "hr": 148
-          },
-          {
-            "t_min": 50,
-            "hr": 163
-          },
-          {
-            "t_min": 51,
-            "hr": 170
-          },
-          {
-            "t_min": 52,
-            "hr": 163
-          }
-        ],
-        "avg_pace_min_km": 5.57,
-        "tss": 61.9,
-        "lesson": "Unscheduled bonus run (nothing was on the plan that day) -- effort held near the top of the easy band for most of it but kicked up to 163-170bpm in the final ~4 minutes."
-      },
       {
         "date": "2026-08-04",
         "type": "outdoor_running",
@@ -807,8 +389,438 @@
         "avg_pace_min_km": 5.45,
         "tss": 83.6,
         "lesson": "The MP-pace finish deliberately pushed HR to a sustained ~174bpm for the last several minutes -- expected cardiac drift from a fast finish on tired legs, not a red flag."
+      },
+      {
+        "date": "2026-08-05",
+        "type": "outdoor_running (confirmed by athlete, missing from export)",
+        "distance_km": 6.0,
+        "duration_min": null,
+        "avg_hr": null,
+        "max_hr": null,
+        "hr_curve": [],
+        "avg_pace_min_km": null,
+        "tss": 24.0,
+        "lesson": "The Zepp export has zero data for this entire day (not even sleep) -- the athlete confirmed a 6km run happened (close to the scheduled 35-minute medium-long) directly from the watch, since it never synced."
+      },
+      {
+        "date": "2026-08-07",
+        "type": "outdoor_running",
+        "distance_km": 9.36,
+        "duration_min": 52.1,
+        "avg_hr": 141,
+        "max_hr": 170,
+        "hr_curve": [
+          {
+            "t_min": 0,
+            "hr": 96
+          },
+          {
+            "t_min": 1,
+            "hr": 121
+          },
+          {
+            "t_min": 2,
+            "hr": 129
+          },
+          {
+            "t_min": 3,
+            "hr": 133
+          },
+          {
+            "t_min": 4,
+            "hr": 137
+          },
+          {
+            "t_min": 5,
+            "hr": 136
+          },
+          {
+            "t_min": 6,
+            "hr": 136
+          },
+          {
+            "t_min": 7,
+            "hr": 140
+          },
+          {
+            "t_min": 8,
+            "hr": 137
+          },
+          {
+            "t_min": 9,
+            "hr": 140
+          },
+          {
+            "t_min": 10,
+            "hr": 137
+          },
+          {
+            "t_min": 11,
+            "hr": 139
+          },
+          {
+            "t_min": 12,
+            "hr": 139
+          },
+          {
+            "t_min": 13,
+            "hr": 137
+          },
+          {
+            "t_min": 14,
+            "hr": 142
+          },
+          {
+            "t_min": 15,
+            "hr": 144
+          },
+          {
+            "t_min": 16,
+            "hr": 140
+          },
+          {
+            "t_min": 17,
+            "hr": 145
+          },
+          {
+            "t_min": 18,
+            "hr": 137
+          },
+          {
+            "t_min": 19,
+            "hr": 143
+          },
+          {
+            "t_min": 20,
+            "hr": 137
+          },
+          {
+            "t_min": 21,
+            "hr": 132
+          },
+          {
+            "t_min": 22,
+            "hr": 136
+          },
+          {
+            "t_min": 23,
+            "hr": 139
+          },
+          {
+            "t_min": 24,
+            "hr": 136
+          },
+          {
+            "t_min": 25,
+            "hr": 135
+          },
+          {
+            "t_min": 26,
+            "hr": 136
+          },
+          {
+            "t_min": 27,
+            "hr": 139
+          },
+          {
+            "t_min": 28,
+            "hr": 144
+          },
+          {
+            "t_min": 29,
+            "hr": 144
+          },
+          {
+            "t_min": 30,
+            "hr": 149
+          },
+          {
+            "t_min": 31,
+            "hr": 141
+          },
+          {
+            "t_min": 32,
+            "hr": 137
+          },
+          {
+            "t_min": 33,
+            "hr": 135
+          },
+          {
+            "t_min": 34,
+            "hr": 140
+          },
+          {
+            "t_min": 35,
+            "hr": 141
+          },
+          {
+            "t_min": 36,
+            "hr": 142
+          },
+          {
+            "t_min": 37,
+            "hr": 139
+          },
+          {
+            "t_min": 38,
+            "hr": 141
+          },
+          {
+            "t_min": 39,
+            "hr": 140
+          },
+          {
+            "t_min": 40,
+            "hr": 145
+          },
+          {
+            "t_min": 41,
+            "hr": 150
+          },
+          {
+            "t_min": 42,
+            "hr": 152
+          },
+          {
+            "t_min": 43,
+            "hr": 152
+          },
+          {
+            "t_min": 44,
+            "hr": 153
+          },
+          {
+            "t_min": 45,
+            "hr": 157
+          },
+          {
+            "t_min": 46,
+            "hr": 151
+          },
+          {
+            "t_min": 47,
+            "hr": 148
+          },
+          {
+            "t_min": 48,
+            "hr": 148
+          },
+          {
+            "t_min": 49,
+            "hr": 148
+          },
+          {
+            "t_min": 50,
+            "hr": 163
+          },
+          {
+            "t_min": 51,
+            "hr": 170
+          },
+          {
+            "t_min": 52,
+            "hr": 163
+          }
+        ],
+        "avg_pace_min_km": 5.57,
+        "tss": 61.9,
+        "lesson": "Unscheduled bonus run (nothing was on the plan that day) -- effort held near the top of the easy band for most of it but kicked up to 163-170bpm in the final ~4 minutes."
+      },
+      {
+        "date": "2026-08-08",
+        "type": "outdoor_running",
+        "distance_km": 8.07,
+        "duration_min": 44.7,
+        "avg_hr": 140,
+        "max_hr": 167,
+        "hr_curve": [
+          {
+            "t_min": 0,
+            "hr": 119
+          },
+          {
+            "t_min": 1,
+            "hr": 131
+          },
+          {
+            "t_min": 2,
+            "hr": 134
+          },
+          {
+            "t_min": 3,
+            "hr": 138
+          },
+          {
+            "t_min": 4,
+            "hr": 137
+          },
+          {
+            "t_min": 5,
+            "hr": 143
+          },
+          {
+            "t_min": 6,
+            "hr": 151
+          },
+          {
+            "t_min": 7,
+            "hr": 147
+          },
+          {
+            "t_min": 8,
+            "hr": 134
+          },
+          {
+            "t_min": 9,
+            "hr": 135
+          },
+          {
+            "t_min": 10,
+            "hr": 136
+          },
+          {
+            "t_min": 11,
+            "hr": 135
+          },
+          {
+            "t_min": 12,
+            "hr": 134
+          },
+          {
+            "t_min": 13,
+            "hr": 132
+          },
+          {
+            "t_min": 14,
+            "hr": 137
+          },
+          {
+            "t_min": 15,
+            "hr": 137
+          },
+          {
+            "t_min": 16,
+            "hr": 137
+          },
+          {
+            "t_min": 17,
+            "hr": 139
+          },
+          {
+            "t_min": 18,
+            "hr": 137
+          },
+          {
+            "t_min": 19,
+            "hr": 136
+          },
+          {
+            "t_min": 20,
+            "hr": 135
+          },
+          {
+            "t_min": 21,
+            "hr": 133
+          },
+          {
+            "t_min": 22,
+            "hr": 130
+          },
+          {
+            "t_min": 23,
+            "hr": 127
+          },
+          {
+            "t_min": 24,
+            "hr": 137
+          },
+          {
+            "t_min": 25,
+            "hr": 134
+          },
+          {
+            "t_min": 26,
+            "hr": 128
+          },
+          {
+            "t_min": 27,
+            "hr": 130
+          },
+          {
+            "t_min": 28,
+            "hr": 132
+          },
+          {
+            "t_min": 29,
+            "hr": 127
+          },
+          {
+            "t_min": 30,
+            "hr": 141
+          },
+          {
+            "t_min": 31,
+            "hr": 143
+          },
+          {
+            "t_min": 32,
+            "hr": 150
+          },
+          {
+            "t_min": 33,
+            "hr": 154
+          },
+          {
+            "t_min": 34,
+            "hr": 149
+          },
+          {
+            "t_min": 35,
+            "hr": 141
+          },
+          {
+            "t_min": 36,
+            "hr": 135
+          },
+          {
+            "t_min": 37,
+            "hr": 139
+          },
+          {
+            "t_min": 38,
+            "hr": 142
+          },
+          {
+            "t_min": 39,
+            "hr": 139
+          },
+          {
+            "t_min": 40,
+            "hr": 149
+          },
+          {
+            "t_min": 41,
+            "hr": 159
+          },
+          {
+            "t_min": 42,
+            "hr": 164
+          },
+          {
+            "t_min": 43,
+            "hr": 166
+          },
+          {
+            "t_min": 44,
+            "hr": 167
+          }
+        ],
+        "avg_pace_min_km": 5.54,
+        "tss": 52.4,
+        "lesson": "Avg HR 140bpm sat right in the easy band, but the last minute spiked to 167 (at LT) -- a hard finish tacked onto what should've been a fully easy day."
       }
     ],
-    "analysis": "TSS and distance climbed hard through this window -- the athlete added two unscheduled easy runs (Aug 6, Aug 7) on days the plan had left open, pushing total volume for the week to ~50km, well above the plan's original ~44-49km prescription for this phase. CTL only rose ~2.7 points over the week (comfortably under the 3-5/week ceiling), so the extra load hasn't shown up as an overreach yet, but three of the last four tracked runs (Aug 4, 7, 8) all show HR climbing into the last few minutes and finishing at or above LT -- worth watching if that becomes a habit rather than an occasional finish-strong choice."
+    "analysis": "TSS and distance climbed hard through this window -- once Aug 5's watch-confirmed 6km run is counted alongside the two unscheduled easy runs the athlete added on Aug 6-7, total volume for the week reached ~56km, well above the plan's original ~44-49km prescription for this phase. CTL only rose ~2.6 points over the week (comfortably under the 3-5/week ceiling), so the extra load hasn't shown up as an overreach yet, but three of the four tracked runs with HR data (Aug 4, 7, 8) all show HR climbing into the last few minutes and finishing at or above LT -- worth watching if that becomes a habit rather than an occasional finish-strong choice."
   }
 }

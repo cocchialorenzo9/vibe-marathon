@@ -6679,6 +6679,21 @@
     "nextTime": "Treat this as a flag rather than a one-off: if 4:20/km costs near-or-above-threshold HR again on Aug 13's 4x1.5km MP-pace tempo reps, the target MP pace may be a touch optimistic for current fitness, or effort discipline on MP segments needs tightening (start controlled, do not let a 10-minute effort creep toward threshold). Compare directly against that session's HR response before drawing a firm conclusion."
   },
   {
+    "date": "2026-08-05",
+    "type": "auto-detected running",
+    "scheduled": "medium-long",
+    "distance_km": 6.0,
+    "duration_min": null,
+    "avg_hr": null,
+    "max_hr": null,
+    "hr_curve": [],
+    "tss": 24.0,
+    "avg_pace_min_km": null,
+    "wentWell": "Ran the scheduled medium-long \u2014 6km, close to the ~5.96km the 35-minute prescription implies \u2014 even though the watch never synced a formal session for it.",
+    "wentWrong": "No HR data survived \u2014 the whole day is missing from the Zepp export, not just this run \u2014 so there's no way to confirm the effort landed in the easy band, and this gap won't recover for this specific day.",
+    "nextTime": "If a day comes back with zero data (not even sleep), check the export folder actually covers that date before assuming the session went untracked on the watch's end."
+  },
+  {
     "date": "2026-08-06",
     "type": "auto-detected running",
     "scheduled": null,
