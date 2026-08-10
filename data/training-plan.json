@@ -449,7 +449,7 @@
           },
           "movement": "No work commute today — it's the weekend. No cycling before the long run; save the legs for the 90 minutes ahead.",
           "food": "High carb the day before and morning of (pasta, rice, polenta). Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Build phase, week 6's closing session. This week's total volume (~49km) is well above the plan's original prescription, driven by the extra easy runs the athlete added on Aug 6-7 — CTL is climbing at a safe ~2.7 pts/week despite that, so this long run caps a genuinely productive week rather than an overreach.",
+          "bigPicture": "Build phase, week 6's closing session. This week's total volume (~49km) is well above the plan's original prescription, driven by the extra easy runs the athlete added on Aug 6-7 -- CTL is climbing at a safe ~2.7 pts/week despite that, so this long run caps a genuinely productive week rather than an overreach.",
           "estKm": 15.29
         }
       ],
@@ -469,13 +469,12 @@
           "training": {
             "type": "easy",
             "title": "Sunday easy run",
-            "detail": "35 min easy effort (~65-75% LT) — finalized via the volume-escalation rule (Step 4f, 2026-08-10): CTL ramp is running ~2.69 pts/week, under the 3-5 ceiling, leaving modest headroom (~9 TSS/week) after last week's athlete-added bonus volume. Baseline duration matches this plan's other non-recovery build-week Sundays (~30 min) plus that small headroom, not a repeat of last week's bigger jump.",
-            "estKm": 5.95
+            "detail": "PROVISIONAL -- distance/duration to be finalized by the volume-escalation rule (see update-coach.md Step 4f) based on real CTL/TSB/HRV response as this week approaches. Effort will stay easy, ~65-75% LT.",
+            "estKm": null
           },
           "movement": "No commute today, it's the weekend — easy legs-loosener before the week restarts.",
           "food": "Normal balanced meals, moderate carb refill after yesterday's long run.",
-          "bigPicture": "Opens week 7 (build). This Sunday run was just finalized at 35 minutes via the volume-escalation rule — a modest step up from the pattern of recent Sundays, sized to the CTL headroom actually available right now, not a repeat of last week's bigger athlete-driven jump. Leads into Monday's medium-long and Tuesday's first dedicated LT-cruise session.",
-          "estKm": 5.95
+          "bigPicture": "Opens week 7 (build). Sunday's distance is still PROVISIONAL -- the volume-escalation rule (Step 4f) only finalizes it once week 7 actually starts, so it'll be set on the next update-coach run based on CTL/TSB/HRV at that point, informed by this week's healthy ramp rate and the athlete's own push to keep growing volume."
         },
         {
           "date": "2026-08-17",
@@ -543,11 +542,11 @@
           },
           "movement": "No work commute today — it's the weekend. No cycling before the long run.",
           "food": "High carb the day before and morning of. Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Closes week 7 at ~50.8km total, the biggest week of the plan so far (including the newly-finalized Sunday run) — sets up week 8's scheduled recovery week so CTL can consolidate before build resumes in week 9.",
+          "bigPicture": "Build phase, week 7. Long run closing out the week; Sunday's volume-escalation number will land once that day is finalized on a future run, but the non-Sunday days alone already total ~44.9km -- expect this to be the plan's biggest week yet once finalized.",
           "estKm": 17.84
         }
       ],
-      "estKm": 50.83
+      "estKm": 44.88
     },
     {
       "week": 8,

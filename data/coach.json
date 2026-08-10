@@ -59,7 +59,7 @@
     "peakWeekEstKm": {
       "week11": 61.67
     },
-    "referenceNote": "Peak week (week 11, ~61.67km) is still essentially at Higdon's Marathon 3 peak (~61km/week) -- the shoe-change pace refresh only moved the peak by ~0.3km versus the last run (61.97->61.67); the trailing pace window still mostly predates the shoe change, so the improvement hasn't fully shown up in this number yet.",
+    "referenceNote": "Peak week (week 11, ~61.67km projected) is still essentially at Higdon's Marathon 3 peak (~61km/week) -- the shoe-change pace refresh only moved the peak by ~0.3km versus the last run (61.97->61.67); the trailing pace window still mostly predates the shoe change, so the improvement hasn't fully shown up in this number yet.",
     "flagged": false,
     "projectedWeeklyKm": {
       "week5": {
@@ -72,7 +72,7 @@
       },
       "week7": {
         "estKm": 50.83,
-        "status": "finalized"
+        "status": "provisional"
       },
       "week8": {
         "estKm": 29.74,
