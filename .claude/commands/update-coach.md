@@ -20,16 +20,19 @@ Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
     the Zepp app's Running Status card, if the watch model surfaces one).
   - **After backfill, check for missing HRV and sleep score**: scan the local history file for
     any entries missing either field. `hrv` is expected `null` before **2026-06-29** (when HRV
-    tracking started) — only flag `hrv: null` for dates **on or after** that. `sleep_score` has
-    no such floor — it's been wrong since day one — so flag `sleep_score: null` for **any**
-    history entry, regardless of date, **except 2026-06-27 and 2026-06-28** — the athlete has
-    confirmed (2026-08-03) they will never have those two numbers, so leave them `null`
-    permanently and don't re-ask about them on future runs. If either set (after that exclusion)
-    is non-empty, ask the user in a single batched question (e.g. "Missing HRV for Jun 30, Jul 1,
-    Jul 2 — what were they?" and separately "Missing sleep score for Jun 26–Jul 9 — what were
-    they, from the Zepp app?"). Write their answers back into the matching history entries (leave
-    an entry `null` if they don't have it) before moving to Step 2, so this run's baseline and
-    delta calculations use the corrected data.
+    tracking started) — only flag `hrv: null` for dates **on or after** that, **except
+    2026-08-06 and 2026-08-08** — the athlete confirmed (2026-08-10) those two HRV readings are
+    permanently lost (not recorded off-device that day), so leave them `null` permanently and
+    don't re-ask. `sleep_score` has no such floor — it's been wrong since day one — so flag
+    `sleep_score: null` for **any** history entry, regardless of date, **except 2026-06-27,
+    2026-06-28, and 2026-08-06** — the athlete has confirmed (2026-08-03, and again 2026-08-10
+    for Aug 6) they will never have those numbers, so leave them `null` permanently and don't
+    re-ask about them on future runs. If either set (after these exclusions) is non-empty, ask
+    the user in a single batched question (e.g. "Missing HRV for Jun 30, Jul 1, Jul 2 — what were
+    they?" and separately "Missing sleep score for Jun 26–Jul 9 — what were they, from the Zepp
+    app?"). Write their answers back into the matching history entries (leave an entry `null` if
+    they don't have it) before moving to Step 2, so this run's baseline and delta calculations use
+    the corrected data.
 
 - **`WATCH_SOURCE=garmin`**: run `python3 scripts/fetch_garmin.py`
   - Requires `GARMIN_EMAIL` and `GARMIN_PASSWORD`. If not set, ask the user to export them before continuing.
