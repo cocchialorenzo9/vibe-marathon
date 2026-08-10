@@ -166,5 +166,29 @@
     "avg_band": 3,
     "avg_pace_min_km": 5.45,
     "distance_km": 12.21
+  },
+  {
+    "date": "2026-08-07",
+    "band1_min": 3,
+    "band2_min": 21,
+    "band3_min": 25,
+    "band4_min": 3,
+    "band5_min": 1,
+    "avg_pct_lt": 85,
+    "avg_band": 3,
+    "avg_pace_min_km": 5.57,
+    "distance_km": 9.36
+  },
+  {
+    "date": "2026-08-08",
+    "band1_min": 4,
+    "band2_min": 26,
+    "band3_min": 11,
+    "band4_min": 3,
+    "band5_min": 1,
+    "avg_pct_lt": 84,
+    "avg_band": 2,
+    "avg_pace_min_km": 5.54,
+    "distance_km": 8.07
   }
 ]
