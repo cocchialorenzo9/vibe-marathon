@@ -471,12 +471,16 @@ class TestSynthesizeHistoryEntry(unittest.TestCase):
         self.assertIsNotNone(entry)
         self.assertIsNone(entry["sleep_hours"])
 
-    def test_activity_fallback_for_untracked_run(self):
-        # 2026-06-27: no SPORT session but 10km runDistance in ACTIVITY
+    def test_activity_fallback_excluded_from_tss_and_distance(self):
+        # 2026-06-27: no SPORT session, only a 10km runDistance guess in
+        # ACTIVITY (step-counter derived) — without a formally-started
+        # workout this can't be scored as training load, so it must not
+        # contribute tss/distance even though the entry itself still exists.
         entry = synthesize_history_entry(self.export, "2026-06-27", self.hr_rows)
         self.assertIsNotNone(entry)
-        self.assertAlmostEqual(entry["distance_km"], 10.106, places=2)
-        self.assertGreater(entry["tss"], 0)
+        self.assertEqual(entry["distance_km"], 0)
+        self.assertEqual(entry["tss"], 0)
+        self.assertIsNone(entry["avg_hr"])
 
     def test_returns_none_for_empty_date(self):
         result = synthesize_history_entry(self.export, "2025-01-01", self.hr_rows)

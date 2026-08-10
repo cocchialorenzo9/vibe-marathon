@@ -521,26 +521,19 @@ def synthesize_history_entry(export_dir, date_str, hr_rows, lthr=DEFAULT_LTHR):
     sessions = read_sport_sessions(export_dir, date_str, hr_rows, lthr)
     activity = read_activity_fallback(export_dir, date_str)
 
-    # Only running/cycling/swimming sessions count toward training load — a
-    # long low-intensity day (festival, hike) can rack up huge hrTSS from
+    # Only running/cycling/swimming SPORT sessions count toward training load —
+    # a long low-intensity day (festival, hike) can rack up huge hrTSS from
     # duration alone despite zero real training stress. See _TRAINING_TYPES.
+    # The ACTIVITY summary's step-derived distance is never credited here
+    # either, even when no SPORT session was recorded at all: without a
+    # formally-started workout there's no way to tell running from walking,
+    # an errand, or a commute, so it can't be scored as training load — it
+    # stays visible in the journal narrative, just excluded from this math.
     training_sessions = [s for s in sessions if s["type"] in _TRAINING_TYPES]
     total_tss = sum(s["tss"] for s in training_sessions)
     sport_distance_km = sum(s["distance_km"] for s in training_sessions)
     primary = _pick_primary_session(sessions)
     avg_hr = primary["avg_hr"] if primary else None
-
-    # Add TSS for auto-detected running only when the watch recorded literally
-    # no SPORT session that day — if any session was already recorded (even a
-    # non-training one, or one with distance=0 from a GPS dropout), the
-    # ACTIVITY summary's step-based "runDistance" is unreliable (Zepp can
-    # misclassify hours of walking as running steps) and stacking it on top
-    # would smuggle that noise back in rather than double-counting a real run.
-    act_run_km = activity["run_distance_km"] if activity else 0
-    if not sessions and act_run_km > sport_distance_km + 0.5:
-        extra_km = act_run_km - sport_distance_km
-        total_tss += extra_km * 4  # rough proxy for untracked easy running
-        sport_distance_km = act_run_km
 
     if sleep is None and not sessions and not activity:
         return None

@@ -381,14 +381,15 @@ and so it survives gaps in when `/update-coach` actually gets run.
    weeks if the journal hasn't been updated in a while).
 4. **Cross-reference against local history** (already loaded in Step 2) for
    every date in the range: if a date has no non-cycling session in the
-   script's output but its `distance_km`/`tss` clears **distance_km ≥ 1.5 or
-   tss ≥ 5**, archive it anyway using history's own numbers, with
-   `duration_min`/`avg_hr`/`max_hr` set to `null` and `type` noted as
-   auto-detected (e.g. `"auto-detected running"`) — the watch's step counter
-   picked up real activity even though no formal workout was started. If a
-   date is below that threshold and has no session, skip it entirely — it's
-   either a pure bike-commute day or genuinely negligible movement, not a
-   training day worth reflecting on.
+   script's output, check its `distance_km`/`tss` in the history entry. A day
+   with no formally-started workout can no longer be scored as training load
+   — `scripts/parse_zepp_export.py`'s `synthesize_history_entry` never
+   credits step-counter-only distance toward `tss`/`distance_km`, since the
+   watch's step count isn't proof of a specific activity (running vs.
+   walking vs. an errand) — so these entries will show `distance_km: 0`/
+   `tss: 0` and should simply be skipped: nothing to archive, not a training
+   day worth reflecting on. Do not attempt to reconstruct a distance/tss
+   figure for these days from any other source.
 5. For each new entry, use this schema:
 
 ```json

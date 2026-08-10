@@ -20,9 +20,9 @@
             "detail": "Swim class as scheduled — counts as aerobic cross-training. Don't add a run today.",
             "estKm": null
           },
-          "movement": "Bike to the pool is fine — TSB is -6.5 today, mild residual load, trending toward neutral over the next two rest days. First session, no need to conserve.",
+          "movement": "Bike to the pool is fine — TSB is -34.18 today, deeper fatigue than the plan originally assumed (recalculated after Jul 4's 241.9-TSS untracked long effort was properly counted). The swim itself is low-impact, so it's still fine to go ahead.",
           "food": "Normal balanced breakfast 90 min before. Post-swim: protein + fruit (yogurt, shake). Base phase: moderate carbs, no special loading.",
-          "bigPicture": "First session of the 15-week plan. The swim is deliberate: aerobic cross-training that builds base and shoulder mobility without loading the running legs. TSB sits at -6.5 with two rest days left before Monday — mild residual load, nothing concerning, and it should ease further by the time training starts. HRV baseline is still building (first reading: 65ms), so future updates will track day-to-day recovery more precisely."
+          "bigPicture": "First session of the 15-week plan. The swim is deliberate: aerobic cross-training that builds base and shoulder mobility without loading the running legs. TSB corrects to -34.18 (originally read as -6.5, before Jul 4's 8.5-hour untracked effort was fully counted) — real fatigue, not the mild residual load first assumed, though a no-impact swim doesn't need to be modified for it. HRV baseline is still building (first reading: 65ms), so future updates will track day-to-day recovery more precisely."
         },
         {
           "date": "2026-07-07",
@@ -35,7 +35,7 @@
           },
           "movement": "U-Bahn both ways today — no need to load the legs further right after the adaptation run.",
           "food": "Normal breakfast. Pre-run: light snack 90 min before if needed. Post-run: protein + carbs within 30 min (eggs and toast, or a recovery shake). Build the fueling habit now.",
-          "bigPicture": "First run of the plan — an adaptation run to calibrate effort after Monday's swim. 30 min at 5:10–5:20/km, lean toward the slower end: TSB is -25.8 today, still carrying fatigue from Saturday's 22.75km effort and a short 2h sleep Sunday. HRV (71ms, 8% above the 66ms baseline) and sleep (score 95) are both strong, so this is residual load, not poor recovery — it should clear over the next few easy days.",
+          "bigPicture": "First run of the plan — an adaptation run to calibrate effort after Monday's swim. 30 min at 5:10–5:20/km, lean toward the slower end: TSB corrects to -37.44 (originally -25.8) once Saturday's 22.75km untracked effort is properly counted — deep fatigue, not just mild residual load. HRV (71ms, 8% above the 66ms baseline) and sleep (score 95) are both strong, so this is real training debt rather than poor recovery, but it argues even more strongly for staying at the slow end of the prescribed pace today.",
           "estKm": 5.1
         },
         {
@@ -47,9 +47,9 @@
             "detail": "35 min at easy effort (~75-85% LT) + 4×80m progressive accelerations at the end (not sprints, just smooth pick-ups)",
             "estKm": 5.95
           },
-          "movement": "U-Bahn both ways today — strides need fresh legs even though they're short. TSB was -31.7 Tuesday, deeper fatigue than earlier estimated, so don't expect it fully cleared by Thursday even after Wednesday's rest day.",
+          "movement": "U-Bahn both ways today — strides need fresh legs even though they're short. TSB was -37.44 Tuesday, deeper fatigue than earlier estimated, so don't expect it fully cleared by Thursday even after Wednesday's rest day.",
           "food": "Normal carb-moderate day, no special loading. Pre-run: light snack 90 min before if training after work. Post-run: normal meal with protein priority.",
-          "bigPicture": "Third session of Week 1 base, coming after Wednesday's full rest day gave the legs a break from Monday's swim-plus-commute load. TSB was -31.7 Tuesday morning — past the -25 threshold, deeper fatigue than first estimated (a data bug had understated this week's real training load). One rest day won't fully clear it; expect this run to feel heavier than a normal easy session. Strides (4×80m progressive accelerations) add neuromuscular work without aerobic stress — smooth and controlled, not fast. This session primes the legs for Saturday's first long run.",
+          "bigPicture": "Third session of Week 1 base, coming after Wednesday's full rest day gave the legs a break from Monday's swim-plus-commute load. TSB was -37.44 Tuesday morning — well past the -25 threshold, deeper fatigue than first estimated (a data bug had understated this week's real training load). One rest day won't fully clear it; expect this run to feel heavier than a normal easy session. Strides (4×80m progressive accelerations) add neuromuscular work without aerobic stress — smooth and controlled, not fast. This session primes the legs for Saturday's first long run.",
           "estKm": 5.95
         },
         {
@@ -88,7 +88,7 @@
           },
           "movement": "Bike to the pool is fine — active recovery, legs should have loosened up nicely after the weekend long run.",
           "food": "Normal balanced day — light on heavy fats, focus on hydration after the weekend.",
-          "bigPicture": "Active recovery day opening week 2, still base phase. The pool loosens legs after Saturday's first long run while keeping the aerobic engine warm. Week 1 carried real fatigue (TSB as deep as -31.7, and still -27.1 on Jul 9) from Jul 4's big untracked effort — by now, with Friday's rest day and an easy week 1 close behind you, it should be substantially cleared, though a fresh dip right after Saturday's long run is normal. Week 1 was as much about clearing that debt as adapting to the plan."
+          "bigPicture": "Active recovery day opening week 2, still base phase. The pool loosens legs after Saturday's first long run while keeping the aerobic engine warm. Week 1 carried real fatigue (TSB as deep as -37.44, and still -30.87 on Jul 9) from Jul 4's big untracked effort — by now, with Friday's rest day and an easy week 1 close behind you, it should be substantially cleared, though a fresh dip right after Saturday's long run is normal. Week 1 was as much about clearing that debt as adapting to the plan."
         },
         {
           "date": "2026-07-14",
@@ -99,9 +99,9 @@
             "detail": "35 min at aerobic effort (~75-85% LT)",
             "estKm": 5.95
           },
-          "movement": "U-Bahn both ways today — TSB is still deep negative (-24.3) after a weekend spent moving apartments (Fri/Sun loading a truck and carrying furniture up and down stairs) plus Saturday's long run that ran ~55% past its prescribed distance. Protect the legs even on an easy day.",
+          "movement": "U-Bahn both ways today — TSB is still deep negative (-25.13, right at the swap-to-easy threshold) after a weekend spent moving apartments (Fri/Sun loading a truck and carrying furniture up and down stairs) plus Saturday's long run that ran ~55% past its prescribed distance. Protect the legs even on an easy day.",
           "food": "Normal balanced day, base-phase carb levels — nothing special needed for a 35-minute easy effort.",
-          "bigPicture": "Week 2 of base, easy Tuesday session as the aerobic base keeps widening. TSB is still -24.3 heading in, carrying over fatigue from a weekend apartment move (Friday and Sunday both spent loading a truck and carrying furniture up and down stairs) plus Saturday's long run overrun — this week's easy days need to actually stay easy given three of the last four tracked running sessions ran at tempo-effort HR despite on-target pace. Sets up Thursday's first marathon-pace contact (3×5' at 4:15–4:20/km).",
+          "bigPicture": "Week 2 of base, easy Tuesday session as the aerobic base keeps widening. TSB is at -25.13 heading in (right at the swap-to-easy line), carrying over fatigue from a weekend apartment move (Friday and Sunday both spent loading a truck and carrying furniture up and down stairs) plus Saturday's long run overrun — this week's easy days need to actually stay easy given three of the last four tracked running sessions ran at tempo-effort HR despite on-target pace. Sets up Thursday's first marathon-pace contact (3×5' at 4:15–4:20/km).",
           "estKm": 5.95
         },
         {
@@ -113,9 +113,9 @@
             "detail": "40 min: 10' wu + 3×5' at marathon pace (4:15–4:20/km) + 90'' walking rec + 10' cd",
             "estKm": 6.89
           },
-          "movement": "U-Bahn both ways — TSB is at -22.9 as of Tuesday, still deep negative from last week's move-weekend load and Saturday's long-run overrun. First real MP intervals aren't the day to add 9km of cycling on top.",
+          "movement": "U-Bahn both ways — TSB was -25.13 as of Tuesday, still deep negative from last week's move-weekend load and Saturday's long-run overrun. First real MP intervals aren't the day to add 9km of cycling on top.",
           "food": "Carb breakfast 1.5h before — first real MP contact deserves fueled legs. Evening: rice or pasta with protein, recovery starts at the table.",
-          "bigPicture": "Week 2 of base, about 87 days out from race day. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress. TSB sits at -22.9 today, so treat how the legs feel as the real signal, not the calendar; it should keep climbing back toward neutral through the rest of the week.",
+          "bigPicture": "Week 2 of base, about 87 days out from race day. 3×5' is deliberately short — the goal is neuromuscular familiarity with 4:16/km, not fitness stress. TSB sits at -20.26 today, so treat how the legs feel as the real signal, not the calendar; it should keep climbing back toward neutral through the rest of the week.",
           "estKm": 6.89
         },
         {
@@ -129,7 +129,7 @@
           },
           "movement": "No cycling before the long run — get to the start on foot or U-Bahn. No commute to plan around, it's Sunday.",
           "food": "Carb-loaded breakfast 1–2h before. Bring a gel or dates to test your gut — same fueling plan as originally set for Saturday.",
-          "bigPicture": "Long run pushed back a day at the athlete's request — Saturday's attempt came up well short (5.03km logged against this same ~9-10km target, no HR data), and last night's readiness was rough (sleep score 37, HRV 12% below baseline). TSB is -17.28, the best it's been in three weeks, which helps the case for trying again today, but see tomorrow's recommendation for whether to run the full session or an eased-back version given last night's sleep.",
+          "bigPicture": "Long run pushed back a day at the athlete's request — Saturday's attempt came up well short (5.03km logged against this same ~9-10km target, no HR data), and last night's readiness was rough (sleep score 37, HRV 12% below baseline). TSB is -11.63, the best it's been in three weeks, which helps the case for trying again today, but see tomorrow's recommendation for whether to run the full session or an eased-back version given last night's sleep.",
           "estKm": 9.35
         }
       ],
@@ -152,9 +152,9 @@
             "detail": "35 min at easy effort (~75-85% LT)",
             "estKm": 5.95
           },
-          "movement": "U-Bahn both ways — TSB dropped to -20.84 and HRV is 27% below baseline (55 vs 75) after yesterday's long run ran hotter and longer than planned; give the legs a real break from the commute too.",
+          "movement": "U-Bahn both ways — TSB dropped to -16.37 and HRV is 27% below baseline (55 vs 75) after yesterday's long run ran hotter and longer than planned; give the legs a real break from the commute too.",
           "food": "Normal balanced day, base-phase carb levels.",
-          "bigPicture": "Week 3 of base, 82 days out from race day. Yesterday's long run (Jul 19) ended up running 84 minutes at 143-155bpm — well past both the prescribed 55-minute duration and the easy 125-142bpm zone — so today's easy 35' carries real purpose: HRV is down 27% and TSB has slipped to -20.84, both arguing for keeping this one genuinely aerobic rather than another accidental tempo effort.",
+          "bigPicture": "Week 3 of base, 82 days out from race day. Yesterday's long run (Jul 19) ended up running 84 minutes at 143-155bpm — well past both the prescribed 55-minute duration and the easy 125-142bpm zone — so today's easy 35' carries real purpose: HRV is down 27% and TSB has slipped to -16.37, both arguing for keeping this one genuinely aerobic rather than another accidental tempo effort.",
           "estKm": 5.95
         },
         {
@@ -166,9 +166,9 @@
             "detail": "30–35 min in the pool, aerobic pace. Continuous crawl with focus on breathing. No interval training.",
             "estKm": null
           },
-          "movement": "Bike both ways to the pool is fine — swimming is low-impact enough that today's still-cautious TSB (-20.2) doesn't change the commute call, only the training effort.",
+          "movement": "Bike both ways to the pool is fine — swimming is low-impact enough that today's still-cautious TSB (-16.69) doesn't change the commute call, only the training effort.",
           "food": "Normal balanced day.",
-          "bigPicture": "Second self-managed open-water swim slot, 81 days out. HRV bounced back sharply overnight (82ms, +14% vs baseline, sleep score 77, resting HR back to a normal 41bpm) even though TSB (-20.2) hasn't moved much yet — pure aerobic cross-training with zero leg impact is exactly the right day to let ATL keep decaying before Thursday's first quality tempo session."
+          "bigPicture": "Second self-managed open-water swim slot, 81 days out. HRV bounced back sharply overnight (82ms, +14% vs baseline, sleep score 77, resting HR back to a normal 41bpm) even though TSB (-16.69) hasn't moved much yet — pure aerobic cross-training with zero leg impact is exactly the right day to let ATL keep decaying before Thursday's first quality tempo session."
         },
         {
           "date": "2026-07-23",
@@ -179,9 +179,9 @@
             "detail": "45 min: 10' wu + 4×1km at 4:20/km + 90'' rec + 10' cd — first real quality session",
             "estKm": 7.4
           },
-          "movement": "U-Bahn both ways — TSB is still cautious at -16.5 and resting HR is mildly elevated (45bpm vs a 42bpm baseline), so skip the bike commute around today's first quality tempo session and let the legs recover fully rather than splitting the direction.",
+          "movement": "U-Bahn both ways — TSB is still cautious at -13.73 and resting HR is mildly elevated (45bpm vs a 42bpm baseline), so skip the bike commute around today's first quality tempo session and let the legs recover fully rather than splitting the direction.",
           "food": "High-carb breakfast before (oats, banana) — this is a quality session, not just an easy day. Protein + carbs within 30 minutes of finishing to kick off recovery.",
-          "bigPicture": "First quality tempo session of the plan, 80 days out, still in base phase. TSB (-16.5) and a mildly elevated resting HR (45 vs 42 baseline) are why today's session is trimmed to 3x1km instead of the original 4 — HRV (71ms, -3% vs baseline) and sleep (score 77) both look fine, so this is a volume trim to manage fatigue, not a swap to easy. This sets the tone for the quality work that ramps up through August and into September's LT-cruise intervals.",
+          "bigPicture": "First quality tempo session of the plan, 80 days out, still in base phase. TSB (-13.73) and a mildly elevated resting HR (45 vs 42 baseline) are why today's session is trimmed to 3x1km instead of the original 4 — HRV (71ms, -3% vs baseline) and sleep (score 77) both look fine, so this is a volume trim to manage fatigue, not a swap to easy. This sets the tone for the quality work that ramps up through August and into September's LT-cruise intervals.",
           "estKm": 7.4
         },
         {
@@ -195,7 +195,7 @@
           },
           "movement": "No commute today, it's the weekend — the only transport question is getting to the long run start point, and that's on foot from home.",
           "food": "High-carb dinner Friday night and a carb-rich breakfast (toast, banana, honey) before heading out — legs get a full rest day Friday after Thursday's tempo, so use this to fuel properly rather than just coast.",
-          "bigPicture": "Long run, base phase, 78 days out. Thursday's trimmed tempo (3x1km) landed right in the 159-167bpm threshold band, and TSB has already ticked up slightly to -16.2 after a full rest day — legs should be fresh for an easy 60 minutes. Continues building the aerobic base that the upcoming quality sessions and eventual peak-phase long runs (up to 165min/~29km in week 11) will be layered on top of.",
+          "bigPicture": "Long run, base phase, 78 days out. Thursday's trimmed tempo (3x1km) landed right in the 159-167bpm threshold band, and TSB has already ticked up slightly to -10.24 after a full rest day — legs should be fresh for an easy 60 minutes. Continues building the aerobic base that the upcoming quality sessions and eventual peak-phase long runs (up to 165min/~29km in week 11) will be layered on top of.",
           "estKm": 10.2
         }
       ],
@@ -218,9 +218,9 @@
             "detail": "25 min very slow (~65-75% LT) — recovery week",
             "estKm": 4.25
           },
-          "movement": "Bike both ways is fine — TSB is -18.3, still recovering from Saturday's long run running more than double its 60-minute prescription, but it's climbing back from Friday's -28 trough, and today's session is only 25 minutes at very easy effort — trivial load on top of a commute.",
+          "movement": "Bike both ways is fine — TSB is -16.02, still recovering from Saturday's long run running more than double its 60-minute prescription, but it's climbing back from Saturday's -27.03 trough, and today's session is only 25 minutes at very easy effort — trivial load on top of a commute.",
           "food": "Normal balanced meals — recovery week, no special carb-loading needed.",
-          "bigPicture": "Recovery week continues, base phase, 75 days out. TSB bottomed at -28.15 after Saturday's long run ran to 137min/21km against an 11km target, but HRV is strong today (81ms, +12% vs baseline) and sleep score is 85 — today's genuinely slow 25-minute effort is exactly the dose needed to let CTL/ATL/TSB reset before build phase's new second-quality-day structure begins in August.",
+          "bigPicture": "Recovery week continues, base phase, 75 days out. TSB bottomed at -27.03 after Saturday's long run ran to 137min/21km against an 11km target, but HRV is strong today (81ms, +12% vs baseline) and sleep score is 85 — today's genuinely slow 25-minute effort is exactly the dose needed to let CTL/ATL/TSB reset before build phase's new second-quality-day structure begins in August.",
           "estKm": 4.25
         },
         {
@@ -234,7 +234,7 @@
           },
           "movement": "Bike both ways to the pool is fine — recovery week, low-impact swim, no reason to avoid the commute.",
           "food": "Normal balanced day.",
-          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact — the legs are still settling after Saturday's long run pushed TSB to a -28 trough (now back to -18.3), so a no-impact day like this is well timed before Thursday's strides and Saturday's reduced long run close out the recovery week."
+          "bigPicture": "Recovery week continues, base phase, 74 days out. Pure aerobic cross-training with zero leg impact — the legs are still settling after Saturday's long run pushed TSB to a -27.03 trough (now back to -16.02), so a no-impact day like this is well timed before Thursday's strides and Saturday's reduced long run close out the recovery week."
         },
         {
           "date": "2026-07-30",
@@ -247,7 +247,7 @@
           },
           "movement": "Bike both ways should be fine — recovery week, legs light after yesterday's genuinely-easy recovery run, TSB continuing to climb back toward neutral.",
           "food": "Normal balanced meals, maybe a small carb boost before the strides portion for sharpness.",
-          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week. TSB has recovered to -13.6 from the -28 trough after Jul 25's overrun — still keep this one to the prescribed 30 minutes, that's what recovery weeks are for.",
+          "bigPicture": "Recovery week's first taste of faster running (4x80m strides) after several very easy days, base phase, 73 days out. This primes neuromuscular sharpness without adding real fatigue, ahead of Saturday's reduced long run that closes out the recovery week. TSB has recovered to -16.02 from the -27.03 trough after Jul 25's overrun — still keep this one to the prescribed 30 minutes, that's what recovery weeks are for.",
           "estKm": 5.1
         },
         {
@@ -261,7 +261,7 @@
           },
           "movement": "No commute today, it's the weekend — and no session either. Friday's long run already covered it; today is full rest.",
           "food": "Normal balanced meals — full rest day, nothing special to fuel for.",
-          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. You pulled this reduced long run forward to Friday instead of waiting for today — HRV is 18% below baseline (64 vs 77) and TSB sits at -17.5, so today becomes genuine full rest rather than a second dose of running. That fatigue gets a full day to settle before Sunday's new easy-run addition and Monday's build-phase kickoff.",
+          "bigPicture": "Closing day of the recovery week, base phase, 71 days out. You pulled this reduced long run forward to Friday instead of waiting for today — HRV is 18% below baseline (64 vs 77) and TSB sits at -17.77, so today becomes genuine full rest rather than a second dose of running. That fatigue gets a full day to settle before Sunday's new easy-run addition and Monday's build-phase kickoff.",
           "estKm": 7.65
         }
       ],
@@ -286,7 +286,7 @@
           },
           "movement": "No commute today, it's the weekend — no session happening either, so nothing to plan transport around.",
           "food": "Normal balanced meals — no need to fuel for a session that isn't happening.",
-          "bigPicture": "Skipped by request rather than missed — and the numbers back it up: TSB is -29.4 (deep fatigue after Aug 1's 8.75-hour Greenfield Festival day) and HRV is 24% below baseline (56ms vs 71ms). Good timing to bank the rest; the run itself moves to Friday Aug 14, the next resting day after Aug 9."
+          "bigPicture": "Skipped by request rather than missed. TSB corrects to -8.37 (originally read as -29.4, before Aug 1's 8.75-hour Greenfield Festival day was excluded from training load as non-running activity) — a much lighter reading than first thought, though HRV is still 24% below baseline (56ms vs 71ms). Good timing to bank the rest regardless; the run itself moves to Friday Aug 14, the next resting day after Aug 9."
         },
         {
           "date": "2026-08-03",
@@ -297,9 +297,9 @@
             "detail": "45 min at easy effort (~75-85% LT) — moved from Tuesday to keep a lighter day before Tuesday's long run, ahead of Wednesday night's Flixbus to Oslo",
             "estKm": 7.65
           },
-          "movement": "U-Bahn both ways today — HRV is 24% below baseline (56ms vs 71ms) and resting HR is mildly elevated (49 vs ~45bpm), with TSB still deep at -29.4 after Aug 1's 8.75-hour festival day. Skip the bike commute and let today's skipped Sunday run (moved to Aug 14) actually count as rest.",
+          "movement": "U-Bahn both ways today — HRV is 24% below baseline (56ms vs 71ms) and resting HR is mildly elevated (49 vs ~45bpm), with TSB at -13.91 (a normal build-phase reading now that Aug 1's non-running festival day is correctly excluded). Skip the bike commute and let today's skipped Sunday run (moved to Aug 14) actually count as rest.",
           "food": "Normal balanced meals, phase-appropriate carb share for base/build aerobic work — nothing special needed for a 45-minute easy effort.",
-          "bigPicture": "Build phase, week 5, 69 days out — reshuffled this week for the Oslo trip: this is the session that was originally Tuesday's, moved a day earlier so Tuesday can carry the long run instead. Today's readiness (HRV -24%, TSB -29.4) argues for keeping this genuinely easy rather than testing the top of the effort band, ahead of tomorrow's MP-finish long run.",
+          "bigPicture": "Build phase, week 5, 69 days out — reshuffled this week for the Oslo trip: this is the session that was originally Tuesday's, moved a day earlier so Tuesday can carry the long run instead. Today's readiness (HRV -24%, TSB -13.91) argues for keeping this genuinely easy rather than testing the top of the effort band, ahead of tomorrow's MP-finish long run.",
           "estKm": 7.65
         },
         {
@@ -311,9 +311,9 @@
             "detail": "70 min: first 55 at easy effort (~75-85% LT), last 15 at 4:20/km (~13 km total) — moved up from Saturday since you'll be traveling to Oslo this weekend",
             "estKm": 12.81
           },
-          "movement": "U-Bahn both ways — corrected TSB is -12.7 (a normal build-phase reading, not the deep fatigue Aug 1's festival day had wrongly implied), but last night was only 5.3h of sleep. Save the legs for the MP finish rather than the commute.",
+          "movement": "U-Bahn both ways — corrected TSB is -13.91 (a normal build-phase reading, not the deep fatigue Aug 1's festival day had wrongly implied), but last night was only 5.3h of sleep. Save the legs for the MP finish rather than the commute.",
           "food": "Pre-run carb breakfast as planned. Bring a gel — 70 minutes with a real marathon-pace finish is worth testing race nutrition for.",
-          "bigPicture": "Build phase, week 5, 68 days out. TSB corrects to -12.7 once Aug 1's Greenfield Festival day (a non-running day the hrTSS formula had counted in full) is excluded from training load — a routine mid-build reading. Last night's sleep was short (5.3h), worth watching, but today's marathon-pace finish goes ahead as planned. This lands before Wednesday night's Flixbus to Oslo.",
+          "bigPicture": "Build phase, week 5, 68 days out. TSB corrects to -13.91 once Aug 1's Greenfield Festival day (a non-running day the hrTSS formula had counted in full) is excluded from training load — a routine mid-build reading. Last night's sleep was short (5.3h), worth watching, but today's marathon-pace finish goes ahead as planned. This lands before Wednesday night's Flixbus to Oslo.",
           "estKm": 12.81
         },
         {
@@ -325,9 +325,9 @@
             "detail": "35 min at easy effort (~75-85% LT) — moved from Monday; last easy session before tonight's Flixbus to Oslo. Swim skipped this week.",
             "estKm": 5.95
           },
-          "movement": "U-Bahn both ways — TSB has dipped further to -17.8 after yesterday's long run, and tonight's the overnight Flixbus to Oslo. Protect the legs rather than adding commute load.",
+          "movement": "U-Bahn both ways — TSB has dipped further to -19.28 after yesterday's long run, and tonight's the overnight Flixbus to Oslo. Protect the legs rather than adding commute load.",
           "food": "Normal balanced meals, moderate carb share — pack/organize for tonight's overnight bus.",
-          "bigPicture": "Build phase, week 5, 67 days out — last training session before tonight's Flixbus to Oslo and Thursday's 2pm flight. Yesterday's long run kept its MP finish; HR climbed to 172-174bpm during it, but that's ordinary cardiac drift after ~55 minutes of running plus a first exposure to that specific pace (RPE wasn't maximal), not a pacing red flag. TSB sits at -17.8 (crossing the reduced-intensity threshold), so today's medium-long should stay disciplined easy effort, banking recovery before the travel.",
+          "bigPicture": "Build phase, week 5, 67 days out — last training session before tonight's Flixbus to Oslo and Thursday's 2pm flight. Yesterday's long run kept its MP finish; HR climbed to 172-174bpm during it, but that's ordinary cardiac drift after ~55 minutes of running plus a first exposure to that specific pace (RPE wasn't maximal), not a pacing red flag. TSB sits at -19.28 (crossing the reduced-intensity threshold), so today's medium-long should stay disciplined easy effort, banking recovery before the travel.",
           "estKm": 5.95
         },
         {
@@ -341,7 +341,7 @@
           },
           "movement": "No commute today — you're in Oslo. No cycling needed, just an easy run wherever's convenient.",
           "food": "Normal balanced meals — nothing special, just don't skip meals around a travel/sightseeing day.",
-          "bigPicture": "Build phase, week 5, 64 days out, second of two easy days bracketing your rest days in Oslo (Fri/Thu rest, this and Sunday easy). This week's long run kept its full MP finish (HR touched 172-174bpm in the closing minutes, likely ordinary late-run drift on a first-time pace rather than a concern), and TSB dipped to -17.8 — these vacation days are purely about keeping legs moving and letting that settle, nothing to chase.",
+          "bigPicture": "Build phase, week 5, 64 days out, second of two easy days bracketing your rest days in Oslo (Fri/Thu rest, this and Sunday easy). This week's long run kept its full MP finish (HR touched 172-174bpm in the closing minutes, likely ordinary late-run drift on a first-time pace rather than a concern), and TSB dipped to -25.23 — these vacation days are purely about keeping legs moving and letting that settle, nothing to chase.",
           "estKm": 5.1
         }
       ],
@@ -351,9 +351,9 @@
       "week": 6,
       "phase": "build",
       "label": "Aug 9–15",
-      "bikeNote": "Monday's medium-long run: bike both ways fine. Thursday: U-Bahn both ways — even the shorter 9km round trip is extra load on post-session legs. Friday: bike fine, but don't push.",
-      "swimNote": "Wednesday in the pool: between Tuesday's run and Thursday's intervals. The ideal time for water — recover from Tuesday and prepare legs for Thursday. Doing both work and the pool today is 20km round trip if by bike — if you want fresher legs for tomorrow's intervals, do the whole loop by U-Bahn instead.",
-      "tip": "15 km long run: bring gels or dates. Your gut needs training just as much as your legs — testing race nutrition in training is part of the plan.",
+      "bikeNote": "Monday's tempo: bike both ways fine. Wednesday's long run: no cycling beforehand, save the legs; handle the work commute after by bike or U-Bahn depending on how legs feel.",
+      "swimNote": "Skipped this week — the Wednesday pool slot became the long run instead, to keep the tempo-then-easy-then-long shape intact after Thu-Sun got blocked.",
+      "tip": "17.4 km long run: bring gels or dates. Your gut needs training just as much as your legs — testing race nutrition in training is part of the plan, and this one's bigger than originally planned.",
       "days": [
         {
           "date": "2026-08-09",
@@ -373,15 +373,15 @@
           "date": "2026-08-10",
           "dayLabel": "Mon 10",
           "training": {
-            "type": "medium-long",
-            "title": "Medium-long run",
-            "detail": "40 min at easy effort (~75-85% LT)",
-            "estKm": 6.8
+            "type": "tempo",
+            "title": "1.5km repeats (moved up from Thu)",
+            "detail": "55 min: 10' wu + 4×1.5km at 4:20/km + 2' walking rec + cd",
+            "estKm": 9.4
           },
-          "movement": "Bike both ways should be fine if legs feel normal after yesterday's easy Sunday run and the trip home; U-Bahn both ways if there's still meaningful fatigue from Tuesday's hot MP finish.",
-          "food": "Normal balanced meals, moderate carb share — aerobic-volume day, not a quality session.",
-          "bigPicture": "Second aerobic day, build phase, week 6, 62 days out — back from Oslo and building toward Thursday's tempo session and Saturday's 90-minute long run, the biggest single long run of the block so far. By now the TSB dip from Tuesday's MP-finish long run should have settled, with three easier days behind it.",
-          "estKm": 6.8
+          "movement": "Bike both ways fine — legs should be fresh off yesterday's easy Sunday run.",
+          "food": "High carb the night before and this morning (pasta, rice, oats) — this week's main quality session, moved up from Thursday.",
+          "bigPicture": "Build phase, week 6. Session order rebuilt this week: Thursday is a full work day with no room for a quality/long mental load, Friday only has a short morning window, and Saturday/Sunday are fully protected rest — so this week's only quality session moves here to Monday, with Wednesday's long run absorbing the volume that would otherwise be lost. Same tempo-then-easy-then-long shape as the plan's original Thu→Fri→Sat sequence, just compressed into Mon→Tue→Wed.",
+          "estKm": 9.4
         },
         {
           "date": "2026-08-11",
@@ -392,68 +392,55 @@
             "detail": "50 min",
             "estKm": 8.5
           },
-          "movement": "Bike both ways fine — TSB is -11.22, not deep enough into the red to force transit, and today's an easy 50min.",
+          "movement": "Bike both ways fine — TSB is around -9.9 (as of Aug 10, continuing to trend toward neutral), not deep enough into the red to force transit, and today's an easy 50min.",
           "food": "Normal balanced meals, phase-appropriate carb share.",
-          "bigPicture": "Build phase, week 6, 60 days out. Legs are carrying some load from last week's extra bonus volume, but HRV (82ms, +12% above baseline) and resting HR (42bpm) both look solid — this easy day is about genuinely absorbing that, ahead of Wednesday's swim and Thursday's tempo.",
+          "bigPicture": "Build phase, week 6, 60 days out. Legs are carrying some load from last week's extra bonus volume, but HRV (82ms, +12% above baseline) and resting HR (42bpm) both look solid — this easy day is about genuinely absorbing that, sitting between yesterday's moved-up tempo and Wednesday's bigger long run (the buffering role Wednesday's swim used to play, now ahead of a long run instead of a swim).",
           "estKm": 8.5
         },
         {
           "date": "2026-08-12",
           "dayLabel": "Wed 12",
           "training": {
-            "type": "swim",
-            "title": "Open swim",
-            "detail": "35 min, aerobic crawl. You can add 4×50m slightly faster at the end if you feel good.",
-            "estKm": null
+            "type": "long",
+            "title": "Long run (moved up from Sat)",
+            "detail": "~103 min (~17.4 km), easy effort (~75-85% LT)",
+            "estKm": 17.44
           },
-          "movement": "Bike both ways to the pool is fine.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "Build phase, week 6. Low-impact technique day between Tuesday's easy run and Thursday's quality tempo — no leg load added."
+          "movement": "No cycling before the long run — save the legs for the ~103 minutes ahead; handle the work commute after by bike or U-Bahn depending on how legs feel.",
+          "food": "High carb the day before and morning of (pasta, rice, polenta). Protein + carbs within 30 minutes of finishing.",
+          "bigPicture": "Build phase, week 6's real closing session, moved up from Saturday because Sat/Sun are now fully protected rest. Grown from the original 90-minute prescription to ~103 minutes (~17.4km) to absorb the volume that this week's reshuffle (skipped swim, easy-only Thu/Fri) would otherwise have cost — the athlete's explicit call, choosing a bigger single long run over a lighter week. Now the biggest long run of the block so far by a clear margin.",
+          "estKm": 17.44
         },
         {
           "date": "2026-08-13",
           "dayLabel": "Thu 13",
           "training": {
-            "type": "tempo",
-            "title": "1.5km repeats",
-            "detail": "55 min: 10' wu + 4×1.5km at 4:20/km + 2' walking rec + cd",
-            "estKm": 9.4
+            "type": "easy",
+            "title": "Easy run (moved from tempo slot)",
+            "detail": "~41 min easy effort (~65-75% LT) — pure absorption the day after Wednesday's bigger long run",
+            "estKm": 7
           },
-          "movement": "Bike both ways — legs should be fresh off Tuesday's easy day and Wednesday's swim.",
-          "food": "High carb the night before and morning of (pasta, rice, oats) — this week's main quality session (4x1.5km at 4:20/km).",
-          "bigPicture": "Build phase, week 6. This week's only quality day, prepping the legs for Saturday's 90-minute long run to close the week.",
-          "estKm": 9.4
+          "movement": "Bike both ways fine — a full work day, so keep it simple; nothing about this run needs fresh legs afterward.",
+          "food": "Normal balanced meals — recovery-effort volume, not a fueling day.",
+          "bigPicture": "Build phase, week 6. Pure absorption day after Wednesday's bigger long run, deliberately unstructured given a full work day — no tempo, no long run, just easy volume, the athlete's explicit ask for this day given the mental load of work.",
+          "estKm": 7
         },
         {
           "date": "2026-08-14",
           "dayLabel": "Fri 14",
           "training": {
             "type": "easy",
-            "title": "Easy run (moved from Aug 2)",
-            "detail": "25 min easy effort (~65-75% LT) — the Aug 2 Sunday easy run, skipped and moved here: the next resting day after Aug 9, at the athlete's request",
-            "estKm": 4.25
+            "title": "Easy run",
+            "detail": "~50 min easy effort (~75-85% LT)",
+            "estKm": 7
           },
-          "movement": "Bike both ways fine.",
-          "food": "Normal balanced meals, nothing special — this is an absorption day.",
-          "bigPicture": "Build phase, week 6. Easy recovery effort (moved from Aug 2) between Thursday's tempo and Saturday's long run — just keeping the legs moving.",
-          "estKm": 4.25
-        },
-        {
-          "date": "2026-08-15",
-          "dayLabel": "Sat 15",
-          "training": {
-            "type": "long",
-            "title": "Long run",
-            "detail": "90 min (~15 km), easy effort (~75-85% LT)",
-            "estKm": 15.29
-          },
-          "movement": "No work commute today — it's the weekend. No cycling before the long run; save the legs for the 90 minutes ahead.",
-          "food": "High carb the day before and morning of (pasta, rice, polenta). Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Build phase, week 6's closing session. This week's total volume (~49km) is well above the plan's original prescription, driven by the extra easy runs the athlete added on Aug 6-7 -- CTL is climbing at a safe ~2.7 pts/week despite that, so this long run caps a genuinely productive week rather than an overreach.",
-          "estKm": 15.29
+          "movement": "Only a morning window today (9am–13) — bike both ways is fine within that window.",
+          "food": "Normal balanced meals, phase-appropriate carb share.",
+          "bigPicture": "Build phase, week 6. One more easy day before Saturday and Sunday are fully protected as rest — stepped up from Thursday's pure-recovery effort to normal easy-aerobic effort. Also closes out the volume gap from this week's reshuffle, landing the Mon–Sun window right at the ~49km target the athlete set for this compressed week.",
+          "estKm": 7
         }
       ],
-      "estKm": 49.34
+      "estKm": 54.44
     },
     {
       "week": 7,
@@ -463,19 +450,6 @@
       "swimNote": "Wednesday: legs recovering from Tuesday's new LT intervals, preparing for Thursday. Swimming is the perfect tool — no impact, heart working. With 20km on the bike (work + pool), this is your aerobically heaviest day of the week — manage it consciously.",
       "tip": "The progression teaches your body to accelerate when already tired — exactly what happens at km 30 of a marathon. New this week: Tuesday becomes a second quality day (LT cruise intervals) — the first time this plan runs two hard-ish sessions in one week, on top of Monday's new medium-long run.",
       "days": [
-        {
-          "date": "2026-08-16",
-          "dayLabel": "Sun 16",
-          "training": {
-            "type": "easy",
-            "title": "Sunday easy run",
-            "detail": "PROVISIONAL -- distance/duration to be finalized by the volume-escalation rule (see update-coach.md Step 4f) based on real CTL/TSB/HRV response as this week approaches. Effort will stay easy, ~65-75% LT.",
-            "estKm": null
-          },
-          "movement": "No commute today, it's the weekend — easy legs-loosener before the week restarts.",
-          "food": "Normal balanced meals, moderate carb refill after yesterday's long run.",
-          "bigPicture": "Opens week 7 (build). Sunday's distance is still PROVISIONAL -- the volume-escalation rule (Step 4f) only finalizes it once week 7 actually starts, so it'll be set on the next update-coach run based on CTL/TSB/HRV at that point, informed by this week's healthy ramp rate and the athlete's own push to keep growing volume."
-        },
         {
           "date": "2026-08-17",
           "dayLabel": "Mon 17",
