@@ -168,6 +168,18 @@
     "distance_km": 12.21
   },
   {
+    "date": "2026-08-05",
+    "band1_min": 19,
+    "band2_min": 18,
+    "band3_min": 1,
+    "band4_min": 0,
+    "band5_min": 0,
+    "avg_pct_lt": 77,
+    "avg_band": 1,
+    "avg_pace_min_km": 6.26,
+    "distance_km": 6.07
+  },
+  {
     "date": "2026-08-07",
     "band1_min": 3,
     "band2_min": 21,
