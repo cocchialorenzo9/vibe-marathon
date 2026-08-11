@@ -25,7 +25,13 @@ SPORT_TYPES = {
     3: "outdoor_cycling",
     6: "outdoor_cycling",
     7: "indoor_cycling",
-    8: "walking",
+    8: "treadmill",         # confirmed 2026-08-11: athlete selected "Treadmill" on a
+                            # Trex 3 for the Aug 10 4x6'30" interval session, which
+                            # exported as type 8, not type 2 — code 2 appears to be
+                            # a different/generic treadmill mode this watch doesn't use
+                            # when the on-watch "Treadmill" exercise is picked directly.
+                            # Previously mislabeled "walking" from generic Amazfit docs,
+                            # never itself confirmed against a real Trex 3 session.
     9: "outdoor_cycling",   # confirmed: Trex 3 cycling at ~18 km/h
     13: "outdoor_walking",
     14: "swimming",         # confirmed: Trex 3 pool swim (distance is stroke-derived,
@@ -36,9 +42,9 @@ SPORT_TYPES = {
     26: "hiking",
 }
 
-_RUNNING_TYPES = {1, 2}
+_RUNNING_TYPES = {1, 2, 8}
 _CYCLING_TYPES = {3, 6, 7, 9}
-_WALKING_TYPES = {8, 13, 15}
+_WALKING_TYPES = {13, 15}
 _SWIMMING_TYPES = {14, 20}
 
 # Only these count toward training load (tss/distance rolled into history.json)

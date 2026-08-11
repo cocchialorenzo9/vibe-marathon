@@ -16,9 +16,9 @@
       "hours": 6.5,
       "score": 65
     },
-    "tsb": -6.36,
-    "ctl": 24.08,
-    "atl": 30.44,
+    "tsb": -12.1,
+    "ctl": 25.51,
+    "atl": 37.61,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -103,9 +103,9 @@
   "recommendation": {
     "type": "long",
     "title": "Long run stays, but dial the effort down",
-    "reasoning": "HRV is 18% below baseline (67ms vs 80ms) and sleep score is 65 on only 6.5h -- both point toward reduced intensity, not a plain rest day. TSB is a mild -6.4 and CTL has only climbed ~1 point/week over the trailing week, well under the 3-5 ceiling, so there's no fatigue debt forcing a swap to easy. Keep tomorrow's ~103-minute long run as scheduled, but run the bottom half of the easy band rather than the top.",
-    "sessionDetail": "~103 min (~17.4km) continuous. Target 125-132bpm -- the bottom of the 125-142bpm easy/aerobic band -- rather than drifting toward 142. If HR won't settle under ~135 by 15-20 minutes in, that's a cue to cut the run to ~75-80 minutes instead of forcing the full distance.",
-    "bikeNote": "No cycling before the run -- save the legs. For the work commute afterward, take U-Bahn both ways rather than biking; HRV is down and legs will have just done 17km, so bank the recovery instead of spending more of it.",
+    "reasoning": "HRV is 18% below baseline (67ms vs 80ms) and sleep score is 65 on only 6.5h -- both point toward reduced intensity, not a plain rest day. TSB is now -12.1 (recomputed after correcting Monday's treadmill session, which a watch sport-type mapping bug had hidden from training load -- see recentActivity) -- getting close to the -15 caution line, though not there yet. CTL has climbed ~2.4 points/week over the trailing week, still under the 3-5 ceiling but hotter than it looked before the correction. All three signals point the same way: run this conservatively.",
+    "sessionDetail": "~103 min (~17.4km) continuous, but default to the shorter end -- aim for ~85-90 minutes at 125-132bpm (bottom of the 125-142bpm easy/aerobic band) unless it feels clearly better than expected. If HR won't settle under ~135 within the first 15-20 minutes, that's confirmation to keep it short rather than push to the full distance.",
+    "bikeNote": "No cycling before the run -- save the legs. For the work commute afterward, take U-Bahn both ways rather than biking; TSB is closer to the caution line than it looked, so bank the recovery instead of spending more of it.",
     "swimNote": ""
   },
   "phase": "build",
@@ -115,7 +115,7 @@
     "sessions": [
       {
         "date": "2026-08-10",
-        "type": "walking",
+        "type": "treadmill",
         "distance_km": 8.3,
         "duration_min": 44.1,
         "avg_hr": 157,
@@ -139,7 +139,7 @@
         ],
         "avg_pace_min_km": 5.31,
         "tss": 65.0,
-        "lesson": "Recorded by the watch as 'walking' (type 8), not a formal run -- but the HR curve shows four clear surges from a ~130bpm baseline up to 165-182bpm, matching Monday's scheduled 4x1.5km tempo reps almost exactly. The effort was real and hard; because it wasn't started as a run, it doesn't count toward TSS/CTL, so today's fitness numbers are missing this session entirely."
+        "lesson": "Confirmed by the athlete: 10' warmup, then 4x6'30\" at 15km/h (~4:00/km) with 2' walking recovery at 4km/h, last rep's final minute skipped. This watch's 'Treadmill' mode exports as sport-type code 8, which was mismapped to generic 'walking' and excluded from training load -- now fixed, and this session's real ~65 TSS is properly counted. Reps were run faster than the prescribed 4:20/km LT-cruise pace, pushing HR to 165-182bpm -- well above the 159-167bpm LT-cruise target and into VO2max territory -- so this landed as a harder session than scheduled, not just a differently-labeled one."
       },
       {
         "date": "2026-08-08",
@@ -227,6 +227,6 @@
         "lesson": "Matched the prescription well -- 38 minutes at avg 129bpm, comfortably inside the easy/aerobic band, clean execution ahead of the Oslo trip."
       }
     ],
-    "analysis": "Real, TSS-counted running volume this week is lighter than the raw session list suggests: Monday's tempo session (4x1.5km reps) was auto-classified as 'walking' by the watch and is invisible to CTL/ATL despite a genuine ~65-TSS effort -- local history shows that day as a near-rest day (0.73km/2.9 TSS). Separately, most of the week's real sessions (Aug 7, Aug 8, and the walking-flagged Monday session) finished with HR climbing well above their prescribed band in the final minutes, while only Aug 5's medium-long stayed clean throughout -- a recurring late-session drift worth watching headed into tomorrow's long run."
+    "analysis": "A device sport-type mapping bug (Trex 3 'Treadmill' exporting as generic 'walking') was hiding Monday's real ~65-TSS treadmill session from training load -- now fixed, so this week's actual volume/TSS is heavier than previously reported: TSB moved from -6.4 to -12.1, and CTL has been climbing ~2.4pts/week into this week, still under the 3-5 ceiling but hotter than it looked. Separately, most of the week's sessions (Aug 7, Aug 8, and Monday's treadmill reps, which ran faster than prescribed) finished at or above their prescribed effort, while only Aug 5's medium-long stayed clean throughout -- a recurring pattern of running hotter than scheduled that's worth watching headed into tomorrow's long run."
   }
 }

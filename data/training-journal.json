@@ -7302,7 +7302,7 @@
   },
   {
     "date": "2026-08-10",
-    "type": "tempo intervals (watch auto-classified as walking, not started as a formal run)",
+    "type": "treadmill",
     "scheduled": "tempo",
     "distance_km": 8.3,
     "duration_min": 44.1,
@@ -7488,8 +7488,8 @@
     ],
     "tss": 65.0,
     "avg_pace_min_km": 5.31,
-    "wentWell": "The HR curve shows exactly the prescribed structure \u2014 four clear surges from a ~130bpm baseline up to 165-182bpm (minutes ~11-16, 19-25, 28-33, 36-40), each followed by a recovery dip, matching the scheduled 4\u00d71.5km reps with walking recovery almost rep-for-rep. The effort itself was real and hard, well above the 159-167bpm LT-cruise band into VO2max territory on the last couple of reps.",
-    "wentWrong": "The watch was never started in Running mode, so it auto-classified the whole session as 'walking' (type 8). Per the current TSS rule, only formally-started running/cycling/swim sessions count toward training load, so this session is invisible to CTL/ATL \u2014 local history shows Aug 10 as a near-rest day (0.73km/2.9 TSS) even though a genuine ~65-TSS tempo session happened.",
-    "nextTime": "Explicitly tap 'Start' \u2192 Running on the watch before interval/tempo sessions, especially ones with stop-start recovery segments \u2014 those seem to be exactly what the auto-detect misreads as walking. If it happens again, flag it so the day's real load can be accounted for instead of silently lost."
+    "wentWell": "Executed as a genuine structured session -- 10' warmup, then four surges from a ~130bpm baseline to 165-182bpm (minutes ~11-16, 19-25, 28-33, 36-40) matching the athlete's reported structure (4x6'30\" at 15km/h with 2' walking recovery at 4km/h) almost exactly, including the last rep's final minute being cut short.",
+    "wentWrong": "Reps were run at 15km/h (~4:00/km) rather than the prescribed 4:20/km LT-cruise pace, pushing HR to 165-182bpm -- above the 159-167bpm LT-cruise target and into VO2max territory for parts of it. This landed as a genuinely harder session than the plan called for, not just a differently-labeled equal effort. Separately, the watch's Treadmill exercise mode was exporting under a sport-type code (8) this pipeline had mismapped to generic 'walking', so the session was excluded from TSS/CTL until the athlete flagged it and the mapping was corrected.",
+    "nextTime": "For LT-cruise reps, dial pace back toward ~4:20/km (~14.2km/h) rather than 15km/h to keep the session at threshold effort rather than VO2max effort -- save the faster paces for dedicated VO2max work if that gets added to the plan later."
   }
 ]
