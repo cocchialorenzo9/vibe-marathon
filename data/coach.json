@@ -33,7 +33,8 @@
       "easyAerobic_bpm": [
         125,
         142
-      ]
+      ],
+      "pace_min_km": 4.95
     },
     "vo2max": {
       "value": 58,
@@ -139,7 +140,7 @@
         ],
         "avg_pace_min_km": 5.31,
         "tss": 65.0,
-        "lesson": "Confirmed by the athlete: 10' warmup, then 4x6'30\" at 15km/h (~4:00/km) with 2' walking recovery at 4km/h, last rep's final minute skipped. This watch's 'Treadmill' mode exports as sport-type code 8, which was mismapped to generic 'walking' and excluded from training load -- now fixed, and this session's real ~65 TSS is properly counted. Reps were run faster than the prescribed 4:20/km LT-cruise pace, pushing HR to 165-182bpm -- well above the 159-167bpm LT-cruise target and into VO2max territory -- so this landed as a harder session than scheduled, not just a differently-labeled one."
+        "lesson": "Confirmed by the athlete: 10' warmup, then 4x6'30\" at 15km/h (~4:00/km) with 2' walking recovery at 4km/h, last rep's final minute skipped -- a deliberate hard push aimed at training lactate clearance, not sloppy pacing. This watch's 'Treadmill' mode exports as sport-type code 8, which was mismapped to generic 'walking' and excluded from training load -- now fixed, and this session's real ~65 TSS is properly counted. The pace (15km/h) is well above the athlete's own watch-reported 4'57\"/km LT pace, and HR (165-182bpm) sits 15-18bpm above their 167bpm LT ceiling -- this landed as a VO2max/anaerobic session rather than the sustained-threshold stimulus that actually shifts LT pace over time. Both have training value; they're just different tools."
       },
       {
         "date": "2026-08-08",

@@ -97,6 +97,19 @@ percentages.
 
 Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
 
+**LT pace: 4'57"/km, device-reported (added 2026-08-11)** — the watch's own
+pace-based LT estimate, alongside the 167bpm HR-based one above; logged as
+reference only, doesn't change any prescription. Same watch-computed-metric
+caveat applies. Notably slower than the sub-3h goal pace (~4:15-4:20/km) —
+i.e. goal race pace currently sits *above* LT for this athlete, which is
+expected this early in the block; closing that gap is the point of the
+remaining training, and worth tracking as LT re-estimates come in (Aug 4
+field test, and the week 10-11 re-test already flagged above). If this pace
+figure is ever promoted to drive actual session prescriptions (rather than
+reference only), revisit `training-plan.json`'s "4:20/km"-style tempo/MP
+reps first — those are calibrated to goal race pace, not to this LT pace,
+and the two are currently different speeds.
+
 **HR bands (analysis-only, separate from the prescription bands above)**:
 `scripts/build_zone_history.py` classifies actual recorded HR data into 5
 fixed bpm bands — <130, 130-140, 140-155, 155-167, 167+ — for
@@ -572,7 +585,8 @@ sessions are never included in it.
       "range_bpm": [<int>, <int>],
       "status": "<provisional|device-reported, matching the reference above>",
       "recovery_bpm": [<int>, <int>],
-      "easyAerobic_bpm": [<int>, <int>]
+      "easyAerobic_bpm": [<int>, <int>],
+      "pace_min_km": <float or null, the device-reported LT pace from the reference above, reference only>
     },
     "vo2max": {
       "value": <float or null>,
