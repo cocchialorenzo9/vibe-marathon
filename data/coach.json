@@ -55,7 +55,7 @@
   "volumeCheck": {
     "realZone2Pace_min_km": 5.89,
     "asOf": "2026-08-10",
-    "thisWeekEstKm": 49.34,
+    "thisWeekEstKm": 54.44,
     "peakWeekEstKm": {
       "week11": 61.67
     },
@@ -67,20 +67,20 @@
         "status": "finalized"
       },
       "week6": {
-        "estKm": 49.34,
+        "estKm": 54.44,
         "status": "finalized"
       },
       "week7": {
-        "estKm": 50.83,
-        "status": "provisional"
+        "estKm": 44.88,
+        "status": "finalized"
       },
       "week8": {
         "estKm": 29.74,
         "status": "finalized"
       },
       "week9": {
-        "estKm": 53.94,
-        "status": "provisional"
+        "estKm": 54.89,
+        "status": "finalized"
       },
       "week10": {
         "estKm": 63.5,

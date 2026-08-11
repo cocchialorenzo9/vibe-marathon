@@ -616,12 +616,13 @@
           "training": {
             "type": "easy",
             "title": "Sunday easy run",
-            "detail": "PROVISIONAL — distance/duration to be finalized by the volume-escalation rule (see update-coach.md Step 4f) based on real CTL/TSB/HRV response as this week approaches. Effort will stay easy, ~65-75% LT.",
-            "estKm": null
+            "detail": "~41 min (~6.9 km), easy effort (~65-75% LT)",
+            "estKm": 6.9
           },
-          "movement": "No commute today, it's the weekend — exact plan for this day is still pending (see training note); no cycling before it regardless.",
+          "movement": "No commute today, it's the weekend — easy legs-loosener.",
           "food": "Normal balanced meals.",
-          "bigPicture": "This week's Sunday easy run is governed by the volume-escalation rule rather than a fixed number decided in advance — its exact length will be set based on how CTL/TSB/HRV actually respond to the added volume in the preceding weeks, not guessed today."
+          "bigPicture": "Finalized by the volume-escalation rule's first live run (2026-08-10): trailing CTL delta is ~2.99 pts/week, right at the floor of the 3-5 ceiling (HRV is in-band but TSB has only been ≥-15 for 2 days after 5 days deep red, so no loosened ceiling yet) — leaving ~2.0 pts/week of headroom, ~14 TSS, split 80/20. The ~1.8km easy share lands on top of the established ~5.1km Sunday-run base; the ~0.4km quality share was too thin to meaningfully extend Tuesday's or Thursday's session this cycle, so both stay unchanged for now.",
+          "estKm": 6.9
         },
         {
           "date": "2026-08-31",
@@ -693,7 +694,7 @@
           "estKm": 20.52
         }
       ],
-      "estKm": 47.99
+      "estKm": 54.89
     },
     {
       "week": 10,

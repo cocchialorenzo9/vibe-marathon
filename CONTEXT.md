@@ -76,6 +76,16 @@ _Avoid_: zone (reserved for the retired Seiler model), training zone
 The HR band containing a single run's *average* HR (not the band with the most minutes — a run can average into a band none of its individual samples were actually in). Used to categorize a whole run by one band for pace comparison, since there's no per-sample GPS distance to split pace by band *within* one run.
 _Avoid_: dominant band, primary zone, main band
 
+## Week boundary (started 2026-08-10)
+
+**Plan week**:
+The Sunday-Saturday week grouping used structurally throughout `training-plan.json` and the `update-coach` automation — load-bearing, not arbitrary: recovery weeks (4, 8, 12) begin with a reduced Sunday easy run right after the prior week's Saturday long run, and end with a reduced Saturday long run before the next Sunday resumes normal build. The volume-escalation rule's target-week search (Step 4f) and the CTL ramp-rate governance's week-over-week check both operate on this boundary.
+_Avoid_: just "week" when Mon-Sun could also be meant, training week
+
+**Athlete week**:
+The athlete's own Monday-Sunday mental model of a week — used only when conversationally discussing or reporting "this week's volume" with the athlete. Never used to restructure `training-plan.json`'s day-to-week grouping or the automation that depends on plan weeks; a display/communication convention only.
+_Avoid_: just "week" when plan week could also be meant
+
 **Zone history**:
 The day-by-day record of time spent in each HR band (plus average %LT and pace), built from running sessions' `hr_curve` only (other activity types, e.g. swimming, don't carry a curve). One entry per day; days with no qualifying running session are simply absent, not zero. Kept the `zone-history.json`/`build_zone_history.py` file names for continuity even after the underlying model moved from Seiler zones to HR bands.
 _Avoid_: zone chart, HR history
