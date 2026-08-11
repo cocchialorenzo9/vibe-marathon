@@ -7299,5 +7299,197 @@
     "wentWell": "7.46km logged on the scheduled Sunday easy day \u2014 volume roughly in line with the prescription.",
     "wentWrong": "No formal session was started (auto-detected from steps only), so there's no HR data to confirm this was run at genuinely easy effort \u2014 can't rule out it also finished hard, following the Aug 7-8 pattern.",
     "nextTime": "Same fix as Aug 6 \u2014 start the watch's run tracking even on easy days so there's a real HR curve to check against the band."
+  },
+  {
+    "date": "2026-08-10",
+    "type": "tempo intervals (watch auto-classified as walking, not started as a formal run)",
+    "scheduled": "tempo",
+    "distance_km": 8.3,
+    "duration_min": 44.1,
+    "avg_hr": 157,
+    "max_hr": 182,
+    "hr_curve": [
+      {
+        "t_min": 1,
+        "hr": 126
+      },
+      {
+        "t_min": 2,
+        "hr": 132
+      },
+      {
+        "t_min": 3,
+        "hr": 134
+      },
+      {
+        "t_min": 4,
+        "hr": 134
+      },
+      {
+        "t_min": 5,
+        "hr": 133
+      },
+      {
+        "t_min": 6,
+        "hr": 130
+      },
+      {
+        "t_min": 7,
+        "hr": 131
+      },
+      {
+        "t_min": 8,
+        "hr": 130
+      },
+      {
+        "t_min": 9,
+        "hr": 130
+      },
+      {
+        "t_min": 10,
+        "hr": 142
+      },
+      {
+        "t_min": 11,
+        "hr": 158
+      },
+      {
+        "t_min": 12,
+        "hr": 165
+      },
+      {
+        "t_min": 13,
+        "hr": 169
+      },
+      {
+        "t_min": 14,
+        "hr": 170
+      },
+      {
+        "t_min": 15,
+        "hr": 171
+      },
+      {
+        "t_min": 16,
+        "hr": 171
+      },
+      {
+        "t_min": 17,
+        "hr": 153
+      },
+      {
+        "t_min": 18,
+        "hr": 135
+      },
+      {
+        "t_min": 19,
+        "hr": 152
+      },
+      {
+        "t_min": 20,
+        "hr": 165
+      },
+      {
+        "t_min": 21,
+        "hr": 172
+      },
+      {
+        "t_min": 22,
+        "hr": 174
+      },
+      {
+        "t_min": 23,
+        "hr": 176
+      },
+      {
+        "t_min": 24,
+        "hr": 178
+      },
+      {
+        "t_min": 25,
+        "hr": 171
+      },
+      {
+        "t_min": 26,
+        "hr": 151
+      },
+      {
+        "t_min": 27,
+        "hr": 147
+      },
+      {
+        "t_min": 28,
+        "hr": 164
+      },
+      {
+        "t_min": 29,
+        "hr": 172
+      },
+      {
+        "t_min": 30,
+        "hr": 176
+      },
+      {
+        "t_min": 31,
+        "hr": 178
+      },
+      {
+        "t_min": 32,
+        "hr": 179
+      },
+      {
+        "t_min": 33,
+        "hr": 179
+      },
+      {
+        "t_min": 34,
+        "hr": 163
+      },
+      {
+        "t_min": 35,
+        "hr": 147
+      },
+      {
+        "t_min": 36,
+        "hr": 163
+      },
+      {
+        "t_min": 37,
+        "hr": 174
+      },
+      {
+        "t_min": 38,
+        "hr": 179
+      },
+      {
+        "t_min": 39,
+        "hr": 181
+      },
+      {
+        "t_min": 40,
+        "hr": 182
+      },
+      {
+        "t_min": 41,
+        "hr": 171
+      },
+      {
+        "t_min": 42,
+        "hr": 147
+      },
+      {
+        "t_min": 43,
+        "hr": 134
+      },
+      {
+        "t_min": 44,
+        "hr": 128
+      }
+    ],
+    "tss": 65.0,
+    "avg_pace_min_km": 5.31,
+    "wentWell": "The HR curve shows exactly the prescribed structure \u2014 four clear surges from a ~130bpm baseline up to 165-182bpm (minutes ~11-16, 19-25, 28-33, 36-40), each followed by a recovery dip, matching the scheduled 4\u00d71.5km reps with walking recovery almost rep-for-rep. The effort itself was real and hard, well above the 159-167bpm LT-cruise band into VO2max territory on the last couple of reps.",
+    "wentWrong": "The watch was never started in Running mode, so it auto-classified the whole session as 'walking' (type 8). Per the current TSS rule, only formally-started running/cycling/swim sessions count toward training load, so this session is invisible to CTL/ATL \u2014 local history shows Aug 10 as a near-rest day (0.73km/2.9 TSS) even though a genuine ~65-TSS tempo session happened.",
+    "nextTime": "Explicitly tap 'Start' \u2192 Running on the watch before interval/tempo sessions, especially ones with stop-start recovery segments \u2014 those seem to be exactly what the auto-detect misreads as walking. If it happens again, flag it so the day's real load can be accounted for instead of silently lost."
   }
 ]

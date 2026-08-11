@@ -406,9 +406,9 @@
             "detail": "~103 min (~17.4 km), easy effort (~75-85% LT)",
             "estKm": 17.44
           },
-          "movement": "No cycling before the long run — save the legs for the ~103 minutes ahead; handle the work commute after by bike or U-Bahn depending on how legs feel.",
-          "food": "High carb the day before and morning of (pasta, rice, polenta). Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Build phase, week 6's real closing session, moved up from Saturday because Sat/Sun are now fully protected rest. Grown from the original 90-minute prescription to ~103 minutes (~17.4km) to absorb the volume that this week's reshuffle (skipped swim, easy-only Thu/Fri) would otherwise have cost — the athlete's explicit call, choosing a bigger single long run over a lighter week. Now the biggest long run of the block so far by a clear margin.",
+          "movement": "No cycling before the long run — save the legs for the ~103 minutes ahead. HRV is ~18% below baseline tonight and sleep score is 65, so lean toward U-Bahn both ways for the work commute afterward rather than biking, to bank recovery instead of spending more of it.",
+          "food": "High carb the day before and morning of (pasta, rice, polenta) — short sleep (6.5h) makes fueling more important, not less. Protein + carbs within 30 minutes of finishing.",
+          "bigPicture": "Build phase, week 6's real closing session, moved up from Saturday because Sat/Sun are now fully protected rest. Grown to ~103 minutes (~17.4km) to absorb the volume this week's reshuffle would otherwise have cost. Tonight's readiness is mixed — HRV down ~18%, TSB at -6.4 — so the target is finishing this at the easy/aerobic effort as prescribed, not pushing the pace; a clean execution here still banks the week's biggest volume day even at controlled effort.",
           "estKm": 17.44
         },
         {
@@ -422,7 +422,7 @@
           },
           "movement": "Bike both ways fine — a full work day, so keep it simple; nothing about this run needs fresh legs afterward.",
           "food": "Normal balanced meals — recovery-effort volume, not a fueling day.",
-          "bigPicture": "Build phase, week 6. Pure absorption day after Wednesday's bigger long run, deliberately unstructured given a full work day — no tempo, no long run, just easy volume, the athlete's explicit ask for this day given the mental load of work.",
+          "bigPicture": "Build phase, week 6. Pure absorption day after Wednesday's bigger long run — deliberately unstructured given a full work day and this week's softer readiness (HRV running below baseline). No tempo, no long run, just easy volume to let the legs and nervous system catch up.",
           "estKm": 7
         },
         {
@@ -436,7 +436,7 @@
           },
           "movement": "Only a morning window today (9am–13) — bike both ways is fine within that window.",
           "food": "Normal balanced meals, phase-appropriate carb share.",
-          "bigPicture": "Build phase, week 6. One more easy day before Saturday and Sunday are fully protected as rest — stepped up from Thursday's pure-recovery effort to normal easy-aerobic effort. Also closes out the volume gap from this week's reshuffle, landing the Mon–Sun window right at the ~49km target the athlete set for this compressed week.",
+          "bigPicture": "Build phase, week 6. One more easy day before Saturday and Sunday are fully protected as rest — stepped up from Thursday's pure-recovery effort to normal easy-aerobic effort, readiness allowing. Closes out the volume gap from this week's reshuffle, landing the Mon–Sun window right at the ~49km target the athlete set for this compressed week.",
           "estKm": 7
         }
       ],
@@ -461,7 +461,7 @@
           },
           "movement": "Bike both ways fine.",
           "food": "Normal balanced meals, phase-appropriate carb share.",
-          "bigPicture": "Build phase, week 7. Medium-long day ahead of Tuesday's first LT-cruise interval session, the plan's newest stimulus.",
+          "bigPicture": "Build phase, week 7 — the week that adds the plan's second committed quality day. Medium-long day ahead of Tuesday's first LT-cruise interval session, easing into a busier week after week 6's big Wednesday long run and the weekend's full rest.",
           "estKm": 7.65
         },
         {
@@ -473,9 +473,9 @@
             "detail": "50 min: 10' wu + 4×5' at threshold pace (~95-100% LT) + 1' float recovery + 10' cd — first dedicated LT session",
             "estKm": 8.34
           },
-          "movement": "Bike both ways — legs should be fresh after yesterday's moderate medium-long.",
+          "movement": "Bike both ways — legs should be fresh after Monday's moderate medium-long.",
           "food": "Carb-forward before (pasta/rice), protein + carbs within 30 minutes after — this is a hard effort.",
-          "bigPicture": "Build phase, week 7. First dedicated LT-cruise session of the plan (4x5' at ~159-167bpm) — the second committed quality day this week, alongside Monday's medium-long.",
+          "bigPicture": "Build phase, week 7. First dedicated LT-cruise session of the plan (4×5' at ~159-167bpm) — the second committed quality day this week alongside Monday's medium-long. How this lands is a real signal for whether the week's overall volume (projected ~44.9km before Sunday's number is set) is landing on fresh-enough legs.",
           "estKm": 8.34
         },
         {
@@ -489,7 +489,7 @@
           },
           "movement": "Bike both ways to the pool is fine.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Build phase, week 7. Recovery/technique day between Tuesday's LT intervals and Thursday's MP-progression session."
+          "bigPicture": "Build phase, week 7. Recovery/technique day sandwiched between Tuesday's LT intervals and Thursday's MP-progression session — no-impact aerobic work while the legs recover from Tuesday's threshold effort."
         },
         {
           "date": "2026-08-20",
@@ -502,7 +502,7 @@
           },
           "movement": "Bike both ways if legs feel fresh off Wednesday's swim; otherwise U-Bahn both ways to protect them for Saturday's long run.",
           "food": "Carb-forward before, protein + carbs after.",
-          "bigPicture": "Build phase, week 7. MP-progression session building race-pace feel ahead of Saturday's 105-minute long run.",
+          "bigPicture": "Build phase, week 7. MP-progression session building race-pace feel ahead of Saturday's 105-minute long run — the week's third quality-flavored session (medium-long, LT intervals, now MP work), so protecting legs into the weekend matters more than usual.",
           "estKm": 11.05
         },
         {
@@ -516,7 +516,7 @@
           },
           "movement": "No work commute today — it's the weekend. No cycling before the long run.",
           "food": "High carb the day before and morning of. Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Build phase, week 7. Long run closing out the week; Sunday's volume-escalation number will land once that day is finalized on a future run, but the non-Sunday days alone already total ~44.9km -- expect this to be the plan's biggest week yet once finalized.",
+          "bigPicture": "Build phase, week 7. Long run closing out the week's heaviest volume yet — the non-Sunday days alone already total ~44.9km, and CTL has been climbing at a sustainable ~1 point/week into this week, well under the 3-5/week ceiling, so there's real headroom behind this push. Sunday's number lands once week 8's short recovery run runs its course.",
           "estKm": 17.84
         }
       ],
@@ -553,9 +553,9 @@
             "detail": "40 min very slow (~65-75% LT) — mid-block recovery",
             "estKm": 6.8
           },
-          "movement": "Bike both ways fine — recovery week, no restrictions",
-          "food": "Normal balanced day — eat enough, don't undereat in recovery",
-          "bigPicture": "Recovery week. Very slow run — deliberately slower than feels right. Your body is absorbing 3 weeks of serious build work.",
+          "movement": "Bike both ways fine — recovery week, no restrictions.",
+          "food": "Normal balanced day — eat enough, don't undereat in recovery.",
+          "bigPicture": "Recovery week. Very slow run — deliberately slower than feels right. Your body is absorbing three weeks of serious build work before week 9 picks the volume-escalation rule back up.",
           "estKm": 6.8
         },
         {
