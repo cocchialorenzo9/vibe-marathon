@@ -7491,5 +7491,221 @@
     "wentWell": "Executed as a genuine structured session -- 10' warmup, then four surges from a ~130bpm baseline to 165-182bpm (minutes ~11-16, 19-25, 28-33, 36-40) matching the athlete's reported structure (4x6'30\" at 15km/h with 2' walking recovery at 4km/h) almost exactly, including the last rep's final minute being cut short. The athlete confirmed this was a deliberate choice, not sloppy pacing -- pushing hard on purpose to train lactate clearance.",
     "wentWrong": "The intent (train lactate clearance) is sound, but the execution landed as a VO2max/anaerobic session, not the LT-shifting stimulus a threshold rep is meant to deliver: 15km/h is well above the athlete's own watch-reported 4'57\"/km LT pace, and 165-182bpm sits 15-18bpm above their 167bpm LT ceiling. True LT training works by sustaining effort right at the threshold long enough for clearance/buffering adaptations to kick in -- which is why cruise-pace reps can hold for a full 5-8 minutes, while these reps could only hold ~6'30\" before backing off. Above-LT reps like this still have training value (VO2max, lactate tolerance) but are a different, higher-fatigue-cost tool than the plan's Tuesday LT-cruise sessions are designed around. Separately, the watch's Treadmill exercise mode was exporting under a sport-type code (8) this pipeline had mismapped to generic 'walking', so the session was excluded from TSS/CTL until the athlete flagged it and the mapping was corrected.",
     "nextTime": "For sessions specifically labeled LT-cruise/threshold, target the athlete's actual ~4'57\"/km LT pace (or 159-167bpm) rather than pushing to whatever pace feels hard -- that's what shifts LT pace itself over time. Save all-out VO2max-style reps (like this one) for when that stimulus is the deliberate goal, since it costs more recovery than threshold work and isn't interchangeable with it."
+  },
+  {
+    "date": "2026-08-11",
+    "type": "treadmill",
+    "scheduled": "easy",
+    "distance_km": 8.75,
+    "duration_min": 50.0,
+    "avg_hr": 130,
+    "max_hr": 135,
+    "hr_curve": [
+      {
+        "t_min": 0,
+        "hr": 97
+      },
+      {
+        "t_min": 1,
+        "hr": 114
+      },
+      {
+        "t_min": 2,
+        "hr": 119
+      },
+      {
+        "t_min": 3,
+        "hr": 123
+      },
+      {
+        "t_min": 4,
+        "hr": 124
+      },
+      {
+        "t_min": 5,
+        "hr": 126
+      },
+      {
+        "t_min": 6,
+        "hr": 126
+      },
+      {
+        "t_min": 7,
+        "hr": 126
+      },
+      {
+        "t_min": 8,
+        "hr": 127
+      },
+      {
+        "t_min": 9,
+        "hr": 127
+      },
+      {
+        "t_min": 10,
+        "hr": 127
+      },
+      {
+        "t_min": 11,
+        "hr": 128
+      },
+      {
+        "t_min": 12,
+        "hr": 128
+      },
+      {
+        "t_min": 13,
+        "hr": 127
+      },
+      {
+        "t_min": 14,
+        "hr": 127
+      },
+      {
+        "t_min": 15,
+        "hr": 129
+      },
+      {
+        "t_min": 16,
+        "hr": 129
+      },
+      {
+        "t_min": 17,
+        "hr": 129
+      },
+      {
+        "t_min": 18,
+        "hr": 131
+      },
+      {
+        "t_min": 19,
+        "hr": 129
+      },
+      {
+        "t_min": 20,
+        "hr": 129
+      },
+      {
+        "t_min": 21,
+        "hr": 129
+      },
+      {
+        "t_min": 22,
+        "hr": 130
+      },
+      {
+        "t_min": 23,
+        "hr": 130
+      },
+      {
+        "t_min": 24,
+        "hr": 130
+      },
+      {
+        "t_min": 25,
+        "hr": 131
+      },
+      {
+        "t_min": 26,
+        "hr": 133
+      },
+      {
+        "t_min": 27,
+        "hr": 132
+      },
+      {
+        "t_min": 28,
+        "hr": 134
+      },
+      {
+        "t_min": 29,
+        "hr": 134
+      },
+      {
+        "t_min": 30,
+        "hr": 134
+      },
+      {
+        "t_min": 31,
+        "hr": 134
+      },
+      {
+        "t_min": 32,
+        "hr": 134
+      },
+      {
+        "t_min": 33,
+        "hr": 134
+      },
+      {
+        "t_min": 34,
+        "hr": 135
+      },
+      {
+        "t_min": 35,
+        "hr": 132
+      },
+      {
+        "t_min": 36,
+        "hr": 132
+      },
+      {
+        "t_min": 37,
+        "hr": 135
+      },
+      {
+        "t_min": 38,
+        "hr": 133
+      },
+      {
+        "t_min": 39,
+        "hr": 134
+      },
+      {
+        "t_min": 40,
+        "hr": 134
+      },
+      {
+        "t_min": 41,
+        "hr": 134
+      },
+      {
+        "t_min": 42,
+        "hr": 132
+      },
+      {
+        "t_min": 43,
+        "hr": 134
+      },
+      {
+        "t_min": 44,
+        "hr": 134
+      },
+      {
+        "t_min": 45,
+        "hr": 133
+      },
+      {
+        "t_min": 46,
+        "hr": 134
+      },
+      {
+        "t_min": 47,
+        "hr": 134
+      },
+      {
+        "t_min": 48,
+        "hr": 134
+      },
+      {
+        "t_min": 49,
+        "hr": 131
+      }
+    ],
+    "tss": 50.5,
+    "avg_pace_min_km": 5.72,
+    "wentWell": "Duration matched the 50-minute prescription almost exactly (50.0min actual) and HR sat squarely in the 125-142bpm easy/aerobic band for nearly the whole run -- climbed from a 97bpm start, settled into 126-135bpm by minute 5, and held there with only mild drift (127 to 134bpm) through the finish. Clean, compliant execution of a plain easy day.",
+    "wentWrong": "Nothing wrong with the running itself. The real issue was pipeline, not execution: this session exported under Trex 3 sport-type code 8 (Treadmill), the same code that had been mismapped to generic 'walking' and excluded from training load for Monday's harder session the week before. That mapping was fixed after Monday's session was caught, but this Tuesday run happened after the fix landed and still sat at 0 TSS in history until today's /update-coach run cross-referenced recent_activity.py against history and caught it -- so yesterday's readiness read (TSB computed without this session's ~50.5 TSS) understated real fatigue by roughly 4-5 TSB points.",
+    "nextTime": "No change needed to how this run was executed. Process-wise: this is the second time a Trex 3 treadmill session has silently zeroed out of training load (first Aug 10, now Aug 11) -- worth treating every treadmill day as a manual double-check against history.json for a few more sessions until there's real confidence the code-8 mapping fix is holding for newly-synced days, not just the day it was first diagnosed on."
   }
 ]

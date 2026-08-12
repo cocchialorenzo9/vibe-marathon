@@ -1,24 +1,24 @@
 {
-  "date": "2026-08-11",
-  "generatedFor": "2026-08-12",
+  "date": "2026-08-12",
+  "generatedFor": "2026-08-13",
   "readiness": {
-    "score": 24,
+    "score": 33,
     "hrv": {
-      "value": 67,
-      "baseline": 80,
-      "delta_pct": -18
+      "value": 71,
+      "baseline": 77,
+      "delta_pct": -8
     },
     "restingHR": {
-      "value": 45,
+      "value": 46,
       "trend": "normal"
     },
     "sleep": {
-      "hours": 6.5,
-      "score": 65
+      "hours": 8.7,
+      "score": 82
     },
-    "tsb": -12.1,
-    "ctl": 25.51,
-    "atl": 37.61,
+    "tsb": -12.36,
+    "ctl": 26.07,
+    "atl": 38.43,
     "lactateThreshold": {
       "estimate_bpm": 167,
       "range_bpm": [
@@ -54,66 +54,96 @@
     }
   },
   "volumeCheck": {
-    "realZone2Pace_min_km": 5.89,
-    "asOf": "2026-08-11",
-    "thisWeekEstKm": 54.44,
+    "realZone2Pace_min_km": 5.79,
+    "asOf": "2026-08-12",
+    "thisWeekEstKm": 56.78,
     "peakWeekEstKm": {
-      "week11": 61.67
+      "week11": 62.84
     },
-    "referenceNote": "Peak week (week 11, ~61.67km projected) is still essentially at Higdon's Marathon 3 peak (~61km/week). Recomputed real-pace check this run (median 5.885 min/km over the trailing 28 days) is within noise of the stored 5.89 -- no material change, so per-day estKm figures across the plan stand as-is.",
+    "referenceNote": "Peak week (week 11, ~62.84km projected) is now slightly above Higdon's Marathon 3 peak (~61km/week). Two things moved this run: realZone2Pace dropped from 5.89 to 5.79 min/km (median of 6 qualifying easy-effort sessions in the trailing 28 days, vs. the prior 5.885 -- a real, if modest, improvement, not noise) -- the athlete is running easy effort measurably faster at the same HR than a month ago. Partially offsetting that, LT-cruise/threshold main segments now use the actual device-reported LT pace (4.95 min/km, only added to this project on 2026-08-11) instead of the faster ad-hoc estimate baked into earlier weeks' numbers -- this pulled several LT-cruise/threshold sessions' estKm down even as their warmup/cooldown portions got faster. Net effect: most weeks' totals rose modestly (~1-5%); the plan's overall shape is unchanged.",
     "flagged": false,
     "projectedWeeklyKm": {
       "week5": {
-        "estKm": 31.51,
+        "estKm": 31.95,
         "status": "finalized"
       },
       "week6": {
-        "estKm": 54.44,
+        "estKm": 56.78,
         "status": "finalized"
       },
       "week7": {
-        "estKm": 44.88,
+        "estKm": 45.89,
         "status": "finalized"
       },
       "week8": {
-        "estKm": 29.74,
+        "estKm": 30.22,
         "status": "finalized"
       },
       "week9": {
-        "estKm": 54.89,
+        "estKm": 55.11,
         "status": "finalized"
       },
       "week10": {
-        "estKm": 63.5,
+        "estKm": 56.83,
         "status": "provisional"
       },
       "week11": {
-        "estKm": 67.62,
+        "estKm": 62.84,
         "status": "provisional"
       },
       "week12": {
-        "estKm": 37.39,
+        "estKm": 38.0,
         "status": "finalized"
       },
       "week13": {
-        "estKm": 54.81,
+        "estKm": 48.15,
         "status": "provisional"
       }
     }
   },
   "recommendation": {
-    "type": "long",
-    "title": "Long run stays, but dial the effort down",
-    "reasoning": "HRV is 18% below baseline (67ms vs 80ms) and sleep score is 65 on only 6.5h -- both point toward reduced intensity, not a plain rest day. TSB is now -12.1 (recomputed after correcting Monday's treadmill session, which a watch sport-type mapping bug had hidden from training load -- see recentActivity) -- getting close to the -15 caution line, though not there yet. CTL has climbed ~2.4 points/week over the trailing week, still under the 3-5 ceiling but hotter than it looked before the correction. All three signals point the same way: run this conservatively.",
-    "sessionDetail": "~103 min (~17.4km) continuous, but default to the shorter end -- aim for ~85-90 minutes at 125-132bpm (bottom of the 125-142bpm easy/aerobic band) unless it feels clearly better than expected. If HR won't settle under ~135 within the first 15-20 minutes, that's confirmation to keep it short rather than push to the full distance.",
-    "bikeNote": "No cycling before the run -- save the legs. For the work commute afterward, take U-Bahn both ways rather than biking; TSB is closer to the caution line than it looked, so bank the recovery instead of spending more of it.",
+    "type": "easy",
+    "title": "Absorption run stays as scheduled",
+    "reasoning": "HRV sits 8% below baseline (71ms vs a 77ms log-mean baseline) and is flagged 'low' by this athlete's own tight day-to-day variability (2.3% CV) -- meaningful for this athlete even though the raw number looks modest. Sleep was excellent (8.7h, score 82), but TSB is -12.36, notably worse than it looked before catching a second sport-mapping gap: Tuesday's (Aug 11) treadmill run had been sitting at 0 TSS in history, the same bug that hid Monday's session last week, now corrected to its real ~50.5 TSS. -12.36 is closing in on the -15 caution line but hasn't crossed it, and CTL is climbing a sustainable ~1.22 points/week. Tomorrow's session is already the week's lightest -- a deliberate absorption day after Wednesday's long run -- so proceed as scheduled rather than downgrading further.",
+    "sessionDetail": "~41 min at recovery effort (~65-75% LT ≈ 109-125bpm) -- pure absorption, no structure. If HR won't settle comfortably under ~125bpm, that's fine too; duration matters more than pace here.",
+    "bikeNote": "Bike both ways is fine -- full work day, and TSB isn't in caution territory yet. Nothing about tomorrow's easy effort needs fresh legs afterward.",
     "swimNote": ""
   },
   "phase": "build",
-  "daysToRace": 61,
+  "daysToRace": 60,
   "recentActivity": {
-    "since": "2026-08-05",
+    "since": "2026-08-06",
     "sessions": [
+      {
+        "date": "2026-08-11",
+        "type": "treadmill",
+        "distance_km": 8.75,
+        "duration_min": 50.0,
+        "avg_hr": 130,
+        "max_hr": 135,
+        "hr_curve": [
+          {"t_min": 0, "hr": 97}, {"t_min": 1, "hr": 114}, {"t_min": 2, "hr": 119},
+          {"t_min": 3, "hr": 123}, {"t_min": 4, "hr": 124}, {"t_min": 5, "hr": 126},
+          {"t_min": 6, "hr": 126}, {"t_min": 7, "hr": 126}, {"t_min": 8, "hr": 127},
+          {"t_min": 9, "hr": 127}, {"t_min": 10, "hr": 127}, {"t_min": 11, "hr": 128},
+          {"t_min": 12, "hr": 128}, {"t_min": 13, "hr": 127}, {"t_min": 14, "hr": 127},
+          {"t_min": 15, "hr": 129}, {"t_min": 16, "hr": 129}, {"t_min": 17, "hr": 129},
+          {"t_min": 18, "hr": 131}, {"t_min": 19, "hr": 129}, {"t_min": 20, "hr": 129},
+          {"t_min": 21, "hr": 129}, {"t_min": 22, "hr": 130}, {"t_min": 23, "hr": 130},
+          {"t_min": 24, "hr": 130}, {"t_min": 25, "hr": 131}, {"t_min": 26, "hr": 133},
+          {"t_min": 27, "hr": 132}, {"t_min": 28, "hr": 134}, {"t_min": 29, "hr": 134},
+          {"t_min": 30, "hr": 134}, {"t_min": 31, "hr": 134}, {"t_min": 32, "hr": 134},
+          {"t_min": 33, "hr": 134}, {"t_min": 34, "hr": 135}, {"t_min": 35, "hr": 132},
+          {"t_min": 36, "hr": 132}, {"t_min": 37, "hr": 135}, {"t_min": 38, "hr": 133},
+          {"t_min": 39, "hr": 134}, {"t_min": 40, "hr": 134}, {"t_min": 41, "hr": 134},
+          {"t_min": 42, "hr": 132}, {"t_min": 43, "hr": 134}, {"t_min": 44, "hr": 134},
+          {"t_min": 45, "hr": 133}, {"t_min": 46, "hr": 134}, {"t_min": 47, "hr": 134},
+          {"t_min": 48, "hr": 134}, {"t_min": 49, "hr": 131}
+        ],
+        "avg_pace_min_km": 5.72,
+        "tss": 50.5,
+        "lesson": "Clean, compliant easy run -- avg 130bpm squarely in the 125-142bpm aerobic band, duration matched the 50-minute prescription almost exactly. It had been sitting at 0 TSS in history due to the same treadmill sport-mapping bug caught for Monday's session -- now corrected to its real ~50.5 TSS."
+      },
       {
         "date": "2026-08-10",
         "type": "treadmill",
@@ -140,7 +170,7 @@
         ],
         "avg_pace_min_km": 5.31,
         "tss": 65.0,
-        "lesson": "Confirmed by the athlete: 10' warmup, then 4x6'30\" at 15km/h (~4:00/km) with 2' walking recovery at 4km/h, last rep's final minute skipped -- a deliberate hard push aimed at training lactate clearance, not sloppy pacing. This watch's 'Treadmill' mode exports as sport-type code 8, which was mismapped to generic 'walking' and excluded from training load -- now fixed, and this session's real ~65 TSS is properly counted. The pace (15km/h) is well above the athlete's own watch-reported 4'57\"/km LT pace, and HR (165-182bpm) sits 15-18bpm above their 167bpm LT ceiling -- this landed as a VO2max/anaerobic session rather than the sustained-threshold stimulus that actually shifts LT pace over time. Both have training value; they're just different tools."
+        "lesson": "Confirmed deliberate by the athlete: 4x6'30\" at 15km/h with 2' walking recovery. Reps landed as a VO2max/anaerobic push (165-182bpm, 15-18bpm above the 167bpm LT ceiling) rather than sustained threshold work -- a different, higher-fatigue-cost tool than the plan's LT-cruise sessions are built around."
       },
       {
         "date": "2026-08-08",
@@ -168,7 +198,7 @@
         ],
         "avg_pace_min_km": 5.54,
         "tss": 52.4,
-        "lesson": "Prescribed as a light 30-minute recovery effort (~109-125bpm) but ran 45 minutes averaging 140bpm with a hard finish spiking to 167 (at LT) -- tempo-adjacent effort tacked onto what should've been the lightest day of the week."
+        "lesson": "Prescribed as a light 30-minute recovery effort (~109-125bpm, Oslo vacation day) but ran 45 minutes averaging 140bpm with a hard finish spiking to 167 (at LT) -- tempo-adjacent effort tacked onto what should've been the lightest day of the week."
       },
       {
         "date": "2026-08-07",
@@ -200,34 +230,8 @@
         "avg_pace_min_km": 5.57,
         "tss": 61.9,
         "lesson": "Unscheduled -- no plan entry that day (Oslo travel). Held mostly 135-145bpm (top of the easy band) for the bulk of it, then kicked to 163-170bpm in the final two minutes -- a fine bonus session but unplanned load right before Monday's tempo."
-      },
-      {
-        "date": "2026-08-05",
-        "type": "outdoor_running",
-        "distance_km": 6.07,
-        "duration_min": 38.0,
-        "avg_hr": 129,
-        "max_hr": 142,
-        "hr_curve": [
-          {"t_min": 0, "hr": 105}, {"t_min": 1, "hr": 120}, {"t_min": 2, "hr": 121},
-          {"t_min": 3, "hr": 121}, {"t_min": 4, "hr": 124}, {"t_min": 5, "hr": 128},
-          {"t_min": 6, "hr": 130}, {"t_min": 7, "hr": 128}, {"t_min": 8, "hr": 123},
-          {"t_min": 9, "hr": 124}, {"t_min": 10, "hr": 127}, {"t_min": 11, "hr": 127},
-          {"t_min": 12, "hr": 129}, {"t_min": 13, "hr": 129}, {"t_min": 14, "hr": 130},
-          {"t_min": 15, "hr": 132}, {"t_min": 16, "hr": 132}, {"t_min": 17, "hr": 138},
-          {"t_min": 18, "hr": 142}, {"t_min": 19, "hr": 137}, {"t_min": 20, "hr": 134},
-          {"t_min": 21, "hr": 133}, {"t_min": 22, "hr": 132}, {"t_min": 23, "hr": 133},
-          {"t_min": 24, "hr": 130}, {"t_min": 25, "hr": 127}, {"t_min": 26, "hr": 129},
-          {"t_min": 27, "hr": 132}, {"t_min": 28, "hr": 132}, {"t_min": 29, "hr": 133},
-          {"t_min": 30, "hr": 132}, {"t_min": 31, "hr": 129}, {"t_min": 32, "hr": 129},
-          {"t_min": 33, "hr": 131}, {"t_min": 34, "hr": 133}, {"t_min": 35, "hr": 132},
-          {"t_min": 36, "hr": 129}, {"t_min": 37, "hr": 123}
-        ],
-        "avg_pace_min_km": 6.26,
-        "tss": 37.8,
-        "lesson": "Matched the prescription well -- 38 minutes at avg 129bpm, comfortably inside the easy/aerobic band, clean execution ahead of the Oslo trip."
       }
     ],
-    "analysis": "A device sport-type mapping bug (Trex 3 'Treadmill' exporting as generic 'walking') was hiding Monday's real ~65-TSS treadmill session from training load -- now fixed, so this week's actual volume/TSS is heavier than previously reported: TSB moved from -6.4 to -12.1, and CTL has been climbing ~2.4pts/week into this week, still under the 3-5 ceiling but hotter than it looked. Separately, most of the week's sessions (Aug 7, Aug 8, and Monday's treadmill reps, which ran faster than prescribed) finished at or above their prescribed effort, while only Aug 5's medium-long stayed clean throughout -- a recurring pattern of running hotter than scheduled that's worth watching headed into tomorrow's long run."
+    "analysis": "Volume has been substantial this week once the second treadmill-mapping gap is corrected -- Aug 7-11 combined for ~230 TSS across four sessions. The recurring pattern from last run continues: nearly every session ran hotter than its prescribed effort (Aug 7 unscheduled, Aug 8's 'recovery' day, Aug 10's treadmill tempo all pushed well above target HR bands), with only Aug 11's easy run staying cleanly in its intended zone -- worth watching heading into tomorrow's already-scheduled absorption day."
   }
 }
