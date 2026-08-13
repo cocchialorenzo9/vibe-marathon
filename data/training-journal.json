@@ -7707,5 +7707,405 @@
     "wentWell": "Duration matched the 50-minute prescription almost exactly (50.0min actual) and HR sat squarely in the 125-142bpm easy/aerobic band for nearly the whole run -- climbed from a 97bpm start, settled into 126-135bpm by minute 5, and held there with only mild drift (127 to 134bpm) through the finish. Clean, compliant execution of a plain easy day.",
     "wentWrong": "Nothing wrong with the running itself. The real issue was pipeline, not execution: this session exported under Trex 3 sport-type code 8 (Treadmill), the same code that had been mismapped to generic 'walking' and excluded from training load for Monday's harder session the week before. That mapping was fixed after Monday's session was caught, but this Tuesday run happened after the fix landed and still sat at 0 TSS in history until today's /update-coach run cross-referenced recent_activity.py against history and caught it -- so yesterday's readiness read (TSB computed without this session's ~50.5 TSS) understated real fatigue by roughly 4-5 TSB points.",
     "nextTime": "No change needed to how this run was executed. Process-wise: this is the second time a Trex 3 treadmill session has silently zeroed out of training load (first Aug 10, now Aug 11) -- worth treating every treadmill day as a manual double-check against history.json for a few more sessions until there's real confidence the code-8 mapping fix is holding for newly-synced days, not just the day it was first diagnosed on."
+  },
+  {
+    "date": "2026-08-12",
+    "type": "outdoor_running",
+    "scheduled": "long",
+    "distance_km": 16.84,
+    "duration_min": 96.5,
+    "avg_hr": 148,
+    "max_hr": 173,
+    "hr_curve": [
+      {
+        "t_min": 1,
+        "hr": 121
+      },
+      {
+        "t_min": 2,
+        "hr": 131
+      },
+      {
+        "t_min": 3,
+        "hr": 140
+      },
+      {
+        "t_min": 4,
+        "hr": 142
+      },
+      {
+        "t_min": 5,
+        "hr": 141
+      },
+      {
+        "t_min": 6,
+        "hr": 141
+      },
+      {
+        "t_min": 7,
+        "hr": 143
+      },
+      {
+        "t_min": 8,
+        "hr": 145
+      },
+      {
+        "t_min": 9,
+        "hr": 145
+      },
+      {
+        "t_min": 10,
+        "hr": 144
+      },
+      {
+        "t_min": 11,
+        "hr": 143
+      },
+      {
+        "t_min": 12,
+        "hr": 142
+      },
+      {
+        "t_min": 13,
+        "hr": 141
+      },
+      {
+        "t_min": 14,
+        "hr": 143
+      },
+      {
+        "t_min": 15,
+        "hr": 145
+      },
+      {
+        "t_min": 16,
+        "hr": 140
+      },
+      {
+        "t_min": 17,
+        "hr": 143
+      },
+      {
+        "t_min": 18,
+        "hr": 146
+      },
+      {
+        "t_min": 19,
+        "hr": 144
+      },
+      {
+        "t_min": 20,
+        "hr": 146
+      },
+      {
+        "t_min": 21,
+        "hr": 144
+      },
+      {
+        "t_min": 22,
+        "hr": 144
+      },
+      {
+        "t_min": 23,
+        "hr": 144
+      },
+      {
+        "t_min": 24,
+        "hr": 144
+      },
+      {
+        "t_min": 25,
+        "hr": 143
+      },
+      {
+        "t_min": 26,
+        "hr": 145
+      },
+      {
+        "t_min": 27,
+        "hr": 149
+      },
+      {
+        "t_min": 28,
+        "hr": 153
+      },
+      {
+        "t_min": 29,
+        "hr": 153
+      },
+      {
+        "t_min": 30,
+        "hr": 153
+      },
+      {
+        "t_min": 31,
+        "hr": 145
+      },
+      {
+        "t_min": 32,
+        "hr": 144
+      },
+      {
+        "t_min": 33,
+        "hr": 144
+      },
+      {
+        "t_min": 34,
+        "hr": 154
+      },
+      {
+        "t_min": 35,
+        "hr": 160
+      },
+      {
+        "t_min": 36,
+        "hr": 160
+      },
+      {
+        "t_min": 37,
+        "hr": 154
+      },
+      {
+        "t_min": 38,
+        "hr": 150
+      },
+      {
+        "t_min": 39,
+        "hr": 146
+      },
+      {
+        "t_min": 40,
+        "hr": 143
+      },
+      {
+        "t_min": 41,
+        "hr": 144
+      },
+      {
+        "t_min": 42,
+        "hr": 144
+      },
+      {
+        "t_min": 43,
+        "hr": 141
+      },
+      {
+        "t_min": 44,
+        "hr": 139
+      },
+      {
+        "t_min": 45,
+        "hr": 143
+      },
+      {
+        "t_min": 46,
+        "hr": 139
+      },
+      {
+        "t_min": 47,
+        "hr": 141
+      },
+      {
+        "t_min": 48,
+        "hr": 146
+      },
+      {
+        "t_min": 49,
+        "hr": 152
+      },
+      {
+        "t_min": 50,
+        "hr": 146
+      },
+      {
+        "t_min": 51,
+        "hr": 141
+      },
+      {
+        "t_min": 52,
+        "hr": 143
+      },
+      {
+        "t_min": 53,
+        "hr": 142
+      },
+      {
+        "t_min": 54,
+        "hr": 138
+      },
+      {
+        "t_min": 55,
+        "hr": 134
+      },
+      {
+        "t_min": 56,
+        "hr": 140
+      },
+      {
+        "t_min": 57,
+        "hr": 147
+      },
+      {
+        "t_min": 58,
+        "hr": 152
+      },
+      {
+        "t_min": 59,
+        "hr": 146
+      },
+      {
+        "t_min": 60,
+        "hr": 152
+      },
+      {
+        "t_min": 61,
+        "hr": 158
+      },
+      {
+        "t_min": 62,
+        "hr": 156
+      },
+      {
+        "t_min": 63,
+        "hr": 155
+      },
+      {
+        "t_min": 64,
+        "hr": 149
+      },
+      {
+        "t_min": 65,
+        "hr": 147
+      },
+      {
+        "t_min": 66,
+        "hr": 145
+      },
+      {
+        "t_min": 67,
+        "hr": 152
+      },
+      {
+        "t_min": 68,
+        "hr": 149
+      },
+      {
+        "t_min": 69,
+        "hr": 145
+      },
+      {
+        "t_min": 70,
+        "hr": 144
+      },
+      {
+        "t_min": 71,
+        "hr": 142
+      },
+      {
+        "t_min": 72,
+        "hr": 141
+      },
+      {
+        "t_min": 73,
+        "hr": 143
+      },
+      {
+        "t_min": 74,
+        "hr": 143
+      },
+      {
+        "t_min": 75,
+        "hr": 146
+      },
+      {
+        "t_min": 76,
+        "hr": 147
+      },
+      {
+        "t_min": 77,
+        "hr": 147
+      },
+      {
+        "t_min": 78,
+        "hr": 150
+      },
+      {
+        "t_min": 79,
+        "hr": 150
+      },
+      {
+        "t_min": 80,
+        "hr": 147
+      },
+      {
+        "t_min": 81,
+        "hr": 146
+      },
+      {
+        "t_min": 82,
+        "hr": 146
+      },
+      {
+        "t_min": 83,
+        "hr": 148
+      },
+      {
+        "t_min": 84,
+        "hr": 156
+      },
+      {
+        "t_min": 85,
+        "hr": 164
+      },
+      {
+        "t_min": 86,
+        "hr": 166
+      },
+      {
+        "t_min": 87,
+        "hr": 166
+      },
+      {
+        "t_min": 88,
+        "hr": 166
+      },
+      {
+        "t_min": 89,
+        "hr": 168
+      },
+      {
+        "t_min": 90,
+        "hr": 171
+      },
+      {
+        "t_min": 91,
+        "hr": 173
+      },
+      {
+        "t_min": 92,
+        "hr": 173
+      },
+      {
+        "t_min": 93,
+        "hr": 170
+      },
+      {
+        "t_min": 94,
+        "hr": 165
+      },
+      {
+        "t_min": 95,
+        "hr": 163
+      },
+      {
+        "t_min": 96,
+        "hr": 164
+      }
+    ],
+    "tss": 126.3,
+    "avg_pace_min_km": 5.73,
+    "wentWell": "Pace (5.73 min/km) and distance (16.84km) landed almost exactly on the ~17.4km easy-effort target, and the middle ~70 minutes held a fairly controlled 140-146bpm band.",
+    "wentWrong": "Average HR (148bpm) sat above the 125-142bpm easy-aerobic zone, and the curve shows real cardiac drift in the final quarter -- climbing from 148bpm at t=83min to 173bpm by t=91min and staying elevated (163-173bpm) through the finish. Consistent with that night's readiness context (sleep score 65, HRV ~18% below baseline) compounding on a genuinely long effort, not a pacing mistake.",
+    "nextTime": "On the next long run of similar length, consider a deliberate pace pullback once HR starts climbing past ~150bpm in the closing minutes, rather than letting late-run drift run unchecked -- especially following a short-sleep/low-HRV readout like this one."
   }
 ]

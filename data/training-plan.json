@@ -434,9 +434,9 @@
             "detail": "~50 min easy effort (~75-85% LT)",
             "estKm": 8.64
           },
-          "movement": "Only a morning window today (9am\u201313) \u2014 bike both ways is fine within that window.",
-          "food": "Normal balanced meals, phase-appropriate carb share.",
-          "bigPicture": "Build phase, week 6. One more easy day before Saturday and Sunday are fully protected as rest \u2014 steps up from Thursday's pure-recovery effort to normal easy-aerobic effort, readiness allowing. TSB sits at -12.36 as of Aug 12 (revised after correcting a second treadmill-mapping gap on Aug 11), still short of the -15 caution line but worth a real readiness check on the day rather than assuming the step-up is automatic. Closes out this week's reshuffle at ~56.8km total (recomputed this run with a faster real easy pace \u2014 see volumeCheck).",
+          "movement": "Only a morning window today (9am\u201313) \u2014 U-Bahn both ways this time, not the bike: TSB corrects to -19.53 after catching another zero-TSS placeholder bug (Aug 12's real 16.84km/126.3-TSS run had been sitting at 0 in history), and sleep score is 58. Bank the recovery instead of spending it on the commute.",
+          "food": "Normal balanced meals, phase-appropriate carb share \u2014 nothing special needed for a recovery-effort session.",
+          "bigPicture": "Build phase, week 6's last session before Saturday and Sunday are fully protected as rest. The planned step-up to normal easy-aerobic effort is downgraded to recovery pace instead: TSB corrects to -19.53 (previously read as -12.36 before a second zero-TSS placeholder bug was caught \u2014 Aug 12's real long run had been sitting at 0 in local history) and sleep score is 58, both arguing for recovery effort rather than pushing to the top of the easy band. Still closes out this week's reshuffle at ~56.8km total (recomputed with the faster real easy pace \u2014 see volumeCheck).",
           "estKm": 8.64
         }
       ],
@@ -459,9 +459,9 @@
             "detail": "45 min at easy effort (~75-85% LT)",
             "estKm": 7.77
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike both ways fine, assuming the weekend's full rest actually cleared Friday's downgraded recovery effort \u2014 check legs on the day.",
           "food": "Normal balanced meals, phase-appropriate carb share.",
-          "bigPicture": "Build phase, week 7 \u2014 the week that adds the plan's second committed quality day. Medium-long day ahead of Tuesday's first LT-cruise interval session, easing into a busier week after week 6's big Wednesday long run and the weekend's full rest.",
+          "bigPicture": "Build phase, week 7 opens with the plan's second committed quality day now live. Medium-long day ahead of Tuesday's first LT-cruise session. Week 6 closed with deeper fatigue than first assumed (TSB corrected to -19.53 after fixing a zero-TSS placeholder bug on Aug 12), so this week leans more on the weekend's rest actually working than the schedule alone \u2014 a real readiness check matters more than usual heading into Tuesday's LT intervals.",
           "estKm": 7.77
         },
         {
@@ -473,9 +473,9 @@
             "detail": "50 min: 10' wu + 4\u00d75' at threshold pace (~95-100% LT) + 1' float recovery + 10' cd \u2014 first dedicated LT session",
             "estKm": 8.01
           },
-          "movement": "Bike both ways \u2014 legs should be fresh after Monday's moderate medium-long.",
+          "movement": "Bike both ways if Monday's medium-long left legs genuinely fresh; U-Bahn if not \u2014 the first LT session of the plan deserves fresh legs more than a fast commute.",
           "food": "Carb-forward before (pasta/rice), protein + carbs within 30 minutes after \u2014 this is a hard effort.",
-          "bigPicture": "Build phase, week 7. First dedicated LT-cruise session of the plan (4\u00d75' at ~159-167bpm) \u2014 the second committed quality day this week alongside Monday's medium-long. As of Aug 12, CTL has been essentially flat over the trailing week (26.07 vs 24.85 a week ago, +1.22), comfortably under the 3-5/week ceiling, so there's headroom behind this week's ~45.9km projected volume if readiness holds.",
+          "bigPicture": "Build phase, week 7. First dedicated LT-cruise session of the plan (4\u00d75' at ~159-167bpm) \u2014 the second committed quality day this week alongside Monday's medium-long. CTL has climbed ~4.1 points over the trailing week (24.26 \u2192 28.35, corrected after fixing Aug 12's zero-TSS placeholder bug), still inside the 3-5/week ceiling, so there's real headroom behind this week's volume if the weekend's rest actually banked the recovery it was supposed to.",
           "estKm": 8.01
         },
         {
@@ -487,9 +487,9 @@
             "detail": "35 min aerobic. Try 200m crawl / 1' rest \u00d7 4\u20135 sets \u2014 builds endurance with no leg impact.",
             "estKm": null
           },
-          "movement": "Bike both ways to the pool is fine.",
+          "movement": "Bike both ways to the pool is fine \u2014 low-impact, doesn't change the fatigue picture either way.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Build phase, week 7. Recovery/technique day sandwiched between Tuesday's LT intervals and Thursday's MP-progression session \u2014 no-impact aerobic work while the legs recover from Tuesday's threshold effort."
+          "bigPicture": "Build phase, week 7. Recovery/technique day between Tuesday's LT intervals and Thursday's MP-progression session \u2014 no-impact aerobic work while the legs absorb Tuesday's threshold effort, on top of a week carrying more fatigue than first assumed after the Aug 12 data fix."
         },
         {
           "date": "2026-08-20",
@@ -500,9 +500,9 @@
             "detail": "55 min: 15' wu + 20' at 4:30/km then 10' at 4:15/km (real MP) + cd",
             "estKm": 11.98
           },
-          "movement": "Bike both ways if legs feel fresh off Wednesday's swim; otherwise U-Bahn both ways to protect them for Saturday's long run.",
+          "movement": "Bike both ways only if legs genuinely feel fresh off Wednesday's swim \u2014 otherwise U-Bahn both ways to protect Saturday's long run. Given how much deeper this week's fatigue reads after the Aug 12 correction, lean toward U-Bahn unless it's an easy call.",
           "food": "Carb-forward before, protein + carbs after.",
-          "bigPicture": "Build phase, week 7. MP-progression session building race-pace feel ahead of Saturday's long run \u2014 the week's third quality-flavored session (medium-long, LT intervals, now MP work), so protecting legs into the weekend matters more than usual.",
+          "bigPicture": "Build phase, week 7. MP-progression session building race-pace feel ahead of Saturday's long run \u2014 the week's third quality-flavored session (medium-long, LT intervals, now MP work). Protecting legs into the weekend matters even more than the original plan assumed, now that TSB reads notably more fatigued (-19.53) after fixing the Aug 12 zero-TSS bug.",
           "estKm": 11.98
         },
         {
@@ -514,9 +514,9 @@
             "detail": "105 min (~18 km), easy effort (~75-85% LT)",
             "estKm": 18.13
           },
-          "movement": "No work commute today \u2014 it's the weekend. No cycling before the long run.",
+          "movement": "No work commute today, it's the weekend. No cycling before the long run.",
           "food": "High carb the day before and morning of. Protein + carbs within 30 minutes of finishing.",
-          "bigPicture": "Build phase, week 7. Long run closing out the week's heaviest volume yet \u2014 projected ~45.9km for the week (recomputed this run with a faster real easy pace, see volumeCheck), and CTL has only climbed ~1.22 points/week into this week, well under the 3-5/week ceiling, so there's real headroom behind this push.",
+          "bigPicture": "Build phase, week 7. Long run closing out the week's heaviest volume yet \u2014 projected ~45.9km for the week (see volumeCheck). CTL has been climbing at a sustainable clip (~4.1 points over the trailing week as of Aug 13, corrected after fixing the Aug 12 data bug), comfortably under the 3-5/week ceiling, so there's real headroom behind this push if the week's easier days actually stayed easy.",
           "estKm": 18.13
         }
       ],
@@ -539,9 +539,9 @@
             "detail": "15 min very easy (~65-75% LT) \u2014 recovery week, kept short rather than skipped, same as the other recovery-week sessions",
             "estKm": 2.59
           },
-          "movement": "No commute today, it's the weekend \u2014 very short easy shakeout.",
+          "movement": "No commute today, it's the weekend \u2014 short, easy shakeout.",
           "food": "Normal balanced meals, lighter carb share \u2014 this is a recovery week.",
-          "bigPicture": "Opens week 8, a scheduled recovery week (this Sunday's short run is fixed, not subject to the volume-escalation rule) after two demanding build weeks \u2014 a deliberate pause before build resumes in week 9.",
+          "bigPicture": "Opens week 8, a scheduled recovery week (fixed, not subject to the volume-escalation rule) after two demanding build weeks \u2014 week 7 in particular carried more real fatigue than the schedule assumed once the Aug 12 zero-TSS placeholder bug was corrected. A deliberate pause before build resumes in week 9.",
           "estKm": 2.59
         },
         {
@@ -555,7 +555,7 @@
           },
           "movement": "Bike both ways fine \u2014 recovery week, no restrictions.",
           "food": "Normal balanced day \u2014 eat enough, don't undereat in recovery.",
-          "bigPicture": "Recovery week. Very slow run \u2014 deliberately slower than feels right. Your body is absorbing three weeks of serious build work before week 9 picks the volume-escalation rule back up.",
+          "bigPicture": "Recovery week. Very slow run \u2014 deliberately slower than feels right. The body is absorbing three weeks of serious build work (heavier than the schedule alone suggested, once Aug 12's data correction revealed deeper real fatigue) before week 9 picks the volume-escalation rule back up.",
           "estKm": 6.91
         },
         {
@@ -567,9 +567,9 @@
             "detail": "Recovery week: 25 min of light swimming is fine, or skip if the body feels tired. Nothing forced.",
             "estKm": null
           },
-          "movement": "If you go to the pool, take U-Bahn round-trip for work today \u2014 save your legs this week",
-          "food": "Normal balanced day",
-          "bigPicture": "Optional pool session. If you feel tired, skip without guilt. Recovery weeks are for recovery \u2014 the training benefit comes from rest, not volume."
+          "movement": "If you go to the pool, take U-Bahn round-trip for work today \u2014 save your legs this week.",
+          "food": "Normal balanced day.",
+          "bigPicture": "Optional pool session, recovery week. Skip without guilt if tired \u2014 the training benefit here comes from rest, not volume, especially with week 7 having carried more real fatigue than the schedule assumed."
         },
         {
           "date": "2026-08-27",
@@ -580,9 +580,9 @@
             "detail": "45 min + 5\u00d780m progressive",
             "estKm": 7.77
           },
-          "movement": "Bike both ways fine \u2014 easy session",
-          "food": "Normal balanced day",
-          "bigPicture": "Light strides keep sharpness without adding fatigue. In recovery week these are the most important neuromuscular stimulus you do.",
+          "movement": "Bike both ways fine \u2014 easy session, recovery week.",
+          "food": "Normal balanced day.",
+          "bigPicture": "Light strides keep sharpness without adding fatigue \u2014 in a recovery week, this is the most important neuromuscular stimulus on the calendar. By now the weekend and Tuesday's slow run should have made real headway on the fatigue picked up through week 7.",
           "estKm": 7.77
         },
         {

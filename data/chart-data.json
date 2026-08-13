@@ -471,12 +471,22 @@
   },
   {
     "date": "2026-08-12",
-    "tss": 0,
-    "distance_km": 0,
-    "ctl": 26.07,
-    "atl": 38.43,
-    "tsb": -12.36,
+    "tss": 126.3,
+    "distance_km": 16.84,
+    "ctl": 29.04,
+    "atl": 55.24,
+    "tsb": -26.2,
     "readiness_score": 33,
     "recommendation_type": "long"
+  },
+  {
+    "date": "2026-08-13",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 28.35,
+    "atl": 47.89,
+    "tsb": -19.53,
+    "readiness_score": 35,
+    "recommendation_type": "easy"
   }
 ]
