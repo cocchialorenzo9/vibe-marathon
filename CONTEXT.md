@@ -89,3 +89,9 @@ _Avoid_: just "week" when plan week could also be meant
 **Zone history**:
 The day-by-day record of time spent in each HR band (plus average %LT and pace), built from running sessions' `hr_curve` only (other activity types, e.g. swimming, don't carry a curve). One entry per day; days with no qualifying running session are simply absent, not zero. Kept the `zone-history.json`/`build_zone_history.py` file names for continuity even after the underlying model moved from Seiler zones to HR bands.
 _Avoid_: zone chart, HR history
+
+## Fatigue-finish surge (identified 2026-08-13)
+
+**Fatigue-finish surge**:
+An athlete-initiated pace push in the closing portion of a long run, done as often as the athlete can manage regardless of whether that day's prescription includes a formal MP segment — deliberately run at or beyond marathon pace while already fatigued, as fatigue-resistance practice. Confirmed on 2026-08-12 (83:55–93:13 of a 96.5-minute easy-effort long run, pace 4:00-4:20/km against a 4:16-4:20/km MP target, HR 163-173bpm — above the 167bpm LT). A recurring habit, not a one-off; likely present on other past long runs (e.g. 2026-08-04) previously misread as passive drift.
+_Avoid_: MP finish (reserved for this plan's *prescribed*, exact-pace long-run segments, e.g. week 9's "last 30 at 4:20/km"), cardiac drift (a passive, fatigue-driven HR rise with no intentional pace change)
