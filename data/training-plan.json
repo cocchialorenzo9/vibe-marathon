@@ -468,28 +468,29 @@
           "date": "2026-08-18",
           "dayLabel": "Tue 18",
           "training": {
-            "type": "tempo",
-            "title": "LT cruise intervals",
-            "detail": "50 min: 10' wu + 4×5' at threshold pace (~95-100% LT) + 1' float recovery + 10' cd — first dedicated LT session",
-            "estKm": 7.97
+            "type": "rest",
+            "title": "Skipped -- moved to Wed Aug 19",
+            "detail": "Athlete's call: couldn't run Tuesday. The LT-cruise session moves to Wednesday; this week's swim is dropped rather than double-booking Wednesday.",
+            "estKm": null
           },
-          "movement": "Bike both ways after the intervals -- TSB is climbing back toward neutral (-9.23 today, was -19.53 five days ago) and HRV is +10% above baseline, nothing here argues for saving the legs on the commute.",
-          "food": "Normal balanced day, not a big-carb day like Saturday's long run -- a protein+carb bite within 30 min after the session helps the LT-cruise reps absorb.",
-          "bigPicture": "Week 7, build phase -- the first dedicated LT-cruise session of the whole plan (4x5' at threshold, ~159-167bpm), and the second quality day now sits alongside Thursday's MP work every week through week 13. Readiness is good heading in, so this is a clean go, not a downgrade. Sets up Thursday's MP progression and Saturday's 18km long run.",
-          "estKm": 7.97
+          "movement": "Bike both ways for the commute as normal -- no session today, nothing to protect legs for.",
+          "food": "Normal balanced meals -- no session today, no special fueling needed.",
+          "bigPicture": "Week 7's LT-cruise session got bumped by a day since today didn't work out -- moved to Wednesday, with this week's swim dropped entirely rather than trying to fit both into one day. No harm to the week's structure, just a one-day shift.",
+          "estKm": null
         },
         {
           "date": "2026-08-19",
           "dayLabel": "Wed 19",
           "training": {
-            "type": "swim",
-            "title": "Open swim",
-            "detail": "35 min aerobic. Try 200m crawl / 1' rest × 4–5 sets — builds endurance with no leg impact.",
-            "estKm": null
+            "type": "tempo",
+            "title": "LT cruise intervals (moved from Tue)",
+            "detail": "50 min: 10' wu + 4×5' at threshold pace (~95-100% LT) + 1' float recovery + 10' cd — first dedicated LT session, moved from Tuesday",
+            "estKm": 7.97
           },
-          "movement": "Bike both ways to the pool is fine -- one easy day and a swim between Tuesday's intervals and Thursday's tempo is enough of a buffer.",
-          "food": "Normal balanced meals, phase-appropriate carbs -- this is a recovery-effort day, not a fueling day.",
-          "bigPicture": "Week 7's midweek swim, sitting between the block's two quality days. Pure aerobic, no-impact recovery -- its only job is to keep legs loose without adding load before Thursday."
+          "movement": "Bike both ways after the intervals -- TSB is climbing back toward neutral and HRV is strong, nothing here argues for saving the legs on the commute.",
+          "food": "Normal balanced day, not a big-carb day like Saturday's long run -- a protein+carb bite within 30 min after the session helps the LT-cruise reps absorb.",
+          "bigPicture": "Week 7's first dedicated LT-cruise session (4x5' at threshold, ~159-167bpm), moved here from Tuesday. This week's swim was dropped to make room rather than doubling up sessions -- but that also means tomorrow's MP progression now follows directly with zero buffer day, instead of the swim recovery day that would normally sit in between. Worth reading Thursday's effort by feel rather than assuming it'll feel like a normal second quality day.",
+          "estKm": 7.97
         },
         {
           "date": "2026-08-20",
@@ -502,7 +503,7 @@
           },
           "movement": "Bike both ways -- Wednesday's easy swim should be enough recovery from Tuesday's intervals; switch to U-Bahn on the day if legs still feel heavy that morning.",
           "food": "Normal balanced day with a slightly higher carb share -- back-to-back quality days this week mean glycogen matters more than usual.",
-          "bigPicture": "Week 7's second quality day: an MP progression (20' at 4:30/km building to 10' at real marathon pace, 4:15/km). Paired with Tuesday's new LT-cruise session, this is the busiest midweek this plan has asked for yet -- Saturday's 18km long run is the week's real payoff.",
+          "bigPicture": "Week 7's second quality day: an MP progression (20' at 4:30/km building to 10' at real marathon pace, 4:15/km). This week it lands back-to-back with Wednesday's LT-cruise session (moved from Tuesday) with no recovery day between them, since this week's swim was dropped -- more fatigue than the plan's normal Tue-tempo/Wed-swim/Thu-tempo spacing. If legs feel flat, it's fine to hold the MP segment at the easier end of 4:30/km rather than pushing toward 4:15. Saturday's 18km long run is still the week's real payoff.",
           "estKm": 11.06
         },
         {

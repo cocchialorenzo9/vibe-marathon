@@ -102,12 +102,12 @@
     }
   },
   "recommendation": {
-    "type": "tempo",
-    "title": "First dedicated LT-cruise session -- go as planned",
-    "reasoning": "Readiness is strong across the board: HRV is 17% above baseline (77ms vs a 65ms geometric-mean baseline), sleep score is 89 on a full 7.0h, and resting HR is normal at 44bpm. TSB has recovered fast, from -19.53 five days ago to -9.23 today, and CTL is climbing at a sustainable +2.17/week (within the 3-5 point ramp-rate ceiling). Nothing here argues for a downgrade -- this is a clean go for week 7's first dedicated LT-cruise session.",
-    "sessionDetail": "50 min: 10' warm-up at easy effort (125-142bpm) + 4x5' at threshold pace (~159-167bpm) with 1' float recovery between reps (easy effort) + 10' cooldown at easy effort. First dedicated LT session of the plan.",
-    "bikeNote": "Bike both ways -- TSB is climbing back toward neutral and HRV is strong, nothing here needs saving the legs for the commute.",
-    "swimNote": ""
+    "type": "rest",
+    "title": "Skipped -- LT session moved to Wednesday",
+    "reasoning": "Athlete could not run today (2026-08-18). The first dedicated LT-cruise session moves to Wednesday 2026-08-19, and this week's swim is dropped rather than double-booking that day. Readiness itself was strong going into today (HRV +17%, TSB -9.23) so nothing about the reschedule is fatigue-driven -- purely a logistics move.",
+    "sessionDetail": "No session today. Wednesday: 50 min: 10' warm-up (125-142bpm) + 4x5' at threshold pace (~159-167bpm) + 1' float recovery + 10' cooldown.",
+    "bikeNote": "Bike both ways for the normal work commute -- no session today, nothing to protect legs for.",
+    "swimNote": "Dropped this week -- made room for the rescheduled LT-cruise session on Wednesday instead."
   },
   "phase": "build",
   "daysToRace": 55,
