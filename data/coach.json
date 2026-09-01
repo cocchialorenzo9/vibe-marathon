@@ -120,7 +120,7 @@
     "sessions": [
       {
         "date": "2026-09-01",
-        "type": "outdoor_walking",
+        "type": "swimming",
         "distance_km": 1.26,
         "duration_min": 26.8,
         "avg_hr": 116,
@@ -237,7 +237,7 @@
         ],
         "avg_pace_min_km": 21.13,
         "tss": 21.6,
-        "lesson": "Short walk this morning, HR climbed from 75 to a plateau around 115-126bpm -- easy effort, not today's scheduled tempo session (not done yet as of this update)."
+        "lesson": "Easy pool swim this morning (~27min), not today's scheduled tempo session (not done yet as of this update) -- light aerobic cross-training."
       },
       {
         "date": "2026-08-31",
@@ -651,7 +651,7 @@
       },
       {
         "date": "2026-08-30",
-        "type": "outdoor_walking",
+        "type": "swimming",
         "distance_km": 1.53,
         "duration_min": 35.3,
         "avg_hr": 117,
@@ -800,7 +800,7 @@
         ],
         "avg_pace_min_km": 23.03,
         "tss": 28.9,
-        "lesson": "Incidental low-intensity activity, not a scheduled training session."
+        "lesson": "Easy pool swim later the same day as the hot 8.6km run above -- light cross-training, not a second training stress."
       },
       {
         "date": "2026-08-29",
@@ -1125,6 +1125,6 @@
         "lesson": "Scheduled optional recovery-week swim was swapped for a run again -- 142bpm avg is right at the top edge of the easy/aerobic band, third run in four days at moderate-to-high effort during what should be a lighter week."
       }
     ],
-    "analysis": "Volume/TSS over the trailing week is inconsistent -- three of the week's easy/recovery-designated days (Aug 26 swim, Aug 29 reduced long run, Aug 30 recovery run) were either swapped for harder running or downgraded to a short walk, while Aug 30 in particular ran at threshold-adjacent effort (153bpm avg) on what was meant to be the lightest day of the week. Aug 31 was the one clean, on-target execution. This pattern -- missing or replacing the easy days while occasionally running them hot -- is the main thing to watch heading into peak phase (starts this week), where recovery-day compliance matters more, not less."
+    "analysis": "Volume/TSS over the trailing week is inconsistent -- Aug 26's optional recovery swim was swapped for a run instead, and Aug 30's recovery run ran at threshold-adjacent effort (153bpm avg) on what was meant to be the lightest day of the week. Aug 29's scheduled 75min reduced long run didn't happen as running, but was substituted with an easy pool swim rather than skipped outright -- a reasonable active-recovery call, not a miss. Aug 31 was the one clean, on-target running execution. The main thing to watch heading into peak phase (starts this week) is recovery-day HR discipline (Aug 30) rather than the swim substitutions, which are a fine way to get cross-training in."
   }
 }

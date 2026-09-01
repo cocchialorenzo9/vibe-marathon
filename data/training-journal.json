@@ -10382,7 +10382,7 @@
   },
   {
     "date": "2026-08-29",
-    "type": "walk (reduced long run not completed)",
+    "type": "swimming",
     "scheduled": "long",
     "distance_km": 1.19,
     "duration_min": 28.4,
@@ -10504,9 +10504,9 @@
     ],
     "tss": 25.3,
     "avg_pace_min_km": 23.85,
-    "wentWell": "n/a -- no running happened this day.",
-    "wentWrong": "The scheduled 75min active-recovery long run didn't happen -- only a short 1.19km/28.4min walk was logged instead.",
-    "nextTime": "If legs needed the extra rest after a hard block, that's a fair call, but worth naming it as a deliberate skip rather than a silent miss."
+    "wentWell": "Substituted the scheduled long run with an easy pool swim (1.19km/28.4min, HR mostly in the recovery-to-easy range) instead of skipping outright -- a reasonable active-recovery call, especially after two hotter-than-planned sessions earlier in the week (Aug 22, Aug 24).",
+    "wentWrong": "The scheduled 75min active-recovery long run didn't happen as running -- a swim doesn't carry the same running-specific aerobic/muscular stimulus, so it's a genuine substitution, not equivalent training.",
+    "nextTime": "Fine as an occasional swap when legs need a break from impact, but shouldn't become a habit for scheduled long runs specifically -- those build running-specific durability a swim can't replace."
   },
   {
     "date": "2026-08-30",
