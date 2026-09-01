@@ -407,7 +407,7 @@
     "atl": 50.27,
     "tsb": -25.23,
     "readiness_score": 58,
-    "recommendation_type": "easy"
+    "recommendation_type": "medium-long"
   },
   {
     "date": "2026-08-06",
@@ -457,7 +457,7 @@
     "atl": 43.38,
     "tsb": -17.26,
     "readiness_score": 59,
-    "recommendation_type": "easy"
+    "recommendation_type": "tempo"
   },
   {
     "date": "2026-08-11",
@@ -527,7 +527,7 @@
     "atl": 37.53,
     "tsb": -9.23,
     "readiness_score": 82,
-    "recommendation_type": "easy"
+    "recommendation_type": "rest"
   },
   {
     "date": "2026-08-18",
