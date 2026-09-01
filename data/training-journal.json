@@ -10717,6 +10717,162 @@
     "nextTime": "Check pace/HR mid-run on days marked recovery-effort specifically -- this is the most significant single-session overshoot in the whole backfilled window."
   },
   {
+    "date": "2026-08-30",
+    "type": "swimming",
+    "scheduled": "easy",
+    "distance_km": 1.53,
+    "duration_min": 35.3,
+    "avg_hr": 117,
+    "max_hr": 128,
+    "hr_curve": [
+      {
+        "t_min": 1,
+        "hr": 117
+      },
+      {
+        "t_min": 2,
+        "hr": 119
+      },
+      {
+        "t_min": 3,
+        "hr": 118
+      },
+      {
+        "t_min": 4,
+        "hr": 119
+      },
+      {
+        "t_min": 5,
+        "hr": 120
+      },
+      {
+        "t_min": 6,
+        "hr": 119
+      },
+      {
+        "t_min": 7,
+        "hr": 119
+      },
+      {
+        "t_min": 8,
+        "hr": 111
+      },
+      {
+        "t_min": 9,
+        "hr": 114
+      },
+      {
+        "t_min": 10,
+        "hr": 116
+      },
+      {
+        "t_min": 11,
+        "hr": 117
+      },
+      {
+        "t_min": 12,
+        "hr": 121
+      },
+      {
+        "t_min": 13,
+        "hr": 122
+      },
+      {
+        "t_min": 14,
+        "hr": 114
+      },
+      {
+        "t_min": 15,
+        "hr": 114
+      },
+      {
+        "t_min": 16,
+        "hr": 114
+      },
+      {
+        "t_min": 17,
+        "hr": 115
+      },
+      {
+        "t_min": 18,
+        "hr": 106
+      },
+      {
+        "t_min": 19,
+        "hr": 114
+      },
+      {
+        "t_min": 20,
+        "hr": 109
+      },
+      {
+        "t_min": 21,
+        "hr": 115
+      },
+      {
+        "t_min": 22,
+        "hr": 120
+      },
+      {
+        "t_min": 23,
+        "hr": 123
+      },
+      {
+        "t_min": 24,
+        "hr": 128
+      },
+      {
+        "t_min": 25,
+        "hr": 126
+      },
+      {
+        "t_min": 26,
+        "hr": 120
+      },
+      {
+        "t_min": 27,
+        "hr": 115
+      },
+      {
+        "t_min": 28,
+        "hr": 115
+      },
+      {
+        "t_min": 29,
+        "hr": 117
+      },
+      {
+        "t_min": 30,
+        "hr": 117
+      },
+      {
+        "t_min": 31,
+        "hr": 118
+      },
+      {
+        "t_min": 32,
+        "hr": 123
+      },
+      {
+        "t_min": 33,
+        "hr": 121
+      },
+      {
+        "t_min": 34,
+        "hr": 118
+      },
+      {
+        "t_min": 35,
+        "hr": 112
+      }
+    ],
+    "tss": 28.9,
+    "avg_pace_min_km": 23.03,
+    "wentWell": "Easy pool swim later the same day, comfortably in the recovery/easy HR range -- fine low-impact addition on top of the day's run.",
+    "wentWrong": "n/a for the swim itself -- see the same-day running entry for that day's real compliance issue (153bpm avg on a recovery-effort day).",
+    "nextTime": "n/a -- the swim itself was fine; the day's actual lesson is about the run's HR, already captured in the other entry."
+  },
+  {
     "date": "2026-08-31",
     "type": "outdoor_running",
     "scheduled": "medium-long",
@@ -10923,5 +11079,129 @@
     "wentWell": "Nailed the effort -- 129bpm avg sits cleanly inside the prescribed 75-85% LT (~125-142bpm) easy/aerobic band, with duration close to the 50min prescription (47.7min actual).",
     "wentWrong": "Nothing notable, executed as intended -- one of the cleanest compliance days in the window.",
     "nextTime": "Use this session as the effort/pace reference point for what an on-target easy/medium-long day should feel like."
+  },
+  {
+    "date": "2026-09-01",
+    "type": "swimming",
+    "scheduled": "tempo",
+    "distance_km": 1.26,
+    "duration_min": 26.8,
+    "avg_hr": 116,
+    "max_hr": 128,
+    "hr_curve": [
+      {
+        "t_min": 0,
+        "hr": 75
+      },
+      {
+        "t_min": 1,
+        "hr": 94
+      },
+      {
+        "t_min": 2,
+        "hr": 104
+      },
+      {
+        "t_min": 3,
+        "hr": 109
+      },
+      {
+        "t_min": 4,
+        "hr": 114
+      },
+      {
+        "t_min": 5,
+        "hr": 116
+      },
+      {
+        "t_min": 6,
+        "hr": 116
+      },
+      {
+        "t_min": 7,
+        "hr": 114
+      },
+      {
+        "t_min": 8,
+        "hr": 111
+      },
+      {
+        "t_min": 9,
+        "hr": 116
+      },
+      {
+        "t_min": 10,
+        "hr": 117
+      },
+      {
+        "t_min": 11,
+        "hr": 118
+      },
+      {
+        "t_min": 12,
+        "hr": 116
+      },
+      {
+        "t_min": 13,
+        "hr": 113
+      },
+      {
+        "t_min": 14,
+        "hr": 120
+      },
+      {
+        "t_min": 15,
+        "hr": 124
+      },
+      {
+        "t_min": 16,
+        "hr": 124
+      },
+      {
+        "t_min": 17,
+        "hr": 115
+      },
+      {
+        "t_min": 18,
+        "hr": 118
+      },
+      {
+        "t_min": 19,
+        "hr": 122
+      },
+      {
+        "t_min": 20,
+        "hr": 124
+      },
+      {
+        "t_min": 21,
+        "hr": 126
+      },
+      {
+        "t_min": 22,
+        "hr": 126
+      },
+      {
+        "t_min": 23,
+        "hr": 128
+      },
+      {
+        "t_min": 24,
+        "hr": 128
+      },
+      {
+        "t_min": 25,
+        "hr": 128
+      },
+      {
+        "t_min": 26,
+        "hr": 124
+      }
+    ],
+    "tss": 21.6,
+    "avg_pace_min_km": 21.13,
+    "wentWell": "Easy pool swim this morning, HR mostly in the recovery-to-easy range (109-142bpm) throughout.",
+    "wentWrong": "Not today's scheduled LT-cruise tempo session (5x5' at threshold) -- that hadn't happened yet as of this update; this was a separate easy swim.",
+    "nextTime": "n/a for the swim itself -- just make sure today's actual tempo session still gets done; a morning swim doesn't substitute for the threshold work."
   }
 ]
