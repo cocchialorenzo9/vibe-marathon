@@ -43,6 +43,57 @@ Both scripts print a canonical `BiometricReading` JSON object to stdout. Parse i
 **If the Zepp export is stale** (the script will warn you), tell the user:
 "Your Zepp export is from {date}. If you trained since then, sync your watch, re-export from the Zepp app, and drop the new folder into `data/zepp/` before re-running."
 
+## Running this from a phone (no laptop / cloud session)
+
+1. **The zip is optional, not required.** The manual-entry fallback
+   `fetch_amazfit.py` already falls into (reading ~6 numbers straight off
+   the Zepp app, per `README.md`'s documented primary flow) works fine with
+   zero setup from a phone — always the fastest path if the athlete just
+   wants today's numbers in.
+2. **If using the Zepp export zip from a phone anyway:** it's a GDPR-style
+   personal-data export requested inside the Zepp app (exact menu path
+   varies by app version — look under a privacy/account-data section), and
+   delivery (commonly an emailed download link) isn't always instant. To
+   get the zip into a cloud/remote session (which has no access to the
+   phone's filesystem): have it land in Gmail or Google Drive, then use
+   whichever of those MCP tools is available to fetch it — for Drive,
+   `download_file_content` returns base64; decode it to a local `.zip` file
+   before unzipping. Unzip and confirm the layout matches what
+   `scripts/parse_zepp_export.py` expects
+   (`data/zepp/{userId}_{timestamp}/{SLEEP,HEARTRATE_AUTO,SPORT,ACTIVITY}/*.csv`,
+   one CSV per subdirectory) before running `fetch_amazfit.py`.
+3. **Critical gotcha: this session has no access to the athlete's laptop's
+   continuous local history file** (`~/.vibe-marathon/history.json`, the
+   ATL/CTL source Step 2 reads) — it starts empty in a fresh cloud
+   container. Computing ATL/CTL purely from that empty-then-freshly-backfilled
+   local history would incorrectly restart training load near zero.
+   **Fix:** read the last-committed `data/coach.json`'s `readiness.ctl`/
+   `readiness.atl` and its `date` as the real anchor, then replay the same
+   EWMA formula from Step 2 (ATL τ=7, CTL τ=42) forward day-by-day using
+   the newly Zepp-backfilled `tss` values for each date between that anchor
+   and today — don't trust a from-empty computation when the local
+   history's span obviously doesn't cover the gap back to the last commit.
+   Apply the same real-anchor replay when backfilling `data/chart-data.json`
+   for the same date range (Step 5's backfill mechanism already writes
+   per-day ctl/atl/tsb — just make sure those come from the replay, not a
+   from-zero calculation). Also: anything written to the local history file
+   in a cloud session is ephemeral (container gets reclaimed) — it will
+   *not* carry forward to the athlete's laptop's own local history, so
+   HRV/sleep-score entered during a phone session should be treated as
+   valid for that run's own output only, not as restoring the laptop-side
+   history's continuity.
+4. **Device type-code caveat:** raw Zepp sport-type codes can misclassify a
+   session at the source (this happened once already — real pool swims
+   logged under the same type code as a slow outdoor-walking session). If a
+   short (~1-2km), oddly-slow-paced "walking" session shows up, sanity-check
+   with the athlete before writing journal/lesson narrative that assumes it
+   was really a walk.
+5. **Push target note:** this pipeline's Step 6 pushes directly to the
+   repo's default branch, matching `README.md`'s daily-automation intent —
+   that's expected and differs from `AGENTS.md`'s feature-branch+PR policy,
+   which governs code/feature changes, not this data pipeline's routine
+   commits.
+
 ## Step 2 — Load rolling history
 
 Read the history file at the path reported in `history_path` from Step 1. It is a JSON array of daily entries. Each entry has: `date`, `tss`, `distance_km`, `avg_hr`, `hrv`, `resting_hr`, `sleep_hours`, `sleep_score`.
