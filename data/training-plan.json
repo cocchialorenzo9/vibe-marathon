@@ -723,29 +723,29 @@
           "date": "2026-09-07",
           "dayLabel": "Mon 7",
           "training": {
-            "type": "medium-long",
-            "title": "Medium-long run",
-            "detail": "55 min at easy effort (~75-85% LT)",
-            "estKm": 9.29
+            "type": "rest",
+            "title": "Rest day",
+            "detail": "Nothing done -- the medium-long run got pushed to Tuesday instead.",
+            "estKm": null
           },
-          "movement": "Bike both ways fine -- two days out from Saturday's long run, legs should be recovered.",
-          "food": "Balanced meals with a slightly higher carb share -- peak-phase volume is building, worth fueling proactively.",
-          "bigPicture": "Monday medium-long in week 10 (peak phase) -- this and Tuesday's tempo are the week's one-two punch before Thursday's tempo and Saturday's 150min long run, the biggest week of the block so far.",
-          "estKm": 9.29
+          "movement": "Bike both ways fine -- an unplanned rest day, nothing to protect against.",
+          "food": "Normal balanced meals -- no session today.",
+          "bigPicture": "Ended up as a full rest day; the medium-long run originally scheduled here happened Tuesday instead.",
+          "estKm": null
         },
         {
           "date": "2026-09-08",
           "dayLabel": "Tue 8",
           "training": {
-            "type": "tempo",
-            "title": "LT cruise intervals",
-            "detail": "60 min: 10' wu + 4\u00d76' at threshold pace (~95-100% LT) + 1' float recovery + 10' cd",
-            "estKm": 8.23
+            "type": "medium-long",
+            "title": "Medium-long run (moved from Monday)",
+            "detail": "55 min at easy effort (~75-85% LT)",
+            "estKm": 9.29
           },
-          "movement": "U-Bahn both ways today -- back-to-back medium-long (Monday) and this tempo session is real accumulated load, worth protecting the legs from the extra commute miles.",
-          "food": "Carb-focused day ahead of the threshold intervals; protein + carbs promptly afterward to kick off recovery before Wednesday's recovery swim.",
-          "bigPicture": "Threshold intervals step up to 4x6' this week (from last week's progression) -- a genuine fitness test as peak-phase volume builds toward Saturday's 25km long run.",
-          "estKm": 8.23
+          "movement": "U-Bahn both ways today -- picking up Monday's medium-long plus this week's accumulating load, worth protecting the legs from the extra commute miles.",
+          "food": "Balanced meals with a slightly higher carb share -- peak-phase volume is building, worth fueling proactively.",
+          "bigPicture": "Picks up Monday's medium-long run, run a day late (68 min actual vs 55 prescribed, steady 133-145bpm easy effort) -- Tuesday's own LT-cruise intervals moved to Friday to make room.",
+          "estKm": 9.29
         },
         {
           "date": "2026-09-09",
@@ -817,7 +817,7 @@
           "estKm": 25.34
         }
       ],
-      "estKm": 69.99
+      "estKm": 61.76
     },
     {
       "week": 11,

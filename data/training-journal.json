@@ -12471,7 +12471,7 @@
   {
     "date": "2026-09-08",
     "type": "outdoor_running",
-    "scheduled": "tempo",
+    "scheduled": "medium-long",
     "distance_km": 12.39,
     "duration_min": 68.0,
     "avg_hr": 136,
@@ -12752,8 +12752,8 @@
     ],
     "tss": 75.2,
     "avg_pace_min_km": 5.49,
-    "wentWell": "Duration was close to the prescription (68 vs 60 min).",
-    "wentWrong": "Scheduled as 4x6' LT-cruise intervals at 159-167bpm; HR never exceeded 145 for the entire session (steady 133-145bpm throughout) -- this was run as a continuous easy-effort run, not threshold intervals. The prescribed quality stimulus didn't happen.",
-    "nextTime": "Deliberate call, not a slip -- confirmed the quality work was pushed to Sept 9 instead. Worth flagging structurally, though: an easy Tuesday followed by quality on Wednesday (swim slot) and another hard tempo on Thursday stacks two quality-adjacent efforts close together -- worth checking readiness before both, not just executing back to back by default."
+    "wentWell": "This was Monday's medium-long, run a day late -- 68 min actual vs the prescribed 55, steady easy effort (133-145bpm) the whole way, consistent with an aerobic medium-long rather than intervals.",
+    "wentWrong": "Monday itself ended up as a full rest day with nothing done -- the session simply moved a day later rather than being skipped.",
+    "nextTime": "Deliberate reshuffle, not a slip -- Tuesday's own LT-cruise intervals moved to Friday to make room, and Wednesday absorbed the week's long tempo. Worth checking readiness before back-to-back quality days (Wednesday's tempo, Friday's LT-cruise) rather than assuming the moved schedule is automatically fine."
   }
 ]
