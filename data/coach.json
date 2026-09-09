@@ -108,9 +108,9 @@
   "recommendation": {
     "type": "tempo",
     "title": "Long tempo run as scheduled -- legs have had real rest",
-    "reasoning": "HRV and sleep score are being skipped this run at your call, and resting HR wasn't captured today either -- no biometric alarm bells to weigh either way. TSB sits at -4.59, only mildly negative and well clear of the -15 caution threshold; CTL is climbing slowly (33.0, about +0.8/wk). The bigger factor: Sept 6's unplanned 100-minute near-MP treadmill effort was a real stress spike, but three days and a rest day (Sept 7) plus Sept 8's LT-cruise session -- which actually ran as an easy continuous effort, HR never above 145 -- have both let that settle. Net effect: legs have had more real recovery than the schedule alone suggests, and no true threshold stimulus has happened yet this week.",
+    "reasoning": "HRV and sleep score are being skipped this run at your call, and resting HR wasn't captured today either -- no biometric alarm bells to weigh either way. TSB sits at -4.59, only mildly negative and well clear of the -15 caution threshold; CTL is climbing slowly (33.0, about +0.8/wk). Sept 6's deliberate long-run makeup (30-min MP finish) is now a few days back, but you've told me the plan is to run today's (Sept 9) swim slot as the LT-cruise quality session instead -- if that happens, tomorrow's 40-minute tempo lands as the second quality-adjacent effort in two days. Worth confirming that's intentional before treating tomorrow as a standard 'proceed as planned.'",
     "sessionDetail": "65 min: 10' warmup + 40' at 4:20-4:25/km + cooldown. Pace-based tempo session (near marathon pace) -- keeps its written pace target rather than a %LT-derived bpm range.",
-    "bikeNote": "U-Bahn both ways tomorrow -- Sept 6's unplanned 100-minute near-MP treadmill session is still inside the last week's fatigue window, so protect the legs around this real 40-minute near-MP block rather than adding commute miles on top.",
+    "bikeNote": "U-Bahn both ways tomorrow regardless -- protect the legs for this 40-minute near-MP block, especially if today's swim slot turns into the LT-cruise session as planned.",
     "swimNote": ""
   },
   "phase": "peak",
@@ -401,7 +401,7 @@
         ],
         "avg_pace_min_km": 5.49,
         "tss": 75.2,
-        "lesson": "Scheduled as 4x6' LT-cruise intervals at 159-167bpm, but HR never rose above 145 across the full 68 minutes -- this ran as a continuous easy effort, not threshold work; the prescribed quality stimulus didn't happen."
+        "lesson": "Confirmed deliberate: ran easy on purpose, planning to move the quality (LT-cruise) work to Sept 9 instead. HR stayed 133-145bpm the whole session, consistent with an intentional easy day, not a missed interval session."
       },
       {
         "date": "2026-09-06",
@@ -814,7 +814,7 @@
         ],
         "avg_pace_min_km": 4.84,
         "tss": 124.2,
-        "lesson": "Prescribed was a 25-minute recovery jog; this became a 100-minute, 20.7km effort at near-marathon pace (4:50/km) with HR reaching 169 -- a huge, unplanned volume and intensity spike on what was meant to be the lightest day of the week."
+        "lesson": "This was the athlete's deliberate makeup of Sept 5's skipped long run (110 min: first 80 easy + last 30 at MP), moved to Sept 6 and slightly shortened -- HR climbed cleanly from 130-145bpm (first ~66 min) to 152-169bpm over the final ~30 minutes, a genuine, well-executed MP finish. Not an unplanned deviation, but it did stack real fatigue into a week whose written schedule assumed a light day here."
       },
       {
         "date": "2026-09-04",
@@ -1030,6 +1030,6 @@
         "lesson": "Not on the plan at all -- an aerobic-to-tempo effort (avg 147bpm) added on a day with no scheduled session."
       }
     ],
-    "analysis": "TSS across the trailing 7 days is erratic rather than a clean progression -- Sept 6's unplanned 100-minute treadmill effort landed at nearly double the week's other sessions combined, while Sept 8's prescribed LT-cruise intervals were run as a continuous easy effort instead, meaning this week delivered zero true threshold stimulus despite a session nominally scheduled for it. Combined with Sept 4's unscheduled extra run, the real training pattern this week -- big unplanned volume, skipped quality -- looks meaningfully different from what training-plan.json shows on paper."
+    "analysis": "TSS across the trailing 7 days is uneven by design rather than accidental drift -- Sept 6 was a deliberate makeup of Sept 5's skipped long run (with a clean 30-minute MP finish), and Sept 8's easy effort was an intentional swap, with quality work pushed to Sept 9 instead. Combined with Sept 4's extra easy session, the week's real training looks different from training-plan.json's calendar but reflects the athlete's own in-week adjustments, not slippage."
   }
 }

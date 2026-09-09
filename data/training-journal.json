@@ -12464,9 +12464,9 @@
     ],
     "tss": 124.2,
     "avg_pace_min_km": 4.84,
-    "wentWell": "None to speak of on the positive side -- this session bears almost no resemblance to what was prescribed.",
-    "wentWrong": "Prescribed was a ~25-minute recovery jog (week 10's finalized volume-escalation cut). Actual was 100.2 minutes, 20.72km on a treadmill at 4:50/km -- essentially near-marathon-pace -- with avg HR 144 and max 169 (into threshold territory). A huge, unplanned substitution: roughly 4x the prescribed duration at a pace and effort far above recovery.",
-    "nextTime": "This needs a direct conversation, not just a journal note -- a 100-minute near-MP treadmill effort in place of a 25-minute recovery jog, days before that week's Thursday long tempo, materially changes the week's fatigue picture and should factor into the next day's readiness call."
+    "wentWell": "Almost exactly mirrors Sept 5's skipped long-run prescription (first 80 easy + last 30 at MP), just moved a day and slightly shorter -- HR curve shows a clean structure: minutes 1-66 held steady aerobic effort (130-145bpm), then climbed steadily from 152 to 169bpm over the final ~30 minutes, a genuine, well-executed marathon-pace finish. This was a deliberate makeup of the missed session, not an accidental blowout of the day's written recovery-jog prescription.",
+    "wentWrong": "None on execution. The one real note: this stacked ~124 TSS into a week whose paper schedule assumed a light 25-min recovery day here -- the CTL/TSB numbers already account for the real stress, but it's worth remembering the week's actual fatigue load is higher than training-plan.json's written schedule would suggest on its own.",
+    "nextTime": "When moving a missed long run to a different day, worth checking whether that original day's recovery purpose still needs to land somewhere else in the week -- swapping doesn't create an extra rest day elsewhere."
   },
   {
     "date": "2026-09-08",
@@ -12754,6 +12754,6 @@
     "avg_pace_min_km": 5.49,
     "wentWell": "Duration was close to the prescription (68 vs 60 min).",
     "wentWrong": "Scheduled as 4x6' LT-cruise intervals at 159-167bpm; HR never exceeded 145 for the entire session (steady 133-145bpm throughout) -- this was run as a continuous easy-effort run, not threshold intervals. The prescribed quality stimulus didn't happen.",
-    "nextTime": "If the LT-cruise session isn't going to be run at threshold effort, better to consciously downgrade it to an easy day on purpose (per the plan's own rollback-safety-valve logic) than to run the intervals in name only."
+    "nextTime": "Deliberate call, not a slip -- confirmed the quality work was pushed to Sept 9 instead. Worth flagging structurally, though: an easy Tuesday followed by quality on Wednesday (swim slot) and another hard tempo on Thursday stacks two quality-adjacent efforts close together -- worth checking readiness before both, not just executing back to back by default."
   }
 ]
