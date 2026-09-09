@@ -106,11 +106,11 @@
     }
   },
   "recommendation": {
-    "type": "tempo",
-    "title": "Long tempo run as scheduled -- second hard day in a row",
-    "reasoning": "HRV and sleep score are being skipped this run at your call, and resting HR wasn't captured today either -- no biometric alarm bells to weigh either way. TSB sits at -4.59, only mildly negative and well clear of the -15 caution threshold; CTL is climbing slowly (33.0, about +0.8/wk). You've confirmed today's swim slot is becoming the LT-cruise quality session, which makes tomorrow's 40-minute tempo the second quality-adjacent effort in two days -- you've chosen to keep it as scheduled given TSB isn't in caution territory, so proceed, but treat tonight's recovery (food, sleep) as more load-bearing than usual.",
-    "sessionDetail": "65 min: 10' warmup + 40' at 4:20-4:25/km + cooldown. Pace-based tempo session (near marathon pace) -- keeps its written pace target rather than a %LT-derived bpm range.",
-    "bikeNote": "U-Bahn both ways tomorrow -- today's LT-cruise session plus tomorrow's tempo is two hard days back to back, so don't add commute miles on top of either.",
+    "type": "easy",
+    "title": "Easy day -- absorbing today's tempo",
+    "reasoning": "Today (Sep 9) took over Thursday's originally-scheduled long tempo (40 min near marathon pace), moved up after Tuesday's medium-long and tempo swapped days. Tomorrow is deliberately easy, sitting between today's tempo and Friday's LT-cruise intervals -- TSB will need a day to recover from a real threshold-adjacent effort before the week's next quality day.",
+    "sessionDetail": "35 min at easy effort (~75-85% LT), roughly 125-142bpm.",
+    "bikeNote": "Bike both ways fine -- nothing to protect against on an easy day.",
     "swimNote": ""
   },
   "phase": "peak",
