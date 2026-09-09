@@ -358,5 +358,65 @@
     "avg_band": 1,
     "avg_pace_min_km": 5.85,
     "distance_km": 8.15
+  },
+  {
+    "date": "2026-09-01",
+    "band1_min": 8,
+    "band2_min": 0,
+    "band3_min": 5,
+    "band4_min": 17,
+    "band5_min": 5,
+    "avg_pct_lt": 90,
+    "avg_band": 3,
+    "avg_pace_min_km": 4.91,
+    "distance_km": 7.09
+  },
+  {
+    "date": "2026-09-02",
+    "band1_min": 3,
+    "band2_min": 2,
+    "band3_min": 52,
+    "band4_min": 8,
+    "band5_min": 2,
+    "avg_pct_lt": 88,
+    "avg_band": 3,
+    "avg_pace_min_km": 5.56,
+    "distance_km": 12.12
+  },
+  {
+    "date": "2026-09-04",
+    "band1_min": 10,
+    "band2_min": 3,
+    "band3_min": 15,
+    "band4_min": 16,
+    "band5_min": 6,
+    "avg_pct_lt": 88,
+    "avg_band": 3,
+    "avg_pace_min_km": 5.15,
+    "distance_km": 9.58
+  },
+  {
+    "date": "2026-09-06",
+    "band1_min": 5,
+    "band2_min": 50,
+    "band3_min": 16,
+    "band4_min": 18,
+    "band5_min": 11,
+    "avg_pct_lt": 86,
+    "avg_band": 3,
+    "avg_pace_min_km": 4.84,
+    "distance_km": 20.72
+  },
+  {
+    "date": "2026-09-08",
+    "band1_min": 6,
+    "band2_min": 39,
+    "band3_min": 23,
+    "band4_min": 0,
+    "band5_min": 0,
+    "avg_pct_lt": 81,
+    "avg_band": 2,
+    "avg_pace_min_km": 5.49,
+    "distance_km": 12.39
   }
 ]

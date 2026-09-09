@@ -769,9 +769,9 @@
             "detail": "65 min: 10' wu + 40' at 4:20\u20134:25/km + cd",
             "estKm": 13.37
           },
-          "movement": "Bike both ways -- yesterday's swim was recovery, legs should be ready for this.",
-          "food": "Carb-heavy day ahead of the sustained tempo effort; refuel with protein + carbs within 30 min after.",
-          "bigPicture": "This week's second tempo session (40min continuous at 4:20-4:25/km) builds race-pace endurance ahead of Saturday's 150min/25km long run -- the biggest single session of the plan so far.",
+          "movement": "U-Bahn both ways today -- protect the legs for the 40-minute near-MP block, especially with Sept 6's unplanned 100-minute near-MP treadmill session still only a few days back.",
+          "food": "Best carb breakfast before the session. Real recovery meal (protein + carbs) within 30 min after -- this is genuine threshold-adjacent stress.",
+          "bigPicture": "Week 10, peak phase. This is the week's main quality stimulus -- 40 continuous minutes near marathon pace. Legs should be relatively fresh: Tuesday's LT-cruise intervals ended up running as a continuous easy effort instead, so today is really this week's first real hard test.",
           "estKm": 13.37
         },
         {
@@ -783,9 +783,9 @@
             "detail": "150 min (~25 km), easy effort (~75-85% LT)",
             "estKm": 25.34
           },
-          "movement": "No commute today, it's the weekend -- this is the week's biggest session (150min/~25km), just get to the start.",
-          "food": "Full carb-loading approach the night before and morning of -- this is the longest run of the plan so far, fuel it like a dress rehearsal for race day.",
-          "bigPicture": "The peak-phase long run everyone's been building to -- 150min/~25km, the biggest volume week of the block closes here. How this run feels is a real signal for where fitness stands heading into week 11.",
+          "movement": "No commute today, it's the weekend -- no cycling before this one, save the legs entirely for the ~24km long run.",
+          "food": "High carb the night before and morning of -- a 150-minute effort needs real fueling, bring gels for the back half. Recovery meal within 30 min after.",
+          "bigPicture": "Week 10's peak long run -- 150 minutes, the biggest single session so far this block, building directly toward week 11's 165-min/29km peak effort next week.",
           "estKm": 25.34
         }
       ],
@@ -808,9 +808,9 @@
             "detail": "20 min at recovery/easy effort (~65-75% LT) -- finalized 2026-08-18. Ramp headroom is thin (trailing CTL delta +2.44/wk against the conservative 3 pts/wk ceiling; HRV/TSB haven't been clearly green together for several consecutive days -- Aug 16 saw an HRV/resting-HR anomaly and Aug 18's HRV/sleep readings were lost). Modest first cut, in line with week 10's own first cut -- expect this to grow on later runs if headroom accumulates before this week actually starts.",
             "estKm": 3.38
           },
-          "movement": "No commute today, it's the weekend -- short recovery shakeout after yesterday's big long run.",
-          "food": "Normal balanced meals, prioritize protein and easy digestion after yesterday's long effort.",
-          "bigPicture": "First day of week 11 (peak phase, the hardest week on paper) -- this short Sunday cut protects recovery right after Saturday's 25km long run before the week's own demands start Monday."
+          "movement": "No commute today, it's the weekend -- short recovery jog only, no cycling needed.",
+          "food": "Normal balanced meals -- light day absorbing yesterday's long run.",
+          "bigPicture": "Week 11 begins -- the hardest week of the whole plan (3km repeats Thursday, a 165-min/29km peak long run Saturday). Today's short 20-minute shakeout stays easy on purpose to absorb yesterday's long run before the real work starts."
         },
         {
           "date": "2026-09-14",
@@ -821,9 +821,9 @@
             "detail": "55 min at easy effort (~75-85% LT) \u2014 held steady, not increased",
             "estKm": 9.29
           },
-          "movement": "Bike both ways fine if legs feel recovered from Saturday; U-Bahn both ways if still heavy from the 25km long run.",
-          "food": "Balanced meals, moderate carbs -- nothing special, this session is held steady rather than increased for a reason.",
-          "bigPicture": "Week 11 is deliberately the hardest week on paper, but Monday's medium-long stays flat rather than growing -- Tuesday stays plain-easy too (no LT intervals this week), the plan's own guardrail against stacking a third quality day in the toughest week.",
+          "movement": "Bike both ways fine -- moderate day, nothing to protect against yet.",
+          "food": "Normal balanced meals with a solid carb base -- still building toward Thursday's hardest session of the plan.",
+          "bigPicture": "Week 11's medium-long run, held steady at 55 minutes rather than increased -- deliberately kept moderate so Thursday's 3x3km threshold reps and Saturday's 29km peak long run get full legs.",
           "estKm": 9.29
         },
         {
@@ -835,9 +835,9 @@
             "detail": "65 min",
             "estKm": 10.98
           },
-          "movement": "Bike both ways fine -- this is a plain easy day, no LT intervals this week by design.",
-          "food": "Normal balanced meals with adequate carbs -- nothing special.",
-          "bigPicture": "Tuesday stays plain-easy this week (week 11) rather than the usual LT-cruise slot -- a deliberate guardrail given this is the plan's hardest week by total load; the next real test is Wednesday's swim into Thursday's session.",
+          "movement": "Bike both ways fine.",
+          "food": "Normal balanced meals, easy-effort day.",
+          "bigPicture": "Deliberately plain-easy Tuesday this week -- week 11 is the hardest week of the plan, so the usual LT-cruise intervals are skipped here on purpose. A third quality day in the hardest week would be bad periodization even with good readiness.",
           "estKm": 10.98
         },
         {
@@ -849,9 +849,9 @@
             "detail": "30\u201335 min light swim. Legs heavy from Tuesday? Water is your best friend today.",
             "estKm": null
           },
-          "movement": "U-Bahn round-trip for work, and separately bike round-trip to the pool \u2014 max 11km cycling today. No 20km.",
-          "food": "High carb day. Pasta for dinner \u2014 tomorrow is the hardest session of the plan.",
-          "bigPicture": "Light swim before the hardest session of the year. 30 minutes of easy crawl \u2014 no more. Tomorrow you need 100% of your legs for 3\u00d73km."
+          "movement": "Bike both ways to the pool is fine.",
+          "food": "Normal balanced meals, light day.",
+          "bigPicture": "Active-recovery swim between Tuesday's easy day and Thursday's hardest session of the plan -- a real break in the water before the week's biggest quality test."
         },
         {
           "date": "2026-09-17",
@@ -862,9 +862,9 @@
             "detail": "65 min: 10' wu + 3\u00d73km at 4:15/km + 3' rec + cd \u2014 hardest session of the plan",
             "estKm": 12.51
           },
-          "movement": "U-Bahn BOTH ways. No bike at all today. No exceptions.",
-          "food": "Best carb breakfast of the training block. Post-session: full recovery meal immediately.",
-          "bigPicture": "The hardest session of the entire plan. 3\u00d73km at sub-3h race pace. If you hit all three reps on target, you have the fitness for October 11.",
+          "movement": "U-Bahn both ways -- this is the plan's hardest quality session, protect the legs coming and going.",
+          "food": "Best carb breakfast. This is the biggest tempo stimulus in the whole plan -- fuel properly beforehand, and get a real recovery meal (protein + carbs) within 30 min after.",
+          "bigPicture": "The hardest session of the entire plan -- 3x3km at 4:15/km, real race-pace-adjacent threshold work. This is what week 11 exists to deliver; Saturday's 29km peak long run two days later means recovery between the two matters as much as the session itself.",
           "estKm": 12.51
         },
         {
@@ -876,9 +876,9 @@
             "detail": "165 min (~29 km): first 145 min at easy effort (~75-85% LT), last 20 min at 4:20/km \u2014 your longest run ever",
             "estKm": 29.11
           },
-          "movement": "No cycling. U-Bahn both ways. This is your longest training run ever.",
-          "food": "Carb-load Friday evening. Pre-run breakfast. Gel every 40\u201345 min. Full recovery meal after.",
-          "bigPicture": "165 minutes \u2014 ~29km, your training maximum this cycle. After this, it's about protecting your fitness, not building it. You've already done the work.",
+          "movement": "No commute today, it's the weekend -- no cycling before this one. Your longest run ever (29km) -- get to the start rested.",
+          "food": "High carb loading the day before and morning of. Bring fuel for a 165-minute effort -- the longest run of the entire plan. Recovery meal within 30 min after, this one will need it.",
+          "bigPicture": "The plan's peak long run -- 165 minutes, ~29km, your longest run ever, capping the hardest week of the block. Everything since week 7's volume escalation has been building toward this session; next week (12) is a full recovery week to absorb it before the final push toward taper.",
           "estKm": 29.11
         }
       ],
@@ -901,9 +901,9 @@
             "detail": "20 min very easy (~65-75% LT) \u2014 recovery week, kept short rather than skipped",
             "estKm": 3.38
           },
-          "movement": "No commute today, it's the weekend \u2014 short, easy shakeout after the hardest week of the plan.",
-          "food": "Eat well \u2014 don't reduce calories this week, the body is rebuilding after week 11's peak long run and 3x3km.",
-          "bigPicture": "Recovery week (week 12) applies to the Sunday easy run too \u2014 a short 20-minute version the day after week 11's peak long run (the biggest single session of the whole plan), consolidating rather than adding to that fatigue.",
+          "movement": "No commute today, it's the weekend -- very short recovery jog only.",
+          "food": "Normal balanced meals -- full recovery week starting, no need to overthink carbs today.",
+          "bigPicture": "Week 12, a full recovery week right after the plan's hardest week and longest-ever run. This short 20-minute shakeout is intentional -- absorb, don't build, this week.",
           "estKm": 3.38
         },
         {
@@ -915,9 +915,9 @@
             "detail": "50 min very slow (~65-75% LT) \u2014 mandatory unload after peak week",
             "estKm": 8.45
           },
-          "movement": "Easy bike both ways \u2014 recovery week, legs benefit from gentle movement",
-          "food": "Eat well \u2014 don't reduce calories after your hardest week. Your body is rebuilding.",
-          "bigPicture": "Mandatory recovery after the hardest week of the plan. Very slow run \u2014 slower than you think you need. Your legs are consolidating 3\u00d73km and 29km.",
+          "movement": "Bike both ways fine -- very easy effort day.",
+          "food": "Normal balanced meals, nothing carb-loaded needed -- this is an unload week.",
+          "bigPicture": "Still week 12's mandatory unload after week 11's peak effort. Slow and unhurried is the entire point of this session -- the fitness from the last two weeks needs to be absorbed, not chased.",
           "estKm": 8.45
         },
         {
@@ -929,9 +929,9 @@
             "detail": "30 min relaxed swimming. Backstroke, floating, whatever feels good. Pure recovery.",
             "estKm": null
           },
-          "movement": "20km biking today is fine \u2014 running load is reduced this week",
-          "food": "Normal balanced day",
-          "bigPicture": "20\u201330 minutes of water therapy. Backstroke, easy crawl, floating. Come out feeling lighter. Pure recovery, no training goal."
+          "movement": "Bike both ways to the pool is fine.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "Last easy day of the recovery week before Thursday's return to normal training -- pure recovery, nothing structured."
         },
         {
           "date": "2026-09-24",
