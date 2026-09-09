@@ -107,10 +107,10 @@
   },
   "recommendation": {
     "type": "tempo",
-    "title": "Long tempo run as scheduled -- legs have had real rest",
-    "reasoning": "HRV and sleep score are being skipped this run at your call, and resting HR wasn't captured today either -- no biometric alarm bells to weigh either way. TSB sits at -4.59, only mildly negative and well clear of the -15 caution threshold; CTL is climbing slowly (33.0, about +0.8/wk). Sept 6's deliberate long-run makeup (30-min MP finish) is now a few days back, but you've told me the plan is to run today's (Sept 9) swim slot as the LT-cruise quality session instead -- if that happens, tomorrow's 40-minute tempo lands as the second quality-adjacent effort in two days. Worth confirming that's intentional before treating tomorrow as a standard 'proceed as planned.'",
+    "title": "Long tempo run as scheduled -- second hard day in a row",
+    "reasoning": "HRV and sleep score are being skipped this run at your call, and resting HR wasn't captured today either -- no biometric alarm bells to weigh either way. TSB sits at -4.59, only mildly negative and well clear of the -15 caution threshold; CTL is climbing slowly (33.0, about +0.8/wk). You've confirmed today's swim slot is becoming the LT-cruise quality session, which makes tomorrow's 40-minute tempo the second quality-adjacent effort in two days -- you've chosen to keep it as scheduled given TSB isn't in caution territory, so proceed, but treat tonight's recovery (food, sleep) as more load-bearing than usual.",
     "sessionDetail": "65 min: 10' warmup + 40' at 4:20-4:25/km + cooldown. Pace-based tempo session (near marathon pace) -- keeps its written pace target rather than a %LT-derived bpm range.",
-    "bikeNote": "U-Bahn both ways tomorrow regardless -- protect the legs for this 40-minute near-MP block, especially if today's swim slot turns into the LT-cruise session as planned.",
+    "bikeNote": "U-Bahn both ways tomorrow -- today's LT-cruise session plus tomorrow's tempo is two hard days back to back, so don't add commute miles on top of either.",
     "swimNote": ""
   },
   "phase": "peak",
