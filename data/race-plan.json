@@ -1,0 +1,986 @@
+{
+  "generatedAt": "2026-10-09",
+  "race": {
+    "name": "MARATHON MÜNCHEN by Brooks 2026",
+    "date": "2026-10-11",
+    "startTime": "09:00",
+    "start": "Spiridon-Louis-Ring, Olympic Park",
+    "finish": "Willi-Daume-Platz, Olympic Lake",
+    "distanceKm": 42.195
+  },
+  "summary": "Heart rate leads, pace follows. HR <=158 to the half, <=160 to km 30, then race. Two 160 mL honey flasks (~100 g carbs each) = 8 sips tied to aid stations, water at every station, 500 mL backup water in the vest. Start 50-100 m behind the 3:15 pacer.",
+  "goldenRules": [
+    "Obey whichever ceiling you hit first: HR ceiling or pace ceiling. Low HR is not permission to run faster than the pace ceiling before km 30.",
+    "Never chase lost time with a surge. Run the target pace from where you are; the gap closes by itself.",
+    "Judge HR on the km-lap average, not on a single reading. Ignore spikes on bridges, underpasses and at aid stations.",
+    "Lanes only move down (or stay) before km 30. No climbing back up.",
+    "Every honey sip is followed by water from a cup. Water at every station, sip or not.",
+    "Use the official km markers for splits, not watch distance (the watch will read 0.3-0.5 km long)."
+  ],
+  "lanes": [
+    {
+      "id": "A",
+      "name": "A-stretch",
+      "finish": "sub-3:15 (3:14:55)",
+      "avgPace": "4:36",
+      "paceBand": "4:35-4:38",
+      "hr": "153-158 to half",
+      "tone": "push",
+      "when": "km 10 lap at 4:33-4:38 with lap-avg HR <=155, legs light, short sentences possible. Close on the 3:15 pacer."
+    },
+    {
+      "id": "R",
+      "name": "A-real",
+      "finish": "3:15-3:18 (~3:17)",
+      "avgPace": "4:40",
+      "paceBand": "4:38-4:42",
+      "hr": "152-158 to half",
+      "tone": "hold",
+      "when": "HR 156-158 at 4:38-4:40. What the HR rule should actually produce. Keep the pacer in sight, don't chase."
+    },
+    {
+      "id": "B",
+      "name": "B",
+      "finish": "3:20-3:25 (~3:22)",
+      "avgPace": "4:47",
+      "paceBand": "4:45-4:50",
+      "hr": "<=155",
+      "tone": "fallback",
+      "when": "HR >158 at 4:40+ by km 10, heavy legs or gut trouble early, or HR >160 at the half."
+    },
+    {
+      "id": "C",
+      "name": "C - survival",
+      "finish": "~3:30",
+      "avgPace": "4:55-5:10",
+      "paceBand": "4:55-5:10",
+      "hr": "whatever is sustainable",
+      "tone": "survival",
+      "when": "HR >165 at the same pace, pace fading >10 s/km at the same HR, cramp or light-headedness. Banana at 31.5, walk 10 s through each station, keep running to the line."
+    }
+  ],
+  "phases": [
+    {
+      "km": "0-5",
+      "A": "4:42-4:45",
+      "R": "4:43-4:46",
+      "B": "4:47-4:50",
+      "expectedHr": "145-152",
+      "hrCeiling": "152 (ignore first 2 km)",
+      "paceCeiling": "4:40",
+      "note": "Adrenaline inflates HR. Start 50-100 m behind the 3:15 pacer."
+    },
+    {
+      "km": "5-10",
+      "A": "4:35-4:38",
+      "R": "4:38-4:41",
+      "B": "4:45-4:50",
+      "expectedHr": "152-155",
+      "hrCeiling": "158",
+      "paceCeiling": "4:33",
+      "note": "Settle. First honey sip at km 6."
+    },
+    {
+      "km": "10-21.1",
+      "A": "4:35-4:37",
+      "R": "4:38-4:41",
+      "B": "4:45-4:50",
+      "expectedHr": "154-158",
+      "hrCeiling": "158",
+      "paceCeiling": "4:33",
+      "note": "Cruise in the pack. Fuel exactly on schedule."
+    },
+    {
+      "km": "21.1-30",
+      "A": "4:35-4:37",
+      "R": "4:38-4:42",
+      "B": "4:45-4:52",
+      "expectedHr": "157-160",
+      "hrCeiling": "160",
+      "paceCeiling": "4:30",
+      "note": "+2 bpm of normal drift allowed. Do not speed up yet."
+    },
+    {
+      "km": "30-35",
+      "A": "build to 4:30",
+      "R": "hold",
+      "B": "hold",
+      "expectedHr": "160-165",
+      "hrCeiling": "165",
+      "paceCeiling": "none",
+      "note": "First place you are allowed to push - only if the km 30 check is green."
+    },
+    {
+      "km": "35-42.2",
+      "A": "everything",
+      "R": "everything",
+      "B": "everything",
+      "expectedHr": "whatever it takes",
+      "hrCeiling": "none",
+      "paceCeiling": "none",
+      "note": "Coke at 39.5. Empty the tank from km 40."
+    }
+  ],
+  "splits": {
+    "columns": [
+      "km 5",
+      "km 10",
+      "Half",
+      "km 30",
+      "km 35",
+      "Finish"
+    ],
+    "rows": [
+      {
+        "lane": "A",
+        "values": [
+          "23:35",
+          "46:40",
+          "1:37:45",
+          "2:18:45",
+          "2:41:50",
+          "3:14:55"
+        ]
+      },
+      {
+        "lane": "R",
+        "values": [
+          "23:40",
+          "47:00",
+          "1:38:40",
+          "2:20:10",
+          "2:43:30",
+          "~3:17"
+        ]
+      },
+      {
+        "lane": "B",
+        "values": [
+          "23:55",
+          "47:50",
+          "1:40:55",
+          "2:23:30",
+          "2:47:25",
+          "~3:22"
+        ]
+      }
+    ]
+  },
+  "overCapProtocol": [
+    {
+      "trigger": "Lap-avg HR 1-2 bpm over the ceiling",
+      "action": "Ease 5 s/km. Give it 1 km - HR lags 60-90 s behind a pace change."
+    },
+    {
+      "trigger": "3-5 bpm over",
+      "action": "Ease 10 s/km (from your data ~3-4 s/km is worth 1 bpm)."
+    },
+    {
+      "trigger": "Still over after 2 km of easing",
+      "action": "Drop one lane (A-stretch -> A-real -> B). No climbing back before km 30."
+    },
+    {
+      "trigger": ">163 before the half",
+      "action": "Straight to B (4:45-4:50). Check you didn't miss a honey sip or water."
+    },
+    {
+      "trigger": "HR 5+ bpm UNDER the expected band at target pace",
+      "action": "You may go 5 s/km faster - never faster than the pace ceiling for that phase."
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "km10",
+      "km": 10,
+      "title": "km 10",
+      "read": "Right after the km 10 beep: last-lap pace + lap-avg HR.",
+      "targets": "A 46:40 · A-real 47:00 · B 47:50",
+      "hrBands": [
+        "< 150",
+        "150-155",
+        "156-158",
+        "> 158"
+      ],
+      "rows": [
+        {
+          "pace": "<= 4:32",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:35"
+            },
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:35"
+            },
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:38"
+            },
+            {
+              "tone": "fallback",
+              "text": "Way too hot -> 4:42, re-check km 13"
+            }
+          ]
+        },
+        {
+          "pace": "4:33-4:38",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Great day -> hold, don't speed up"
+            },
+            {
+              "tone": "push",
+              "text": "A-stretch -> hold, close on pacer"
+            },
+            {
+              "tone": "hold",
+              "text": "-> A-real, ease to 4:40"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease to 4:45 -> B unless settled by km 13"
+            }
+          ]
+        },
+        {
+          "pace": "4:39-4:44",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Build to 4:36 gradually"
+            },
+            {
+              "tone": "push",
+              "text": "Build 3-5 s -> 4:37"
+            },
+            {
+              "tone": "hold",
+              "text": "A-real -> hold"
+            },
+            {
+              "tone": "fallback",
+              "text": "B -> ease to 4:48"
+            }
+          ]
+        },
+        {
+          "pace": "4:45-4:52",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Under-running -> build to 4:38 over 2 km"
+            },
+            {
+              "tone": "hold",
+              "text": "Build to 4:40, watch HR"
+            },
+            {
+              "tone": "fallback",
+              "text": "B -> hold"
+            },
+            {
+              "tone": "survival",
+              "text": "Warning sign -> 4:55, check fuel & water"
+            }
+          ]
+        },
+        {
+          "pace": ">= 4:53",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Congestion? build to 4:40 over 3 km"
+            },
+            {
+              "tone": "hold",
+              "text": "Build to 4:45"
+            },
+            {
+              "tone": "fallback",
+              "text": "Hold, reassess at the half"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:00, honey + water"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "q": "I see 4:50 at 150 bpm.",
+          "a": "You're under-running with HR headroom, ~1 min behind A-real. Build to 4:38-4:40 over the next 2 km (about 5 s/km per km), no surge. Running 4:38 from here quietly wins back ~40 s by km 30. Re-check at km 13: HR 153-156 at 4:38 -> A-real. HR jumps >158 at 4:40 -> it was only low because you were slow; today is a B day, settle at 4:45-4:48."
+        },
+        {
+          "q": "I see 4:30 with HR < 155.",
+          "a": "Great sign, but do not keep 4:30. HR drifts ~4-5 bpm from km 10 to 21 at the same pace (154 now -> 158-160 at the half), 4:30 burns proportionally more glycogen than 4:36, and Sep 20 showed 4:18 early became 4:35 late at the same HR. Ease to 4:34-4:36 and tuck in behind the 3:15 pacer. Bank energy, not time."
+        },
+        {
+          "q": "What if HR then rises above 158 before the half?",
+          "a": "Use the over-ceiling protocol: 1-2 bpm over -> ease 5 s/km and wait 1 km; 3-5 over -> ease 10 s/km; still over after 2 km -> drop one lane; >163 -> straight to B."
+        }
+      ]
+    },
+    {
+      "id": "half",
+      "km": 21.1,
+      "title": "Half (21.1 km)",
+      "read": "Elapsed time vs split table + last-lap pace + lap-avg HR.",
+      "targets": "A 1:37:45 · A-real 1:38:40 · B 1:40:55",
+      "hrBands": [
+        "< 153",
+        "153-158",
+        "159-160",
+        "> 160"
+      ],
+      "rows": [
+        {
+          "pace": "<= 4:32",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:35"
+            },
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:36"
+            },
+            {
+              "tone": "hold",
+              "text": "Too fast -> ease to 4:40"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease to 4:45 now -> B"
+            }
+          ]
+        },
+        {
+          "pace": "4:33-4:38",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Strong -> hold A-stretch, no faster"
+            },
+            {
+              "tone": "push",
+              "text": "A-stretch -> stay in the pack"
+            },
+            {
+              "tone": "hold",
+              "text": "Ease to 4:40 -> A-real"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease to 4:45 -> B"
+            }
+          ]
+        },
+        {
+          "pace": "4:39-4:44",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Build to 4:37 over 2 km"
+            },
+            {
+              "tone": "hold",
+              "text": "A-real -> hold"
+            },
+            {
+              "tone": "hold",
+              "text": "Hold, re-check km 25"
+            },
+            {
+              "tone": "fallback",
+              "text": "B -> 4:48"
+            }
+          ]
+        },
+        {
+          "pace": "4:45-4:52",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Build to 4:42"
+            },
+            {
+              "tone": "fallback",
+              "text": "B -> hold"
+            },
+            {
+              "tone": "fallback",
+              "text": "B -> ease 5 s"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 4:55-5:00, check fuel"
+            }
+          ]
+        },
+        {
+          "pace": ">= 4:53",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Build to 4:45"
+            },
+            {
+              "tone": "survival",
+              "text": "Hold, C likely"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:00"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:05, fuel + water, walk aid"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "q": "Sloshing stomach at the half?",
+          "a": "Skip the next honey sip, water only at that station, then resume the schedule. Don't double up later."
+        },
+        {
+          "q": "Lost the pacer in a station scrum?",
+          "a": "Don't sprint back. Run your lane's pace; if HR allows you'll drift back onto them over 2-3 km."
+        }
+      ]
+    },
+    {
+      "id": "km30",
+      "km": 30,
+      "title": "km 30 - the real decision",
+      "read": "Last-lap pace + lap-avg HR + body check: legs, sips 1-6 taken, stomach.",
+      "targets": "A 2:18:45 · A-real 2:20:10 · B 2:23:30",
+      "hrBands": [
+        "<= 160",
+        "161-163",
+        "164-165",
+        "> 165"
+      ],
+      "rows": [
+        {
+          "pace": "<= 4:35",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "PUSH -> build to 4:30 by km 35"
+            },
+            {
+              "tone": "hold",
+              "text": "Hold this pace, cap 165"
+            },
+            {
+              "tone": "hold",
+              "text": "Ease 5 s, hold"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease to 4:45, survive to 35"
+            }
+          ]
+        },
+        {
+          "pace": "4:36-4:42",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "PUSH -> 4:32-4:35"
+            },
+            {
+              "tone": "hold",
+              "text": "Hold"
+            },
+            {
+              "tone": "hold",
+              "text": "Hold, re-check km 35"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease to 4:50"
+            }
+          ]
+        },
+        {
+          "pace": "4:43-4:52",
+          "cells": [
+            {
+              "tone": "push",
+              "text": "Push gently -> 4:40"
+            },
+            {
+              "tone": "hold",
+              "text": "Hold"
+            },
+            {
+              "tone": "fallback",
+              "text": "Ease 5 s"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:00"
+            }
+          ]
+        },
+        {
+          "pace": ">= 4:53",
+          "cells": [
+            {
+              "tone": "hold",
+              "text": "Fuel issue? honey + banana, then build"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> hold"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:05, walk aid 10 s"
+            },
+            {
+              "tone": "survival",
+              "text": "C -> 5:10, walk aid, finish"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "q": "When am I allowed to PUSH?",
+          "a": "Only if ALL are true: lap-avg HR <= 160, legs OK, honey sips 1-6 taken, stomach fine. If any one is missing, read the grid one column to the right."
+        },
+        {
+          "q": "Pace dropped 10+ s/km at the same HR between km 25 and 30?",
+          "a": "That's the Sep 26 pattern (glycogen + fluid). Survival C: next honey sip now, banana at 31.5, two cups of water, walk 10 s through stations. Keep running to the line."
+        }
+      ]
+    },
+    {
+      "id": "km35",
+      "km": 35,
+      "title": "km 35 - final commit",
+      "read": "How do you feel, honestly?",
+      "targets": "A 2:41:50 · A-real 2:43:30 · B 2:47:25",
+      "hrBands": [],
+      "rows": [],
+      "examples": [
+        {
+          "q": "Green (pushed from 30 and it's holding)",
+          "a": "HR cap off. Race the last 7.2 km. Coke at 39.5, everything you have from km 40."
+        },
+        {
+          "q": "Holding but heavy",
+          "a": "Stay in your lane until km 40, then empty the tank for the last 2.2 km."
+        },
+        {
+          "q": "In survival C",
+          "a": "The finish line is the goal. Keep running between stations; Coke at 39.5 helps."
+        }
+      ]
+    }
+  ],
+  "decisionTree": [
+    {
+      "id": "start",
+      "title": "km 0-5: settle in",
+      "sub": "4:42-4:45/km · HR <=152 · pacer ahead",
+      "branches": []
+    },
+    {
+      "id": "km10",
+      "title": "km 10 checkpoint",
+      "sub": "Split 46:40 - 47:50",
+      "branches": [
+        {
+          "tone": "push",
+          "title": "A-stretch",
+          "sub": "HR <=155 at 4:36-38"
+        },
+        {
+          "tone": "hold",
+          "title": "A-real",
+          "sub": "HR 156-158 at 4:38-40"
+        },
+        {
+          "tone": "fallback",
+          "title": "B lane",
+          "sub": "HR >158 -> 4:45-4:50"
+        }
+      ]
+    },
+    {
+      "id": "half",
+      "title": "Half (21.1 km)",
+      "sub": "A 1:37:45 · A-real 1:38:40 · B 1:40:55",
+      "branches": [
+        {
+          "tone": "push",
+          "title": "Stay in pack",
+          "sub": "HR <=158 -> to km 30"
+        },
+        {
+          "tone": "hold",
+          "title": "Ease to 4:40",
+          "sub": "HR crept to 159-160"
+        },
+        {
+          "tone": "fallback",
+          "title": "Drop to B",
+          "sub": "HR >160 or pacer gone"
+        }
+      ]
+    },
+    {
+      "id": "km30",
+      "title": "km 30 checkpoint",
+      "sub": "The real decision point",
+      "branches": [
+        {
+          "tone": "push",
+          "title": "Push",
+          "sub": "HR <=160 -> build to 4:30"
+        },
+        {
+          "tone": "hold",
+          "title": "Hold",
+          "sub": "HR 160-163, cap 165"
+        },
+        {
+          "tone": "survival",
+          "title": "Survival C",
+          "sub": "4:55-5:10, banana, walk aid"
+        }
+      ]
+    },
+    {
+      "id": "km35",
+      "title": "km 35: final commit",
+      "sub": "Green -> race home · Coke at 39.5",
+      "branches": []
+    }
+  ],
+  "pacer": {
+    "strategy": "Start 50-100 m BEHIND the 3:15 pacer (Suunto flag, ~4:37/km even). Close the gap through km 5-15 only while HR stays <=158. HR >158 for 2 km straight while with them -> let them go (= A-real). With the group at the half at <=158 -> sit in, draft, switch off until km 30."
+  },
+  "fueling": {
+    "targetCarbsPerHour": "65-70 g/h from km 6",
+    "why": "Honey is ~38% fructose and ~31% glucose. Glucose enters the gut wall through SGLT1 (caps ~60 g/h); fructose uses a separate door, GLUT5 (~30 g/h more). Together you can absorb up to ~90 g/h, but your gut has only practised ~60 g/h, so 65-70 g/h stays close to what you rehearsed.",
+    "energyBudget": [
+      {
+        "source": "Stored glycogen (muscle + liver)",
+        "amount": "~400-450 g carbs · 1,600-1,800 kcal",
+        "note": "Only if Saturday's carb-load is done (~650-800 g carbs)."
+      },
+      {
+        "source": "Fat",
+        "amount": "~800-1,000 kcal",
+        "note": "Even at marathon pace ~1/4-1/3 of energy. The HR cap keeps this share high."
+      },
+      {
+        "source": "Race intake",
+        "amount": "~220-240 g carbs · ~900 kcal",
+        "note": "2 flasks (~200 g) + pre-start honey + Coke at 39.5."
+      }
+    ],
+    "totalBurn": "~3,300-3,500 kcal (80 kg)",
+    "flasks": [
+      {
+        "name": "Flask A",
+        "pocket": "Front left",
+        "recipe": "85 mL honey (~120 g, 6 level tbsp) + 75 mL warm water -> ~160 mL",
+        "carbs": "~99 g",
+        "sips": "Sips 1-4 (km 6 -> 20)"
+      },
+      {
+        "name": "Flask B",
+        "pocket": "Front right",
+        "recipe": "85 mL honey (~120 g, 6 level tbsp) + 75 mL warm water -> ~160 mL",
+        "carbs": "~99 g",
+        "sips": "Sips 5-8 (km 24 -> 35)"
+      },
+      {
+        "name": "Water",
+        "pocket": "Back",
+        "recipe": "500 mL plain water (optional pinch of salt only if practised)",
+        "carbs": "0 g",
+        "sips": "km 0-6 gap + any missed cup. Empty by ~km 25."
+      }
+    ],
+    "prep": [
+      "Mix with warm water, shake hard. ~50% sugar: runny enough to squeeze at 10 °C. Pure honey won't flow through the nozzle.",
+      "Mark 4 quarter-lines on each flask with tape or marker (1 sip = 1/4 flask = ~25 g carbs).",
+      "Test-squeeze both Saturday night and Sunday morning."
+    ],
+    "sep26Lesson": "Sep 26 (31.6 km): ~60 g/h of carbs on paper, but very concentrated honey + only ~420 mL/h fluid + started dehydrated (Fritz-Kola only) + midday start + no carb-load. HR drifted +18 bpm at the same easy pace from km 22 and you slumped at km 27 (~2h30). The carbs were in the vest, not in the muscles.",
+    "sips": [
+      {
+        "n": 0,
+        "km": -0.1,
+        "time": "start -15 min",
+        "station": "start area",
+        "flask": "-",
+        "note": "1 tbsp honey from a jar/sachet + a few sips of water"
+      },
+      {
+        "n": 1,
+        "km": 6,
+        "time": "0:28",
+        "station": "water",
+        "flask": "A"
+      },
+      {
+        "n": 2,
+        "km": 10.5,
+        "time": "0:49",
+        "station": "supply",
+        "flask": "A"
+      },
+      {
+        "n": 3,
+        "km": 16.5,
+        "time": "1:16",
+        "station": "water",
+        "flask": "A"
+      },
+      {
+        "n": 4,
+        "km": 20,
+        "time": "1:33",
+        "station": "supply",
+        "flask": "A",
+        "note": "Flask A empty - stow it"
+      },
+      {
+        "n": 5,
+        "km": 24,
+        "time": "1:51",
+        "station": "water",
+        "flask": "B"
+      },
+      {
+        "n": 6,
+        "km": 28.5,
+        "time": "2:12",
+        "station": "water",
+        "flask": "B"
+      },
+      {
+        "n": 7,
+        "km": 31.5,
+        "time": "2:26",
+        "station": "supply",
+        "flask": "B"
+      },
+      {
+        "n": 8,
+        "km": 35,
+        "time": "2:42",
+        "station": "water",
+        "flask": "B",
+        "note": "Flask B empty"
+      },
+      {
+        "n": 9,
+        "km": 39.5,
+        "time": "3:03",
+        "station": "supply",
+        "flask": "Coke",
+        "note": "Coke for the final 2.7 km"
+      }
+    ]
+  },
+  "hydration": {
+    "plan": "A cup at EVERY station (13), ~100-150 mL each - pinch the cup into a spout, slow 2-3 s. Two cups at supply stations if you missed one. Backup: 500 mL in the vest.",
+    "estimate": [
+      {
+        "label": "From cups (realistic, spills included)",
+        "value": "~1.0-1.5 L"
+      },
+      {
+        "label": "Inside honey flasks + backup",
+        "value": "~0.65 L"
+      },
+      {
+        "label": "Sweat loss, 9-14 °C, 80 kg, MP effort",
+        "value": "~2.6-3.5 L"
+      },
+      {
+        "label": "Net deficit",
+        "value": "~1-2 L (1.3-2.5% body mass) - normal, well tolerated in the cool"
+      }
+    ]
+  },
+  "stations": {
+    "water": [
+      6,
+      8.5,
+      16.5,
+      24,
+      28.5,
+      35
+    ],
+    "supply": [
+      10.5,
+      13,
+      20,
+      26.5,
+      31.5,
+      37,
+      39.5
+    ],
+    "supplyContents": "Water, bananas, Hydraid electrolyte (lemon), Dextro bars. Dextro PROLINE gels from km 26.5 (untested - emergency only). Red Bull at 10.5/31.5/37. Coke at 39.5.",
+    "vestAllowed": true
+  },
+  "watch": {
+    "device": "Amazfit T-Rex 3 + Polar H10",
+    "settings": [
+      "Auto-lap: ON, every 1 km",
+      "Auto-pause: OFF (so elapsed = race clock)",
+      "External HR: Polar H10 paired; close Polar Flow/Beat on the phone first (H10 holds one Bluetooth link)",
+      "Optional HR alert at 159 for the first half (ignore/raise to 166 after km 30)"
+    ],
+    "racePage": [
+      {
+        "field": "Lap pace (current lap)",
+        "use": "Steering - ignore the first ~200 m after each beep"
+      },
+      {
+        "field": "Last lap pace",
+        "use": "Decisions at checkpoints"
+      },
+      {
+        "field": "Lap avg HR",
+        "use": "Decisions (fallback: current HR judged over ~30 s)"
+      },
+      {
+        "field": "Current HR",
+        "use": "Spot spikes / quick check"
+      },
+      {
+        "field": "Elapsed time",
+        "use": "Compare to the split table at 10 / half / 30 / 35"
+      }
+    ],
+    "h10": "Wet the electrodes before the start, anti-chafe under the strap, check pairing during the warm-up."
+  },
+  "timeline": [
+    {
+      "when": "Sat",
+      "items": [
+        "15 min very easy shakeout - use it as the watch/H10 dry run (auto-lap beep, fields, HR source).",
+        "Bib pickup Olympic Park (Sat 10:00-18:00). Don't spend hours standing at the expo.",
+        "Carb-load ~650-800 g carbs (8-10 g/kg): white bread/bagels with honey & jam, juice, big rice/pasta lunch, pretzels, bananas, rice cakes, gummies. Low fibre, low fat, nothing new.",
+        "2.5-3 L fluid through the day, some salty food. Early, normal-size dinner (~18:30).",
+        "Evening: mix both honey flasks, mark quarter-lines, test-squeeze. Pin bib, lay out kit, charge watch + H10 check. Sleep early."
+      ]
+    },
+    {
+      "when": "Sun 05:45",
+      "items": [
+        "Wake up. 300 mL water."
+      ]
+    },
+    {
+      "when": "Sun 06:00",
+      "items": [
+        "Breakfast ~3 h pre-start, ~150 g carbs: 2-3 white rolls/toast with honey or jam + banana + coffee. Skip the Müsli (fibre)."
+      ]
+    },
+    {
+      "when": "Sun 07:00",
+      "items": [
+        "500 mL water with a pinch of salt, finished by ~07:15. Then only sips."
+      ]
+    },
+    {
+      "when": "Sun 07:30",
+      "items": [
+        "U3 to Olympiazentrum (free with bib, trains every 5 min). Bag drop in the Runner's Bag. Toilet early."
+      ]
+    },
+    {
+      "when": "Sun 08:30",
+      "items": [
+        "10 min easy jog + 3 strides. Wet H10, confirm pairing on the T-Rex."
+      ]
+    },
+    {
+      "when": "Sun 08:45",
+      "items": [
+        "In the start block (>=15 min before). 1 tbsp honey + a few sips. Find the 3:15 flag - line up 50-100 m behind it."
+      ]
+    },
+    {
+      "when": "Sun 09:00",
+      "items": [
+        "Start. 4:42-4:45, HR <=152. Patience."
+      ]
+    }
+  ],
+  "redFlags": "Stop / medical tent (at the aid stations): chest pain, confusion, chills or stopped sweating, blurred vision.",
+  "evidence": {
+    "intro": "Why 3:14-3:18 and not sub-3: km-by-km Strava laps from this block. Pace at marathon-effort HR, not hope.",
+    "hrPaceCurve": [
+      {
+        "pace": "4:18-4:23",
+        "hr": "162-163",
+        "source": "Sep 20 km 11-16, Sep 13 km 21-25"
+      },
+      {
+        "pace": "4:35-4:36",
+        "hr": "158-161",
+        "source": "Oct 4 km 11-14 (158-160), Sep 20 km 23-28 (161.5, fatigued)"
+      },
+      {
+        "pace": "4:40-4:48",
+        "hr": "151-154",
+        "source": "Sep 29 race-pace test km 3-7"
+      },
+      {
+        "pace": "5:27-5:40",
+        "hr": "132-137",
+        "source": "Sep 26 km 1-18"
+      }
+    ],
+    "sessions": [
+      {
+        "date": "2026-09-13",
+        "name": "25 km with MP blocks",
+        "detail": "10 km 5:36 @135 · 5 km 4:36 @160 (hilly) · 5 km 5:56 @137 · 5 km 4:23 @162"
+      },
+      {
+        "date": "2026-09-20",
+        "name": "28 km, peak long run",
+        "detail": "10 km 5:47 @136 · 6 km 4:18 @163 · 6 km 5:56 @140 · 6 km 4:35 @161.5 (max 170) - 17 s/km fade at the same effort after 22 km"
+      },
+      {
+        "date": "2026-09-26",
+        "name": "31.6 km, stopped short of 34",
+        "detail": "km 1-18 5:27-5:40 @132-137 · km 22-26 same pace @145-146 · km 27-28 6:10/6:18 (slump) · km 29-31 5:30-5:49 @147-153: +18 bpm drift at easy pace"
+      },
+      {
+        "date": "2026-09-29",
+        "name": "Race-pace test, taper wk 1",
+        "detail": "km 2 4:20 @151 · km 3-7 4:39-4:49 @148-154"
+      },
+      {
+        "date": "2026-10-04",
+        "name": "16 km, MP finish",
+        "detail": "km 1-10 5:12-5:35 @129-148 · km 11-14 4:36 @157-160 · km 15-16 4:45-4:51 @157-159"
+      }
+    ],
+    "conclusions": [
+      "4:20/km costs 160-164 bpm (96-98% of LT 167) - a half-marathon effort, not a marathon one.",
+      "Marathon HR for a trained runner is ~92-95% of LT = 154-159 bpm -> ~4:36-4:42/km for you once tapered.",
+      "Longest continuous MP block was 6 km; MP after 30 km is untested -> the HR cap in the first half is non-negotiable.",
+      "CTL ~45 is low for 3:15; sub-3:15 is ~35-40%, 3:15-3:18 is the honest centre."
+    ]
+  }
+}
