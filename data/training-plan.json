@@ -1157,7 +1157,7 @@
           },
           "movement": "No bike. Walk or public transport to the start. After the race: whatever gets you home.",
           "food": "Race morning: porridge or toast with honey, banana + coffee 2-3h before. Gel every ~5-6km from km 15 (or earlier if you've practised it), with water at the stations. Celebrate after.",
-          "bigPicture": "Race day, 15 weeks of work. Your recent race-pace efforts put HR at 163-169bpm for 4:16/km, which is at your LT -- so start at 4:20/km or slower, keep HR around 160-163 through halfway, and only push after km 30 if it's still there. Even pacing beats a fast start every time."
+          "bigPicture": "Race day, 15 weeks of work. Your recent race-pace efforts put HR at 163-169bpm for 4:16/km, which is at your LT (167) -- not sustainable for 42km. Let HR govern: hold ~155-158bpm through km 25-30 and accept whatever pace that gives (likely ~4:28-4:35/km early), then push only if it's still there after km 30. Even pacing beats a fast start every time."
         }
       ],
       "estKm": 0.0
