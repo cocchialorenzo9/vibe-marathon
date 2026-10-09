@@ -3,3 +3,4 @@ __pycache__/
 .env
 data/history.json
 data/zepp/
+.DS_Store
