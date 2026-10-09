@@ -8,7 +8,7 @@
     "finish": "Willi-Daume-Platz, Olympic Lake",
     "distanceKm": 42.195
   },
-  "summary": "Heart rate leads, pace follows. HR <=158 to the half, <=160 to km 30, then race. Two 160 mL honey flasks (~100 g carbs each) = 8 sips tied to aid stations, water at every station, 500 mL backup water in the vest. Start 50-100 m behind the 3:15 pacer.",
+  "summary": "Heart rate leads, pace follows. HR <=158 to the half, <=160 to km 30, then race. Two ~165 mL honey flasks (~105 g sugar each) = 8 sips tied to aid stations, water at every station, 500 mL backup water in the vest. Start 50-100 m behind the 3:15 pacer.",
   "goldenRules": [
     "Obey whichever ceiling you hit first: HR ceiling or pace ceiling. Low HR is not permission to run faster than the pace ceiling before km 30.",
     "Never chase lost time with a surge. Run the target pace from where you are; the gap closes by itself.",
@@ -685,8 +685,8 @@
       },
       {
         "source": "Race intake",
-        "amount": "~220-240 g carbs · ~900 kcal",
-        "note": "2 flasks (~200 g) + pre-start honey + Coke at 39.5."
+        "amount": "~230-250 g carbs · ~950 kcal",
+        "note": "2 flasks (~210 g sugar at 75.1 g/100 g) + pre-start honey + Coke at 39.5."
       }
     ],
     "totalBurn": "~3,300-3,500 kcal (80 kg)",
@@ -694,15 +694,15 @@
       {
         "name": "Flask A",
         "pocket": "Front left",
-        "recipe": "85 mL honey (~120 g, 6 level tbsp) + 75 mL warm water -> ~160 mL",
-        "carbs": "~99 g",
+        "recipe": "7 level tbsp Blütenhonig (~140 g, ~100 mL) + 65 mL warm water -> ~165 mL",
+        "carbs": "~105 g sugar",
         "sips": "Sips 1-4 (km 6 -> 20)"
       },
       {
         "name": "Flask B",
         "pocket": "Front right",
-        "recipe": "85 mL honey (~120 g, 6 level tbsp) + 75 mL warm water -> ~160 mL",
-        "carbs": "~99 g",
+        "recipe": "7 level tbsp Blütenhonig (~140 g, ~100 mL) + 65 mL warm water -> ~165 mL",
+        "carbs": "~105 g sugar",
         "sips": "Sips 5-8 (km 24 -> 35)"
       },
       {
@@ -714,6 +714,7 @@
       }
     ],
     "prep": [
+      "Honey: liquid Blütenhonig, 75.1 g sugar per 100 g -> 140 g honey = ~105 g sugar per flask.",
       "Mix with warm water, shake hard. ~50% sugar: runny enough to squeeze at 10 °C. Pure honey won't flow through the nozzle.",
       "Mark 4 quarter-lines on each flask with tape or marker (1 sip = 1/4 flask = ~25 g carbs).",
       "Test-squeeze both Saturday night and Sunday morning."
