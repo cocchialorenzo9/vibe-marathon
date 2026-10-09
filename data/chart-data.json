@@ -758,5 +758,305 @@
     "tsb": -4.59,
     "readiness_score": 50,
     "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-09-10",
+    "tss": 72.2,
+    "distance_km": 11.09,
+    "ctl": 33.94,
+    "atl": 42.21,
+    "tsb": -8.27,
+    "readiness_score": 56,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-11",
+    "tss": 56.7,
+    "distance_km": 9.05,
+    "ctl": 34.48,
+    "atl": 44.14,
+    "tsb": -9.67,
+    "readiness_score": 45,
+    "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-09-12",
+    "tss": 33.6,
+    "distance_km": 5.77,
+    "ctl": 34.46,
+    "atl": 42.74,
+    "tsb": -8.28,
+    "readiness_score": 40,
+    "recommendation_type": "rest"
+  },
+  {
+    "date": "2026-09-13",
+    "tss": 162.1,
+    "distance_km": 25.03,
+    "ctl": 37.46,
+    "atl": 58.63,
+    "tsb": -21.17,
+    "readiness_score": 20,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-09-14",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 36.58,
+    "atl": 50.82,
+    "tsb": -14.25,
+    "readiness_score": 52,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-15",
+    "tss": 66.3,
+    "distance_km": 10.02,
+    "ctl": 37.28,
+    "atl": 52.88,
+    "tsb": -15.61,
+    "readiness_score": 52,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-16",
+    "tss": 84.6,
+    "distance_km": 19.22,
+    "ctl": 38.39,
+    "atl": 57.11,
+    "tsb": -18.72,
+    "readiness_score": 49,
+    "recommendation_type": "swim"
+  },
+  {
+    "date": "2026-09-17",
+    "tss": 85.7,
+    "distance_km": 18.37,
+    "ctl": 39.5,
+    "atl": 60.91,
+    "tsb": -21.41,
+    "readiness_score": 51,
+    "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-09-18",
+    "tss": 59.1,
+    "distance_km": 10.39,
+    "ctl": 39.97,
+    "atl": 60.67,
+    "tsb": -20.71,
+    "readiness_score": 44,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-19",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 39.03,
+    "atl": 52.59,
+    "tsb": -13.57,
+    "readiness_score": 51,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-09-20",
+    "tss": 187.4,
+    "distance_km": 28.05,
+    "ctl": 42.52,
+    "atl": 70.54,
+    "tsb": -28.02,
+    "readiness_score": 47,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-21",
+    "tss": 20.8,
+    "distance_km": 13.62,
+    "ctl": 42.01,
+    "atl": 63.92,
+    "tsb": -21.91,
+    "readiness_score": 55,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-22",
+    "tss": 86.2,
+    "distance_km": 19.28,
+    "ctl": 43.04,
+    "atl": 66.88,
+    "tsb": -23.84,
+    "readiness_score": 53,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-23",
+    "tss": 86.6,
+    "distance_km": 19.35,
+    "ctl": 44.07,
+    "atl": 69.51,
+    "tsb": -25.44,
+    "readiness_score": 33,
+    "recommendation_type": "swim"
+  },
+  {
+    "date": "2026-09-24",
+    "tss": 92.8,
+    "distance_km": 19.49,
+    "ctl": 45.22,
+    "atl": 72.61,
+    "tsb": -27.39,
+    "readiness_score": 59,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-25",
+    "tss": 59.4,
+    "distance_km": 10.45,
+    "ctl": 45.55,
+    "atl": 70.85,
+    "tsb": -25.3,
+    "readiness_score": 59,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-26",
+    "tss": 202.4,
+    "distance_km": 31.57,
+    "ctl": 49.24,
+    "atl": 88.36,
+    "tsb": -39.12,
+    "readiness_score": 61,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-09-27",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 48.08,
+    "atl": 76.6,
+    "tsb": -28.52,
+    "readiness_score": 46,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-28",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 46.95,
+    "atl": 66.4,
+    "tsb": -19.45,
+    "readiness_score": 27,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-09-29",
+    "tss": 49.1,
+    "distance_km": 8.01,
+    "ctl": 47.0,
+    "atl": 64.1,
+    "tsb": -17.1,
+    "readiness_score": 65,
+    "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-09-30",
+    "tss": 58.9,
+    "distance_km": 10.42,
+    "ctl": 47.28,
+    "atl": 63.41,
+    "tsb": -16.13,
+    "readiness_score": 43,
+    "recommendation_type": "swim"
+  },
+  {
+    "date": "2026-10-01",
+    "tss": 51.9,
+    "distance_km": 8.35,
+    "ctl": 47.39,
+    "atl": 61.88,
+    "tsb": -14.49,
+    "readiness_score": 50,
+    "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-10-02",
+    "tss": 65.6,
+    "distance_km": 10.77,
+    "ctl": 47.82,
+    "atl": 62.37,
+    "tsb": -14.55,
+    "readiness_score": 54,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-10-03",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 46.69,
+    "atl": 54.07,
+    "tsb": -7.38,
+    "readiness_score": 26,
+    "recommendation_type": "long"
+  },
+  {
+    "date": "2026-10-04",
+    "tss": 103.9,
+    "distance_km": 16.02,
+    "ctl": 48.04,
+    "atl": 60.7,
+    "tsb": -12.66,
+    "readiness_score": 63,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-10-05",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 46.91,
+    "atl": 52.62,
+    "tsb": -5.71,
+    "readiness_score": 65,
+    "recommendation_type": "rest"
+  },
+  {
+    "date": "2026-10-06",
+    "tss": 43.1,
+    "distance_km": 6.83,
+    "ctl": 46.82,
+    "atl": 51.35,
+    "tsb": -4.53,
+    "readiness_score": 67,
+    "recommendation_type": "easy"
+  },
+  {
+    "date": "2026-10-07",
+    "tss": 29.4,
+    "distance_km": 5.12,
+    "ctl": 46.41,
+    "atl": 48.43,
+    "tsb": -2.02,
+    "readiness_score": 63,
+    "recommendation_type": "swim"
+  },
+  {
+    "date": "2026-10-08",
+    "tss": 25.9,
+    "distance_km": 4.72,
+    "ctl": 45.93,
+    "atl": 45.43,
+    "tsb": 0.5,
+    "readiness_score": 61,
+    "recommendation_type": "tempo"
+  },
+  {
+    "date": "2026-10-09",
+    "tss": 0,
+    "distance_km": 0,
+    "ctl": 44.85,
+    "atl": 39.38,
+    "tsb": 5.46,
+    "readiness_score": 58,
+    "recommendation_type": "easy"
   }
 ]
