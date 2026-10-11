@@ -135,3 +135,78 @@ The draft is **not wired into `update-coach`** (that still reads
 `training-plan.json`, which runs through Munich). To activate: after Munich
 and the 2 recovery weeks, move it into `training-plan.json`, adjust for the
 race result, and write `race-plan.json` for Rome after the HM checkpoint.
+
+## 6. Munich result — 2026-10-11
+
+**Chip time 3:19:43** (4:44/km official). This was the athlete's first
+marathon, 15 weeks after starting from almost no running base.
+
+Strava activity 20539174342. The watch measured 42.53 km (0.8% long), so
+watch splits run slightly fast against the official km markers.
+
+| Section (watch km) | Pace | Avg HR | Notes |
+|---|---|---|---|
+| 0–5 | 4:44 | 160 | Plan: 4:42–4:46, HR ≤152 |
+| 5–10 | 4:35 | 161 | A-stretch lane, HR above the 158 ceiling |
+| 10–15 | 4:34 | 158 | |
+| 15–20 | 4:33 | 158 | |
+| 20–25 | 4:32 | 159 | Half in ~1:36:24 (watch) |
+| 25–30 | 4:40 | 158 | First slowing |
+| 30–35 | 4:52 | 155 | Pee stop of ~30–40 s around km 33 |
+| 35–40 | 5:12 | 151 | Continuous running; legs heavy, eased off once sub-3:15 was gone |
+| 40–42.5 | 4:53 | 154 | Picked up again at the finish |
+
+Halves (watch): **1:36:24 / 1:43:48**, a positive split of ~7.5 min (+7.7%).
+
+What the data says:
+
+- **The race went out at A-stretch effort, chosen deliberately.** It ran
+  4:32–4:35/km at HR 158–161 (~95–96% of the device LT) for 25 km. The
+  "A-real" lane in `race-plan.json` predicted 3:15–3:18 for its pacing;
+  going out faster gave 3:19:43.
+- **Aerobic fitness held to km 30; legs set the limit after.** Pace per
+  heartbeat (speed ÷ HR) was flat from km 2–16 to km 16–30 (−0.5%). After
+  km 30, pace and HR fell together. That pattern fits muscular/peripheral
+  fatigue better than a cardiovascular limit or glycogen depletion. The
+  final-km pickup also argues against a true bonk, though that's an
+  inference: a single HR trace can't separate the causes.
+- **Fuelling worked; drinking was too much.** All 8 honey sips (~210 g
+  sugar ≈ 63 g carbs/h) fall within the 60–90 g/h guidance. But the athlete
+  drank *more* than planned, needed a pee stop and felt bladder discomfort.
+  Consensus guidance is to drink to thirst (Hew-Butler et al. 2015, *Clin J
+  Sport Med*, EAH consensus). Drinking more than thirst asks for gave no
+  performance benefit in a meta-analysis (Goulet 2011, *Br J Sports Med*)
+  and raises the risk of exercise-associated hyponatremia.
+- **Pacing.** In large recreational datasets, runners who slow sharply late
+  in a marathon are the slower finishers overall (Smyth 2021, *PLoS ONE*,
+  "hitting the wall"). Marathon world records are run at near-even pace.
+  How much a 4:40-ish even pace would have saved can't be known from one
+  race; don't count minutes from it.
+
+### How the result recalibrates the models
+
+| Model | Predicted | Actual 3:19:43 |
+|---|---|---|
+| Daniels VDOT from the Strava 5K (VDOT ~51.5) | ~3:06 | 13–14 min slower → marathon VDOT ≈ 47.5 |
+| Tanda 2011 (training load) | ~3:30 | 10 min faster |
+| `race-plan.json` A-real lane | 3:15–3:18 | 2–5 min slower, with a faster-than-lane first half |
+
+The **~4-point gap between 5K VDOT and marathon VDOT** confirms the
+section 2 diagnosis: the speed is there, but endurance can't hold it yet.
+
+### What changes for Rome
+
+- **Sub-3 now needs −19:44 (−9.9%) in 22 weeks.** That's a big jump, even
+  for a novice in the fastest-improving phase. **Working target: 3:05–3:10.
+  Sub-3 stays a stretch goal** that the section 4 checkpoints can unlock.
+  Nothing in the checkpoint thresholds changes: they test the fitness that
+  sub-3 actually needs.
+- **Marathon pace in the plan is now 4:25/km** (≈3:06). It drops to 4:16 only
+  if the Jan 24 10K comes in at or under 39:00.
+- **Hydration rule:** drink to thirst in long runs and the race. Practise
+  it on every long run over 25 km and note any bladder discomfort.
+- **Pacing rule for Rome:** first half no faster than goal MP. The HR
+  ceiling gets set from the measured LT after the Nov 21 field test.
+- **Durability** (section 3, point 6) moves up in priority. The race broke
+  at km 28–30, which is exactly the zone the specific block's 26–33 km long
+  runs with MP finishes are built to train.
