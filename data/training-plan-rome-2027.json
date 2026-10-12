@@ -3,8 +3,45 @@
   "generatedAt": "2026-10-10",
   "race": "Maratona di Roma 2027",
   "raceDate": "2027-03-14",
-  "goalPace": "4:16/km (sub-3)",
-  "goalFinish": "Sub-3:00 (4:16/km). The Jan 24 10K and Feb 14 HM checkpoints can re-target to 3:00-3:05 or ~3:08-3:12. Baseline: Munich 2026-10-11 chip 3:19:43",
+  "goalPace": "Training MP 4:09/km (2:55 pace); race at 4:15-4:16/km for sub-3 with ~5 min of slack",
+  "goalFinish": "Sub-3:00, raced at 4:15-4:16/km after training marathon-pace work at 4:09/km. The Jan 24 10K and Feb 14 HM checkpoints can re-target to 3:00-3:05 or ~3:08-3:12. Baseline: Munich 2026-10-11 chip 3:19:43",
+  "strengthProgram": {
+    "why": "Heavy strength and plyometric training improve running economy in distance runners without hurting endurance (Balsalobre-Fernandez 2016 meta-analysis; Blagrove 2018 review). Munich's block had 2 sessions in total.",
+    "equipment": "At home: a backpack you can load with books or water bottles (10-20 kg), a stair or sturdy step, a mat. Adjustable dumbbells or a kettlebell make it easier to keep loads heavy as you get stronger.",
+    "placement": "S1 (heavy) after the week's first quality run, so easy days stay easy; S2 (plyo + core) on a later easy or quality day, never the day before a quality run or the long run. Recovery weeks: S1 only at 2 sets. Taper week 2: one light session. Race week: none.",
+    "phases": [
+      {
+        "weeks": "2-6 (Oct 19 - Nov 22)",
+        "name": "Foundation",
+        "S1": "HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
+        "S2": "HOME STRENGTH S2, plyo + core (~25 min): pogo hops 3x15, skipping for height 3x20 m, step/low-box jumps 3x6, dead bug 3x10, knee Copenhagen plank 3x20 s/side. ~60 foot contacts."
+      },
+      {
+        "weeks": "7-15 (Nov 23 - Jan 24)",
+        "name": "Max strength",
+        "S1": "HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+        "S2": "HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets."
+      },
+      {
+        "weeks": "16-20 (Jan 25 - Feb 28)",
+        "name": "Maintain",
+        "S1": "HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
+        "S2": "HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity."
+      },
+      {
+        "weeks": "21 (Mar 1-7)",
+        "name": "Taper",
+        "S1": "HOME STRENGTH, taper (~20 min): split squat 2x5/leg and single-leg calf raise 2x8/leg at moderate load, pogo hops 2x15. Last strength session before Rome.",
+        "S2": ""
+      }
+    ],
+    "recoveryWeeks": "HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics."
+  },
+  "swimming": {
+    "rule": "An easy pool session replaces the Monday recovery run in 17 weeks; its km are spread over the week's other easy runs, so weekly running totals don't change. Recovery runs cap at 10 km and easy runs at 14 km; where that wasn't enough, a rest day became a short recovery run.",
+    "session": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+    "note": "Swimming adds low-impact aerobic time and active recovery. It does not replace running volume (weak transfer to running; see doc section 3)."
+  },
   "fuelTest": {
     "why": "Munich: ~60% honey mix caused upper and lower GI distress all race. Find the best-tolerated race fuel before the specific block.",
     "design": "4 strategies x 2 long runs each, counterbalanced A-B-C-D-D-C-B-A so the rising carb target (40 -> 65 g/h) affects all equally.",
@@ -95,8 +132,10 @@
   "principles": [
     "Volume modelled on Pfitzinger 18/70: an 18-week block (Nov 9 - Mar 14) peaking at ~110 km, 8 weeks at 85+ km, two medium-long runs a week, long runs up to 34 km, recovery weeks every 3-4 weeks, 3-week taper. Training volume is the training variable most strongly linked to marathon time (Doherty 2020; Tanda 2011).",
     "Injury guard: avoid >30% volume jumps over two weeks (Nielsen 2014). A niggle lasting more than two runs, or resting HR +5 bpm for 3+ days, means repeating the previous week's volume instead of progressing.",
+    "Swimming: easy pool sessions replace the Monday recovery run in most weeks (km moved to other easy runs, weekly totals unchanged). Low-impact recovery and extra aerobic time; it does not count as running volume.",
+    "Home strength 2x/week (S1 heavy single-leg strength after a quality run, S2 plyometrics + core), 1x in recovery weeks, 1 light session in taper week 2, none in race week (Balsalobre-Fernandez 2016; Blagrove 2018). Equipment: a loaded backpack and a step; adjustable dumbbells or a kettlebell help keep loads heavy.",
     "Easy means easy: HR cap 140 bpm on every non-quality run until LT1 is measured (Seiler 2010; Stoggl & Sperlich 2014).",
-    "Quality as prescribed: continuous LT runs held at HR 158-165 (ease off past 166), VO2max reps in race prep, MP inside long runs.",
+    "Quality as prescribed: continuous LT runs held at HR 158-165 (ease off past 166), race-pace work at training MP 4:09 (ease to 4:16 if lap HR passes 166), VO2max reps in race prep. Roughly 80% of running stays easy.",
     "Strength + plyometrics 2x/week in base and specific, 1x in recovery/taper (Balsalobre-Fernandez 2016).",
     "Recovery weeks every 3-4 weeks are not optional, and run volume is not replaced by extra sessions.",
     "Taper: ~2 weeks, volume -40-60%, intensity and frequency kept (Bosquet 2007).",
@@ -147,12 +186,12 @@
           "date": "2026-10-14",
           "dayLabel": "Wed Oct 14",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Rest or 20-30 min easy cycling/swim if everything feels fine.",
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Optional easy swim, 20-30 min, only if walking feels normal. No running.",
             "estKm": null
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Post-Munich recovery (recovery).",
           "estKm": null
@@ -228,12 +267,12 @@
           "date": "2026-10-19",
           "dayLabel": "Mon Oct 19",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 20-30 min, relaxed freestyle. Gentle movement for legs still recovering from Munich.",
             "estKm": null
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Return to running: Easy only. If any niggle from Munich persists beyond this week, extend recovery by a week rather than starting base on it.",
           "estKm": null
@@ -258,7 +297,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "25 min very easy, HR cap 130 bpm. Slower than feels necessary. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "25 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 4.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -339,7 +378,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
+            "detail": "Rest, or an optional easy swim of 20-30 min if you feel like moving.",
             "estKm": null
           },
           "movement": "Bike both ways fine.",
@@ -367,7 +406,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -395,7 +434,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day",
-            "detail": "Full rest. Walking is fine. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "Full rest. Walking is fine. HOME STRENGTH S2, plyo + core (~25 min): pogo hops 3x15, skipping for height 3x20 m, step/low-box jumps 3x6, dead bug 3x10, knee Copenhagen plank 3x20 s/side. ~60 foot contacts.",
             "estKm": null
           },
           "movement": "Bike both ways fine.",
@@ -440,21 +479,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "Hill sprints for economy, first two medium-long runs of the habit the block is built on. Long run = fuel test A.",
-      "estKm": 60,
+      "estKm": 58.0,
       "days": [
         {
           "date": "2026-11-02",
           "dayLabel": "Mon Nov 2",
           "training": {
-            "type": "easy",
-            "title": "Easy run",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
-            "estKm": 5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Rebuild 2: Hill sprints for economy, first two medium-long runs of the habit the block is built on.",
-          "estKm": 5
+          "estKm": null
         },
         {
           "date": "2026-11-03",
@@ -462,7 +501,7 @@
           "training": {
             "type": "tempo",
             "title": "Hill sprints + easy",
-            "detail": "50 min easy (HR <=140) with 8x10s steep hill sprints (max effort, 2 min walk-back) in the middle. Neuromuscular, not aerobic -- HR barely matters. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "50 min easy (HR <=140) with 8x10s steep hill sprints (max effort, 2 min walk-back) in the middle. Neuromuscular, not aerobic -- HR barely matters. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 10
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -504,7 +543,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day",
-            "detail": "Full rest. Walking is fine. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "Full rest. Walking is fine. HOME STRENGTH S2, plyo + core (~25 min): pogo hops 3x15, skipping for height 3x20 m, step/low-box jumps 3x6, dead bug 3x10, knee Copenhagen plank 3x20 s/side. ~60 foot contacts.",
             "estKm": null
           },
           "movement": "Bike both ways fine.",
@@ -518,13 +557,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 5
+            "detail": "45 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 8.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Rebuild 2 (base).",
-          "estKm": 5
+          "estKm": 8.0
         },
         {
           "date": "2026-11-08",
@@ -549,21 +588,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "Week 1 of the 18-week sub-3 block, modelled on Pfitzinger 18/70: one lactate-threshold run, two longer aerobic runs, everything else genuinely easy. Long run = fuel test B.",
-      "estKm": 65.5,
+      "estKm": 66.0,
       "days": [
         {
           "date": "2026-11-09",
           "dayLabel": "Mon Nov 9",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 1 (block week 1 of 18): Week 1 of the 18-week sub-3 block, modelled on Pfitzinger 18/70: one lactate-threshold run, two longer aerobic runs, everything else genuinely easy.",
-          "estKm": 5.0
+          "estKm": null
         },
         {
           "date": "2026-11-10",
@@ -571,7 +610,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (5 km at LT)",
-            "detail": "13 km: ~3 km easy -> 5 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "13 km: ~3 km easy -> 5 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 13
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -585,13 +624,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 1 (block week 1 of 18) (base).",
-          "estKm": 5.0
+          "estKm": 7.5
         },
         {
           "date": "2026-11-12",
@@ -599,7 +638,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run",
-            "detail": "15 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. HOME STRENGTH S2, plyo + core (~25 min): pogo hops 3x15, skipping for height 3x20 m, step/low-box jumps 3x6, dead bug 3x10, knee Copenhagen plank 3x20 s/side. ~60 foot contacts.",
             "estKm": 15
           },
           "movement": "Bike commute fine at easy effort.",
@@ -627,13 +666,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 6.5
+            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 9.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 1 (block week 1 of 18) (base).",
-          "estKm": 6.5
+          "estKm": 9.5
         },
         {
           "date": "2026-11-15",
@@ -658,21 +697,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "Lighter week so Saturday's 30-min test is run fresh. Sunday's long run stays easy whatever the test felt like. Long run = fuel test C.",
-      "estKm": 60.5,
+      "estKm": 60.0,
       "days": [
         {
           "date": "2026-11-16",
           "dayLabel": "Mon Nov 16",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 2 (recovery + LT test): Lighter week so Saturday's 30-min test is run fresh. Sunday's long run stays easy whatever the test felt like.",
-          "estKm": 5.0
+          "estKm": null
         },
         {
           "date": "2026-11-17",
@@ -680,13 +719,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "40 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
-            "estKm": 7.5
+            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
+            "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 2 (recovery + LT test) (base).",
-          "estKm": 7.5
+          "estKm": 10.5
         },
         {
           "date": "2026-11-18",
@@ -722,13 +761,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
-            "estKm": 5
+            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 2 (recovery + LT test) (base).",
-          "estKm": 5
+          "estKm": 6.5
         },
         {
           "date": "2026-11-21",
@@ -767,21 +806,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "Recompute threshold HR and pace from the Nov 21 test before Tuesday. Long run = fuel test D.",
-      "estKm": 73.5,
+      "estKm": 74.0,
       "days": [
         {
           "date": "2026-11-23",
           "dayLabel": "Mon Nov 23",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 3: Recompute threshold HR and pace from the Nov 21 test before Tuesday.",
-          "estKm": 5.0
+          "estKm": null
         },
         {
           "date": "2026-11-24",
@@ -789,7 +828,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (6 km at LT)",
-            "detail": "14 km: ~3 km easy -> 6 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "14 km: ~3 km easy -> 6 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -803,21 +842,21 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 3 (base).",
-          "estKm": 5.0
+          "estKm": 7.5
         },
         {
           "date": "2026-11-26",
           "dayLabel": "Thu Nov 26",
           "training": {
             "type": "medium-long",
-            "title": "Medium-long run",
-            "detail": "18 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "title": "Medium-long run with race-pace blocks",
+            "detail": "18 km: easy (HR <=140) with 2x2.5 km at training MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 18
           },
           "movement": "Bike commute fine at easy effort.",
@@ -845,13 +884,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "40 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 7.5
+            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 3 (base).",
-          "estKm": 7.5
+          "estKm": 10.5
         },
         {
           "date": "2026-11-29",
@@ -876,21 +915,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "~80 km. Volume is the main lever for sub-3; intensity stays the same. Long run = fuel test D.",
-      "estKm": 79.5,
+      "estKm": 80.0,
       "days": [
         {
           "date": "2026-11-30",
           "dayLabel": "Mon Nov 30",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 6.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 4: ~80 km. Volume is the main lever for sub-3; intensity stays the same.",
-          "estKm": 6.0
+          "estKm": null
         },
         {
           "date": "2026-12-01",
@@ -898,7 +937,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (7 km at LT)",
-            "detail": "15 km: ~3 km easy -> 7 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15 km: ~3 km easy -> 7 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -912,21 +951,21 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 6.0
+            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 9.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 4 (base).",
-          "estKm": 6.0
+          "estKm": 9.0
         },
         {
           "date": "2026-12-03",
           "dayLabel": "Thu Dec 3",
           "training": {
             "type": "medium-long",
-            "title": "Medium-long run",
-            "detail": "18 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "title": "Medium-long run with race-pace blocks",
+            "detail": "18 km: easy (HR <=140) with 2x3 km at training MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 18
           },
           "movement": "Bike commute fine at easy effort.",
@@ -954,13 +993,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "50 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 8.5
+            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 12.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 4 (base).",
-          "estKm": 8.5
+          "estKm": 12.0
         },
         {
           "date": "2026-12-06",
@@ -991,15 +1030,15 @@
           "date": "2026-12-07",
           "dayLabel": "Mon Dec 7",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 7.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 5: ~86 km. Wednesday's HR check is the Dec 9 checkpoint. If resting HR is up >5 bpm for 3+ days or a niggle lasts more than two runs, drop back to last week's volume.",
-          "estKm": 7.5
+          "estKm": null
         },
         {
           "date": "2026-12-08",
@@ -1007,7 +1046,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run",
-            "detail": "16 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "16 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1035,7 +1074,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (7 km at LT)",
-            "detail": "15 km: ~3 km easy -> 7 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15 km: ~3 km easy -> 7 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1047,15 +1086,15 @@
           "date": "2026-12-11",
           "dayLabel": "Fri Dec 11",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
-            "estKm": null
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "40 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 6.5
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 5 (base).",
-          "estKm": null
+          "estKm": 6.5
         },
         {
           "date": "2026-12-12",
@@ -1063,13 +1102,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 9.5
+            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 5 (base).",
-          "estKm": 9.5
+          "estKm": 10.5
         },
         {
           "date": "2026-12-13",
@@ -1100,15 +1139,15 @@
           "date": "2026-12-14",
           "dayLabel": "Mon Dec 14",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 7.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy): Recovery week ending with Pisa as an easy 21 km with your sister. The Dec 9 HR check plus the Nov 21 threshold test decide whether volume keeps climbing from Dec 21.",
-          "estKm": 7.5
+          "estKm": null
         },
         {
           "date": "2026-12-15",
@@ -1116,13 +1155,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
-            "estKm": 11.0
+            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
+            "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy) (base).",
-          "estKm": 11.0
+          "estKm": 14.0
         },
         {
           "date": "2026-12-16",
@@ -1144,13 +1183,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
-            "estKm": 10.0
+            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "estKm": 12.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy) (base).",
-          "estKm": 10.0
+          "estKm": 12.5
         },
         {
           "date": "2026-12-18",
@@ -1158,13 +1197,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "40 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 6.5
+            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 8.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy) (base).",
-          "estKm": 6.5
+          "estKm": 8.5
         },
         {
           "date": "2026-12-19",
@@ -1202,22 +1241,22 @@
       "label": "Dec 21–Dec 27",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Holiday week: sessions can move, but keep the total and the threshold run. Sleep matters more than any session; alcohol after hard days slows muscle repair. Long run = fuel test B.",
-      "estKm": 88.5,
+      "tip": "Holiday week: sessions can move, but keep the total, the threshold run and Thursday's race-pace run. Sleep matters more than any session; alcohol after hard days slows muscle repair. Long run = fuel test B.",
+      "estKm": 88.0,
       "days": [
         {
           "date": "2026-12-21",
           "dayLabel": "Mon Dec 21",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 8.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "LT + endurance 1: Holiday week: sessions can move, but keep the total and the threshold run. Sleep matters more than any session; alcohol after hard days slows muscle repair.",
-          "estKm": 8.5
+          "bigPicture": "LT + endurance 1: Holiday week: sessions can move, but keep the total, the threshold run and Thursday's race-pace run. Sleep matters more than any session; alcohol after hard days slows muscle repair.",
+          "estKm": null
         },
         {
           "date": "2026-12-22",
@@ -1225,7 +1264,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "detail": "16 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "16 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1239,27 +1278,27 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run",
-            "detail": "18 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained.",
-            "estKm": 18
+            "detail": "21 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained.",
+            "estKm": 21
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 1 (specific).",
-          "estKm": 18
+          "estKm": 21
         },
         {
           "date": "2026-12-24",
           "dayLabel": "Thu Dec 24",
           "training": {
-            "type": "easy",
-            "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 10.5
+            "type": "tempo",
+            "title": "Race-pace run (training MP 4:09)",
+            "detail": "13 km: 15' easy -> 2x4 km at 4:09/km with 1 km easy jog between -> easy to finish. Race-pace feel practice, Marathon Handbook-style. If lap HR passes 166, run the rest at 4:16. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "estKm": 13
           },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
+          "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
+          "food": "Carbs at the meal before the session; protein + carbs afterwards.",
           "bigPicture": "LT + endurance 1 (specific).",
-          "estKm": 10.5
+          "estKm": 13
         },
         {
           "date": "2026-12-25",
@@ -1281,13 +1320,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 7.5
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 1 (specific).",
-          "estKm": 7.5
+          "estKm": 10.0
         },
         {
           "date": "2026-12-27",
@@ -1312,21 +1351,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "~94 km. Fuel test ends Sunday: pick the winning strategy for the rest of the block. Long run = fuel test A.",
-      "estKm": 93.5,
+      "estKm": 93.0,
       "days": [
         {
           "date": "2026-12-28",
           "dayLabel": "Mon Dec 28",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 8.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 2: ~94 km. Fuel test ends Sunday: pick the winning strategy for the rest of the block.",
-          "estKm": 8.5
+          "estKm": null
         },
         {
           "date": "2026-12-29",
@@ -1334,7 +1373,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run",
-            "detail": "19 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "19 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained.",
             "estKm": 19
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1348,7 +1387,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "detail": "16 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km.",
+            "detail": "16 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1362,13 +1401,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). New Year's Eve: run in the morning Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
-            "estKm": 9.5
+            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). New Year's Eve: run in the morning HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 2 (specific).",
-          "estKm": 9.5
+          "estKm": 14.0
         },
         {
           "date": "2027-01-01",
@@ -1390,13 +1429,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 10.5
+            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 2 (specific).",
-          "estKm": 10.5
+          "estKm": 14.0
         },
         {
           "date": "2027-01-03",
@@ -1427,15 +1466,15 @@
           "date": "2027-01-04",
           "dayLabel": "Mon Jan 4",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 7.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 3: ~100 km, first 100+ week. First long run with a marathon-pace segment, at sub-3 pace.",
-          "estKm": 7.5
+          "estKm": null
         },
         {
           "date": "2027-01-05",
@@ -1443,7 +1482,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (9 km at LT)",
-            "detail": "17 km: ~3 km easy -> 9 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "17 km: ~3 km easy -> 9 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 17
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1471,7 +1510,35 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "estKm": 10.0
+          },
+          "movement": "Bike commute fine at easy effort.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "LT + endurance 3 (specific).",
+          "estKm": 10.0
+        },
+        {
+          "date": "2027-01-08",
+          "dayLabel": "Fri Jan 8",
+          "training": {
+            "type": "easy",
+            "title": "Easy run + strides",
+            "detail": "75 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 13.5
+          },
+          "movement": "Bike commute fine at easy effort.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "LT + endurance 3 (specific).",
+          "estKm": 13.5
+        },
+        {
+          "date": "2027-01-09",
+          "dayLabel": "Sat Jan 9",
+          "training": {
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1480,40 +1547,12 @@
           "estKm": 7.5
         },
         {
-          "date": "2027-01-08",
-          "dayLabel": "Fri Jan 8",
-          "training": {
-            "type": "easy",
-            "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 10.5
-          },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "LT + endurance 3 (specific).",
-          "estKm": 10.5
-        },
-        {
-          "date": "2027-01-09",
-          "dayLabel": "Sat Jan 9",
-          "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.5
-          },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "LT + endurance 3 (specific).",
-          "estKm": 5.5
-        },
-        {
           "date": "2027-01-10",
           "dayLabel": "Sun Jan 10",
           "training": {
             "type": "long",
             "title": "Long run with 14 km at MP",
-            "detail": "32 km: 16 km easy (HR <=140) -> 14 km at MP 4:16/km (sub-3 pace; switch to the re-targeted MP only if the Jan 24 10K or Feb 14 HM checkpoint moves it) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~70 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "32 km: 16 km easy (HR <=140) -> 14 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 24 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~70 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 32
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1538,7 +1577,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
+            "detail": "Rest, or an optional easy swim of 20-30 min if you feel like moving.",
             "estKm": null
           },
           "movement": "Bike both ways fine.",
@@ -1552,7 +1591,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run",
-            "detail": "16 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "16 km steady at easy effort, HR cap 140 (Pfitzinger-style medium-long run). One gel at ~45 min to keep the gut trained. HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
             "estKm": 16
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1566,13 +1605,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "95 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 16.5
+            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 12.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
-          "estKm": 16.5
+          "estKm": 12.0
         },
         {
           "date": "2027-01-14",
@@ -1592,15 +1631,15 @@
           "date": "2027-01-15",
           "dayLabel": "Fri Jan 15",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
-            "estKm": null
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 7.5
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
-          "estKm": null
+          "estKm": 7.5
         },
         {
           "date": "2027-01-16",
@@ -1608,13 +1647,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "70 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 11.5
+            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 8.5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
-          "estKm": 11.5
+          "estKm": 8.5
         },
         {
           "date": "2027-01-17",
@@ -1639,21 +1678,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "Tune-up week, Pfitzinger-style: volume slightly down, a race on Sunday instead of the long run. Run the 10K as a race.",
-      "estKm": 81.5,
+      "estKm": 82.0,
       "days": [
         {
           "date": "2027-01-18",
           "dayLabel": "Mon Jan 18",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "65 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 11.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 5 (10K checkpoint): Tune-up week, Pfitzinger-style: volume slightly down, a race on Sunday instead of the long run. Run the 10K as a race.",
-          "estKm": 11.0
+          "estKm": null
         },
         {
           "date": "2027-01-19",
@@ -1661,7 +1700,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (6 km at LT)",
-            "detail": "15 km: ~3 km easy -> 6 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15 km: ~3 km easy -> 6 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1689,27 +1728,27 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "65 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 11.0
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 5 (10K checkpoint) (specific).",
-          "estKm": 11.0
+          "estKm": 10.0
         },
         {
           "date": "2027-01-22",
           "dayLabel": "Fri Jan 22",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
-            "estKm": null
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 10.0
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 5 (10K checkpoint) (specific).",
-          "estKm": null
+          "estKm": 10.0
         },
         {
           "date": "2027-01-23",
@@ -1717,13 +1756,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: 4x100 m strides",
-            "estKm": 9.5
+            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: 4x100 m strides",
+            "estKm": 12.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "LT + endurance 5 (10K checkpoint) (specific).",
-          "estKm": 9.5
+          "estKm": 12.0
         },
         {
           "date": "2027-01-24",
@@ -1748,21 +1787,21 @@
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
       "tip": "~104 km. VO2max intervals replace one threshold run in this phase. Longest run of the plan on Sunday: easy, fuelled at race rate.",
-      "estKm": 103.5,
+      "estKm": 103.0,
       "days": [
         {
           "date": "2027-01-25",
           "dayLabel": "Mon Jan 25",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 8.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 1: ~104 km. VO2max intervals replace one threshold run in this phase. Longest run of the plan on Sunday: easy, fuelled at race rate.",
-          "estKm": 8.0
+          "estKm": null
         },
         {
           "date": "2027-01-26",
@@ -1770,7 +1809,7 @@
           "training": {
             "type": "tempo",
             "title": "VO2max intervals",
-            "detail": "15' easy + 4 strides -> 5x1200m at ~3:48/km (5K pace), 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy + 4 strides -> 5x1200m at ~3:48/km (5K pace), 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1798,13 +1837,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
-            "estKm": 8.0
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
+            "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 1 (specific).",
-          "estKm": 8.0
+          "estKm": 10.0
         },
         {
           "date": "2027-01-29",
@@ -1812,13 +1851,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "65 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 11.5
+            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 1 (specific).",
-          "estKm": 11.5
+          "estKm": 14.0
         },
         {
           "date": "2027-01-30",
@@ -1826,13 +1865,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "40 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 7.0
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 1 (specific).",
-          "estKm": 7.0
+          "estKm": 10.0
         },
         {
           "date": "2027-01-31",
@@ -1856,7 +1895,7 @@
       "label": "Feb 1–Feb 7",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
+      "tip": "Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
       "estKm": 109.5,
       "days": [
         {
@@ -1870,7 +1909,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Race prep 2 (peak): Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
+          "bigPicture": "Race prep 2 (peak): Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
           "estKm": 9.5
         },
         {
@@ -1879,7 +1918,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "detail": "17 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "17 km: ~3 km easy -> 8 km continuous at lactate threshold (HR 158-165, ~4:00-4:10/km until the Nov 21 test resets it; never 167+) -> easy to finish. Pfitzinger-style tempo: steady, not a race; if HR passes 166, ease 5-10 s/km. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 17
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1907,7 +1946,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
             "estKm": 9.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1949,7 +1988,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 19 km at MP",
-            "detail": "30 km: 9 km easy (HR <=140) -> 19 km at MP 4:16/km (sub-3 pace; switch to the re-targeted MP only if the Jan 24 10K or Feb 14 HM checkpoint moves it) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~85 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "30 km: 9 km easy (HR <=140) -> 19 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 24 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~85 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 30
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1972,15 +2011,15 @@
           "date": "2027-02-08",
           "dayLabel": "Mon Feb 8",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 9.5
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 3 (HM checkpoint): Tune-up week ending in the half-marathon checkpoint, the strongest single predictor of your Rome time in this plan.",
-          "estKm": 9.5
+          "estKm": null
         },
         {
           "date": "2027-02-09",
@@ -1988,7 +2027,7 @@
           "training": {
             "type": "tempo",
             "title": "VO2max intervals",
-            "detail": "15' easy + 4 strides -> 5x1000m at ~3:45/km, 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy + 4 strides -> 5x1000m at ~3:45/km, 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
             "estKm": 13
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2016,27 +2055,27 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 9.5
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 3 (HM checkpoint) (specific).",
-          "estKm": 9.5
+          "estKm": 10.0
         },
         {
           "date": "2027-02-12",
           "dayLabel": "Fri Feb 12",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
-            "estKm": null
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 8.0
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 3 (HM checkpoint) (specific).",
-          "estKm": null
+          "estKm": 8.0
         },
         {
           "date": "2027-02-13",
@@ -2044,13 +2083,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "40 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 7.0
+            "detail": "45 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 8.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Race prep 3 (HM checkpoint) (specific).",
-          "estKm": 7.0
+          "estKm": 8.0
         },
         {
           "date": "2027-02-14",
@@ -2083,7 +2122,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
+            "detail": "Rest, or an optional easy swim of 20-30 min if you feel like moving.",
             "estKm": null
           },
           "movement": "Bike both ways fine.",
@@ -2097,7 +2136,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2167,7 +2206,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "32 km: 14 km easy (HR <=140) -> 16 km at MP 4:16/km (sub-3 pace; switch to the re-targeted MP only if the Jan 24 10K or Feb 14 HM checkpoint moves it) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~90 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuel, cobbles at the end.",
+            "detail": "32 km: 14 km easy (HR <=140) -> 16 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 24 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~90 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuel, cobbles at the end.",
             "estKm": 32
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2190,15 +2229,15 @@
           "date": "2027-02-22",
           "dayLabel": "Mon Feb 22",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 8.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Taper 1: ~77% of peak volume. Intensity stays, volume drops.",
-          "estKm": 8.0
+          "estKm": null
         },
         {
           "date": "2027-02-23",
@@ -2206,7 +2245,7 @@
           "training": {
             "type": "tempo",
             "title": "VO2max intervals",
-            "detail": "15' easy + 4 strides -> 5x1200m at ~3:48/km, 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy + 4 strides -> 5x1200m at ~3:48/km, 2'30 jog -> 10' easy. Hard but controlled; equal-ish recoveries. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2246,29 +2285,29 @@
           "date": "2027-02-26",
           "dayLabel": "Fri Feb 26",
           "training": {
-            "type": "easy",
-            "title": "Easy run + strides",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 10.0
+            "type": "tempo",
+            "title": "Race-pace run (training MP 4:09)",
+            "detail": "12 km: 15' easy -> 2x4 km at 4:09/km with 1 km easy jog between -> easy to finish. Race-pace feel practice, Marathon Handbook-style. If lap HR passes 166, run the rest at 4:16.",
+            "estKm": 12
           },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
+          "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
+          "food": "Carbs at the meal before the session; protein + carbs afterwards.",
           "bigPicture": "Taper 1 (taper).",
-          "estKm": 10.0
+          "estKm": 12
         },
         {
           "date": "2027-02-27",
           "dayLabel": "Sat Feb 27",
           "training": {
-            "type": "rest",
-            "title": "Rest day",
-            "detail": "Full rest. Walking is fine.",
-            "estKm": null
+            "type": "easy",
+            "title": "Recovery run",
+            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 6.0
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Taper 1 (taper).",
-          "estKm": null
+          "estKm": 6.0
         },
         {
           "date": "2027-02-28",
@@ -2299,15 +2338,15 @@
           "date": "2027-03-01",
           "dayLabel": "Mon Mar 1",
           "training": {
-            "type": "easy",
-            "title": "Recovery run",
-            "detail": "30 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 5.0
+            "type": "swim",
+            "title": "Pool session -- easy swim",
+            "detail": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
+            "estKm": null
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Taper 2: ~60% of peak. Last strength session Monday, lighter than usual. Feeling flat this week is normal.",
-          "estKm": 5.0
+          "estKm": null
         },
         {
           "date": "2027-03-02",
@@ -2315,7 +2354,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 8 km at MP -> 10' easy. MP 4:16/km (sub-3 pace; switch to the re-targeted MP only if the Jan 24 10K or Feb 14 HM checkpoint moves it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy -> 8 km at MP -> 10' easy. training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 24 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. HOME STRENGTH, taper (~20 min): split squat 2x5/leg and single-leg calf raise 2x8/leg at moderate load, pogo hops 2x15. Last strength session before Rome.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2357,13 +2396,13 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
-            "estKm": 6.0
+            "detail": "50 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "estKm": 9.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Taper 2 (taper).",
-          "estKm": 6.0
+          "estKm": 9.0
         },
         {
           "date": "2027-03-06",
@@ -2371,13 +2410,13 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "25 min very easy, HR cap 130 bpm. Slower than feels necessary.",
-            "estKm": 4
+            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "estKm": 6.0
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Taper 2 (taper).",
-          "estKm": 4
+          "estKm": 6.0
         },
         {
           "date": "2027-03-07",
@@ -2424,7 +2463,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. MP 4:16/km (sub-3 pace; switch to the re-targeted MP only if the Jan 24 10K or Feb 14 HM checkpoint moves it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
+            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 24 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
             "estKm": 11
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2494,7 +2533,7 @@
           "training": {
             "type": "race",
             "title": "ROME MARATHON",
-            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: first half no faster than the gate-validated MP (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Fuel with the rehearsed product at the rehearsed rate (target 75-90 g/h if gut training got there), room-temp fluid; drink to thirst. Caffeine only if trialled without GI issues.",
+            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: even pacing at 4:15-4:16/km (sub-3 with ~1 min buffer), not the 4:09 training pace; first half no faster than 4:15 (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Fuel with the rehearsed product at the rehearsed rate (target 75-90 g/h if gut training got there), room-temp fluid; drink to thirst. Caffeine only if trialled without GI issues.",
             "estKm": 42.2
           },
           "movement": "No bike. Public transport to the start.",

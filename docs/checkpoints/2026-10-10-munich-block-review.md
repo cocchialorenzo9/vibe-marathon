@@ -399,3 +399,48 @@ at ~113 km.
   - The Jan 24 10K and Feb 14 HM still re-target the race pace (3:00–3:05
     or ~3:08–3:12) if the fitness isn't there. Volume stays the same either
     way.
+
+## 10. Training pace, strength and swimming (decided 2026-10-12)
+
+The athlete reviewed Marathon Handbook's 20-week sub-3 plan and chose four
+changes. Weekly mileage from section 9 stays exactly as it was.
+
+- **Training marathon pace 4:09/km, race at 4:15–4:16/km.** 4:09 is 2:55
+  pace. Training there leaves ~5 min of slack, so the race can be run at
+  4:15–4:16 for sub-3. All MP work (MP segments in long runs, race-pace
+  medium-long runs, race-pace runs, taper sessions) uses 4:09.
+  - **Caution from the athlete's own data:** in the Oct 1 simulation,
+    4:16/km already cost HR 166–169, i.e. threshold. Until fitness
+    improves, 4:09 will sit at or above threshold. Every 4:09 block
+    carries a guard: if lap HR passes 166, finish it at 4:16 and log it.
+    That keeps the sessions threshold-like rather than VO2max-like. The
+    10K and HM checkpoints still re-target the race if needed.
+  - **Race-pace exposures added** (Marathon Handbook-style), without
+    adding run days:
+    - Nov 26: 2×2.5 km inside the medium-long run.
+    - Dec 3: 2×3 km inside the medium-long run.
+    - Dec 24: race-pace run, 2×4 km.
+    - Feb 26: race-pace run, 2×4 km.
+
+    These come on top of the MP long runs and taper sessions.
+- **Home strength** (`strengthProgram` in the plan JSON), 31 sessions.
+  - **Equipment:** a loaded backpack, a step, and optionally dumbbells or a
+    kettlebell.
+  - **S1:** heavy single-leg work (Bulgarian split squat, single-leg RDL,
+    calf raises, hip thrust, Copenhagen plank).
+  - **S2:** plyometrics and core.
+  - **Phases:** foundation (wks 2–6), max strength (wks 7–15), maintain
+    (wks 16–20), taper (wk 21). Recovery weeks use S1 only.
+  - **Placement:** S1 goes after a quality run, and nothing is scheduled
+    the day before a quality run or the long run.
+  - **Evidence:** Balsalobre-Fernández 2016; Blagrove 2018. Loads have to
+    stay heavy for the economy benefit, which is why added weight matters.
+- **Swimming** (`swimming` in the plan JSON).
+  - **17 easy pool sessions** replace the Monday recovery run, the day
+    after the long run. The km move into other easy runs, with recovery
+    runs capped at 10 km and easy runs at 14 km. Where that wasn't enough,
+    a plain rest day became a short recovery run.
+  - **Peak week (wk 17)** keeps its Monday run, with an optional swim
+    added.
+  - **What swimming is for:** recovery and extra aerobic time. It doesn't
+    stand in for running km.
