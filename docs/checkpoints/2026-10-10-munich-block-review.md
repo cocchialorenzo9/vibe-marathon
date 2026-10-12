@@ -122,7 +122,7 @@ Caveats: the threshold is watch-estimated, HR is from a wrist sensor and the
 5K is a Strava estimate. These numbers are directional until a race or lab
 test confirms them.
 
-## 5. Draft plan shape (`data/training-plan-rome-2027.json`)
+## 5. First draft plan shape (superseded by section 9)
 
 | Weeks | Dates | Phase | km/week | Focus |
 |---|---|---|---|---|
@@ -223,12 +223,11 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
 
 - **Sub-3 now needs −19:44 (−9.9%) from the chip time, or ~−7.5–8% from
   the ~3:14:30–3:16 counterfactual**, in 22 weeks. That's a big jump, even
-  for a novice in the fastest-improving phase. **Working target: 3:05–3:10.
-  Sub-3 stays a stretch goal** that the section 4 checkpoints can unlock.
-  Nothing in the checkpoint thresholds changes: they test the fitness that
-  sub-3 actually needs.
-- **Marathon pace in the plan is now 4:25/km** (≈3:06). It drops to 4:16 only
-  if the Jan 24 10K comes in at or under 39:00.
+  for a novice in the fastest-improving phase. *(Superseded 2026-10-12 by
+  section 9: the athlete chose sub-3 as the target, with a Pfitzinger
+  18/70-style block. The checkpoints can still re-target downward.)*
+- **Marathon pace in the plan is 4:16/km** (sub-3). It moves only if the
+  Jan 24 10K or Feb 14 HM checkpoint re-targets.
 - **Hydration rule:** drink to thirst in long runs and the race. Practise
   it on every long run over 25 km and note any bladder discomfort.
 - **Pacing rule for Rome:** first half no faster than goal MP. The HR
@@ -357,3 +356,46 @@ can't apportion the causes.
   (Munich's Altstadt has plenty) and include tight turns. Race pacing
   allows ~5–10 s/km slower on the cobbled stretches at the same effort,
   rather than chasing pace there.
+
+## 9. Sub-3 block (decided 2026-10-12)
+
+The athlete chose **sub-3:00 (4:16/km)** as the Rome target and asked for
+sub-3-level weekly mileage modelled on Pfitzinger's 18/70 plan. The
+checkpoints, fuel test, Pisa and the GI rules all stay.
+
+### Shape (`data/training-plan-rome-2027.json`)
+
+| Weeks | Dates | Phase (Pfitzinger mesocycle) | km/week | Key work |
+|---|---|---|---|---|
+| 1–2 | Oct 12–25 | Recovery | 14 → 30 | Post-Munich, easy only |
+| 3–4 | Oct 26 – Nov 8 | Rebuild | 45 → 60 | Hills, first medium-long runs, HR check baseline Nov 4 |
+| 5–10 | Nov 9 – Dec 20 | Endurance (block wks 1–6) | 66 → 86, recovery wks 6 and 10 | 1 LT run (5→7 km at LT), 2 medium-long runs (14–18 km), long runs 21→28 km, LT test Nov 21, HR check Dec 9, Pisa easy Dec 20 |
+| 11–15 | Dec 21 – Jan 24 | LT + endurance (wks 7–11) | 88 → 100, recovery wk 14, 10K wk 15 | LT runs to 9 km, medium-long runs to 20 km, first MP long run (32 km with 14 at MP) |
+| 16–19 | Jan 25 – Feb 21 | Race preparation (wks 12–15) | 104 → **110 peak**, HM wk 18 | VO2max intervals, 34 km long run, 30 km with 19 at MP, 32 km with 16 at MP |
+| 20–22 | Feb 22 – Mar 14 | Taper (wks 16–18) | 85 → 66 → race | Pfitzinger's 3-week taper, intensity kept (Bosquet 2007) |
+
+Eight weeks at 85+ km, five at 98+ km, peak ~110 km. Pfitzinger 18/70 peaks
+at ~113 km.
+
+### What the science says about this choice
+
+- **For it:** weekly volume is the training variable most strongly linked
+  to marathon time (Doherty et al. 2020 meta-analysis; Tanda 2011). Under
+  Tanda's model, 100+ km/week brings sub-3 within reach at the training
+  paces this athlete already runs.
+- **Against it: injury risk.** The athlete's training age is ~4 months,
+  with a 73 km peak and a 43 km average. Large, fast increases in running
+  volume are linked to running injuries (Nielsen et al. 2014, *JOSPT*:
+  >30% over two weeks), and there is no validated "safe" ramp rate. The
+  plan keeps every two-week step under ~30% except where a recovery week
+  sits in between. It also puts recovery weeks every 3–4 weeks and keeps
+  ~80% of running easy.
+- **Guard rails, written into the plan:**
+  - A niggle lasting more than two runs, or resting HR up 5+ bpm for 3+
+    days, means repeating the previous week's volume instead of
+    progressing.
+  - The Dec 9 aerobic check decides whether volume climbs to 88–110 km
+    from Dec 21, or holds at ~86 km for two more weeks.
+  - The Jan 24 10K and Feb 14 HM still re-target the race pace (3:00–3:05
+    or ~3:08–3:12) if the fitness isn't there. Volume stays the same either
+    way.
