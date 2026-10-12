@@ -38,7 +38,8 @@
     "Strength + plyometrics 2x/week in base and specific, 1x in recovery/taper (Balsalobre-Fernandez 2016).",
     "Recovery weeks every 3-4 weeks are not optional, and run volume is not replaced by extra sessions.",
     "Taper: ~2 weeks, volume -40-60%, intensity and frequency kept (Bosquet 2007).",
-    "Drink to thirst in long runs and the race; learn sweat rate by weighing before/after long runs; fuel 60-90 g carbs/h, trained up toward 75-90 g/h (Hew-Butler 2015; Goulet 2011; Jeukendrup 2014).",
+    "Drink to thirst in long runs and the race; learn sweat rate by weighing before/after long runs; fuel with 1:0.8 glucose:fructose gels/drink mix (no concentrated honey), gut-trained from 40 to 75-90 g/h across the block (Hew-Butler 2015; Goulet 2011; Rowlands 2015; Costa 2017).",
+    "Pre-race: low-FODMAP, low-fibre, low-fructose carb load for 24-48 h; no NSAIDs (Lis 2018; van Wijck 2012).",
     "Rome course: ~100 m gain (similar to Munich) but cobbles reportedly km 30-40 and many turns; MP long runs finish on cobbles/turns.",
     "Race pacing: first half no faster than goal MP (Munich: 1:36:24 / 1:43:48 positive split)."
   ],
@@ -360,7 +361,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~40 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -469,7 +470,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "16 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "16 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~40 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -578,7 +579,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~45 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 18
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -687,7 +688,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~45 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -796,7 +797,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~50 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 18
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -905,7 +906,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~55 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 20
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1014,7 +1015,7 @@
           "training": {
             "type": "long",
             "title": "Long run, progression finish",
-            "detail": "22 km: first 16 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Fuel 60 g carbs/h; drink to thirst.",
+            "detail": "22 km: first 16 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Gut training: ~60 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 22
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1232,7 +1233,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~60 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 20
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1341,7 +1342,7 @@
           "training": {
             "type": "long",
             "title": "Long run, progression finish",
-            "detail": "24 km: first 18 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Fuel 60 g carbs/h; drink to thirst.",
+            "detail": "24 km: first 18 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Gut training: ~65 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 24
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1450,7 +1451,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "24 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "24 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~70 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 24
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1489,7 +1490,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 2x5 km at MP with 3' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy -> 2x5 km at MP with 3' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1559,7 +1560,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 10 km at MP",
-            "detail": "26 km: 14 km easy (HR <=140) -> 10 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "26 km: 14 km easy (HR <=140) -> 10 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~75 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 26
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1777,7 +1778,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 12 km at MP",
-            "detail": "28 km: 14 km easy (HR <=140) -> 12 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "28 km: 14 km easy (HR <=140) -> 12 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~80 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 28
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1844,7 +1845,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 2x6 km at MP with 3' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
+            "detail": "15' easy -> 2x6 km at MP with 3' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. Strength session (~40 min): heavy lower body (squat/deadlift/split squat, 3-4x4-6 reps at a heavy load) + plyometrics (pogo jumps, bounds, 3x10). Same day as an easy run or a quality session, never the day before one.",
             "estKm": 17
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1886,7 +1887,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "31 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "31 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~85 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 31
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1995,7 +1996,7 @@
           "training": {
             "type": "race",
             "title": "Half marathon tune-up (checkpoint)",
-            "detail": "Half-marathon race, even pacing. GATE: <=1:26:00 -> sub-3 stays the goal in Rome; 1:26-1:29 -> target 3:00-3:05 at ~4:20-4:25/km; >1:29 -> target ~3:08-3:12. Rehearse race-day breakfast and fuelling exactly.",
+            "detail": "Half-marathon race, even pacing. GATE: <=1:26:00 -> sub-3 stays the goal in Rome; 1:26-1:29 -> target 3:00-3:05 at ~4:20-4:25/km; >1:29 -> target ~3:08-3:12. Rehearse race day exactly: low-FODMAP, low-fibre carb load for 48 h (rice, pasta, white bread, potatoes, sports drink; no honey, juice or jam), race breakfast, race fuel at the target rate.",
             "estKm": 25
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2104,7 +2105,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "33 km: 15 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "33 km: 15 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: ~90 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 33
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2213,7 +2214,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "30 km: 12 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuelling.",
+            "detail": "30 km: 12 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race-intensity gut training: race rate (75-90 g/h) with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuelling.",
             "estKm": 30
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2280,7 +2281,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 8 km at MP -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block.",
+            "detail": "15' easy -> 8 km at MP -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2322,7 +2323,7 @@
           "training": {
             "type": "long",
             "title": "Long run",
-            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Practise fuelling: 60 g carbs/h from minute 45; drink to thirst, not on a schedule.",
+            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: race rate (75-90 g/h) from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
             "estKm": 18
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2338,7 +2339,7 @@
       "label": "Mar 8–Mar 14",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Race week. Carb-load 8-12 g/kg/day for the last 36-48 h. Nothing new.",
+      "tip": "Race week. Carb-load 8-12 g/kg/day for the last 36-48 h, low-FODMAP/low-fibre/low-fructose as rehearsed before the HM. No NSAIDs. Nothing new.",
       "estKm": 76.2,
       "days": [
         {
@@ -2352,7 +2353,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Race week: Race week. Carb-load 8-12 g/kg/day for the last 36-48 h. Nothing new.",
+          "bigPicture": "Race week: Race week. Carb-load 8-12 g/kg/day for the last 36-48 h, low-FODMAP/low-fibre/low-fructose as rehearsed before the HM. No NSAIDs. Nothing new.",
           "estKm": 7.0
         },
         {
@@ -2361,7 +2362,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block.",
+            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
             "estKm": 11
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2431,7 +2432,7 @@
           "training": {
             "type": "race",
             "title": "ROME MARATHON",
-            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: first half no faster than the gate-validated MP (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Drink to thirst; caffeine 3-6 mg/kg ~60 min pre-start if trialled in training.",
+            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: first half no faster than the gate-validated MP (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Fuel with the rehearsed product at the rehearsed rate (target 75-90 g/h if gut training got there), room-temp fluid; drink to thirst. Caffeine only if trialled without GI issues.",
             "estKm": 42.2
           },
           "movement": "No bike. Public transport to the start.",

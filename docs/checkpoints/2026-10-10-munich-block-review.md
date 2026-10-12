@@ -187,13 +187,20 @@ What the data says:
   actual average, saving ~4–5 min → **~3:14:30–3:16**. That's an upper bound
   on what was available that day, not a demonstrated result: the legs may
   not have held even without the stop.
-- **Fuelling worked; drinking was too much.** All 8 honey sips (~210 g
-  sugar ≈ 63 g carbs/h) fall within the 60–90 g/h guidance. But the athlete
-  drank *more* than planned, needed a pee stop and felt bladder discomfort.
+- **Gut problems the whole race; drinking was too much (corrected
+  2026-10-12 from the athlete's report).** All 8 honey sips (~210 g sugar ≈
+  63 g/h) went down *on paper*. But the athlete had upper-GI symptoms all
+  race: burping up the honey, close to vomiting, nausea in cold gusts. They
+  also had lower-GI urgency. The km 33 stop was partly the bladder, partly
+  the gut. After it the GI symptoms eased, but the athlete could no longer
+  drink: two small sips of water or isotonic drink at most, and cold water
+  hurt the stomach. Realistically, then, **less carbohydrate was absorbed
+  than was swallowed, and almost no fluid or fuel went in over the last
+  ~9 km**. Drinking was also above plan early, causing bladder discomfort.
   Consensus guidance is to drink to thirst (Hew-Butler et al. 2015, *Clin J
-  Sport Med*, EAH consensus). Drinking more than thirst asks for gave no
-  performance benefit in a meta-analysis (Goulet 2011, *Br J Sports Med*)
-  and raises the risk of exercise-associated hyponatremia.
+  Sport Med*). Drinking beyond thirst gave no performance benefit in a
+  meta-analysis (Goulet 2011, *Br J Sports Med*) and raises the risk of
+  exercise-associated hyponatremia. See section 7.
 - **Pacing.** In large recreational datasets, runners who slow sharply late
   in a marathon are the slower finishers overall (Smyth 2021, *PLoS ONE*,
   "hitting the wall"). Marathon world records are run at near-even pace.
@@ -228,41 +235,78 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
 - **Durability** (section 3, point 6) moves up in priority. The race broke
   at km 32–33, which is exactly the zone the specific block's 26–33 km long
   runs with MP finishes are built to train.
-- **Fuelling upgrades** (section 7).
+- **Fix GI tolerance** (section 7): switch fuel from honey to 1:0.8 glucose:fructose gels or drink mix, gut-train every long run, go low-FODMAP before the race.
 
-## 7. Fuelling: what the data does and doesn't show
+## 7. Fuelling and GI distress (rewritten 2026-10-12)
 
-**Patterns that would point to under-fuelling, and what the race shows:**
+The first version of this section said fuelling worked. That was based on
+the sips being taken. The athlete's GI report changes the verdict:
+**fuelling failed on tolerance, not on quantity.**
 
-| Pattern | Munich |
-|---|---|
-| Sharp, sustained collapse in pace late in the race (the "wall"; Smyth 2021) | Grade-adj. pace ~13% slower for km 35–41: a fade, not a collapse |
-| Unable to rally even briefly | Rallied to ~4:45 for the last 1.5 km |
-| Light-headed, confused, "empty" | Not reported; legs and a deliberate ease-off reported |
-| Low carb intake (<~60 g/h) | ~63 g/h (8 honey sips), at the low end of the 60–90 g/h range |
-| GI trouble limiting intake | None reported |
+### What likely went wrong, by strength of evidence
 
-So glycogen depletion was **probably not the main cause**. It can't be
-ruled out as a contributor, especially after ~2.5 h at ~95% of LT, where
-carbohydrate burn is high (Rapoport 2010 model).
+1. **The honey mix was extremely concentrated.** Each flask held ~105 g
+   sugar in ~165 mL (≈60% carbohydrate, per `race-plan.json`), against the
+   ~6–8% of a standard sports drink. Very concentrated, high-osmolality
+   carbohydrate slows gastric emptying and draws water into the gut. Both
+   are established causes of bloating, nausea and diarrhoea during exercise
+   (de Oliveira, Burini & Jeukendrup 2014, *Sports Med*, review). A cup of
+   water after each sip only partly dilutes it. The Sep 26 long run already
+   flagged "very concentrated honey" with a slump at km 27.
+2. **Too much free fructose.** Honey is ~38% fructose to ~31% glucose.
+   Fructose beyond the glucose amount is absorbed less well and is a
+   recognised driver of GI symptoms. Reviews of glucose–fructose mixes
+   favour roughly 1:0.8 glucose:fructose, i.e. *more* glucose than
+   fructose (Rowlands et al. 2015, *Sports Med*). The carb load (honey,
+   jam, juice) added more fructose in the 36 h before. Excess fructose is a
+   FODMAP, and a low-FODMAP diet before exercise cut GI symptoms in runners
+   who suffer from them (Lis et al. 2018, *MSSE*; small study).
+3. **High intensity reduces gut blood flow.** At ~95% of LT for 2.5+ h,
+   blood is diverted away from the gut, which impairs absorption and raises
+   symptoms. This is "exercise-induced gastrointestinal syndrome" (Costa et
+   al. 2017, *Aliment Pharmacol Ther*, review). Going out at A-stretch
+   effort made this worse than the plan's lanes would have.
+4. **Not rehearsed at race intensity.** Fuelling was practised at most once
+   (Sep 26, easy pace, ~60 g/h). The gut adapts: two weeks of repeated
+   carbohydrate intake during running reduced GI symptoms and carbohydrate
+   malabsorption (Costa et al. 2017, *Appl Physiol Nutr Metab*). The
+   athlete never did this.
+5. **Lower-quality evidence, plausible:** swallowing air while drinking
+   from cups on the move can cause burping. Cold water and cold air causing
+   discomfort has no solid evidence behind it, but personal tolerance
+   varies, so carry room-temperature fluid if cold hurts.
 
-**What to change anyway, by evidence:**
-1. **Raise intake toward 75–90 g/h, trained in long runs.** Glucose+fructose
-   mixes (honey is roughly 1:1.2) allow intakes above 60 g/h (Jeukendrup
-   2014, *Sports Med*), and the gut adapts to high intakes with repeated
-   practice (Costa et al. 2017). One small study in elite mountain
-   marathoners found 120 g/h lowered muscle-damage markers versus 60–90 g/h
-   (Viribay et al. 2020, *Nutrients*). That's relevant because the legs were
-   the limiter, but it's a single study in a different population.
-2. **Carbohydrate loading:** 8–12 g/kg/day for the 36–48 h before (Burke et
-   al., IOC consensus). Check what Munich's load actually was.
-3. **Drinking to sweat rate, not to schedule.** Weigh before and after a few
-   long runs (1 kg ≈ 1 L, adjusted for anything drunk) to learn hourly sweat
-   loss. Drink to thirst, aiming not to *gain* weight in a race (Hew-Butler
-   2015). Munich's pee stop shows intake exceeded losses.
-4. **Caffeine, if tolerated:** 3–6 mg/kg ~60 min before the start improves
-   endurance performance (ISSN position stand, Guest et al. 2021). Trial it
-   in training first.
+### Did it cost the race?
+
+Probably part of it. The km 33 stop was partly GI, and after it almost no
+fuel or fluid went in for ~45 min. That re-opens carbohydrate shortfall as a
+contributor to the km 34–41 fade, alongside the legs and the deliberate
+ease-off. The final-km rally still argues against a full bonk. The data
+can't apportion the causes.
+
+### What changes for Rome
+
+1. **Switch fuel.** Use a product with a glucose(maltodextrin):fructose
+   ratio of ~1:0.8, as gels or drink mix at a normal concentration, and
+   take each gel with ~150–250 mL of water. No concentrated honey.
+2. **Gut training.** Fuel in every long run and every MP session from the
+   base block onward, at race-intensity sessions too. Start at ~40 g/h and
+   build to 60, then 75–90 g/h by the specific block, logging GI symptoms
+   from 0 to 10.
+3. **Low-FODMAP, low-fibre, low-fructose for the 24–48 h before the race**,
+   trialled first before the Feb 14 HM checkpoint and big long runs. Carb
+   load with rice, pasta, white bread, potatoes and sports drink rather
+   than honey, juice and jam.
+4. **Drink to thirst; learn your sweat rate.** Weigh before and after long
+   runs (1 kg ≈ 1 L), and don't gain weight in the race. Carry
+   room-temperature fluid if cold water hurts.
+5. **No NSAIDs (ibuprofen etc.) before or during the race.** They increase
+   gut permeability during exercise (van Wijck et al. 2012, *MSSE*).
+6. **Caffeine: low priority now.** It improves endurance performance (ISSN,
+   Guest et al. 2021), but it also speeds gut motility, so only trial it
+   once GI symptoms are solved.
+7. **Pace.** Starting at the plan's HR lane, not A-stretch, also protects
+   gut blood flow.
 
 ## 8. Rome course vs Munich
 
