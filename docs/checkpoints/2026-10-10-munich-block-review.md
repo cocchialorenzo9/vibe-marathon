@@ -444,3 +444,44 @@ changes. Weekly mileage from section 9 stays exactly as it was.
     added.
   - **What swimming is for:** recovery and extra aerobic time. It doesn't
     stand in for running km.
+
+## 11. Comparison with the real Pfitzinger 18/70 schedule (2026-10-12)
+
+The athlete added Pfitzinger's actual 18-week 55–70 mi schedule from
+*Advanced Marathoning* (2nd ed.) to the dashboard. That replaces the
+approximate outline used before. Weeks are aligned so both plans end on
+Mar 14 (block weeks 1–18 = plan weeks 5–22). Where the book gives a range,
+the midpoint is used.
+
+| | This plan | Pfitzinger 18/70 |
+|---|---|---|
+| Total km, weeks 5–22 (incl. race) | ~1,503 | ~1,761 (+17%) |
+| First block week (Nov 9) | 66 km | 86 km |
+| Weeks at 100+ km | 3 | 9 |
+| Peak week | 110 km | 113 km |
+| Longest run | 34 km | 35 km |
+| MP long runs | 3 (14, 19, 16 km at MP), from Jan 10 | 4 (13, 16, 19, 23 km at MP), from block week 2 |
+| Longest LT segment | 9 km | 11 km (19 km run) |
+| Tune-up races | 10K Jan 24, HM Feb 14 (plus Pisa run easy) | 3 (8–15K, 8–15K, 8–10K) |
+| Taper (last 3 weeks) | 85 / 66 / 34 + race | 90 / 69 / 44 + race |
+
+**What the real numbers teach:**
+
+- **The volume gap is almost all in the first 8 block weeks.** Pfitzinger
+  starts at 86 km because the book assumes a runner already holding
+  ~55 mi (88 km) a week. This athlete comes off a 30 km recovery week and
+  a 43 km/week block, so starting at 86 km would be a ~50% jump. That
+  breaks the injury guard rail (Nielsen 2014). From mid-January the two
+  plans are within ~5–10%, and the peak and taper almost match.
+- **Pfitzinger puts marathon-pace work in early and lets it grow:** a
+  13 km MP run in block week 2, growing to 23 km by week 13. This plan
+  has its first MP long run in January. Its training MP of 4:09 is also
+  faster than Pfitzinger's goal-pace MP, so it carries more km at a
+  harder pace (~90 km vs ~74 km).
+- **Pfitzinger's LT runs reach 10–11 km at threshold.** This plan stops
+  at 9 km.
+- **Pfitzinger's VO2max work starts in block week 10** (Jan 11 here) and
+  continues into the taper.
+
+The mileage stays as agreed (section 9). Any changes taken from Pfitzinger
+should be to session content only.
