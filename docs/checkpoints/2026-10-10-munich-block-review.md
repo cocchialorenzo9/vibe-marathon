@@ -235,7 +235,7 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
 - **Durability** (section 3, point 6) moves up in priority. The race broke
   at km 32–33, which is exactly the zone the specific block's 26–33 km long
   runs with MP finishes are built to train.
-- **Fix GI tolerance** (section 7): switch fuel from honey to 1:0.8 glucose:fructose gels or drink mix, gut-train every long run, go low-FODMAP before the race.
+- **Fix GI tolerance** (section 7): run the base-block fuel test (gels vs honey blend vs drink mix vs diluted honey), gut-train every long run, go low-FODMAP before the race.
 
 ## 7. Fuelling and GI distress (rewritten 2026-10-12)
 
@@ -286,9 +286,13 @@ can't apportion the causes.
 
 ### What changes for Rome
 
-1. **Switch fuel.** Use a product with a glucose(maltodextrin):fructose
-   ratio of ~1:0.8, as gels or drink mix at a normal concentration, and
-   take each gel with ~150–250 mL of water. No concentrated honey.
+1. **Pick the fuel by testing, not by guessing.** Honey isn't ruled out.
+   It improved a cycling time trial about as much as a dextrose gel in a
+   small study (Earnest et al. 2004, *J Strength Cond Res*). The Munich
+   problems point to concentration and fructose excess, which a blend can
+   fix. But fructose malabsorption is common and could also explain the
+   symptoms, so the base block tests four strategies head to head (below).
+   No 60% honey flasks either way.
 2. **Gut training.** Fuel in every long run and every MP session from the
    base block onward, at race-intensity sessions too. Start at ~40 g/h and
    build to 60, then 75–90 g/h by the specific block, logging GI symptoms
@@ -307,6 +311,30 @@ can't apportion the causes.
    once GI symptoms are solved.
 7. **Pace.** Starting at the plan's HR lane, not A-stretch, also protects
    gut blood flow.
+
+### Fuel test, base block (`fuelTest` in `data/training-plan-rome-2027.json`)
+
+| Strategy | What | Long runs |
+|---|---|---|
+| A | 1:0.8 glucose:fructose gels, each with 150–200 mL water | Nov 8, Jan 3 |
+| B | Honey + maltodextrin, ~24%, ~1:0.65 G:F (58 g honey + 17 g malto, water to 250 mL per 60 g carbs) | Nov 15, Dec 27 |
+| C | 1:0.8 drink mix only, ~12–13% | Nov 22, Dec 13 |
+| D | Honey only, ~24% (80 g honey, water to 250 mL per 60 g carbs) | Nov 29, Dec 6 |
+
+- **Order:** A-B-C-D-D-C-B-A, so the carb target, which rises from 40 to
+  65 g/h, affects every strategy about equally.
+- **D vs B** isolates the fructose ratio. **D vs Munich** isolates
+  concentration, since D uses the same honey at ~24% instead of ~60%.
+- **Log after each run:** upper-GI 0–10, lower-GI 0–10, any stops, whether
+  you could still drink in the last 20 min, and temperature. Keep the
+  pre-run meal and timing the same each time.
+- **Decide on Jan 3:** the lowest mean GI score wins (on a tie, the simpler
+  option) and becomes the fuel for the specific block, the half marathon and
+  Rome. If every strategy averages 3 or more, see a sports dietitian or GP
+  (e.g. a fructose malabsorption breath test) before raising the carb
+  target further.
+- **Limits:** two runs per strategy can show a clear winner but can't
+  separate small differences.
 
 ## 8. Rome course vs Munich
 

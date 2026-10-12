@@ -5,6 +5,61 @@
   "raceDate": "2027-03-14",
   "goalPace": "4:25/km working (3:06); 4:16/km if gates unlock sub-3",
   "goalFinish": "3:05-3:10 working target; sub-3:00 stretch, unlocked only by the gates. Baseline: Munich 2026-10-11 chip 3:19:43",
+  "fuelTest": {
+    "why": "Munich: ~60% honey mix caused upper and lower GI distress all race. Find the best-tolerated race fuel before the specific block.",
+    "design": "4 strategies x 2 long runs each, counterbalanced A-B-C-D-D-C-B-A so the rising carb target (40 -> 65 g/h) affects all equally.",
+    "strategies": {
+      "A": "1:0.8 glucose:fructose gels + 150-200 mL water each",
+      "B": "honey + maltodextrin blend, ~24%, ~1:0.65 G:F",
+      "C": "1:0.8 drink mix only, ~12-13%",
+      "D": "honey only, ~24% (same dilution as B; isolates fructose ratio)"
+    },
+    "schedule": [
+      {
+        "week": 4,
+        "date": "2026-11-08",
+        "strategy": "A"
+      },
+      {
+        "week": 5,
+        "date": "2026-11-15",
+        "strategy": "B"
+      },
+      {
+        "week": 6,
+        "date": "2026-11-22",
+        "strategy": "C"
+      },
+      {
+        "week": 7,
+        "date": "2026-11-29",
+        "strategy": "D"
+      },
+      {
+        "week": 8,
+        "date": "2026-12-06",
+        "strategy": "D"
+      },
+      {
+        "week": 9,
+        "date": "2026-12-13",
+        "strategy": "C"
+      },
+      {
+        "week": 11,
+        "date": "2026-12-27",
+        "strategy": "B"
+      },
+      {
+        "week": 12,
+        "date": "2027-01-03",
+        "strategy": "A"
+      }
+    ],
+    "record": "Upper-GI 0-10, lower-GI 0-10, stops, able to drink in last 20 min, temperature. Same pre-run meal and timing each time.",
+    "decision": "On Jan 3: pick the strategy with the lowest mean (upper + lower) GI score; tie -> simpler/cheaper. It becomes the race fuel for all specific-block long runs, MP sessions, the HM and Rome. If every strategy averages >=3 or GI stops recur, see a sports dietitian/GP (e.g. fructose malabsorption breath test) before raising the carb target further.",
+    "caveats": "n-of-1 with 2 runs per arm: good enough to spot a clear winner, not to separate small differences. Week 6 follows the LT test and week 11 is Christmas week; note anything unusual eaten the day before."
+  },
   "gates": [
     {
       "week": 6,
@@ -377,7 +432,7 @@
       "label": "Nov 2–Nov 8",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "6 runs this week. Hill sprints are short and maximal -- they build economy and leg stiffness without aerobic cost.",
+      "tip": "6 runs this week. Hill sprints are short and maximal -- they build economy and leg stiffness without aerobic cost. Long run = fuel test A.",
       "estKm": 51.0,
       "days": [
         {
@@ -469,8 +524,8 @@
           "dayLabel": "Sun Nov 8",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "16 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~40 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test A)",
+            "detail": "16 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST A (commercial gels): ~40 g carbs/h from minute 30 as 1:0.8 glucose:fructose gels, one every 20-25 min, each with 150-200 mL room-temp water. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -486,7 +541,7 @@
       "label": "Nov 9–Nov 15",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "First threshold session in reps. Stop each rep if HR passes 166 -- the point is time just under LT, not above it.",
+      "tip": "First threshold session in reps. Stop each rep if HR passes 166 -- the point is time just under LT, not above it. Long run = fuel test B.",
       "estKm": 56.0,
       "days": [
         {
@@ -578,8 +633,8 @@
           "dayLabel": "Sun Nov 15",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~45 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test B)",
+            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST B (honey+maltodextrin blend): ~45 g carbs/h from minute 30. Per 60 g carbs: 58 g honey + 17 g maltodextrin, water to 250 mL (~24%, ~1:0.65 glucose:fructose). Sip every 15 min from a soft flask, plus water to thirst. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 18
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -595,7 +650,7 @@
       "label": "Nov 16–Nov 22",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Recovery week, ~20% down. Saturday's 30-min test sets the real LT for the rest of the plan -- run it fresh, flat, solo, and record HR.",
+      "tip": "Recovery week, ~20% down. Saturday's 30-min test sets the real LT for the rest of the plan -- run it fresh, flat, solo, and record HR. Long run = fuel test C.",
       "estKm": 45.5,
       "days": [
         {
@@ -687,8 +742,8 @@
           "dayLabel": "Sun Nov 22",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~45 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test C)",
+            "detail": "14 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST C (drink mix only): ~45 g carbs/h from minute 30. Per 60 g carbs: 1:0.8 glucose:fructose drink powder in 450-500 mL (~12-13%). Sip every 10-15 min; no other fuel. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -704,7 +759,7 @@
       "label": "Nov 23–Nov 29",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "7 days with one short recovery run on Friday. Recompute threshold HR/pace from last week's test before Tuesday.",
+      "tip": "7 days with one short recovery run on Friday. Recompute threshold HR/pace from last week's test before Tuesday. Long run = fuel test D.",
       "estKm": 61.0,
       "days": [
         {
@@ -796,8 +851,8 @@
           "dayLabel": "Sun Nov 29",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~50 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test D)",
+            "detail": "18 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST D (honey only, diluted): ~50 g carbs/h from minute 30. Per 60 g carbs: 80 g honey, water to 250 mL (~24%). Sip every 15 min from a soft flask, plus water to thirst. Isolates the fructose ratio against B. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 18
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -813,7 +868,7 @@
       "label": "Nov 30–Dec 6",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "~66 km. Easy runs feeling easier at the same HR is the adaptation we want; keep checking HR-at-pace on flat routes.",
+      "tip": "~66 km. Easy runs feeling easier at the same HR is the adaptation we want; keep checking HR-at-pace on flat routes. Long run = fuel test D.",
       "estKm": 65.5,
       "days": [
         {
@@ -905,8 +960,8 @@
           "dayLabel": "Sun Dec 6",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~55 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test D)",
+            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST D (honey only, diluted): ~55 g carbs/h from minute 30. Per 60 g carbs: 80 g honey, water to 250 mL (~24%). Sip every 15 min from a soft flask, plus water to thirst. Isolates the fructose ratio against B. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 20
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -922,7 +977,7 @@
       "label": "Dec 7–Dec 13",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "~72 km, highest base week. If resting HR is up >5 bpm for 3+ days or a niggle appears, turn this into a recovery week -- injury is what would really cost Rome.",
+      "tip": "~72 km, highest base week. If resting HR is up >5 bpm for 3+ days or a niggle appears, turn this into a recovery week -- injury is what would really cost Rome. Long run = fuel test C.",
       "estKm": 72.0,
       "days": [
         {
@@ -1014,8 +1069,8 @@
           "dayLabel": "Sun Dec 13",
           "training": {
             "type": "long",
-            "title": "Long run, progression finish",
-            "detail": "22 km: first 16 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Gut training: ~60 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run, progression finish (fuel test C)",
+            "detail": "22 km: first 16 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. FUEL TEST C (drink mix only): ~60 g carbs/h from minute 30. Per 60 g carbs: 1:0.8 glucose:fructose drink powder in 450-500 mL (~12-13%). Sip every 10-15 min; no other fuel. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 22
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1140,7 +1195,7 @@
       "label": "Dec 21–Dec 27",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Holiday week -- the training can move around, but keep the total and both key sessions. Alcohol after hard days reduces muscle repair; sleep matters more than any session.",
+      "tip": "Holiday week -- the training can move around, but keep the total and both key sessions. Alcohol after hard days reduces muscle repair; sleep matters more than any session. Long run = fuel test B.",
       "estKm": 68.5,
       "days": [
         {
@@ -1232,8 +1287,8 @@
           "dayLabel": "Sun Dec 27",
           "training": {
             "type": "long",
-            "title": "Long run",
-            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. Gut training: ~60 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run (fuel test B)",
+            "detail": "20 km easy, HR cap 140 bpm until the last 20 min, then cap 145. FUEL TEST B (honey+maltodextrin blend): ~60 g carbs/h from minute 30. Per 60 g carbs: 58 g honey + 17 g maltodextrin, water to 250 mL (~24%, ~1:0.65 glucose:fructose). Sip every 15 min from a soft flask, plus water to thirst. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 20
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1249,7 +1304,7 @@
       "label": "Dec 28–Jan 3",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "~76 km. Last base week before the specific block.",
+      "tip": "~76 km. Last base week before the specific block. Long run = fuel test A.",
       "estKm": 75.5,
       "days": [
         {
@@ -1341,8 +1396,8 @@
           "dayLabel": "Sun Jan 3",
           "training": {
             "type": "long",
-            "title": "Long run, progression finish",
-            "detail": "24 km: first 18 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. Gut training: ~65 g carbs/h from minute 30, using 1:0.8 glucose:fructose gels/drink mix (no honey), each gel with ~150-250 mL room-temp water; log GI symptoms 0-10. Otherwise drink to thirst.",
+            "title": "Long run, progression finish (fuel test A)",
+            "detail": "24 km: first 18 km easy (HR <=140), last 6 km progressing to ~4:30/km (HR <=158). Steady progression, not a surge. FUEL TEST A (commercial gels): ~65 g carbs/h from minute 30 as 1:0.8 glucose:fructose gels, one every 20-25 min, each with 150-200 mL room-temp water. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
             "estKm": 24
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
