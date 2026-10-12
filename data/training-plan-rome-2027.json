@@ -38,7 +38,8 @@
     "Strength + plyometrics 2x/week in base and specific, 1x in recovery/taper (Balsalobre-Fernandez 2016).",
     "Recovery weeks every 3-4 weeks are not optional, and run volume is not replaced by extra sessions.",
     "Taper: ~2 weeks, volume -40-60%, intensity and frequency kept (Bosquet 2007).",
-    "Drink to thirst in long runs and the race; fuel 60-90 g carbs/h (Hew-Butler 2015; Goulet 2011).",
+    "Drink to thirst in long runs and the race; learn sweat rate by weighing before/after long runs; fuel 60-90 g carbs/h, trained up toward 75-90 g/h (Hew-Butler 2015; Goulet 2011; Jeukendrup 2014).",
+    "Rome course: ~100 m gain (similar to Munich) but cobbles reportedly km 30-40 and many turns; MP long runs finish on cobbles/turns.",
     "Race pacing: first half no faster than goal MP (Munich: 1:36:24 / 1:43:48 positive split)."
   ],
   "weeks": [
@@ -1558,7 +1559,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 10 km at MP",
-            "detail": "26 km: 14 km easy (HR <=140) -> 10 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop).",
+            "detail": "26 km: 14 km easy (HR <=140) -> 10 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 26
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1776,7 +1777,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 12 km at MP",
-            "detail": "28 km: 14 km easy (HR <=140) -> 12 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop).",
+            "detail": "28 km: 14 km easy (HR <=140) -> 12 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 28
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2103,7 +2104,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "33 km: 15 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop).",
+            "detail": "33 km: 15 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 33
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2212,7 +2213,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "30 km: 12 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Final dress rehearsal: race shoes, race breakfast, race fuelling.",
+            "detail": "30 km: 12 km easy (HR <=140) -> 16 km at MP (4:25/km until the Jan 24 10K; 4:16/km only if that 10K is <=39:00) (HR should sit <=160; if it passes 163, ease 10 s/km and log it) -> 2 km easy. Race fuelling: 60-90 g carbs/h (build toward 75-90 g/h over the block) with a few sips of water each time; otherwise drink to thirst (Munich: overdrinking forced a pee stop). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuelling.",
             "estKm": 30
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2337,7 +2338,7 @@
       "label": "Mar 8–Mar 14",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Race week. Carb-load 8-10 g/kg/day for the last 36-48 h. Nothing new.",
+      "tip": "Race week. Carb-load 8-12 g/kg/day for the last 36-48 h. Nothing new.",
       "estKm": 76.2,
       "days": [
         {
@@ -2351,7 +2352,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Race week: Race week. Carb-load 8-10 g/kg/day for the last 36-48 h. Nothing new.",
+          "bigPicture": "Race week: Race week. Carb-load 8-12 g/kg/day for the last 36-48 h. Nothing new.",
           "estKm": 7.0
         },
         {
@@ -2430,7 +2431,7 @@
           "training": {
             "type": "race",
             "title": "ROME MARATHON",
-            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: first half no faster than the gate-validated MP (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Drink to thirst.",
+            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: first half no faster than the gate-validated MP (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Drink to thirst; caffeine 3-6 mg/kg ~60 min pre-start if trialled in training.",
             "estKm": 42.2
           },
           "movement": "No bike. Public transport to the start.",

@@ -144,19 +144,28 @@ marathon, 15 weeks after starting from almost no running base.
 Strava activity 20539174342. The watch measured 42.53 km (0.8% long), so
 watch splits run slightly fast against the official km markers.
 
-| Section (watch km) | Pace | Avg HR | Notes |
-|---|---|---|---|
-| 0–5 | 4:44 | 160 | Plan: 4:42–4:46, HR ≤152 |
-| 5–10 | 4:35 | 161 | A-stretch lane, HR above the 158 ceiling |
-| 10–15 | 4:34 | 158 | |
-| 15–20 | 4:33 | 158 | |
-| 20–25 | 4:32 | 159 | Half in ~1:36:24 (watch) |
-| 25–30 | 4:40 | 158 | First slowing |
-| 30–35 | 4:52 | 155 | Pee stop of ~30–40 s around km 33 |
-| 35–40 | 5:12 | 151 | Continuous running; legs heavy, eased off once sub-3:15 was gone |
-| 40–42.5 | 4:53 | 154 | Picked up again at the finish |
+| Section (watch km) | Pace | Grade-adj. pace | Avg HR | Notes |
+|---|---|---|---|---|
+| 0–5 | 4:44 | 4:41 | 160 | Plan: 4:42–4:46, HR ≤152 |
+| 5–10 | 4:35 | 4:34 | 161 | A-stretch lane, HR above the 158 ceiling |
+| 10–15 | 4:34 | 4:38 | 158 | Net downhill |
+| 15–20 | 4:33 | 4:32 | 158 | |
+| 20–25 | 4:32 | 4:28 | 159 | Half in ~1:36:24 (watch); climbing starts |
+| 25–30 | 4:40 | 4:32 | 158 | Course climbs (net +23 m); effort held |
+| 30–35 | 4:52 | 4:55 | 155 | Grade-adj. pace held to km 32; pee stop at km 33 |
+| 35–40 | 5:12 | 5:10 | 151 | Continuous running; legs heavy, eased off once sub-3:15 was gone |
+| 40–42.5 | 4:53 | 4:55 | 154 | Picked up again at the finish (last 1.5 km ~4:45) |
 
 Halves (watch): **1:36:24 / 1:43:48**, a positive split of ~7.5 min (+7.7%).
+
+Grade-adjusted pace comes from the altitude stream, weighted by Minetti et
+al.'s (2002, *J Appl Physiol*) energy-cost-of-gradient curve. The watch
+logged ~185 m of ascent (Strava's summary says 123 m). Munich climbs ~40 m
+between km 21 and km 33, so **the raw slowdown from km 27 to 32 was mostly
+the course, not a fade**. Grade-adjusted effort held at ~4:30–4:39 until
+km 32, at a steady HR of 156–157. The real break came **after the pee stop
+at km 33**: grade-adjusted pace went to 4:50, then 5:03–5:20 for km 35–41,
+with HR falling to 149–152 and cadence dropping from ~170 to ~165–167 spm.
 
 What the data says:
 
@@ -164,12 +173,20 @@ What the data says:
   4:32–4:35/km at HR 158–161 (~95–96% of the device LT) for 25 km. The
   "A-real" lane in `race-plan.json` predicted 3:15–3:18 for its pacing;
   going out faster gave 3:19:43.
-- **Aerobic fitness held to km 30; legs set the limit after.** Pace per
-  heartbeat (speed ÷ HR) was flat from km 2–16 to km 16–30 (−0.5%). After
-  km 30, pace and HR fell together. That pattern fits muscular/peripheral
-  fatigue better than a cardiovascular limit or glycogen depletion. The
-  final-km pickup also argues against a true bonk, though that's an
-  inference: a single HR trace can't separate the causes.
+- **Effort held to km 32; after the stop the legs and the decision set
+  the pace.** Grade-adjusted pace was steady to km 32. After the stop, pace,
+  HR and cadence all fell together, and the athlete reports heavy legs plus
+  a deliberate ease-off once sub-3:15 was gone. A falling HR with falling
+  pace fits muscular/peripheral fatigue better than a cardiovascular limit.
+  In marathoners, late-race pace loss tracks blood markers of muscle damage,
+  not dehydration (Del Coso et al. 2013, *PLoS ONE*). The final 1.5 km at
+  ~4:45 argues against severe glycogen depletion, since a true bonk rarely
+  allows a rally. That's an inference: an HR trace can't separate causes.
+- **Counterfactual.** Holding the km 26–32 grade-adjusted effort over the
+  last 10.5 km (net downhill) would have meant ~4:33–4:40/km instead of the
+  actual average, saving ~4–5 min → **~3:14:30–3:16**. That's an upper bound
+  on what was available that day, not a demonstrated result: the legs may
+  not have held even without the stop.
 - **Fuelling worked; drinking was too much.** All 8 honey sips (~210 g
   sugar ≈ 63 g carbs/h) fall within the 60–90 g/h guidance. But the athlete
   drank *more* than planned, needed a pee stop and felt bladder discomfort.
@@ -196,7 +213,8 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
 
 ### What changes for Rome
 
-- **Sub-3 now needs −19:44 (−9.9%) in 22 weeks.** That's a big jump, even
+- **Sub-3 now needs −19:44 (−9.9%) from the chip time, or ~−7.5–8% from
+  the ~3:14:30–3:16 counterfactual**, in 22 weeks. That's a big jump, even
   for a novice in the fastest-improving phase. **Working target: 3:05–3:10.
   Sub-3 stays a stretch goal** that the section 4 checkpoints can unlock.
   Nothing in the checkpoint thresholds changes: they test the fitness that
@@ -208,5 +226,61 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
 - **Pacing rule for Rome:** first half no faster than goal MP. The HR
   ceiling gets set from the measured LT after the Nov 21 field test.
 - **Durability** (section 3, point 6) moves up in priority. The race broke
-  at km 28–30, which is exactly the zone the specific block's 26–33 km long
+  at km 32–33, which is exactly the zone the specific block's 26–33 km long
   runs with MP finishes are built to train.
+- **Fuelling upgrades** (section 7).
+
+## 7. Fuelling: what the data does and doesn't show
+
+**Patterns that would point to under-fuelling, and what the race shows:**
+
+| Pattern | Munich |
+|---|---|
+| Sharp, sustained collapse in pace late in the race (the "wall"; Smyth 2021) | Grade-adj. pace ~13% slower for km 35–41: a fade, not a collapse |
+| Unable to rally even briefly | Rallied to ~4:45 for the last 1.5 km |
+| Light-headed, confused, "empty" | Not reported; legs and a deliberate ease-off reported |
+| Low carb intake (<~60 g/h) | ~63 g/h (8 honey sips), at the low end of the 60–90 g/h range |
+| GI trouble limiting intake | None reported |
+
+So glycogen depletion was **probably not the main cause**. It can't be
+ruled out as a contributor, especially after ~2.5 h at ~95% of LT, where
+carbohydrate burn is high (Rapoport 2010 model).
+
+**What to change anyway, by evidence:**
+1. **Raise intake toward 75–90 g/h, trained in long runs.** Glucose+fructose
+   mixes (honey is roughly 1:1.2) allow intakes above 60 g/h (Jeukendrup
+   2014, *Sports Med*), and the gut adapts to high intakes with repeated
+   practice (Costa et al. 2017). One small study in elite mountain
+   marathoners found 120 g/h lowered muscle-damage markers versus 60–90 g/h
+   (Viribay et al. 2020, *Nutrients*). That's relevant because the legs were
+   the limiter, but it's a single study in a different population.
+2. **Carbohydrate loading:** 8–12 g/kg/day for the 36–48 h before (Burke et
+   al., IOC consensus). Check what Munich's load actually was.
+3. **Drinking to sweat rate, not to schedule.** Weigh before and after a few
+   long runs (1 kg ≈ 1 L, adjusted for anything drunk) to learn hourly sweat
+   loss. Drink to thirst, aiming not to *gain* weight in a race (Hew-Butler
+   2015). Munich's pee stop shows intake exceeded losses.
+4. **Caffeine, if tolerated:** 3–6 mg/kg ~60 min before the start improves
+   endurance performance (ISSN position stand, Guest et al. 2021). Trial it
+   in training first.
+
+## 8. Rome course vs Munich
+
+- **Elevation is not the big difference.** Third-party sources put Rome at
+  ~100 m of total gain, with an altitude range of ~8–31 m. Munich logged
+  123 m (Strava summary). There is no official figure from the organiser
+  yet; check the GPX once it's published. The plan's flat-route training
+  fits either course.
+- **The real differences are the surface and the turns.**
+  - Reports say Rome's cobblestones (*sampietrini*) fall mainly in km 30–40,
+    exactly where Munich broke, though the location is not officially
+    confirmed.
+  - The course has many turns, including a 180° turn near Piazza del Popolo.
+  - Running on uneven terrain raised metabolic cost by ~5% in a lab study
+    (Voloshina & Ferris 2015, *J Exp Biol*). Rome's stones are flatter than
+    that lab surface, so read it as direction, not size.
+- **What the plan does about it:** the specific-block long runs with MP
+  finishes put part of the MP segment on cobbled or uneven surfaces
+  (Munich's Altstadt has plenty) and include tight turns. Race pacing
+  allows ~5–10 s/km slower on the cobbled stretches at the same effort,
+  rather than chasing pace there.
