@@ -115,7 +115,7 @@ now, the plan uses checkpoints:
 | Nov 21 (wk 6) | 30-min LT field test | Replaces device LT; rescale every HR number in the plan |
 | Dec 9 (wk 9) | Aerobic check: HR over 5 km at 5:30/km vs Nov 4, plus the Nov 21 test | HR ≥3 bpm lower, weeks 7–9 ≥90% done, no niggles → specific block as written; otherwise hold volume 2 more weeks |
 | Dec 20 (wk 10) | Pisa Half Marathon, easy with sister (~6:00/km, HR ≤140) | Not a checkpoint; fuel and cup-drinking rehearsal. Replaced the Dec 20 10K (decided 2026-10-12) |
-| Jan 24 (wk 15) | 10K | ≤39:00 sub-3 on track · 39–40 → 3:00–3:05 · >40 → ~3:08–3:12 |
+| Jan 23 (wk 15) | 10K | ≤39:00 sub-3 on track · 39–40 → 3:00–3:05 · >40 → ~3:08–3:12 |
 | Feb 14 (wk 18) | Half marathon | ≤1:26:00 sub-3 · 1:26–1:29 → 3:00–3:05 · >1:29 → ~3:08–3:12; sets final race MP |
 
 Caveats: the threshold is watch-estimated, HR is from a wrist sensor and the
@@ -227,7 +227,7 @@ section 2 diagnosis: the speed is there, but endurance can't hold it yet.
   section 9: the athlete chose sub-3 as the target, with a Pfitzinger
   18/70-style block. The checkpoints can still re-target downward.)*
 - **Marathon pace in the plan is 4:16/km** (sub-3). It moves only if the
-  Jan 24 10K or Feb 14 HM checkpoint re-targets.
+  Jan 23 10K or Feb 14 HM checkpoint re-targets.
 - **Hydration rule:** drink to thirst in long runs and the race. Practise
   it on every long run over 25 km and note any bladder discomfort.
 - **Pacing rule for Rome:** first half no faster than goal MP. The HR
@@ -370,7 +370,7 @@ checkpoints, fuel test, Pisa and the GI rules all stay.
 | 1–2 | Oct 12–25 | Recovery | 14 → 30 | Post-Munich, easy only |
 | 3–4 | Oct 26 – Nov 8 | Rebuild | 45 → 60 | Hills, first medium-long runs, HR check baseline Nov 4 |
 | 5–10 | Nov 9 – Dec 20 | Endurance (block wks 1–6) | 66 → 86, recovery wks 6 and 10 | 1 LT run (5→7 km at LT), 2 medium-long runs (14–18 km), long runs 21→28 km, LT test Nov 21, HR check Dec 9, Pisa easy Dec 20 |
-| 11–15 | Dec 21 – Jan 24 | LT + endurance (wks 7–11) | 88 → 100, recovery wk 14, 10K wk 15 | LT runs to 9 km, medium-long runs to 20 km, first MP long run (32 km with 14 at MP) |
+| 11–15 | Dec 21 – Jan 24 | LT + endurance (wks 7–11) | 88 → 100, recovery wk 14, 10K wk 15 (normal volume since §12) | LT runs to 9 km, medium-long runs to 20 km, first MP long run (32 km with 14 at MP) |
 | 16–19 | Jan 25 – Feb 21 | Race preparation (wks 12–15) | 104 → **110 peak**, HM wk 18 | VO2max intervals, 34 km long run, 30 km with 19 at MP, 32 km with 16 at MP |
 | 20–22 | Feb 22 – Mar 14 | Taper (wks 16–18) | 85 → 66 → race | Pfitzinger's 3-week taper, intensity kept (Bosquet 2007) |
 
@@ -396,7 +396,7 @@ at ~113 km.
     progressing.
   - The Dec 9 aerobic check decides whether volume climbs to 88–110 km
     from Dec 21, or holds at ~86 km for two more weeks.
-  - The Jan 24 10K and Feb 14 HM still re-target the race pace (3:00–3:05
+  - The Jan 23 10K and Feb 14 HM still re-target the race pace (3:00–3:05
     or ~3:08–3:12) if the fitness isn't there. Volume stays the same either
     way.
 
@@ -462,7 +462,7 @@ the midpoint is used.
 | Longest run | 34 km | 35 km |
 | MP long runs | 3 (14, 19, 16 km at MP), from Jan 10 | 4 (13, 16, 19, 23 km at MP), from block week 2 |
 | Longest LT segment | 9 km | 11 km (19 km run) |
-| Tune-up races | 10K Jan 24, HM Feb 14 (plus Pisa run easy) | 3 (8–15K, 8–15K, 8–10K) |
+| Tune-up races | 10K Jan 23, HM Feb 14 (plus Pisa run easy) | 3 (8–15K, 8–15K, 8–10K) |
 | Taper (last 3 weeks) | 85 / 66 / 34 + race | 90 / 69 / 44 + race |
 
 **What the real numbers teach:**
@@ -485,3 +485,28 @@ the midpoint is used.
 
 The mileage stays as agreed (section 9). Any changes taken from Pfitzinger
 should be to session content only.
+
+## 12. Tune-up weeks at normal volume, and weekly time (2026-10-12)
+
+The athlete asked why Jan 11 and Jan 18 were both light weeks. Jan 11 was a
+recovery week and Jan 18 had been cut back for the 10K, which made two
+lighter weeks in a row. Pfitzinger doesn't do that: in his tune-up weeks the
+race replaces a quality session and the week keeps near-normal volume.
+
+- **Jan 18 week: 82 → 99 km.** The 10K checkpoint moves to **Saturday
+  Jan 23**, followed by a 26 km easy long run on Sunday. The threshold run
+  is 16 km with 7 km at LT, and the medium-long run is 21 km.
+- **Feb 8 week: 82 → 90 km.** It ends with the half-marathon checkpoint on
+  Feb 14 and has a 22 km medium-long run. Friday and Saturday stay light
+  so the HM is a valid fitness test. That keeps it below the 98–110 km
+  weeks around it.
+- **Recovery weeks are now 6, 10 and 14.** Weeks 15–19 run without one,
+  then the taper starts. Total for weeks 5–22: ~1,528 km (was ~1,503).
+- **Estimated training time is added per day (`estMin`) and per week
+  (`estHours`), split into run, swim and strength.**
+  - Running minutes use easy 5:39/km, recovery 6:00/km, LT 4:05/km,
+    training MP 4:09/km, VO2 sessions at a 5:00/km average and race
+    paces.
+  - Swims count 25–35 min.
+  - Strength minutes are taken from each session's own estimate.
+  - Peak is ~11 h (week of Jan 25). Most build weeks are 9–10.5 h.
