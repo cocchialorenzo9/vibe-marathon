@@ -113,8 +113,9 @@ now, the plan uses checkpoints:
 | When | Checkpoint | Decision |
 |---|---|---|
 | Nov 21 (wk 6) | 30-min LT field test | Replaces device LT; rescale every HR number in the plan |
-| Dec 20 (wk 10) | 10K #1 | ≤40:00 → specific block as written; slower → hold volume 2 more weeks |
-| Jan 24 (wk 15) | 10K #2 | ≤39:00 sub-3 on track · 39–40 → 3:00–3:05 · >40 → ~3:08–3:12 |
+| Dec 9 (wk 9) | Aerobic check: HR over 5 km at 5:30/km vs Nov 4, plus the Nov 21 test | HR ≥3 bpm lower, weeks 7–9 ≥90% done, no niggles → specific block as written; otherwise hold volume 2 more weeks |
+| Dec 20 (wk 10) | Pisa Half Marathon, easy with sister (~6:00/km, HR ≤140) | Not a checkpoint; fuel and cup-drinking rehearsal. Replaced the Dec 20 10K (decided 2026-10-12) |
+| Jan 24 (wk 15) | 10K | ≤39:00 sub-3 on track · 39–40 → 3:00–3:05 · >40 → ~3:08–3:12 |
 | Feb 14 (wk 18) | Half marathon | ≤1:26:00 sub-3 · 1:26–1:29 → 3:00–3:05 · >1:29 → ~3:08–3:12; sets final race MP |
 
 Caveats: the threshold is watch-estimated, HR is from a wrist sensor and the
@@ -126,9 +127,9 @@ test confirms them.
 | Weeks | Dates | Phase | km/week | Focus |
 |---|---|---|---|---|
 | 1–2 | Oct 12–25 | Recovery | 14 → 30 | Post-Munich; easy only |
-| 3–10 | Oct 26 – Dec 20 | Base | 42 → 72 (recovery wks 6, 10) | 5→7 runs, HR cap 140, hills/strides, threshold reps, strength 2×, LT test, 10K #1 |
+| 3–10 | Oct 26 – Dec 20 | Base | 42 → 72 (recovery wks 6, 10) | 5→7 runs, HR cap 140, hills/strides, threshold reps, strength 2×, LT test, HR checks, fuel test, Pisa HM easy |
 | 11–12 | Dec 21 – Jan 3 | Holiday bridge | 69, 76 | Hold volume |
-| 13–20 | Jan 4 – Feb 28 | Specific | 80 → 92 (recovery wks 15, 18) | 1–2 quality sessions + long run carrying MP (10→16 km at MP), 10K #2, HM |
+| 13–20 | Jan 4 – Feb 28 | Specific | 80 → 92 (recovery wks 15, 18) | 1–2 quality sessions + long run carrying MP (10→16 km at MP), 10K, HM |
 | 21–22 | Mar 1–14 | Taper | 63 → race | Volume −40–60%, intensity kept (Bosquet 2007, *MSSE*) |
 
 The draft is **not wired into `update-coach`** (that still reads
