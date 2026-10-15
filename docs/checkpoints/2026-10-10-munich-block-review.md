@@ -510,3 +510,23 @@ race replaces a quality session and the week keeps near-normal volume.
   - Swims count 25–35 min.
   - Strength minutes are taken from each session's own estimate.
   - Peak is ~11 h (week of Jan 25). Most build weeks are 9–10.5 h.
+
+## 13. Race target 2:55:00 (decided 2026-10-15)
+
+The athlete moved the Rome target from sub-3:00 to **2:55:00**, so there
+are 5 minutes of slack under 3:00 on race day rather than only in training.
+
+- **Race pace is now 4:09/km** (2:55:00 ÷ 42.195 km = 4:08.9/km), the same
+  as the training MP from section 10. Training and racing now share one
+  marathon pace. The race-day default is even pacing at 4:09/km, with the
+  first half no faster than 4:09.
+- **The HR guard stays.** If lap HR passes 166 in an MP block, finish it at
+  4:16 (sub-3 pace) and log it.
+- **The checkpoints gain a 2:55 tier.** The cut-offs are the sub-3 ones
+  scaled by 175/180:
+  - Jan 23 10K: ≤38:00 → 2:55 on track (MP 4:09); 38–39 → sub-3
+    (MP 4:15–4:16); 39–40 → 3:00–3:05; >40 → ~3:08–3:12.
+  - Feb 14 HM: ≤1:23:30 → 2:55; 1:23:30–1:26:00 → sub-3; 1:26–1:29 →
+    3:00–3:05; >1:29 → ~3:08–3:12.
+- **Volume does not change.** The race-day estimate drops from 180 to
+  175 min.
