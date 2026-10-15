@@ -4,6 +4,7 @@ import SiteNav, { REPO_URL, scrollToSection } from "../components/SiteNav";
 import SiteFooter from "../components/SiteFooter";
 import { ArrowRight, Info, SessionIcon } from "../components/icons";
 import {
+  PHASE_COLORS,
   PHASE_LABELS,
   blockName,
   dayStamp,
@@ -12,7 +13,6 @@ import {
   formatKm,
   gateName,
   hrCap,
-  isoDate,
   locate,
   parseIso,
   romePlan,
@@ -24,6 +24,7 @@ import {
   type Phase,
   type PlanDay,
 } from "../lib/plan";
+import { useToday } from "../lib/useToday";
 import { MUNICH } from "../data/munich2026";
 
 // Race targets from the plan's goalFinish: sub-3, raced at 4:15-4:16/km.
@@ -31,19 +32,8 @@ const GOAL = "2:59:59";
 const RACE_PACE = "4:15";
 const DASHBOARD_URL = "https://claude.ai/artifact/TXv5oj3qerwvULrr8ZggPW";
 
-const PHASE_COLORS: Record<Phase, string> = {
-  recovery: "var(--gray)",
-  base: "var(--slate)",
-  specific: "var(--accent)",
-  taper: "var(--orange)",
-};
-
-/** `#/?date=2026-11-21` previews the page as of another day. */
-function useToday(): string {
-  const { search } = useLocation();
-  const override = new URLSearchParams(search).get("date");
-  return override && /^\d{4}-\d{2}-\d{2}$/.test(override) ? override : isoDate(new Date());
-}
+/** Deep link into the program page with a day selected. */
+const programDay = (iso: string) => `/program?day=${iso}`;
 
 export default function Home() {
   const todayIso = useToday();
@@ -131,11 +121,16 @@ export default function Home() {
                 {weeks.length} weeks to Rome
               </h2>
             </div>
-            <p>
-              Recovery, then base, then marathon-specific work at 4:09/km, then taper. Five to seven runs a week,
-              with pool and home strength sessions. Volume peaks at {formatKm(peak)} km — Munich's peak was{" "}
-              {MUNICH.peakWeekKm} km.
-            </p>
+            <div className="plan-cta">
+              <p>
+                Recovery, then base, then marathon-specific work at 4:09/km, then taper. Five to seven runs a week,
+                with pool and home strength sessions. Volume peaks at {formatKm(peak)} km — Munich's peak was{" "}
+                {MUNICH.peakWeekKm} km.
+              </p>
+              <Link to="/program" className="cta">
+                Browse every day of the program <ArrowRight />
+              </Link>
+            </div>
           </div>
 
           <div className="panel">
@@ -183,22 +178,24 @@ export default function Home() {
           </h3>
           <ol className="checkpoints">
             {plan.gates.map((g) => (
-              <li key={g.date} className={`checkpoint${g.date < todayIso ? " past" : ""}`}>
-                <span className="mono">
-                  {shortDate(g.date)} · WK {g.week}
-                </span>
-                <strong>{gateName(g.name)}</strong>
-                <p title={g.rule}>{g.rule}</p>
+              <li key={g.date}>
+                <Link to={programDay(g.date)} className={`checkpoint${g.date < todayIso ? " past" : ""}`}>
+                  <span className="mono">
+                    {shortDate(g.date)} · WK {g.week}
+                  </span>
+                  <strong>{gateName(g.name)}</strong>
+                  <p title={g.rule}>{g.rule}</p>
+                </Link>
               </li>
             ))}
-            <li className="checkpoint race">
-              <span className="mono">
-                {shortDate(raceDay.date)} · WK {weeks.length}
-              </span>
-              <strong>Maratona di Roma</strong>
-              <p>
-                Sub-3:00, raced at {RACE_PACE}–4:16/km.
-              </p>
+            <li>
+              <Link to={programDay(raceDay.date)} className="checkpoint race">
+                <span className="mono">
+                  {shortDate(raceDay.date)} · WK {weeks.length}
+                </span>
+                <strong>Maratona di Roma</strong>
+                <p>Sub-3:00, raced at {RACE_PACE}–4:16/km.</p>
+              </Link>
             </li>
           </ol>
         </section>
@@ -417,7 +414,12 @@ function ThisWeek({ todayIso }: { todayIso: string }) {
         <h2 id="week-title">
           This week <span>· {blockName(week.days[0])}</span>
         </h2>
-        <span className="mono">{summary}</span>
+        <div className="week-head-right">
+          <span className="mono">{summary}</span>
+          <Link to={programDay(todayIso)} className="cta">
+            Full program <ArrowRight />
+          </Link>
+        </div>
       </div>
       <ol className="week-grid">
         {week.days.map((d) => {
@@ -425,14 +427,16 @@ function ThisWeek({ todayIso }: { todayIso: string }) {
             d.date < todayIso ? "done" : d.date === todayIso ? "today" : d.date === tomorrow?.date ? "next" : "";
           const tag = { done: "DONE", today: "TODAY", next: "NEXT", "": "" }[status];
           return (
-            <li key={d.date} className={`day ${status}`}>
-              <div className="day-top">
-                <span>{weekdayDate(d.date)}</span>
-                <span className="day-tag">{tag}</span>
-              </div>
-              <span className="day-title">{shortTitle(d.training.title)}</span>
-              <span className="day-val">{dayValue(d)}</span>
-              <span className="day-sub">{daySubtitle(d)}</span>
+            <li key={d.date}>
+              <Link to={programDay(d.date)} className={`day ${status}`}>
+                <span className="day-top">
+                  <span>{weekdayDate(d.date)}</span>
+                  <span className="day-tag">{tag}</span>
+                </span>
+                <span className="day-title">{shortTitle(d.training.title)}</span>
+                <span className="day-val">{dayValue(d)}</span>
+                <span className="day-sub">{daySubtitle(d)}</span>
+              </Link>
             </li>
           );
         })}

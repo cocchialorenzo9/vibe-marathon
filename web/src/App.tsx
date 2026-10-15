@@ -2,6 +2,7 @@ import { Suspense, lazy, useEffect } from "react";
 import { HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Munich2026 from "./pages/Munich2026";
+import Program from "./pages/Program";
 
 // Season 01 pages pull in recharts; load them only when opened.
 const Dashboard = lazy(() => import("./legacy/Dashboard"));
@@ -24,6 +25,7 @@ export function App() {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/program" element={<Program />} />
           <Route path="/munich-2026" element={<Munich2026 />} />
           <Route path="/munich-2026/dashboard" element={<Dashboard />} />
           <Route path="/munich-2026/journal" element={<Journal />} />
