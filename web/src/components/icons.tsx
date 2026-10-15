@@ -86,3 +86,15 @@ export function SessionIcon({ type, ...p }: IconProps & { type: SessionType }) {
   if (type === "race") return <Flag {...p} />;
   return <Run {...p} />;
 }
+
+export const ChevronLeft = (p: IconProps) => (
+  <Svg size={18} stroke={2.2} {...p}>
+    <path d="M15 18l-6-6 6-6" />
+  </Svg>
+);
+
+export const ChevronRight = (p: IconProps) => (
+  <Svg size={18} stroke={2.2} {...p}>
+    <path d="M9 18l6-6-6-6" />
+  </Svg>
+);

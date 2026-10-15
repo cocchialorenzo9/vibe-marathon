@@ -2,10 +2,15 @@ import {
   blockName,
   daySubtitle,
   dayValue,
+  formatMinutes,
+  fuelTest,
   gateName,
   locate,
+  prose,
   romePlan,
   shortTitle,
+  splitStrength,
+  tileTitle,
   weekCounts,
   weekRange,
 } from "./plan";
@@ -64,5 +69,27 @@ describe("day formatting", () => {
 
   it("drops editorial notes from gate names", () => {
     expect(gateName("Aerobic check (replaces Dec 20 10K)")).toBe("Aerobic check");
+  });
+});
+
+describe("program helpers", () => {
+  it("splits the home strength block out of a session", () => {
+    const { session, strength } = splitStrength("50 min easy. HOME STRENGTH S1, foundation: squats.");
+    expect(session).toBe("50 min easy.");
+    expect(strength).toBe("HOME STRENGTH S1, foundation: squats.");
+    expect(splitStrength("Full rest.").strength).toBeNull();
+  });
+
+  it("finds the week's fuel test", () => {
+    expect(fuelTest(romePlan.weeks[3])).toBe("A");
+    expect(fuelTest(romePlan.weeks[0])).toBeNull();
+  });
+
+  it("formats minutes and titles", () => {
+    expect(formatMinutes(95)).toBe("1h 35′");
+    expect(formatMinutes(40)).toBe("40′");
+    expect(formatMinutes(0)).toBe("—");
+    expect(tileTitle("Long run (fuel test A)")).toBe("Long run");
+    expect(prose("easy -- HR <=140")).toBe("easy — HR ≤140");
   });
 });

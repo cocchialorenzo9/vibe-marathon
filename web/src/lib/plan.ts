@@ -28,6 +28,7 @@ export interface PlanWeek {
   label: string;
   tip: string;
   estKm: number;
+  estHours?: { run: number; swim: number; strength: number; total: number };
   days: PlanDay[];
 }
 
@@ -53,6 +54,24 @@ export const PHASE_LABELS: Record<Phase, string> = {
   base: "Base",
   specific: "Specific",
   taper: "Taper",
+};
+
+export const PHASE_COLORS: Record<Phase, string> = {
+  recovery: "var(--gray)",
+  base: "var(--slate)",
+  specific: "var(--accent)",
+  taper: "var(--orange)",
+};
+
+/** Calendar colours per session type; `ink` is the text colour on top of `color`. */
+export const SESSION_TYPES: Record<SessionType, { label: string; color: string; ink: string }> = {
+  easy: { label: "Easy", color: "#5b8db8", ink: "#06121c" },
+  "medium-long": { label: "Medium-long", color: "#a497ff", ink: "#0d0a24" },
+  long: { label: "Long", color: "#ffc23d", ink: "#1f1600" },
+  tempo: { label: "Quality", color: "#ff7a3d", ink: "#1f0c02" },
+  race: { label: "Race", color: "#ff3d6e", ink: "#22030b" },
+  swim: { label: "Swim", color: "#3dd6e0", ink: "#02191b" },
+  rest: { label: "Rest", color: "#2b323b", ink: "#c9d1da" },
 };
 
 const DAY_MS = 86_400_000;
@@ -180,4 +199,44 @@ export function weekRange(week: PlanWeek): string {
   return a.getMonth() === b.getMonth()
     ? `${a.getDate()}–${b.getDate()} ${MONTHS[b.getMonth()]}`
     : `${a.getDate()} ${MONTHS[a.getMonth()]}–${b.getDate()} ${MONTHS[b.getMonth()]}`;
+}
+
+/** The plan appends the home strength block to the session text; split it back out. */
+export function splitStrength(detail: string): { session: string; strength: string | null } {
+  const at = detail.indexOf("HOME STRENGTH");
+  if (at === -1) return { session: detail.trim(), strength: null };
+  return { session: detail.slice(0, at).trim(), strength: detail.slice(at).trim() };
+}
+
+/** ASCII stand-ins in the plan JSON ("--", "<=") rendered as typography. */
+export function prose(text: string): string {
+  return text.replace(/ -- /g, " — ").replace(/<=/g, "≤");
+}
+
+/** "Long run (fuel test A)" -> "Long run"; also drops the "Pool session --" prefix. */
+export function tileTitle(title: string): string {
+  return shortTitle(title).split(" (")[0];
+}
+
+/** Fuel test letter run in this week's long run, if any. */
+export function fuelTest(week: PlanWeek): string | null {
+  for (const d of week.days) {
+    const m = d.training.title.match(/fuel test ([A-Z])\b/i);
+    if (m) return m[1].toUpperCase();
+  }
+  return null;
+}
+
+/** 95 -> "1h 35′", 40 -> "40′", 0 -> "—" */
+export function formatMinutes(min: number): string {
+  if (!min) return "—";
+  return min >= 60 ? `${Math.floor(min / 60)}h ${String(min % 60).padStart(2, "0")}′` : `${min}′`;
+}
+
+const WEEKDAYS_LONG = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
+
+/** "2026-11-03" -> "TUESDAY · 3 NOV 2026" */
+export function dateLong(iso: string): string {
+  const d = parseIso(iso);
+  return `${WEEKDAYS_LONG[d.getDay()]} · ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }

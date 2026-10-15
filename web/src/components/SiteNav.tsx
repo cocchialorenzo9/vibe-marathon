@@ -4,11 +4,13 @@ import { Code } from "./icons";
 
 export const REPO_URL = "https://github.com/cocchialorenzo9/vibe-marathon";
 
-const SECTIONS = [
-  { id: "today", label: "Today" },
-  { id: "plan", label: "Plan" },
-  { id: "data", label: "Data" },
-];
+// Landing-page sections (scroll) and routes, in nav order.
+const ITEMS = [
+  { section: "today", label: "Today" },
+  { to: "/program", label: "Program" },
+  { section: "data", label: "Data" },
+  { to: "/munich-2026", label: "Munich 2026" },
+] as const;
 
 export function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -31,18 +33,22 @@ export default function SiteNav() {
           <Brand />
         </Link>
         <div className="nav-links">
-          {SECTIONS.map((s) => (
-            <button key={s.id} type="button" className="nav-link" onClick={() => goTo(s.id)}>
-              {s.label}
-            </button>
-          ))}
-          <Link
-            className="nav-link"
-            to="/munich-2026"
-            aria-current={pathname.startsWith("/munich-2026") ? "page" : undefined}
-          >
-            Munich 2026
-          </Link>
+          {ITEMS.map((item) =>
+            "section" in item ? (
+              <button key={item.label} type="button" className="nav-link" onClick={() => goTo(item.section)}>
+                {item.label}
+              </button>
+            ) : (
+              <Link
+                key={item.label}
+                className="nav-link"
+                to={item.to}
+                aria-current={pathname.startsWith(item.to) ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
           <a className="btn-pill" href={REPO_URL}>
             <Code />
             Source
