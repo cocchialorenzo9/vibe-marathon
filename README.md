@@ -2,7 +2,7 @@
 
 AI-powered daily marathon coaching. Fetches biometric data from your smartwatch, computes training load (ATL/CTL/TSB), and generates a personalised next-day workout recommendation — written to `data/coach.json` and pushed to this repo each morning.
 
-The live dashboard is at [cocchialorenzo9.github.io/projects/vibe-marathon](https://cocchialorenzo9.github.io/projects/vibe-marathon).
+The site is at [cocchialorenzo9.github.io/vibe-marathon](https://cocchialorenzo9.github.io/vibe-marathon/): today's session and the Rome 2027 plan, plus the Season 01 (Munich 2026) race recap and archive. Its source is in [`web/`](web/).
 
 ## How it works
 
@@ -10,6 +10,23 @@ The live dashboard is at [cocchialorenzo9.github.io/projects/vibe-marathon](http
 2. **Analyse** — rolling history at `~/.vibe-marathon/history.json` is used to compute ATL (7-day), CTL (42-day), and TSB.
 3. **Recommend** — the `/update-coach` skill reasons over readiness signals and the training plan, then writes a recommendation.
 4. **Publish** — `data/coach.json` (today's snapshot) and `data/chart-data.json` are committed and pushed, making the dashboard update automatically.
+
+## Web app (`web/`)
+
+Vite + React 18 + TypeScript, deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main` that touches `web/` or `data/`, so a coach data push redeploys the site.
+
+```bash
+cd web
+npm install
+npm run dev        # http://localhost:5173/vibe-marathon/
+npm run typecheck
+npm test
+npm run build      # into web/dist
+```
+
+- `#/` — Season 02: today, tomorrow, this week, the 22-week plan and checkpoints, read at build time from `data/training-plan-rome-2027.json`. `#/?date=2026-11-21` previews another day.
+- `#/munich-2026` — Season 01 race recap (figures in `web/src/data/munich2026.ts`).
+- `#/munich-2026/{dashboard,race-plan,journal,plan}` — the original Munich pages, moved from the personal site; they still fetch `data/*.json` from raw GitHub (the race plan honours `?ref=<branch>`).
 
 ## Setup
 
