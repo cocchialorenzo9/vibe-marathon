@@ -26,9 +26,9 @@ import {
 } from "../lib/plan";
 import { MUNICH } from "../data/munich2026";
 
-// Race targets from the plan's goalFinish: sub-3, raced at 4:15-4:16/km.
-const GOAL = "2:59:59";
-const RACE_PACE = "4:15";
+// Race targets from the plan's goalFinish: 2:55:00 at 4:09/km, ~5 min of slack under 3:00.
+const GOAL = "2:55:00";
+const RACE_PACE = "4:09";
 const DASHBOARD_URL = "https://claude.ai/artifact/TXv5oj3qerwvULrr8ZggPW";
 
 const PHASE_COLORS: Record<Phase, string> = {
@@ -197,7 +197,7 @@ export default function Home() {
               </span>
               <strong>Maratona di Roma</strong>
               <p>
-                Sub-3:00, raced at {RACE_PACE}–4:16/km.
+                2:55:00 at {RACE_PACE}/km, ~5 min of slack under 3:00.
               </p>
             </li>
           </ol>

@@ -3,8 +3,8 @@
   "generatedAt": "2026-10-10",
   "race": "Maratona di Roma 2027",
   "raceDate": "2027-03-14",
-  "goalPace": "Training MP 4:09/km (2:55 pace); race at 4:15-4:16/km for sub-3 with ~5 min of slack",
-  "goalFinish": "Sub-3:00, raced at 4:15-4:16/km after training marathon-pace work at 4:09/km. The Jan 23 10K and Feb 14 HM checkpoints can re-target to 3:00-3:05 or ~3:08-3:12. Baseline: Munich 2026-10-11 chip 3:19:43",
+  "goalPace": "MP 4:09/km (2:55:00 pace) in training and on race day; 2:55 leaves ~5 min of slack under 3:00",
+  "goalFinish": "2:55:00, raced at 4:09/km (the same pace as all marathon-pace training), which leaves ~5 min of slack under 3:00. The Jan 23 10K and Feb 14 HM checkpoints can re-target to sub-3 (4:15-4:16/km), 3:00-3:05 or ~3:08-3:12. Baseline: Munich 2026-10-11 chip 3:19:43",
   "strengthProgram": {
     "why": "Heavy strength and plyometric training improve running economy in distance runners without hurting endurance (Balsalobre-Fernandez 2016 meta-analysis; Blagrove 2018 review). Munich's block had 2 sessions in total.",
     "equipment": "At home: a backpack you can load with books or water bottles (10-20 kg), a stair or sturdy step, a mat. Adjustable dumbbells or a kettlebell make it easier to keep loads heavy as you get stronger.",
@@ -120,13 +120,13 @@
       "week": 15,
       "date": "2027-01-23",
       "name": "10K checkpoint",
-      "rule": "<=39:00 sub-3 on track (MP 4:16); 39-40 -> re-target 3:00-3:05 (MP ~4:20); >40 -> re-target ~3:08-3:12 (MP ~4:25-4:30). Volume stays as written either way."
+      "rule": "<=38:00 2:55 on track (MP 4:09); 38-39 -> re-target sub-3 (MP 4:15-4:16); 39-40 -> re-target 3:00-3:05 (MP ~4:20); >40 -> re-target ~3:08-3:12 (MP ~4:25-4:30). Volume stays as written either way."
     },
     {
       "week": 18,
       "date": "2027-02-14",
       "name": "Half marathon checkpoint",
-      "rule": "<=1:26:00 sub-3; 1:26-1:29 -> 3:00-3:05; >1:29 -> ~3:08-3:12. Sets final race MP."
+      "rule": "<=1:23:30 2:55 (MP 4:09); 1:23:30-1:26:00 -> sub-3 (MP 4:15-4:16); 1:26-1:29 -> 3:00-3:05; >1:29 -> ~3:08-3:12. Sets final race MP."
     }
   ],
   "principles": [
@@ -135,7 +135,7 @@
     "Swimming: easy pool sessions replace the Monday recovery run in most weeks (km moved to other easy runs, weekly totals unchanged). Low-impact recovery and extra aerobic time; it does not count as running volume.",
     "Home strength 2x/week (S1 heavy single-leg strength after a quality run, S2 plyometrics + core), 1x in recovery weeks, 1 light session in taper week 2, none in race week (Balsalobre-Fernandez 2016; Blagrove 2018). Equipment: a loaded backpack and a step; adjustable dumbbells or a kettlebell help keep loads heavy.",
     "Easy means easy: HR cap 140 bpm on every non-quality run until LT1 is measured (Seiler 2010; Stoggl & Sperlich 2014).",
-    "Quality as prescribed: continuous LT runs held at HR 158-165 (ease off past 166), race-pace work at training MP 4:09 (ease to 4:16 if lap HR passes 166), VO2max reps in race prep. Roughly 80% of running stays easy.",
+    "Quality as prescribed: continuous LT runs held at HR 158-165 (ease off past 166), race-pace work at MP 4:09 (ease to 4:16 if lap HR passes 166), VO2max reps in race prep. Roughly 80% of running stays easy.",
     "Strength + plyometrics 2x/week in base and specific, 1x in recovery/taper (Balsalobre-Fernandez 2016).",
     "Recovery weeks every 3-4 weeks are not optional, and run volume is not replaced by extra sessions.",
     "Taper: ~2 weeks, volume -40-60%, intensity and frequency kept (Bosquet 2007).",
@@ -1162,7 +1162,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run with race-pace blocks",
-            "detail": "18 km: easy (HR <=140) with 2x2.5 km at training MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "detail": "18 km: easy (HR <=140) with 2x2.5 km at MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 18
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1319,7 +1319,7 @@
           "training": {
             "type": "medium-long",
             "title": "Medium-long run with race-pace blocks",
-            "detail": "18 km: easy (HR <=140) with 2x3 km at training MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "detail": "18 km: easy (HR <=140) with 2x3 km at MP 4:09/km in the middle (1 km easy jog between). If lap HR passes 166, finish the block at 4:16. Rest of the run stays easy. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 18
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1789,7 +1789,7 @@
           "dayLabel": "Thu Dec 24",
           "training": {
             "type": "tempo",
-            "title": "Race-pace run (training MP 4:09)",
+            "title": "Race-pace run (MP 4:09)",
             "detail": "13 km: 15' easy -> 2x4 km at 4:09/km with 1 km easy jog between -> easy to finish. Race-pace feel practice, Marathon Handbook-style. If lap HR passes 166, run the rest at 4:16. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 13
           },
@@ -2035,7 +2035,7 @@
       "label": "Jan 4–Jan 10",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "~100 km, first 100+ week. First long run with a marathon-pace segment, at sub-3 pace.",
+      "tip": "~100 km, first 100+ week. First long run with a marathon-pace segment, at 2:55 pace (4:09/km).",
       "estKm": 100.0,
       "days": [
         {
@@ -2049,7 +2049,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "LT + endurance 3: ~100 km, first 100+ week. First long run with a marathon-pace segment, at sub-3 pace.",
+          "bigPicture": "LT + endurance 3: ~100 km, first 100+ week. First long run with a marathon-pace segment, at 2:55 pace (4:09/km).",
           "estKm": null,
           "estMin": {
             "run": 0,
@@ -2164,7 +2164,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 14 km at MP",
-            "detail": "32 km: 16 km easy (HR <=140) -> 14 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~70 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "32 km: 16 km easy (HR <=140) -> 14 km at MP 4:09/km (2:55:00 race pace, ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to sub-3 pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~70 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 32
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2458,7 +2458,7 @@
           "training": {
             "type": "race",
             "title": "10K race / time trial (checkpoint)",
-            "detail": "15' easy + 4 strides -> 10 km all-out -> easy cool-down. GATE: <=39:00 = sub-3 on track; 39:00-40:00 = re-target 3:00-3:05 (MP ~4:20); >40:00 = re-target ~3:08-3:12. Saturday race, so Sunday can still carry the long run.",
+            "detail": "15' easy + 4 strides -> 10 km all-out -> easy cool-down. GATE: <=38:00 = 2:55 on track; 38:00-39:00 = re-target sub-3 (MP 4:15-4:16); 39:00-40:00 = re-target 3:00-3:05 (MP ~4:20); >40:00 = re-target ~3:08-3:12. Saturday race, so Sunday can still carry the long run.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2663,7 +2663,7 @@
       "label": "Feb 1–Feb 7",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
+      "tip": "Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:09 inside a 30 km run is the hardest session of the block.",
       "estKm": 109.5,
       "days": [
         {
@@ -2677,7 +2677,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Race prep 2 (peak): Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:16 inside a 30 km run is the hardest session of the block.",
+          "bigPicture": "Race prep 2 (peak): Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:09 inside a 30 km run is the hardest session of the block.",
           "estKm": 9.5,
           "estMin": {
             "run": 57,
@@ -2792,7 +2792,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 19 km at MP",
-            "detail": "30 km: 9 km easy (HR <=140) -> 19 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~85 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
+            "detail": "30 km: 9 km easy (HR <=140) -> 19 km at MP 4:09/km (2:55:00 race pace, ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to sub-3 pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~85 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled).",
             "estKm": 30
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2949,7 +2949,7 @@
           "training": {
             "type": "race",
             "title": "Half marathon tune-up (checkpoint)",
-            "detail": "Half-marathon race, even pacing. GATE: <=1:26:00 -> sub-3 stays the goal in Rome; 1:26-1:29 -> target 3:00-3:05 at ~4:20-4:25/km; >1:29 -> target ~3:08-3:12. Rehearse race day exactly: low-FODMAP, low-fibre carb load for 48 h (rice, pasta, white bread, potatoes, sports drink; no honey, juice or jam), race breakfast, race fuel at the target rate.",
+            "detail": "Half-marathon race, even pacing. GATE: <=1:23:30 -> 2:55 stays the goal in Rome (MP 4:09); 1:23:30-1:26:00 -> target sub-3 at 4:15-4:16/km; 1:26-1:29 -> target 3:00-3:05 at ~4:20-4:25/km; >1:29 -> target ~3:08-3:12. Rehearse race day exactly: low-FODMAP, low-fibre carb load for 48 h (rice, pasta, white bread, potatoes, sports drink; no honey, juice or jam), race breakfast, race fuel at the target rate.",
             "estKm": 25
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -3106,7 +3106,7 @@
           "training": {
             "type": "long",
             "title": "Long run with 16 km at MP",
-            "detail": "32 km: 14 km easy (HR <=140) -> 16 km at training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to race pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~90 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuel, cobbles at the end.",
+            "detail": "32 km: 14 km easy (HR <=140) -> 16 km at MP 4:09/km (2:55:00 race pace, ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it) (HR should settle <=163; if lap HR passes 166, ease to sub-3 pace 4:16 for the rest of the segment and log it) -> 2 km easy. Race-intensity gut training: ~90 g carbs/h with the race-day product, each gel with ~150-250 mL water; otherwise drink to thirst. Log GI symptoms 0-10 (Munich: concentrated honey caused GI distress all race). Run the last part of the MP segment on cobbles/uneven paving with some tight turns (Rome km 30-40 reportedly cobbled). Final dress rehearsal: race shoes, race breakfast, race fuel, cobbles at the end.",
             "estKm": 32
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -3222,7 +3222,7 @@
           "dayLabel": "Fri Feb 26",
           "training": {
             "type": "tempo",
-            "title": "Race-pace run (training MP 4:09)",
+            "title": "Race-pace run (MP 4:09)",
             "detail": "12 km: 15' easy -> 2x4 km at 4:09/km with 1 km easy jog between -> easy to finish. Race-pace feel practice, Marathon Handbook-style. If lap HR passes 166, run the rest at 4:16.",
             "estKm": 12
           },
@@ -3320,7 +3320,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 8 km at MP -> 10' easy. training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. HOME STRENGTH, taper (~20 min): split squat 2x5/leg and single-leg calf raise 2x8/leg at moderate load, pogo hops 2x15. Last strength session before Rome.",
+            "detail": "15' easy -> 8 km at MP -> 10' easy. MP 4:09/km (2:55:00 race pace, ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity. HOME STRENGTH, taper (~20 min): split squat 2x5/leg and single-leg calf raise 2x8/leg at moderate load, pogo hops 2x15. Last strength session before Rome.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -3477,7 +3477,7 @@
           "training": {
             "type": "tempo",
             "title": "Marathon-pace session",
-            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. training MP 4:09/km (2:55 pace, so race day at 4:15-4:16 leaves ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
+            "detail": "15' easy -> 3x2 km at MP with 2' jog -> 10' easy. MP 4:09/km (2:55:00 race pace, ~5 min of slack under 3:00; the Jan 23 10K or Feb 14 HM checkpoint can move it); record lap-avg HR per km -- the trend of HR at MP is the key fitness signal of this block. Take one gel (~25-30 g) after the first MP block to train the gut at race intensity.",
             "estKm": 11
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -3577,7 +3577,7 @@
           "training": {
             "type": "race",
             "title": "ROME MARATHON",
-            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: even pacing at 4:15-4:16/km (sub-3 with ~1 min buffer), not the 4:09 training pace; first half no faster than 4:15 (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Fuel with the rehearsed product at the rehearsed rate (target 75-90 g/h if gut training got there), room-temp fluid; drink to thirst. Caffeine only if trialled without GI issues.",
+            "detail": "Race plan to be written in data/race-plan.json after the HM checkpoint sets the final target pace. Default: even pacing at 4:09/km for 2:55:00 (~5 min of slack under 3:00); first half no faster than 4:09 (Munich went out at A-stretch effort and lost ~7.5 min in the second half), HR-checked to km 30. Allow 5-10 s/km slower on the cobbled stretches at the same effort. Fuel with the rehearsed product at the rehearsed rate (target 75-90 g/h if gut training got there), room-temp fluid; drink to thirst. Caffeine only if trialled without GI issues.",
             "estKm": 42.2
           },
           "movement": "No bike. Public transport to the start.",
@@ -3585,18 +3585,18 @@
           "bigPicture": "Race week (taper).",
           "estKm": 42.2,
           "estMin": {
-            "run": 180,
+            "run": 175,
             "swim": 0,
             "strength": 0,
-            "total": 180
+            "total": 175
           }
         }
       ],
       "estHours": {
-        "run": 6.1,
+        "run": 6.0,
         "swim": 0.0,
         "strength": 0.0,
-        "total": 6.1
+        "total": 6.0
       }
     }
   ]
