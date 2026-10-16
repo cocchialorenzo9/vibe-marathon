@@ -3,6 +3,7 @@ import { HashRouter, Navigate, Route, Routes, useLocation } from "react-router-d
 import Home from "./pages/Home";
 import Munich2026 from "./pages/Munich2026";
 import Program from "./pages/Program";
+import Drills from "./pages/Drills";
 
 // Season 01 pages pull in recharts; load them only when opened.
 const Dashboard = lazy(() => import("./legacy/Dashboard"));
@@ -26,6 +27,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/program" element={<Program />} />
+          <Route path="/drills" element={<Drills />} />
           <Route path="/munich-2026" element={<Munich2026 />} />
           <Route path="/munich-2026/dashboard" element={<Dashboard />} />
           <Route path="/munich-2026/journal" element={<Journal />} />

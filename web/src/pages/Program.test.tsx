@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 import { MemoryRouter, Route, Routes, useLocation } from "react-router-dom";
 import Program from "./Program";
 
@@ -22,6 +22,14 @@ describe("Program page", () => {
     expect(screen.getByRole("heading", { level: 2, name: "Rebuild 2" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 3, name: "Hill sprints + easy" })).toBeInTheDocument();
     expect(screen.getByText("HOME STRENGTH")).toBeInTheDocument();
+    const drills = screen.getByRole("list", { name: "Drills in this session" });
+    expect(within(drills).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
+      "/drills?drill=bss",
+      "/drills?drill=rdl",
+      "/drills?drill=calf",
+      "/drills?drill=bridge",
+      "/drills?drill=sideplank",
+    ]);
     expect(screen.getByText(/WEEK 4 OF 22/)).toBeInTheDocument();
     expect(screen.getByText("FUEL TEST")).toBeInTheDocument();
   });
