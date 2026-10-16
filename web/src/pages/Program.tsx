@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import SiteNav from "../components/SiteNav";
 import SiteFooter from "../components/SiteFooter";
+import DrillAnimation from "../components/DrillAnimation";
+import MuscleMap from "../components/MuscleMap";
 import { ChevronLeft, ChevronRight, Info } from "../components/icons";
 import {
   PHASE_COLORS,
@@ -26,6 +28,7 @@ import {
   type PlanDay,
   type SessionType,
 } from "../lib/plan";
+import { drillsIn, muscleNames } from "../lib/drills";
 import { useToday } from "../lib/useToday";
 
 const weeks = romePlan.weeks;
@@ -85,6 +88,7 @@ export default function Program() {
 
   const type = SESSION_TYPES[selDay.training.type];
   const { session, strength } = splitStrength(selDay.training.detail);
+  const strengthDrills = strength ? drillsIn(strength) : [];
   const raceDay = days[days.length - 1];
 
   return (
@@ -295,6 +299,30 @@ export default function Program() {
                       HOME STRENGTH
                     </span>
                     <span>{prose(strength.replace(/^HOME STRENGTH,?\s*/, ""))}</span>
+                    {strengthDrills.length > 0 && (
+                      <>
+                        <ul className="strength-drills" aria-label="Drills in this session">
+                          {strengthDrills.map((d) => (
+                            <li key={d.kind}>
+                              <Link className="strength-drill" to={`/drills?drill=${d.kind}`}>
+                                <DrillAnimation kind={d.kind} />
+                                <span>{d.name}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="strength-foot">
+                          <MuscleMap
+                            drills={strengthDrills}
+                            size={64}
+                            label={`Muscles this session works: ${muscleNames(strengthDrills.flatMap((d) => d.muscles)).join(", ")}`}
+                          />
+                          <Link to="/drills" className="mono" style={{ fontSize: 12 }}>
+                            DRILL LIBRARY →
+                          </Link>
+                        </div>
+                      </>
+                    )}
                   </div>
                 )}
                 <div className="info-grid">

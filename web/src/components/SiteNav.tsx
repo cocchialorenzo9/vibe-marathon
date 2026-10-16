@@ -8,6 +8,7 @@ export const REPO_URL = "https://github.com/cocchialorenzo9/vibe-marathon";
 const ITEMS = [
   { section: "today", label: "Today" },
   { to: "/program", label: "Program" },
+  { to: "/drills", label: "Drills" },
   { section: "data", label: "Data" },
   { to: "/munich-2026", label: "Munich 2026" },
 ] as const;
