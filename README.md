@@ -25,6 +25,7 @@ npm run build      # into web/dist
 ```
 
 - `#/` — Season 02: today, tomorrow, this week, the 22-week plan and checkpoints, read at build time from `data/training-plan-rome-2027.json`. `#/?date=2026-11-21` previews another day.
+- `#/sessions` — the session log: every past plan day next to what Strava recorded (planned vs done, HR per km against the cap, HR bands, what to carry forward), from `data/sessions.json`. The Program calendar shows the same status on past days. `#/sessions?day=2026-10-17` opens one day.
 - `#/munich-2026` — Season 01 race recap (figures in `web/src/data/munich2026.ts`).
 - `#/munich-2026/{dashboard,race-plan,journal,plan}` — the original Munich pages, moved from the personal site; they still fetch `data/*.json` from raw GitHub (the race plan honours `?ref=<branch>`).
 
@@ -73,6 +74,7 @@ Run the `/update-coach` skill in Claude Code — it handles fetching, reasoning,
 | File | Description |
 |---|---|
 | `data/coach.json` | Today's readiness snapshot and recommendation |
+| `data/sessions.json` | What actually happened on each past Season 02 plan day, synced nightly from Strava by the `/sync-sessions` scheduled task |
 | `data/history.json` | Growing daily history for dashboard charts |
 
 The local history at `~/.vibe-marathon/history.json` includes `avg_hr` and is never committed.
