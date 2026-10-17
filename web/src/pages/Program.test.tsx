@@ -53,4 +53,21 @@ describe("Program page", () => {
     expect(screen.getByRole("heading", { level: 3, name: "ROME MARATHON" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Next week" })).toBeDisabled();
   });
+
+  it("shows what happened on a past day, linked to its review", () => {
+    renderAt("/program?day=2026-10-17&date=2026-10-17");
+    expect(screen.getByRole("heading", { level: 4, name: "WHAT HAPPENED" })).toBeInTheDocument();
+    expect(screen.getByText("! OVER HR CAP")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Full review: laps, HR bands, notes" })).toHaveAttribute(
+      "href",
+      "/sessions?day=2026-10-17",
+    );
+    expect(screen.getByRole("button", { name: /^SAT 17 OCT: Recovery run, over hr cap/ })).toBeInTheDocument();
+  });
+
+  it("jumps from a moved session to the day it was run", () => {
+    renderAt("/program?day=2026-10-15&date=2026-10-17");
+    fireEvent.click(screen.getByRole("button", { name: "See it on Fri 16 →" }));
+    expect(screen.getByTestId("search").textContent).toContain("day=2026-10-16");
+  });
 });

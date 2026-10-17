@@ -29,6 +29,7 @@ import {
   type SessionType,
 } from "../lib/plan";
 import { drillsIn, muscleNames } from "../lib/drills";
+import { STATUS, capFor, mmss, paceOf, plannedFor, sessionOn, type SessionDay, type SessionStatus } from "../lib/sessions";
 import { useToday } from "../lib/useToday";
 
 const weeks = romePlan.weeks;
@@ -45,7 +46,27 @@ const totalRuns = weeks.reduce((s, w) => s + weekCounts(w).runs, 0);
 
 const isRun = (d: PlanDay) => d.training.type !== "swim" && (d.estKm ?? 0) > 0;
 
+const STATUS_LEGEND: SessionStatus[] = ["done", "over", "moved", "extra", "none"];
+
+/** "Fri 16" for jump buttons. */
+const shortDay = (iso: string) => {
+  const s = weekdayDate(iso);
+  return s.charAt(0) + s.slice(1, 3).toLowerCase() + s.slice(3);
+};
+
+/** One line under a day tile saying what happened. */
+function statusLine(s: SessionDay): string {
+  const km = s.activity ? `${s.activity.distanceKm.toFixed(2)} km` : "";
+  if (s.status === "moved" && s.movedTo) return `Moved to ${shortDay(s.movedTo)}`;
+  if (s.status === "extra") return s.movedFrom ? `Ran ${km} (from ${shortDay(s.movedFrom)})` : `Ran ${km}`;
+  if (s.status === "over") return `${km} · over HR cap`;
+  if (s.status === "done") return km ? `${km} · done` : "Done";
+  return STATUS[s.status].line;
+}
+
 function tileValue(d: PlanDay): string {
+  const s = sessionOn(d.date);
+  if (s?.status === "extra" && s.activity) return `${formatKm(Math.round(s.activity.distanceKm * 10) / 10)} km`;
   if (d.training.type === "rest") return "—";
   if (isRun(d)) return `${formatKm(d.estKm!)} km`;
   return formatMinutes(d.estMin.total);
@@ -90,6 +111,7 @@ export default function Program() {
   const { session, strength } = splitStrength(selDay.training.detail);
   const strengthDrills = strength ? drillsIn(strength) : [];
   const raceDay = days[days.length - 1];
+  const done = sessionOn(selDay.date);
 
   return (
     <>
@@ -136,6 +158,17 @@ export default function Program() {
                 <span className="swatch strength-swatch" />+ strength
               </span>
             </div>
+            <div className="cal-legend status-legend">
+              <span className="label">PAST DAYS · FROM STRAVA</span>
+              {STATUS_LEGEND.map((k) => (
+                <span key={k}>
+                  <span className="cell-badge static" style={{ background: STATUS[k].color }} aria-hidden="true">
+                    {STATUS[k].badge}
+                  </span>
+                  {STATUS[k].line}
+                </span>
+              ))}
+            </div>
 
             <div className="cal-row cal-dow" aria-hidden="true">
               <span />
@@ -160,22 +193,37 @@ export default function Program() {
                     </div>
                     {w.days.map((d, j) => {
                       const i = wi * 7 + j;
-                      const t = SESSION_TYPES[d.training.type];
-                      const cls = ["cell", i === sel && "selected", d.date === todayIso && "today", d.date < todayIso && "past"]
+                      const s = sessionOn(d.date);
+                      // A day that ran something it didn't plan shows what was run.
+                      const t = s?.status === "extra" ? SESSION_TYPES.easy : SESSION_TYPES[d.training.type];
+                      const missed = s?.status === "moved" || s?.status === "none";
+                      const cls = [
+                        "cell",
+                        i === sel && "selected",
+                        d.date === todayIso && "today",
+                        d.date < todayIso && (!s || s.status === "rest") && "past",
+                        missed && "missed",
+                      ]
                         .filter(Boolean)
                         .join(" ");
+                      const km = s?.status === "extra" && s.activity ? s.activity.distanceKm : isRun(d) ? d.estKm! : null;
                       return (
                         <button
                           key={d.date}
                           type="button"
                           className={cls}
-                          style={{ background: t.color, color: t.ink }}
-                          aria-label={`${dayStamp(d.date)}: ${prose(d.training.title)}${d.date === todayIso ? " (today)" : ""}`}
+                          style={missed ? { color: t.color, borderColor: t.color } : { background: t.color, color: t.ink }}
+                          aria-label={`${dayStamp(d.date)}: ${prose(d.training.title)}${s ? `, ${STATUS[s.status].line.toLowerCase()}` : ""}${d.date === todayIso ? " (today)" : ""}`}
                           aria-pressed={i === sel}
                           onClick={() => pick(i)}
                         >
-                          <span className="mono">{isRun(d) ? Math.round(d.estKm!) : ""}</span>
-                          {d.estMin.strength > 0 && <span className="cell-dot" style={{ background: t.ink }} />}
+                          <span className="mono">{km != null ? Math.round(km) : ""}</span>
+                          {d.estMin.strength > 0 && <span className="cell-dot" style={{ background: missed ? t.color : t.ink }} />}
+                          {s && s.status !== "rest" && (
+                            <span className="cell-badge" style={{ background: STATUS[s.status].color }} aria-hidden="true">
+                              {STATUS[s.status].badge}
+                            </span>
+                          )}
                         </button>
                       );
                     })}
@@ -247,11 +295,13 @@ export default function Program() {
               {week.days.map((d, j) => {
                 const i = weekOf(sel) * 7 + j;
                 const t = SESSION_TYPES[d.training.type];
+                const s = sessionOn(d.date);
+                const missed = s?.status === "moved" || s?.status === "none";
                 return (
                   <button
                     key={d.date}
                     type="button"
-                    className={`day-btn${i === sel ? " selected" : ""}${d.date < todayIso ? " past" : ""}`}
+                    className={`day-btn${i === sel ? " selected" : ""}${d.date < todayIso && (!s || s.status === "rest") ? " past" : ""}`}
                     aria-pressed={i === sel}
                     onClick={() => pick(i)}
                   >
@@ -260,8 +310,16 @@ export default function Program() {
                       <span>{weekdayDate(d.date)}</span>
                       <span className="day-tag">{d.date === todayIso ? "TODAY" : ""}</span>
                     </span>
-                    <span className="day-title">{tileTitle(d.training.title)}</span>
+                    <span className={`day-title${missed ? " struck" : ""}`}>{tileTitle(d.training.title)}</span>
                     <span className="day-val">{tileValue(d)}</span>
+                    {s && (
+                      <span className="day-status mono" style={{ color: STATUS[s.status].color }}>
+                        <span className="cell-badge static" style={{ background: STATUS[s.status].color }} aria-hidden="true">
+                          {STATUS[s.status].badge}
+                        </span>
+                        {statusLine(s)}
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -279,6 +337,8 @@ export default function Program() {
                     {type.label.toUpperCase()}
                   </span>
                 </div>
+                {done && <WhatHappened s={done} onJump={(iso) => pick(days.findIndex((d) => d.date === iso))} />}
+                {done && <span className="label">PLANNED</span>}
                 <h3 id="day-title" className="day-detail-title">
                   {prose(selDay.training.title)}
                 </h3>
@@ -345,5 +405,76 @@ export default function Program() {
         right={`Race day ${parseIso(raceDay.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })} · Not medical advice`}
       />
     </>
+  );
+}
+
+function WhatHappened({ s, onJump }: { s: SessionDay; onJump: (iso: string) => void }) {
+  const st = STATUS[s.status];
+  const a = s.activity;
+  const meant = plannedFor(s);
+  const cap = capFor(s);
+  const hrColor = (v: number | null) => (cap && v != null && v > cap ? "#ffb08a" : undefined);
+  const target = s.movedTo ?? s.movedFrom;
+  return (
+    <section aria-labelledby="act-title" className="what-happened" style={{ borderColor: st.color }}>
+      <div className="what-happened-head">
+        <h4 id="act-title" className="label">
+          WHAT HAPPENED
+        </h4>
+        <span className="status-pill solid" style={{ background: st.color }}>
+          {st.badge} {st.label}
+        </span>
+      </div>
+      {a && (
+        <dl className="act-stats">
+          <div>
+            <dt className="label">DISTANCE</dt>
+            <dd className="disp">{a.distanceKm.toFixed(2)} km</dd>
+            <dd className="mono">{s.movedFrom || !meant?.estKm ? "plan: rest" : `plan ${formatKm(meant.estKm)} km`}</dd>
+          </div>
+          <div>
+            <dt className="label">TIME</dt>
+            <dd className="disp">{mmss(a.movingSec)}</dd>
+            <dd className="mono">{meant?.estMin.run ? `plan ${formatMinutes(meant.estMin.run)}` : ""}</dd>
+          </div>
+          <div>
+            <dt className="label">PACE</dt>
+            <dd className="disp">{paceOf(a.movingSec, a.distanceKm)}</dd>
+            <dd className="mono">{meant?.estKm && meant.estMin.run ? `target ~${paceOf(meant.estMin.run * 60, meant.estKm)}` : ""}</dd>
+          </div>
+          {a.avgHr != null && (
+            <div>
+              <dt className="label">AVG HR</dt>
+              <dd className="disp" style={{ color: hrColor(a.avgHr) }}>
+                {a.avgHr}
+              </dd>
+              <dd className="mono">{cap ? `cap ${cap}` : ""}</dd>
+            </div>
+          )}
+          {a.maxHr != null && (
+            <div>
+              <dt className="label">MAX HR</dt>
+              <dd className="disp" style={{ color: hrColor(a.maxHr) }}>
+                {a.maxHr}
+              </dd>
+              <dd className="mono">{cap ? `cap ${cap}` : ""}</dd>
+            </div>
+          )}
+        </dl>
+      )}
+      <p>{s.summary}</p>
+      <div className="what-happened-links">
+        {target && (
+          <button type="button" className="outline-pill violet" onClick={() => onJump(target)}>
+            {s.movedTo ? `See it on ${shortDay(target)} →` : `← Planned for ${shortDay(target)}`}
+          </button>
+        )}
+        {s.status !== "rest" && (
+          <Link to={`/sessions?day=${s.date}`} className="outline-pill">
+            Full review: laps, HR bands, notes
+          </Link>
+        )}
+      </div>
+    </section>
   );
 }

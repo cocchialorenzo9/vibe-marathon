@@ -95,3 +95,14 @@ _Avoid_: zone chart, HR history
 **Fatigue-finish surge**:
 An athlete-initiated pace push in the closing portion of a long run, done as often as the athlete can manage regardless of whether that day's prescription includes a formal MP segment — deliberately run at or beyond marathon pace while already fatigued, as fatigue-resistance practice. Confirmed on 2026-08-12 (83:55–93:13 of a 96.5-minute easy-effort long run, pace 4:00-4:20/km against a 4:16-4:20/km MP target, HR 163-173bpm — above the 167bpm LT). A recurring habit, not a one-off; likely present on other past long runs (e.g. 2026-08-04) previously misread as passive drift.
 _Avoid_: MP finish (reserved for this plan's *prescribed*, exact-pace long-run segments, e.g. week 9's "last 30 at 4:20/km"), cardiac drift (a passive, fatigue-driven HR rise with no intentional pace change)
+
+## Session log (started 2026-10-17)
+
+**Session status**:
+What actually happened on a plan day, compared with what `training-plan-rome-2027.json` prescribed, as synced from Strava into `data/sessions.json` by the nightly `sync-sessions` scheduled task: `done` (on the day, inside the HR cap), `over` (on the day, average or a full km lap over the cap), `moved` (done on another day instead), `extra` (something done on a day that didn't plan it, usually the other half of a move), `none` (planned, nothing recorded), `rest` (rest day, rested). A moved session is checked against the HR cap of the day it was planned for, not the day it ran.
+_Avoid_: missed (a moved session isn't missed), skipped, compliance
+
+**HR cap**:
+The bpm ceiling written into an easy or recovery day's prescription (e.g. "HR cap 130 bpm"). It's the bar a session's status is judged against; HR bands only describe where a run sat.
+_Avoid_: zone limit, ceiling zone
+
