@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-18T03:13:35+02:00",
+  "syncedAt": "2026-10-18T21:46:00+02:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -88,6 +88,32 @@
         "Heart rate sat 4–6 bpm over the 130 cap from km 2 on, at 5:25–5:47 /km. Friday, at about 5:55 /km, km 2 stayed at 129. For now, your under-130 pace is about 6:00 /km or slower.",
         "Two Strava segment PRs on a recovery run is a warning sign: segments pull the pace up. Run the loop the other way round, or hide pace and watch only heart rate.",
         "Average heart rate sat in the 130–140 band, one band above the cap. The plan's 130 is strict on purpose this week: muscle damage, not fitness, is the limit."
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "status": "done",
+      "headline": "Recovery run, kept under the cap",
+      "summary": "Planned 30 min recovery run, done on the day: 4.84 km in 30:00 at about 6:12 /km. Average 125 bpm, highest km lap 128, so every lap stayed under the 130 cap.",
+      "activity": {
+        "stravaId": "20636951770",
+        "sport": "Run",
+        "distanceKm": 4.84,
+        "movingSec": 1800,
+        "avgHr": 125,
+        "maxHr": 137,
+        "laps": [
+          { "km": 1, "sec": 380, "hr": 120 },
+          { "km": 1, "sec": 348, "hr": 126 },
+          { "km": 1, "sec": 368, "hr": 126 },
+          { "km": 1, "sec": 379, "hr": 128 },
+          { "km": 0.839, "sec": 326, "hr": 123 }
+        ]
+      },
+      "learn": [
+        "Laps ran 6:20, 5:48, 6:08 and 6:19 /km at 120–128 bpm, all under the 130 cap. About 6:10 /km or slower keeps you in the <130 band for now.",
+        "Km 2 was the quickest at 5:48 /km, on a slight downhill, and heart rate rose to 126. Let a downhill pull the pace up and you start eating into the cap.",
+        "Max heart rate 137 came on km 4, the climb (9 m gain). Tuesday's easy run has a 140 cap, but keep the same patience on hills."
       ]
     }
   ]
