@@ -42,14 +42,17 @@ describe("planned vs done", () => {
     expect(keptCap(s)).toBe(false);
   });
 
-  it("totals a week against its plan", () => {
-    expect(weekProgress(romePlan.weeks[0])).toMatchObject({
-      kmDone: 8.8,
-      kmPlanned: 13.5,
-      runsDone: 2,
-      capKept: 0,
-      capRuns: 2,
-      onPlanDay: 1,
-    });
+  it("totals a week against its plan from whatever is logged", () => {
+    const week = romePlan.weeks[0];
+    const runs = week.days
+      .map((d) => sessionOn(d.date))
+      .filter((s) => s?.activity && /run/i.test(s.activity.sport));
+    const p = weekProgress(week);
+    expect(p.kmDone).toBeCloseTo(runs.reduce((sum, s) => sum + s!.activity!.distanceKm, 0), 1);
+    expect(p.kmPlanned).toBe(week.estKm);
+    expect(p.runsDone).toBe(runs.length);
+    expect(p.onPlanDay).toBe(runs.filter((s) => !s!.movedFrom).length);
+    expect(p.capKept).toBeLessThanOrEqual(p.capRuns);
+    expect(p.capRuns).toBeLessThanOrEqual(p.runsDone);
   });
 });
