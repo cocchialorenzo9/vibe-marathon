@@ -15,14 +15,14 @@ const ZONE_HISTORY_URL = 'https://raw.githubusercontent.com/cocchialorenzo9/vibe
 
 // 5 fixed-bpm HR bands (not LT1/LT2-anchored Seiler zones — see
 // vibe-marathon's docs/adr/0003-hr-bands-replace-seiler-zones.md). %LT shown
-// for context only, computed against LT2=167bpm (device-reported); update if
+// for context only, computed against LT2=165bpm (device-reported); update if
 // that number changes.
 const BAND_DEFS = [
-  { key: 1, label: "<130bpm (<78% LT)", color: "#4CAF93" },
-  { key: 2, label: "130–140bpm (78–84% LT)", color: "#8BC34A" },
-  { key: 3, label: "140–155bpm (84–93% LT)", color: "#E8A838" },
-  { key: 4, label: "155–167bpm (93–100% LT)", color: "#E8894A" },
-  { key: 5, label: "167+bpm (100%+ LT)", color: "#E05C5C" },
+  { key: 1, label: "<130bpm (<79% LT)", color: "#4CAF93" },
+  { key: 2, label: "130–140bpm (79–85% LT)", color: "#8BC34A" },
+  { key: 3, label: "140–155bpm (85–94% LT)", color: "#E8A838" },
+  { key: 4, label: "155–165bpm (94–100% LT)", color: "#E8894A" },
+  { key: 5, label: "165+bpm (100%+ LT)", color: "#E05C5C" },
 ];
 
 function BandPaceTooltip({ active, payload, label }) {
@@ -110,7 +110,7 @@ const METRIC_GLOSSARY = [
   },
   {
     term: "HR bands",
-    what: "5 fixed heart-rate bands used to classify each run's minutes: <130bpm, 130-140, 140-155, 155-167, 167+ (the top edge is your lactate threshold, LT2, 167bpm device-reported). These are plain round bpm numbers, not derived from an estimated aerobic threshold — %LT is shown for context only, it doesn't define the boundaries. Running sessions only — analysis of what actually happened, separate from this plan's own easy/recovery/long HR targets.",
+    what: "5 fixed heart-rate bands used to classify each run's minutes: <130bpm, 130-140, 140-155, 155-165, 165+ (the top edge is your lactate threshold, LT2, 165bpm device-reported). These are plain round bpm numbers, not derived from an estimated aerobic threshold — %LT is shown for context only, it doesn't define the boundaries. Running sessions only — analysis of what actually happened, separate from this plan's own easy/recovery/long HR targets.",
     read: "Each run is categorized into a single band by its average heart rate — not the band it spent the most minutes in, so a run with a hard mid-run push can average into a higher band than most of its minutes were actually in.",
     move: "There's no prescription tied to these bands (unlike the easy/recovery/long HR targets elsewhere) — they're purely descriptive, for comparing pace across runs.",
   },

@@ -22,7 +22,7 @@ from datetime import date
 # data/zepp/ relative to the project root (one level above scripts/)
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ZEPP_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "zepp")
-ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 167))
+ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 165))
 
 try:
     from dotenv import load_dotenv

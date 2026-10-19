@@ -55,7 +55,7 @@ _SWIMMING_TYPES = {14, 20}
 # still visible in the raw session list and journal — just excluded here.
 _TRAINING_TYPES = _RUNNING_TYPES | _CYCLING_TYPES | _SWIMMING_TYPES
 
-DEFAULT_LTHR = 167  # device-reported lactate threshold HR; keep in sync with
+DEFAULT_LTHR = 165  # device-reported lactate threshold HR; keep in sync with
                      # the Lactate-threshold reference in .claude/commands/update-coach.md
 
 

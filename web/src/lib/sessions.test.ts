@@ -19,11 +19,11 @@ describe("sessions data", () => {
 });
 
 describe("HR bands", () => {
-  it("puts each bpm in exactly one band, with 167 at LT2", () => {
+  it("puts each bpm in exactly one band, with 165 at LT2", () => {
     expect(HR_BANDS[bandOf(129)].label).toBe("< 130");
     expect(HR_BANDS[bandOf(130)].label).toBe("130–140");
-    expect(HR_BANDS[bandOf(166)].label).toBe("155–167");
-    expect(HR_BANDS[bandOf(167)].label).toBe("167+");
+    expect(HR_BANDS[bandOf(164)].label).toBe("155–165");
+    expect(HR_BANDS[bandOf(165)].label).toBe("165+");
   });
 });
 
