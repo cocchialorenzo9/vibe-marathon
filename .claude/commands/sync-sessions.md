@@ -26,7 +26,8 @@ If the Strava tools aren't available or fail, stop without writing anything and 
 ## Step 3 — Classify each plan day in the window
 
 Plan day = `weeks[].days[]` entry. Run = Strava `sport_type` containing "Run". The plan's HR
-cap is the number in the day's `training.detail` ("HR cap 130 bpm").
+cap is the day's `training.detail` "HR cap" value, written as a percentage of LT
+(`HR cap {LT:79%} bpm`): resolve it to bpm against `data/athlete.json` (79% of 165 = 130).
 
 Pick one `status` per day:
 

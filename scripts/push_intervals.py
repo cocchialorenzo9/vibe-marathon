@@ -10,13 +10,11 @@ updates the same event instead of duplicating it. Events this script created
 earlier for a day that no longer has a workout are deleted. Events you add
 yourself in Intervals.icu are never touched.
 
-Workout text conventions (see docs/adr/0007-intervals-icu-workout-sync.md):
-  - fixed caps are written in bpm ("100-140bpm") and converted here to
-    % LTHR, the only HR form Intervals.icu parses;
-  - LT-anchored targets are written as "95-99% LTHR" directly;
-  - pace targets as "4:09/km Pace".
-The Run sport's LTHR in Intervals.icu is set to data/athlete.json's value when
-they differ, so % LTHR means the same bpm on the watch as in the plan.
+Workouts give every HR target as % LTHR ("60-85% LTHR"), the only HR form
+Intervals.icu parses, and pace targets as "4:09/km Pace" (see
+docs/adr/0007-intervals-icu-workout-sync.md). The Run sport's LTHR in
+Intervals.icu is set to data/athlete.json's value when they differ, so % LTHR
+means the same bpm on the watch as in the plan.
 
 Auth: inside a cloud session the agent proxy adds the API key for
 intervals.icu. Elsewhere set INTERVALS_API_KEY (Settings -> Developer
@@ -30,7 +28,6 @@ import argparse
 import base64
 import json
 import os
-import re
 import sys
 import urllib.request
 from datetime import date, timedelta
@@ -43,21 +40,8 @@ DEFAULT_PLAN_PATH = os.path.join(_SCRIPT_DIR, "..", "data", "training-plan-rome-
 API_BASE = "https://intervals.icu/api/v1"
 EXTERNAL_ID_PREFIX = "vibe-marathon:"
 
-_BPM_RANGE = re.compile(r"\b(\d{2,3})-(\d{2,3})bpm\b")
-
 
 # --- Pure functions (fully unit-testable) ---
-
-def pct_of_lthr(bpm, lthr):
-    return f"{bpm / lthr * 100:.1f}".rstrip("0").rstrip(".")
-
-
-def to_intervals_text(workout, lthr):
-    """Rewrite "100-140bpm" steps as "60.6-84.8% LTHR"; everything else passes through."""
-    return _BPM_RANGE.sub(
-        lambda m: f"{pct_of_lthr(int(m[1]), lthr)}-{pct_of_lthr(int(m[2]), lthr)}% LTHR", workout
-    )
-
 
 def external_id(date_str):
     return EXTERNAL_ID_PREFIX + date_str
@@ -82,7 +66,7 @@ def build_event(day, lthr):
         "name": training["title"],
         "start_date_local": f"{day['date']}T00:00:00",
         "external_id": external_id(day["date"]),
-        "description": f"{note}\n\n{to_intervals_text(workout, lthr)}",
+        "description": f"{note}\n\n{workout}",
     }
 
 

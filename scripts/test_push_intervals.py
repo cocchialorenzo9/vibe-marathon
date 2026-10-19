@@ -15,7 +15,6 @@ from push_intervals import (
     build_event,
     plan_days,
     stale_external_ids,
-    to_intervals_text,
 )
 
 
@@ -23,26 +22,14 @@ def _day(date, workout, detail="30 min easy", title="Easy run"):
     return {"date": date, "training": {"type": "easy", "title": title, "detail": detail, "workout": workout}}
 
 
-class TestToIntervalsText(unittest.TestCase):
-    def test_bpm_ranges_become_percent_of_lthr(self):
-        self.assertEqual(to_intervals_text("- 30m 100-140bpm", 165), "- 30m 60.6-84.8% LTHR")
-
-    def test_whole_percentages_drop_the_decimal(self):
-        self.assertEqual(to_intervals_text("- 1m 110-165bpm", 165), "- 1m 66.7-100% LTHR")
-
-    def test_other_targets_pass_through(self):
-        text = "Threshold\n- 7km 95-99% LTHR\n- 4km 4:09/km Pace"
-        self.assertEqual(to_intervals_text(text, 165), text)
-
-
 class TestBuildEvent(unittest.TestCase):
     def test_running_day_becomes_a_keyed_workout(self):
-        event = build_event(_day("2026-10-20", "- 30m 100-140bpm"), 165)
+        event = build_event(_day("2026-10-20", "- 30m 60-85% LTHR"), 165)
         self.assertEqual(event["category"], "WORKOUT")
         self.assertEqual(event["type"], "Run")
         self.assertEqual(event["external_id"], "vibe-marathon:2026-10-20")
         self.assertEqual(event["start_date_local"], "2026-10-20T00:00:00")
-        self.assertTrue(event["description"].endswith("- 30m 60.6-84.8% LTHR"))
+        self.assertTrue(event["description"].endswith("- 30m 60-85% LTHR"))
 
     def test_lt_tokens_in_the_note_are_resolved(self):
         event = build_event(_day("2026-12-01", "- 7km 95-99% LTHR", detail="HR {LT:95%}-{LT:99%}"), 165)
@@ -77,7 +64,7 @@ class TestRomePlanWorkouts(unittest.TestCase):
 
     STEP = re.compile(
         r"^- \d+(\.\d+)?(km|m|s|m\d+s)\b"  # duration or distance
-        r"( \d{2,3}-\d{2,3}bpm| \d+-\d+% LTHR| \d:\d{2}/km Pace| [a-z][a-z -]*?)?"  # target or cue
+        r"( \d+-\d+% LTHR| \d:\d{2}/km Pace| [a-z][a-z -]*?)?"  # target (never bpm) or cue
         r"( intensity=active)?$"
     )
 

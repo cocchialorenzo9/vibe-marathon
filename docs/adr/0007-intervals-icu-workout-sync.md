@@ -20,11 +20,16 @@ We push the plan to Intervals.icu with its REST API
   `training.detail` (a one-off script generated them for the Rome plan).
   Parsing the prose on every push would break silently whenever a coach edit
   rephrased a session.
-- **HR targets as % LTHR.** Intervals.icu doesn't parse absolute bpm targets.
-  Fixed caps stay in bpm in the plan (they're fixed numbers, not LT-derived)
-  and the script converts them with the LT from `data/athlete.json`; the
-  script also sets Intervals.icu's Run LTHR to that value when they differ, so
-  % LTHR means the same bpm on the watch as in the plan (ADR 0006).
+- **Every HR target as % LTHR, easy caps included.** Intervals.icu doesn't
+  parse absolute bpm targets, so the plan follows it: the easy caps that were
+  fixed bpm became percentages that give the same bpm at LT 165 (130 -> 79%,
+  140 -> 85%, 145 -> 88%, 158 -> 96%), written `{LT:85%}` in the prose and
+  `60-85% LTHR` in the workout (the 60% floor only keeps the watch from
+  nagging about running too slowly). This supersedes ADR 0006's "easy caps
+  stay plain bpm": now every cap moves with LT, and the plan's prose and the
+  watch can never disagree. The script also sets Intervals.icu's Run LTHR to
+  `data/athlete.json`'s when they differ, so % LTHR is the same bpm on the
+  watch as in the plan.
 - **Auth** comes from the cloud environment's network secret for
   `intervals.icu` (Basic auth, user `API_KEY`); `INTERVALS_API_KEY` works for
   local runs. The athlete id is in `data/athlete.json` (`intervalsIcu`).
