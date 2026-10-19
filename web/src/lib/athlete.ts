@@ -13,13 +13,11 @@ export function pctOfLt(pct: number, lt: number = LT2): number {
 }
 
 /**
- * Plan text writes LT-anchored HR as tokens relative to LT, so it never needs
- * re-editing when LT moves: "{LT}" -> 165, "{LT-9}" -> 156, "{LT+2}" -> 167.
+ * Plan text writes LT-anchored HR as percentages of LTHR, so it never needs
+ * re-editing when LT moves: "{LT:95%}" -> 157 and "{LT:100%}" -> 165 at LT 165.
  */
 export function resolveLt(text: string, lt: number = LT2): string {
-  return text.replace(/\{LT(?:([+-])(\d+))?\}/g, (_, sign?: string, n?: string) =>
-    String(sign ? lt + (sign === "-" ? -1 : 1) * Number(n) : lt),
-  );
+  return text.replace(/\{LT:(\d+(?:\.\d+)?)%\}/g, (_, pct: string) => String(pctOfLt(Number(pct), lt)));
 }
 
 /** resolveLt applied to every string inside a JSON value. */

@@ -17,7 +17,7 @@ CTL minus ATL — the day-to-day readiness/freshness signal used to gate session
 _Avoid_: freshness, form
 
 **LT (Lactate Threshold)**:
-The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). Plan text refers to it with `{LT}`/`{LT-n}` tokens rather than fixed bpm — see `docs/adr/0006-single-lt-source.md`.
+The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). Plan text refers to it with `{LT:n%}` tokens (percent of LTHR) rather than fixed bpm — see `docs/adr/0006-single-lt-source.md`.
 _Avoid_: threshold pace, max HR
 
 **CTL ramp-rate governance**:

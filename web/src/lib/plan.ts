@@ -48,7 +48,7 @@ export interface Plan {
   gates: Gate[];
 }
 
-/** HR written as "{LT-9}"-style tokens in the plan JSON resolves against data/athlete.json here. */
+/** HR written as "{LT:95%}"-style %LTHR tokens in the plan JSON resolves against data/athlete.json here. */
 export const romePlan = resolveLtDeep(romePlanJson) as unknown as Plan;
 
 export const PHASE_LABELS: Record<Phase, string> = {
