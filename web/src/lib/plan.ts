@@ -1,4 +1,5 @@
 import romePlanJson from "../../../data/training-plan-rome-2027.json";
+import { resolveLtDeep } from "./athlete";
 
 export type SessionType =
   | "rest"
@@ -47,7 +48,8 @@ export interface Plan {
   gates: Gate[];
 }
 
-export const romePlan = romePlanJson as unknown as Plan;
+/** HR written as "{LT:95%}"-style %LTHR tokens in the plan JSON resolves against data/athlete.json here. */
+export const romePlan = resolveLtDeep(romePlanJson) as unknown as Plan;
 
 export const PHASE_LABELS: Record<Phase, string> = {
   recovery: "Recovery",

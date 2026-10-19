@@ -76,7 +76,7 @@ Swims and strength without the watch don't show up in Strava; mark those `none` 
   partial last lap), `sec` = moving time, `hr` = rounded average HR.
 - `headline`: short, plain, no exclamation marks. `learn`: specific to the numbers (paces,
   laps, cap), never generic advice. Use the project's language from `CONTEXT.md`: HR bands
-  (<130, 130–140, 140–155, 155–167, 167+), LT 167, HR cap. Don't use %max-HR zones.
+  (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. Plan text writes LT-anchored HR as `{LT:95%}`-style tokens (percent of LTHR); resolve them to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
 - Keep `days` sorted by date, one entry per date. Set `syncedAt` to now (ISO 8601 with the
   Europe/Rome offset).
 

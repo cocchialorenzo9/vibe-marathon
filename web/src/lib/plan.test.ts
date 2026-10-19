@@ -93,3 +93,9 @@ describe("program helpers", () => {
     expect(prose("easy -- HR <=140")).toBe("easy — HR ≤140");
   });
 });
+
+describe("LT tokens", () => {
+  it("leaves no unresolved {LT} token in the plan", () => {
+    expect(JSON.stringify(romePlan)).not.toMatch(/\{LT/);
+  });
+});

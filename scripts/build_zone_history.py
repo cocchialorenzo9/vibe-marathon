@@ -4,11 +4,11 @@ Build data/zone-history.json: a day-by-day record of time spent in each HR
 band, computed from data/training-journal.json's per-session hr_curve.
 
 Bands are 5 fixed bpm cutoffs the athlete chose directly — <130, 130-140,
-140-155, 155-167, 167+ — not the LT1/LT2-anchored Seiler Zone 1/2/3 model
-this file used before (see docs/adr/0003-hr-bands-replace-seiler-zones.md
+140-155, 155-LT, LT+ (cutoffs and LT from data/athlete.json) — not the
+LT1/LT2-anchored Seiler Zone 1/2/3 model this file used before (see docs/adr/0003-hr-bands-replace-seiler-zones.md
 for why: LT1 was never measured, only a heuristic, and added a layer of
-uncertainty the fixed bands sidestep). The top edge (167) is pinned to LT2
-itself, since 167+ bpm is definitionally at/above threshold.
+uncertainty the fixed bands sidestep). The top edge is pinned to LT2
+itself, since LT+ bpm is definitionally at/above threshold.
 
 Running sessions only (outdoor_running/treadmill) — other activity types
 (e.g. swim) either carry no hr_curve or aren't what the %LT bands were
@@ -27,18 +27,18 @@ import argparse
 import json
 import os
 
+from athlete import HR_BAND_CUTOFFS, LTHR
+
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_JOURNAL_PATH = os.path.join(_SCRIPT_DIR, "..", "data", "training-journal.json")
 DEFAULT_OUT_PATH = os.path.join(_SCRIPT_DIR, "..", "data", "zone-history.json")
 
-# LT2: anaerobic threshold / MLSS, device-reported (see the Lactate-threshold
-# reference in .claude/commands/update-coach.md — keep in sync if that number
-# changes). Overridable via env for a future field-test update.
-DEFAULT_LT2 = int(os.environ.get("ATHLETE_LT2", 167))
+# LT2: anaerobic threshold / MLSS — the athlete's LTHR from data/athlete.json.
+DEFAULT_LT2 = LTHR
 
 # Fixed bpm cutoffs for bands 1-4's upper edge; band 5 is everything >= LT2.
 # These are round numbers the athlete picked directly, not derived from LT1.
-BAND_CUTOFFS = (130, 140, 155)
+BAND_CUTOFFS = HR_BAND_CUTOFFS
 
 # Matches decode_sport_type's running type_names in parse_zepp_export.py.
 _RUNNING_TYPES = {"outdoor_running", "treadmill"}

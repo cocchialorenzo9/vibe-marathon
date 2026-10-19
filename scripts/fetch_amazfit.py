@@ -19,10 +19,11 @@ import statistics
 import sys
 from datetime import date
 
+from athlete import LTHR as ATHLETE_LTHR
+
 # data/zepp/ relative to the project root (one level above scripts/)
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ZEPP_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "zepp")
-ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 167))
 
 try:
     from dotenv import load_dotenv

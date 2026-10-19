@@ -1,4 +1,5 @@
 import sessionsJson from "../../../data/sessions.json";
+import { HR_BAND_CUTOFFS, LT2 } from "./athlete";
 import { daysBetween, hrCap, romePlan, weekdayDate, type PlanDay, type PlanWeek } from "./plan";
 
 /**
@@ -85,15 +86,18 @@ export function paceOf(sec: number, km: number): string {
   return km > 0 ? `${mmss(sec / km)} /km` : "—";
 }
 
+export { LT2 };
+
 /** The plan's HR bands (ADR 0003); the top edge is pinned to LT2. */
-export const LT2 = 167;
-export const HR_BANDS = [
-  { lo: null, hi: 130, label: "< 130" },
-  { lo: 130, hi: 140, label: "130–140" },
-  { lo: 140, hi: 155, label: "140–155" },
-  { lo: 155, hi: 167, label: "155–167" },
-  { lo: 167, hi: null, label: "167+" },
-] as const;
+const BAND_EDGES = [...HR_BAND_CUTOFFS, LT2];
+export const HR_BANDS: { lo: number | null; hi: number | null; label: string }[] = [
+  ...BAND_EDGES.map((hi, i) => ({
+    lo: i === 0 ? null : BAND_EDGES[i - 1],
+    hi,
+    label: i === 0 ? `< ${hi}` : `${BAND_EDGES[i - 1]}–${hi}`,
+  })),
+  { lo: LT2, hi: null, label: `${LT2}+` },
+];
 
 /** Index into HR_BANDS of the band that contains `hr` (the run's "average band" when given its average). */
 export function bandOf(hr: number): number {

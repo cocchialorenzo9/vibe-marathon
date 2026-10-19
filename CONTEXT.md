@@ -17,7 +17,7 @@ CTL minus ATL — the day-to-day readiness/freshness signal used to gate session
 _Avoid_: freshness, form
 
 **LT (Lactate Threshold)**:
-The heart-rate (bpm) anchor all effort zones in this plan are computed from; currently 167bpm, device-reported and unconfirmed until the Aug 4 field test.
+The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). Plan text refers to it with `{LT:n%}` tokens (percent of LTHR) rather than fixed bpm — see `docs/adr/0006-single-lt-source.md`.
 _Avoid_: threshold pace, max HR
 
 **CTL ramp-rate governance**:
@@ -65,11 +65,11 @@ _Avoid_: quality ceiling, intensity cap
 ## Zone history (started 2026-07-31, revised 2026-07-31)
 
 **LT2**:
-The anaerobic threshold / maximal lactate steady state — the highest sustainable intensity before blood lactate accumulates faster than it clears. This is what this project's existing `LT` term (167bpm, device-reported) actually measures; devices/watches that report "lactate threshold" are estimating LT2, not LT1.
+The anaerobic threshold / maximal lactate steady state — the highest sustainable intensity before blood lactate accumulates faster than it clears. This is what this project's existing `LT` term (device-reported, in `data/athlete.json`) actually measures; devices/watches that report "lactate threshold" are estimating LT2, not LT1.
 _Avoid_: max HR, threshold pace
 
 **HR band**:
-One of 5 fixed-bpm buckets used to classify *actual recorded* running effort: <130, 130-140, 140-155, 155-167, 167+ (the top edge pinned to LT2 — 167+ is definitionally at/above threshold). Chosen directly as round bpm numbers, not derived from an estimated aerobic threshold — see `docs/adr/0003-hr-bands-replace-seiler-zones.md` for why this replaced the earlier LT1/LT2-anchored Seiler Zone 1/2/3 model. Used only to classify what a session's `hr_curve` actually shows — separate from and never a replacement for this project's existing prescription bands (Recovery/Easy-Aerobic/Threshold, still %LT-of-LT2 and still used to write `training-plan.json`'s easy/recovery/long guidance).
+One of 5 fixed-bpm buckets used to classify *actual recorded* running effort: <130, 130-140, 140-155, 155-LT, LT+ (the top edge pinned to LT2 — LT+ is definitionally at/above threshold). Chosen directly as round bpm numbers, not derived from an estimated aerobic threshold — see `docs/adr/0003-hr-bands-replace-seiler-zones.md` for why this replaced the earlier LT1/LT2-anchored Seiler Zone 1/2/3 model. Used only to classify what a session's `hr_curve` actually shows — separate from and never a replacement for this project's existing prescription bands (Recovery/Easy-Aerobic/Threshold, still %LT-of-LT2 and still used to write `training-plan.json`'s easy/recovery/long guidance).
 _Avoid_: zone (reserved for the retired Seiler model), training zone
 
 **Average band**:

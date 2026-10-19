@@ -24,9 +24,9 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # data/zepp/ relative to the project root (one level above scripts/), same
 # resolution pattern as fetch_amazfit.py's ZEPP_DIR.
 DEFAULT_ZEPP_DIR = os.path.join(_SCRIPT_DIR, "..", "data", "zepp")
-ATHLETE_LTHR = int(os.environ.get("ATHLETE_LTHR", 167))
 
 sys.path.insert(0, _SCRIPT_DIR)
+from athlete import LTHR as ATHLETE_LTHR
 from parse_zepp_export import build_recent_sessions
 
 
