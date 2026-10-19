@@ -18,25 +18,22 @@ from push_intervals import (
 )
 
 
-def _day(date, workout, detail="30 min easy", title="Easy run"):
-    return {"date": date, "training": {"type": "easy", "title": title, "detail": detail, "workout": workout}}
+def _day(date, workout, title="Easy run", type_="easy"):
+    return {"date": date, "training": {"type": type_, "title": title, "workout": workout}}
 
 
 class TestBuildEvent(unittest.TestCase):
-    def test_running_day_becomes_a_keyed_workout(self):
-        event = build_event(_day("2026-10-20", "- 30m 60-85% LTHR"), 165)
+    def test_running_day_is_sent_as_written(self):
+        workout = "- 30m 60-85% LTHR\n\nHard ceiling: walk a hill rather than cross it."
+        event = build_event(_day("2026-10-20", workout))
         self.assertEqual(event["category"], "WORKOUT")
         self.assertEqual(event["type"], "Run")
         self.assertEqual(event["external_id"], "vibe-marathon:2026-10-20")
         self.assertEqual(event["start_date_local"], "2026-10-20T00:00:00")
-        self.assertTrue(event["description"].endswith("- 30m 60-85% LTHR"))
+        self.assertEqual(event["description"], workout)
 
-    def test_lt_tokens_in_the_note_are_resolved(self):
-        event = build_event(_day("2026-12-01", "- 7km 95-99% LTHR", detail="HR {LT:95%}-{LT:99%}"), 165)
-        self.assertTrue(event["description"].startswith("HR 157-163"))
-
-    def test_day_without_workout_is_skipped(self):
-        self.assertIsNone(build_event(_day("2026-10-23", None), 165))
+    def test_day_without_steps_is_skipped(self):
+        self.assertIsNone(build_event(_day("2026-10-23", "Full rest. Walking is fine.", type_="rest")))
 
 
 class TestPlanDays(unittest.TestCase):
@@ -60,7 +57,7 @@ class TestStaleExternalIds(unittest.TestCase):
 
 
 class TestRomePlanWorkouts(unittest.TestCase):
-    """Every workout in the real plan must use only forms Intervals.icu parses."""
+    """The plan's workouts are its only session description: check every one."""
 
     STEP = re.compile(
         r"^- \d+(\.\d+)?(km|m|s|m\d+s)\b"  # duration or distance
@@ -68,21 +65,22 @@ class TestRomePlanWorkouts(unittest.TestCase):
         r"( intensity=active)?$"
     )
 
-    def test_steps_are_well_formed_and_running_days_have_one(self):
+    def test_running_days_have_well_formed_steps_and_others_have_none(self):
         with open(DEFAULT_PLAN_PATH) as f:
             plan = json.load(f)
         for week in plan["weeks"]:
             for day in week["days"]:
                 training = day["training"]
-                workout = training.get("workout")
+                self.assertNotIn("detail", training, day["date"])
+                workout = training["workout"]
+                steps = [l for l in workout.splitlines() if l.startswith("- ")]
                 if training["type"] in ("rest", "swim", "race"):
-                    self.assertIsNone(workout, day["date"])
+                    self.assertEqual(steps, [], day["date"])
                     continue
-                self.assertTrue(workout, f"{day['date']} has no workout")
-                for line in workout.splitlines():
-                    if line.startswith("-"):
-                        self.assertRegex(line, self.STEP, f"{day['date']}: {line}")
-                self.assertNotIn("{LT", workout)
+                self.assertTrue(steps, f"{day['date']} has no steps")
+                for line in steps:
+                    self.assertRegex(line, self.STEP, f"{day['date']}: {line}")
+                self.assertNotRegex(workout, r"\d{3} ?bpm", f"{day['date']}: write HR as % LTHR")
 
 
 if __name__ == "__main__":

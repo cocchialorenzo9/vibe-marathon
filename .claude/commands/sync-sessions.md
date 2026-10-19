@@ -26,8 +26,9 @@ If the Strava tools aren't available or fail, stop without writing anything and 
 ## Step 3 — Classify each plan day in the window
 
 Plan day = `weeks[].days[]` entry. Run = Strava `sport_type` containing "Run". The plan's HR
-cap is the day's `training.detail` "HR cap" value, written as a percentage of LT
-(`HR cap {LT:79%} bpm`): resolve it to bpm against `data/athlete.json` (79% of 165 = 130).
+cap is the upper bound of the first `60-N% LTHR` step in the day's `training.workout`,
+converted to bpm against `data/athlete.json` (`60-79% LTHR` -> 79% of 165 = 130). Quality and
+race days (`training.type` "tempo"/"race") have no cap.
 
 Pick one `status` per day:
 
@@ -77,7 +78,7 @@ Swims and strength without the watch don't show up in Strava; mark those `none` 
   partial last lap), `sec` = moving time, `hr` = rounded average HR.
 - `headline`: short, plain, no exclamation marks. `learn`: specific to the numbers (paces,
   laps, cap), never generic advice. Use the project's language from `CONTEXT.md`: HR bands
-  (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. Plan text writes LT-anchored HR as `{LT:95%}`-style tokens (percent of LTHR); resolve them to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
+  (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. The plan writes HR as `% LTHR`; convert it to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
 - Keep `days` sorted by date, one entry per date. Set `syncedAt` to now (ISO 8601 with the
   Europe/Rome offset).
 

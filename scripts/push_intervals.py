@@ -4,8 +4,9 @@ Push the upcoming days of the training plan to Intervals.icu as planned
 workouts. Intervals.icu then syncs the next 7 days to the Zepp app, which puts
 them on the Amazfit T-Rex 3.
 
-Each running day's `training.workout` (Intervals.icu workout text) becomes one
-WORKOUT event, keyed by external_id "vibe-marathon:<date>" so re-running
+Each plan day's `training.workout` is Intervals.icu workout text (steps, then
+coaching notes) and the plan's only description of the session. Every day
+whose workout has steps becomes one WORKOUT event, sent as written, keyed by external_id "vibe-marathon:<date>" so re-running
 updates the same event instead of duplicating it. Events this script created
 earlier for a day that no longer has a workout are deleted. Events you add
 yourself in Intervals.icu are never touched.
@@ -34,7 +35,7 @@ from datetime import date, timedelta
 
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _SCRIPT_DIR)
-from athlete import INTERVALS_ATHLETE_ID, LTHR, resolve_lt
+from athlete import INTERVALS_ATHLETE_ID, LTHR
 
 DEFAULT_PLAN_PATH = os.path.join(_SCRIPT_DIR, "..", "data", "training-plan-rome-2027.json")
 API_BASE = "https://intervals.icu/api/v1"
@@ -53,20 +54,23 @@ def plan_days(plan, start, end):
     return sorted(days, key=lambda d: d["date"])
 
 
-def build_event(day, lthr):
-    """The Intervals.icu event for one plan day, or None when it has no workout."""
+def has_steps(workout):
+    return any(line.startswith("- ") for line in workout.splitlines())
+
+
+def build_event(day):
+    """The Intervals.icu event for one plan day, or None when its workout has no steps (rest, swim, race)."""
     training = day["training"]
-    workout = training.get("workout")
-    if not workout:
+    workout = training["workout"]
+    if not has_steps(workout):
         return None
-    note = resolve_lt(training["detail"], lthr)
     return {
         "category": "WORKOUT",
         "type": "Run",
         "name": training["title"],
         "start_date_local": f"{day['date']}T00:00:00",
         "external_id": external_id(day["date"]),
-        "description": f"{note}\n\n{workout}",
+        "description": workout,
     }
 
 
@@ -125,7 +129,7 @@ def main():
     start = args.today
     end = (date.fromisoformat(start) + timedelta(days=args.days)).isoformat()
 
-    events = [e for e in (build_event(d, LTHR) for d in plan_days(plan, start, end)) if e]
+    events = [e for e in (build_event(d) for d in plan_days(plan, start, end)) if e]
     last = (date.fromisoformat(end) - timedelta(days=1)).isoformat()  # API's newest is inclusive
     existing = _request("GET", f"/athlete/{athlete_id}/events?oldest={start}&newest={last}")
     stale = stale_external_ids(existing, {e["external_id"] for e in events})

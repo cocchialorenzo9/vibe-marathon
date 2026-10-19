@@ -73,7 +73,7 @@ export const STATUS: Record<SessionStatus | "pending", { label: string; line: st
 /** The HR cap the session was run against: a moved session keeps the cap of the day it came from. */
 export function capFor(s: SessionDay): number | null {
   const plan = planByDate.get(s.movedFrom ?? s.date);
-  return plan ? hrCap(plan.training.detail) : null;
+  return plan ? hrCap(plan.training) : null;
 }
 
 /** 352 -> "5:52" */

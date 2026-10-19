@@ -40,3 +40,6 @@ A new LT is therefore: edit `data/athlete.json`, run
   number and must resolve it against `data/athlete.json`.
 - `data/zone-history.json` still needs a rebuild after an LT change; it is a
   derived file committed for the web app.
+
+**Update (2026-10-19)**: ADR 0007 replaced the `{LT:n%}` tokens with
+Intervals.icu's `% LTHR` notation, inside each day's `training.workout`.

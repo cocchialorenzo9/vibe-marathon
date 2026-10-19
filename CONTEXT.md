@@ -17,7 +17,7 @@ CTL minus ATL — the day-to-day readiness/freshness signal used to gate session
 _Avoid_: freshness, form
 
 **LT (Lactate Threshold)**:
-The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). Plan text refers to it with `{LT:n%}` tokens (percent of LTHR) rather than fixed bpm — see `docs/adr/0006-single-lt-source.md`.
+The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). The Rome plan writes heart rate as `% LTHR` (Intervals.icu's notation) rather than fixed bpm, so everything moves with it — see `docs/adr/0006-single-lt-source.md` and `0007-intervals-icu-workout-sync.md`.
 _Avoid_: threshold pace, max HR
 
 **CTL ramp-rate governance**:
@@ -103,14 +103,14 @@ What actually happened on a plan day, compared with what `training-plan-rome-202
 _Avoid_: missed (a moved session isn't missed), skipped, compliance
 
 **HR cap**:
-The heart-rate ceiling written into an easy or recovery day's prescription, as a percentage of LT (`HR cap {LT:79%} bpm`, i.e. 130bpm at LT 165), so it moves with LT. It's the bar a session's status is judged against; HR bands only describe where a run sat.
+The heart-rate ceiling written into an easy or recovery day's prescription, as a percentage of LT (the workout step `60-79% LTHR`, i.e. ≤130bpm at LT 165), so it moves with LT. It's the bar a session's status is judged against; HR bands only describe where a run sat.
 _Avoid_: zone limit, ceiling zone
 
 
 ## Watch sync (started 2026-10-19)
 
 **Planned workout**:
-A plan day's `training.workout`: the same session as `training.detail`, written as Intervals.icu workout text so the watch can guide it step by step. Every HR target is `% LTHR` (easy cap `60-85% LTHR`; the 60% floor only keeps the watch from nagging about running too slowly), race-pace work `4:09/km Pace`; never absolute bpm, which Intervals.icu can't parse. `null` on rest, swim and race days. Whenever a day's `detail` changes, its `workout` changes with it. See `docs/adr/0007-intervals-icu-workout-sync.md`.
+A plan day's `training.workout`: the plan's one description of the session, in Intervals.icu workout text — step lines the watch guides you through, then the coaching notes (fuel, cues, strength) as plain paragraphs. Rest, swim and race days have notes only. The site renders it for reading and the push script sends it as written. Every HR target is `% LTHR` (easy cap `60-85% LTHR`; the 60% floor only keeps the watch from nagging about running too slowly), race-pace work `4:09/km Pace`; never absolute bpm, which Intervals.icu can't parse. See `docs/adr/0007-intervals-icu-workout-sync.md`.
 _Avoid_: structured workout, steps
 
 **Watch sync**:

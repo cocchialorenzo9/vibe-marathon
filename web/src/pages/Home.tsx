@@ -348,7 +348,7 @@ function TodayCard({ day, label, phase, week }: { day: PlanDay; label: string; p
         </div>
         <div>
           <span className="label">HR CAP</span>
-          <span className="v">{hrCap(training.detail) ? `≤${hrCap(training.detail)}` : "—"}</span>
+          <span className="v">{hrCap(training) ? `≤${hrCap(training)}` : "—"}</span>
         </div>
       </div>
       <p className="today-detail">{training.detail}</p>
@@ -364,7 +364,7 @@ function TodayCard({ day, label, phase, week }: { day: PlanDay; label: string; p
 }
 
 function TomorrowCard({ day }: { day: PlanDay }) {
-  const cap = hrCap(day.training.detail);
+  const cap = hrCap(day.training);
   return (
     <article aria-labelledby="tmrw-title" className="next-card">
       <div className="next-icon">

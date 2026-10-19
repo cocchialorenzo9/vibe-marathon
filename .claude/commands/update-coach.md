@@ -133,10 +133,11 @@ asOf) and then run `python3 scripts/build_zone_history.py` to rebuild the
 derived `data/zone-history.json` — nothing else. The scripts (TSS, HR bands)
 and the web app read it from there; `ATHLETE_LTHR` still overrides it for a
 one-off run. Plan text never hardcodes LT-anchored bpm: `training-plan.json`
-uses %LT, and the Rome plan writes `{LT:95%}`, `{LT:100%}`-style tokens
-(percent of LTHR, rounded to bpm) that the web app resolves. When you write LT-anchored HR
-into a plan, use those tokens; resolve them against `data/athlete.json` when
-you read or quote plan text.
+uses %LT, and the Rome plan writes every HR as `% LTHR` inside each day's
+`training.workout` (Intervals.icu workout text, the plan's only session
+description — see `docs/adr/0007-intervals-icu-workout-sync.md`). When you
+write HR into a plan, use `% LTHR`; convert to bpm against `data/athlete.json`
+when you quote it.
 
 Zone bands (replace pace for easy/recovery/long guidance; percentages in
 `data/athlete.json`'s `effortZonesPctLt` — compute bpm from the current LT):
@@ -241,7 +242,7 @@ not just a way to decide whether to add more:
   to a lighter one.
 - **LT re-test reminder.** A field test replaces the device-reported LT with a
   real number — update `data/athlete.json` when that happens (nothing else
-  needs editing; day entries use %LT or `{LT:n%}` tokens, not bpm). Because LT typically shifts over 8-10 weeks of specific training,
+  needs editing; day entries use %LT or `% LTHR`, not bpm). Because LT typically shifts over 8-10 weeks of specific training,
   flag a suggestion for a second field test around week 10-11 (peak phase,
   ~Sep 6-19) rather than trusting the Aug 4 number unchanged for the rest of
   the plan.
