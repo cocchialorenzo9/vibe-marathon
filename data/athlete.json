@@ -1,0 +1,13 @@
+{
+  "lthr": {
+    "bpm": 165,
+    "source": "Amazfit T-Rex 3 watch estimate",
+    "asOf": "2026-10-19"
+  },
+  "hrBandCutoffs": [130, 140, 155],
+  "effortZonesPctLt": {
+    "recovery": [65, 75],
+    "easy": [75, 85],
+    "threshold": [95, 100]
+  }
+}

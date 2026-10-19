@@ -117,8 +117,9 @@ If tomorrow falls outside all weeks (before week 1 or after race day), note that
 
 ## Lactate-threshold & VO2max reference (used in Steps 4, 4c, 4d, 4e, 5)
 
-Current LT estimate: **165bpm**, device-reported (updated 2026-10-19 from
-167bpm, the watch's own re-estimate) — the athlete's Amazfit/Zepp
+Current LT estimate: read `lthr.bpm` from **`data/athlete.json`** — the single
+source of truth for LT (with its `source` and `asOf`). Never hardcode the
+number elsewhere. The athlete's Amazfit/Zepp
 watch computes and updates this automatically after each run; the user has
 opted to use it as the primary number over the earlier ~155bpm Karvonen-
 heuristic estimate. Treat this as watch-computed, not lab-tested — this
@@ -127,17 +128,21 @@ fabricated sleep-score proxy, a miscalibrated zone-2 alert), so it isn't
 beyond doubt, but it's the athlete's explicit call. Still superseded by the
 field test planned for ~Aug 4, 2026 (Week 5, Build day 1) if that produces a
 materially different number. When the LT number changes (either from the
-watch or the field test), update this block, **and** `DEFAULT_LTHR` in
-`scripts/parse_zepp_export.py` (or set the `ATHLETE_LTHR` env var) — TSS is
-now computed against LTHR (see Step 5's history-entry schema), so a stale
-Python constant would silently miscompute every session's TSS after a field
-test changes the number. `training-plan.json`'s day entries use %LT, not
-bpm, so those never need re-editing.
+watch or the field test), edit `lthr` in `data/athlete.json` (bpm, source,
+asOf) and then run `python3 scripts/build_zone_history.py` to rebuild the
+derived `data/zone-history.json` — nothing else. The scripts (TSS, HR bands)
+and the web app read it from there; `ATHLETE_LTHR` still overrides it for a
+one-off run. Plan text never hardcodes LT-anchored bpm: `training-plan.json`
+uses %LT, and the Rome plan writes `{LT}`, `{LT-9}`, `{LT-1}`-style tokens
+(bpm relative to LT) that the web app resolves. When you write LT-anchored HR
+into a plan, use those tokens; resolve them against `data/athlete.json` when
+you read or quote plan text.
 
-Zone bands (replace pace for easy/recovery/long guidance):
-- Recovery: 65–75% of LT ≈ 107–124bpm
-- Easy/Aerobic: 75–85% of LT ≈ 124–140bpm
-- Threshold/LT-specific: ~95–100% of LT ≈ 157–165bpm — used by the Tuesday
+Zone bands (replace pace for easy/recovery/long guidance; percentages in
+`data/athlete.json`'s `effortZonesPctLt` — compute bpm from the current LT):
+- Recovery: 65–75% of LT
+- Easy/Aerobic: 75–85% of LT
+- Threshold/LT-specific: ~95–100% of LT — used by the Tuesday
   "LT cruise interval" sessions added to `training-plan.json` (weeks 7, 9, 10,
   13). This band moves the same way the other two do whenever the LT number
   changes (Aug 4 field test, and any later re-test).
@@ -150,7 +155,7 @@ percentages.
 Marathon-pace/tempo/race-pace sessions are unaffected — those keep pace numbers.
 
 **LT pace: 4'57"/km, device-reported (added 2026-08-11)** — the watch's own
-pace-based LT estimate, alongside the 165bpm HR-based one above; logged as
+pace-based LT estimate, alongside the HR-based one above; logged as
 reference only, doesn't change any prescription. Same watch-computed-metric
 caveat applies. Notably slower than the sub-3h goal pace (~4:15-4:20/km) —
 i.e. goal race pace currently sits *above* LT for this athlete, which is
@@ -164,15 +169,14 @@ and the two are currently different speeds.
 
 **HR bands (analysis-only, separate from the prescription bands above)**:
 `scripts/build_zone_history.py` classifies actual recorded HR data into 5
-fixed bpm bands — <130, 130-140, 140-155, 155-165, 165+ — for
+fixed bpm bands — <130, 130-140, 140-155, 155-LT, LT+ — for
 `data/zone-history.json`, never used to rewrite the prescription bands above.
 These replaced an earlier LT1/LT2-anchored Seiler Zone 1/2/3 model (see
 `docs/adr/0003-hr-bands-replace-seiler-zones.md`); only the top band's edge
-is pinned to LT2 (165+ is definitionally at/above threshold), the other
+is pinned to LT2 (LT+ is definitionally at/above threshold), the other
 cutoffs (130/140/155) are fixed round numbers, not %LT-derived. See
-`CONTEXT.md`'s "Zone history" section. If LT2 changes (watch update or the
-Aug 4 field test), update `ATHLETE_LT2`/`DEFAULT_LT2` in
-`scripts/build_zone_history.py` — the top band moves with it automatically.
+`CONTEXT.md`'s "Zone history" section. Both the cutoffs and LT2 come from
+`data/athlete.json`; the top band moves with LT automatically.
 
 **VO2max**: current estimate lives in `data/coach.json`'s `readiness.vo2max`
 (`value`, `unit: "ml/kg/min"`, `status: "manual"|"garmin_max_metrics"`,
@@ -235,10 +239,9 @@ not just a way to decide whether to add more:
   edit `training-plan.json`" principle as the long-run valve above, just
   protecting a now-busier default schedule instead of deciding whether to add
   to a lighter one.
-- **LT re-test reminder.** The ~Aug 4 field test replaces the device-reported
-  165bpm with a real number — update the Lactate-threshold reference block
-  above when that happens (nothing else needs editing; day entries use %LT,
-  not bpm). Because LT typically shifts over 8-10 weeks of specific training,
+- **LT re-test reminder.** A field test replaces the device-reported LT with a
+  real number — update `data/athlete.json` when that happens (nothing else
+  needs editing; day entries use %LT or `{LT}` tokens, not bpm). Because LT typically shifts over 8-10 weeks of specific training,
   flag a suggestion for a second field test around week 10-11 (peak phase,
   ~Sep 6-19) rather than trusting the Aug 4 number unchanged for the rest of
   the plan.
@@ -404,10 +407,10 @@ narrate what the curve shows.
 
 For **each session**, write a one-sentence `lesson` — a specific, concrete
 takeaway about that individual activity, not a generic comment. Reason using:
-- **HR-zone compliance**: easy/aerobic sessions target ~75–85% of LT ≈
-  124–140bpm; recovery-week/very-slow sessions target ~65–75% of LT ≈
-  107–124bpm (see the Lactate-threshold reference above — current LT 165bpm,
-  device-reported). If a session that should have been easy (check
+- **HR-zone compliance**: easy/aerobic sessions target ~75–85% of LT;
+  recovery-week/very-slow sessions target ~65–75% of LT (see the
+  Lactate-threshold reference above — bpm from the current LT in
+  `data/athlete.json`). If a session that should have been easy (check
   `data/training-plan.json` for that date if it falls in a plan week,
   otherwise judge from pace/duration) shows `avg_hr` well above ~142bpm (or
   above ~125bpm on a recovery day), say so plainly (e.g. "pace was on target
@@ -494,8 +497,8 @@ and so it survives gaps in when `/update-coach` actually gets run.
      unchanged (`[]` if unavailable).
    - `wentWell`, `wentWrong`, `nextTime`: a genuine, specific reflection —
      compare against the scheduled session's intent when there is one, use
-     the %LT easy/recovery HR-zone reference from Step 4c (~124–140bpm
-     easy/aerobic, ~107–124bpm recovery) for effort compliance, and
+     the %LT easy/recovery HR-zone reference from Step 4c (75–85% of LT
+     easy/aerobic, 65–75% recovery) for effort compliance, and
      reference TSB/fatigue context from local history where
      it's relevant. When `hr_curve` is non-empty, use it the same way as
      Step 4c to ground `wentWrong`/`nextTime` in the session's actual
@@ -695,7 +698,7 @@ Append today's data as a new entry at the end of the **local** history file at `
 {
   "date": "<today YYYY-MM-DD>",
   "tss": <computed: duration_min/60 * (avg_hr/LTHR)^2 * 100 — hrTSS convention,
-          LTHR from the Lactate-threshold reference above (165bpm), not max_hr>,
+          LTHR = `lthr.bpm` in `data/athlete.json`, not max_hr>,
   "distance_km": <float>,
   "avg_hr": <int or null>,
   "hrv": <int>,
@@ -761,7 +764,7 @@ Then tell the user:
 - Tomorrow's recommendation
 - Whether any plan adjustment was made and why
 - A brief summary of what changed in the next 14 days' recommendations
-- Current LT estimate (165bpm, device-reported) and the %LT bpm target for
+- Current LT estimate (from `data/athlete.json`) and the %LT bpm target for
   tomorrow's or recent easy/recovery sessions, when relevant — not forced
   into every summary if it doesn't apply
 - Current VO2max estimate, when it's on record and relevant — same

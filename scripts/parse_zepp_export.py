@@ -13,6 +13,8 @@ import os
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
+from athlete import LTHR as DEFAULT_LTHR  # data/athlete.json, the single LT source
+
 # HEARTRATE_AUTO/HEARTRATE csv timestamps are local wall-clock time (unlike
 # SLEEP/SPORT, which carry an explicit UTC offset) — must be localized before
 # comparing against UTC windows.
@@ -55,8 +57,6 @@ _SWIMMING_TYPES = {14, 20}
 # still visible in the raw session list and journal — just excluded here.
 _TRAINING_TYPES = _RUNNING_TYPES | _CYCLING_TYPES | _SWIMMING_TYPES
 
-DEFAULT_LTHR = 165  # device-reported lactate threshold HR; keep in sync with
-                     # the Lactate-threshold reference in .claude/commands/update-coach.md
 
 
 # --- Directory / file helpers ---
@@ -608,7 +608,7 @@ def parse_export(zepp_dir, target_date, history_path):
 
     warnings = validate_export(latest)
     hr_rows = _load_hr_rows(latest)
-    lthr = int(os.environ.get("ATHLETE_LTHR", DEFAULT_LTHR))
+    lthr = DEFAULT_LTHR
 
     # Staleness
     newest = get_export_newest_date(latest)
