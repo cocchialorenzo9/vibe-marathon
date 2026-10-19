@@ -98,6 +98,18 @@ git push origin HEAD:main
 This is a data-only commit straight to `main`, like the coach update, so the Pages deploy runs
 right away. Never commit anything else from this task.
 
+## Step 5b — Push the coming days to the watch
+
+```bash
+python3 scripts/push_intervals.py --today "$(TZ=Europe/Rome date +%F)"
+```
+
+This sends the next 14 days of the plan's `training.workout`s to Intervals.icu, which syncs
+them to the Zepp app and the watch. It always runs, even when `sessions.json` didn't change, so
+plan edits reach the watch within a day. It writes nothing to the repo. If it fails (no
+network, auth error), don't retry or work around it: carry on and say so in the report.
+
 ## Step 6 — Report
 
-One short summary: days written or changed, and each one's status.
+One short summary: days written or changed, and each one's status, plus the push result
+(how many workouts were sent or removed, or why the push failed).

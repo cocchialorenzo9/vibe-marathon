@@ -15,7 +15,14 @@ export type Phase = "recovery" | "base" | "specific" | "taper";
 export interface PlanDay {
   date: string; // YYYY-MM-DD
   dayLabel: string;
-  training: { type: SessionType; title: string; detail: string; estKm: number | null };
+  training: {
+    type: SessionType;
+    title: string;
+    detail: string;
+    estKm: number | null;
+    /** Intervals.icu workout text pushed to the watch by scripts/push_intervals.py (null on rest/swim/race days). */
+    workout?: string | null;
+  };
   movement: string;
   food: string;
   bigPicture: string;

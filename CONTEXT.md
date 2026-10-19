@@ -106,3 +106,13 @@ _Avoid_: missed (a moved session isn't missed), skipped, compliance
 The bpm ceiling written into an easy or recovery day's prescription (e.g. "HR cap 130 bpm"). It's the bar a session's status is judged against; HR bands only describe where a run sat.
 _Avoid_: zone limit, ceiling zone
 
+
+## Watch sync (started 2026-10-19)
+
+**Planned workout**:
+A plan day's `training.workout`: the same session as `training.detail`, written as Intervals.icu workout text so the watch can guide it step by step. Fixed HR caps are written in bpm (`100-140bpm`, the 100 floor only so the watch never nags for running too slowly), LT-anchored targets as `% LTHR`, race-pace work as `4:09/km Pace`. `null` on rest, swim and race days. Whenever a day's `detail` changes, its `workout` changes with it. See `docs/adr/0007-intervals-icu-workout-sync.md`.
+_Avoid_: structured workout, steps
+
+**Watch sync**:
+`scripts/push_intervals.py` sending the next 14 days of planned workouts to Intervals.icu, which syncs the next 7 to the Zepp app and the Amazfit T-Rex 3. Runs at the end of every nightly `sync-sessions`; also sets Intervals.icu's Run LTHR to `data/athlete.json`'s.
+_Avoid_: export, upload
