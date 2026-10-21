@@ -42,3 +42,7 @@ Days before Oct 21 keep the prescription they were run against.
 - `sync-sessions` treats a run that stopped short at about the stop-by time
   as done.
 - The site shows km as the day's value and minutes as `~N′`, an estimate.
+
+**Update (2026-10-21)**: ADR 0008 moved the session text into each day's
+`training.workout`; the km is now the workout step (`- 8km 60-85% LTHR`) and
+the estimate and stop-by time a note ("~45 min, stop by 55 min").

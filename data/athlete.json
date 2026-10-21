@@ -9,5 +9,8 @@
     "recovery": [65, 75],
     "easy": [75, 85],
     "threshold": [95, 100]
+  },
+  "intervalsIcu": {
+    "athleteId": "i759867"
   }
 }

@@ -93,3 +93,18 @@ describe("program helpers", () => {
     expect(prose("easy -- HR <=140")).toBe("easy — HR ≤140");
   });
 });
+
+describe("plan as shown", () => {
+  const days = romePlan.weeks.flatMap((w) => w.days);
+
+  it("shows heart rate in bpm, never % LTHR", () => {
+    const shown = { ...romePlan, weeks: romePlan.weeks.map((w) => ({ ...w, days: w.days.map((d) => ({ ...d, training: { ...d.training, workout: "" } })) })) };
+    expect(JSON.stringify(shown)).not.toMatch(/% LTHR/);
+  });
+
+  it("renders every day's session from its workout", () => {
+    for (const d of days) expect(d.training.detail.length).toBeGreaterThan(0);
+    const easy = days.find((d) => d.date === "2026-10-20")!;
+    expect(easy.training.detail).toBe("30 min, HR ≤140. Hard ceiling: walk a hill rather than cross it.");
+  });
+});

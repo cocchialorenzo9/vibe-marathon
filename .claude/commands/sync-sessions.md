@@ -26,7 +26,9 @@ If the Strava tools aren't available or fail, stop without writing anything and 
 ## Step 3 — Classify each plan day in the window
 
 Plan day = `weeks[].days[]` entry. Run = Strava `sport_type` containing "Run". The plan's HR
-cap is the number in the day's `training.detail` ("HR cap 130 bpm").
+cap is the upper bound of the first `60-N% LTHR` step in the day's `training.workout`,
+converted to bpm against `data/athlete.json` (`60-79% LTHR` -> 79% of 165 = 130). Quality and
+race days (`training.type` "tempo"/"race") have no cap.
 
 Pick one `status` per day:
 
@@ -42,8 +44,8 @@ Pick one `status` per day:
 Today: only write it once there's an activity, or the day is a rest day and it's after 21:00.
 A planned day with no activity *today* is not `none` yet: leave it out.
 
-Easy and recovery days are prescribed in km with a stop-by time ("8 km easy (~45 min, stop by
-55), HR cap 140"). The HR cap still decides `done` vs `over`. A run that ended short of the km
+Easy and recovery days are prescribed in km with a stop-by time: the workout step
+`- 8km 60-85% LTHR` and the note "~45 min, stop by 55 min". The HR cap still decides `done` vs `over`. A run that ended short of the km
 at about the stop-by time is `done` as planned, not a miss; say so in `summary`.
 
 Swims and strength without the watch don't show up in Strava; mark those `none` and say in
@@ -80,7 +82,7 @@ Swims and strength without the watch don't show up in Strava; mark those `none` 
   partial last lap), `sec` = moving time, `hr` = rounded average HR.
 - `headline`: short, plain, no exclamation marks. `learn`: specific to the numbers (paces,
   laps, cap), never generic advice. Use the project's language from `CONTEXT.md`: HR bands
-  (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. Plan text writes LT-anchored HR as `{LT:95%}`-style tokens (percent of LTHR); resolve them to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
+  (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. The plan writes HR as `% LTHR`; convert it to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
 - Keep `days` sorted by date, one entry per date. Set `syncedAt` to now (ISO 8601 with the
   Europe/Rome offset).
 
@@ -102,6 +104,18 @@ git push origin HEAD:main
 This is a data-only commit straight to `main`, like the coach update, so the Pages deploy runs
 right away. Never commit anything else from this task.
 
+## Step 5b — Push the coming days to the watch
+
+```bash
+python3 scripts/push_intervals.py --today "$(TZ=Europe/Rome date +%F)"
+```
+
+This sends the next 14 days of the plan's `training.workout`s to Intervals.icu, which syncs
+them to the Zepp app and the watch. It always runs, even when `sessions.json` didn't change, so
+plan edits reach the watch within a day. It writes nothing to the repo. If it fails (no
+network, auth error), don't retry or work around it: carry on and say so in the report.
+
 ## Step 6 — Report
 
-One short summary: days written or changed, and each one's status.
+One short summary: days written or changed, and each one's status, plus the push result
+(how many workouts were sent or removed, or why the push failed).

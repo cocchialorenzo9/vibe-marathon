@@ -19,8 +19,8 @@ the HR band cutoffs and the %LT effort-zone percentages:
   bpm) on load. Percentages match how the effort zones are defined (%LT) and
   scale correctly when LT moves. The threshold range is 95-99% (159-165 at LT
   167, 157-163 at 165); the "ease off" trigger 99.5%, MP "settle" 97.5%.
-  Easy caps (130/140/145) are plain bpm and stay so until the Nov 21 field
-  test decides whether they should follow LT.
+  Easy caps (130/140/145) were left as plain bpm here; ADR 0008 since made
+  them percentages of LTHR too.
 - **Coaching commands** (`update-coach`, `sync-sessions`) and `CONTEXT.md`
   point at the file instead of quoting a number.
 
@@ -40,3 +40,6 @@ A new LT is therefore: edit `data/athlete.json`, run
   number and must resolve it against `data/athlete.json`.
 - `data/zone-history.json` still needs a rebuild after an LT change; it is a
   derived file committed for the web app.
+
+**Update (2026-10-19)**: ADR 0008 replaced the `{LT:n%}` tokens with
+Intervals.icu's `% LTHR` notation, inside each day's `training.workout`.

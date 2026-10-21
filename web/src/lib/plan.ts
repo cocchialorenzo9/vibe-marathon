@@ -1,5 +1,6 @@
 import romePlanJson from "@data/training-plan-rome-2027.json";
-import { resolveLtDeep } from "./athlete";
+import { lthrToBpmDeep, pctOfLt } from "./athlete";
+import { parseWorkout, renderWorkout } from "./workout";
 
 export type SessionType =
   | "rest"
@@ -15,7 +16,15 @@ export type Phase = "recovery" | "base" | "specific" | "taper";
 export interface PlanDay {
   date: string; // YYYY-MM-DD
   dayLabel: string;
-  training: { type: SessionType; title: string; detail: string; estKm: number | null };
+  training: {
+    type: SessionType;
+    title: string;
+    /** Intervals.icu workout text (steps, then notes): the one source, pushed to the watch by scripts/push_intervals.py. */
+    workout: string;
+    /** Derived on load: the workout as readable text, HR in bpm. Not in the JSON. */
+    detail: string;
+    estKm: number | null;
+  };
   movement: string;
   food: string;
   bigPicture: string;
@@ -48,8 +57,25 @@ export interface Plan {
   gates: Gate[];
 }
 
-/** HR written as "{LT:95%}"-style %LTHR tokens in the plan JSON resolves against data/athlete.json here. */
-export const romePlan = resolveLtDeep(romePlanJson) as unknown as Plan;
+/**
+ * The plan as the site shows it: each day's `detail` rendered from its workout,
+ * and "% LTHR" everywhere else shown in bpm against data/athlete.json.
+ */
+function loadPlan(raw: unknown): Plan {
+  const plan = raw as Plan;
+  return {
+    ...lthrToBpmDeep({ ...plan, weeks: [] }),
+    weeks: plan.weeks.map((w) => ({
+      ...lthrToBpmDeep({ ...w, days: [] }),
+      days: w.days.map((d) => ({
+        ...lthrToBpmDeep(d),
+        training: { ...d.training, detail: renderWorkout(d.training.workout) },
+      })),
+    })),
+  };
+}
+
+export const romePlan = loadPlan(romePlanJson);
 
 export const PHASE_LABELS: Record<Phase, string> = {
   recovery: "Recovery",
@@ -134,9 +160,20 @@ export function shortTitle(title: string): string {
   return part.charAt(0).toUpperCase() + part.slice(1);
 }
 
-export function hrCap(detail: string): number | null {
-  const m = detail.match(/HR (?:cap|<=|≤)\s*(\d{3})/i);
-  return m ? Number(m[1]) : null;
+/**
+ * The easy HR ceiling a day is judged against: the first capped step's upper
+ * bound ("60-85% LTHR" -> 140 at LT 165). Quality and race days have none —
+ * their warm-up cap isn't the session's bar.
+ */
+export function hrCap(training: PlanDay["training"]): number | null {
+  if (training.type === "tempo" || training.type === "race") return null;
+  for (const { steps } of parseWorkout(training.workout).blocks) {
+    for (const step of steps) {
+      const m = step.match(/ 60-(\d+(?:\.\d+)?)% LTHR$/);
+      if (m) return pctOfLt(Number(m[1]));
+    }
+  }
+  return null;
 }
 
 /** "Post-Munich recovery: Marathon..." or "Post-Munich recovery (recovery)." -> "Post-Munich recovery". */
@@ -152,7 +189,7 @@ export function weekCounts(week: PlanWeek) {
 
 /** Short one-line summary for a day tile; run minutes are an estimate, km is the target. */
 export function daySubtitle(day: PlanDay): string {
-  const cap = hrCap(day.training.detail);
+  const cap = hrCap(day.training);
   if (cap && day.estMin.run > 0) return `HR ≤${cap} · ~${day.estMin.run}′`;
   const first = day.training.detail.split(/[.;(]/)[0].trim();
   return first.length > 34 ? `${first.slice(0, 32).trimEnd()}…` : first;

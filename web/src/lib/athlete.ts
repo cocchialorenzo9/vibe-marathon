@@ -13,19 +13,22 @@ export function pctOfLt(pct: number, lt: number = LT2): number {
 }
 
 /**
- * Plan text writes LT-anchored HR as percentages of LTHR, so it never needs
- * re-editing when LT moves: "{LT:95%}" -> 157 and "{LT:100%}" -> 165 at LT 165.
+ * The plan writes heart rate the way Intervals.icu does, as % LTHR; this
+ * shows it in bpm: "HR cap 85% LTHR" -> "HR cap 140 bpm", "95-99% LTHR" ->
+ * "157-163 bpm" at LT 165.
  */
-export function resolveLt(text: string, lt: number = LT2): string {
-  return text.replace(/\{LT:(\d+(?:\.\d+)?)%\}/g, (_, pct: string) => String(pctOfLt(Number(pct), lt)));
+export function lthrToBpm(text: string, lt: number = LT2): string {
+  return text.replace(/(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?% LTHR/g, (_, a: string, b?: string) =>
+    b ? `${pctOfLt(Number(a), lt)}-${pctOfLt(Number(b), lt)} bpm` : `${pctOfLt(Number(a), lt)} bpm`,
+  );
 }
 
-/** resolveLt applied to every string inside a JSON value. */
-export function resolveLtDeep<T>(value: T, lt: number = LT2): T {
-  if (typeof value === "string") return resolveLt(value, lt) as T;
-  if (Array.isArray(value)) return value.map((v) => resolveLtDeep(v, lt)) as T;
+/** lthrToBpm applied to every string inside a JSON value. */
+export function lthrToBpmDeep<T>(value: T, lt: number = LT2): T {
+  if (typeof value === "string") return lthrToBpm(value, lt) as T;
+  if (Array.isArray(value)) return value.map((v) => lthrToBpmDeep(v, lt)) as T;
   if (value && typeof value === "object") {
-    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, resolveLtDeep(v, lt)])) as T;
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, lthrToBpmDeep(v, lt)])) as T;
   }
   return value;
 }

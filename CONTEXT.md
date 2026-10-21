@@ -17,7 +17,7 @@ CTL minus ATL — the day-to-day readiness/freshness signal used to gate session
 _Avoid_: freshness, form
 
 **LT (Lactate Threshold)**:
-The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). Plan text refers to it with `{LT:n%}` tokens (percent of LTHR) rather than fixed bpm — see `docs/adr/0006-single-lt-source.md`.
+The heart-rate (bpm) anchor all effort zones in this plan are computed from; the single source of truth is `data/athlete.json` (`lthr.bpm`, with its source and date; device-reported and unconfirmed until the Nov 21 field test). The Rome plan writes heart rate as `% LTHR` (Intervals.icu's notation) rather than fixed bpm, so everything moves with it — see `docs/adr/0006-single-lt-source.md` and `0008-intervals-icu-workout-sync.md`.
 _Avoid_: threshold pace, max HR
 
 **CTL ramp-rate governance**:
@@ -103,10 +103,19 @@ What actually happened on a plan day, compared with what `training-plan-rome-202
 _Avoid_: missed (a moved session isn't missed), skipped, compliance
 
 **HR cap**:
-The bpm ceiling written into an easy or recovery day's prescription (e.g. "HR cap 130 bpm"). It's the bar a session's status is judged against; HR bands only describe where a run sat.
+The heart-rate ceiling written into an easy or recovery day's prescription, as a percentage of LT (the workout step `60-79% LTHR`, i.e. ≤130bpm at LT 165), so it moves with LT. It's the bar a session's status is judged against; HR bands only describe where a run sat.
 _Avoid_: zone limit, ceiling zone
 
 **Stop-by time**:
-The time limit written into a km-prescribed easy or recovery day, next to its time estimate ("8 km easy (~45 min, stop by 55), HR cap 140"). The km is the target, the HR cap the guide, the estimate just a forecast at recent pace for that cap. If holding the cap makes the run slow enough to hit the stop-by time first, the run ends there and the km are left short; that counts as done. It is roughly the estimate + 15%, rounded up to 5 min. See `docs/adr/0007-km-targets-for-easy-runs.md`.
+The time limit written into a km-prescribed easy or recovery day, next to its time estimate (the step `- 8km 60-85% LTHR` with the note "~45 min, stop by 55 min"). The km is the target, the HR cap the guide, the estimate just a forecast at recent pace for that cap. If holding the cap makes the run slow enough to hit the stop-by time first, the run ends there and the km are left short; that counts as done. It is roughly the estimate + 15%, rounded up to 5 min. See `docs/adr/0007-km-targets-for-easy-runs.md`.
 _Avoid_: time cap, ceiling (the HR cap is the cap), time goal
 
+## Watch sync (started 2026-10-19)
+
+**Planned workout**:
+A plan day's `training.workout`: the plan's one description of the session, in Intervals.icu workout text — step lines the watch guides you through, then the coaching notes (fuel, cues, strength) as plain paragraphs. Rest, swim and race days have notes only. The site renders it for reading and the push script sends it as written. Every HR target is `% LTHR` (easy cap `60-85% LTHR`; the 60% floor only keeps the watch from nagging about running too slowly), race-pace work `4:09/km Pace`; never absolute bpm, which Intervals.icu can't parse. See `docs/adr/0008-intervals-icu-workout-sync.md`.
+_Avoid_: structured workout, steps
+
+**Watch sync**:
+`scripts/push_intervals.py` sending the next 14 days of planned workouts to Intervals.icu, which syncs the next 7 to the Zepp app and the Amazfit T-Rex 3. Runs at the end of every nightly `sync-sessions`; also sets Intervals.icu's Run LTHR to `data/athlete.json`'s.
+_Avoid_: export, upload

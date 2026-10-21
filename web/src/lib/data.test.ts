@@ -5,7 +5,7 @@
 import athleteJson from "../../../data/athlete.json";
 import sessionsJson from "../../../data/sessions.json";
 import romePlanJson from "../../../data/training-plan-rome-2027.json";
-import { resolveLtDeep } from "./athlete";
+import { lthrToBpmDeep } from "./athlete";
 import type { SessionLog } from "./sessions";
 
 const sessionLog = sessionsJson as unknown as SessionLog;
@@ -34,7 +34,18 @@ describe("data/sessions.json", () => {
 });
 
 describe("data/training-plan-rome-2027.json", () => {
-  it("leaves no unresolved {LT} token once resolved against data/athlete.json", () => {
-    expect(JSON.stringify(resolveLtDeep(romePlanJson, athleteJson.lthr.bpm))).not.toMatch(/\{LT/);
+  const days = romePlanJson.weeks.flatMap((w) => w.days);
+
+  it("describes every day with a workout and nothing else", () => {
+    for (const d of days) {
+      expect(typeof d.training.workout).toBe("string");
+      expect(d.training).not.toHaveProperty("detail");
+    }
+  });
+
+  it("writes heart rate as % LTHR, which converts to bpm against data/athlete.json", () => {
+    const text = JSON.stringify(romePlanJson);
+    expect(text).not.toMatch(/\{LT|\d{3} ?bpm/);
+    expect(JSON.stringify(lthrToBpmDeep(romePlanJson, athleteJson.lthr.bpm))).not.toMatch(/% LTHR/);
   });
 });

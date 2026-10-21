@@ -23,3 +23,4 @@ _ATHLETE = load_athlete()
 
 LTHR = int(os.environ.get("ATHLETE_LTHR", _ATHLETE["lthr"]["bpm"]))
 HR_BAND_CUTOFFS = tuple(_ATHLETE["hrBandCutoffs"])
+INTERVALS_ATHLETE_ID = _ATHLETE.get("intervalsIcu", {}).get("athleteId")
