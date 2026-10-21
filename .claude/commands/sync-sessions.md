@@ -42,6 +42,10 @@ Pick one `status` per day:
 Today: only write it once there's an activity, or the day is a rest day and it's after 21:00.
 A planned day with no activity *today* is not `none` yet: leave it out.
 
+Easy and recovery days are prescribed in km with a stop-by time ("8 km easy (~45 min, stop by
+55), HR cap 140"). The HR cap still decides `done` vs `over`. A run that ended short of the km
+at about the stop-by time is `done` as planned, not a miss; say so in `summary`.
+
 Swims and strength without the watch don't show up in Strava; mark those `none` and say in
 `summary` that they can be added if done off-watch.
 

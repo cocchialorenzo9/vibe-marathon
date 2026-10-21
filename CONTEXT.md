@@ -106,3 +106,7 @@ _Avoid_: missed (a moved session isn't missed), skipped, compliance
 The bpm ceiling written into an easy or recovery day's prescription (e.g. "HR cap 130 bpm"). It's the bar a session's status is judged against; HR bands only describe where a run sat.
 _Avoid_: zone limit, ceiling zone
 
+**Stop-by time**:
+The time limit written into a km-prescribed easy or recovery day, next to its time estimate ("8 km easy (~45 min, stop by 55), HR cap 140"). The km is the target, the HR cap the guide, the estimate just a forecast at recent pace for that cap. If holding the cap makes the run slow enough to hit the stop-by time first, the run ends there and the km are left short; that counts as done. It is roughly the estimate + 15%, rounded up to 5 min. See `docs/adr/0007-km-targets-for-easy-runs.md`.
+_Avoid_: time cap, ceiling (the HR cap is the cap), time goal
+

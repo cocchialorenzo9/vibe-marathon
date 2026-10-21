@@ -150,10 +150,10 @@ export function weekCounts(week: PlanWeek) {
   return { runs, swims };
 }
 
-/** Short one-line summary for a day tile. */
+/** Short one-line summary for a day tile; run minutes are an estimate, km is the target. */
 export function daySubtitle(day: PlanDay): string {
   const cap = hrCap(day.training.detail);
-  if (cap && day.estMin.run > 0) return `HR ≤${cap} · ${day.estMin.run}′`;
+  if (cap && day.estMin.run > 0) return `HR ≤${cap} · ~${day.estMin.run}′`;
   const first = day.training.detail.split(/[.;(]/)[0].trim();
   return first.length > 34 ? `${first.slice(0, 32).trimEnd()}…` : first;
 }

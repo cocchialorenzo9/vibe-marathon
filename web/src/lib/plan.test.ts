@@ -49,8 +49,8 @@ describe("day formatting", () => {
     expect(shortTitle("Recovery run")).toBe("Recovery run");
   });
 
-  it("summarises a run with its HR cap and minutes", () => {
-    expect(daySubtitle(thu)).toBe("HR ≤130 · 24′");
+  it("summarises a run with its HR cap and estimated minutes", () => {
+    expect(daySubtitle(thu)).toBe("HR ≤130 · ~24′");
     expect(dayValue(thu)).toBe("4 km");
   });
 
