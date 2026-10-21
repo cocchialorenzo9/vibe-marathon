@@ -435,7 +435,7 @@ function WhatHappened({ s, onJump }: { s: SessionDay; onJump: (iso: string) => v
           <div>
             <dt className="label">TIME</dt>
             <dd className="disp">{mmss(a.movingSec)}</dd>
-            <dd className="mono">{meant?.estMin.run ? `plan ${formatMinutes(meant.estMin.run)}` : ""}</dd>
+            <dd className="mono">{meant?.estMin.run ? `est ~${formatMinutes(meant.estMin.run)}` : ""}</dd>
           </div>
           <div>
             <dt className="label">PACE</dt>

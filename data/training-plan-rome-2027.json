@@ -135,6 +135,7 @@
     "Swimming: easy pool sessions replace the Monday recovery run in most weeks (km moved to other easy runs, weekly totals unchanged). Low-impact recovery and extra aerobic time; it does not count as running volume.",
     "Home strength 2x/week (S1 heavy single-leg strength after a quality run, S2 plyometrics + core), 1x in recovery weeks, 1 light session in taper week 2, none in race week (Balsalobre-Fernandez 2016; Blagrove 2018). Equipment: a loaded backpack and a step; adjustable dumbbells or a kettlebell help keep loads heavy.",
     "Easy means easy: HR cap 140 bpm on every non-quality run until LT1 is measured (Seiler 2010; Stoggl & Sperlich 2014).",
+    "Easy and recovery runs are set in km, with the HR cap as the guide and time only as an estimate: \"8 km easy (~45 min, stop by 55), HR cap 140\". The estimate uses recent pace at that cap (~5:40/km at 140, ~6:10/km at 130). If the cap holds you slow enough to reach the stop-by time first, stop there and leave the missing km; hot, hilly or tired days should cost distance, not extra time on your feet.",
     "Quality as prescribed: continuous LT runs held at HR {LT:95%}-{LT:99%} (ease off past {LT:99.5%}), race-pace work at MP 4:09 (ease to 4:16 if lap HR passes {LT:99.5%}), VO2max reps in race prep. Roughly 80% of running stays easy.",
     "Strength + plyometrics 2x/week in base and specific, 1x in recovery/taper (Balsalobre-Fernandez 2016).",
     "Recovery weeks every 3-4 weeks are not optional, and run volume is not replaced by extra sessions.",
@@ -357,7 +358,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "25 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
+            "detail": "4.5 km very easy (~28 min, stop by 35), HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 4.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -365,10 +366,10 @@
           "bigPicture": "Return to running (recovery).",
           "estKm": 4.5,
           "estMin": {
-            "run": 27,
+            "run": 28,
             "swim": 0,
             "strength": 35,
-            "total": 62
+            "total": 63
           }
         },
         {
@@ -377,7 +378,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "6.5 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -417,7 +418,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "5.5 km easy (~34 min, stop by 40), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 5.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -425,10 +426,10 @@
           "bigPicture": "Return to running (recovery).",
           "estKm": 5.5,
           "estMin": {
-            "run": 31,
+            "run": 34,
             "swim": 0,
             "strength": 0,
-            "total": 31
+            "total": 34
           }
         },
         {
@@ -437,7 +438,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "45 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "8 km easy (~45 min, stop by 55), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 8.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -494,7 +495,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "6.5 km easy (~40 min, stop by 50), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -502,10 +503,10 @@
           "bigPicture": "Rebuild 1 (base).",
           "estKm": 6.5,
           "estMin": {
-            "run": 37,
+            "run": 40,
             "swim": 0,
             "strength": 0,
-            "total": 37
+            "total": 40
           }
         },
         {
@@ -514,7 +515,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
+            "detail": "6.5 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -574,7 +575,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "6.5 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -651,7 +652,7 @@
           "training": {
             "type": "tempo",
             "title": "Hill sprints + easy",
-            "detail": "50 min easy (HR <=140) with 8x10s steep hill sprints (max effort, 2 min walk-back) in the middle. Neuromuscular, not aerobic -- HR barely matters. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
+            "detail": "10 km easy (HR <=140, ~63 min, stop by 75) with 8x10s steep hill sprints (max effort, 2 min walk-back) in the middle. Neuromuscular, not aerobic -- HR barely matters. HOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 10
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -659,10 +660,10 @@
           "bigPicture": "Rebuild 2 (base).",
           "estKm": 10,
           "estMin": {
-            "run": 56,
+            "run": 63,
             "swim": 0,
             "strength": 35,
-            "total": 91
+            "total": 98
           }
         },
         {
@@ -671,7 +672,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "45 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). HR CHECK: after 10 min easy, run 5 km at exactly 5:30/km on your fixed flat route (HR may pass 140 here); log avg HR of km 2-5 and the temperature. Compared with the other HR check to read aerobic progress (baseline)",
+            "detail": "8 km easy (~45 min, stop by 55), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). HR CHECK: after 10 min easy, run 5 km at exactly 5:30/km on your fixed flat route (HR may pass 140 here); log avg HR of km 2-5 and the temperature. Compared with the other HR check to read aerobic progress (baseline)",
             "estKm": 8
           },
           "movement": "Bike commute fine at easy effort.",
@@ -731,7 +732,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "45 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "8 km easy (~48 min, stop by 60), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 8.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -739,10 +740,10 @@
           "bigPicture": "Rebuild 2 (base).",
           "estKm": 8.0,
           "estMin": {
-            "run": 45,
+            "run": 48,
             "swim": 0,
             "strength": 0,
-            "total": 45
+            "total": 48
           }
         },
         {
@@ -767,10 +768,10 @@
         }
       ],
       "estHours": {
-        "run": 5.5,
+        "run": 5.6,
         "swim": 0.6,
         "strength": 1.0,
-        "total": 7.0
+        "total": 7.2
       }
     },
     {
@@ -828,7 +829,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "7.5 km very easy (~46 min, stop by 55), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -836,10 +837,10 @@
           "bigPicture": "Endurance 1 (block week 1 of 18) (base).",
           "estKm": 7.5,
           "estMin": {
-            "run": 45,
+            "run": 46,
             "swim": 0,
             "strength": 0,
-            "total": 45
+            "total": 46
           }
         },
         {
@@ -888,7 +889,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "9.5 km easy (~57 min, stop by 70), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 9.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -896,10 +897,10 @@
           "bigPicture": "Endurance 1 (block week 1 of 18) (base).",
           "estKm": 9.5,
           "estMin": {
-            "run": 54,
+            "run": 57,
             "swim": 0,
             "strength": 0,
-            "total": 54
+            "total": 57
           }
         },
         {
@@ -924,10 +925,10 @@
         }
       ],
       "estHours": {
-        "run": 6.1,
+        "run": 6.2,
         "swim": 0.6,
         "strength": 1.0,
-        "total": 7.7
+        "total": 7.8
       }
     },
     {
@@ -965,7 +966,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
+            "detail": "10.5 km easy (~62 min, stop by 75), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
             "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -973,10 +974,10 @@
           "bigPicture": "Endurance 2 (recovery + LT test) (base).",
           "estKm": 10.5,
           "estMin": {
-            "run": 59,
+            "run": 62,
             "swim": 0,
             "strength": 25,
-            "total": 84
+            "total": 87
           }
         },
         {
@@ -1025,7 +1026,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "6.5 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1081,10 +1082,10 @@
         }
       ],
       "estHours": {
-        "run": 5.4,
+        "run": 5.5,
         "swim": 0.6,
         "strength": 0.4,
-        "total": 6.4
+        "total": 6.5
       }
     },
     {
@@ -1142,7 +1143,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "7.5 km very easy (~46 min, stop by 55), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1150,10 +1151,10 @@
           "bigPicture": "Endurance 3 (base).",
           "estKm": 7.5,
           "estMin": {
-            "run": 45,
+            "run": 46,
             "swim": 0,
             "strength": 0,
-            "total": 45
+            "total": 46
           }
         },
         {
@@ -1202,7 +1203,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "10.5 km easy (~62 min, stop by 75), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1210,10 +1211,10 @@
           "bigPicture": "Endurance 3 (base).",
           "estKm": 10.5,
           "estMin": {
-            "run": 59,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 59
+            "total": 62
           }
         },
         {
@@ -1238,10 +1239,10 @@
         }
       ],
       "estHours": {
-        "run": 6.7,
+        "run": 6.8,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 8.5
+        "total": 8.6
       }
     },
     {
@@ -1299,7 +1300,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "9 km very easy (~56 min, stop by 65), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 9.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1307,10 +1308,10 @@
           "bigPicture": "Endurance 4 (base).",
           "estKm": 9.0,
           "estMin": {
-            "run": 54,
+            "run": 56,
             "swim": 0,
             "strength": 0,
-            "total": 54
+            "total": 56
           }
         },
         {
@@ -1359,7 +1360,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "12 km easy (~71 min, stop by 85), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 12.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1367,10 +1368,10 @@
           "bigPicture": "Endurance 4 (base).",
           "estKm": 12.0,
           "estMin": {
-            "run": 68,
+            "run": 71,
             "swim": 0,
             "strength": 0,
-            "total": 68
+            "total": 71
           }
         },
         {
@@ -1398,7 +1399,7 @@
         "run": 7.3,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 9.0
+        "total": 9.1
       }
     },
     {
@@ -1456,7 +1457,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "55 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). HR CHECK: after 10 min easy, run 5 km at exactly 5:30/km on your fixed flat route (HR may pass 140 here); log avg HR of km 2-5 and the temperature. Compared with the other HR check to read aerobic progress (vs Nov 4)",
+            "detail": "10 km easy (~57 min, stop by 70), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). HR CHECK: after 10 min easy, run 5 km at exactly 5:30/km on your fixed flat route (HR may pass 140 here); log avg HR of km 2-5 and the temperature. Compared with the other HR check to read aerobic progress (vs Nov 4)",
             "estKm": 10
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1464,10 +1465,10 @@
           "bigPicture": "Endurance 5 (base).",
           "estKm": 10,
           "estMin": {
-            "run": 56,
+            "run": 57,
             "swim": 0,
             "strength": 0,
-            "total": 56
+            "total": 57
           }
         },
         {
@@ -1496,7 +1497,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "40 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "6.5 km very easy (~40 min, stop by 50), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 6.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1504,10 +1505,10 @@
           "bigPicture": "Endurance 5 (base).",
           "estKm": 6.5,
           "estMin": {
-            "run": 39,
+            "run": 40,
             "swim": 0,
             "strength": 0,
-            "total": 39
+            "total": 40
           }
         },
         {
@@ -1516,7 +1517,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "10.5 km easy (~62 min, stop by 75), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 10.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1524,10 +1525,10 @@
           "bigPicture": "Endurance 5 (base).",
           "estKm": 10.5,
           "estMin": {
-            "run": 59,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 59
+            "total": 62
           }
         },
         {
@@ -1552,10 +1553,10 @@
         }
       ],
       "estHours": {
-        "run": 7.8,
+        "run": 7.9,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 9.6
+        "total": 9.7
       }
     },
     {
@@ -1593,7 +1594,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
+            "detail": "14 km easy (~82 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery HOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1601,10 +1602,10 @@
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy) (base).",
           "estKm": 14.0,
           "estMin": {
-            "run": 79,
+            "run": 82,
             "swim": 0,
             "strength": 25,
-            "total": 104
+            "total": 107
           }
         },
         {
@@ -1633,7 +1634,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "12.5 km easy (~71 min, stop by 85), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 12.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1653,7 +1654,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "8.5 km very easy (~52 min, stop by 60), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 8.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1661,10 +1662,10 @@
           "bigPicture": "Endurance 6 (recovery + Pisa HM easy) (base).",
           "estKm": 8.5,
           "estMin": {
-            "run": 51,
+            "run": 52,
             "swim": 0,
             "strength": 0,
-            "total": 51
+            "total": 52
           }
         },
         {
@@ -1830,7 +1831,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1838,10 +1839,10 @@
           "bigPicture": "LT + endurance 1 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 60
+            "total": 62
           }
         },
         {
@@ -1866,7 +1867,7 @@
         }
       ],
       "estHours": {
-        "run": 7.9,
+        "run": 8.0,
         "swim": 0.6,
         "strength": 1.2,
         "total": 9.7
@@ -1947,7 +1948,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). New Year's Eve: run in the morning HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "detail": "14 km easy (~79 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). New Year's Eve: run in the morning HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1987,7 +1988,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "14 km easy (~82 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1995,10 +1996,10 @@
           "bigPicture": "LT + endurance 2 (specific).",
           "estKm": 14.0,
           "estMin": {
-            "run": 79,
+            "run": 82,
             "swim": 0,
             "strength": 0,
-            "total": 79
+            "total": 82
           }
         },
         {
@@ -2023,7 +2024,7 @@
         }
       ],
       "estHours": {
-        "run": 8.4,
+        "run": 8.5,
         "swim": 0.6,
         "strength": 1.2,
         "total": 10.2
@@ -2104,7 +2105,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2112,10 +2113,10 @@
           "bigPicture": "LT + endurance 3 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 30,
-            "total": 90
+            "total": 92
           }
         },
         {
@@ -2124,7 +2125,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "75 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "13.5 km easy (~80 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 13.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2132,10 +2133,10 @@
           "bigPicture": "LT + endurance 3 (specific).",
           "estKm": 13.5,
           "estMin": {
-            "run": 76,
+            "run": 80,
             "swim": 0,
             "strength": 0,
-            "total": 76
+            "total": 80
           }
         },
         {
@@ -2144,7 +2145,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "7.5 km very easy (~46 min, stop by 55), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2152,10 +2153,10 @@
           "bigPicture": "LT + endurance 3 (specific).",
           "estKm": 7.5,
           "estMin": {
-            "run": 45,
+            "run": 46,
             "swim": 0,
             "strength": 0,
-            "total": 45
+            "total": 46
           }
         },
         {
@@ -2180,10 +2181,10 @@
         }
       ],
       "estHours": {
-        "run": 8.9,
+        "run": 9.1,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 10.7
+        "total": 10.8
       }
     },
     {
@@ -2241,7 +2242,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "70 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "12 km easy (~71 min, stop by 85), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 12.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2249,10 +2250,10 @@
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
           "estKm": 12.0,
           "estMin": {
-            "run": 68,
+            "run": 71,
             "swim": 0,
             "strength": 0,
-            "total": 68
+            "total": 71
           }
         },
         {
@@ -2281,7 +2282,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "45 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "7.5 km very easy (~46 min, stop by 55), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 7.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2289,10 +2290,10 @@
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
           "estKm": 7.5,
           "estMin": {
-            "run": 45,
+            "run": 46,
             "swim": 0,
             "strength": 0,
-            "total": 45
+            "total": 46
           }
         },
         {
@@ -2301,7 +2302,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "8.5 km very easy (~52 min, stop by 60), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 8.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2309,10 +2310,10 @@
           "bigPicture": "LT + endurance 4 (recovery) (specific).",
           "estKm": 8.5,
           "estMin": {
-            "run": 51,
+            "run": 52,
             "swim": 0,
             "strength": 0,
-            "total": 51
+            "total": 52
           }
         },
         {
@@ -2337,7 +2338,7 @@
         }
       ],
       "estHours": {
-        "run": 7.8,
+        "run": 7.9,
         "swim": 0.0,
         "strength": 0.4,
         "total": 8.3
@@ -2418,7 +2419,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "14 km easy (~79 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2438,7 +2439,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: 4x100 m strides, keep it short",
+            "detail": "6 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: 4x100 m strides, keep it short",
             "estKm": 6
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2446,10 +2447,10 @@
           "bigPicture": "LT + endurance 5 (10K checkpoint) (specific).",
           "estKm": 6,
           "estMin": {
-            "run": 34,
+            "run": 37,
             "swim": 0,
             "strength": 0,
-            "total": 34
+            "total": 37
           }
         },
         {
@@ -2497,7 +2498,7 @@
         "run": 8.9,
         "swim": 0.6,
         "strength": 0.7,
-        "total": 10.1
+        "total": 10.2
       }
     },
     {
@@ -2575,7 +2576,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2583,10 +2584,10 @@
           "bigPicture": "Race prep 1 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 20,
-            "total": 80
+            "total": 82
           }
         },
         {
@@ -2595,7 +2596,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "14 km easy (~82 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2603,10 +2604,10 @@
           "bigPicture": "Race prep 1 (specific).",
           "estKm": 14.0,
           "estMin": {
-            "run": 79,
+            "run": 82,
             "swim": 0,
             "strength": 0,
-            "total": 79
+            "total": 82
           }
         },
         {
@@ -2615,7 +2616,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2623,10 +2624,10 @@
           "bigPicture": "Race prep 1 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 60
+            "total": 62
           }
         },
         {
@@ -2651,10 +2652,10 @@
         }
       ],
       "estHours": {
-        "run": 9.7,
+        "run": 9.8,
         "swim": 0.6,
         "strength": 0.8,
-        "total": 11.1
+        "total": 11.2
       }
     },
     {
@@ -2672,7 +2673,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "9.5 km very easy (~59 min, stop by 70), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 9.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2680,10 +2681,10 @@
           "bigPicture": "Race prep 2 (peak): Peak week, ~110 km (Pfitzinger 18/70 peaks at ~113 km). Monday stays a recovery run to fit the volume; add an easy 20-30 min swim later that day if you like. The 19 km at 4:09 inside a 30 km run is the hardest session of the block.",
           "estKm": 9.5,
           "estMin": {
-            "run": 57,
+            "run": 59,
             "swim": 0,
             "strength": 0,
-            "total": 57
+            "total": 59
           }
         },
         {
@@ -2732,7 +2733,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "55 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
+            "detail": "9.5 km very easy (~59 min, stop by 70), HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S2, short plyo (~20 min): pogo hops 3x20, alternate-leg bounds 3x6/leg, side plank 2x45 s/side. ~60 contacts, quality over quantity.",
             "estKm": 9.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2740,10 +2741,10 @@
           "bigPicture": "Race prep 2 (peak) (specific).",
           "estKm": 9.5,
           "estMin": {
-            "run": 57,
+            "run": 59,
             "swim": 0,
             "strength": 20,
-            "total": 77
+            "total": 79
           }
         },
         {
@@ -2752,7 +2753,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "75 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "13 km easy (~77 min, stop by 90), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 13.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2760,10 +2761,10 @@
           "bigPicture": "Race prep 2 (peak) (specific).",
           "estKm": 13.0,
           "estMin": {
-            "run": 73,
+            "run": 77,
             "swim": 0,
             "strength": 0,
-            "total": 73
+            "total": 77
           }
         },
         {
@@ -2772,7 +2773,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "8.5 km very easy (~52 min, stop by 60), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 8.5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2780,10 +2781,10 @@
           "bigPicture": "Race prep 2 (peak) (specific).",
           "estKm": 8.5,
           "estMin": {
-            "run": 51,
+            "run": 52,
             "swim": 0,
             "strength": 0,
-            "total": 51
+            "total": 52
           }
         },
         {
@@ -2808,10 +2809,10 @@
         }
       ],
       "estHours": {
-        "run": 9.8,
+        "run": 9.9,
         "swim": 0.0,
         "strength": 0.8,
-        "total": 10.6
+        "total": 10.8
       }
     },
     {
@@ -2889,7 +2890,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "80 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "14 km easy (~79 min, stop by 95), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 14.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2909,7 +2910,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2917,10 +2918,10 @@
           "bigPicture": "Race prep 3 (HM checkpoint) (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 60
+            "total": 62
           }
         },
         {
@@ -2929,7 +2930,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: keep it short",
+            "detail": "6 km easy (~37 min, stop by 45), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Pre-race: keep it short",
             "estKm": 6
           },
           "movement": "Bike commute fine at easy effort.",
@@ -2937,10 +2938,10 @@
           "bigPicture": "Race prep 3 (HM checkpoint) (specific).",
           "estKm": 6,
           "estMin": {
-            "run": 34,
+            "run": 37,
             "swim": 0,
             "strength": 0,
-            "total": 34
+            "total": 37
           }
         },
         {
@@ -2965,10 +2966,10 @@
         }
       ],
       "estHours": {
-        "run": 7.8,
+        "run": 7.9,
         "swim": 0.6,
         "strength": 0.5,
-        "total": 8.9
+        "total": 9.0
       }
     },
     {
@@ -3006,7 +3007,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary. HOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3014,10 +3015,10 @@
           "bigPicture": "Race prep 4 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 30,
-            "total": 90
+            "total": 92
           }
         },
         {
@@ -3066,7 +3067,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "60 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "10 km very easy (~62 min, stop by 75), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 10.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3074,10 +3075,10 @@
           "bigPicture": "Race prep 4 (specific).",
           "estKm": 10.0,
           "estMin": {
-            "run": 60,
+            "run": 62,
             "swim": 0,
             "strength": 0,
-            "total": 60
+            "total": 62
           }
         },
         {
@@ -3086,7 +3087,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "60 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "11 km easy (~65 min, stop by 75), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 11.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3094,10 +3095,10 @@
           "bigPicture": "Race prep 4 (specific).",
           "estKm": 11.0,
           "estMin": {
-            "run": 62,
+            "run": 65,
             "swim": 0,
             "strength": 0,
-            "total": 62
+            "total": 65
           }
         },
         {
@@ -3122,10 +3123,10 @@
         }
       ],
       "estHours": {
-        "run": 8.8,
+        "run": 8.9,
         "swim": 0.0,
         "strength": 0.5,
-        "total": 9.3
+        "total": 9.4
       }
     },
     {
@@ -3203,7 +3204,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "50 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "8 km very easy (~49 min, stop by 60), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 8.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3211,10 +3212,10 @@
           "bigPicture": "Taper 1 (taper).",
           "estKm": 8.0,
           "estMin": {
-            "run": 48,
+            "run": 49,
             "swim": 0,
             "strength": 0,
-            "total": 48
+            "total": 49
           }
         },
         {
@@ -3243,7 +3244,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "6 km very easy (~37 min, stop by 45), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 6.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3251,10 +3252,10 @@
           "bigPicture": "Taper 1 (taper).",
           "estKm": 6.0,
           "estMin": {
-            "run": 36,
+            "run": 37,
             "swim": 0,
             "strength": 0,
-            "total": 36
+            "total": 37
           }
         },
         {
@@ -3279,10 +3280,10 @@
         }
       ],
       "estHours": {
-        "run": 7.7,
+        "run": 7.8,
         "swim": 0.6,
         "strength": 0.5,
-        "total": 8.8
+        "total": 8.9
       }
     },
     {
@@ -3380,7 +3381,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "50 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "9 km easy (~54 min, stop by 65), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 9.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3388,10 +3389,10 @@
           "bigPicture": "Taper 2 (taper).",
           "estKm": 9.0,
           "estMin": {
-            "run": 51,
+            "run": 54,
             "swim": 0,
             "strength": 0,
-            "total": 51
+            "total": 54
           }
         },
         {
@@ -3400,7 +3401,7 @@
           "training": {
             "type": "easy",
             "title": "Recovery run",
-            "detail": "35 min very easy, HR cap 130 bpm. Slower than feels necessary.",
+            "detail": "6 km very easy (~37 min, stop by 45), HR cap 130 bpm. Slower than feels necessary.",
             "estKm": 6.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3408,10 +3409,10 @@
           "bigPicture": "Taper 2 (taper).",
           "estKm": 6.0,
           "estMin": {
-            "run": 36,
+            "run": 37,
             "swim": 0,
             "strength": 0,
-            "total": 36
+            "total": 37
           }
         },
         {
@@ -3436,7 +3437,7 @@
         }
       ],
       "estHours": {
-        "run": 6.0,
+        "run": 6.1,
         "swim": 0.6,
         "strength": 0.3,
         "total": 7.0
@@ -3457,7 +3458,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "40 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
+            "detail": "7 km easy (~43 min, stop by 50), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery",
             "estKm": 7.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3465,10 +3466,10 @@
           "bigPicture": "Race week: Race week. Carb-load 8-12 g/kg/day for the last 36-48 h, low-FODMAP/low-fibre/low-fructose as rehearsed before the HM. No NSAIDs. Nothing new.",
           "estKm": 7.0,
           "estMin": {
-            "run": 40,
+            "run": 43,
             "swim": 0,
             "strength": 0,
-            "total": 40
+            "total": 43
           }
         },
         {
@@ -3497,7 +3498,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "35 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
+            "detail": "6 km easy (~34 min, stop by 40), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it)",
             "estKm": 6.0
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3537,7 +3538,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run + strides",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Include 3x1 min at MP",
+            "detail": "5 km easy (~31 min, stop by 40), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it) + 6x20s relaxed strides, full walk-back recovery. Include 3x1 min at MP",
             "estKm": 5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3545,10 +3546,10 @@
           "bigPicture": "Race week (taper).",
           "estKm": 5,
           "estMin": {
-            "run": 28,
+            "run": 31,
             "swim": 0,
             "strength": 0,
-            "total": 28
+            "total": 31
           }
         },
         {
@@ -3557,7 +3558,7 @@
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "detail": "30 min easy, HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). 15 min shakeout + 3 strides",
+            "detail": "5 km easy (~31 min, stop by 40), HR cap 140 bpm (hard ceiling -- walk a hill rather than cross it). 15 min shakeout + 3 strides",
             "estKm": 5
           },
           "movement": "Bike commute fine at easy effort.",
@@ -3565,10 +3566,10 @@
           "bigPicture": "Race week (taper).",
           "estKm": 5,
           "estMin": {
-            "run": 28,
+            "run": 31,
             "swim": 0,
             "strength": 0,
-            "total": 28
+            "total": 31
           }
         },
         {
@@ -3593,10 +3594,10 @@
         }
       ],
       "estHours": {
-        "run": 6.0,
+        "run": 6.1,
         "swim": 0.0,
         "strength": 0.0,
-        "total": 6.0
+        "total": 6.1
       }
     }
   ]
