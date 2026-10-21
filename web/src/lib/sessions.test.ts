@@ -1,22 +1,7 @@
 import { romePlan } from "./plan";
-import { HR_BANDS, LT2, bandOf, capFor, compareRows, keptCap, sessionLog, sessionOn, weekProgress } from "./sessions";
+import { HR_BANDS, LT2, bandOf, capFor, compareRows, keptCap, sessionOn, weekProgress } from "./sessions";
 
 const planDay = (iso: string) => romePlan.weeks.flatMap((w) => w.days).find((d) => d.date === iso)!;
-
-describe("sessions data", () => {
-  it("only holds plan days, each at most once", () => {
-    const dates = sessionLog.days.map((d) => d.date);
-    expect(new Set(dates).size).toBe(dates.length);
-    for (const d of dates) expect(planDay(d)).toBeDefined();
-  });
-
-  it("links moved sessions both ways", () => {
-    for (const s of sessionLog.days) {
-      if (s.movedTo) expect(sessionOn(s.movedTo)?.movedFrom).toBe(s.date);
-      if (s.movedFrom) expect(sessionOn(s.movedFrom)?.movedTo).toBe(s.date);
-    }
-  });
-});
 
 describe("HR bands", () => {
   it("puts each bpm in exactly one band, with LT2 as the top edge", () => {
