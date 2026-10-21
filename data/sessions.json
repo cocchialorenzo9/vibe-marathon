@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-21T11:43:29+02:00",
+  "syncedAt": "2026-10-21T21:30:00+02:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -146,6 +146,37 @@
         "Average 133 bpm sat in the 130–140 band, inside the 140 cap, at about 5:53 /km. That is the right effort for this run.",
         "Max 145 came on the climbs: 'Over the bridges back' and '3 Brücken Sprint raus' averaged 138–139. The plan calls 140 a hard ceiling, so walk the hill rather than cross it.",
         "Strava recorded one 5.1 km lap, so there is no per-km check. Set the watch to auto-lap every km to see where heart rate drifts."
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "status": "done",
+      "headline": "Recovery run, under the cap",
+      "summary": "Planned 4.5 km recovery run, done on the day in the evening: 4.68 km in 27:24 at about 5:51 /km. Average 121 bpm and max 138, so the run stayed inside the 130 cap on average. The home strength session isn't in Strava; it can be added if done off-watch.",
+      "activity": {
+        "stravaId": "20679350186",
+        "sport": "Run",
+        "distanceKm": 4.68,
+        "movingSec": 1644,
+        "avgHr": 121,
+        "maxHr": 138,
+        "laps": [
+          {
+            "km": 4.5,
+            "sec": 1582,
+            "hr": 121
+          },
+          {
+            "km": 0.18,
+            "sec": 62,
+            "hr": 124
+          }
+        ]
+      },
+      "learn": [
+        "Average 121 bpm at about 5:51 /km, well under the 130 cap. Max 138 came on the climbs, so it briefly crossed the cap there.",
+        "Strava recorded one 4.5 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km.",
+        "Segments in the first 2 km read 87–104 bpm, which looks like slow sensor lock-on. The real average is probably a few bpm above 121, still inside the <130 band."
       ]
     }
   ]
