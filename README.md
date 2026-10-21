@@ -24,6 +24,8 @@ npm test
 npm run build      # into web/dist
 ```
 
+The app imports data through the `@data` alias. In the build it points at `data/`; under `npm test` it points at a frozen copy in `web/src/test/fixtures/`, so the nightly data pushes never break tests. Only `web/src/lib/data.test.ts` reads the real `data/` files, and it checks rules that hold on any day (each date once, moved sessions linked both ways, no unresolved `{LT}` tokens). To test against newer data, copy the file into the fixtures and update the tests that depend on it.
+
 - `#/` — Season 02: today, tomorrow, this week, the 22-week plan and checkpoints, read at build time from `data/training-plan-rome-2027.json`. `#/?date=2026-11-21` previews another day.
 - `#/sessions` — the session log: every past plan day next to what Strava recorded (planned vs done, HR per km against the cap, HR bands, what to carry forward), from `data/sessions.json`. The Program calendar shows the same status on past days. `#/sessions?day=2026-10-17` opens one day.
 - `#/munich-2026` — Season 01 race recap (figures in `web/src/data/munich2026.ts`).

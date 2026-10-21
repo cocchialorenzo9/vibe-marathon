@@ -1,0 +1,120 @@
+{
+  "source": "strava",
+  "syncedAt": "2026-10-18T21:46:00+02:00",
+  "days": [
+    {
+      "date": "2026-10-12",
+      "status": "rest",
+      "headline": "Day after Munich",
+      "summary": "Rested as planned, the day after Munich.",
+      "learn": ["Rest as planned. Walks don't need to be logged."]
+    },
+    {
+      "date": "2026-10-13",
+      "status": "rest",
+      "headline": "Full rest",
+      "summary": "Rested as planned.",
+      "learn": ["Rest as planned, two days after the marathon."]
+    },
+    {
+      "date": "2026-10-14",
+      "status": "none",
+      "headline": "Optional swim, not recorded",
+      "summary": "No swim in Strava. It was optional, so nothing is lost. If you swam without the watch, add it so the week total is right.",
+      "learn": [
+        "This session was optional, so skipping it costs nothing. If you did swim without the watch, add it so the week total is right."
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "status": "moved",
+      "movedTo": "2026-10-16",
+      "headline": "Recovery run moved to Friday",
+      "summary": "Not run today. You ran this recovery run on Friday instead: 4.38 km at 6:00 /km.",
+      "learn": [
+        "No run recorded today. It shows up on Friday, so the plan counts it as moved, not missed.",
+        "Note why it moved. After a few weeks the reasons show a pattern: meetings, weather, fatigue."
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "status": "extra",
+      "movedFrom": "2026-10-15",
+      "headline": "Thursday's run, done a day late",
+      "summary": "Planned rest day. You ran Thursday's recovery run here instead. Km 1 heart rate read 88 bpm (sensor still locking on), so the real average is about 132, not 122. Km 3–4 went over the 130 cap.",
+      "activity": {
+        "stravaId": "20610637487",
+        "sport": "Run",
+        "distanceKm": 4.38,
+        "movingSec": 1575,
+        "avgHr": 122,
+        "maxHr": 144,
+        "hrNote": "Km 1 read 88 bpm while the sensor locked on; the real average is about 132.",
+        "laps": [
+          { "km": 1, "sec": 372, "hr": 88 },
+          { "km": 1, "sec": 355, "hr": 129 },
+          { "km": 1, "sec": 352, "hr": 135 },
+          { "km": 1, "sec": 357, "hr": 134 },
+          { "km": 0.382, "sec": 141, "hr": 129 }
+        ]
+      },
+      "learn": [
+        "Km 1 averaged 88 bpm while pace was normal: the sensor was still locking on. The real average is closer to 132, so treat 122 as a reading error, not a win.",
+        "Km 3–4 were over the cap at an even 5:52–5:57 /km. Cap creep starts in the second half, so slow down before it, not after.",
+        "Moving the run kept the week's volume, but it made Friday–Saturday back-to-back. That's fine in a recovery week; in the build, move rest days, not runs."
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "status": "over",
+      "headline": "Recovery run, a little too quick",
+      "summary": "Run on the planned day, close to the planned distance, but 17 s/km quicker than needed. Heart rate sat 4–6 bpm over the 130 cap from km 2 on: about 6:00 /km is your under-130 pace for now.",
+      "activity": {
+        "stravaId": "20623666498",
+        "sport": "Run",
+        "distanceKm": 4.37,
+        "movingSec": 1500,
+        "avgHr": 134,
+        "maxHr": 141,
+        "laps": [
+          { "km": 1, "sec": 352, "hr": 130 },
+          { "km": 1, "sec": 325, "hr": 135 },
+          { "km": 1, "sec": 342, "hr": 136 },
+          { "km": 1, "sec": 347, "hr": 135 },
+          { "km": 0.372, "sec": 137, "hr": 132 }
+        ]
+      },
+      "learn": [
+        "Heart rate sat 4–6 bpm over the 130 cap from km 2 on, at 5:25–5:47 /km. Friday, at about 5:55 /km, km 2 stayed at 129. For now, your under-130 pace is about 6:00 /km or slower.",
+        "Two Strava segment PRs on a recovery run is a warning sign: segments pull the pace up. Run the loop the other way round, or hide pace and watch only heart rate.",
+        "Average heart rate sat in the 130–140 band, one band above the cap. The plan's 130 is strict on purpose this week: muscle damage, not fitness, is the limit."
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "status": "done",
+      "headline": "Recovery run, kept under the cap",
+      "summary": "Planned 30 min recovery run, done on the day: 4.84 km in 30:00 at about 6:12 /km. Average 125 bpm, highest km lap 128, so every lap stayed under the 130 cap.",
+      "activity": {
+        "stravaId": "20636951770",
+        "sport": "Run",
+        "distanceKm": 4.84,
+        "movingSec": 1800,
+        "avgHr": 125,
+        "maxHr": 137,
+        "laps": [
+          { "km": 1, "sec": 380, "hr": 120 },
+          { "km": 1, "sec": 348, "hr": 126 },
+          { "km": 1, "sec": 368, "hr": 126 },
+          { "km": 1, "sec": 379, "hr": 128 },
+          { "km": 0.839, "sec": 326, "hr": 123 }
+        ]
+      },
+      "learn": [
+        "Laps ran 6:20, 5:48, 6:08 and 6:19 /km at 120–128 bpm, all under the 130 cap. About 6:10 /km or slower keeps you in the <130 band for now.",
+        "Km 2 was the quickest at 5:48 /km, on a slight downhill, and heart rate rose to 126. Let a downhill pull the pace up and you start eating into the cap.",
+        "Max heart rate 137 came on km 4, the climb (9 m gain). Tuesday's easy run has a 140 cap, but keep the same patience on hills."
+      ]
+    }
+  ]
+}

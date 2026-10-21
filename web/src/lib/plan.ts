@@ -1,4 +1,4 @@
-import romePlanJson from "../../../data/training-plan-rome-2027.json";
+import romePlanJson from "@data/training-plan-rome-2027.json";
 import { resolveLtDeep } from "./athlete";
 
 export type SessionType =

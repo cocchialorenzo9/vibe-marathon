@@ -1,8 +1,8 @@
-import athleteJson from "../../../data/athlete.json";
+import athleteJson from "@data/athlete.json";
 import { LT2, pctOfLt, resolveLt, resolveLtDeep } from "./athlete";
 
 describe("athlete", () => {
-  it("reads LT from data/athlete.json", () => {
+  it("reads LT from athlete.json", () => {
     expect(LT2).toBe(athleteJson.lthr.bpm);
   });
 

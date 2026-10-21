@@ -1,4 +1,4 @@
-import athleteJson from "../../../data/athlete.json";
+import athleteJson from "@data/athlete.json";
 
 /**
  * The athlete's physiological anchors from data/athlete.json — the single
