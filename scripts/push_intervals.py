@@ -13,7 +13,7 @@ yourself in Intervals.icu are never touched.
 
 Workouts give every HR target as % LTHR ("60-85% LTHR"), the only HR form
 Intervals.icu parses, and pace targets as "4:09/km Pace" (see
-docs/adr/0007-intervals-icu-workout-sync.md). The Run sport's LTHR in
+docs/adr/0008-intervals-icu-workout-sync.md). The Run sport's LTHR in
 Intervals.icu is set to data/athlete.json's value when they differ, so % LTHR
 means the same bpm on the watch as in the plan.
 

@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-18T21:46:00+02:00",
+  "syncedAt": "2026-10-21T11:43:29+02:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -114,6 +114,38 @@
         "Laps ran 6:20, 5:48, 6:08 and 6:19 /km at 120–128 bpm, all under the 130 cap. About 6:10 /km or slower keeps you in the <130 band for now.",
         "Km 2 was the quickest at 5:48 /km, on a slight downhill, and heart rate rose to 126. Let a downhill pull the pace up and you start eating into the cap.",
         "Max heart rate 137 came on km 4, the climb (9 m gain). Tuesday's easy run has a 140 cap, but keep the same patience on hills."
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "status": "none",
+      "headline": "Easy swim, not recorded",
+      "summary": "No swim in Strava. If you swam without the watch, it can be added so the week total is right.",
+      "learn": [
+        "Pool sessions only show up here if the watch recorded them. If you swam off-watch, add it."
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "status": "done",
+      "headline": "Easy run, inside the 140 cap",
+      "summary": "Planned 30 min easy run, done on the day: 5.14 km in 30:14 at about 5:53 /km. Average 133 bpm against the 140 cap; the peak was 145 on the bridge climbs.",
+      "activity": {
+        "stravaId": "20656625442",
+        "sport": "Run",
+        "distanceKm": 5.14,
+        "movingSec": 1814,
+        "avgHr": 133,
+        "maxHr": 145,
+        "laps": [
+          { "km": 5.1, "sec": 1800, "hr": 133 },
+          { "km": 0.04, "sec": 14, "hr": 138 }
+        ]
+      },
+      "learn": [
+        "Average 133 bpm sat in the 130–140 band, inside the 140 cap, at about 5:53 /km. That is the right effort for this run.",
+        "Max 145 came on the climbs: 'Over the bridges back' and '3 Brücken Sprint raus' averaged 138–139. The plan calls 140 a hard ceiling, so walk the hill rather than cross it.",
+        "Strava recorded one 5.1 km lap, so there is no per-km check. Set the watch to auto-lap every km to see where heart rate drifts."
       ]
     }
   ]

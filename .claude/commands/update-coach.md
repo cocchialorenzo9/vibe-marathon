@@ -135,7 +135,7 @@ and the web app read it from there; `ATHLETE_LTHR` still overrides it for a
 one-off run. Plan text never hardcodes LT-anchored bpm: `training-plan.json`
 uses %LT, and the Rome plan writes every HR as `% LTHR` inside each day's
 `training.workout` (Intervals.icu workout text, the plan's only session
-description — see `docs/adr/0007-intervals-icu-workout-sync.md`). When you
+description — see `docs/adr/0008-intervals-icu-workout-sync.md`). When you
 write HR into a plan, use `% LTHR`; convert to bpm against `data/athlete.json`
 when you quote it.
 
@@ -365,7 +365,7 @@ Read `data/training-plan.json`. For each day in `weeks[].days[]` whose `date` is
   - Reference TSB or readiness context where relevant (e.g. "after this week's fatigue" or "legs are fresh")
   - Give a forward-looking hook: what this session prepares for
 
-Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged — the one exception is Step 4f, which is allowed to finalize a `PROVISIONAL` Sunday easy run's training fields for its one target week.
+Write these changes back into `data/training-plan.json`. Modify only the `movement`, `food`, and `bigPicture` fields of future days (date ≥ tomorrow). Leave past days and the training fields (`type`, `title`, `detail`) unchanged — the one exception is Step 4f, which is allowed to finalize a `PROVISIONAL` Sunday easy run's training fields for its one target week. Step 4e may also refresh the time estimate and stop-by time of km-prescribed easy/recovery days.
 
 ## Step 4c — Recent activity analysis
 
@@ -538,7 +538,11 @@ step exists to prevent.
 2. **Compute `estKm` per day and per week**: walk all weeks in
    `data/training-plan.json`. For each day whose `training.type` is
    `easy`/`long`/`recovery`, set `training.estKm` = prescribed minutes ×
-   `realZone2Pace_min_km` (parse minutes from `training.detail`; where a day
+   `realZone2Pace_min_km` (parse minutes from `training.detail`; days whose
+   detail opens with km, e.g. "8 km easy (~45 min, stop by 55), HR cap 140",
+   or whose `training.workout` step is in km, e.g. `- 8km 60-85% LTHR` with
+   the note "~45 min, stop by 55 min", are km-prescribed: keep their `estKm` and refresh the time instead, see
+   below; where a day
    mixes an easy portion with an explicit MP-pace segment, e.g. "first 100
    at easy effort, last 20 at 4:20/km", compute each portion with its own
    pace and sum). For `tempo` days, compute distance from the day's own
@@ -546,6 +550,16 @@ step exists to prevent.
    step) plus an easy-pace estimate for warmup/cooldown minutes. Skip `swim`
    and `race` days. Sum each week's day-level `estKm` into `week.estKm`.
    Write these fields back into `data/training-plan.json`.
+   For km-prescribed easy/recovery days in future weeks, the km is the
+   target and only the time moves: recompute the estimate as km × that cap's
+   recent median pace (`realZone2Pace_min_km` for the 140 cap; for the 130
+   cap, the median of qualifying runs averaging <130 bpm), +3 min with
+   strides, rounded; stop-by = estimate × 1.15 rounded up to 5 min. Rewrite
+   only the `(~N min, stop by M)` part of `training.detail` (in the Rome
+   plan: the "~N min, stop by M min" note in `training.workout`) and the day's
+   `estMin.run`/`estMin.total`, then re-sum the week's `estHours`. This is
+   an exception to Step 4b's "leave training fields unchanged" rule. See
+   `docs/adr/0007-km-targets-for-easy-runs.md`.
 3. **Write `coach.json`'s `volumeCheck` block** (see Step 5 schema) with
    `realZone2Pace_min_km`, today's `thisWeekEstKm`, `peakWeekEstKm` (the
    `week.estKm` for whichever week has the plan's highest value), a

@@ -1,4 +1,4 @@
-import sessionsJson from "../../../data/sessions.json";
+import sessionsJson from "@data/sessions.json";
 import { HR_BAND_CUTOFFS, LT2 } from "./athlete";
 import { daysBetween, hrCap, romePlan, weekdayDate, type PlanDay, type PlanWeek } from "./plan";
 
