@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-21T21:30:00+02:00",
+  "syncedAt": "2026-10-23T21:50:00+02:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -177,6 +177,68 @@
         "Average 121 bpm at about 5:51 /km, well under the 130 cap. Max 138 came on the climbs, so it briefly crossed the cap there.",
         "Strava recorded one 4.5 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km.",
         "Segments in the first 2 km read 87–104 bpm, which looks like slow sensor lock-on. The real average is probably a few bpm above 121, still inside the <130 band."
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "status": "moved",
+      "movedTo": "2026-10-23",
+      "headline": "Easy run moved to Friday",
+      "summary": "Planned 6.5 km easy run. Nothing recorded on the day; you ran an easy 5.49 km on Friday's rest day instead.",
+      "learn": [
+        "The run moved a day rather than being skipped, which is fine this week. Keep the next rest day free of running."
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "status": "extra",
+      "movedFrom": "2026-10-22",
+      "headline": "Thursday's easy run, done on the rest day",
+      "summary": "Planned rest day. You ran Thursday's easy run here: 5.49 km in 31:31 at about 5:45 /km, shorter than the 6.5 km planned but well inside the 45 min stop-by. Heart rate reads low after km 2 (sensor dropout), so the average of 105 is not real.",
+      "activity": {
+        "stravaId": "20702389484",
+        "sport": "Run",
+        "distanceKm": 5.49,
+        "movingSec": 1891,
+        "avgHr": 105,
+        "maxHr": 144,
+        "hrNote": "Km 3 to the end read 74–102 bpm, clearly a sensor dropout; only km 1–2 (126 and 136 bpm) are trustworthy.",
+        "laps": [
+          {
+            "km": 1,
+            "sec": 336,
+            "hr": 126
+          },
+          {
+            "km": 1,
+            "sec": 345,
+            "hr": 136
+          },
+          {
+            "km": 1,
+            "sec": 355,
+            "hr": 102
+          },
+          {
+            "km": 1,
+            "sec": 338,
+            "hr": 95
+          },
+          {
+            "km": 1,
+            "sec": 350,
+            "hr": 81
+          },
+          {
+            "km": 0.485,
+            "sec": 167,
+            "hr": 74
+          }
+        ]
+      },
+      "learn": [
+        "Km 1 and 2 ran 5:36 and 5:45 /km at 126 and 136 bpm, inside the 140 cap; the rest of the heart rate trace is unusable.",
+        "Check the strap or watch fit before the next run so the cap can be checked over the whole distance."
       ]
     }
   ]
