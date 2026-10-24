@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-23T21:50:00+02:00",
+  "syncedAt": "2026-10-24T21:30:00+02:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -239,6 +239,41 @@
       "learn": [
         "Km 1 and 2 ran 5:36 and 5:45 /km at 126 and 136 bpm, inside the 140 cap; the rest of the heart rate trace is unusable.",
         "Check the strap or watch fit before the next run so the cap can be checked over the whole distance."
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "status": "over",
+      "headline": "Easy run, longer than planned and over the cap late",
+      "summary": "Planned 5.5 km easy run with strides (cap 140). Done on the day in the evening: 6.97 km in 38:19 at about 5:30 /km. Average 138 bpm, but the last 2.7 km averaged 144 and the run peaked at 157, over the 140 cap. It ran about 1.5 km past the plan, still inside the 40 min stop-by.",
+      "activity": {
+        "stravaId": "20715988946",
+        "sport": "Run",
+        "distanceKm": 6.97,
+        "movingSec": 2299,
+        "avgHr": 138,
+        "maxHr": 157,
+        "laps": [
+          { "km": 2.81, "sec": 913, "hr": 131 },
+          { "km": 0.06, "sec": 20, "hr": 137 },
+          { "km": 0.17, "sec": 60, "hr": 139 },
+          { "km": 0.06, "sec": 20, "hr": 142 },
+          { "km": 0.19, "sec": 60, "hr": 146 },
+          { "km": 0.06, "sec": 20, "hr": 147 },
+          { "km": 0.19, "sec": 60, "hr": 144 },
+          { "km": 0.06, "sec": 20, "hr": 143 },
+          { "km": 0.18, "sec": 60, "hr": 142 },
+          { "km": 0.06, "sec": 20, "hr": 140 },
+          { "km": 0.18, "sec": 60, "hr": 140 },
+          { "km": 0.06, "sec": 20, "hr": 138 },
+          { "km": 0.19, "sec": 60, "hr": 135 },
+          { "km": 2.7, "sec": 906, "hr": 144 }
+        ]
+      },
+      "learn": [
+          "The first 2.8 km ran at 5:25 /km and 131 bpm, right in the easy range. The final 2.7 km ran 5:36 /km at 144 bpm, over the 140 cap: finish as relaxed as you start.",
+          "Heart rate ran 139–147 through the stride block. Strides may go above the cap, but let it settle back under 140 between them.",
+          "Max 157 landed in the last section, in the 155–LT band. On an easy day, walk or ease off as soon as the watch reads 140."
       ]
     }
   ]
