@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-24T21:30:00+02:00",
+  "syncedAt": "2026-10-26T21:30:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -274,6 +274,42 @@
           "The first 2.8 km ran at 5:25 /km and 131 bpm, right in the easy range. The final 2.7 km ran 5:36 /km at 144 bpm, over the 140 cap: finish as relaxed as you start.",
           "Heart rate ran 139–147 through the stride block. Strides may go above the cap, but let it settle back under 140 between them.",
           "Max 157 landed in the last section, in the 155–LT band. On an easy day, walk or ease off as soon as the watch reads 140."
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "status": "none",
+      "headline": "Easy run not recorded",
+      "summary": "Planned 8 km easy run (stop by 55 min). Nothing in Strava that day or within two days that matches it, so it counts as missed. If you ran off-watch, it can be added.",
+      "learn": [
+        "The 8 km run was the week's longest. Monday's run was 4.15 km, so the week is about 4 km short of the long-run plan; don't make it up in one go.",
+        "If a run is skipped, drop it rather than stacking it onto the next day: the plan's 140 cap matters more than the km."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "status": "done",
+      "headline": "Easy run, short of the plan, inside the cap",
+      "summary": "Planned 6.5 km easy run with strides (cap 140). Done on the day in the evening: 4.15 km in 23:20 at about 5:37 /km. Average 136 bpm, peak 149. It ended about 2.3 km short of the plan and well before the 40 min mark.",
+      "activity": {
+        "stravaId": "20740289284",
+        "sport": "Run",
+        "distanceKm": 4.15,
+        "movingSec": 1400,
+        "avgHr": 136,
+        "maxHr": 149,
+        "laps": [
+          {
+            "km": 4.15,
+            "sec": 1400,
+            "hr": 136
+          }
+        ]
+      },
+      "learn": [
+        "Average 136 bpm sat in the 130–140 band, under the 140 cap, at about 5:37 /km. Max 149 reached the 140–155 band, probably on the strides.",
+        "Strava recorded one 4.15 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km.",
+        "The run stopped at 23 minutes against about 40 planned. If it was fatigue, the shorter run is the right call; note the reason so a pattern shows."
       ]
     }
   ]
