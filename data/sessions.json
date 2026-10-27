@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-26T21:30:00+01:00",
+  "syncedAt": "2026-10-27T21:46:56+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -310,6 +310,32 @@
         "Average 136 bpm sat in the 130–140 band, under the 140 cap, at about 5:37 /km. Max 149 reached the 140–155 band, probably on the strides.",
         "Strava recorded one 4.15 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km.",
         "The run stopped at 23 minutes against about 40 planned. If it was fatigue, the shorter run is the right call; note the reason so a pattern shows."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "status": "done",
+      "headline": "Easy run, average inside the cap, one spike to 160",
+      "summary": "Planned 6.5 km easy run (cap 140). Done on the day in the morning: 4.86 km in 25:54 at about 5:20 /km. Average 137 bpm, inside the 140 cap, but the peak was 160. It ended about 1.6 km short of the plan and well before the 45 min stop-by. The home strength session isn't in Strava; it can be added if done off-watch.",
+      "activity": {
+        "stravaId": "20747100200",
+        "sport": "Run",
+        "distanceKm": 4.86,
+        "movingSec": 1554,
+        "avgHr": 137,
+        "maxHr": 160,
+        "laps": [
+          {
+            "km": 4.85,
+            "sec": 1568,
+            "hr": 137
+          }
+        ]
+      },
+      "learn": [
+        "Average 137 bpm sat in the 130–140 band, under the 140 cap, but at 5:20 /km it is your quickest easy run this week (Monday was 5:37, Saturday 5:30). The pace came from effort, not from a lower heart rate.",
+        "Max 160 landed in the 155–LT band. The climb segments read 142 bpm ('Wiesen North End', 'behind the Girl'), so the spike was probably a short hill push: walk it once the watch reads 140.",
+        "Strava recorded one 4.85 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km."
       ]
     }
   ]
