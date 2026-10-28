@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-27T21:46:56+01:00",
+  "syncedAt": "2026-10-28T21:47:12+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -336,6 +336,28 @@
         "Average 137 bpm sat in the 130–140 band, under the 140 cap, but at 5:20 /km it is your quickest easy run this week (Monday was 5:37, Saturday 5:30). The pace came from effort, not from a lower heart rate.",
         "Max 160 landed in the 155–LT band. The climb segments read 142 bpm ('Wiesen North End', 'behind the Girl'), so the spike was probably a short hill push: walk it once the watch reads 140.",
         "Strava recorded one 4.85 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km."
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "status": "over",
+      "headline": "Medium-long run, well over the cap",
+      "summary": "Planned 11 km medium-long run (cap 140). Done on the day in the morning: 10.43 km in 62:54 at about 6:02 /km, just short of the 11 km. Average 158 bpm and max 167, far over the 140 cap and in the 155–LT band for the whole run. Your Strava note says the heart rate monitor may have misread or you were very tired; the average is too high to be a pure sensor glitch, and the 6:02 /km pace is slower than your easy runs this week at lower heart rate.",
+      "activity": {
+        "stravaId": "20761535822",
+        "sport": "Run",
+        "distanceKm": 10.43,
+        "movingSec": 3774,
+        "avgHr": 158,
+        "maxHr": 167,
+        "laps": [
+          { "km": 10.42, "sec": 3774, "hr": 158 }
+        ]
+      },
+      "learn": [
+        "Average 158 bpm is 18 over the 140 cap at 6:02 /km. Earlier this week 5:20–5:37 /km held 136–137 bpm, so the same effort cost much more today.",
+        "If it was fatigue, this is the signal to take tomorrow's rest day fully and keep the next run under 130. If the strap misread, check its fit before the next run.",
+        "Strava recorded one 10.42 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km."
       ]
     }
   ]
