@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-28T21:47:12+01:00",
+  "syncedAt": "2026-10-29T21:47:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -358,6 +358,16 @@
         "Average 158 bpm is 18 over the 140 cap at 6:02 /km. Earlier this week 5:20–5:37 /km held 136–137 bpm, so the same effort cost much more today.",
         "If it was fatigue, this is the signal to take tomorrow's rest day fully and keep the next run under 130. If the strap misread, check its fit before the next run.",
         "Strava recorded one 10.42 km lap, so there is no per-km check against the cap. Set the watch to auto-lap every km."
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "status": "rest",
+      "headline": "Rest day",
+      "summary": "Planned rest day, nothing recorded in Strava. The home strength session S2 (plyo + core) isn't in Strava; it can be added if done off-watch.",
+      "learn": [
+        "Wednesday's medium-long run averaged 158 bpm, in the 155–LT band against a 140 cap, so a full rest day is the right lead-in to tomorrow's 14 km long run.",
+        "Tomorrow's long run has the same 60–85% LTHR ceiling (140 bpm): if the first km reads above 140, walk a hill rather than cross it."
       ]
     }
   ]
