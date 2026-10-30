@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-29T21:47:00+01:00",
+  "syncedAt": "2026-10-30T21:50:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -368,6 +368,43 @@
       "learn": [
         "Wednesday's medium-long run averaged 158 bpm, in the 155–LT band against a 140 cap, so a full rest day is the right lead-in to tomorrow's 14 km long run.",
         "Tomorrow's long run has the same 60–85% LTHR ceiling (140 bpm): if the first km reads above 140, walk a hill rather than cross it."
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "status": "done",
+      "headline": "Long run, done as planned; heart rate unreadable",
+      "summary": "Planned 10 km easy plus 20 min at 60-88% LTHR (cap 140 on the first block). Done on the day in the morning: 14.28 km in 77:36 at about 5:26 /km, which matches the planned distance and time. The heart rate trace is a sensor failure (average 105, falling to 48 over the last 550 m; your Strava note blames the H10), so the cap can't be checked. Max 146 and the first 10 km at 115 are the only readings that look plausible.",
+      "activity": {
+        "stravaId": "20787923837",
+        "sport": "Run",
+        "distanceKm": 14.28,
+        "movingSec": 4656,
+        "avgHr": 105,
+        "maxHr": 146,
+        "hrNote": "The 10 km lap averaged 115 bpm, then 82 over 3.73 km and 48 over the last 0.55 km: strap dropout, not real effort.",
+        "laps": [
+          {
+            "km": 10,
+            "sec": 3297,
+            "hr": 115
+          },
+          {
+            "km": 3.73,
+            "sec": 1200,
+            "hr": 82
+          },
+          {
+            "km": 0.55,
+            "sec": 159,
+            "hr": 48
+          }
+        ]
+      },
+      "learn": [
+        "14.28 km at 5:26 /km is the same pace as Saturday's easy run (5:30 /km at 138 bpm) over twice the distance, so with no usable heart rate you can't tell whether the 140 cap held.",
+        "Heart rate fell from 115 to 48 across the run, a strap dropout like Friday 23rd. Swap or moisten the H10 and test it on an easy run before the next long run.",
+        "Max 146 is the only plausible reading: it fits the 140–155 band on a climb. Next long run, check the first km against 140 before settling the pace."
       ]
     }
   ]
