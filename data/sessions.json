@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-30T21:50:00+01:00",
+  "syncedAt": "2026-10-31T21:47:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -405,6 +405,15 @@
         "14.28 km at 5:26 /km is the same pace as Saturday's easy run (5:30 /km at 138 bpm) over twice the distance, so with no usable heart rate you can't tell whether the 140 cap held.",
         "Heart rate fell from 115 to 48 across the run, a strap dropout like Friday 23rd. Swap or moisten the H10 and test it on an easy run before the next long run.",
         "Max 146 is the only plausible reading: it fits the 140–155 band on a climb. Next long run, check the first km against 140 before settling the pace."
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "status": "rest",
+      "headline": "Rest day, away",
+      "summary": "Planned rest day while away, nothing recorded in Strava.",
+      "learn": [
+        "Yesterday's 14.28 km long run had no usable heart rate, so the first easy run back is the chance to confirm the strap works and the 140 cap holds from the first km."
       ]
     }
   ]
