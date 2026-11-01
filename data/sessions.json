@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-10-31T21:47:00+01:00",
+  "syncedAt": "2026-11-01T21:47:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -414,6 +414,15 @@
       "summary": "Planned rest day while away, nothing recorded in Strava.",
       "learn": [
         "Yesterday's 14.28 km long run had no usable heart rate, so the first easy run back is the chance to confirm the strap works and the 140 cap holds from the first km."
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "status": "rest",
+      "headline": "Rest day, away",
+      "summary": "Planned rest day while away, nothing recorded in Strava.",
+      "learn": [
+        "Next planned session is Monday's easy swim, so the first run back is the first chance to check the H10 strap holds a clean reading under the 140 cap from km 1."
       ]
     }
   ]
