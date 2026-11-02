@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-11-01T21:47:00+01:00",
+  "syncedAt": "2026-11-02T21:50:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -423,6 +423,25 @@
       "summary": "Planned rest day while away, nothing recorded in Strava.",
       "learn": [
         "Next planned session is Monday's easy swim, so the first run back is the first chance to check the H10 strap holds a clean reading under the 140 cap from km 1."
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "status": "done",
+      "headline": "Easy swim, 1.5 km, effort crept up mid-session",
+      "summary": "Planned easy pool session, 30-40 min, about 1.5-2 km, RPE 3. Done on the day in the evening: 1.5 km in 28:47 moving time (38:03 elapsed) at 1:55 /100m. Average 138 bpm, max 166. Heart rate sat in the 130-140 band at the start, then several stretches climbed to 150-165, so parts were harder than the no-hard-sets brief. The first run back is tomorrow's hill sprints day.",
+      "activity": {
+        "stravaId": "20831845318",
+        "sport": "Swim",
+        "distanceKm": 1.5,
+        "movingSec": 1727,
+        "avgHr": 138,
+        "maxHr": 166,
+        "hrNote": "Wrist heart rate in the water is approximate; treat the peaks as indicative."
+      },
+      "learn": [
+        "Average 138 bpm is inside the 130-140 band, but the 25 m laps around the middle reached 155-166 (the 155-LT band and LT+), which is not RPE 3. Slow the first 500 m and keep each length under 150.",
+        "Moving time was 28:47 against 38:03 elapsed, so about 9 minutes were rest at the wall. For an easy swim, shorter rests with a steadier pace keep heart rate flatter than alternating bursts and long stops."
       ]
     }
   ]
