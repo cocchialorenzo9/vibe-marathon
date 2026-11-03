@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-11-02T21:50:00+01:00",
+  "syncedAt": "2026-11-03T21:50:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -442,6 +442,45 @@
       "learn": [
         "Average 138 bpm is inside the 130-140 band, but the 25 m laps around the middle reached 155-166 (the 155-LT band and LT+), which is not RPE 3. Slow the first 500 m and keep each length under 150.",
         "Moving time was 28:47 against 38:03 elapsed, so about 9 minutes were rest at the wall. For an easy swim, shorter rests with a steadier pace keep heart rate flatter than alternating bursts and long stops."
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "status": "done",
+      "headline": "Hill sprints done, 2.5 km short, cooldown ran hot",
+      "summary": "Planned warmup 5 km, 8 hill sprints of 10 s, cooldown 5 km (about 10 km, no HR cap on a quality day). Done in the evening: 7.49 km in 44:32 at about 5:57 /km, so the warmup and the sprints were done but the cooldown stopped at 1.27 km, about 18 minutes short of the 63. Warmup 5 km in 27:28 at 139 bpm (5:30 /km). The sprints and walk-backs sit between laps 2 and 17. Two bike commute rides (4.3 and 4.5 km) were also recorded. The home strength session S1 isn't in Strava; it can be added if done off-watch.",
+      "activity": {
+        "stravaId": "20845901293",
+        "sport": "Run",
+        "distanceKm": 7.49,
+        "movingSec": 2672,
+        "avgHr": 139,
+        "maxHr": 170,
+        "laps": [
+          { "km": 5.0, "sec": 1648, "hr": 139 },
+          { "km": 0.03, "sec": 10, "hr": 142 },
+          { "km": 0.08, "sec": 35, "hr": 140 },
+          { "km": 0.03, "sec": 10, "hr": 128 },
+          { "km": 0.13, "sec": 61, "hr": 137 },
+          { "km": 0.03, "sec": 10, "hr": 121 },
+          { "km": 0.14, "sec": 61, "hr": 118 },
+          { "km": 0.03, "sec": 10, "hr": 103 },
+          { "km": 0.12, "sec": 60, "hr": 110 },
+          { "km": 0.04, "sec": 10, "hr": 127 },
+          { "km": 0.14, "sec": 80, "hr": 146 },
+          { "km": 0.04, "sec": 10, "hr": 127 },
+          { "km": 0.11, "sec": 61, "hr": 142 },
+          { "km": 0.04, "sec": 10, "hr": 128 },
+          { "km": 0.11, "sec": 72, "hr": 110 },
+          { "km": 0.03, "sec": 10, "hr": 100 },
+          { "km": 0.11, "sec": 70, "hr": 115 },
+          { "km": 1.27, "sec": 491, "hr": 155 }
+        ]
+      },
+      "learn": [
+        "Warmup 5 km averaged 139 bpm at 5:30 /km, inside the 130–140 band, so you started the sprints with the legs warm and the heart rate under 140.",
+        "The sprints themselves read 143–160 bpm and the walk-backs dropped to 100–120 bpm, so the 2 minute recovery was enough; the highest sprint lap peaked at 160.",
+        "The final 1.27 km averaged 155 bpm (max 170) at about 6:27 /km, well above a cooldown effort and slower than the warmup at 16 bpm higher. Next time walk 2 minutes after the last sprint and let it settle under 140 before jogging."
       ]
     }
   ]
