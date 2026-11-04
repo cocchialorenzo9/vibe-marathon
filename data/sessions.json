@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-11-03T21:50:00+01:00",
+  "syncedAt": "2026-11-04T21:46:50+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -481,6 +481,47 @@
         "Warmup 5 km averaged 139 bpm at 5:30 /km, inside the 130–140 band, so you started the sprints with the legs warm and the heart rate under 140.",
         "The sprints themselves read 143–160 bpm and the walk-backs dropped to 100–120 bpm, so the 2 minute recovery was enough; the highest sprint lap peaked at 160.",
         "The final 1.27 km averaged 155 bpm (max 170) at about 6:27 /km, well above a cooldown effort and slower than the warmup at 16 bpm higher. Next time walk 2 minutes after the last sprint and let it settle under 140 before jogging."
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "status": "done",
+      "headline": "HR check done at 5:28 /km, 145 bpm over the 5 km",
+      "summary": "Planned 10 min warmup, the 5 km HR check at 5:30 /km, then 1 km easy (about 8 km, stop by 55 min; the cap of 140 doesn't apply during the check). Done in the evening: 8.79 km in 48:52 at about 5:34 /km, average 136 bpm, max 154. The warmup ran 1.86 km in 10:00 at 109 bpm, the 5 km took 27:21 (5:28 /km) at 145 bpm, and the last 1.92 km held 140. Temperature at the start was 5.5 C. Strength isn't in Strava; it can be added if done off-watch.",
+      "activity": {
+        "stravaId": "20860100315",
+        "sport": "Run",
+        "distanceKm": 8.79,
+        "movingSec": 2932,
+        "avgHr": 136,
+        "maxHr": 154,
+        "laps": [
+          {
+            "km": 1.86,
+            "sec": 600,
+            "hr": 109
+          },
+          {
+            "km": 5.0,
+            "sec": 1641,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 355,
+            "hr": 140
+          },
+          {
+            "km": 0.92,
+            "sec": 339,
+            "hr": 140
+          }
+        ]
+      },
+      "learn": [
+        "The 5 km HR check came in at 5:28 /km with an average of 145 bpm (whole 5 km lap; Strava has no km 2-5 split) at 5.5 C. That is in the 140-155 band, and it is the baseline to compare the next HR check against.",
+        "The warmup averaged 109 bpm over 1.86 km, a gentle start, and the cooldown 1.92 km sat at 140, exactly at the cap, so it is the edge of easy: slow the last km a touch.",
+        "Max 154 is just under the 155-LT band, so the check stayed controlled; set auto-lap to 1 km so the next check gives a km 2-5 average."
       ]
     }
   ]
