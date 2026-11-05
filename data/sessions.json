@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-11-04T21:46:50+01:00",
+  "syncedAt": "2026-11-05T21:50:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -522,6 +522,38 @@
         "The 5 km HR check came in at 5:28 /km with an average of 145 bpm (whole 5 km lap; Strava has no km 2-5 split) at 5.5 C. That is in the 140-155 band, and it is the baseline to compare the next HR check against.",
         "The warmup averaged 109 bpm over 1.86 km, a gentle start, and the cooldown 1.92 km sat at 140, exactly at the cap, so it is the edge of easy: slow the last km a touch.",
         "Max 154 is just under the 155-LT band, so the check stayed controlled; set auto-lap to 1 km so the next check gives a km 2-5 average."
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "status": "done",
+      "headline": "Medium-long run, 14 km under the cap",
+      "summary": "Planned 14 km medium-long run (cap 140). Done in the evening: 14.07 km in 83:46 at 5:57 /km, average 129 bpm, so the whole run sat in the <130 band, 11 under the cap. Max 152 is a single brief reading; Strava recorded one 14 km lap, so there is no per-km check against the cap. Your Strava note says the H10 strap was misbehaving again.",
+      "activity": {
+        "stravaId": "20873482041",
+        "sport": "Run",
+        "distanceKm": 14.07,
+        "movingSec": 5026,
+        "avgHr": 129,
+        "maxHr": 152,
+        "hrNote": "Several short segments read 91 and 115 bpm and the last 70 m read 70 bpm: strap dropouts, so the true average is probably a little higher than 129 (still inside the cap).",
+        "laps": [
+          {
+            "km": 14.0,
+            "sec": 5002,
+            "hr": 129
+          },
+          {
+            "km": 0.07,
+            "sec": 24,
+            "hr": 70
+          }
+        ]
+      },
+      "learn": [
+        "5:57 /km at 129 bpm for 14 km is the easy end of your range: 11 bpm of room under the 140 cap, so there was no need to slow down.",
+        "Compared with 5:34 /km at about 136 bpm on Wednesday, this run was 23 s/km slower and 7 bpm lower, which is the right trade for the longest run of the week.",
+        "The H10 dropped out again: fix the strap fit or moisten the electrodes before Saturday's 8 km, and set auto-lap to 1 km so the cap check works per km."
       ]
     }
   ]
