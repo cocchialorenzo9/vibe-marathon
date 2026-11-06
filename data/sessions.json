@@ -1,6 +1,6 @@
 {
   "source": "strava",
-  "syncedAt": "2026-11-05T21:50:00+01:00",
+  "syncedAt": "2026-11-06T21:46:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -554,6 +554,15 @@
         "5:57 /km at 129 bpm for 14 km is the easy end of your range: 11 bpm of room under the 140 cap, so there was no need to slow down.",
         "Compared with 5:34 /km at about 136 bpm on Wednesday, this run was 23 s/km slower and 7 bpm lower, which is the right trade for the longest run of the week.",
         "The H10 dropped out again: fix the strap fit or moisten the electrodes before Saturday's 8 km, and set auto-lap to 1 km so the cap check works per km."
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "status": "rest",
+      "headline": "Rest day",
+      "summary": "Planned full rest day, nothing recorded in Strava. The home strength session S2 (plyo + core) isn't in Strava; it can be added if done off-watch.",
+      "learn": [
+        "Tomorrow is 8 km easy plus 6 strides with the 140 cap: check the H10 reads cleanly in the first km, and set auto-lap to 1 km so the cap can be checked per km."
       ]
     }
   ]
