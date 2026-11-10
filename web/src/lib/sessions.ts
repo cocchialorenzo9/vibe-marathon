@@ -22,7 +22,9 @@ export interface Lap {
 }
 
 export interface Activity {
-  stravaId: string;
+  /** Strava activity id (older days) or Intervals.icu id (days synced from Intervals.icu). */
+  stravaId?: string;
+  intervalsId?: string;
   sport: string;
   distanceKm: number;
   movingSec: number;
