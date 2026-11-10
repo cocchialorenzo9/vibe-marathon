@@ -1,6 +1,6 @@
 {
-  "source": "strava",
-  "syncedAt": "2026-11-06T21:46:00+01:00",
+  "source": "intervals.icu",
+  "syncedAt": "2026-11-10T22:55:58+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -447,122 +447,461 @@
     {
       "date": "2026-11-03",
       "status": "done",
-      "headline": "Hill sprints done, 2.5 km short, cooldown ran hot",
-      "summary": "Planned warmup 5 km, 8 hill sprints of 10 s, cooldown 5 km (about 10 km, no HR cap on a quality day). Done in the evening: 7.49 km in 44:32 at about 5:57 /km, so the warmup and the sprints were done but the cooldown stopped at 1.27 km, about 18 minutes short of the 63. Warmup 5 km in 27:28 at 139 bpm (5:30 /km). The sprints and walk-backs sit between laps 2 and 17. Two bike commute rides (4.3 and 4.5 km) were also recorded. The home strength session S1 isn't in Strava; it can be added if done off-watch.",
+      "headline": "Hill sprints done, cooldown cut short and ran hot",
+      "summary": "Planned 5 km warmup, 8 hill sprints of 10 s and a 5 km cooldown (about 10 km, no HR cap on a quality day). Done in the evening: 7.49 km in 45:17, so the warmup and sprints were done but the cooldown stopped after about 1.3 km. Two short bike commutes (4.3 and 4.6 km) were also recorded. The home strength session S1 isn't in Intervals.icu; it can be added if done off-watch.",
       "activity": {
-        "stravaId": "20845901293",
+        "intervalsId": "i205352061",
         "sport": "Run",
         "distanceKm": 7.49,
-        "movingSec": 2672,
+        "movingSec": 2717,
         "avgHr": 139,
         "maxHr": 170,
         "laps": [
-          { "km": 5.0, "sec": 1648, "hr": 139 },
-          { "km": 0.03, "sec": 10, "hr": 142 },
-          { "km": 0.08, "sec": 35, "hr": 140 },
-          { "km": 0.03, "sec": 10, "hr": 128 },
-          { "km": 0.13, "sec": 61, "hr": 137 },
-          { "km": 0.03, "sec": 10, "hr": 121 },
-          { "km": 0.14, "sec": 61, "hr": 118 },
-          { "km": 0.03, "sec": 10, "hr": 103 },
-          { "km": 0.12, "sec": 60, "hr": 110 },
-          { "km": 0.04, "sec": 10, "hr": 127 },
-          { "km": 0.14, "sec": 80, "hr": 146 },
-          { "km": 0.04, "sec": 10, "hr": 127 },
-          { "km": 0.11, "sec": 61, "hr": 142 },
-          { "km": 0.04, "sec": 10, "hr": 128 },
-          { "km": 0.11, "sec": 72, "hr": 110 },
-          { "km": 0.03, "sec": 10, "hr": 100 },
-          { "km": 0.11, "sec": 70, "hr": 115 },
-          { "km": 1.27, "sec": 491, "hr": 155 }
+          {
+            "km": 1.0,
+            "sec": 333,
+            "hr": 135
+          },
+          {
+            "km": 1.0,
+            "sec": 316,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 322,
+            "hr": 140
+          },
+          {
+            "km": 1.0,
+            "sec": 338,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 339,
+            "hr": 140
+          },
+          {
+            "km": 1.0,
+            "sec": 439,
+            "hr": 131
+          },
+          {
+            "km": 1.0,
+            "sec": 441,
+            "hr": 139
+          },
+          {
+            "km": 0.487,
+            "sec": 190,
+            "hr": 157
+          }
         ]
       },
       "learn": [
-        "Warmup 5 km averaged 139 bpm at 5:30 /km, inside the 130–140 band, so you started the sprints with the legs warm and the heart rate under 140.",
-        "The sprints themselves read 143–160 bpm and the walk-backs dropped to 100–120 bpm, so the 2 minute recovery was enough; the highest sprint lap peaked at 160.",
-        "The final 1.27 km averaged 155 bpm (max 170) at about 6:27 /km, well above a cooldown effort and slower than the warmup at 16 bpm higher. Next time walk 2 minutes after the last sprint and let it settle under 140 before jogging."
+        "Warmup km 1-5 took 27:28 (5:30 /km) at 135-140 bpm, inside the 130-140 band, so you reached the sprints warm and under 140.",
+        "Km 6-7, the sprints and walk-backs, averaged 131 and 139 bpm: the 2 minute walk-back was enough to bring heart rate down between reps.",
+        "The last 0.49 km averaged 157 bpm (155-LT band) at about 6:30 /km, a cooldown at threshold heart rate. Walk 2 minutes after the last sprint and let it settle under 140 before jogging."
       ]
     },
     {
       "date": "2026-11-04",
       "status": "done",
-      "headline": "HR check done at 5:28 /km, 145 bpm over the 5 km",
-      "summary": "Planned 10 min warmup, the 5 km HR check at 5:30 /km, then 1 km easy (about 8 km, stop by 55 min; the cap of 140 doesn't apply during the check). Done in the evening: 8.79 km in 48:52 at about 5:34 /km, average 136 bpm, max 154. The warmup ran 1.86 km in 10:00 at 109 bpm, the 5 km took 27:21 (5:28 /km) at 145 bpm, and the last 1.92 km held 140. Temperature at the start was 5.5 C. Strength isn't in Strava; it can be added if done off-watch.",
+      "headline": "HR check done, about 145 bpm",
+      "summary": "Planned 10 min warmup, the 5 km HR check at 5:30 /km, then 1 km easy (about 8 km, stop by 55 min; the 140 cap doesn't apply during the check). Done in the evening: 8.79 km in 48:54, average 136 bpm. The km that ran over 140 (km 3-7, 142-147 bpm) all fall inside the HR check; the last 1.8 km held 140. Strength isn't in Intervals.icu; it can be added if done off-watch.",
       "activity": {
-        "stravaId": "20860100315",
+        "intervalsId": "i205793410",
         "sport": "Run",
         "distanceKm": 8.79,
-        "movingSec": 2932,
+        "movingSec": 2934,
         "avgHr": 136,
         "maxHr": 154,
+        "hrNote": "Km 1 read 85 bpm: the sensor was still locking on, so the warmup was not that easy and the true average is a few bpm above 136.",
         "laps": [
           {
-            "km": 1.86,
-            "sec": 600,
-            "hr": 109
-          },
-          {
-            "km": 5.0,
-            "sec": 1641,
-            "hr": 145
+            "km": 1.0,
+            "sec": 322,
+            "hr": 85
           },
           {
             "km": 1.0,
-            "sec": 355,
+            "sec": 322,
+            "hr": 137
+          },
+          {
+            "km": 1.0,
+            "sec": 305,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 328,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 328,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 336,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 346,
+            "hr": 142
+          },
+          {
+            "km": 1.0,
+            "sec": 354,
             "hr": 140
           },
           {
-            "km": 0.92,
-            "sec": 339,
+            "km": 0.786,
+            "sec": 293,
             "hr": 140
           }
         ]
       },
       "learn": [
-        "The 5 km HR check came in at 5:28 /km with an average of 145 bpm (whole 5 km lap; Strava has no km 2-5 split) at 5.5 C. That is in the 140-155 band, and it is the baseline to compare the next HR check against.",
-        "The warmup averaged 109 bpm over 1.86 km, a gentle start, and the cooldown 1.92 km sat at 140, exactly at the cap, so it is the edge of easy: slow the last km a touch.",
-        "Max 154 is just under the 155-LT band, so the check stayed controlled; set auto-lap to 1 km so the next check gives a km 2-5 average."
+        "The HR check's km 2-5 (laps 4-7) averaged about 145 bpm, in the 140-155 band. That is the baseline the next HR check is compared against.",
+        "The cooldown km 8-9 read 140, right at the cap: slow the last km a touch so it ends under 140.",
+        "Km 1 read 85 bpm, a lock-on lag. Wet the strap electrodes before the start so the warmup km reads true."
       ]
     },
     {
       "date": "2026-11-05",
       "status": "done",
       "headline": "Medium-long run, 14 km under the cap",
-      "summary": "Planned 14 km medium-long run (cap 140). Done in the evening: 14.07 km in 83:46 at 5:57 /km, average 129 bpm, so the whole run sat in the <130 band, 11 under the cap. Max 152 is a single brief reading; Strava recorded one 14 km lap, so there is no per-km check against the cap. Your Strava note says the H10 strap was misbehaving again.",
+      "summary": "Planned 14 km medium-long run (cap 140). Done in the evening: 14.07 km in 83:46 at 5:57 /km, average 129 bpm. Every full km from 1 to 13 sat at 127-139 bpm, under the 140 cap.",
       "activity": {
-        "stravaId": "20873482041",
+        "intervalsId": "i206286092",
         "sport": "Run",
         "distanceKm": 14.07,
         "movingSec": 5026,
         "avgHr": 129,
         "maxHr": 152,
-        "hrNote": "Several short segments read 91 and 115 bpm and the last 70 m read 70 bpm: strap dropouts, so the true average is probably a little higher than 129 (still inside the cap).",
+        "hrNote": "Km 14 read 84 bpm and the last 70 m 70 bpm: strap dropout. Km 1-13 averaged about 133 bpm, a better guide than the 129 average.",
         "laps": [
           {
-            "km": 14.0,
-            "sec": 5002,
+            "km": 1.0,
+            "sec": 355,
+            "hr": 134
+          },
+          {
+            "km": 1.0,
+            "sec": 349,
+            "hr": 135
+          },
+          {
+            "km": 1.0,
+            "sec": 360,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 360,
+            "hr": 136
+          },
+          {
+            "km": 1.0,
+            "sec": 356,
+            "hr": 131
+          },
+          {
+            "km": 1.0,
+            "sec": 367,
+            "hr": 133
+          },
+          {
+            "km": 1.0,
+            "sec": 378,
+            "hr": 130
+          },
+          {
+            "km": 1.0,
+            "sec": 360,
+            "hr": 137
+          },
+          {
+            "km": 1.0,
+            "sec": 344,
+            "hr": 130
+          },
+          {
+            "km": 1.0,
+            "sec": 358,
             "hr": 129
           },
           {
-            "km": 0.07,
+            "km": 1.0,
+            "sec": 361,
+            "hr": 132
+          },
+          {
+            "km": 1.0,
+            "sec": 343,
+            "hr": 132
+          },
+          {
+            "km": 1.0,
+            "sec": 361,
+            "hr": 127
+          },
+          {
+            "km": 1.0,
+            "sec": 353,
+            "hr": 84
+          },
+          {
+            "km": 0.069,
             "sec": 24,
             "hr": 70
           }
         ]
       },
       "learn": [
-        "5:57 /km at 129 bpm for 14 km is the easy end of your range: 11 bpm of room under the 140 cap, so there was no need to slow down.",
-        "Compared with 5:34 /km at about 136 bpm on Wednesday, this run was 23 s/km slower and 7 bpm lower, which is the right trade for the longest run of the week.",
-        "The H10 dropped out again: fix the strap fit or moisten the electrodes before Saturday's 8 km, and set auto-lap to 1 km so the cap check works per km."
+        "Km 1-13 averaged about 133 bpm at 5:57 /km, 7 bpm of room under the 140 cap: this is the right effort for a medium-long run.",
+        "The highest km was km 3 at 139 bpm, right after the start. Starting the first 3 km 5-10 s/km slower keeps that early peak further under the cap.",
+        "The strap dropped out again in km 14. Fix the fit or wet the electrodes so the last km can be checked against the cap."
       ]
     },
     {
       "date": "2026-11-06",
       "status": "rest",
       "headline": "Rest day",
-      "summary": "Planned full rest day, nothing recorded in Strava. The home strength session S2 (plyo + core) isn't in Strava; it can be added if done off-watch.",
+      "summary": "Planned full rest day, nothing recorded in Intervals.icu. The home strength session S2 (plyo + core) isn't recorded; it can be added if done off-watch.",
       "learn": [
-        "Tomorrow is 8 km easy plus 6 strides with the 140 cap: check the H10 reads cleanly in the first km, and set auto-lap to 1 km so the cap can be checked per km."
+        "Rest as planned. Tomorrow is 8 km easy plus 6 strides with the 140 cap."
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "status": "none",
+      "headline": "Easy run and strides, not recorded",
+      "summary": "Planned 8 km easy plus 6 strides (cap 140). No run recorded in Intervals.icu on Saturday, and no run on a nearby day replaced it. If you ran without the watch, it can be added.",
+      "learn": [
+        "The week lost these 8 easy km. Don't add them to the next run: the 18 km long run the next day was already the biggest day of the week.",
+        "Note why it was skipped. After a few weeks the reasons show a pattern: meetings, weather, fatigue."
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "status": "over",
+      "headline": "Long run done, most of it over the cap",
+      "summary": "Planned 14 km easy (cap 140) then 20 min at up to 145 bpm, about 18 km, with fuel test A. Done in the afternoon: 18.12 km in 1:43:20 at 5:42 /km, average 142 bpm. Km 1-5 sat at 125-140, then km 6-14 ran 143-147, over the 140 cap, and km 17-18 reached 149-150, over the 145 allowed for the last 20 min.",
+      "activity": {
+        "intervalsId": "i207448291",
+        "sport": "Run",
+        "distanceKm": 18.12,
+        "movingSec": 6200,
+        "avgHr": 142,
+        "maxHr": 161,
+        "laps": [
+          {
+            "km": 1.0,
+            "sec": 342,
+            "hr": 125
+          },
+          {
+            "km": 1.0,
+            "sec": 356,
+            "hr": 130
+          },
+          {
+            "km": 1.0,
+            "sec": 335,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 357,
+            "hr": 140
+          },
+          {
+            "km": 1.0,
+            "sec": 372,
+            "hr": 137
+          },
+          {
+            "km": 1.0,
+            "sec": 336,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 345,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 351,
+            "hr": 144
+          },
+          {
+            "km": 1.0,
+            "sec": 349,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 344,
+            "hr": 144
+          },
+          {
+            "km": 1.0,
+            "sec": 335,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 337,
+            "hr": 144
+          },
+          {
+            "km": 1.0,
+            "sec": 338,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 333,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 370,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 318,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 331,
+            "hr": 149
+          },
+          {
+            "km": 1.0,
+            "sec": 317,
+            "hr": 150
+          },
+          {
+            "km": 0.122,
+            "sec": 42,
+            "hr": 142
+          }
+        ]
+      },
+      "learn": [
+        "The first 14 km took 5:45 /km on average, 12 s/km faster than Thursday's 5:57 /km at about 133 bpm. Running the long run at 5:55-6:00 /km would have kept km 6-14 under 140.",
+        "Heart rate passed 140 at km 6 and never came back. When a km ends over 140 in the easy part, ease 10-15 s/km straight away rather than waiting.",
+        "This was fuel test A: log the upper-GI and lower-GI scores (0-10), any stops and the temperature in the journal while you still remember."
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "status": "done",
+      "headline": "Easy swim, 1.5 km, heart rate a bit high",
+      "summary": "Planned easy pool session, 30-40 min, about 1.5-2 km, RPE 3. Done in the afternoon: 1.5 km in 36:03 moving time (2:24 /100m), average 142 bpm, max 162.",
+      "activity": {
+        "intervalsId": "i207901431",
+        "sport": "Swim",
+        "distanceKm": 1.5,
+        "movingSec": 2163,
+        "avgHr": 142,
+        "maxHr": 162,
+        "hrNote": "Wrist heart rate in the water is approximate; treat the peaks as indicative."
+      },
+      "learn": [
+        "Average 142 bpm is in the 140-155 band, 4 bpm higher than last Monday's swim (138). An RPE 3 swim the day after an 18 km long run should sit lower: keep it under 140.",
+        "Max 162 is close to LT (165). Slow down on the lengths where you feel breathing get hard, and add a technique drill instead of speeding up."
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "status": "done",
+      "headline": "Threshold run done, but heart rate above LT",
+      "summary": "Planned 3 km warmup, 5 km at 95-99% LTHR (157-163 bpm), 5 km cooldown, about 13 km. Done in the evening: 11.4 km in 60:17. The 5 km threshold took 23:16 (4:39 /km) at 164-170 bpm, above LT (165) from km 2 of the block, and the cooldown stopped at 3.4 km of 5. The home strength session S1 isn't in Intervals.icu; it can be added if done off-watch.",
+      "activity": {
+        "intervalsId": "i208397953",
+        "sport": "Run",
+        "distanceKm": 11.4,
+        "movingSec": 3617,
+        "avgHr": 154,
+        "maxHr": 173,
+        "laps": [
+          {
+            "km": 1.0,
+            "sec": 424,
+            "hr": 129
+          },
+          {
+            "km": 1.0,
+            "sec": 309,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 318,
+            "hr": 149
+          },
+          {
+            "km": 1.0,
+            "sec": 275,
+            "hr": 164
+          },
+          {
+            "km": 1.0,
+            "sec": 271,
+            "hr": 167
+          },
+          {
+            "km": 1.0,
+            "sec": 288,
+            "hr": 167
+          },
+          {
+            "km": 1.0,
+            "sec": 285,
+            "hr": 168
+          },
+          {
+            "km": 1.0,
+            "sec": 277,
+            "hr": 170
+          },
+          {
+            "km": 1.0,
+            "sec": 376,
+            "hr": 155
+          },
+          {
+            "km": 1.0,
+            "sec": 353,
+            "hr": 148
+          },
+          {
+            "km": 1.0,
+            "sec": 386,
+            "hr": 149
+          },
+          {
+            "km": 0.399,
+            "sec": 150,
+            "hr": 148
+          }
+        ]
+      },
+      "learn": [
+        "The threshold km read 164, 167, 167, 168 and 170 bpm: 4 of 5 km went over LT (165), which the plan says never to cross. Ease 5-10 s/km as soon as heart rate passes 163.",
+        "4:39 /km at 167 bpm is slower than the 4:00-4:10 /km target and above LT at the same time. Trust heart rate over pace until the Nov 21 test resets the threshold pace.",
+        "The cooldown ran at 148-155 bpm, well above the 140 cap. Jog slower, or walk a minute first, so tomorrow's 7.5 km recovery run (cap 130) starts fresh."
       ]
     }
   ]
