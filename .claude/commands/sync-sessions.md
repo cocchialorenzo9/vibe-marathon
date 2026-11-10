@@ -1,4 +1,4 @@
-Sync what actually happened, from Strava, into `data/sessions.json` (the site's Sessions page
+Sync what actually happened, from Intervals.icu, into `data/sessions.json` (the site's Sessions page
 and the Program calendar's "What happened" panels). Runs unattended every evening as a
 scheduled task, so never ask questions: decide, write, push.
 
@@ -13,19 +13,27 @@ Follow these steps in order.
   uploads and sessions moved across days.
 - Days already in `sessions.json` *outside* the window are final: never touch them.
 
-## Step 2 — Pull Strava
+## Step 2 — Pull Intervals.icu
 
-Use the Strava MCP tools (read-only):
+Intervals.icu gets every watch activity through Zepp (swims and strength included), so no Strava
+subscription is needed. One read-only call:
 
-1. `list_activities` with `range_start` = window start `T00:00:00`, `range_end` = today
-   `T23:59:59`, ordering ascending.
-2. For each activity in the window, `get_activity_performance` for average/max HR and `laps`.
+```bash
+python3 scripts/pull_intervals.py --from <window start> --to <today>
+```
 
-If the Strava tools aren't available or fail, stop without writing anything and say why.
+It prints each activity with `intervalsId`, `date`, `sport`, `distanceKm`, `movingSec`, `avgHr`,
+`maxHr` and 1 km `laps` (runs only). Use it as the `activity` object (below). Activities
+with a `sport` containing "Run" are runs; "Swim", "Ride" etc. are other sessions.
+`Ride` activities of a few km are commutes: mention at most in `summary`, never as the planned session.
+
+If the script fails or returns an error, stop without writing anything and say why.
+Sensor warm-up: a first km with an HR far below the rest (e.g. 85 bpm) is a lock-on lag, not
+effort: set `hrNote` and ignore it for the cap check.
 
 ## Step 3 — Classify each plan day in the window
 
-Plan day = `weeks[].days[]` entry. Run = Strava `sport_type` containing "Run". The plan's HR
+Plan day = `weeks[].days[]` entry. Run = activity `sport` containing "Run". The plan's HR
 cap is the upper bound of the first `60-N% LTHR` step in the day's `training.workout`,
 converted to bpm against `data/athlete.json` (`60-79% LTHR` -> 79% of 165 = 130). Quality and
 race days (`training.type` "tempo"/"race") have no cap.
@@ -48,8 +56,9 @@ Easy and recovery days are prescribed in km with a stop-by time: the workout ste
 `- 8km 60-85% LTHR` and the note "~45 min, stop by 55 min". The HR cap still decides `done` vs `over`. A run that ended short of the km
 at about the stop-by time is `done` as planned, not a miss; say so in `summary`.
 
-Swims and strength without the watch don't show up in Strava; mark those `none` and say in
-`summary` that they can be added if done off-watch.
+Swims and runs recorded on the watch appear in Intervals.icu, so a planned swim with a Swim
+activity is `done`. Only sessions done without the watch are `none`; say in `summary` that they
+can be added if done off-watch.
 
 ## Step 4 — Write each day
 
@@ -62,7 +71,7 @@ Swims and strength without the watch don't show up in Strava; mark those `none` 
   "movedTo": "2026-10-16",
   "movedFrom": "2026-10-15",
   "activity": {
-    "stravaId": "20623666498",
+    "intervalsId": "i205793410",
     "sport": "Run",
     "distanceKm": 4.37,
     "movingSec": 1500,
@@ -78,12 +87,12 @@ Swims and strength without the watch don't show up in Strava; mark those `none` 
 - `movedTo`, `movedFrom`, `activity`, `hrNote`: omit when they don't apply.
 - `activity` = the main activity that day (the one matching the plan). Mention any others in
   `summary`.
-- `distanceKm`: 2 decimals. `laps`: Strava's laps, `km` = lap distance / 1000 (3 decimals for a
+- `distanceKm`: 2 decimals. `laps`: the script's laps, `km` = lap distance / 1000 (3 decimals for a
   partial last lap), `sec` = moving time, `hr` = rounded average HR.
 - `headline`: short, plain, no exclamation marks. `learn`: specific to the numbers (paces,
   laps, cap), never generic advice. Use the project's language from `CONTEXT.md`: HR bands
   (<130, 130–140, 140–155, 155–LT, LT+) and LT, both from `data/athlete.json`, HR cap. The plan writes HR as `% LTHR`; convert it to rounded bpm against `data/athlete.json` before quoting or comparing. Don't use %max-HR zones.
-- Keep `days` sorted by date, one entry per date. Set `syncedAt` to now (ISO 8601 with the
+- Keep `days` sorted by date, one entry per date. Set `source` to `"intervals.icu"` and `syncedAt` to now (ISO 8601 with the
   Europe/Rome offset).
 
 ## Step 5 — Check and publish

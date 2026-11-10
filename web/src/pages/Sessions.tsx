@@ -292,9 +292,14 @@ function Review({ row }: { row: Row }) {
         <Link to={`/program?day=${plan.date}`} className="outline-pill">
           See the day in the program
         </Link>
-        {a && (
+        {a?.stravaId && (
           <a className="outline-pill" href={`https://www.strava.com/activities/${a.stravaId}`}>
             Open in Strava
+          </a>
+        )}
+        {a?.intervalsId && (
+          <a className="outline-pill" href={`https://intervals.icu/activities/${a.intervalsId}`}>
+            Open in Intervals.icu
           </a>
         )}
       </div>
