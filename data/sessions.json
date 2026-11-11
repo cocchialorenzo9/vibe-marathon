@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-10T22:55:58+01:00",
+  "syncedAt": "2026-11-11T21:46:40+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -902,6 +902,67 @@
         "The threshold km read 164, 167, 167, 168 and 170 bpm: 4 of 5 km went over LT (165), which the plan says never to cross. Ease 5-10 s/km as soon as heart rate passes 163.",
         "4:39 /km at 167 bpm is slower than the 4:00-4:10 /km target and above LT at the same time. Trust heart rate over pace until the Nov 21 test resets the threshold pace.",
         "The cooldown ran at 148-155 bpm, well above the 140 cap. Jog slower, or walk a minute first, so tomorrow's 7.5 km recovery run (cap 130) starts fresh."
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "status": "over",
+      "headline": "Recovery run done, a few beats over the cap",
+      "summary": "Planned 7.5 km recovery at 60-79% LTHR (cap 130 bpm), stop by 55 min. Done in the evening: 7.79 km in 45:23 (5:50 /km) at 132 bpm average; from km 3 every km sat at 132-137 bpm, just over the 130 cap.",
+      "activity": {
+        "intervalsId": "i208849011",
+        "sport": "Run",
+        "distanceKm": 7.79,
+        "movingSec": 2723,
+        "avgHr": 132,
+        "maxHr": 143,
+        "laps": [
+          {
+            "km": 1.0,
+            "sec": 341,
+            "hr": 122
+          },
+          {
+            "km": 1.0,
+            "sec": 342,
+            "hr": 130
+          },
+          {
+            "km": 1.0,
+            "sec": 336,
+            "hr": 135
+          },
+          {
+            "km": 1.0,
+            "sec": 361,
+            "hr": 134
+          },
+          {
+            "km": 1.0,
+            "sec": 338,
+            "hr": 134
+          },
+          {
+            "km": 1.0,
+            "sec": 364,
+            "hr": 137
+          },
+          {
+            "km": 1.0,
+            "sec": 363,
+            "hr": 134
+          },
+          {
+            "km": 0.782,
+            "sec": 283,
+            "hr": 132
+          }
+        ]
+      },
+      "learn": [
+        "Km 1-2 at 5:41-5:42 /km held 122-130 bpm, but km 3 at 5:36 /km jumped to 135 and HR never came back under 130. Keep km 3 onwards at 5:55-6:05 /km on recovery days.",
+        "The day after a threshold run, heart rate drifts up at the same pace: a 132 average at 5:50 /km is the sign to slow down, not hold pace. Walk 30 s when it touches 131.",
+        "Distance and time were right (7.79 km in 45 min against ~46 min planned); only intensity was off, so the fix is pace, not volume."
       ]
     }
   ]
