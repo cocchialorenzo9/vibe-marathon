@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-11T21:46:40+01:00",
+  "syncedAt": "2026-11-13T21:46:07+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -963,6 +963,119 @@
         "Km 1-2 at 5:41-5:42 /km held 122-130 bpm, but km 3 at 5:36 /km jumped to 135 and HR never came back under 130. Keep km 3 onwards at 5:55-6:05 /km on recovery days.",
         "The day after a threshold run, heart rate drifts up at the same pace: a 132 average at 5:50 /km is the sign to slow down, not hold pace. Walk 30 s when it touches 131.",
         "Distance and time were right (7.79 km in 45 min against ~46 min planned); only intensity was off, so the fix is pace, not volume."
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "status": "moved",
+      "movedTo": "2026-11-13",
+      "headline": "Medium-long run moved to Friday",
+      "summary": "Planned 15 km medium-long run (cap 140). Not run on Thursday; you ran it on Friday instead: 15.68 km at 5:33 /km. The home strength session S2 (plyo + core) isn't in Intervals.icu; it can be added if done off-watch.",
+      "learn": [
+        "No run recorded on Thursday. It shows up on Friday's rest day, so the plan counts it as moved, not missed.",
+        "The move used up Friday's rest day, so the 15.68 km now sits the day before Saturday's 9.5 km easy run and two days before Sunday's 21 km long run. Keep both under the 140 cap."
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "status": "extra",
+      "movedFrom": "2026-11-12",
+      "headline": "Thursday's medium-long run, a day late and over the cap",
+      "summary": "Planned rest day. You ran Thursday's 15 km medium-long run here instead: 15.68 km in 87:03 at 5:33 /km, average 143 bpm. Only km 1 (132 bpm) was under the 140 cap; km 2-15 all sat at 141-146.",
+      "activity": {
+        "intervalsId": "i209610199",
+        "sport": "Run",
+        "distanceKm": 15.68,
+        "movingSec": 5223,
+        "avgHr": 143,
+        "maxHr": 158,
+        "laps": [
+          {
+            "km": 1.0,
+            "sec": 336,
+            "hr": 132
+          },
+          {
+            "km": 1.0,
+            "sec": 311,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 321,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 325,
+            "hr": 144
+          },
+          {
+            "km": 1.0,
+            "sec": 334,
+            "hr": 141
+          },
+          {
+            "km": 1.0,
+            "sec": 329,
+            "hr": 144
+          },
+          {
+            "km": 1.0,
+            "sec": 341,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 333,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 329,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 337,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 337,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 328,
+            "hr": 142
+          },
+          {
+            "km": 1.0,
+            "sec": 350,
+            "hr": 141
+          },
+          {
+            "km": 1.0,
+            "sec": 336,
+            "hr": 141
+          },
+          {
+            "km": 1.0,
+            "sec": 330,
+            "hr": 142
+          },
+          {
+            "km": 0.68,
+            "sec": 248,
+            "hr": 142
+          }
+        ]
+      },
+      "learn": [
+        "5:33 /km at 143 bpm is 24 s/km faster than last Thursday's medium-long run (5:57 /km at about 133 bpm). Running this one at 5:55-6:00 /km would have kept it under the 140 cap.",
+        "Km 2 at 5:11 /km took heart rate from 132 to 143, and it never came back under 140. Hold the first 3 km at 5:55 /km or slower, and ease 10-15 s/km as soon as a km ends over 140.",
+        "With the rest day used up, Saturday's 9.5 km easy run plus strides and Sunday's 21 km long run follow with no day off. Start both slower than today so the 140 cap holds from km 1."
       ]
     }
   ]
