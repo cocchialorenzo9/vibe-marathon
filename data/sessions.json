@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-13T21:46:07+01:00",
+  "syncedAt": "2026-11-15T21:46:39+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1076,6 +1076,136 @@
         "5:33 /km at 143 bpm is 24 s/km faster than last Thursday's medium-long run (5:57 /km at about 133 bpm). Running this one at 5:55-6:00 /km would have kept it under the 140 cap.",
         "Km 2 at 5:11 /km took heart rate from 132 to 143, and it never came back under 140. Hold the first 3 km at 5:55 /km or slower, and ease 10-15 s/km as soon as a km ends over 140.",
         "With the rest day used up, Saturday's 9.5 km easy run plus strides and Sunday's 21 km long run follow with no day off. Start both slower than today so the 140 cap holds from km 1."
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "status": "none",
+      "headline": "Easy run with strides not recorded",
+      "summary": "Planned 9.5 km easy (cap 140) with 6 relaxed strides, stop by 70 min. Nothing recorded in Intervals.icu on Saturday; it can be added if done off-watch.",
+      "learn": [
+        "With Thursday's medium-long run moved onto Friday, Saturday became the day off before Sunday's long run. Next week, keep the rest day and the Saturday easy run where the plan puts them rather than shifting both."
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "status": "over",
+      "headline": "Long run done, heart rate drifted well over the cap",
+      "summary": "Planned 17 km easy (cap 140) then 20 min at up to 145 bpm, about 20 km, with fuel test B. Done in the afternoon: 20.01 km in 1:57:51 at 5:53 /km, average 147 bpm. Km 1-5 sat at 128-140, then km 6-17 ran 143-153, over the 140 cap, and the last 3 km reached 161-171, over the 145 allowed and above LT (165) at km 19-20.",
+      "activity": {
+        "intervalsId": "i210437636",
+        "sport": "Run",
+        "distanceKm": 20.01,
+        "movingSec": 7071,
+        "avgHr": 147,
+        "maxHr": 176,
+        "laps": [
+          {
+            "km": 1.0,
+            "sec": 353,
+            "hr": 128
+          },
+          {
+            "km": 1.0,
+            "sec": 335,
+            "hr": 137
+          },
+          {
+            "km": 1.0,
+            "sec": 351,
+            "hr": 140
+          },
+          {
+            "km": 1.0,
+            "sec": 356,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 363,
+            "hr": 139
+          },
+          {
+            "km": 1.0,
+            "sec": 367,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 358,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 357,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 355,
+            "hr": 143
+          },
+          {
+            "km": 1.0,
+            "sec": 360,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 361,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 364,
+            "hr": 145
+          },
+          {
+            "km": 1.0,
+            "sec": 363,
+            "hr": 151
+          },
+          {
+            "km": 1.0,
+            "sec": 374,
+            "hr": 146
+          },
+          {
+            "km": 1.0,
+            "sec": 346,
+            "hr": 147
+          },
+          {
+            "km": 1.0,
+            "sec": 345,
+            "hr": 151
+          },
+          {
+            "km": 1.0,
+            "sec": 346,
+            "hr": 153
+          },
+          {
+            "km": 1.0,
+            "sec": 335,
+            "hr": 161
+          },
+          {
+            "km": 1.0,
+            "sec": 320,
+            "hr": 171
+          },
+          {
+            "km": 1.0,
+            "sec": 359,
+            "hr": 169
+          }
+        ]
+      },
+      "learn": [
+        "The first 17 km averaged 5:56 /km, 11 s/km slower than last Sunday, yet heart rate still crossed 140 at km 6 and reached 151-153 by km 16-17. Pace alone isn't holding the cap: drop to 6:10-6:15 /km, or walk 30 s, as soon as a km ends over 140.",
+        "The 20-min finish ran 5:35, 5:20 and 5:59 /km at 161-171 bpm, in the 155-LT band and above LT. It is meant to stay at or below 145, a small step up, not a push.",
+        "This was fuel test B (honey + maltodextrin): log the upper-GI and lower-GI scores (0-10), any stops and the temperature in the journal, and note whether the late heart-rate climb came with any gut trouble."
       ]
     }
   ]
