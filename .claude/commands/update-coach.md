@@ -2,9 +2,7 @@ Follow these steps exactly, in order. Do not skip steps.
 
 ## Step 1 — Fetch today's biometric data
 
-Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
-
-- **`WATCH_SOURCE=amazfit`** (or unset): run `python3 scripts/fetch_amazfit.py`
+- Run `python3 scripts/fetch_amazfit.py`
   - If a Zepp export is present in `data/zepp/`, the script auto-fills sleep, resting HR,
     and yesterday's activity. It will also **backfill any missed days** from the export into
     local history before running — report any backfilled dates to the user.
@@ -35,10 +33,7 @@ Check the `WATCH_SOURCE` environment variable (default: `amazfit`).
     they don't have it) before moving to Step 2, so this run's baseline and delta calculations use
     the corrected data.
 
-- **`WATCH_SOURCE=garmin`**: run `python3 scripts/fetch_garmin.py`
-  - Requires `GARMIN_EMAIL` and `GARMIN_PASSWORD`. If not set, ask the user to export them before continuing.
-
-Both scripts print a canonical `BiometricReading` JSON object to stdout. Parse it. The `source` field confirms which device was used. The `history_path` field gives the local history file path.
+The script prints a canonical `BiometricReading` JSON object to stdout. Parse it. The `history_path` field gives the local history file path.
 
 **If the Zepp export is stale** (the script will warn you), tell the user:
 "Your Zepp export is from {date}. If you trained since then, sync your watch, re-export from the Zepp app, and drop the new folder into `data/zepp/` before re-running."
@@ -180,7 +175,7 @@ cutoffs (130/140/155) are fixed round numbers, not %LT-derived. See
 `data/athlete.json`; the top band moves with LT automatically.
 
 **VO2max**: current estimate lives in `data/coach.json`'s `readiness.vo2max`
-(`value`, `unit: "ml/kg/min"`, `status: "manual"|"garmin_max_metrics"`,
+(`value`, `unit: "ml/kg/min"`, `status: "manual"`,
 `asOf`, `history`). Same confidence caveat as LT — a manually-entered or
 watch-estimated number, not lab-tested, refreshed slowly (see Step 1's
 amazfit branch and Step 5's schema). If `readiness.vo2max` doesn't exist yet
@@ -369,11 +364,6 @@ Write these changes back into `data/training-plan.json`. Modify only the `moveme
 
 ## Step 4c — Recent activity analysis
 
-Skip this step if `WATCH_SOURCE=garmin` — multi-day per-session history isn't
-available for Garmin yet (`fetch_garmin.py` only fetches yesterday's single
-activity). Set `recentActivity` to `null` in Step 5 and mention to the user
-that recent-activity detail was skipped.
-
 Otherwise, run:
 
 ```bash
@@ -430,8 +420,6 @@ This is a judgment call, not a formula — reason about it the way Step 4's
 `reasoning` field already gets reasoned about, not via a hardcoded script.
 
 ## Step 4d — Update the permanent training journal
-
-Skip this step if `WATCH_SOURCE=garmin`, same reason as Step 4c.
 
 `data/training-journal.json` is a **permanent, append-only archive** — unlike
 `recentActivity` above (a rolling 7-day snapshot that gets overwritten every
@@ -514,9 +502,6 @@ and so it survives gaps in when `/update-coach` actually gets run.
 
 ## Step 4e — Refresh weekly training-volume estimates
 
-Skip this step if `WATCH_SOURCE=garmin`, same reason as Step 4c (no multi-day
-per-session history available yet to build a reliable pace baseline).
-
 This step exists because the plan's easy/long/recovery sessions are
 prescribed as **time + %LT effort**, not a fixed pace — correct for guiding
 effort, but it means nobody can see, at a glance, how much real distance a
@@ -578,7 +563,7 @@ step exists to prevent.
 
 ## Step 4f — Apply the volume-escalation rule
 
-Skip if `WATCH_SOURCE=garmin` (same reason as Step 4c) or if today is before
+Skip if today is before
 week 7 has started. This step is what actually executes the
 volume-escalation rule described in the Sub-3h checkpoint reference above —
 read that first for the *why*; this is the *how*.
@@ -635,7 +620,7 @@ read that first for the *why*; this is the *how*.
 ## Step 5 — Write the output files
 
 Write `data/coach.json` with this exact schema. `recentActivity` is `null`
-when Step 4c was skipped (Garmin source, or no Zepp export found). Bike-commute
+when Step 4c was skipped (no Zepp export found). Bike-commute
 sessions are never included in it.
 
 ```json
@@ -661,7 +646,7 @@ sessions are never included in it.
     "vo2max": {
       "value": <float or null>,
       "unit": "ml/kg/min",
-      "status": "<manual|garmin_max_metrics>",
+      "status": "manual",
       "asOf": "<YYYY-MM-DD>",
       "history": [{"date": "<YYYY-MM-DD>", "value": <float>}]
     }
