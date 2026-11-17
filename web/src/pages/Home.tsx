@@ -210,7 +210,7 @@ export default function Home() {
 
           <div className="pipeline">
             {[
-              ["01 · COLLECT", "Garmin + Strava", "Runs, swims, heart rate, streams"],
+              ["01 · COLLECT", "Amazfit + Intervals.icu", "Runs, swims, heart rate, laps"],
               ["02 · MODEL", "ATL · CTL · TSB", "Fatigue, fitness and form each day"],
               ["03 · COACH", "coach.json", "Today's recommendation, pushed daily"],
               ["04 · PUBLISH", "This page", "GitHub Pages, open to everyone"],
@@ -260,8 +260,8 @@ export default function Home() {
             </a>
             <div className="card">
               <span className="label">SOURCE</span>
-              <strong>Garmin Connect</strong>
-              <p>Daily activities and heart rate; the input for the training-load model.</p>
+              <strong>Intervals.icu</strong>
+              <p>Every watch activity, synced from the Amazfit through Zepp; the input for the training-load model.</p>
             </div>
             <div className="card">
               <span className="label">SOURCE</span>
