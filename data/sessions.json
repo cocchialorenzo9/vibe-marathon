@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-17T21:46:50+01:00",
+  "syncedAt": "2026-11-18T21:47:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1216,6 +1216,16 @@
       "learn": [
         "After Sunday's 20 km at 147 bpm average, with the last 3 km at 161-171 bpm, Monday was the day to recover: if the swim was skipped, keep Tuesday's 10.5 km easy run under the 140 cap from the first km.",
         "Last Monday's swim averaged 142 bpm; next time aim for under 140 so it stays a recovery session."
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "status": "none",
+      "headline": "Easy run with strides not recorded",
+      "summary": "Planned 10.5 km easy (cap 140 bpm) with 6 relaxed strides, stop by 75 min, plus a short recovery-week strength session. Nothing recorded in Intervals.icu on Tuesday; it can be added if done off-watch.",
+      "learn": [
+        "That is two planned sessions in a row with nothing recorded (Monday's swim, Tuesday's easy run) after Sunday's 20 km finished at 161-171 bpm. If the legs needed the days, fine, but keep Wednesday's 14 km medium-long under the 140 cap rather than making up the missed km.",
+        "This is a recovery week: don't stack Tuesday's 10.5 km onto Thursday's rest day; the Saturday 21 Nov test needs fresh legs."
       ]
     }
   ]
