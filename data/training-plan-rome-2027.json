@@ -1242,7 +1242,7 @@
         "run": 6.0,
         "swim": 0.0,
         "strength": 1.2,
-        "total": 7.2
+        "total": 7.1
       }
     },
     {
@@ -1288,10 +1288,10 @@
           "bigPicture": "Endurance 4: LT field test on Tuesday (moved from Nov 21); recompute threshold HR and pace from it before Thursday.",
           "estKm": 11,
           "estMin": {
-            "run": 50,
+            "run": 59,
             "swim": 0,
             "strength": 40,
-            "total": 90
+            "total": 99
           }
         },
         {
@@ -1396,10 +1396,10 @@
         }
       ],
       "estHours": {
-        "run": 6.9,
+        "run": 7.1,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 8.7
+        "total": 8.8
       }
     },
     {
