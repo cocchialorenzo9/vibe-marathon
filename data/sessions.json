@@ -1210,22 +1210,32 @@
     },
     {
       "date": "2026-11-16",
-      "status": "none",
-      "headline": "Easy swim not recorded",
-      "summary": "Planned easy pool session, 30-40 min (about 1.5-2 km) at RPE 3, replacing the recovery run. No swim recorded in Intervals.icu on Monday; it can be added if done off-watch.",
+      "status": "sick",
+      "skipped": { "type": "swim", "title": "Pool session -- easy swim", "km": null },
+      "headline": "Ill: easy swim skipped",
+      "summary": "First of three sick days (Nov 16-18), after a few nights of low HRV. The easy swim was dropped, not made up later.",
       "learn": [
-        "After Sunday's 20 km at 147 bpm average, with the last 3 km at 161-171 bpm, Monday was the day to recover: if the swim was skipped, keep Tuesday's 10.5 km easy run under the 140 cap from the first km.",
-        "Last Monday's swim averaged 142 bpm; next time aim for under 140 so it stays a recovery session."
+        "Resting HR read 50 bpm against a usual ~45: with low HRV, a clear sign to stay off training."
       ]
     },
     {
       "date": "2026-11-17",
-      "status": "none",
-      "headline": "Easy run with strides not recorded",
-      "summary": "Planned 10.5 km easy (cap 140 bpm) with 6 relaxed strides, stop by 75 min, plus a short recovery-week strength session. Nothing recorded in Intervals.icu on Tuesday; it can be added if done off-watch.",
+      "status": "sick",
+      "skipped": { "type": "easy", "title": "Easy run + strides", "km": 10.5 },
+      "headline": "Ill: easy run + strides skipped",
+      "summary": "Second sick day. HRV was back to normal overnight, but you still didn't feel well, so the 10.5 km easy run with strides was skipped. The recovery-week strength moved to Saturday.",
       "learn": [
-        "That is two planned sessions in a row with nothing recorded (Monday's swim, Tuesday's easy run) after Sunday's 20 km finished at 161-171 bpm. If the legs needed the days, fine, but keep Wednesday's 14 km medium-long under the 140 cap rather than making up the missed km.",
-        "This is a recovery week: don't stack Tuesday's 10.5 km onto Thursday's rest day; the Saturday 21 Nov test needs fresh legs."
+        "Normal HRV on its own isn't the all-clear: also wait for a day without symptoms or fever."
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "status": "sick",
+      "skipped": { "type": "medium-long", "title": "Medium-long run", "km": 14 },
+      "headline": "Ill: medium-long run skipped",
+      "summary": "Third sick day, so the 14 km medium-long run was skipped. The week restarts on Thursday with a 5 km return run; missed km are not made up (Pfitzinger: under 10 days lost, pick the schedule back up).",
+      "learn": [
+        "Three days lost is under Pfitzinger's 10-day line: pick the schedule back up after a few easy days, with no make-up km."
       ]
     }
   ]

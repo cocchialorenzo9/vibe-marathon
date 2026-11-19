@@ -48,6 +48,9 @@ Pick one `status` per day:
 | `moved` | Nothing that day, but the session was clearly done on a nearby day instead (±2 days, same kind, similar distance). Set `movedTo`. |
 | `extra` | Something was recorded on a day that didn't plan it. If it's a moved session, set `movedFrom` (and `movedTo` on the other day). |
 | `none`  | A session was planned, nothing was recorded, and it wasn't moved. |
+| `sick`  | The athlete was ill and did nothing. Never inferred: only set when the athlete reports it (or a plan day's workout says "Ill: no training"). Set `skipped` to the session the day had before the plan was rewritten around the illness (`type`, `title`, `km`; see `git log` of the plan). |
+
+A day already written as `sick` stays `sick`, with its `skipped`, `headline`, `summary` and `learn` untouched, unless an activity now shows up that day; then classify it normally and drop `skipped`.
 
 Today: only write it once there's an activity, or the day is a rest day and it's after 21:00.
 A planned day with no activity *today* is not `none` yet: leave it out.
@@ -84,7 +87,7 @@ can be added if done off-watch.
 }
 ```
 
-- `movedTo`, `movedFrom`, `activity`, `hrNote`: omit when they don't apply.
+- `movedTo`, `movedFrom`, `skipped`, `activity`, `hrNote`: omit when they don't apply. `skipped` looks like `{ "type": "easy", "title": "Easy run + strides", "km": 10.5 }` and only goes on `sick` days.
 - `activity` = the main activity that day (the one matching the plan). Mention any others in
   `summary`.
 - `distanceKm`: 2 decimals. `laps`: the script's laps, `km` = lap distance / 1000 (3 decimals for a

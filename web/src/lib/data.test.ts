@@ -11,7 +11,7 @@ import type { SessionLog } from "./sessions";
 const sessionLog = sessionsJson as unknown as SessionLog;
 const planDates = new Set(romePlanJson.weeks.flatMap((w) => w.days.map((d) => d.date)));
 const byDate = new Map(sessionLog.days.map((d) => [d.date, d]));
-const STATUSES = ["done", "over", "extra", "moved", "none", "rest"];
+const STATUSES = ["done", "over", "extra", "moved", "none", "rest", "sick"];
 
 describe("data/sessions.json", () => {
   it("only holds plan days, each once, sorted by date", () => {
@@ -23,6 +23,14 @@ describe("data/sessions.json", () => {
 
   it("uses known statuses", () => {
     for (const s of sessionLog.days) expect(STATUSES).toContain(s.status);
+  });
+
+  it("names the skipped session on sick days, and only there", () => {
+    for (const s of sessionLog.days) {
+      if (s.status === "sick") expect(s.skipped?.title).toBeTruthy();
+      else expect(s.skipped).toBeUndefined();
+      if (s.status === "sick") expect(s.activity).toBeUndefined();
+    }
   });
 
   it("links moved sessions both ways", () => {
