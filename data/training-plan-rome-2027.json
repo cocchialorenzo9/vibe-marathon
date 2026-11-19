@@ -95,12 +95,12 @@
     ],
     "record": "Upper-GI 0-10, lower-GI 0-10, stops, able to drink in last 20 min, temperature. Same pre-run meal and timing each time.",
     "decision": "On Jan 3: pick the strategy with the lowest mean (upper + lower) GI score; tie -> simpler/cheaper. It becomes the race fuel for all specific-block long runs, MP sessions, the HM and Rome. If every strategy averages >=3 or GI stops recur, see a sports dietitian/GP (e.g. fructose malabsorption breath test) before raising the carb target further.",
-    "caveats": "n-of-1 with 2 runs per arm: good enough to spot a clear winner, not to separate small differences. Week 6's test C comes right after two days ill and is shortened to ~90 min; week 11 is Christmas week; note anything unusual eaten the day before."
+    "caveats": "n-of-1 with 2 runs per arm: good enough to spot a clear winner, not to separate small differences. Week 6's test C comes right after two days ill and is shortened to ~85 min, and week 7's test D is a Thursday run before a night bus; week 11 is Christmas week; note anything unusual eaten the day before."
   },
   "gates": [
     {
-      "week": 7,
-      "date": "2026-11-24",
+      "week": 8,
+      "date": "2026-12-01",
       "name": "Threshold field test",
       "rule": "30-min TT; replaces the device LT in data/athlete.json. All threshold and easy-cap HR values in this plan are percentages of LTHR, so updating data/athlete.json with the measured value rescales them."
     },
@@ -108,7 +108,7 @@
       "week": 9,
       "date": "2026-12-09",
       "name": "Aerobic check (replaces Dec 20 10K)",
-      "rule": "HR at 5:30/km vs the Nov 4 baseline (same route, similar temperature), plus the Nov 24 threshold test. Keep progressing to the 88-110 km weeks from Dec 21 if HR at 5:30 is >=3 bpm lower (beyond normal day-to-day noise; Buchheit 2014), weeks 7-9 were completed >=90% and nothing hurts; otherwise repeat the Endurance 5 volume (~86 km) for 2 more weeks before climbing."
+      "rule": "HR at 5:30/km vs the Nov 4 baseline (same route, similar temperature), plus the Dec 1 threshold test. Keep progressing to the 88-110 km weeks from Dec 21 if HR at 5:30 is >=3 bpm lower (beyond normal day-to-day noise; Buchheit 2014), weeks 7-9 were completed >=90% and nothing hurts; otherwise repeat the Endurance 5 volume (~86 km) for 2 more weeks before climbing."
     },
     {
       "week": 10,
@@ -809,7 +809,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (5 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 5km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 5km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, foundation (~35 min, after the run): Bulgarian split squat 3x10/leg, single-leg Romanian deadlift 3x10/leg, single-leg calf raise off a step 3x12/leg straight knee + 2x12 bent knee, single-leg glute bridge 3x12/leg, side plank 3x30 s/side. Start with bodyweight; add a loaded backpack once 12 reps feel easy.",
             "estKm": 13
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -937,8 +937,8 @@
       "label": "Nov 16–Nov 22",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Return from illness: Nov 16-17 lost, HRV back to normal on Nov 17. Easy running only, no make-up km; the LT field test moves to Tue Nov 24. Long run = fuel test C, shortened.",
-      "estKm": 38.0,
+      "tip": "Return from illness: Nov 16-18 lost. Easy running only from Thursday, no make-up km; the LT field test moves to Tue Dec 1. Long run = fuel test C, shortened.",
+      "estKm": 35.0,
       "days": [
         {
           "date": "2026-11-16",
@@ -951,7 +951,7 @@
           },
           "movement": "Walking only if you feel up to it.",
           "food": "Normal meals, plenty of fluids.",
-          "bigPicture": "Endurance 2 (return from illness): Two days lost to illness (Nov 16-17). The rest of the week is easy running only, to come back without a relapse; the LT field test moves to Tue Nov 24 so it measures you healthy. Missed km are not made up.",
+          "bigPicture": "Endurance 2 (return from illness): Three days lost to illness (Nov 16-18). Thursday to Saturday are easy runs to come back without a relapse, then a shorter long run. Missed km are not made up; the LT field test moves to Tue Dec 1 so it measures you healthy.",
           "estKm": null,
           "estMin": {
             "run": 0,
@@ -966,7 +966,7 @@
           "training": {
             "type": "rest",
             "title": "Rest day (ill)",
-            "workout": "Ill: no training. First night with HRV back to normal after three low ones; one more day off before running. The easy run + strides and the recovery-week strength move to Friday.",
+            "workout": "Ill: no training. First night with HRV back to normal after three low ones, but still unwell. The easy run + strides and the recovery-week strength move to Saturday.",
             "estKm": null
           },
           "movement": "Walking only if you feel up to it.",
@@ -984,33 +984,13 @@
           "date": "2026-11-18",
           "dayLabel": "Wed Nov 18",
           "training": {
-            "type": "easy",
-            "title": "Return run (after illness)",
-            "workout": "- 6km 60-79% LTHR\n\n~37 min, stop by 45 min. First run after two days ill: recovery effort, no strides. Only run if you had no fever in the last 24 h and HRV was normal again this morning. Stop and walk home if you feel unwell, or if HR sits well above its usual level for the pace.",
-            "estKm": 6
-          },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 2 (return from illness) (base).",
-          "estKm": 6,
-          "estMin": {
-            "run": 37,
-            "swim": 0,
-            "strength": 0,
-            "total": 37
-          }
-        },
-        {
-          "date": "2026-11-19",
-          "dayLabel": "Thu Nov 19",
-          "training": {
             "type": "rest",
-            "title": "Rest day",
-            "workout": "Full rest. Walking is fine.",
+            "title": "Rest day (ill)",
+            "workout": "Ill: no training (third sick day). The return run moves to Thursday.",
             "estKm": null
           },
-          "movement": "Bike both ways fine.",
-          "food": "Normal balanced meals.",
+          "movement": "Walking only if you feel up to it.",
+          "food": "Normal meals, plenty of fluids.",
           "bigPicture": "Endurance 2 (return from illness) (base).",
           "estKm": null,
           "estMin": {
@@ -1021,32 +1001,32 @@
           }
         },
         {
-          "date": "2026-11-20",
-          "dayLabel": "Fri Nov 20",
+          "date": "2026-11-19",
+          "dayLabel": "Thu Nov 19",
           "training": {
             "type": "easy",
-            "title": "Easy run + strides",
-            "workout": "- 9km 60-85% LTHR\n\nStrides 4x\n- 20s stride intensity=active\n- 60s walk-back\n\n~53 min, stop by 65 min. Moved here from Tuesday. Strides only if Wednesday's run felt normal; otherwise skip them and keep the run easy. Hard ceiling: walk a hill rather than cross it.\n\nHOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
-            "estKm": 9
+            "title": "Return run (after illness)",
+            "workout": "- 5km 60-79% LTHR\n\n~31 min, stop by 40 min. First run after three days ill: recovery effort, no strides. Only run if you've had no fever for 24 h and feel normal; otherwise rest today and start this plan one day later (skip Saturday). Stop and walk home if you feel unwell, or if HR sits well above its usual level for the pace.",
+            "estKm": 5
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
           "bigPicture": "Endurance 2 (return from illness) (base).",
-          "estKm": 9,
+          "estKm": 5,
           "estMin": {
-            "run": 53,
+            "run": 31,
             "swim": 0,
-            "strength": 25,
-            "total": 78
+            "strength": 0,
+            "total": 31
           }
         },
         {
-          "date": "2026-11-21",
-          "dayLabel": "Sat Nov 21",
+          "date": "2026-11-20",
+          "dayLabel": "Fri Nov 20",
           "training": {
             "type": "easy",
             "title": "Easy run",
-            "workout": "- 7km 60-85% LTHR\n\n~41 min, stop by 50 min. Hard ceiling: walk a hill rather than cross it. The LT field test planned here moves to Tue Nov 24, so it isn't run in the first days after being ill.",
+            "workout": "- 7km 60-85% LTHR\n\n~41 min, stop by 50 min. Only if Thursday's run felt normal. Hard ceiling: walk a hill rather than cross it.",
             "estKm": 7
           },
           "movement": "Bike commute fine at easy effort.",
@@ -1061,31 +1041,51 @@
           }
         },
         {
+          "date": "2026-11-21",
+          "dayLabel": "Sat Nov 21",
+          "training": {
+            "type": "easy",
+            "title": "Easy run + strides",
+            "workout": "- 8km 60-85% LTHR\n\nStrides 4x\n- 20s stride intensity=active\n- 60s walk-back\n\n~47 min, stop by 55 min. Strides only if Friday felt normal; this is the run to skip if anything comes up. The LT field test planned here moves to Tue Dec 1. Hard ceiling: walk a hill rather than cross it.\n\nHOME STRENGTH, recovery week (~25 min): S1 exercises at 2 sets each, same load as last week. No plyometrics.",
+            "estKm": 8
+          },
+          "movement": "Bike commute fine at easy effort.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "Endurance 2 (return from illness) (base).",
+          "estKm": 8,
+          "estMin": {
+            "run": 47,
+            "swim": 0,
+            "strength": 25,
+            "total": 72
+          }
+        },
+        {
           "date": "2026-11-22",
           "dayLabel": "Sun Nov 22",
           "training": {
             "type": "long",
             "title": "Long run (fuel test C)",
-            "workout": "- 12km 60-85% LTHR\n- 20m 60-88% LTHR\n\nShortened from ~18 km after the illness; ~90 min is still long enough for the fuel test. If the week went badly (Wednesday or Friday felt off), cut it to an easy 10 km and drop the test.\n\nFUEL TEST C (drink mix only): ~45 g carbs/h from minute 30. Per 60 g carbs: 1:0.8 glucose:fructose drink powder in 450-500 mL (~12-13%). Sip every 10-15 min; no other fuel. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
-            "estKm": 16
+            "workout": "- 11km 60-85% LTHR\n- 20m 60-88% LTHR\n\nShortened from ~18 km after three days ill; ~85 min is still long enough for the fuel test. If you're not right yet, run an easy 10 km and drop the test.\n\nFUEL TEST C (drink mix only): ~45 g carbs/h from minute 30. Per 60 g carbs: 1:0.8 glucose:fructose drink powder in 450-500 mL (~12-13%). Sip every 10-15 min; no other fuel. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
+            "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
           "food": "Carb-rich dinner the night before; fuel during the run as described; recovery meal with protein + carbs within ~1h.",
           "bigPicture": "Endurance 2 (return from illness) (base).",
-          "estKm": 16,
+          "estKm": 15,
           "estMin": {
-            "run": 90,
+            "run": 85,
             "swim": 0,
             "strength": 0,
-            "total": 90
+            "total": 85
           }
         }
       ],
       "estHours": {
-        "run": 3.7,
+        "run": 3.4,
         "swim": 0.0,
         "strength": 0.4,
-        "total": 4.1
+        "total": 3.8
       }
     },
     {
@@ -1094,27 +1094,27 @@
       "label": "Nov 23–Nov 29",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "LT field test on Tuesday (moved from Nov 21 after illness): recompute threshold HR and pace from it before Thursday. Long run = fuel test D.",
-      "estKm": 71.0,
+      "tip": "Padua week: night bus Thursday, rest Saturday and Sunday. Long run (fuel test D) moves to Thursday; race-pace blocks dropped this week; LT field test moves to Tue Dec 1.",
+      "estKm": 63.5,
       "days": [
         {
           "date": "2026-11-23",
           "dayLabel": "Mon Nov 23",
           "training": {
-            "type": "swim",
-            "title": "Pool session -- easy swim",
-            "workout": "Easy pool session, 30-40 min (~1.5-2 km): relaxed freestyle with a few technique drills, RPE 3, no hard sets. Replaces this day's recovery run; those km moved into the week's other easy runs.",
-            "estKm": null
+            "type": "easy",
+            "title": "Easy run",
+            "workout": "- 8km 60-85% LTHR\n\n~47 min, stop by 55 min. Replaces the swim: the weekend is a rest weekend (Padua), so the km go here. Hard ceiling: walk a hill rather than cross it.",
+            "estKm": 8
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 3: LT field test on Tuesday (moved from Nov 21 after illness); recompute threshold HR and pace from it before Thursday.",
-          "estKm": null,
+          "bigPicture": "Endurance 3 (Padua week): Night bus Thursday, rest Saturday and Sunday. The long run (fuel test D) moves to Thursday before the bus, this week's race-pace blocks are dropped (they come back next week), and the LT field test moves to Tue Dec 1.",
+          "estKm": 8,
           "estMin": {
-            "run": 0,
-            "swim": 35,
+            "run": 47,
+            "swim": 0,
             "strength": 0,
-            "total": 35
+            "total": 47
           }
         },
         {
@@ -1122,19 +1122,19 @@
           "dayLabel": "Tue Nov 24",
           "training": {
             "type": "tempo",
-            "title": "LT field test (30-min TT)",
-            "workout": "Warmup\n- 15m 60-85% LTHR\n\nStrides 3x\n- 20s stride intensity=active\n- 60s walk-back\n\nTime trial\n- 30m all-out sustainable intensity=active\n\nCooldown\n- 10m 60-85% LTHR\n\nSolo, flat ground, all-out but sustainable. Average HR of the LAST 20 min = LTHR; average pace = threshold pace. Replaces the unvalidated device LT in data/athlete.json; update it before Thursday's session. Moved here from Sat Nov 21 (illness) and replaces this week's 6 km LT run.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
-            "estKm": 11
+            "title": "Lactate-threshold run (6 km at LT)",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 6km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 21 test resets it; never above 100% LTHR. First quality session after the illness: if HR runs high for the pace from the first km, make it 4 km. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
           "food": "Carbs at the meal before the session; protein + carbs afterwards.",
-          "bigPicture": "Endurance 3 (base).",
-          "estKm": 11,
+          "bigPicture": "Endurance 3 (Padua week) (base).",
+          "estKm": 14,
           "estMin": {
-            "run": 50,
+            "run": 70,
             "swim": 0,
             "strength": 40,
-            "total": 90
+            "total": 110
           }
         },
         {
@@ -1148,7 +1148,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 3 (base).",
+          "bigPicture": "Endurance 3 (Padua week) (base).",
           "estKm": 7.5,
           "estMin": {
             "run": 46,
@@ -1161,34 +1161,54 @@
           "date": "2026-11-26",
           "dayLabel": "Thu Nov 26",
           "training": {
-            "type": "medium-long",
-            "title": "Medium-long run with race-pace blocks",
-            "workout": "- 6km 60-85% LTHR\n\nMarathon pace 2x\n- 2.5km 4:09/km Pace\n- 1km jog\n\n- 5km 60-85% LTHR\n\nIf lap HR passes 99.5% LTHR, finish the block at 4:16. Rest of the run stays easy.\n\nHOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
-            "estKm": 18
+            "type": "long",
+            "title": "Long run (fuel test D)",
+            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nMoved from Sunday (Padua weekend). Run it in the day, before the night bus, and keep the usual pre-run meal and timing as close as you can; note in the journal that it was a weekday run.\n\nFUEL TEST D (honey only, diluted): ~50 g carbs/h from minute 30. Per 60 g carbs: 80 g honey, water to 250 mL (~24%). Sip every 15 min from a soft flask, plus water to thirst. Isolates the fructose ratio against B. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
+            "estKm": 24
           },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 3 (base).",
-          "estKm": 18,
+          "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
+          "food": "Carb-rich dinner the night before; fuel during the run as described; recovery meal with protein + carbs within ~1h.",
+          "bigPicture": "Endurance 3 (Padua week) (base).",
+          "estKm": 24,
           "estMin": {
-            "run": 94,
+            "run": 136,
             "swim": 0,
-            "strength": 30,
-            "total": 124
+            "strength": 0,
+            "total": 136
           }
         },
         {
           "date": "2026-11-27",
           "dayLabel": "Fri Nov 27",
           "training": {
+            "type": "easy",
+            "title": "Easy run (Padua)",
+            "workout": "- 10km 60-85% LTHR\n\n~59 min, stop by 70 min. Day after the long run and the night bus: if you slept badly, make it 6-8 km. Hard ceiling: walk a hill rather than cross it.\n\nHOME STRENGTH S2, plyo + core, optional (~25 min, bodyweight, anywhere): pogo hops 3x15, skipping for height 3x20 m, dead bug 3x10, knee Copenhagen plank 3x20 s/side, side plank 3x30 s/side. Skip it if your legs are heavy from Thursday.",
+            "estKm": 10
+          },
+          "movement": "Travel day: walking around Padua is fine.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "Endurance 3 (Padua week) (base).",
+          "estKm": 10,
+          "estMin": {
+            "run": 59,
+            "swim": 0,
+            "strength": 25,
+            "total": 84
+          }
+        },
+        {
+          "date": "2026-11-28",
+          "dayLabel": "Sat Nov 28",
+          "training": {
             "type": "rest",
-            "title": "Rest day",
+            "title": "Rest day (Padua)",
             "workout": "Full rest. Walking is fine.",
             "estKm": null
           },
-          "movement": "Bike both ways fine.",
+          "movement": "Walking is fine.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 3 (base).",
+          "bigPicture": "Endurance 3 (Padua week) (base).",
           "estKm": null,
           "estMin": {
             "run": 0,
@@ -1198,51 +1218,31 @@
           }
         },
         {
-          "date": "2026-11-28",
-          "dayLabel": "Sat Nov 28",
-          "training": {
-            "type": "easy",
-            "title": "Easy run + strides",
-            "workout": "- 10.5km 60-85% LTHR\n\nStrides 6x\n- 20s stride intensity=active\n- 60s walk-back\n\n~62 min, stop by 75 min. Hard ceiling: walk a hill rather than cross it. Strides relaxed, full walk-back recovery.",
-            "estKm": 10.5
-          },
-          "movement": "Bike commute fine at easy effort.",
-          "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 3 (base).",
-          "estKm": 10.5,
-          "estMin": {
-            "run": 62,
-            "swim": 0,
-            "strength": 0,
-            "total": 62
-          }
-        },
-        {
           "date": "2026-11-29",
           "dayLabel": "Sun Nov 29",
           "training": {
-            "type": "long",
-            "title": "Long run (fuel test D)",
-            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nFUEL TEST D (honey only, diluted): ~50 g carbs/h from minute 30. Per 60 g carbs: 80 g honey, water to 250 mL (~24%). Sip every 15 min from a soft flask, plus water to thirst. Isolates the fructose ratio against B. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
-            "estKm": 24
+            "type": "rest",
+            "title": "Rest day (Padua)",
+            "workout": "Full rest. Walking is fine.",
+            "estKm": null
           },
-          "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
-          "food": "Carb-rich dinner the night before; fuel during the run as described; recovery meal with protein + carbs within ~1h.",
-          "bigPicture": "Endurance 3 (base).",
-          "estKm": 24,
+          "movement": "Walking is fine.",
+          "food": "Normal balanced meals.",
+          "bigPicture": "Endurance 3 (Padua week) (base).",
+          "estKm": null,
           "estMin": {
-            "run": 136,
+            "run": 0,
             "swim": 0,
             "strength": 0,
-            "total": 136
+            "total": 0
           }
         }
       ],
       "estHours": {
-        "run": 6.5,
-        "swim": 0.6,
-        "strength": 1.2,
-        "total": 8.3
+        "run": 6.0,
+        "swim": 0.0,
+        "strength": 1.1,
+        "total": 7.1
       }
     },
     {
@@ -1251,8 +1251,8 @@
       "label": "Nov 30–Dec 6",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "~80 km. Volume is the main lever for sub-3; intensity stays the same. Long run = fuel test D.",
-      "estKm": 80.0,
+      "tip": "LT field test on Tuesday (moved from Nov 21): recompute threshold HR and pace from it before Thursday. ~76 km; volume is the main lever for sub-3. Long run = fuel test D.",
+      "estKm": 76.0,
       "days": [
         {
           "date": "2026-11-30",
@@ -1279,19 +1279,19 @@
           "dayLabel": "Tue Dec 1",
           "training": {
             "type": "tempo",
-            "title": "Lactate-threshold run (7 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 7km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
-            "estKm": 15
+            "title": "LT field test (30-min TT)",
+            "workout": "Warmup\n- 15m 60-85% LTHR\n\nStrides 3x\n- 20s stride intensity=active\n- 60s walk-back\n\nTime trial\n- 30m all-out sustainable intensity=active\n\nCooldown\n- 10m 60-85% LTHR\n\nSolo, flat ground, all-out but sustainable. Average HR of the LAST 20 min = LTHR; average pace = threshold pace. Replaces the unvalidated device LT in data/athlete.json; update it before Thursday's session. Moved here from Sat Nov 21 (illness, then the Padua weekend) and replaces this week's 7 km LT run.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "estKm": 11
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
           "food": "Carbs at the meal before the session; protein + carbs afterwards.",
-          "bigPicture": "Endurance 4 (base).",
-          "estKm": 15,
+          "bigPicture": "Endurance 4: LT field test on Tuesday (moved from Nov 21); recompute threshold HR and pace from it before Thursday.",
+          "estKm": 11,
           "estMin": {
-            "run": 74,
+            "run": 50,
             "swim": 0,
             "strength": 40,
-            "total": 114
+            "total": 90
           }
         },
         {
@@ -1396,10 +1396,10 @@
         }
       ],
       "estHours": {
-        "run": 7.3,
+        "run": 6.9,
         "swim": 0.6,
         "strength": 1.2,
-        "total": 9.1
+        "total": 8.7
       }
     },
     {
@@ -1477,7 +1477,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (7 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 7km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 7km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S2, plyo + core (~30 min): pogo hops 4x20, alternate-leg bounds 4x6/leg, split-squat jumps 3x6/leg, lateral line hops 3x10, dead bug 3x12, side plank 3x45 s/side. ~100 contacts, full recovery between sets.",
             "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1565,7 +1565,7 @@
       "label": "Dec 14–Dec 20",
       "bikeNote": "Bike commuting counts as recovery movement, not training volume -- on quality and long-run days take the U-Bahn.",
       "swimNote": "Swimming optional on rest days only; it does not replace running volume.",
-      "tip": "Recovery week ending with Pisa as an easy 21 km with your sister. The Dec 9 HR check plus the Nov 24 threshold test decide whether volume keeps climbing from Dec 21.",
+      "tip": "Recovery week ending with Pisa as an easy 21 km with your sister. The Dec 9 HR check plus the Dec 1 threshold test decide whether volume keeps climbing from Dec 21.",
       "estKm": 70.1,
       "days": [
         {
@@ -1579,7 +1579,7 @@
           },
           "movement": "Bike commute fine at easy effort.",
           "food": "Normal balanced meals.",
-          "bigPicture": "Endurance 6 (recovery + Pisa HM easy): Recovery week ending with Pisa as an easy 21 km with your sister. The Dec 9 HR check plus the Nov 24 threshold test decide whether volume keeps climbing from Dec 21.",
+          "bigPicture": "Endurance 6 (recovery + Pisa HM easy): Recovery week ending with Pisa as an easy 21 km with your sister. The Dec 9 HR check plus the Dec 1 threshold test decide whether volume keeps climbing from Dec 21.",
           "estKm": null,
           "estMin": {
             "run": 0,
@@ -1751,7 +1751,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -1928,7 +1928,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2065,7 +2065,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (9 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 9km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 9km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 17
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2262,7 +2262,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (6 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 6km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 6km 95-99% LTHR\n\nCooldown\n- 5km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.",
             "estKm": 14
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2379,7 +2379,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (7 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 7km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 7km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, max strength (~40 min, after the run): Bulgarian split squat 4x5-6/leg, single-leg Romanian deadlift 4x6/leg, single-leg calf raise 4x6-8/leg straight knee + 3x8 bent knee, single-leg hip thrust 3x8/leg, Copenhagen plank 3x20-30 s/side. Load (backpack or dumbbells) so the last rep is hard but clean; 3 s lowering, 2 min rest; add load when every set hits the top of the range.",
             "estKm": 16
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -2693,7 +2693,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (8 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 8km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.\n\nHOME STRENGTH S1, maintain (~30 min, after the run): Bulgarian split squat 3x4-5/leg heavy, single-leg Romanian deadlift 3x5/leg, single-leg calf raise 3x6/leg heavy. Lower slowly, lift fast; 3 min rest.",
             "estKm": 17
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
@@ -3047,7 +3047,7 @@
           "training": {
             "type": "tempo",
             "title": "Lactate-threshold run (6 km at LT)",
-            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 6km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Nov 24 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.",
+            "workout": "Warmup\n- 3km 60-85% LTHR\n\nThreshold\n- 6km 95-99% LTHR\n\nCooldown\n- 6km 60-85% LTHR\n\nThreshold pace ~4:00-4:10/km until the Dec 1 test resets it; never above 100% LTHR. Pfitzinger-style tempo: steady, not a race; if HR passes 99.5% LTHR, ease 5-10 s/km.",
             "estKm": 15
           },
           "movement": "U-Bahn or easy bike only -- protect the legs for the session.",
