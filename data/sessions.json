@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-15T21:46:39+01:00",
+  "syncedAt": "2026-11-18T21:47:00+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1206,6 +1206,26 @@
         "The first 17 km averaged 5:56 /km, 11 s/km slower than last Sunday, yet heart rate still crossed 140 at km 6 and reached 151-153 by km 16-17. Pace alone isn't holding the cap: drop to 6:10-6:15 /km, or walk 30 s, as soon as a km ends over 140.",
         "The 20-min finish ran 5:35, 5:20 and 5:59 /km at 161-171 bpm, in the 155-LT band and above LT. It is meant to stay at or below 145, a small step up, not a push.",
         "This was fuel test B (honey + maltodextrin): log the upper-GI and lower-GI scores (0-10), any stops and the temperature in the journal, and note whether the late heart-rate climb came with any gut trouble."
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "status": "none",
+      "headline": "Easy swim not recorded",
+      "summary": "Planned easy pool session, 30-40 min (about 1.5-2 km) at RPE 3, replacing the recovery run. No swim recorded in Intervals.icu on Monday; it can be added if done off-watch.",
+      "learn": [
+        "After Sunday's 20 km at 147 bpm average, with the last 3 km at 161-171 bpm, Monday was the day to recover: if the swim was skipped, keep Tuesday's 10.5 km easy run under the 140 cap from the first km.",
+        "Last Monday's swim averaged 142 bpm; next time aim for under 140 so it stays a recovery session."
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "status": "none",
+      "headline": "Easy run with strides not recorded",
+      "summary": "Planned 10.5 km easy (cap 140 bpm) with 6 relaxed strides, stop by 75 min, plus a short recovery-week strength session. Nothing recorded in Intervals.icu on Tuesday; it can be added if done off-watch.",
+      "learn": [
+        "That is two planned sessions in a row with nothing recorded (Monday's swim, Tuesday's easy run) after Sunday's 20 km finished at 161-171 bpm. If the legs needed the days, fine, but keep Wednesday's 14 km medium-long under the 140 cap rather than making up the missed km.",
+        "This is a recovery week: don't stack Tuesday's 10.5 km onto Thursday's rest day; the Saturday 21 Nov test needs fresh legs."
       ]
     }
   ]

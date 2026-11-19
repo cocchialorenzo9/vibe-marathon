@@ -43,29 +43,15 @@ Optionally override the history path (default `~/.vibe-marathon/history.json`):
 export COACH_HISTORY_PATH=/path/to/history.json
 ```
 
-## Device support
+## Device
 
-Set `WATCH_SOURCE` to select your device (default: `amazfit`):
-
-### Amazfit Trex 3 (primary)
+### Amazfit Trex 3
 
 ```bash
 python3 scripts/fetch_amazfit.py
 ```
 
 Prompts for ~6 values from the Zepp app (Health tab → Sleep, HRV, Heart Rate; Exercise tab → yesterday's workout). Takes about 2 minutes. HRV baseline is computed automatically from local history once you have 3+ days of data.
-
-### Garmin (legacy)
-
-```bash
-export WATCH_SOURCE=garmin
-export GARMIN_EMAIL=your@email.com
-export GARMIN_PASSWORD=yourpassword
-```
-
-### Switching devices mid-plan
-
-Local history entries are device-agnostic — the same fields are stored regardless of source. Switching is safe; HRV baseline rebuilds from history over ~7 days.
 
 ## Daily update
 
