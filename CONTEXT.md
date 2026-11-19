@@ -99,7 +99,7 @@ _Avoid_: MP finish (reserved for this plan's *prescribed*, exact-pace long-run s
 ## Session log (started 2026-10-17)
 
 **Session status**:
-What actually happened on a plan day, compared with what `training-plan-rome-2027.json` prescribed, as synced from Strava into `data/sessions.json` by the nightly `sync-sessions` scheduled task: `done` (on the day, inside the HR cap), `over` (on the day, average or a full km lap over the cap), `moved` (done on another day instead), `extra` (something done on a day that didn't plan it, usually the other half of a move), `none` (planned, nothing recorded), `rest` (rest day, rested). A moved session is checked against the HR cap of the day it was planned for, not the day it ran.
+What actually happened on a plan day, compared with what `training-plan-rome-2027.json` prescribed, as synced from Intervals.icu into `data/sessions.json` by the nightly `sync-sessions` scheduled task: `done` (on the day, inside the HR cap), `over` (on the day, average or a full km lap over the cap), `moved` (done on another day instead), `extra` (something done on a day that didn't plan it, usually the other half of a move), `none` (planned, nothing recorded), `rest` (rest day, rested), `sick` (ill, nothing done; only when the athlete reports it, with `skipped` naming the session the illness cost, shown on the calendar with a red cross). A moved session is checked against the HR cap of the day it was planned for, not the day it ran.
 _Avoid_: missed (a moved session isn't missed), skipped, compliance
 
 **HR cap**:

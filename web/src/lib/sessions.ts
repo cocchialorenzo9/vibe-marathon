@@ -1,9 +1,9 @@
 import sessionsJson from "@data/sessions.json";
 import { HR_BAND_CUTOFFS, LT2 } from "./athlete";
-import { daysBetween, hrCap, romePlan, weekdayDate, type PlanDay, type PlanWeek } from "./plan";
+import { daysBetween, hrCap, romePlan, weekdayDate, type PlanDay, type PlanWeek, type SessionType } from "./plan";
 
 /**
- * What actually happened on a plan day, as synced from Strava into
+ * What actually happened on a plan day, as synced from Intervals.icu into
  * data/sessions.json by the sync-sessions scheduled task.
  * - done:  run on the planned day, inside the plan's HR cap
  * - over:  run on the planned day, average or a lap over the HR cap
@@ -11,8 +11,16 @@ import { daysBetween, hrCap, romePlan, weekdayDate, type PlanDay, type PlanWeek 
  * - moved: the planned session was done on another day instead (see movedTo)
  * - none:  nothing recorded for a planned session
  * - rest:  rest day, rested
+ * - sick:  ill, so nothing was done; `skipped` names the session it replaced
  */
-export type SessionStatus = "done" | "over" | "extra" | "moved" | "none" | "rest";
+export type SessionStatus = "done" | "over" | "extra" | "moved" | "none" | "rest" | "sick";
+
+/** The session a sick day replaced, as the plan had it before it was rewritten around the illness. */
+export interface SkippedSession {
+  type: SessionType;
+  title: string;
+  km: number | null;
+}
 
 export interface Lap {
   /** Lap length in km (1 for full kilometre splits). */
@@ -41,6 +49,7 @@ export interface SessionDay {
   summary: string;
   movedTo?: string;
   movedFrom?: string;
+  skipped?: SkippedSession;
   activity?: Activity;
   learn: string[];
 }
@@ -62,15 +71,22 @@ export function sessionOn(iso: string): SessionDay | undefined {
 }
 
 /** Badge, colour and wording for each status; `pending` is a past day the sync hasn't written yet. */
-export const STATUS: Record<SessionStatus | "pending", { label: string; line: string; badge: string; color: string }> = {
+export const STATUS: Record<SessionStatus | "pending", { label: string; line: string; badge: string; color: string; badgeBg?: string }> = {
   done: { label: "DONE", line: "Done", badge: "✓", color: "#7ee89a" },
   over: { label: "OVER HR CAP", line: "Over HR cap", badge: "!", color: "#ffb08a" },
   extra: { label: "RAN · NOT PLANNED TODAY", line: "Ran", badge: "+", color: "#c8bfff" },
   moved: { label: "MOVED", line: "Moved", badge: "→", color: "#c8bfff" },
   none: { label: "NOT LOGGED", line: "Not logged", badge: "–", color: "#97a1ad" },
   rest: { label: "REST ✓", line: "Rested", badge: "✓", color: "#7e8894" },
+  sick: { label: "ILL · SKIPPED", line: "Ill", badge: "✚", color: "#ff5a5f", badgeBg: "#ffffff" },
   pending: { label: "NOT SYNCED", line: "Not synced yet", badge: "?", color: "#7e8894" },
 };
+
+/** Colours for a status badge: a red cross on white for sick days, dark ink on the status colour otherwise. */
+export function badgeStyle(status: SessionStatus): { background: string; color?: string; fontSize?: number } {
+  const st = STATUS[status];
+  return st.badgeBg ? { background: st.badgeBg, color: st.color, fontSize: 13 } : { background: st.color };
+}
 
 /** The HR cap the session was run against: a moved session keeps the cap of the day it came from. */
 export function capFor(s: SessionDay): number | null {
@@ -128,6 +144,11 @@ export function compareRows(s: SessionDay, plan: PlanDay): CompareRow[] {
 
   if (!a) {
     if (s.status === "rest") return [{ key: "Activity", plan: "rest", done: "rest", diff: "✓", tone: "good" }];
+    if (s.status === "sick") {
+      const k = s.skipped;
+      const planned = k ? `${k.title}${k.km ? ` · ${k.km} km` : ""}` : "—";
+      return [{ key: "Session", plan: planned, done: "ill", diff: "skipped", tone: "warn" }];
+    }
     const diff = s.status === "moved" ? "moved" : "not logged";
     const rows: CompareRow[] = [];
     if (planKm) rows.push({ key: "Distance", plan: `${planKm} km`, done: "—", diff, tone: "warn" });
