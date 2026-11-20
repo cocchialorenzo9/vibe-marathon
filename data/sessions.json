@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-18T21:47:00+01:00",
+  "syncedAt": "2026-11-20T21:46:21+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1236,6 +1236,60 @@
       "summary": "Third sick day, so the 14 km medium-long run was skipped. The week restarts on Thursday with a 5 km return run; missed km are not made up (Pfitzinger: under 10 days lost, pick the schedule back up).",
       "learn": [
         "Three days lost is under Pfitzinger's 10-day line: pick the schedule back up after a few easy days, with no make-up km."
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "status": "over",
+      "headline": "Return run done, one km just over the cap",
+      "summary": "First run after three sick days, planned 5 km at recovery effort (cap 130), stop by 40 min. Done in the evening: 5.30 km in 30:29 at 5:45 /km, average 129 bpm. Km 1-3 and 5 sat at 125-130, but km 4 reached 132, just over the 130 cap.",
+      "activity": {
+        "intervalsId": "i212226385",
+        "sport": "Run",
+        "distanceKm": 5.3,
+        "movingSec": 1829,
+        "avgHr": 129,
+        "maxHr": 137,
+        "laps": [
+          { "km": 1.0, "sec": 334, "hr": 125 },
+          { "km": 1.0, "sec": 333, "hr": 127 },
+          { "km": 1.0, "sec": 330, "hr": 130 },
+          { "km": 1.0, "sec": 353, "hr": 132 },
+          { "km": 1.0, "sec": 372, "hr": 128 },
+          { "km": 0.303, "sec": 108, "hr": 129 }
+        ]
+      },
+      "learn": [
+        "Km 4 was the slowest of the first four (5:53 /km) yet the only one over the cap at 132 bpm: heart rate creeping up while pace drops is normal just after illness, so start the next runs at 5:50-6:00 /km rather than 5:30.",
+        "Slowing to 6:12 /km at km 5 brought heart rate straight back to 128. That is the move to repeat whenever a km ends over the cap."
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "status": "done",
+      "headline": "Easy run done, inside the cap",
+      "summary": "Planned 7 km easy (cap 140), stop by 50 min. Done in the evening: 7.93 km in 43:24 at 5:28 /km, average 137 bpm. Every full km stayed at 129-140; only the short last 0.93 km touched 141.",
+      "activity": {
+        "intervalsId": "i212565165",
+        "sport": "Run",
+        "distanceKm": 7.93,
+        "movingSec": 2604,
+        "avgHr": 137,
+        "maxHr": 149,
+        "laps": [
+          { "km": 1.0, "sec": 322, "hr": 129 },
+          { "km": 1.0, "sec": 326, "hr": 132 },
+          { "km": 1.0, "sec": 311, "hr": 138 },
+          { "km": 1.0, "sec": 345, "hr": 137 },
+          { "km": 1.0, "sec": 314, "hr": 137 },
+          { "km": 1.0, "sec": 335, "hr": 140 },
+          { "km": 1.0, "sec": 343, "hr": 139 },
+          { "km": 0.926, "sec": 310, "hr": 141 }
+        ]
+      },
+      "learn": [
+        "Average 137 bpm sits in the 130-140 band, but km 6-7 reached 139-140 at 5:35-5:43 /km: any quicker and the cap would have gone. Tomorrow's 8 km with strides should start at 5:40 /km or slower.",
+        "You ran 0.93 km more than planned in 43 min. Two days after illness, stop at the planned km even when the time allows more; Saturday's strides are only on if today felt normal."
       ]
     }
   ]
