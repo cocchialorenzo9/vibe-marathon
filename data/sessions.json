@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-20T21:46:21+01:00",
+  "syncedAt": "2026-11-21T21:46:21+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1290,6 +1290,36 @@
       "learn": [
         "Average 137 bpm sits in the 130-140 band, but km 6-7 reached 139-140 at 5:35-5:43 /km: any quicker and the cap would have gone. Tomorrow's 8 km with strides should start at 5:40 /km or slower.",
         "You ran 0.93 km more than planned in 43 min. Two days after illness, stop at the planned km even when the time allows more; Saturday's strides are only on if today felt normal."
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "status": "over",
+      "headline": "Easy run with strides, second half over the cap",
+      "summary": "Planned 8 km easy (cap 140) with 4 strides, stop by 55 min. Done in the afternoon: 8.93 km in 49:37 at 5:33 /km, average 142 bpm. Km 1-4 sat at 132-140, then km 5-8 rose to 146-157, over the 140 cap. The recovery-week strength isn't in Intervals.icu; it can be added if done off-watch.",
+      "activity": {
+        "intervalsId": "i212902027",
+        "sport": "Run",
+        "distanceKm": 8.93,
+        "movingSec": 2977,
+        "avgHr": 142,
+        "maxHr": 161,
+        "laps": [
+          { "km": 1.0, "sec": 321, "hr": 132 },
+          { "km": 1.0, "sec": 324, "hr": 136 },
+          { "km": 1.0, "sec": 322, "hr": 140 },
+          { "km": 1.0, "sec": 344, "hr": 140 },
+          { "km": 1.0, "sec": 316, "hr": 146 },
+          { "km": 1.0, "sec": 326, "hr": 150 },
+          { "km": 1.0, "sec": 329, "hr": 157 },
+          { "km": 1.0, "sec": 328, "hr": 147 },
+          { "km": 0.929, "sec": 368, "hr": 135 }
+        ]
+      },
+      "learn": [
+        "Km 1-4 at 5:21-5:44 /km held 132-140; km 5-7 at a similar 5:16-5:29 /km climbed to 146-157. Two days after the return from illness, slow down from km 5 to keep the heart rate under 140, even if it means 5:50 /km or slower.",
+        "Km 7 averaged 157, above the 155 line. If strides happened there, take the full 60 s walk-back and let HR drop under 135 before restarting the easy running.",
+        "Sunday's shortened long run (fuel test C) follows: if HR sits this high again at easy pace early on, go with the plan's fallback of an easy 10 km and drop the test."
       ]
     }
   ]
