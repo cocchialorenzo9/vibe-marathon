@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-21T21:46:21+01:00",
+  "syncedAt": "2026-11-22T21:45:57+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1320,6 +1320,43 @@
         "Km 1-4 at 5:21-5:44 /km held 132-140; km 5-7 at a similar 5:16-5:29 /km climbed to 146-157. Two days after the return from illness, slow down from km 5 to keep the heart rate under 140, even if it means 5:50 /km or slower.",
         "Km 7 averaged 157, above the 155 line. If strides happened there, take the full 60 s walk-back and let HR drop under 135 before restarting the easy running.",
         "Sunday's shortened long run (fuel test C) follows: if HR sits this high again at easy pace early on, go with the plan's fallback of an easy 10 km and drop the test."
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "status": "over",
+      "headline": "Shortened long run, easy part inside the cap, finish too hard",
+      "summary": "Planned 11 km easy (cap 140) then 20 min at up to 145 bpm, about 15 km, with fuel test C. Done in the afternoon: 15.07 km in 1:24:50 at 5:38 /km, average 138 bpm. Km 1-11 all stayed at 125-139 at 5:53 /km on average, but the 20-min finish climbed to 142-146 at km 12-13 and 162-163 at km 14-15, over the 145 allowed.",
+      "activity": {
+        "intervalsId": "i213319886",
+        "sport": "Run",
+        "distanceKm": 15.07,
+        "movingSec": 5090,
+        "avgHr": 138,
+        "maxHr": 169,
+        "laps": [
+          { "km": 1.0, "sec": 346, "hr": 125 },
+          { "km": 1.0, "sec": 338, "hr": 129 },
+          { "km": 1.0, "sec": 345, "hr": 135 },
+          { "km": 1.0, "sec": 342, "hr": 134 },
+          { "km": 1.0, "sec": 349, "hr": 131 },
+          { "km": 1.0, "sec": 349, "hr": 136 },
+          { "km": 1.0, "sec": 369, "hr": 134 },
+          { "km": 1.0, "sec": 363, "hr": 137 },
+          { "km": 1.0, "sec": 358, "hr": 135 },
+          { "km": 1.0, "sec": 364, "hr": 136 },
+          { "km": 1.0, "sec": 356, "hr": 139 },
+          { "km": 1.0, "sec": 316, "hr": 142 },
+          { "km": 1.0, "sec": 321, "hr": 146 },
+          { "km": 1.0, "sec": 283, "hr": 162 },
+          { "km": 1.0, "sec": 274, "hr": 163 },
+          { "km": 0.069, "sec": 18, "hr": 164 }
+        ]
+      },
+      "learn": [
+        "The easy 11 km is the best long-run pacing since the illness: 5:38-6:09 /km held every km under 140, unlike last Sunday when HR crossed 140 at km 6. Keep starting long runs at 5:45 /km or slower.",
+        "The finish ran 5:16, 5:21, 4:43 and 4:34 /km; the last two reached 162-163 bpm, in the 155-LT band just under LT (165). The 20 min is meant to stay at or below 145: around 5:15-5:20 /km was already enough to get there.",
+        "This was fuel test C (drink mix only): log the upper-GI and lower-GI scores (0-10), any stops, whether you could still drink in the last 20 min, and the temperature in the journal, to compare with tests A and B."
       ]
     }
   ]
