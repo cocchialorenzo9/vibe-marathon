@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-22T21:45:57+01:00",
+  "syncedAt": "2026-11-23T21:46:44+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1357,6 +1357,35 @@
         "The easy 11 km is the best long-run pacing since the illness: 5:38-6:09 /km held every km under 140, unlike last Sunday when HR crossed 140 at km 6. Keep starting long runs at 5:45 /km or slower.",
         "The finish ran 5:16, 5:21, 4:43 and 4:34 /km; the last two reached 162-163 bpm, in the 155-LT band just under LT (165). The 20 min is meant to stay at or below 145: around 5:15-5:20 /km was already enough to get there.",
         "This was fuel test C (drink mix only): log the upper-GI and lower-GI scores (0-10), any stops, whether you could still drink in the last 20 min, and the temperature in the journal, to compare with tests A and B."
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "status": "over",
+      "headline": "Easy run, last full km just over the cap",
+      "summary": "Planned 8 km easy (cap 140), stop by 55 min, in place of the swim. Done in the evening: 8.77 km in 47:36 at 5:26 /km, average 136 bpm. Km 1-7 sat at 126-138, but km 8 reached 141 (at 5:11 /km), just over the 140 cap, and the short last 0.76 km touched 143.",
+      "activity": {
+        "intervalsId": "i213796355",
+        "sport": "Run",
+        "distanceKm": 8.77,
+        "movingSec": 2856,
+        "avgHr": 136,
+        "maxHr": 147,
+        "laps": [
+          { "km": 1.0, "sec": 337, "hr": 126 },
+          { "km": 1.0, "sec": 321, "hr": 134 },
+          { "km": 1.0, "sec": 326, "hr": 134 },
+          { "km": 1.0, "sec": 339, "hr": 136 },
+          { "km": 1.0, "sec": 323, "hr": 134 },
+          { "km": 1.0, "sec": 333, "hr": 137 },
+          { "km": 1.0, "sec": 320, "hr": 138 },
+          { "km": 1.0, "sec": 311, "hr": 141 },
+          { "km": 0.764, "sec": 248, "hr": 143 }
+        ]
+      },
+      "learn": [
+        "HR crept up as the pace quickened: km 7-8 went 5:20 then 5:11 /km and HR went 138 then 141. Hold the last km at the 5:30 /km of the first half and it stays under 140.",
+        "At 8.77 km you ran 0.77 km past the planned 8: stopping at 8 km would have also ended it before HR reached 141-143."
       ]
     }
   ]
