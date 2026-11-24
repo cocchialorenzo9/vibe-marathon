@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-23T21:46:44+01:00",
+  "syncedAt": "2026-11-24T21:46:31+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1386,6 +1386,40 @@
       "learn": [
         "HR crept up as the pace quickened: km 7-8 went 5:20 then 5:11 /km and HR went 138 then 141. Hold the last km at the 5:30 /km of the first half and it stays under 140.",
         "At 8.77 km you ran 0.77 km past the planned 8: stopping at 8 km would have also ended it before HR reached 141-143."
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "status": "done",
+      "headline": "Threshold run done, short of the planned pace and distance",
+      "summary": "Planned 3 km warm-up, 6 km at 95-99% LTHR (157-163 bpm) and 5 km cool-down, about 14 km. Done in the afternoon: 12.64 km in 1:07:50, average 140 bpm. The 6 threshold km ran 4:13-4:52 /km (4:34 average) at 144-162 bpm, reaching the 157-163 band only from km 6, and never above LT (165); the cool-down was cut to 3.6 km. The S1 strength isn't in Intervals.icu; it can be added if done off-watch.",
+      "activity": {
+        "intervalsId": "i214170654",
+        "sport": "Run",
+        "distanceKm": 12.64,
+        "movingSec": 4070,
+        "avgHr": 140,
+        "maxHr": 167,
+        "laps": [
+          { "km": 1, "sec": 393, "hr": 123 },
+          { "km": 1, "sec": 360, "hr": 125 },
+          { "km": 1, "sec": 359, "hr": 131 },
+          { "km": 1, "sec": 292, "hr": 144 },
+          { "km": 1, "sec": 277, "hr": 151 },
+          { "km": 1, "sec": 275, "hr": 157 },
+          { "km": 1, "sec": 278, "hr": 158 },
+          { "km": 1, "sec": 271, "hr": 156 },
+          { "km": 1, "sec": 253, "hr": 162 },
+          { "km": 1, "sec": 352, "hr": 140 },
+          { "km": 1, "sec": 351, "hr": 133 },
+          { "km": 1, "sec": 348, "hr": 131 },
+          { "km": 0.638, "sec": 265, "hr": 126 }
+        ]
+      },
+      "learn": [
+        "HR took two km to climb into the band (144 at km 4, 151 at km 5): start the threshold block a touch quicker than feels right, then let HR settle at 157-163.",
+        "In the band you ran 4:31-4:38 /km at 156-158 bpm, well off the 4:00-4:10 guess. Use HR, not that pace, until the Dec 1 LT test resets it.",
+        "Km 9 at 4:13 hit 162, the top of the band: that is the ceiling for these sessions, not the target."
       ]
     }
   ]
