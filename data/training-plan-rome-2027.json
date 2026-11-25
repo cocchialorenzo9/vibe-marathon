@@ -49,7 +49,8 @@
       "A": "1:0.8 glucose:fructose gels + 150-200 mL water each",
       "B": "honey + maltodextrin blend, ~24%, ~1:0.65 G:F",
       "C": "1:0.8 drink mix only, ~12-13%",
-      "D": "honey only, ~24% (same dilution as B; isolates fructose ratio)"
+      "D": "honey only, ~24% (same dilution as B; isolates fructose ratio)",
+      "E": "2:1 glucose:fructose gels (30 g carbs each) + 150-200 mL water each; less fructose than A"
     },
     "schedule": [
       {
@@ -70,8 +71,8 @@
       {
         "week": 7,
         "date": "2026-11-27",
-        "strategy": "C",
-        "note": "Was D (honey only); switched to a second C run. Run on Friday because of the Padua weekend."
+        "strategy": "E",
+        "note": "Was D (honey only); athlete chose to try 2:1 gels instead. Single run, outside the A-D counterbalanced design. Run on Friday because of the Padua weekend."
       },
       {
         "week": 8,
@@ -1209,8 +1210,8 @@
           "dayLabel": "Fri Nov 27",
           "training": {
             "type": "long",
-            "title": "Long run (fuel test C, repeat)",
-            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nMoved from Sunday (Padua weekend), run the morning after the night bus. If you slept badly, make it ~18 km (14 km + 20 min) and keep the fuel test. Steady finish like Nov 22: aim ~4:50-4:55/km and keep HR at or under 88% LTHR; Nov 22's finish drifted to ~92%. Don't push it toward race pace: every fuel test keeps the same finish so the GI scores stay comparable. Keep the usual pre-run meal and timing as close as you can, and note in the journal that you ran it after a night bus.\n\nFUEL TEST C, second run (Decathlon drink mix only; replaces honey-only test D): ~50 g carbs/h from minute 30, so ~85-90 g over the run in ~700 mL at the usual ~12-13% strength. Either carry a 1 L bottle in hand, or a 0.5 L bottle plus a second pre-measured bag of powder to refill at a fountain around km 12. Don't mix 0.5 L at double strength: ~24% is the honey-mix strength this test is meant to avoid. Sip every 10-15 min; no other fuel. After the run, log: how it felt (0-10), upper-GI and lower-GI notes (burps, nausea, urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature.",
+            "title": "Long run (fuel test E: 2:1 gels)",
+            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nMoved from Sunday (Padua weekend), run the morning after the night bus. If you slept badly, make it ~18 km (14 km + 20 min) and keep the fuel test. Steady finish like Nov 22: aim ~4:50-4:55/km and keep HR at or under 88% LTHR; Nov 22's finish drifted to ~92%. Don't push it toward race pace: every fuel test keeps the same finish so the GI scores stay comparable. Keep the usual pre-run meal and timing as close as you can, and note in the journal that you ran it after a night bus.\n\nFUEL TEST E (2:1 glucose:fructose gels, 30 g each; replaces honey-only test D): one gel at min 30, 65 and 100 (90 g, ~50 g carbs/h), each with 150-200 mL water. Carry a 4th gel as a spare; on the shortened ~18 km version 3 still fits. About 600 mL water plus drinking to thirst, so a 0.5 L bottle with a fountain refill around km 12, or a 0.75-1 L bottle. No other fuel. Compare with test A (1:0.8 gels, Nov 8: 9/10, a few burps): same gel format, less fructose. After the run, log: how it felt (0-10), upper-GI and lower-GI notes (burps, nausea, urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature.",
             "estKm": 24
           },
           "movement": "Travel day: no extra walking before the run.",
