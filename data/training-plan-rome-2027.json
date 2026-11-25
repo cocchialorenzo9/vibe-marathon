@@ -69,8 +69,9 @@
       },
       {
         "week": 7,
-        "date": "2026-11-29",
-        "strategy": "D"
+        "date": "2026-11-27",
+        "strategy": "C",
+        "note": "Was D (honey only); switched to a second C run. Run on Friday because of the Padua weekend."
       },
       {
         "week": 8,
@@ -95,7 +96,33 @@
     ],
     "record": "Upper-GI 0-10, lower-GI 0-10, stops, able to drink in last 20 min, temperature. Same pre-run meal and timing each time.",
     "decision": "On Jan 3: pick the strategy with the lowest mean (upper + lower) GI score; tie -> simpler/cheaper. It becomes the race fuel for all specific-block long runs, MP sessions, the HM and Rome. If every strategy averages >=3 or GI stops recur, see a sports dietitian/GP (e.g. fructose malabsorption breath test) before raising the carb target further.",
-    "caveats": "n-of-1 with 2 runs per arm: good enough to spot a clear winner, not to separate small differences. Week 6's test C comes right after two days ill and is shortened to ~85 min, and week 7's test D is a Friday run after a night bus; week 11 is Christmas week; note anything unusual eaten the day before."
+    "caveats": "n-of-1 with 2 runs per arm: good enough to spot a clear winner, not to separate small differences. Week 6's test C comes right after two days ill and is shortened to ~85 min, and week 7's test D is a Friday run after a night bus; week 11 is Christmas week; note anything unusual eaten the day before. Results are logged as an overall 'how did it feel' score (0-10, higher is better) plus GI notes, not separate upper/lower GI scores. Nov 15 was run on gummy bears the day before illness, so B has only one valid run (Dec 27).",
+    "results": [
+      {
+        "date": "2026-11-08",
+        "strategy": "A",
+        "asRun": "gels as planned",
+        "feelScore": 9,
+        "gi": "A few burps only, no lower-GI trouble",
+        "notes": "Felt strong."
+      },
+      {
+        "date": "2026-11-15",
+        "strategy": "B",
+        "asRun": "gummy bears, not the honey + maltodextrin blend",
+        "feelScore": 4,
+        "gi": "Fine",
+        "notes": "No energy. Not a valid B run: wrong fuel, and illness started the next day (avg HR 147 was high for the effort)."
+      },
+      {
+        "date": "2026-11-22",
+        "strategy": "C",
+        "asRun": "Decathlon drink mix",
+        "feelScore": 8,
+        "gi": "Fine",
+        "notes": "Shortened run (~85 min) after illness. Felt great afterwards. Less of a noticeable lift than gels, but felt as fuelled as with gels."
+      }
+    ]
   },
   "gates": [
     {
@@ -1182,8 +1209,8 @@
           "dayLabel": "Fri Nov 27",
           "training": {
             "type": "long",
-            "title": "Long run (fuel test D)",
-            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nMoved from Sunday (Padua weekend), run the morning after the night bus. If you slept badly, make it ~18 km (14 km + 20 min) and keep the fuel test. Keep the usual pre-run meal and timing as close as you can, and note in the journal that you ran it after a night bus.\n\nFUEL TEST D (honey only, diluted): ~50 g carbs/h from minute 30. Per 60 g carbs: 80 g honey, water to 250 mL (~24%). Sip every 15 min from a soft flask, plus water to thirst. Isolates the fructose ratio against B. Same pre-run meal and timing as the other test runs. After the run, log in the journal: upper-GI score 0-10 (nausea, burping, reflux), lower-GI score 0-10 (urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature. Otherwise drink to thirst.",
+            "title": "Long run (fuel test C, repeat)",
+            "workout": "- 20km 60-85% LTHR\n- 20m 60-88% LTHR\n\nMoved from Sunday (Padua weekend), run the morning after the night bus. If you slept badly, make it ~18 km (14 km + 20 min) and keep the fuel test. Steady finish like Nov 22: aim ~4:50-4:55/km and keep HR at or under 88% LTHR (~145 bpm); Nov 22's finish drifted to 152. Don't push it toward race pace: every fuel test keeps the same finish so the GI scores stay comparable. Keep the usual pre-run meal and timing as close as you can, and note in the journal that you ran it after a night bus.\n\nFUEL TEST C, second run (Decathlon drink mix only; replaces honey-only test D): ~50 g carbs/h from minute 30, so ~85-90 g over the run in ~700 mL at the usual ~12-13% strength. Either carry a 1 L bottle in hand, or a 0.5 L bottle plus a second pre-measured bag of powder to refill at a fountain around km 12. Don't mix 0.5 L at double strength: ~24% is the honey-mix strength this test is meant to avoid. Sip every 10-15 min; no other fuel. After the run, log: how it felt (0-10), upper-GI and lower-GI notes (burps, nausea, urgency, cramps), any stops, whether you could still drink in the last 20 min, and temperature.",
             "estKm": 24
           },
           "movement": "Travel day: no extra walking before the run.",
