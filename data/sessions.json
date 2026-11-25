@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-24T21:46:31+01:00",
+  "syncedAt": "2026-11-25T21:46:43+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1420,6 +1420,36 @@
         "HR took two km to climb into the band (144 at km 4, 151 at km 5): start the threshold block a touch quicker than feels right, then let HR settle at 157-163.",
         "In the band you ran 4:31-4:38 /km at 156-158 bpm, well off the 4:00-4:10 guess. Use HR, not that pace, until the Dec 1 LT test resets it.",
         "Km 9 at 4:13 hit 162, the top of the band: that is the ceiling for these sessions, not the target."
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "status": "over",
+      "headline": "Recovery run well over the cap, HR climbing as pace slowed",
+      "summary": "Planned 7.5 km at 60-79% LTHR (cap 130 bpm), stop by 55 min. Ran 8.81 km in 53:16, average 148 bpm: only km 1 sat at the cap (130), and from km 4 HR climbed to 151-158 even though pace slowed from 5:23-5:30 to 6:05-6:46 /km. A 27-second virtual ride recorded in the afternoon is just a stray recording. The S2 plyo + core isn't in Intervals.icu; it can be added if done off-watch.",
+      "activity": {
+        "intervalsId": "i214682154",
+        "sport": "Run",
+        "distanceKm": 8.81,
+        "movingSec": 3196,
+        "avgHr": 148,
+        "maxHr": 165,
+        "laps": [
+          { "km": 1, "sec": 323, "hr": 130 },
+          { "km": 1, "sec": 330, "hr": 139 },
+          { "km": 1, "sec": 325, "hr": 137 },
+          { "km": 1, "sec": 365, "hr": 143 },
+          { "km": 1, "sec": 365, "hr": 151 },
+          { "km": 1, "sec": 364, "hr": 158 },
+          { "km": 1, "sec": 386, "hr": 157 },
+          { "km": 1, "sec": 406, "hr": 154 },
+          { "km": 0.805, "sec": 332, "hr": 154 }
+        ]
+      },
+      "learn": [
+        "Km 2-3 at 5:25-5:30 /km already put HR at 137-139, above the 130 cap: on a recovery day start nearer 6:15-6:30 /km and walk a few seconds whenever HR touches 130.",
+        "HR rose about 20 bpm (137 to 158) while pace slowed by a minute per km in the second half: the day after the threshold run, and a week after being ill, that drift says the body hasn't absorbed the load yet.",
+        "If Thursday's 10 km opens above 135 bpm at an easy pace, take the 6-8 km option the plan gives and keep it under 130-140."
       ]
     }
   ]
