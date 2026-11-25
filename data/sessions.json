@@ -1425,8 +1425,8 @@
     {
       "date": "2026-11-25",
       "status": "over",
-      "headline": "Recovery run well over the cap, HR climbing as pace slowed",
-      "summary": "Planned 7.5 km at 60-79% LTHR (cap 130 bpm), stop by 55 min. Ran 8.81 km in 53:16, average 148 bpm: only km 1 sat at the cap (130), and from km 4 HR climbed to 151-158 even though pace slowed from 5:23-5:30 to 6:05-6:46 /km. A 27-second virtual ride recorded in the afternoon is just a stray recording. The S2 plyo + core isn't in Intervals.icu; it can be added if done off-watch.",
+      "headline": "Recovery run well over the cap in the cold, under-hydrated",
+      "summary": "Planned 7.5 km at 60-79% LTHR (cap 130 bpm), stop by 55 min. Ran 8.81 km in 53:16, average 148 bpm: only km 1 sat at the cap (130), and from km 4 HR climbed to 151-158 even though pace slowed from 5:23-5:30 to 6:05-6:46 /km. You reported going out under-hydrated on a very cold evening, and it felt hard. A 27-second virtual ride recorded in the afternoon is just a stray recording. The S2 plyo + core isn't in Intervals.icu; it can be added if done off-watch.",
       "activity": {
         "intervalsId": "i214682154",
         "sport": "Run",
@@ -1448,8 +1448,8 @@
       },
       "learn": [
         "Km 2-3 at 5:25-5:30 /km already put HR at 137-139, above the 130 cap: on a recovery day start nearer 6:15-6:30 /km and walk a few seconds whenever HR touches 130.",
-        "HR rose about 20 bpm (137 to 158) while pace slowed by a minute per km in the second half: the day after the threshold run, and a week after being ill, that drift says the body hasn't absorbed the load yet.",
-        "If Thursday's 10 km opens above 135 bpm at an easy pace, take the 6-8 km option the plan gives and keep it under 130-140."
+        "HR rose about 20 bpm (137 to 158) while pace slowed by a minute per km in the second half: classic drift from low fluids, made worse by the cold, the day after the threshold run and a week after being ill. Drink before evening runs, and dress warmer below freezing.",
+        "If Thursday's 10 km opens above 135 bpm at an easy pace, or morning HRV and resting HR are off, take the 6-8 km option the plan gives and keep it under 130-140. If HR stays high for easy paces when you're hydrated and warm, suspect the illness, not the weather."
       ]
     }
   ]
