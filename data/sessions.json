@@ -1,6 +1,6 @@
 {
   "source": "intervals.icu",
-  "syncedAt": "2026-11-25T21:46:43+01:00",
+  "syncedAt": "2026-11-27T21:46:28+01:00",
   "days": [
     {
       "date": "2026-10-12",
@@ -1450,6 +1450,62 @@
         "Km 2-3 at 5:25-5:30 /km already put HR at 137-139, above the 130 cap: on a recovery day start nearer 6:15-6:30 /km and walk a few seconds whenever HR touches 130.",
         "HR rose about 20 bpm (137 to 158) while pace slowed by a minute per km in the second half: classic drift from low fluids, made worse by the cold, the day after the threshold run and a week after being ill. Drink before evening runs, and dress warmer below freezing.",
         "If Thursday's 10 km opens above 135 bpm at an easy pace, or morning HRV and resting HR are off, take the 6-8 km option the plan gives and keep it under 130-140. If HR stays high for easy paces when you're hydrated and warm, suspect the illness, not the weather."
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "status": "none",
+      "headline": "Easy run before the night bus not recorded",
+      "summary": "Planned 10 km easy (cap 140), stop by 70 min, or 6-8 km if the day was too full, before the night bus to Padua. Nothing is in Intervals.icu for the day; it can be added if done off-watch.",
+      "learn": [
+        "With the 25 km long run the next morning, skipping this run on a travel day cost little: the week's key session was Friday's, not this one.",
+        "When a travel day is this full, the plan's 6-8 km option at 5:50 /km or slower is still worth 35-45 min if you can fit it in before the bus."
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "status": "over",
+      "headline": "Long run after the night bus, mostly over the cap",
+      "summary": "Planned 20 km easy (cap 140) then 20 min at up to 145 bpm, about 24 km, with fuel test D (diluted honey), the morning after the night bus. Done at lunchtime: 24.90 km in 2:27:53 at 5:56 /km, average 143 bpm. In the first 20 km, 13 of the full km went over 140 (141-148), and km 15 spiked to 164 at 5:28 /km before a slow 8:18 /km km 16; the finish held 136-147 until the last 0.9 km reached 160, over the 145 allowed.",
+      "activity": {
+        "intervalsId": "i215366298",
+        "sport": "Run",
+        "distanceKm": 24.9,
+        "movingSec": 8873,
+        "avgHr": 143,
+        "maxHr": 173,
+        "laps": [
+          { "km": 1, "sec": 337, "hr": 134 },
+          { "km": 1, "sec": 382, "hr": 138 },
+          { "km": 1, "sec": 337, "hr": 142 },
+          { "km": 1, "sec": 346, "hr": 143 },
+          { "km": 1, "sec": 386, "hr": 137 },
+          { "km": 1, "sec": 393, "hr": 138 },
+          { "km": 1, "sec": 379, "hr": 145 },
+          { "km": 1, "sec": 363, "hr": 143 },
+          { "km": 1, "sec": 347, "hr": 141 },
+          { "km": 1, "sec": 331, "hr": 145 },
+          { "km": 1, "sec": 365, "hr": 140 },
+          { "km": 1, "sec": 353, "hr": 148 },
+          { "km": 1, "sec": 332, "hr": 144 },
+          { "km": 1, "sec": 381, "hr": 147 },
+          { "km": 1, "sec": 328, "hr": 164 },
+          { "km": 1, "sec": 498, "hr": 138 },
+          { "km": 1, "sec": 337, "hr": 142 },
+          { "km": 1, "sec": 370, "hr": 137 },
+          { "km": 1, "sec": 335, "hr": 143 },
+          { "km": 1, "sec": 340, "hr": 145 },
+          { "km": 1, "sec": 337, "hr": 147 },
+          { "km": 1, "sec": 382, "hr": 141 },
+          { "km": 1, "sec": 401, "hr": 136 },
+          { "km": 1, "sec": 341, "hr": 138 },
+          { "km": 0.899, "sec": 260, "hr": 160 }
+        ]
+      },
+      "learn": [
+        "Km 1-10 averaged 6:00 /km at 141 bpm and km 11-20 6:03 /km at 145: the same pace that kept you under 140 last Sunday cost 3-5 bpm more after a night on the bus. On a short-sleep morning start at 6:15 /km and let HR, not pace, set the speed.",
+        "Km 15 at 164 bpm is just under LT (165), deep in the 155-LT band, in the middle of an easy long run. If that was a climb, walk it: the plan's hard ceiling applies to long runs too.",
+        "This was fuel test D (diluted honey): log the upper-GI and lower-GI scores (0-10), any stops (km 16 took 8:18), whether you could still drink in the last 20 min, the temperature and the night bus in the journal, to compare with tests A-C."
       ]
     }
   ]
